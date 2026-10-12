@@ -16,10 +16,12 @@ runs:
     - name: Restore lossless image cache
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
-        path: node_modules/.cache/regavo-assets
-        key: regavo-images-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml', 'scripts/encode-image.mjs', 'scripts/runtime-assets.mjs') }}-${{ hashFiles('public/art/*.png', 'src/assets/battlefield.png') }}
+        path: |
+          node_modules/.cache/regavo-assets
+          node_modules/.cache/regavo-previews
+        key: regavo-images-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml', 'scripts/encode-image.mjs', 'scripts/runtime-assets.mjs', 'scripts/lobby-previews.mjs') }}-${{ hashFiles('public/art/*', 'src/render/**', 'src/game/**', 'src/ui/*preview*.ts', 'src/assets/battlefield.png') }}
         restore-keys: |
-          regavo-images-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml', 'scripts/encode-image.mjs', 'scripts/runtime-assets.mjs') }}-
+          regavo-images-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml', 'scripts/encode-image.mjs', 'scripts/runtime-assets.mjs', 'scripts/lobby-previews.mjs') }}-
     - name: Install Chromium
       shell: bash
       run: pnpm exec playwright install --with-deps chromium

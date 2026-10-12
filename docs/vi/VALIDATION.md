@@ -39,6 +39,7 @@ Từ thư mục gốc repo:
 ```sh
 pnpm install --frozen-lockfile
 pnpm audit:licenses
+pnpm exec playwright install chromium
 pnpm validate
 pnpm dev
 ```
@@ -60,3 +61,7 @@ YAML CI/release đã qua actionlint. `pnpm validate` đạt **141 tests**, kiể
 Các lượt kiểm trình duyệt, ảnh, số đo atlas và probe hiệu năng trước đây được giữ trong hồ sơ QA cục bộ, ngoài repo công khai. Chúng chỉ áp dụng cho bản được ghi tại thời điểm kiểm. Fixture và log trong `test-results/` được Git bỏ qua; đợt chuẩn hóa tài liệu này chưa chạy lại toàn bộ kiểm tra trình duyệt.
 
 Các mục tiêu chưa xác nhận gồm: đủ ma trận 6×5×3 phe/đối thủ/bản đồ, hiệu năng trình duyệt duy trì ở 400 quân tổng, mọi seed và bố trí đông chật, cân bằng competitive và hành vi triển khai cuối. Độ phủ hình và bài kiểm mô phỏng không xác lập quyền tác giả độc quyền hoặc thông qua nhãn hiệu. Công việc nghiệm thu còn lại được ghi trong [Kế hoạch 2D](PLAN-2D.md).
+
+Bản sửa màn hình đầu v1.0.1 bắt buộc có sprite gốc cho từng nhân vật trong cảnh, gồm dân làng và legionary Rome. Build xuất 18 cảnh đầy đủ với hai cỡ WebP lossless (36 file, tổng 29,2 MiB), cache kiểm nội dung và fingerprint nguồn/toolchain. Duyệt màn hình đầu không tải sprite atlas. Lượt Chromium local từ cache trống tải **4,37 MiB**, so với mẫu cũ **26,5 MiB**; mỗi cảnh khoảng **0,4–1,35 MiB**. Tổng deploy khoảng **183 MiB** do bổ sung toàn cảnh và giữ đủ ảnh cho trận. Bốn bài smoke kiểm đủ cảnh, đổi lựa chọn khi đang tải chậm, vào/thoát trận và xưởng. Đây là số đo lượt tải local, không cam kết thời gian tải qua Internet.
+
+Bản vá gộp cũng kiểm tra chọn ngôn ngữ theo quốc gia (VN, CN, dự phòng), giữ lựa chọn đã lưu qua reload và HTML riêng cho người xem không được cache. Bộ Chromium đầy đủ gồm tám bài smoke.

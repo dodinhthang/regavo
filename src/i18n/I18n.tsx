@@ -21,6 +21,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     return initialLanguage(
       storage,
       navigator.languages?.length ? navigator.languages : [navigator.language],
+      document.documentElement.dataset.cfCountry,
     );
   });
   useEffect(() => {

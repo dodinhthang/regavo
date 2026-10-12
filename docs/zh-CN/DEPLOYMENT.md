@@ -35,8 +35,8 @@ PR 工作流只有仓库读取权限，不接收 Cloudflare 凭据。`ci.yml` �
 ```sh
 pnpm install --frozen-lockfile
 pnpm audit:licenses
-pnpm validate
 pnpm exec playwright install chromium
+pnpm validate
 pnpm test:smoke
 pnpm dlx wrangler@4.149.0 deploy --dry-run --outdir test-results/wrangler
 ```

@@ -16,6 +16,7 @@ import {
   initialLanguage,
   rememberLanguage,
   resolveLanguage,
+  countryLanguage,
 } from '../src/i18n/locale.ts';
 import { messages, translate } from '../src/i18n/translate.ts';
 
@@ -26,6 +27,35 @@ test('browser language detection respects preference order and regional variants
   assert.equal(resolveLanguage(null, ['zh-TW']), 'zh-CN');
   assert.equal(resolveLanguage(null, ['de-DE']), 'en');
   assert.equal(resolveLanguage(null, []), 'en');
+});
+
+test('Cloudflare country takes priority over browser languages unless a choice is saved', () => {
+  assert.equal(resolveLanguage(null, ['en-US', 'vi-VN'], 'VN'), 'vi');
+  assert.equal(resolveLanguage(null, ['vi-VN'], 'CN'), 'zh-CN');
+  assert.equal(resolveLanguage(null, ['vi-VN'], 'US'), 'en');
+  assert.equal(resolveLanguage('en', ['vi-VN'], 'VN'), 'en');
+  assert.equal(resolveLanguage('vi', ['en-US'], 'CN'), 'vi');
+  assert.equal(resolveLanguage('unsupported', ['en-US'], 'VN'), 'vi');
+  assert.equal(resolveLanguage(null, [], 'VN'), 'vi');
+  assert.equal(countryLanguage('vn'), 'vi');
+  for (const country of [undefined, null, '', 'XX', 'T1', 'FR', {}, 'constructor']) {
+    assert.equal(countryLanguage(country), undefined);
+    assert.equal(resolveLanguage(null, ['vi-VN'], country), 'vi');
+    assert.equal(resolveLanguage(null, ['de-DE'], country), 'en');
+  }
+});
+
+test('initial language uses country metadata without saving the automatic selection', () => {
+  const values = new Map<string, string>();
+  const storage = {
+    getItem: (key: string) => values.get(key) ?? null,
+    setItem: (key: string, value: string) => values.set(key, value),
+  };
+  assert.equal(initialLanguage(storage, ['en-US'], 'VN'), 'vi');
+  assert.equal(values.size, 0);
+  rememberLanguage(storage, 'en');
+  assert.equal(initialLanguage(storage, ['vi-VN'], 'VN'), 'en');
+  assert.equal(initialLanguage(undefined, ['en-US'], 'VN'), 'vi');
 });
 
 test('explicit preferences survive reload and invalid values fall back to the browser', () => {
@@ -53,6 +83,7 @@ test('blocked storage still permits browser detection and language switching', (
     },
   };
   assert.equal(initialLanguage(blocked, ['en-US']), 'en');
+  assert.equal(initialLanguage(blocked, ['en-US'], 'VN'), 'vi');
   assert.doesNotThrow(() => rememberLanguage(blocked, 'vi'));
 });
 

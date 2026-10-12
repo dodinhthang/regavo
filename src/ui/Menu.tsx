@@ -6,6 +6,7 @@ import { Game } from '../game/engine.ts';
 import { Emblem } from './Icons.tsx';
 import { BrandHeader } from './BrandHeader.tsx';
 import { EmpirePreview } from './EmpirePreview.tsx';
+import { prefetchLobbyPreview } from './lobby-preview-art.ts';
 import { themeStyle, MATERIALS } from './theme.ts';
 import { GameSelect } from './GameSelect.tsx';
 import { readProjectStorage, STORAGE_KEYS } from '../storage.ts';
@@ -158,6 +159,8 @@ export function Menu({
                 key={id}
                 className={id === civ ? 'is-chosen' : ''}
                 aria-pressed={id === civ}
+                onPointerEnter={() => prefetchLobbyPreview(id, previewAge)}
+                onFocus={() => prefetchLobbyPreview(id, previewAge)}
                 onClick={() => {
                   setCiv(id);
                 }}
@@ -187,6 +190,8 @@ export function Menu({
                 <button
                   key={name}
                   aria-pressed={previewAge === index + 1}
+                  onPointerEnter={() => prefetchLobbyPreview(civ, index + 1)}
+                  onFocus={() => prefetchLobbyPreview(civ, index + 1)}
                   className={previewAge === index + 1 ? 'is-active' : ''}
                   onClick={() => setPreviewAge(index + 1)}
                 >

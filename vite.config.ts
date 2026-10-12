@@ -3,13 +3,18 @@ import { dirname, relative } from 'node:path';
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { CIVILIZATION_ART } from './src/render/civilization-art-data.ts';
 import { prepareRuntimeAssets } from './scripts/runtime-assets.mjs';
+import { prepareLobbyPreviews } from './scripts/lobby-previews.mjs';
 
 export default defineConfig(async ({ command }) => {
   if (command !== 'build') return {};
   const assets = await prepareRuntimeAssets(process.cwd(), CIVILIZATION_ART);
+  const previews = await prepareLobbyPreviews(process.cwd(), assets);
   return {
     publicDir: assets.publicDir,
-    define: { __RUNTIME_ASSETS__: JSON.stringify(assets.urls) },
+    define: {
+      __RUNTIME_ASSETS__: JSON.stringify(assets.urls),
+      __LOBBY_PREVIEWS__: JSON.stringify(previews),
+    },
     plugins: [
       {
         name: 'runtime-artwork',

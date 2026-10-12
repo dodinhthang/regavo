@@ -69,6 +69,11 @@ test('preview loads only selected architecture and idle poses, then upgrades to 
       'idle cannon keeps its authored art',
     );
     assert.equal(getUnitAnimationStatus().attackPoseSheets.cannon, true);
+    assert.equal(
+      getUnitAnimationStatus().workerPoseSheets.ottoman,
+      true,
+      'idle Ottoman villagers require their authored work sheet',
+    );
     const deselectedSheets = getUnitAnimationStatus().civilizationArt.daiviet.sheets;
     assert.ok(deselectedSheets);
     assert.ok(
@@ -77,6 +82,21 @@ test('preview loads only selected architecture and idle poses, then upgrades to 
       ),
       'switching away after a match releases every independent unit sheet',
     );
+    requests.length = 0;
+    for (const civ of ['roman', 'mongol']) {
+      assert.equal(await loadUnitAtlases([civ], 'preview'), true);
+      assert.equal(
+        getUnitAnimationStatus().workerPoseSheets[civ],
+        true,
+        `${civ} idle villagers must not fall back to procedural blocks`,
+      );
+      if (civ === 'roman')
+        assert.equal(
+          getUnitAnimationStatus().infantryStrideSheet,
+          true,
+          'Roman legionaries use the shared infantry stance even while idle',
+        );
+    }
     requests.length = 0;
     assert.equal(await loadSecondaryBuildings(), true);
     assert.ok(requests.some((url) => url.includes('age1')));

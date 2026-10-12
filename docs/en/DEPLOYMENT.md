@@ -35,8 +35,8 @@ License snapshots include platform-specific dependencies. CI runs `pnpm audit:li
 ```sh
 pnpm install --frozen-lockfile
 pnpm audit:licenses
-pnpm validate
 pnpm exec playwright install chromium
+pnpm validate
 pnpm test:smoke
 pnpm dlx wrangler@4.149.0 deploy --dry-run --outdir test-results/wrangler
 ```

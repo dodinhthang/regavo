@@ -36,13 +36,30 @@ for (const geometry of manifest.geometry) {
   assert.equal(hash(output), geometry.sha256, geometry.file);
   assert.ok(output.equals(await readFile('public' + geometry.source)), geometry.source);
 }
+assert.equal(manifest.previews.length, 36, 'Six civilizations, three ages and two preview sizes');
+const previewKeys = new Set();
+for (const preview of manifest.previews) {
+  const output = await readFile('dist' + preview.file);
+  assert.equal(hash(output), preview.sha256, preview.file);
+  assert.equal(output.length, preview.bytes, preview.file);
+  const decoded = await decodeWebp(output);
+  assert.deepEqual([decoded.width, decoded.height], [preview.width, preview.height]);
+  assert.equal(hash(decoded.data), preview.rgbaSha256, preview.file + ' RGBA changed');
+  assert.ok(preview.bytes < 3 * 1048576, preview.file + ' exceeds lobby transfer budget');
+  const key = `${preview.civ}:${preview.age}:${preview.width}`;
+  assert.ok(!previewKeys.has(key), 'Duplicate preview: ' + key);
+  previewKeys.add(key);
+}
 const art = await readdir('dist/art');
-assert.equal(art.length, manifest.images.length - 1 + manifest.geometry.length);
+assert.equal(
+  art.length,
+  manifest.images.length - 1 + manifest.geometry.length + manifest.previews.length,
+);
 assert.ok(
   art.every((file) => !file.endsWith('.png')),
   'source PNGs must stay outside deployment',
 );
 assert.ok(manifest.outputBytes < manifest.originalBytes);
 console.log(
-  `Verified ${manifest.images.length} pixel-identical runtime images and ${manifest.geometry.length} source geometry manifests.`,
+  `Verified ${manifest.images.length} pixel-identical runtime images, ${manifest.previews.length} lossless lobby previews and ${manifest.geometry.length} source geometry manifests.`,
 );

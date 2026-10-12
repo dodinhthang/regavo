@@ -35,8 +35,8 @@ Hồ sơ giấy phép có dependency riêng theo OS/CPU. CI chạy `pnpm audit:l
 ```sh
 pnpm install --frozen-lockfile
 pnpm audit:licenses
-pnpm validate
 pnpm exec playwright install chromium
+pnpm validate
 pnpm test:smoke
 pnpm dlx wrangler@4.149.0 deploy --dry-run --outdir test-results/wrangler
 ```
