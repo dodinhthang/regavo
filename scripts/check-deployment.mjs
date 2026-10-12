@@ -39,8 +39,22 @@ export async function checkDeployment(base, directory = 'dist') {
   const index = await get('/');
   assert.match(index.headers.get('content-type') ?? '', /text\/html/);
   const html = await index.text();
+  // The Worker adds only visitor country metadata; every static byte must still match.
+  const countryAttribute = html.match(/<html\b[^>]*? data-cf-country="([^"]*)"/i);
+  if (countryAttribute) {
+    assert.match(countryAttribute[1], /^(?:[A-Z]{2})?$/, 'Invalid Cloudflare country metadata');
+    assert.match(
+      index.headers.get('cache-control') ?? '',
+      /\bno-store\b/,
+      'Visitor HTML must not be cached',
+    );
+  }
+  const artifactHtml = html.replace(
+    /(<html\b[^>]*?) data-cf-country="(?:[A-Z]{2})?"(?=[\s>])/i,
+    '$1',
+  );
   assert.equal(
-    hash(html),
+    hash(artifactHtml),
     hash(await readFile(directory + '/index.html')),
     'Deployed HTML differs from the verified artifact',
   );
@@ -57,6 +71,7 @@ export async function checkDeployment(base, directory = 'dist') {
     manifest.images.at(-1),
   ];
   for (const image of images) await verify(image.file, /image\/webp/, true);
+  for (const preview of manifest.previews ?? []) await verify(preview.file, /image\/webp/, true);
   for (const geometry of manifest.geometry) await verify(geometry.file, /application\/json/, true);
   const assets = await readdir(directory + '/assets');
   const worker = assets.find((file) => /^worker-[^/]+\.js$/.test(file));

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "scope": "Installed dependency graph reachable from package.json, including runtime/build closure, peers and optional packages present. Unreferenced installed packages are excluded. Not an asset, trademark, exclusivity or legal-risk certification.",
   "reproducibleCommand": "node scripts/audit-licenses.mjs",
-  "project": "regavo-rts@1.0.0",
-  "packageManifestSha256": "810a23ec14134baacad816d30c204b20e0f3b7ec30d751780862ca57ac7a87fe",
+  "project": "regavo-rts@1.0.1",
+  "packageManifestSha256": "7b12646c1b6b6a961ebec05789745364f6cb8ce751a4be54fd9e9d9dfed07ab9",
   "lockfiles": [
     {
       "file": "pnpm-lock.yaml",

@@ -25,12 +25,14 @@ pnpm dev
 在第二个终端执行完整检查：
 
 ```sh
+pnpm exec playwright install chromium
 pnpm validate
 ```
 
 构建静态发行版本并本地预览：
 
 ```sh
+pnpm exec playwright install chromium
 pnpm build
 pnpm exec vite preview --host 127.0.0.1
 ```
@@ -38,6 +40,8 @@ pnpm exec vite preview --host 127.0.0.1
 将 `dist/` 部署在网站根路径。游戏无需 API 密钥或应用后端，模拟与 AI 在 Web Worker 中运行。
 
 生产构建只包含运行时图片及必要的回退图集，使用无损 WebP，保留每个像素、尺寸和透明度。历史 PNG 与来源记录留在仓库中。`dist/asset-manifest.json` 记录源文件和输出的哈希；构建后运行 `pnpm check:assets` 会核对所有解码 RGBA 像素。首次构建编码图片，后续构建复用 `node_modules/.cache/regavo-assets/` 的内容寻址缓存。`public/_headers` 中的 Cloudflare 缓存规则适用于带哈希的图片和代码包。
+
+构建时使用对局模型生成首页全景，要求每个单位均有原画精灵。18 个场景提供 960/1920 px 无损 WebP。首页只下载选中的场景，并在悬停/聚焦时预取；进入对局或工坊后才加载完整精灵图。首次构建需要 Playwright Chromium（`pnpm exec playwright install chromium`）。场景缓存位于 `node_modules/.cache/regavo-previews/`，检查哈希并在原画、渲染器或工具链变化时自动重新生成。
 
 [部署与发布](DEPLOYMENT.md)
 
@@ -48,7 +52,7 @@ pnpm exec vite preview --host 127.0.0.1
 - 六个文明的单位阵容与机制：罗马盾阵、蒙古移动营地、波斯贸易、唐朝生产模式、奥斯曼火炮部署和大越民兵动员。
 - 96×96 地图、三种地形、三级 AI、仅显示当前视野的战争迷雾、小地图、暂停、游戏速度及浏览器/JSON 存档。仍可读取旧版 64×64 存档。
 - 模型工坊可查看单位、建筑、自然物、动作和朝向。音乐与音效通过 Web Audio 合成。
-- 越南语、英语和简体中文界面。手动选择会保存；未选择时采用浏览器首个受支持语言，否则回退为英语。
+- 越南语、英语和简体中文界面。手动选择会保存；未选择时优先采用 Cloudflare 检测的访问者国家（VN → 越南语，CN → 简体中文，US/GB/AU/NZ/IE → 英语），其次采用浏览器首个受支持语言，最后回退为英语。Worker 在界面启动前将国家信息写入 HTML；本地 Vite 开发使用浏览器语言。
 
 ## 操作
 

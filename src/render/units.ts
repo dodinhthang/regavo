@@ -1915,7 +1915,15 @@ async function performUnitLoad(
   latestCivs = requested;
   const serial = ++requestSerial;
   const jobs: Promise<boolean>[] = [loadCivilizationUnits(requested, preview)];
-  for (const key of preview ? [] : SHEET_KEYS) {
+  // Rome, Mongolia and the Ottomans take their idle villagers from the work
+  // sheet. Persia and Tang have a separate unladen tool sheet; Roman legionaries
+  // also require the shared infantry stance sheet.
+  const workerKeys = preview
+    ? SHEET_KEYS.filter((key) =>
+        key === 'infantry' ? requested.has('roman') : TOOL_ROWS[key] === undefined,
+      )
+    : SHEET_KEYS;
+  for (const key of workerKeys) {
     if (key !== 'infantry' && !requested.has(key)) continue;
     jobs.push(
       (async () => {

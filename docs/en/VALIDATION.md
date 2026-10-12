@@ -39,6 +39,7 @@ From the repository root:
 ```sh
 pnpm install --frozen-lockfile
 pnpm audit:licenses
+pnpm exec playwright install chromium
 pnpm validate
 pnpm dev
 ```
@@ -60,3 +61,7 @@ The [clean Ubuntu 24.04 GitHub Actions run](https://github.com/dodinhthang/regav
 Earlier browser reviews, screenshots, atlas measurements and performance probes are retained in local QA records, outside the public repository. They apply only to their recorded versions. Local `test-results/` fixtures and logs are ignored by Git; this documentation pass did not repeat the full browser review.
 
 The following targets remain unverified: the full 6×5×3 faction/opponent/map matrix, sustained browser performance at 400 total units, all seeds and congested layouts, competitive balance and final deployment behavior. Art coverage and simulation tests do not establish exclusive copyright or trademark clearance. Remaining acceptance work is listed in [2D plan](PLAN-2D.md).
+
+The v1.0.1 lobby fix requires authored sprites for every preview unit, including villagers and Roman legionaries. Builds export 18 complete scenes in two responsive lossless WebP sizes (36 files, 29.2 MiB total), with source/toolchain fingerprints and cache integrity checks. Lobby browsing no longer downloads sprite atlases. A cold local Chromium lobby sample transferred **4.37 MiB**, compared with the earlier **26.5 MiB** sample; a scene is approximately **0.4–1.35 MiB**. Total deployment size is approximately **183 MiB** because scenes are added while full match art remains available. Four smoke tests cover all scenes, interrupted slow selections, match startup/exit and the workshop. These are local transfer measurements, not Internet load-time guarantees.
+
+The combined patch also tests country-based language initialization (VN, CN, fallback), saved language preference across reload and uncached visitor-specific HTML. The complete Chromium suite contains eight smoke tests.

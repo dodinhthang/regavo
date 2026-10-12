@@ -25,12 +25,14 @@ Mở URL Vite in ra. Dev server tiếp tục chạy trong terminal này. Lệnh 
 Mở terminal thứ hai để chạy toàn bộ kiểm tra:
 
 ```sh
+pnpm exec playwright install chromium
 pnpm validate
 ```
 
 Build tĩnh và xem thử production trên máy:
 
 ```sh
+pnpm exec playwright install chromium
 pnpm build
 pnpm exec vite preview --host 127.0.0.1
 ```
@@ -38,6 +40,8 @@ pnpm exec vite preview --host 127.0.0.1
 Triển khai `dist/` tại gốc website. Game không cần khóa API hoặc backend ứng dụng; mô phỏng và AI chạy trong Web Worker.
 
 Bản production chỉ chứa ảnh runtime và atlas dự phòng cần thiết, nén WebP lossless giữ nguyên từng điểm ảnh, kích thước và alpha. PNG lịch sử cùng hồ sơ nguồn được giữ trong repo. `dist/asset-manifest.json` ghi hash nguồn/đầu ra; `pnpm check:assets` kiểm tra toàn bộ RGBA đã giải mã sau khi build. Build đầu mã hóa ảnh; các build sau dùng cache theo nội dung tại `node_modules/.cache/regavo-assets/`. Quy tắc cache Cloudflare trong `public/_headers` áp dụng cho ảnh và bundle có hash trong tên.
+
+Toàn cảnh màn hình đầu được dựng từ mô hình trong trận khi build; mỗi nhân vật bắt buộc có sprite gốc. Đủ 18 cảnh có WebP lossless 960/1920 px. Màn hình đầu chỉ tải cảnh đang chọn, tải trước khi hover/focus; sprite sheet đầy đủ tải khi vào trận hoặc xưởng. Build đầu cần Playwright Chromium (`pnpm exec playwright install chromium`). Cache cảnh được kiểm hash tại `node_modules/.cache/regavo-previews/`, tự sinh lại khi ảnh, renderer hoặc toolchain thay đổi.
 
 [Deploy và phát hành](DEPLOYMENT.md)
 
@@ -48,7 +52,7 @@ Bản production chỉ chứa ảnh runtime và atlas dự phòng cần thiết,
 - Sáu bộ quân và cơ chế phe: khiên La Mã, trại di động Mông Cổ, thương mại Ba Tư, chế độ sản xuất Đại Đường, triển khai pháo Ottoman và huy động dân binh Đại Việt.
 - Bản đồ 96×96, ba kiểu địa hình, ba mức AI, sương mù theo tầm nhìn hiện tại, bản đồ nhỏ, tạm dừng, tốc độ trận và lưu trên trình duyệt/JSON. Bản lưu 64×64 cũ vẫn đọc được.
 - Xưởng Mô Hình để xem quân, nhà, thiên nhiên, hành động và hướng nhìn. Nhạc và hiệu ứng tổng hợp bằng Web Audio.
-- Giao diện tiếng Việt, Anh và Trung giản thể. Lựa chọn trực tiếp được lưu; nếu chưa chọn, dùng ngôn ngữ trình duyệt đầu tiên được hỗ trợ, dùng tiếng Anh khi không khớp.
+- Giao diện tiếng Việt, Anh và Trung giản thể. Lựa chọn trực tiếp được lưu; nếu chưa chọn, ưu tiên quốc gia do Cloudflare xác định (VN → tiếng Việt, CN → Trung giản thể, US/GB/AU/NZ/IE → tiếng Anh), sau đó đến ngôn ngữ trình duyệt đầu tiên được hỗ trợ và cuối cùng là tiếng Anh. Worker đưa quốc gia vào HTML trước khi giao diện khởi tạo; chạy Vite local dùng ngôn ngữ trình duyệt.
 
 ## Điều khiển
 

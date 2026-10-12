@@ -20,9 +20,22 @@ test('production lobby paints every civilization and age without missing assets'
   page,
 }) => {
   const failures = observeFailures(page);
+  const artwork: string[] = [];
+  const previewBytes: number[] = [];
+  let transferred = 0;
+  page.on('response', (response) => {
+    const path = new URL(response.url()).pathname;
+    transferred += Number(response.headers()['content-length'] ?? 0);
+    if (path.startsWith('/art/')) artwork.push(path);
+    if (path.startsWith('/art/preview-'))
+      previewBytes.push(Number(response.headers()['content-length']));
+  });
   await page.goto('/');
   await expect(page).toHaveTitle(/Regavo/);
   await expect(page.locator('.lobby-art')).toHaveAttribute('aria-busy', 'false');
+  await expect(page.locator('.lobby-art')).toHaveAttribute('data-preview', 'static');
+  await page.waitForLoadState('networkidle');
+  console.log(`Cold lobby: ${(transferred / 1048576).toFixed(2)} MiB of response Content-Length.`);
   await expect(page.locator('img.game-logo')).toBeVisible();
   for (const [index, civ] of [
     'roman',
@@ -48,7 +61,42 @@ test('production lobby paints every civilization and age without missing assets'
       await expect(page.locator('.lobby-preview-note,.lobby-preview-status')).toHaveCount(0);
     }
   }
+  expect(artwork.filter((path) => !/\/preview-|\/daiviet-v4-dragon-emblem-/.test(path))).toEqual(
+    [],
+  );
+  expect(previewBytes.length).toBeGreaterThanOrEqual(18);
+  expect(Math.max(...previewBytes)).toBeLessThan(2 * 1024 * 1024);
+  console.log(
+    `Lobby transfers: largest scene ${(Math.max(...previewBytes) / 1024).toFixed(0)} KiB; no sprite atlases downloaded.`,
+  );
   expect(failures).toEqual([]);
+});
+
+test('a slow first selection cannot hold up the next civilization', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.lobby-art')).toHaveAttribute('aria-busy', 'false');
+  let release!: () => void;
+  const held = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route('**/art/preview-mongol-*', async (route) => {
+    await held;
+    await route.continue().catch(() => {});
+  });
+  try {
+    await page.locator('.lobby-empires button').nth(1).click();
+    await expect(page.locator('.lobby-art')).toHaveAttribute('aria-busy', 'true');
+    await page.locator('.lobby-empires button').nth(4).click();
+    await expect(page.locator('.lobby-art')).toHaveAttribute('aria-busy', 'false', {
+      timeout: 3000,
+    });
+    await expect(page.locator('.lobby-art canvas[role="img"]')).toHaveAttribute(
+      'aria-label',
+      /Ottoman/i,
+    );
+  } finally {
+    release();
+  }
 });
 
 test('Dai Viet match starts, its Worker ticks and exiting restores the lobby', async ({ page }) => {

@@ -34,6 +34,7 @@ parentPort.on('message', async ({ source, output }) => {
       sha256: createHash('sha256').update(data).digest('hex'),
       width: pixels.width,
       height: pixels.height,
+      rgbaSha256: createHash('sha256').update(pixels.data).digest('hex'),
     });
   } catch (error) {
     parentPort.postMessage({ error: error.stack });

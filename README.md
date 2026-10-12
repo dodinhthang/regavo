@@ -25,12 +25,14 @@ Open the URL printed by Vite. The dev server keeps this terminal running. Licens
 In a second terminal, run the complete checks:
 
 ```sh
+pnpm exec playwright install chromium
 pnpm validate
 ```
 
 For a static production build and local preview:
 
 ```sh
+pnpm exec playwright install chromium
 pnpm build
 pnpm exec vite preview --host 127.0.0.1
 ```
@@ -38,6 +40,8 @@ pnpm exec vite preview --host 127.0.0.1
 Deploy `dist/` at the web root. The game needs no API key or application backend; simulation and AI run in a Web Worker.
 
 Production builds include only runtime images and required fallback atlases, encoded as pixel-identical lossless WebP with unchanged dimensions and alpha. Historical PNGs and provenance stay in the repository. `dist/asset-manifest.json` records source/output hashes; `pnpm check:assets` verifies every decoded RGBA pixel after a build. The first build encodes images; subsequent builds reuse the content-addressed cache in `node_modules/.cache/regavo-assets/`. Cloudflare cache rules in `public/_headers` apply to hashed artwork and bundles.
+
+Production lobby scenes are rendered from the match models during the build, with an authored sprite required for every unit. All 18 scenes have 960/1920 px lossless WebP variants. The lobby downloads only the selected scene and warms a selection on hover/focus; full sprite sheets load when entering a match or workshop. The first build needs Playwright Chromium (`pnpm exec playwright install chromium`). Verified scene caches live in `node_modules/.cache/regavo-previews/` and regenerate when source art, renderer code or toolchain changes.
 
 [Deployment and releases](docs/en/DEPLOYMENT.md)
 
@@ -48,7 +52,7 @@ Production builds include only runtime images and required fallback atlases, enc
 - Six civilization rosters and mechanics, including Roman shields, Mongol mobile camps, Persian trade, Tang production modes, Ottoman cannon deployment and Đại Việt militia mobilization.
 - A 96×96 map, three terrain presets, three AI difficulty levels, current-visibility fog, minimap, pause, match speed and browser/JSON saves. Older 64×64 saves remain readable.
 - A Model Workshop for inspecting units, buildings, nature, actions and viewing directions. Music and effects are synthesized with Web Audio.
-- Vietnamese, English and Simplified Chinese UI. An explicit language selection is saved; otherwise the first supported browser preference is used, with English as fallback.
+- Vietnamese, English and Simplified Chinese UI. An explicit language selection is saved; otherwise Cloudflare's visitor country takes priority (VN → Vietnamese, CN → Simplified Chinese, US/GB/AU/NZ/IE → English), followed by the first supported browser preference and English as fallback. The Worker supplies country metadata in the HTML before the UI starts; local Vite development uses browser preferences.
 
 ## Controls
 
