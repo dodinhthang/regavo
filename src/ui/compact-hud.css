@@ -1,0 +1,505 @@
+/* Selection controls occupy a compact dock; the minimap stays available independently. */
+.game-view {
+  --selection-hud-height: 168px;
+  --selection-hud-scale: 1.18;
+  --minimap-size: 144px;
+  --hud-header-height: 76px;
+}
+
+.bottom-area {
+  left: 50%;
+  right: auto;
+  bottom: 36px;
+  width: max-content;
+  height: auto;
+  min-width: min(
+    500px,
+    calc((100% - 2 * (var(--minimap-size) + 20px)) / var(--selection-hud-scale))
+  );
+  max-width: min(
+    calc(720px / var(--selection-hud-scale)),
+    calc((100% - 2 * (var(--minimap-size) + 20px)) / var(--selection-hud-scale))
+  );
+  transform: translateX(-50%) scale(var(--selection-hud-scale));
+  transform-origin: center bottom;
+  align-items: flex-end;
+  padding: 0;
+  gap: 6px;
+  background: none;
+  pointer-events: none;
+}
+
+.bottom-area > section {
+  pointer-events: auto;
+}
+.game-view .bottom-area > section::before,
+.game-view .bottom-area > section::after {
+  width: 7px;
+  height: 7px;
+  border-width: 1px;
+}
+.selection-panel {
+  width: 164px;
+  margin-right: 0;
+  padding: 5px 6px;
+}
+.selection-heading {
+  font-size: 11px;
+  padding-bottom: 3px;
+  gap: 4px;
+}
+.selection-heading > span {
+  min-width: 0;
+}
+.selection-heading small {
+  font-size: 5px;
+  white-space: nowrap;
+}
+.selection-info {
+  height: 52px;
+  gap: 6px;
+}
+.selection-info > .mini-art {
+  width: 44px;
+  height: 44px;
+  min-width: 0;
+  border-width: 2px;
+}
+.selection-info > div:last-child {
+  min-width: 0;
+}
+.selection-info b {
+  font-size: 10px;
+}
+.selection-info p {
+  font-size: 7px;
+  line-height: 1.3;
+  margin-top: 3px;
+}
+.selection-info .cargo {
+  padding: 2px 3px;
+}
+.hp-line {
+  height: 5px;
+  margin-bottom: 5px;
+}
+.unit-stats {
+  gap: 4px;
+  margin-top: 3px;
+  font-size: 7px;
+}
+.unit-stats .command-icon {
+  width: 11px;
+  height: 11px;
+}
+.selection-description {
+  display: none;
+}
+.group-selection .selection-info {
+  height: 48px;
+}
+.group-selection .selection-info > .mini-art {
+  height: 40px;
+}
+.group-roster {
+  margin: 0 0 3px;
+  gap: 4px;
+}
+.group-roster button {
+  width: 23px;
+  height: 22px;
+}
+.group-roster .mini-art {
+  height: 20px;
+}
+
+.command-panel {
+  flex: 1 1 auto;
+  width: max-content;
+  min-width: 0;
+  max-width: 476px;
+  margin-right: 0;
+  padding: 5px 6px;
+}
+.command-header {
+  min-height: 17px;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+  gap: 6px;
+}
+.command-header > span {
+  font-size: 8px;
+  letter-spacing: 0.2px;
+}
+.command-header > small {
+  display: none;
+}
+.tabs button {
+  padding: 1px 4px;
+  font-size: 8px;
+}
+.action-grid {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  min-height: 0;
+  max-height: 100px;
+  gap: 4px;
+  padding: 0;
+}
+.action {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 48px;
+  padding: 1px 2px;
+  gap: 1px;
+}
+.game-view .action:hover:enabled {
+  transform: none;
+}
+.action-picture {
+  height: 24px;
+  flex-shrink: 0;
+}
+.action-picture > .command-icon {
+  width: 24px;
+  height: 24px;
+}
+.action-picture .mini-art {
+  height: 23px;
+}
+.action-picture .mini-art canvas {
+  max-width: 44px;
+  max-height: 23px;
+}
+.illustrated-action .action-picture {
+  height: 33px;
+}
+.illustrated-action .action-picture .mini-art {
+  height: 32px;
+}
+.illustrated-action .action-picture .mini-art canvas {
+  max-width: 46px;
+  max-height: 32px;
+}
+.action-label {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 7px;
+  line-height: 9px;
+}
+.costs {
+  font-size: 6px;
+  gap: 3px;
+}
+.costs .regavo-icon {
+  width: 9px;
+  height: 9px;
+}
+.quiet-action {
+  width: 220px;
+  max-width: 100%;
+  margin: 3px 0;
+  padding: 2px;
+  font-size: 9px;
+  line-height: 1.4;
+}
+.armory-status {
+  flex-basis: 100%;
+  font-size: 8px;
+}
+
+.production-queue {
+  height: 42px;
+  width: 310px;
+  max-width: 100%;
+  padding-top: 4px;
+  margin-top: 4px;
+  gap: 5px;
+  overflow: hidden;
+}
+.production-queue > .queue-heading {
+  flex-shrink: 0;
+  font-size: 7px;
+  letter-spacing: 0.3px;
+}
+.queue-heading b {
+  margin-left: 2px;
+  color: var(--ink);
+  font-size: 10px;
+}
+.queue-heading small {
+  display: block;
+  margin-top: 3px;
+  font-size: 6px;
+}
+.queue-list {
+  display: flex;
+  flex: 1 1 auto;
+  width: 0;
+  min-width: 0;
+  height: 100%;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--trim) var(--recess);
+}
+.queue-item {
+  flex: 0 0 42px;
+  height: 36px;
+  padding: 1px 1px 5px;
+  text-align: center;
+  background: var(--recess);
+}
+.queue-item.queue-active {
+  border-color: var(--accent);
+  background: linear-gradient(#ead9aa33, #ead9aa11), var(--recess);
+  box-shadow: inset 0 0 0 1px #ead9aa55;
+}
+.queue-item > .mini-art {
+  height: 28px;
+  min-width: 0;
+}
+.queue-item .mini-art canvas {
+  max-height: 28px;
+}
+.queue-time {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 1px 2px;
+  background: var(--recess);
+  color: var(--edge-light);
+  font:
+    7px/9px Arial,
+    sans-serif;
+}
+.queue-quality {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: var(--edge-light);
+  font-size: 9px;
+  text-shadow: 0 1px 2px #000;
+}
+.queue-progress {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  height: 3px;
+  overflow: hidden;
+  background: #211d1699;
+  box-shadow: inset 0 1px 2px #0005;
+}
+.queue-progress > i {
+  display: block;
+  position: static;
+  height: 100%;
+  background: linear-gradient(#bdd9bd, var(--accent));
+}
+.queue-paused .queue-progress > i {
+  background: var(--trim);
+}
+.production-queue > button {
+  flex: 0 0 20px;
+  margin-left: 0;
+  width: 20px;
+  height: 22px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.game-tooltip {
+  max-width: calc(100vw - 16px);
+}
+.game-tooltip.illustrated-tooltip {
+  width: 310px;
+}
+.tooltip-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tooltip-preview {
+  flex: 0 0 112px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse, #ead9aa44, transparent 72%);
+}
+.tooltip-preview .mini-art {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+.tooltip-preview canvas {
+  max-width: 112px;
+  max-height: 94px;
+}
+.tooltip-details {
+  min-width: 0;
+}
+.game-tooltip .costs {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.age-banner {
+  top: calc(var(--hud-header-height) + 8px);
+  left: auto;
+  right: 12px;
+  transform: none;
+  min-width: 0;
+  max-width: 150px;
+  padding: 4px 7px;
+  gap: 6px;
+  border-width: 2px;
+}
+.age-number {
+  font-size: 20px;
+  line-height: 1;
+  min-width: 17px;
+}
+.age-banner b {
+  font-size: 11px;
+}
+.age-banner small {
+  display: none;
+}
+.age-banner.is-researching small {
+  display: block;
+  margin-top: 2px;
+  font-size: 7px;
+}
+.age-banner .tiny-progress {
+  margin-top: 4px;
+}
+.opponent-badge {
+  top: calc(var(--hud-header-height) + 60px);
+  right: 12px;
+  padding: 4px 6px;
+  gap: 4px;
+  font-size: 10px;
+}
+.opponent-badge > .regavo-emblem {
+  width: 22px;
+  height: 22px;
+}
+.opponent-badge small {
+  font-size: 7px;
+}
+
+.game-view > .minimap {
+  position: absolute;
+  right: 12px;
+  bottom: 38px;
+  width: var(--minimap-size);
+  height: auto;
+  padding: 4px;
+  border-width: 3px;
+  z-index: 4;
+}
+.minimap-title {
+  height: 18px;
+  padding: 0 1px 3px;
+  gap: 3px;
+  font-size: 7px;
+  letter-spacing: 0.2px;
+}
+.minimap-title > span:last-child {
+  font-size: 6px;
+}
+.minimap-title .compass {
+  font-size: 12px;
+}
+.minimap canvas {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+.events {
+  bottom: 50px;
+}
+.has-selection .events {
+  bottom: calc(var(--selection-hud-height) + 50px);
+}
+
+@media (max-width: 980px) {
+  .game-view {
+    --minimap-size: 126px;
+    --hud-header-height: 68px;
+  }
+  .command-header {
+    gap: 5px;
+  }
+  .minimap-title > span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .game-view {
+    --minimap-size: 112px;
+    --hud-header-height: 63px;
+  }
+  .bottom-area {
+    gap: 4px;
+  }
+  .game-view > .minimap {
+    right: 8px;
+  }
+  .selection-panel {
+    width: 148px;
+  }
+  .selection-info > .mini-art {
+    width: 38px;
+    height: 40px;
+  }
+  .production-queue {
+    gap: 4px;
+  }
+  .production-queue > .queue-heading {
+    font-size: 6px;
+    letter-spacing: 0;
+  }
+  .bottom-hint > span {
+    display: none;
+  }
+  .bottom-hint {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 560px) {
+  .game-view {
+    --minimap-size: 96px;
+  }
+  .selection-panel {
+    display: none;
+  }
+  .selection-panel:only-child {
+    display: block;
+    width: 148px;
+    max-width: 100%;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .command-header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-height: 600px) {
+  .minimap-title > span:last-child {
+    display: none;
+  }
+}

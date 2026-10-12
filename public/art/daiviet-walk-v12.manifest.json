@@ -1,0 +1,303 @@
+{
+  "version": 12,
+  "created": "2026-10-11",
+  "civilization": "daiviet",
+  "generator": "OpenAI built-in image_gen",
+  "sourceBytesUnchanged": true,
+  "method": "Whole authored poses. Human walking A/D/B/C, mounted A/C/B/D, cannon alternates two whole crew contacts. No limb slicing, mesh deformation or pose crossfade. RGB calibration preserves alpha; height/body pivot fixed per type and heading. Distance-driven cycle.",
+  "assets": [
+    {
+      "group": "people",
+      "pose": "d",
+      "source": "public/art/daiviet-v12-units-people-walk-d.png",
+      "prompt": "Use case: precise-object-edit. Edit target: referenced Dai Viet game character atlas. Keep EXACTLY original FOUR columns by FOUR rows, 1536x1024. Sixteen complete intact figures. Columns preserve original SE, SW, NE, NW headings, rows preserve four original identities, faces, tunics, equipment. KEEP THE ENTIRE UPPER BODY ABOVE TUNIC HEM, head, arms, weapon and colors matching the input. Do not change camera or reverse facing. Redraw complete anatomically connected legs beneath tunic, never floating fragments. No labels, borders, ground, shadows or scenery, truly transparent background. Leave each whole person inside its own 384x256 cell. CHANGE ONLY THE LEG POSES of all 16 figures into a NARROW PASSING STEP. The near leg is VERTICAL straight down from hip, foot flat on ground directly BELOW HIP. The far knee is flexed softly and foot lifts just behind/opposite calf, passing close to the standing ankle. Both knees are near each other and BOTH FEET ARE CLOSE under the body; almost no horizontal stride width. ABSOLUTELY NO WIDE V STRIDE, no leg extended diagonally in front. This is the passing pose between long contacts, not standing with both feet flat.",
+      "reference": "/art/daiviet-v1-units-people-walk-a.png",
+      "file": "/art/daiviet-v12-units-people-walk-d.png",
+      "runtimeKey": "units-people-walk-d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "frames": [
+        [
+          152,
+          16,
+          115,
+          231,
+          57.0,
+          227
+        ],
+        [
+          509,
+          16,
+          119,
+          231,
+          59.0,
+          227
+        ],
+        [
+          927,
+          11,
+          119,
+          232,
+          59.0,
+          228
+        ],
+        [
+          1267,
+          7,
+          120,
+          237,
+          59.5,
+          233
+        ],
+        [
+          103,
+          257,
+          252,
+          244,
+          125.5,
+          240
+        ],
+        [
+          424,
+          259,
+          244,
+          242,
+          121.5,
+          238
+        ],
+        [
+          896,
+          258,
+          206,
+          241,
+          102.5,
+          237
+        ],
+        [
+          1187,
+          260,
+          220,
+          239,
+          109.5,
+          235
+        ],
+        [
+          111,
+          513,
+          212,
+          241,
+          105.5,
+          237
+        ],
+        [
+          447,
+          513,
+          199,
+          241,
+          99.0,
+          237
+        ],
+        [
+          901,
+          510,
+          189,
+          243,
+          94.0,
+          239
+        ],
+        [
+          1217,
+          510,
+          190,
+          243,
+          94.5,
+          239
+        ],
+        [
+          150,
+          764,
+          109,
+          244,
+          54.0,
+          240
+        ],
+        [
+          500,
+          766,
+          110,
+          242,
+          54.5,
+          238
+        ],
+        [
+          940,
+          765,
+          111,
+          236,
+          55.0,
+          232
+        ],
+        [
+          1264,
+          766,
+          109,
+          240,
+          54.0,
+          236
+        ]
+      ],
+      "sha256": "c5e4135b93eb195196c5ed2f3436f1ef214374f65392549849aac45bfae85edb",
+      "bytes": 1784177,
+      "transparentPixels": 1277659
+    },
+    {
+      "group": "infantry",
+      "pose": "d",
+      "source": "public/art/daiviet-v12-units-infantry-walk-d.png",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached 4x4 Dai Viet infantry passing-step sprite sheet. IMPORTANT FIX: the sprites in rows 2 and 3 touch/overlap, so they cannot be used in an animation atlas. KEEP EXACT SAME sixteen identities, weapons, near-leg-down narrow passing poses, 4 headings, 4 rows and 4 columns, style, colors and lighting. Change ONLY layout SCALE and SPACING. Each complete figure INCLUDING plume, quiver, feet and entire weapon MUST fit inside its 384x256 cell with at least 24 transparent pixels TOP AND BOTTOM and 24 left/right. Reduce ALL figures uniformly to 80% of current size, maximum complete character height 200 pixels. Arrange 4 rows centers at y=128,384,640,896, columns x=192,576,960,1344. Maintain 4x4 in1536x1024. At least 48 fully empty transparent pixels must separate neighboring rows. NO contact, overlap, shared pixels, stray limbs, background, shadows, ground, labels or cell borders. Preserve narrow passing leg pose from input; do not return to wide walking strides. Genuine transparent alpha.",
+      "reference": "generation-record:exec-a53c9fc7-1387-4647-bbc6-2f10509aec34.png",
+      "file": "/art/daiviet-v12-units-infantry-walk-d.png",
+      "runtimeKey": "units-infantry-walk-d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "frames": [
+        [
+          126,
+          49,
+          191,
+          197,
+          95.0,
+          193
+        ],
+        [
+          464,
+          47,
+          176,
+          199,
+          87.5,
+          195
+        ],
+        [
+          899,
+          47,
+          175,
+          198,
+          87.0,
+          194
+        ],
+        [
+          1230,
+          47,
+          172,
+          199,
+          85.5,
+          195
+        ],
+        [
+          134,
+          296,
+          165,
+          207,
+          82.0,
+          203
+        ],
+        [
+          475,
+          295,
+          166,
+          208,
+          82.5,
+          204
+        ],
+        [
+          904,
+          298,
+          165,
+          205,
+          82.0,
+          201
+        ],
+        [
+          1243,
+          295,
+          165,
+          209,
+          82.0,
+          205
+        ],
+        [
+          138,
+          527,
+          141,
+          208,
+          70.0,
+          204
+        ],
+        [
+          492,
+          526,
+          146,
+          208,
+          72.5,
+          204
+        ],
+        [
+          908,
+          528,
+          138,
+          208,
+          68.5,
+          204
+        ],
+        [
+          1269,
+          525,
+          140,
+          210,
+          69.5,
+          206
+        ],
+        [
+          137,
+          769,
+          149,
+          209,
+          74.0,
+          205
+        ],
+        [
+          477,
+          769,
+          155,
+          209,
+          77.0,
+          205
+        ],
+        [
+          903,
+          770,
+          154,
+          208,
+          76.5,
+          204
+        ],
+        [
+          1247,
+          772,
+          158,
+          206,
+          78.5,
+          202
+        ]
+      ],
+      "sha256": "99e32cdc9697e3c61b14e9227513e0a65d57aa03d2e21303544f7696ea474e0b",
+      "bytes": 1735508,
+      "transparentPixels": 1292828
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

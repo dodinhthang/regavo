@@ -1,0 +1,1220 @@
+{
+  "version": 6,
+  "created": "2026-10-09",
+  "sourceHandling": "Original RGBA PNG bytes copied unchanged; source rectangles sampled by runtime Canvas only. No offline crop, resize, chromakey or recompression.",
+  "geometry": "2x physical canvas/anchor. Ground center from measured pad side tips, separate X/Y scale preserving vertical walls. TC thin curb contour fit is symmetric canonical 2:1 after scaling; no whole-image shear.",
+  "rights": {
+    "generatedWith": "OpenAI built-in imagegen, from original project prompts and original project concept style, no external stock, no game sprite extraction.",
+    "canvasBanner": "Original Canvas code and historical cultural motifs authored in src/render/buildings.ts; no downloaded fonts, logos or icons.",
+    "note": "Original generated project assets; model-output ownership follows applicable service terms. No claim of exclusive copyright protection in AI output or freedom from every possible third-party claim."
+  },
+  "rejectedSources": [
+    {
+      "original": "generation-record:exec-68ae77e3-b30a-4296-be4c-3a64a7a36db6.png",
+      "prompt": "Create five ORIGINAL spectacular historical 2D RTS TOWN CENTER sprites on one production atlas. Highly realistic miniature 3D-rendered masonry, beautiful tile roofs, timber, fine stone carving, natural upper-left daylight. Clean TRUE ALPHA transparent cutouts; no backdrop, labels, scenery, people, animals or watermarks. The canvas is 1536x1024 landscape, a precise THREE COLUMN by TWO ROW layout of square 512x512 cells. Five separate compounds; sixth bottom-right cell COMPLETELY EMPTY AND TRANSPARENT. Order: top-left ROMAN, top-middle MONGOL, top-right PERSIAN; bottom-left TANG CHINESE, bottom-middle OTTOMAN.\nCritical orthographic camera: equal left and right views, canonical ground edges slope exactly +1/2 and -1/2, vertical columns perfectly upright. Every compound stands on a single thin SQUARE foundation, a symmetrical exact 2:1 diamond; left/right corners equal y, front/back tips vertically aligned at pad center x, no rectangular perspective bases. The pad must be the whole compound boundary, so all enclosing walls, corner towers, wings and architectural props sit fully INSIDE the diamond. One detached compound per cell, safely below 82% width and height; large transparent gutters. No extra flags, because a separately drawn faction banner will be placed beside it. All roofs, walls, steps fully within cell. No tall foundations, no giant staircase hanging beyond front corner.\nCivilization architecture: ROMAN warm ivory limestone and classical columns, red terracotta roofs, disciplined square courtyard. MONGOL ivory felt yurts with dark timber structures and cobalt decoration, dignified capital compound in historically plausible nomad timber-and-stone form; no enormous domed Persian palace. PERSIAN cream sandstone, warm adobe, turquoise blue glazed ornaments, elegant columned halls, carved winged lion gateposts. TANG CHINESE cream plaster and red timber, gray curved tiled roofs with upturned eaves, ordered courtyard architecture. OTTOMAN warm limestone and plaster, orange tile roofs, teal domes, arcaded square courtyard, restrained Ottoman ornament. Photorealistic fine material detail, earthy restrained colors and clean silhouette, sophisticated historical miniature game art; not painterly blur, not vectors.\nAll five sprites are AGE II organized provincial town centers, a visibly WIDER ENCLOSING COMPLEX around the main hall. The square ground pad encloses a low perimeter wall on all four edges, a real roofed entrance on the FRONT-RIGHT edge, main hall at back-center, TWO small side wings or service buildings, an open paved courtyard in middle. Roman colonnaded redtile civic hall, plaster/redtile sidewings, limestone lowwall; Mongol main large ger, secondary small felt gers, timber gate and timber/palisade enclosure; Persian cream stone columned hall with turquoise glazed trim, adobe-and-stone sidewings and carved stone courtyard gate; Tang two roofed wings flanking a Chinese main hall, redwood graytiles, cream perimeterwall and tiledgateway; Ottoman medium teal dome civic hall with orange-tile side wings, arcaded entry, low masonry perimeter. Architecture and materials substantially stronger than early crude frontier hall, but still smaller and less majestic than imperial capital. Do not depict one solitary tall building, depict the whole enclosed courtyard compound. Camera perfect square 2:1 diamond as specified.",
+      "reason": "Compound source front-corner skew; regenerated with explicit per-cell diamond coordinates."
+    },
+    {
+      "original": "generation-record:exec-116c2e08-d073-4f7f-9e87-93f3a7362d91.png",
+      "prompt": "Create five ORIGINAL spectacular historical 2D RTS TOWN CENTER sprites on one production atlas. Highly realistic miniature 3D-rendered masonry, beautiful tile roofs, timber, fine stone carving, natural upper-left daylight. Clean TRUE ALPHA transparent cutouts; no backdrop, labels, scenery, people, animals or watermarks. The canvas is 1536x1024 landscape, a precise THREE COLUMN by TWO ROW layout of square 512x512 cells. Five separate compounds; sixth bottom-right cell COMPLETELY EMPTY AND TRANSPARENT. Order: top-left ROMAN, top-middle MONGOL, top-right PERSIAN; bottom-left TANG CHINESE, bottom-middle OTTOMAN.\nCritical orthographic camera: equal left and right views, canonical ground edges slope exactly +1/2 and -1/2, vertical columns perfectly upright. Every compound stands on a single thin SQUARE foundation, a symmetrical exact 2:1 diamond; left/right corners equal y, front/back tips vertically aligned at pad center x, no rectangular perspective bases. The pad must be the whole compound boundary, so all enclosing walls, corner towers, wings and architectural props sit fully INSIDE the diamond. One detached compound per cell, safely below 82% width and height; large transparent gutters. No extra flags, because a separately drawn faction banner will be placed beside it. All roofs, walls, steps fully within cell. No tall foundations, no giant staircase hanging beyond front corner.\nCivilization architecture: ROMAN warm ivory limestone and classical columns, red terracotta roofs, disciplined square courtyard. MONGOL ivory felt yurts with dark timber structures and cobalt decoration, dignified capital compound in historically plausible nomad timber-and-stone form; no enormous domed Persian palace. PERSIAN cream sandstone, warm adobe, turquoise blue glazed ornaments, elegant columned halls, carved winged lion gateposts. TANG CHINESE cream plaster and red timber, gray curved tiled roofs with upturned eaves, ordered courtyard architecture. OTTOMAN warm limestone and plaster, orange tile roofs, teal domes, arcaded square courtyard, restrained Ottoman ornament. Photorealistic fine material detail, earthy restrained colors and clean silhouette, sophisticated historical miniature game art; not painterly blur, not vectors.\nAll five sprites are AGE III IMPERIAL CAPITAL COMPOUNDS, magnificent, WIDE, rich and impressive, yet compact on a perfect square pad. This is visibly larger and more sophisticated than a provincial towncenter: fortress-quality enclosing stone perimeter, FOUR distinct corner towers, an ornate front-right ceremonial roofed gateway, large main administrative palace at rear, TWO long colonnaded or roofed side wings wrapping around a broad open paved square courtyard, additional small pavilion and culturally appropriate central fountain or ceremonial brazier. The open COURTYARD must occupy about ONE THIRD of pad interior so the result reads as a broad enclosed complex, not one tall solitary monument. Main building height below half the compoundwidth; horizontal expansion is the priority. Mainhall rear and sidewings form a horseshoe around court, tower/wall enclosure entirely inside pad.\nROMAN impressive ivory limestone classical civic palace and long redtile colonnaded wings, ornate stone gate, redtile cornerwatchtowers and courtyardfountain. MONGOL dignified imperial nomadcapital with huge decorated ivoryfelt main ger on a masonry plinth, two smaller felt gers, roofed timber log wings and strongstonepalisadeenclosure with wooden towercrowns, cobalttrimandcentralbrazier. PERSIAN grand cream sandstone and turquoise imperial columned hall, tallbutnotexcessivecarvedwingedliongate, longarcadedpalacesidewings, blueglazedwallbands, fountainandgardenbeds. TANG large triple-roofed redwood administrativehall, sweeping darkgray Chinese tiled sidehalls and gates, four square stonecorner towers with Chinese roofs, ornatebronzecenserinopencourt. OTTOMAN magnificent broad creamstone imperialdomedhall, teal main and smalldomes, orange-tiled arcadedwings, ornatearchedgateway, cornerminitowers andcourtyardfountain. Do not make Ottoman a religiousmosque minaretforest. Fullyoriginalarchitecture, natural detailed historicalrealism.",
+      "reason": "Compound source front-corner skew; regenerated with explicit per-cell diamond coordinates."
+    },
+    {
+      "key": "buildingV6Age3D",
+      "file": "buildings-v6-age3-d.png",
+      "cols": 5,
+      "rows": 1,
+      "count": 5,
+      "types": [
+        "stonewall"
+      ],
+      "age": 3,
+      "original": "generation-record:exec-3dedadd9-f388-4dbd-8663-0601ce0ac6a9.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape canvas with just ONE HORIZONTAL ROW of EXACTLY FIVE detached AGE III STONE WALL SEGMENT sprites, centered vertically with generous completely transparent space above/below. Column civilization order specified. These are compact straight walls running along the down-right isometric axis on their own exact2:1diamondpad, NOgateopenings. Strong dressed-stone defensewall, threeclearmerlons, visiblewalkingledge, smallbutfinelycrafted culturalcapdetails. Roman paleashlarwallredtile copingandredcrestshield; Mongolheavygraystonewalltimbercapandbluecloth; Persiancreamstonewallturquoiseglazedband; TanggraystonewallanddarkgrayChinese tilecoping; Ottomancreamstonewallorange/tealcapandcarvedcrescentdetail. Not a fortress or tower, just a straight shortwallsegment. Genuineadvancedarchitecture differs fromplainageIIstonewall. Occupy70%cellwidth; truealpha aroundall5objects.",
+      "reason": "Negligible alpha edge fringe; built-in imagegen cleanup retained all architectural geometry."
+    }
+  ],
+  "scope": "Distinct complete town-center compounds per age, all five civilizations.",
+  "civilizations": [
+    "roman",
+    "mongol",
+    "persian",
+    "tang",
+    "ottoman"
+  ],
+  "visibleFootprintSizes": [
+    4,
+    5,
+    6
+  ],
+  "reservedEngineSize": 8,
+  "banner": {
+    "position": "Beside front-right pad tip; pole and cloth ground span stay inside 8-tile reservation.",
+    "culturalMotifs": {
+      "roman": "Eagle with laurel leaves",
+      "mongol": "Horse-head standard",
+      "persian": "Winged eight-point star",
+      "tang": "Layered pagoda roof",
+      "ottoman": "Crescent and star"
+    },
+    "team": "Small separate border stripe, architecture colors preserved."
+  },
+  "atlases": [
+    {
+      "key": "tcCompoundV6Age1",
+      "file": "building-centers-v6-age1.png",
+      "cols": 3,
+      "rows": 2,
+      "count": 5,
+      "types": [
+        "towncenter"
+      ],
+      "age": 1,
+      "original": "public/art/building-centers-v6-age1.png",
+      "prompt": "Create five ORIGINAL spectacular historical 2D RTS TOWN CENTER sprites on one production atlas. Highly realistic miniature 3D-rendered masonry, beautiful tile roofs, timber, fine stone carving, natural upper-left daylight. Clean TRUE ALPHA transparent cutouts; no backdrop, labels, scenery, people, animals or watermarks. The canvas is 1536x1024 landscape, a precise THREE COLUMN by TWO ROW layout of square 512x512 cells. Five separate compounds; sixth bottom-right cell COMPLETELY EMPTY AND TRANSPARENT. Order: top-left ROMAN, top-middle MONGOL, top-right PERSIAN; bottom-left TANG CHINESE, bottom-middle OTTOMAN.\nCritical orthographic camera: equal left and right views, canonical ground edges slope exactly +1/2 and -1/2, vertical columns perfectly upright. Every compound stands on a single thin SQUARE foundation, a symmetrical exact 2:1 diamond; left/right corners equal y, front/back tips vertically aligned at pad center x, no rectangular perspective bases. The pad must be the whole compound boundary, so all enclosing walls, corner towers, wings and architectural props sit fully INSIDE the diamond. One detached compound per cell, safely below 82% width and height; large transparent gutters. No extra flags, because a separately drawn faction banner will be placed beside it. All roofs, walls, steps fully within cell. No tall foundations, no giant staircase hanging beyond front corner.\nCivilization architecture: ROMAN warm ivory limestone and classical columns, red terracotta roofs, disciplined square courtyard. MONGOL ivory felt yurts with dark timber structures and cobalt decoration, dignified capital compound in historically plausible nomad timber-and-stone form; no enormous domed Persian palace. PERSIAN cream sandstone, warm adobe, turquoise blue glazed ornaments, elegant columned halls, carved winged lion gateposts. TANG CHINESE cream plaster and red timber, gray curved tiled roofs with upturned eaves, ordered courtyard architecture. OTTOMAN warm limestone and plaster, orange tile roofs, teal domes, arcaded square courtyard, restrained Ottoman ornament. Photorealistic fine material detail, earthy restrained colors and clean silhouette, sophisticated historical miniature game art; not painterly blur, not vectors.\nAll five sprites are AGE I simple frontier headquarters: a main administrative hall and just one small low service hut inside a modest bare courtyard. TC Roman small single redtile civic hall with 4 wood columns; Mongol large cream felt ger with smaller felt tent and timber gate; Persian adobe hall with timber pergola, tiny storeroom; Tang single red wooden hall with simple gray roof and tiny timber annex; Ottoman simple plaster orange-tile civic hall with timber awning. Low simple timber fences just on rear two pad edges, leaving front open. No massive stone fortifications or golden imperial architecture yet. Keep building height modest. Every main hall visually reads as a town center.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c19705d0df8dac3a2d2248ad4a2979f1c83cc8cd26cf5eea8f04bc35b435f3b8",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 1008708,
+        "partial": 67371,
+        "solid": 496785
+      },
+      "frames": [
+        {
+          "type": "towncenter",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            25,
+            65,
+            484,
+            399
+          ],
+          "foundation": [
+            5,
+            243,
+            477,
+            243,
+            240,
+            392
+          ],
+          "frontSkewSourcePx": -1,
+          "leftRightYDifference": 0,
+          "ratio": 1.5838926174496644,
+          "fittedFoundation": [
+            5,
+            243,
+            477,
+            243,
+            241,
+            392
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              652,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "roman",
+              "baseCSS": [
+                138,
+                5.12
+              ],
+              "heightCSS": 64,
+              "clothWidthCSS": 24,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            523,
+            66,
+            488,
+            402
+          ],
+          "foundation": [
+            6,
+            242,
+            481,
+            242,
+            243.5,
+            396
+          ],
+          "frontSkewSourcePx": 0,
+          "leftRightYDifference": 0,
+          "ratio": 1.5422077922077921,
+          "fittedFoundation": [
+            6,
+            242,
+            481,
+            242,
+            243.5,
+            396
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              652,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "mongol",
+              "baseCSS": [
+                138,
+                5.12
+              ],
+              "heightCSS": 64,
+              "clothWidthCSS": 24,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            1029,
+            60,
+            487,
+            408
+          ],
+          "foundation": [
+            5,
+            251,
+            481,
+            251,
+            244.5,
+            401
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.5866666666666667,
+          "fittedFoundation": [
+            5,
+            251,
+            481,
+            251,
+            243,
+            401
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              652,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "persian",
+              "baseCSS": [
+                138,
+                5.12
+              ],
+              "heightCSS": 64,
+              "clothWidthCSS": 24,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            24,
+            565,
+            486,
+            400
+          ],
+          "foundation": [
+            6,
+            245,
+            479,
+            242,
+            241,
+            394
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": -3,
+          "ratio": 1.5714285714285714,
+          "fittedFoundation": [
+            6,
+            243.5,
+            479,
+            243.5,
+            242.5,
+            394
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              652,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "tang",
+              "baseCSS": [
+                138,
+                5.12
+              ],
+              "heightCSS": 64,
+              "clothWidthCSS": 24,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            531,
+            559,
+            480,
+            404
+          ],
+          "foundation": [
+            6,
+            247,
+            474,
+            245,
+            239.5,
+            397
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": -2,
+          "ratio": 1.5496688741721854,
+          "fittedFoundation": [
+            6,
+            246,
+            474,
+            246,
+            240,
+            397
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              652,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                0,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "ottoman",
+              "baseCSS": [
+                138,
+                5.12
+              ],
+              "heightCSS": 64,
+              "clothWidthCSS": 24,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "tcCompoundV6Age2",
+      "file": "building-centers-v6-age2.png",
+      "cols": 3,
+      "rows": 2,
+      "count": 5,
+      "types": [
+        "towncenter"
+      ],
+      "age": 2,
+      "original": "public/art/building-centers-v6-age2.png",
+      "prompt": "Create an original production historical RTS game SPRITE ATLAS, transparent PNG, 1536x1024 landscape. EXACTLY five complete town-center compound sprites in a THREE-column by TWO-row grid, each512x512cell. Sixth bottom-right cell empty transparent. No captions or lines. Semi-realistic historical architecture with very detailed roof tiles, weathered plaster and masonry, wood joints and textile folds. Upper-left daylight, all vertical walls perfectly vertical.\nMANDATORY EXACT FOUNDATION GEOMETRY: Every compound has one thin flat SQUARE ground floor projected as a PERFECT SYMMETRIC 2:1 DIAMOND, width420px, height210px. Within each512x512cell floor vertices are top=(256,256), right=(466,361), bottom=(256,466), left=(46,361). Left/right corners MUST share EXACTLY y361, front/back tips MUST be x256. Orthographic45degree azimuth equal visible side-lengths; projected floor axes slopes exactly PLUS1/2 and MINUS1/2. Never perspective or oblique rectangular floor, never skewedcamera. Reproduce those exactvertexpositions. Basecorner atbottom x256MUSTclearlyvisible. All towerfeet, gatewayand stairs stay INSIDE diamond. No scenery trees outsidefloor, no thick terrainisland, no raisedplatformblock. Only thin flatdiamond paving. Clearly visible floor corners not obscured or extended by gatewaystairs. Buildings mustsit correctlyon this exactfloor andalign their ground edges with diamondslopes. All architecture inside84%cellwidth and90%cellheight, fullroofvisible and atleas40pxtransparentroofmargin.\nGrid civilization order: top-left Roman, top-middle Mongol, top-right Persian, bottom-left Tang Chinese, bottom-middle Ottoman. EachcontainsONEcompleteenclosedcompound withopen courtyardoccupying one thirdfloor, mainhallatbackcenter, sidewingsatbackleft andbackright, lowwalls aroundfloor, gatewayinCENTERoffrontrightside(NOT atthebottomcorner), architecture mostlybehindfrontfloor. Buildingsdo nothave banners.\nRoman ivorylimestoneandwarmplaster,classicalcolumns,redterracottatileroofs. Mongol creamfeltyurts,qualitydarktimber,cobalttrim,historicallyplausibletimberstonefortification. Persian creamsandstoneflat-roofcolumnedhalls, turquoiseglazedtrim, carvedliongateway. Tang redwoodhalls,darkgraycurvedtiledroofs,creamplasterwalls,Chinese tiledgateway. Ottoman creamstonearcades,orangetileroofsandtealdomes,plausibletowncenter notreligiousmosque.\nNOpeople,animals,distant scenery,text,numbers,captions,watermarks,logos,commonfloor,opaquebackground. TRUEtransparentalpha everywhereoutsideindividualcompounddiamond silhouettes. Sophisticatedoriginalhistoricalgameart, notplastictoy, notflatvector, notblurrydrawing.\nAGE II: medium provincial compound. Mainhall modestmediumsize, two roofedservicewings, simple lowenclosingwalls withFOURlowcornerposts(only50pxhigh), restrainedroofedgateway. Roman hall withcolumnsandredtiles; Mongol maincreamfeltgerwithtwo smallgersandtimberpalings; Persiancreamstonecolumnedhallwithsimpleturquoisetrimandsmalladobewings; Tang single-storygrayroofedredwoodhallandtwoannexes; Ottoman smalltealdomemasonryhallwithorangedtiledsidewings. Courtyardplainpavedwithsmallcentralbasin/brazier. Moderate detail, clearly secondagearchitecture. Mainroofmustnotexceeduppery70withinitscell. Widecompound ratherthan onesolitarytower.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "870c00e258626237c378d1cd6e6cc0a5fa44c300b9581c2e91f6668fef334ef8",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 988333,
+        "partial": 38652,
+        "solid": 545879
+      },
+      "frames": [
+        {
+          "type": "towncenter",
+          "civ": "roman",
+          "age": 2,
+          "frame": [
+            8,
+            98,
+            500,
+            376
+          ],
+          "foundation": [
+            6,
+            227,
+            493,
+            232,
+            248.5,
+            369
+          ],
+          "frontSkewSourcePx": -1,
+          "leftRightYDifference": 5,
+          "ratio": 1.7455197132616487,
+          "fittedFoundation": [
+            6,
+            229.5,
+            493,
+            229.5,
+            249.5,
+            369
+          ],
+          "runtime": {
+            "visibleSize": 5,
+            "canvasPixels": [
+              776,
+              564
+            ],
+            "anchorPixels": [
+              352,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -80
+              ],
+              [
+                160,
+                0
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                -160,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "roman",
+              "baseCSS": [
+                170,
+                6.4
+              ],
+              "heightCSS": 80,
+              "clothWidthCSS": 30,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "mongol",
+          "age": 2,
+          "frame": [
+            517,
+            87,
+            503,
+            391
+          ],
+          "foundation": [
+            5,
+            243,
+            496,
+            245,
+            250,
+            385
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 2,
+          "ratio": 1.7411347517730495,
+          "fittedFoundation": [
+            5,
+            244,
+            496,
+            244,
+            250.5,
+            385
+          ],
+          "runtime": {
+            "visibleSize": 5,
+            "canvasPixels": [
+              776,
+              562
+            ],
+            "anchorPixels": [
+              352,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -80
+              ],
+              [
+                160,
+                0
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                -160,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "mongol",
+              "baseCSS": [
+                170,
+                6.4
+              ],
+              "heightCSS": 80,
+              "clothWidthCSS": 30,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "persian",
+          "age": 2,
+          "frame": [
+            1027,
+            101,
+            499,
+            375
+          ],
+          "foundation": [
+            6,
+            224,
+            492,
+            228,
+            245,
+            368
+          ],
+          "frontSkewSourcePx": -4,
+          "leftRightYDifference": 4,
+          "ratio": 1.7112676056338028,
+          "fittedFoundation": [
+            6,
+            226,
+            492,
+            226,
+            249,
+            368
+          ],
+          "runtime": {
+            "visibleSize": 5,
+            "canvasPixels": [
+              776,
+              562
+            ],
+            "anchorPixels": [
+              352,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -80
+              ],
+              [
+                160,
+                0
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                -160,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "persian",
+              "baseCSS": [
+                170,
+                6.4
+              ],
+              "heightCSS": 80,
+              "clothWidthCSS": 30,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "tang",
+          "age": 2,
+          "frame": [
+            10,
+            560,
+            496,
+            396
+          ],
+          "foundation": [
+            6,
+            242,
+            489,
+            246,
+            247,
+            389
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 4,
+          "ratio": 1.6655172413793105,
+          "fittedFoundation": [
+            6,
+            244,
+            489,
+            244,
+            247.5,
+            389
+          ],
+          "runtime": {
+            "visibleSize": 5,
+            "canvasPixels": [
+              776,
+              562
+            ],
+            "anchorPixels": [
+              352,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -80
+              ],
+              [
+                160,
+                0
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                -160,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "tang",
+              "baseCSS": [
+                170,
+                6.4
+              ],
+              "heightCSS": 80,
+              "clothWidthCSS": 30,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "ottoman",
+          "age": 2,
+          "frame": [
+            519,
+            537,
+            499,
+            421
+          ],
+          "foundation": [
+            6,
+            266,
+            492,
+            269,
+            247,
+            414
+          ],
+          "frontSkewSourcePx": -2,
+          "leftRightYDifference": 3,
+          "ratio": 1.658703071672355,
+          "fittedFoundation": [
+            6,
+            267.5,
+            492,
+            267.5,
+            249,
+            414
+          ],
+          "runtime": {
+            "visibleSize": 5,
+            "canvasPixels": [
+              776,
+              562
+            ],
+            "anchorPixels": [
+              352,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -80
+              ],
+              [
+                160,
+                0
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                -160,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "ottoman",
+              "baseCSS": [
+                170,
+                6.4
+              ],
+              "heightCSS": 80,
+              "clothWidthCSS": 30,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "tcCompoundV6Age3",
+      "file": "building-centers-v6-age3.png",
+      "cols": 3,
+      "rows": 2,
+      "count": 5,
+      "types": [
+        "towncenter"
+      ],
+      "age": 3,
+      "original": "public/art/building-centers-v6-age3.png",
+      "prompt": "Create an original production historical RTS game SPRITE ATLAS, transparent PNG, 1536x1024 landscape. EXACTLY five complete town-center compound sprites in a THREE-column by TWO-row grid, each512x512cell. Sixth bottom-right cell empty transparent. No captions or lines. Semi-realistic historical architecture with very detailed roof tiles, weathered plaster and masonry, wood joints and textile folds. Upper-left daylight, all vertical walls perfectly vertical.\nMANDATORY EXACT FOUNDATION GEOMETRY: Every compound has one thin flat SQUARE ground floor projected as a PERFECT SYMMETRIC 2:1 DIAMOND, width420px, height210px. Within each512x512cell floor vertices are top=(256,256), right=(466,361), bottom=(256,466), left=(46,361). Left/right corners MUST share EXACTLY y361, front/back tips MUST be x256. Orthographic45degree azimuth equal visible side-lengths; projected floor axes slopes exactly PLUS1/2 and MINUS1/2. Never perspective or oblique rectangular floor, never skewedcamera. Reproduce those exactvertexpositions. Basecorner atbottom x256MUSTclearlyvisible. All towerfeet, gatewayand stairs stay INSIDE diamond. No scenery trees outsidefloor, no thick terrainisland, no raisedplatformblock. Only thin flatdiamond paving. Clearly visible floor corners not obscured or extended by gatewaystairs. Buildings mustsit correctlyon this exactfloor andalign their ground edges with diamondslopes. All architecture inside84%cellwidth and90%cellheight, fullroofvisible and atleas40pxtransparentroofmargin.\nGrid civilization order: top-left Roman, top-middle Mongol, top-right Persian, bottom-left Tang Chinese, bottom-middle Ottoman. EachcontainsONEcompleteenclosedcompound withopen courtyardoccupying one thirdfloor, mainhallatbackcenter, sidewingsatbackleft andbackright, lowwalls aroundfloor, gatewayinCENTERoffrontrightside(NOT atthebottomcorner), architecture mostlybehindfrontfloor. Buildingsdo nothave banners.\nRoman ivorylimestoneandwarmplaster,classicalcolumns,redterracottatileroofs. Mongol creamfeltyurts,qualitydarktimber,cobalttrim,historicallyplausibletimberstonefortification. Persian creamsandstoneflat-roofcolumnedhalls, turquoiseglazedtrim, carvedliongateway. Tang redwoodhalls,darkgraycurvedtiledroofs,creamplasterwalls,Chinese tiledgateway. Ottoman creamstonearcades,orangetileroofsandtealdomes,plausibletowncenter notreligiousmosque.\nNOpeople,animals,distant scenery,text,numbers,captions,watermarks,logos,commonfloor,opaquebackground. TRUEtransparentalpha everywhereoutsideindividualcompounddiamond silhouettes. Sophisticatedoriginalhistoricalgameart, notplastictoy, notflatvector, notblurrydrawing.\nAGE III: magnificent wide imperial capital. Grandmainpalaceathallbackcenter, longarcadedsidewings wrappingbackhalf oflargeopenpavedcourt, strongcarvedstoneperimeterandfourcornerwatchtowers, ornateceremonialfront-rightgateway, fountain/bronzecenser center, two tinygardenbedsinsidecourtyard. Mainpalaceroofheightnotexceed250pxfromfoundation, sourcey60minimum; broadhorizontalexpansionpriority. Romanclassicalcolumnedpalacewithredtilesandcolonnadedwings; Mongolimperialcreamfeltmain gerwithgoldblueembroideryonlowstoneplinth, twofeltsidegers, longtimberlogwings andstonewallswithtimbertowercrowns; Persiangrandcreamstoneflat-roofedcolumnedpalace, turquoiseglazedbands, wingedliongatepostsINSIDEfloor; Tanggrandreduwoodtwo-tiergray-roofhall,sweepingroofedwings, tiledgatewayandfourChinesecornerroofwatchtowers; Ottomanbroadtealdomehall,longorange-tiledarcadedsidewings,tealdomegateway,modestdomedcornertowers. Alltowerandwallfeetmustfollowfixedperfectsquarepadcorners. The OPENcourt takes1/3floor. Trulyimpressivecompoundnotmerelytallmainhall.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8118c52b94353c4b4232a7af0dc4590a377afc247abb35de3744b6d131a643bb",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 983967,
+        "partial": 45009,
+        "solid": 543888
+      },
+      "frames": [
+        {
+          "type": "towncenter",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            0,
+            70,
+            521,
+            401
+          ],
+          "foundation": [
+            4,
+            232,
+            514,
+            233,
+            256.5,
+            395
+          ],
+          "frontSkewSourcePx": -2.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.5692307692307692,
+          "fittedFoundation": [
+            4,
+            232.5,
+            514,
+            232.5,
+            259,
+            395
+          ],
+          "runtime": {
+            "visibleSize": 6,
+            "canvasPixels": [
+              912,
+              594
+            ],
+            "anchorPixels": [
+              416,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -96.00000000000001
+              ],
+              [
+                192,
+                0
+              ],
+              [
+                0,
+                96.00000000000001
+              ],
+              [
+                -192,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "roman",
+              "baseCSS": [
+                202,
+                7.68
+              ],
+              "heightCSS": 94,
+              "clothWidthCSS": 34,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            519,
+            87,
+            500,
+            384
+          ],
+          "foundation": [
+            5,
+            215,
+            494,
+            217,
+            249,
+            378
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 2,
+          "ratio": 1.5092592592592593,
+          "fittedFoundation": [
+            5,
+            216,
+            494,
+            216,
+            249.5,
+            378
+          ],
+          "runtime": {
+            "visibleSize": 6,
+            "canvasPixels": [
+              912,
+              594
+            ],
+            "anchorPixels": [
+              416,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -96
+              ],
+              [
+                192,
+                0
+              ],
+              [
+                0,
+                96
+              ],
+              [
+                -192,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "mongol",
+              "baseCSS": [
+                202,
+                7.68
+              ],
+              "heightCSS": 94,
+              "clothWidthCSS": 34,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            1016,
+            91,
+            516,
+            381
+          ],
+          "foundation": [
+            5,
+            213,
+            509,
+            214,
+            248,
+            374
+          ],
+          "frontSkewSourcePx": -9,
+          "leftRightYDifference": 1,
+          "ratio": 1.5700934579439252,
+          "fittedFoundation": [
+            5,
+            213.5,
+            509,
+            213.5,
+            257,
+            374
+          ],
+          "runtime": {
+            "visibleSize": 6,
+            "canvasPixels": [
+              912,
+              596
+            ],
+            "anchorPixels": [
+              416,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -95.99999999999999
+              ],
+              [
+                192,
+                0
+              ],
+              [
+                0,
+                95.99999999999999
+              ],
+              [
+                -192,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "persian",
+              "baseCSS": [
+                202,
+                7.68
+              ],
+              "heightCSS": 94,
+              "clothWidthCSS": 34,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            0,
+            534,
+            523,
+            406
+          ],
+          "foundation": [
+            5,
+            229,
+            517,
+            229,
+            260,
+            400
+          ],
+          "frontSkewSourcePx": -1,
+          "leftRightYDifference": 0,
+          "ratio": 1.4970760233918128,
+          "fittedFoundation": [
+            5,
+            229,
+            517,
+            229,
+            261,
+            400
+          ],
+          "runtime": {
+            "visibleSize": 6,
+            "canvasPixels": [
+              912,
+              594
+            ],
+            "anchorPixels": [
+              416,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -96
+              ],
+              [
+                192,
+                0
+              ],
+              [
+                0,
+                96
+              ],
+              [
+                -192,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "tang",
+              "baseCSS": [
+                202,
+                7.68
+              ],
+              "heightCSS": 94,
+              "clothWidthCSS": 34,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        },
+        {
+          "type": "towncenter",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            519,
+            538,
+            500,
+            402
+          ],
+          "foundation": [
+            6,
+            231,
+            493,
+            233,
+            249.5,
+            396
+          ],
+          "frontSkewSourcePx": 0,
+          "leftRightYDifference": 2,
+          "ratio": 1.4847560975609757,
+          "fittedFoundation": [
+            6,
+            232,
+            493,
+            232,
+            249.5,
+            396
+          ],
+          "runtime": {
+            "visibleSize": 6,
+            "canvasPixels": [
+              914,
+              594
+            ],
+            "anchorPixels": [
+              418,
+              370
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -96
+              ],
+              [
+                192,
+                0
+              ],
+              [
+                0,
+                96
+              ],
+              [
+                -192,
+                0
+              ]
+            ],
+            "pixelRatio": 2,
+            "banner": {
+              "civ": "ottoman",
+              "baseCSS": [
+                202,
+                7.68
+              ],
+              "heightCSS": 94,
+              "clothWidthCSS": 34,
+              "reservationSize": 8,
+              "withinReservation": true
+            }
+          }
+        }
+      ],
+      "sourcePreserved": true
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

@@ -1,0 +1,306 @@
+{
+  "version": 8,
+  "date": "2026-10-10",
+  "generator": "OpenAI built-in image_gen",
+  "source": "public/art/daiviet-v8-buildings-age3.png",
+  "file": "/art/daiviet-v8-buildings-age3.png",
+  "prompt": "Use case: historical-scene. Asset: ONE cohesive sprite ATLAS for ALL SEVENTEEN age III Dai Viet buildings of an isometric RTS. Generate all models together in this single image with exactly the SAME art direction, materials, palette, detail density, camera and lighting. This atlas replaces separate mismatched town hall/fortress/gate/walls images.\nInputs: image1 is PRIMARY style and palette reference (existing game's nine Dai Viet models). Image2 supplies ONLY the approved town hall architecture: preserve its two tier curved roof, column bays, low stone plinth/red brick courtyard and compact three-lane stair with two stone Ly dragon dividers. Image3 supplies citadel gate architecture. Image4 supplies flag-tower architecture; replace the modern star flag with the game's crimson GOLDEN DRAGON banner.\nCOMMON STYLE LOCK for EVERY cell: restrained detailed historical RTS miniature painting, aged olive-jade green clay roofs, weathered red-brown wooden columns (#793c2a), warm grey fitted stone (#928577), desaturated terracotta brick (#97664b), subdued antique brass trim (#ac8b52). Soft diffuse daylight from upper left, medium low contrast, consistent natural weathering and texture. Match image1 closely. NO glossy cyan roofs, neon red columns, bright polished gold, toy-like highlights or differing lighting across cells. Stone citadel and flag tower share the same masonry palette. Other red tile roofs are subdued aged terracotta.\nGRID: FOUR columns by FIVE rows, uniform equal cells, transparent gutters at least6 percent each cell. Exactly ONE COMPLETE isolated model in each occupied cell, no overlap. All models same isometric camera, vertical walls, square 2:1 ground diamonds, front and left faces visible. No text or labels. Large high detail atlas, preferably2048x2560 or higher.\nEXACT row-major order:\nRow1: (1) large tall TOWN CENTER with the unchanged double-tier architecture above, ceremonial dragon ornaments restrained in size, small three-lane stone dragon stairs, low grey stone platform and red brick court; (2) two-storey HOUSE; (3) LUMBER CAMP with stacked logs/workbench; (4) MINING CAMP with mine carts, ore and winch.\nRow2: (5) raised GRANARY with food sacks; (6) irrigated wet RICE FIELD with ripe rice, water channels and bamboo water wheel; (7) BARRACKS with racks of spears/shields, two-tier red-brown hall; (8) STABLE with visible horses.\nRow3: (9) ARCHERY RANGE with circular targets; (10) MARKET with awnings and produce; (11) SIEGE WORKSHOP with brass cannon, timber benches and small forge chimney; (12) FLAG TOWER adapted from image4, three receding stone/brick terraces, tall tapered octagonal shaft, observation chamber and clearly visible crimson gold-dragon flag, NO yellow star.\nRow4: (13) sturdy WOOD PALISADE section; (14) WOOD GATE with double timber doors between palisade posts; (15) STONE WALL section, heavy aged grey block masonry, stepped parapet/merlons, distinctly crafted citadel wall matching the gate rather than a plain beige placeholder; (16) broad imposing CITADEL GATE from image3, five large lower arched portals and ochre gatehouse with double curved tile roof above, short wall returns.\nRow5: (17) large imposing FORTRESS with wide heavy high stone bastions, substantial double-tier olive-green roofed command hall, parapet and crimson dragon banners, visibly strong mass; remaining THREE cells totally empty/transparent.\nTown hall and fortress must be substantially more imposing than the ordinary houses, not tiny ornaments on oversized foundations. Citadel gate must have legible large archways and tower; it will occupy3 ground tiles versus1 tile wall segments. Fortress will occupy5 tiles, town hall6, ordinary buildings2/3. Keep each model inside its cell; do not fake source size by cutting roofs or sprawling beyond cell. Consistent architecture through all17.\nTRUE PNG alpha0 outside models and gutters. No global background, glow, ground terrain, scene, people, UI, text, watermark, surrounding decorative panels. All roof ornaments, banners, bases and machinery fully uncropped.",
+  "sourceBytesUnchanged": true,
+  "sha256": "d8f926ba700397e15840e1d927d8b2628d2268ba47603baa245ee0a08f13d00b",
+  "bytes": 2536269,
+  "dimensions": [
+    1122,
+    1402
+  ],
+  "modelOrder": [
+    "towncenter",
+    "house",
+    "lumbercamp",
+    "miningcamp",
+    "granary",
+    "farm",
+    "barracks",
+    "stable",
+    "range",
+    "market",
+    "workshop",
+    "tower",
+    "woodwall",
+    "woodgate",
+    "stonewall",
+    "stonegate",
+    "fortress"
+  ],
+  "frames": [
+    [
+      4,
+      13,
+      316,
+      292
+    ],
+    [
+      320,
+      43,
+      242,
+      252
+    ],
+    [
+      562,
+      69,
+      265,
+      232
+    ],
+    [
+      826,
+      74,
+      295,
+      233
+    ],
+    [
+      13,
+      309,
+      265,
+      260
+    ],
+    [
+      277,
+      348,
+      276,
+      214
+    ],
+    [
+      549,
+      307,
+      278,
+      263
+    ],
+    [
+      825,
+      311,
+      295,
+      261
+    ],
+    [
+      4,
+      586,
+      283,
+      259
+    ],
+    [
+      286,
+      582,
+      283,
+      257
+    ],
+    [
+      566,
+      590,
+      286,
+      251
+    ],
+    [
+      874,
+      547,
+      233,
+      319
+    ],
+    [
+      7,
+      868,
+      254,
+      221
+    ],
+    [
+      255,
+      863,
+      310,
+      223
+    ],
+    [
+      560,
+      861,
+      231,
+      223
+    ],
+    [
+      794,
+      871,
+      326,
+      201
+    ],
+    [
+      5,
+      1075,
+      429,
+      311
+    ]
+  ],
+  "foundations": [
+    [
+      3,
+      221,
+      312,
+      210,
+      130.5,
+      289
+    ],
+    [
+      3,
+      194,
+      238,
+      187,
+      107,
+      248
+    ],
+    [
+      3,
+      163,
+      261,
+      166,
+      127.5,
+      228
+    ],
+    [
+      3,
+      155,
+      292,
+      163,
+      148,
+      230
+    ],
+    [
+      2,
+      193,
+      261,
+      193,
+      128.5,
+      256
+    ],
+    [
+      2,
+      144,
+      271,
+      144,
+      127,
+      210
+    ],
+    [
+      3,
+      195,
+      275,
+      190,
+      126.5,
+      259
+    ],
+    [
+      3,
+      187,
+      292,
+      187,
+      139,
+      258
+    ],
+    [
+      2,
+      186,
+      280,
+      186,
+      129.5,
+      255
+    ],
+    [
+      3,
+      191,
+      277,
+      182,
+      122,
+      253
+    ],
+    [
+      3,
+      175,
+      282,
+      181,
+      138.5,
+      248
+    ],
+    [
+      3,
+      254,
+      229,
+      266,
+      120,
+      316
+    ],
+    [
+      2,
+      195,
+      251,
+      144,
+      37,
+      217
+    ],
+    [
+      3,
+      198,
+      297,
+      145,
+      41,
+      219
+    ],
+    [
+      3,
+      202,
+      227,
+      155,
+      30,
+      219
+    ],
+    [
+      3,
+      175,
+      322,
+      143,
+      27,
+      197
+    ],
+    [
+      3,
+      234,
+      425,
+      240,
+      145.5,
+      307
+    ]
+  ],
+  "measurementMethod": "Opaque alpha threshold180 lower-platform corners in the largest connected silhouette of each crop; excludes neighboring atlas fragments. PNG source pixels unchanged.",
+  "references": [
+    {
+      "file": "/art/daiviet-v3-buildings-secondary-age3.png",
+      "role": "shared style and palette"
+    },
+    {
+      "file": "/art/daiviet-v6-buildings-towncenter-age3.png",
+      "role": "town hall architecture"
+    }
+  ],
+  "precedingManifest": "/art/daiviet-v7.manifest.json",
+  "animationManifest": "/art/daiviet-v5.manifest.json",
+  "runtime": {
+    "age3Sheet": "buildings-unified-age3",
+    "decodedSheets": 15,
+    "authoredFrames": 222,
+    "emblemPNGs": 1,
+    "walkingStages": 12,
+    "footprints": {
+      "towncenter": 6,
+      "fortress": 5,
+      "stonegate": 3,
+      "stonewall": 1
+    },
+    "historicalSheetsRetained": true
+  },
+  "runtimeProjection": "One uniform width-derived scale for both axes preserves the source atlas camera and proportions. Measured left/right foundation corners anchor the model; an independent logical diamond reserves the civilization-specific construction/collision grid, including thin walls and the broad gate.",
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

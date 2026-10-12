@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "generator": "OpenAI built-in image_gen",
+  "file": "terrain-v3.png",
+  "createdOn": "2026-10-09",
+  "sha256": "585e147a6acc17e0c9bb7b377945247280f7c926d07f93517513394205018237",
+  "pixelDimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "layout": {
+    "columns": 2,
+    "rows": 2,
+    "cell": 627,
+    "materials": [
+      "meadow",
+      "dirt",
+      "water",
+      "rock"
+    ]
+  },
+  "prompt": "Use case: stylized-concept\nAsset type: opaque texture atlas for the playable Regavo historical 2D RTS, four materials in a clean 2 by 2 square layout.\nReference images 1 and 2 are STYLE references only: the original Regavo battlefield and environment boards. Create NEW ground materials with the same natural fine-grained semirealistic painted realism, warm sun and restrained greens. This is a runtime texture atlas, not a scene screenshot.\nEach quadrant must be a flat orthographic top-down seamless square material, 512x512 requested (1024x1024 atlas total). Texture borders should match within EACH quadrant. No black gaps, grid, text, outlines, labels, symbols, buildings, humans, animals or tall plants.\nTop left: natural Mediterranean meadow turf, olive and muted green short fine grass mixed with dry straw, small exposed earth gaps, extremely small clover and occasional tiny flowers, soft varied mottling. Real fine surface detail, no plastic checkerboard, no oversized grass blades, no giant shrubs. \nTop right: worn warm beige/brown dirt and gravel road surface, fine dust, tiny rounded pebbles, irregular compacted earth, little dry grass, no road direction or borders.\nBottom left: shallow clear blue-gray river water, softly visible small riverbed pebbles, subtle current streaks and restrained foam, natural translucent water appearance, no large rocks or opaque solid blue cartoon water.\nBottom right: rugged gray-brown rocky earth, weathered small stones, coarse gravel and moss traces, natural surface for mountainous terrain.\nAll four fill their quadrant edge-to-edge. Consistent warm upper-left diffuse natural daylight. High-detail realistic painted texture appropriate at 32-64 pixels per world tile, no strong large shadows, no directional perspective, no tile diamond shapes or scenery. OPAQUE image, no transparency.",
+  "references": [
+    "src/assets/battlefield.png"
+  ],
+  "use": "Ground material patterns sampled and projected at runtime; original PNG preserved",
+  "rights": "AI output subject to applicable OpenAI terms and law, no exclusive copyright guarantee",
+  "runtime": "src/render/ground.ts",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

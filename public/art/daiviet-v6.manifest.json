@@ -1,0 +1,45 @@
+{
+  "version": 6,
+  "date": "2026-10-10",
+  "assets": [
+    {
+      "id": "buildings-towncenter-age3",
+      "version": 6,
+      "generator": "OpenAI built-in image_gen",
+      "created": "2026-10-10",
+      "source": "public/art/daiviet-v6-buildings-towncenter-age3.png",
+      "file": "/art/daiviet-v6-buildings-towncenter-age3.png",
+      "editTarget": "/art/daiviet-v5-buildings-towncenter-age3.png",
+      "originalDesign": "/art/daiviet-v1-buildings-age3.png",
+      "prompt": "Use case: precise-object-edit. Asset: a single complete transparent isometric age III Dai Viet town center.\nImage1 is the EXACT latest approved architecture to EDIT. Preserve its double tier green glazed roofs, red walls and columns, golden dragon ornaments, flag, grey stone perimeter foundation and red terracotta paving. The user requests only a smaller staircase and a significantly bigger and taller palace.\nMake these proportional edits WITHOUT changing architectural style:\n1. The front three-lane staircase is too wide and long. Reduce the entire staircase width by about35 percent and its outward projection by about25 percent, to a modest entrance proportion. Retain THREE distinct narrower tread lanes and TWO slender Ly stone dragon dividers enclosing the middle lane. Dragons shrink proportionally with the stairs. Use fewer short steps, retain low outer stair walls. A compact staircase, not a grand wide staircase.\n2. On the SAME width of the existing stone ground platform, enlarge the actual red hall and green roofs about12 percent in width, and raise the red columns/wall levels about20 percent taller. The roof should occupy a larger share of the platform. Make the palace itself tall and imposing, not by raising the plinth. SAME roof geometry/tiers, same column bays, same ornaments; no added tower, extra roof tier, wing or new style.\n3. Keep the stone plinth LOW. Courtyard stays red brick, vertical perimeter stays pale grey fitted natural stone blocks. Keep some narrow open terracotta terrace around the enlarged hall, no oversized staircase eating the forecourt.\nComplete building in SAME isometric view, centered. Keep foundation diamond true2:1; new taller hall vertical silhouette above unchanged ground size. Allow a taller canvas if needed so NO roofs, flag, stair dragons or base edges are clipped. At least4 percent transparent margin. Genuine transparent PNG alpha0 outside the building, no added ground patch, scenery, people, text, watermark, shadowed background, medallion. Same detailed RTS miniature art and restrained illumination of image1.",
+      "sha256": "2e6a7536bb6e73c147dfc2d5b0dec646b5d5f8301edb542dde99edc2ade679ce",
+      "bytes": 2754540,
+      "sourceBytesUnchanged": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "frames": [
+        [
+          77,
+          8,
+          1378,
+          1011
+        ]
+      ],
+      "foundations": [
+        [
+          4,
+          763,
+          1371,
+          742,
+          623,
+          1006
+        ]
+      ],
+      "foundationMethod": "Measured opaque lower stone-platform side corners and front tip; source coordinates relative to the full crop. Source pixels unchanged. Normalises actual ground depth rather than assuming bitmap width/4."
+    }
+  ],
+  "animationManifest": "/art/daiviet-v5.manifest.json",
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

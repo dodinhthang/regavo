@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "name": "Regavo nature resource atlas v2",
+  "createdOn": "2026-10-09",
+  "generator": "Built-in image_gen",
+  "file": "nature-v2.png",
+  "reference": {
+    "file": "src/assets/battlefield.png",
+    "role": "Original Regavo AI concept used only as style reference",
+    "sha256": "ac60212023870a450671619d7d999a76ebe4fa14d67e48f97b10407225625a08"
+  },
+  "generation": [
+    {
+      "kind": "generate",
+      "prompt": "Use case: stylized-concept\nAsset type: one production PNG RGBA game-sprite atlas, square 1024 x 1024 pixels, a 2-column by 2-row atlas with four equal 512 x 512 transparent cells and generous transparent gutters. Input image 1 is STYLE REFERENCE ONLY: the original Regavo historical battlefield concept. Generate fresh isolated natural resource assets matching its semi-realistic hand-painted historical RTS materials, not a scene or screenshot.\nPrimary request: top-left cell contains ONE mature broadleaf oak-like tree with a visibly woody natural trunk and branching structure, irregular airy green canopy composed of many small leaves. Top-right cell contains ONE low natural berry shrub with red berry clusters amid finely detailed green foliage. Bottom-left cell contains ONE compact outcrop of rough stone with restrained visible golden ore veins and gold-bearing chunks (natural mining resource, not treasure, not smooth gold bars). Bottom-right cell contains ONE compact cluster of weathered angular gray rocks.\nPerspective: consistent orthographic isometric game view, ground-plane footprint ratio 2:1, look down at approximately 30 degrees. All four sprites use warm daylight from the upper left, softly shaded lower-right sides, detailed bark, small foliage, mineral grains and stone facets. Painterly realism and natural colors, sharp clean readable silhouettes at small RTS scale; no cartoon blobs, no flat vector shading, no candy-like spherical tree canopy.\nExact atlas placement: each cell is 512x512. Each object's ground anchor is local coordinate (256,410): global centers at (256,410), (768,410), (256,922), (768,922). Center every isolated object horizontally on its cell, roots or rock base touch its ground anchor. Keep all objects wholly within their own cells; no object exceeds 80 percent of cell width or height. Tree silhouette about 350px tall x 330px wide, trunk base at local y410. Berry shrub about 190px tall x 270px wide, base at local y410. Gold outcrop about 160px tall x 285px wide, base at local y410. Gray-rock cluster about 170px tall x 295px wide, base at local y410. Include only a very light tight contact shadow directly under each object, no large cast shadow.\nBackground: genuinely transparent alpha everywhere outside these four cutout objects. No opaque background, no colored or white square, no checkerboard drawn into pixels, no ground tile, no grass or soil base, no scenery, no terrain patch. No grid lines, no cell borders, no text, no labels, no lettering, no watermark, no people, no buildings. Ensure both horizontal and vertical atlas dividing gutters are completely transparent.",
+      "output": "generation-record:exec-78c30b04-08a2-45fb-96a1-f0e9a7f96e9a.png",
+      "accepted": false,
+      "reason": "Visible objects cross the nominal 2x2 atlas dividers."
+    },
+    {
+      "kind": "layout edit",
+      "prompt": "Use case: precise-object-edit\nImage 1 is the EDIT TARGET, a transparent four-item game resource atlas. Preserve the exact natural detailed semirealistic materials and upper-left lighting of the four objects. CHANGE ONLY THE LAYOUT AND OBJECT SIZE: the first version is too large and objects cross the sprite cells.\nOutput must be a square 1024x1024 PNG with REAL TRANSPARENT ALPHA. Think of four equal invisible 512x512 quadrants. Keep a completely EMPTY TRANSPARENT horizontal corridor at y=470 to y=560 and an EMPTY TRANSPARENT vertical corridor at x=470 to x=560. No visible grid or background. Each object must stay very far from both divider corridors and image edges.\nUpper left: reduce this mature broadleaf tree to approximately 300 pixels tall and 280 pixels wide, retaining irregular canopy with many small leaves and visible natural woody trunk, centered x256, ground-root contact at y410. Entire tree must fit in rectangle x110..402 y105..430.\nUpper right: reduce this red berry bush to approximately 160 pixels tall, 235 wide, centered x768, ground contact at y410. Entire bush must fit x648..888 y235..430.\nLower left: reduce this natural gold ore outcrop to approximately 145 tall, 245 wide, centered x256, ground contact y922. Entire ore must fit x130..385 y752..940.\nLower right: reduce this gray rock cluster to approximately 150 tall, 260 wide, centered x768, ground contact y922. Entire rock cluster must fit x630..902 y752..940.\nAll four objects are isolated cutouts, no soil islands or dirt/grass platforms, only tiny soft contact shadows. Consistent ortho isometric ground footprint2:1. Preserve transparent background. No text/labels/lines/checkerboard/no borders. The large empty spaces are intentionally required atlas gutters; do not fill them or enlarge objects to use the page.",
+      "input": "First generated image above",
+      "output": "public/art/nature-v2.png",
+      "accepted": true
+    }
+  ],
+  "format": "PNG RGBA",
+  "pixelDimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "grid": {
+    "columns": 2,
+    "rows": 2,
+    "cellWidth": 627,
+    "cellHeight": 627,
+    "requestedDimensions": {
+      "width": 1024,
+      "height": 1024,
+      "cellWidth": 512,
+      "cellHeight": 512
+    },
+    "notes": "Built-in image_gen returned 1254x1254, so actual cell dimensions and source anchors below are calibrated to the returned PNG. No offline resizing, image editing, or destructive cropping was applied."
+  },
+  "alphaVerification": {
+    "hasAlpha": true,
+    "zeroAlphaPixels": 1223057,
+    "partialAlphaPixels": 349276,
+    "fullyOpaquePixels": 183,
+    "visibleAlphaThreshold": 40,
+    "dividerMarginTest": {
+      "halfWidthPixels": 20,
+      "maxAlpha": 1,
+      "nonzeroPixels": 769
+    },
+    "notes": "Visible alpha (>40/255) remains within each cell, with each object below 80% of cell width and height. Fully transparent majority; imperceptible 1/255 alpha residue is present in a few gutter pixels and is retained from the generated PNG."
+  },
+  "frames": [
+    {
+      "type": "tree",
+      "column": 0,
+      "row": 0,
+      "sourceCell": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "visibleAlphaBounds": [
+        106,
+        141,
+        540,
+        589
+      ],
+      "sourceGroundAnchor": [
+        323,
+        589
+      ],
+      "displayWidth": 118
+    },
+    {
+      "type": "berries",
+      "alias": "berry",
+      "column": 1,
+      "row": 0,
+      "sourceCell": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "visibleAlphaBounds": [
+        161,
+        378,
+        508,
+        600
+      ],
+      "sourceGroundAnchor": [
+        334.5,
+        600
+      ],
+      "displayWidth": 69
+    },
+    {
+      "type": "gold",
+      "column": 0,
+      "row": 1,
+      "sourceCell": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "visibleAlphaBounds": [
+        123,
+        324,
+        535,
+        554
+      ],
+      "sourceGroundAnchor": [
+        329,
+        554
+      ],
+      "displayWidth": 76
+    },
+    {
+      "type": "stone",
+      "column": 1,
+      "row": 1,
+      "sourceCell": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "visibleAlphaBounds": [
+        115,
+        338,
+        534,
+        560
+      ],
+      "sourceGroundAnchor": [
+        324.5,
+        560
+      ],
+      "displayWidth": 77
+    }
+  ],
+  "rendering": {
+    "canvasWidth": 146,
+    "canvasHeight": 166,
+    "anchorX": 73,
+    "anchorY": 143,
+    "method": "Canvas2D runtime sampling of each whole atlas cell, scaled to visible-width targets; source ground anchors mapped to sprite anchor. No saved cropped derivative assets."
+  },
+  "rights": {
+    "status": "AI-generated raster resource",
+    "exclusivityGuaranteed": false,
+    "publicDomainClaim": false,
+    "notes": "The applicable OpenAI terms and law govern generated-output rights. This manifest records provenance and does not certify exclusive copyright or eliminate third-party claims.",
+    "sources": [
+      "https://openai.com/policies/terms-of-use/#content",
+      "https://openai.com/policies/services-agreement/"
+    ],
+    "projectRightsFile": "../../docs/en/RIGHTS-AND-LICENSES.md"
+  },
+  "sha256": "27c1aac244fab8e5b911e10107bc99e8d41c8d895297b63b273a49e6e4929d70",
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

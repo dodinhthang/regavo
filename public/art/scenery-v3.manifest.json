@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "name": "Regavo scenery atlas v3",
+  "createdOn": "2026-10-09",
+  "generator": "Built-in image_gen",
+  "file": "scenery-v3.png",
+  "references": [
+    {
+      "file": "src/assets/battlefield.png",
+      "role": "Original project battlefield concept used only as perspective/daylight reference",
+      "sha256": "ac60212023870a450671619d7d999a76ebe4fa14d67e48f97b10407225625a08"
+    }
+  ],
+  "generation": [
+    {
+      "kind": "generate",
+      "prompt": "Use case: historical-scene\nAsset type: ONE original production scenery PNG RGBA sprite atlas for the Regavo historical isometric RTS. Image1 (environment concept) and image2(battlefield concept) are STYLE REFERENCES ONLY: natural semi-realistic painterly textures, bark, foliage, weathered stone and wood, fixed orthographic isometric camera about30degrees, warm daylight from upperleft. Create fresh isolated cutout objects; do not copy the concept's groundislands or scenery.\nExact composition: landscape2:1atlas, 4equalcolumns×2equalrows, ideally1600×800pixels, eachinvisiblecell400×400. The8objects are entirely contained in center75%of their respectivecells INCLUDINGbranches/leaves/shadows. Everycell has at least40px completely transparent border/gutter on all4sides. Do not enlarge objects to fill emptyspace. Groundpivotlocal(200,320), centeredhorizontally. No part crosses row orcolumnboundaries.\nTOPROW,lefttoright: cell1 ONE tall slenderMediterraneancypress tree, narrow upright irregular darkgreen evergreen foliage, visible woodytrunk, naturalheight285px,width120px; cell2 ONE bamboo clump with slender jointed olivegreen stalks and airy longleaf sprays,285pxhigh,220pxwide; cell3 ONE low dry natural shrub, fine interwoven twig branches, sparse graygreen tiny leaves with warm straw tips,110pxhigh,190pxwide; cell4 ONE mature leafy oak VARIATION, asymmetrical irregularcanopy with many small green leaves, leaning sturdy woodtrunk and visiblebranches, different silhouette from current resourceoak,285pxhigh,260pxwide.\nBOTTOMROW,lefttoright: cell1 ONE rocky cliff/outcrop, large weathered granitenaturalformation with rugged rounded+angular blocks, verticalcracks, sparse moss onstonefaces, rich natural stonegrain,155pxhigh,245pxwide, absolutely not flat triangles or a geometric mountain; cell2 ONE timberpalisade WALLSEGMENT consisting of8-10uprightrough sharpenedwoodposts tiedwithhorizontalcrossbeams and rope, sameconsistentisometriccamera, obliquefootprint2:1withwallalongthe lowerleft-to-upperrightgroundaxis,150pxhigh,285pxwide; cell3 ONE timberpalisade GATEENTRANCE at exactlythe same angle/material as thewall, sturdywoodpostsonbothsides, rough lintelbeam, visibleopenwalkthroughentrance, simplehistorical joinery/ropes,175pxhigh,270pxwide; cell4 ONE tiny grass+flowerclump, delicate shortwildgrassbladeswith5-8smallcream/whitewildflowers,35pxhigh,100pxwide. Grassmustremainasmallisolatedplantclump,notalawnorterrainpatch.\nAllobjects groundcenterslocal(200,320)within400cells, topsfollowtheirrequestedheight. Semi-realistic detailedgameart, naturalcrediblematerials; avoid cartooneyeballs,flatvectorregions,candycoloredfoliage,perfectroundtreecanopies,vectorclifftriangles. Keep lights/shadows coherent. Tiny tight neutral contactshadowunder eachobject only, verylowopacity, not a largecastshadow oropaquegraybase.\nREAL transparentalpha outsideobjects. No backgroundcolor, no opaqueplane, no checkerboarddrawnintopixels, no grass/soil/dirtislands underobjects, no landscape, no scenerybeyondthese8cutouts, no people, no extraobjects. No text, labels, lettering, watermark, gridlines, cellborders. Preserve broadtransparent gutters and no clipping.",
+      "output": "public/art/scenery-v3.png",
+      "accepted": true
+    }
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "requestedPixelDimensions": {
+      "width": 1600,
+      "height": 800
+    },
+    "notes": "Source PNG is unchanged. No visible alpha reaches any cell boundary. The generator exceeded requested80%cell size for several sprites; actual measured occupancy is recorded perframe. Runtime samples calibrated bounded frames and fits each display canvas.",
+    "cellWidth": 443.5,
+    "cellHeight": 443.5
+  },
+  "order": [
+    "cypress",
+    "bamboo",
+    "shrub",
+    "oak",
+    "cliff",
+    "woodwall",
+    "woodgate",
+    "grass"
+  ],
+  "rendering": {
+    "method": "Canvas2D runtime sampling of measured source frames, no saved cropped/resized/raster-edited derivatives.",
+    "sourceGeometryAlphaThreshold": 24,
+    "groundPivots": "Trees/shrub/grass calibrated from lower root/base pixels; cliff from base stones; palisade/gate from midpoint of oblique post-foot baseline. Each frame has its own ground pivot."
+  },
+  "rights": {
+    "status": "AI-generated raster scenery",
+    "exclusivityGuaranteed": false,
+    "publicDomainClaim": false,
+    "notes": "Applicable OpenAI terms and law govern output rights. Provenance records do not certify exclusive copyright or absence of third-party claims.",
+    "projectRightsFile": "../../docs/en/RIGHTS-AND-LICENSES.md",
+    "sources": [
+      "https://openai.com/policies/terms-of-use/#content",
+      "https://openai.com/policies/services-agreement/"
+    ]
+  },
+  "sha256": "73f14076c65903423c448da448b82ee66bb1b95d9cefb0130654688becac7779",
+  "pixelDimensions": {
+    "width": 1774,
+    "height": 887
+  },
+  "frames": [
+    {
+      "type": "cypress",
+      "row": 0,
+      "column": 0,
+      "sourceCell": [
+        0,
+        0,
+        443,
+        443
+      ],
+      "sourceRect": [
+        178,
+        16,
+        131,
+        424
+      ],
+      "visibleAlphaBounds": [
+        180,
+        18,
+        306,
+        437
+      ],
+      "sourceGroundAnchor": [
+        240.1,
+        433
+      ],
+      "displayScale": 0.3,
+      "displayMaxSize": [
+        54,
+        126
+      ],
+      "canvasWidth": 146,
+      "canvasHeight": 166,
+      "anchorX": 73,
+      "anchorY": 143,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.2866817155756208,
+        "heightRatio": 0.9480812641083521,
+        "requested80PercentAchieved": false
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "bamboo",
+      "row": 0,
+      "column": 1,
+      "sourceCell": [
+        443,
+        0,
+        444,
+        443
+      ],
+      "sourceRect": [
+        506,
+        31,
+        318,
+        411
+      ],
+      "visibleAlphaBounds": [
+        508,
+        33,
+        821,
+        439
+      ],
+      "sourceGroundAnchor": [
+        661.8,
+        435
+      ],
+      "displayScale": 0.289809,
+      "displayMaxSize": [
+        91,
+        124
+      ],
+      "canvasWidth": 146,
+      "canvasHeight": 166,
+      "anchorX": 73,
+      "anchorY": 143,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.7072072072072072,
+        "heightRatio": 0.9187358916478555,
+        "requested80PercentAchieved": false
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "shrub",
+      "row": 0,
+      "column": 2,
+      "sourceCell": [
+        887,
+        0,
+        443,
+        443
+      ],
+      "sourceRect": [
+        938,
+        225,
+        344,
+        216
+      ],
+      "visibleAlphaBounds": [
+        940,
+        227,
+        1279,
+        438
+      ],
+      "sourceGroundAnchor": [
+        1118.7,
+        434
+      ],
+      "displayScale": 0.212264,
+      "displayMaxSize": [
+        73,
+        45
+      ],
+      "canvasWidth": 146,
+      "canvasHeight": 166,
+      "anchorX": 73,
+      "anchorY": 143,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.7674943566591422,
+        "heightRatio": 0.4785553047404063,
+        "requested80PercentAchieved": true
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "oak",
+      "row": 0,
+      "column": 3,
+      "sourceCell": [
+        1330,
+        0,
+        444,
+        443
+      ],
+      "sourceRect": [
+        1349,
+        48,
+        408,
+        390
+      ],
+      "visibleAlphaBounds": [
+        1351,
+        50,
+        1754,
+        435
+      ],
+      "sourceGroundAnchor": [
+        1511.8,
+        431
+      ],
+      "displayScale": 0.289604,
+      "displayMaxSize": [
+        117,
+        126
+      ],
+      "canvasWidth": 146,
+      "canvasHeight": 166,
+      "anchorX": 73,
+      "anchorY": 143,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.9099099099099099,
+        "heightRatio": 0.871331828442438,
+        "requested80PercentAchieved": false
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "cliff",
+      "row": 1,
+      "column": 0,
+      "sourceCell": [
+        0,
+        443,
+        443,
+        444
+      ],
+      "sourceRect": [
+        31,
+        505,
+        393,
+        320
+      ],
+      "visibleAlphaBounds": [
+        33,
+        507,
+        421,
+        822
+      ],
+      "sourceGroundAnchor": [
+        227,
+        798
+      ],
+      "displayScale": 0.237342,
+      "displayMaxSize": [
+        110,
+        75
+      ],
+      "canvasWidth": 146,
+      "canvasHeight": 166,
+      "anchorX": 73,
+      "anchorY": 143,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.8781038374717833,
+        "heightRatio": 0.7117117117117117,
+        "requested80PercentAchieved": false
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "woodwall",
+      "row": 1,
+      "column": 1,
+      "sourceCell": [
+        443,
+        443,
+        444,
+        444
+      ],
+      "sourceRect": [
+        509,
+        503,
+        314,
+        306
+      ],
+      "visibleAlphaBounds": [
+        511,
+        505,
+        820,
+        806
+      ],
+      "sourceGroundAnchor": [
+        666,
+        751
+      ],
+      "displayScale": 0.231788,
+      "displayMaxSize": [
+        100,
+        70
+      ],
+      "canvasWidth": 180,
+      "canvasHeight": 210,
+      "anchorX": 90,
+      "anchorY": 149,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.6981981981981982,
+        "heightRatio": 0.6801801801801802,
+        "requested80PercentAchieved": true
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "woodgate",
+      "row": 1,
+      "column": 2,
+      "sourceCell": [
+        887,
+        443,
+        443,
+        444
+      ],
+      "sourceRect": [
+        938,
+        489,
+        361,
+        321
+      ],
+      "visibleAlphaBounds": [
+        940,
+        491,
+        1296,
+        807
+      ],
+      "sourceGroundAnchor": [
+        1118,
+        748
+      ],
+      "displayScale": 0.22082,
+      "displayMaxSize": [
+        100,
+        70
+      ],
+      "canvasWidth": 180,
+      "canvasHeight": 210,
+      "anchorX": 90,
+      "anchorY": 149,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.8058690744920993,
+        "heightRatio": 0.713963963963964,
+        "requested80PercentAchieved": false
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    },
+    {
+      "type": "grass",
+      "row": 1,
+      "column": 3,
+      "sourceCell": [
+        1330,
+        443,
+        444,
+        444
+      ],
+      "sourceRect": [
+        1467,
+        659,
+        165,
+        120
+      ],
+      "visibleAlphaBounds": [
+        1469,
+        661,
+        1629,
+        776
+      ],
+      "sourceGroundAnchor": [
+        1552.8,
+        772
+      ],
+      "displayScale": 0.206897,
+      "displayMaxSize": [
+        35,
+        24
+      ],
+      "canvasWidth": 146,
+      "canvasHeight": 166,
+      "anchorX": 73,
+      "anchorY": 143,
+      "sourceCellOccupancy": {
+        "widthRatio": 0.36261261261261263,
+        "heightRatio": 0.26126126126126126,
+        "requested80PercentAchieved": true
+      },
+      "visibleAlphaPixelsOnCellBorder": 0
+    }
+  ],
+  "alphaVerification": {
+    "hasAlpha": true,
+    "zeroAlphaPixels": 1014904,
+    "partialAlphaPixels": 558538,
+    "fullyOpaquePixels": 96,
+    "geometryAlphaThreshold": 24,
+    "coloredLowAlphaFringeMax": 4,
+    "redPixelsWithAlphaOver16": 0
+  },
+  "verification": {
+    "completeFrames": 8,
+    "visibleAlphaAtCellBoundaries": 0,
+    "sourcePNGUnmodified": true,
+    "runtimeBrowserQA": {
+      "atlasLoaded": true,
+      "framesRendered": 8,
+      "visibleAlphaPixelsOnCanvasBorder": 0,
+      "cacheReused": true,
+      "unknownTypeReturnsFallback": true,
+      "grassPreview": "/tmp/imperia-scenery-runtime-grass.png",
+      "notes": "Read-only Chrome display inspected over grass-colored background at actual runtime sizes; no opaque ground platforms or colored fringes visible."
+    }
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

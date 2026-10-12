@@ -1,0 +1,2445 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-09",
+  "assetType": "original historical 2D RTS action pose atlases",
+  "generator": "OpenAI built-in image_gen",
+  "originalImagesPreserved": true,
+  "references": [
+    "public/art/units-v3-a.png",
+    "public/art/units-v3-b.png"
+  ],
+  "rights": {
+    "provenance": "New AI-generated art using the project's original concept images as references. No third-party game sprites, models or textures were downloaded or incorporated.",
+    "ownership": "Subject to applicable OpenAI terms and law. The developer can use the delivered assets in this game, including commercial use, subject to those terms.",
+    "limitation": "AI outputs can be non-unique; this manifest does not guarantee exclusive copyright or that every output is copyrightable."
+  },
+  "runtime": {
+    "module": "src/render/units.ts",
+    "pixelRatio": 2,
+    "canvas": {
+      "normal": {
+        "logical": [
+          128,
+          136
+        ],
+        "physical": [
+          256,
+          272
+        ],
+        "anchorLogical": [
+          64,
+          112
+        ],
+        "anchorPhysical": [
+          128,
+          224
+        ]
+      },
+      "elephant": {
+        "logical": [
+          176,
+          156
+        ],
+        "physical": [
+          352,
+          312
+        ],
+        "anchorLogical": [
+          88,
+          132
+        ],
+        "anchorPhysical": [
+          176,
+          264
+        ]
+      }
+    },
+    "scaleLogical": {
+      "adultHumanBody": 48,
+      "horseAndRider": 72,
+      "tangHeavyCavalry": 76,
+      "trader": 65,
+      "elephantBodyHeight": 100,
+      "elephantBodyWidthApproximately": 108,
+      "elephantWithHowdahApproximately": 146
+    },
+    "portraitPhysical": [
+      512,
+      576
+    ],
+    "cycleFrames": 4,
+    "sourceHeadings": [
+      "SE",
+      "SW",
+      "NE",
+      "NW"
+    ],
+    "screenDirectionToColumn": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      3,
+      2,
+      2
+    ],
+    "cacheLimits": {
+      "sprites": 384,
+      "poses": 160,
+      "portraits": 24
+    },
+    "cachePolicy": "LRU; shared sprites are reused across ages and civilizations.",
+    "animation": "Two authored opposite stride contacts for five worker cultures and four infantry classes, with runtime Canvas texture-part leg articulation for passing phases. Worker mining/chopping use separate authored windup/impact silhouettes for all five cultures, including a supplemental Tang impact sheet. Building/harvest use authored work poses with runtime textured arm/tool articulation. Special infantry, mounts and elephant use runtime textured limb articulation. Attacks use runtime weapon thrust/swing, body recoil or siege-part motion. This is a hybrid animation system, not a fully authored four-frame gait or eight-view sheet.",
+    "knownLimitations": [
+      "Four source headings are reused for eight screen directions.",
+      "Mounted legs and siege parts are runtime texture masks rather than separately authored skeletal pieces.",
+      "Age is accepted by the helper for renderer compatibility; these unit source outfits do not change by age.",
+      "The original Tang sheet contains seven rows; its supplemental 4x2 sheet supplies clear downward mining and chopping impact views."
+    ]
+  },
+  "prompts": {
+    "roman": "Use case: historical-scene. Asset: original high-fidelity ACTION sprite atlas for a 2D isometric historical RTS, matching our attached original unit concepts and original unit atlas.\nTrue transparent PNG, exactly4columns and8rows,32 isolated full-body figures, no text/grid/background. Portrait1:2 aspect, large safe transparent gutters, each sprite completely inside its cell, no ground islands. Column1 SE facing screen lower-right, column2 SW lower-left, column3 NE away upper-right (show BACK), column4 NW away upper-left (show BACK). Orthographic30degree elevated game camera, consistent2:1 ground projection. The same adult character appears in all32cells with exactly the same outfit and materials. Restrained soft upper-left daylight, semi-realistic detailed skin/linen/wool/leather/metal/wood, anatomically small heads, approximately7.5heads tall, natural adult legs and hands. No cartoon, paper dolls, oversized heads, plastic toy look, modern clothing, no logos, no watermarks. Ground contact pivot centered horizontally at84% of each cell height. Each weapon/tool/head/foot fits fully inside its own cell, no overlap. Faint tight contact shadows only. These are real action poses, not standing figures with tools relabeled. Preserve clear anatomical leg articulation and recognizable silhouettes.\nCharacter:Mediterranean adult Roman laborer, short dark hair, off-white short linen tunic, brown leather belt and sandals, natural mature proportions. In walking rows carry a compact hoe at rest.\nROWS EXACTLY:\n1 Walking contact keyframeA: LEFT leg stepping FORWARD with heel leading, RIGHT leg pushed BACK with toe trailing, clear long natural stride and slightly bent knees, pelvis centered. Arms naturally counterbalance the stride while carrying the indicated item.\n2 Walking contact keyframeB: RIGHT leg stepping FORWARD with heel leading, LEFT leg pushed BACK with toe trailing. It must be the clearly OPPOSITE leg configuration to row1, not the same pose. Preserve identical outfit, person, perspective, body scale and centered ground pivot.\n3 Mining windup: gripping a realistic pickaxe in BOTH hands, arms raised above one shoulder, torso gently twisted, knees flexed, ready to swing.\n4 Mining impact: the SAME pickaxe in both hands swung down toward the ground forward of the feet, torso leaning/bending, knees flexed, physically believable downward stroke. No rock/resource object.\n5 Chopping windup: gripping a compact axe in BOTH hands, blade up above the shoulder, shoulders turned, legs braced.\n6 Chopping impact: same axe swung downward/outward to the front, elbows extended, torso leaning into the stroke and legs firmly braced. No tree or stump.\n7 Building: torso slightly bent, one hand steadying a short board/peg while the other hand holds a small hammer raised ready to strike, builder's stance. No building or wall.\n8 Harvesting: distinct low bent/kneeling work pose, one arm extended forward holding a short sickle, other hand gathering a compact handful of stalks/produce, practical cloth satchel, head turned toward work. No field or terrain.\nFor rows3–8 swap only the carried tool and action pose, retain all original clothing/face/character. In BACK-view columns NE/NW, the body truly rotates away and the tools and arms obey that facing. No extra detached tools. Full body including all feet visible.",
+    "mongol": "Use case: historical-scene. Asset: original high-fidelity ACTION sprite atlas for a 2D isometric historical RTS, matching our attached original unit concepts and original unit atlas.\nTrue transparent PNG, exactly4columns and8rows,32 isolated full-body figures, no text/grid/background. Portrait1:2 aspect, large safe transparent gutters, each sprite completely inside its cell, no ground islands. Column1 SE facing screen lower-right, column2 SW lower-left, column3 NE away upper-right (show BACK), column4 NW away upper-left (show BACK). Orthographic30degree elevated game camera, consistent2:1 ground projection. The same adult character appears in all32cells with exactly the same outfit and materials. Restrained soft upper-left daylight, semi-realistic detailed skin/linen/wool/leather/metal/wood, anatomically small heads, approximately7.5heads tall, natural adult legs and hands. No cartoon, paper dolls, oversized heads, plastic toy look, modern clothing, no logos, no watermarks. Ground contact pivot centered horizontally at84% of each cell height. Each weapon/tool/head/foot fits fully inside its own cell, no overlap. Faint tight contact shadows only. These are real action poses, not standing figures with tools relabeled. Preserve clear anatomical leg articulation and recognizable silhouettes.\nCharacter:Central Asian adult Mongol laborer, beige wool deel, brown trousers and leather boots, small fur-edged practical cap, brown leather belt. In walking rows carry a compact pickaxe at rest.\nROWS EXACTLY:\n1 Walking contact keyframeA: LEFT leg stepping FORWARD with heel leading, RIGHT leg pushed BACK with toe trailing, clear long natural stride and slightly bent knees, pelvis centered. Arms naturally counterbalance the stride while carrying the indicated item.\n2 Walking contact keyframeB: RIGHT leg stepping FORWARD with heel leading, LEFT leg pushed BACK with toe trailing. It must be the clearly OPPOSITE leg configuration to row1, not the same pose. Preserve identical outfit, person, perspective, body scale and centered ground pivot.\n3 Mining windup: gripping a realistic pickaxe in BOTH hands, arms raised above one shoulder, torso gently twisted, knees flexed, ready to swing.\n4 Mining impact: the SAME pickaxe in both hands swung down toward the ground forward of the feet, torso leaning/bending, knees flexed, physically believable downward stroke. No rock/resource object.\n5 Chopping windup: gripping a compact axe in BOTH hands, blade up above the shoulder, shoulders turned, legs braced.\n6 Chopping impact: same axe swung downward/outward to the front, elbows extended, torso leaning into the stroke and legs firmly braced. No tree or stump.\n7 Building: torso slightly bent, one hand steadying a short board/peg while the other hand holds a small hammer raised ready to strike, builder's stance. No building or wall.\n8 Harvesting: distinct low bent/kneeling work pose, one arm extended forward holding a short sickle, other hand gathering a compact handful of stalks/produce, practical cloth satchel, head turned toward work. No field or terrain.\nFor rows3–8 swap only the carried tool and action pose, retain all original clothing/face/character. In BACK-view columns NE/NW, the body truly rotates away and the tools and arms obey that facing. No extra detached tools. Full body including all feet visible.",
+    "persian": "Use case: historical-scene. Asset: original high-fidelity ACTION sprite atlas for a 2D isometric historical RTS, matching our attached original unit concepts and original unit atlas.\nTrue transparent PNG, exactly4columns and8rows,32 isolated full-body figures, no text/grid/background. Portrait1:2 aspect, large safe transparent gutters, each sprite completely inside its cell, no ground islands. Column1 SE facing screen lower-right, column2 SW lower-left, column3 NE away upper-right (show BACK), column4 NW away upper-left (show BACK). Orthographic30degree elevated game camera, consistent2:1 ground projection. The same adult character appears in all32cells with exactly the same outfit and materials. Restrained soft upper-left daylight, semi-realistic detailed skin/linen/wool/leather/metal/wood, anatomically small heads, approximately7.5heads tall, natural adult legs and hands. No cartoon, paper dolls, oversized heads, plastic toy look, modern clothing, no logos, no watermarks. Ground contact pivot centered horizontally at84% of each cell height. Each weapon/tool/head/foot fits fully inside its own cell, no overlap. Faint tight contact shadows only. These are real action poses, not standing figures with tools relabeled. Preserve clear anatomical leg articulation and recognizable silhouettes.\nCharacter:West Asian adult Persian laborer, muted rust-brown long tunic with understated gold trim, plain soft linen cap, brown trousers and ankle boots. In walking rows carry a compact woven basket at chest.\nROWS EXACTLY:\n1 Walking contact keyframeA: LEFT leg stepping FORWARD with heel leading, RIGHT leg pushed BACK with toe trailing, clear long natural stride and slightly bent knees, pelvis centered. Arms naturally counterbalance the stride while carrying the indicated item.\n2 Walking contact keyframeB: RIGHT leg stepping FORWARD with heel leading, LEFT leg pushed BACK with toe trailing. It must be the clearly OPPOSITE leg configuration to row1, not the same pose. Preserve identical outfit, person, perspective, body scale and centered ground pivot.\n3 Mining windup: gripping a realistic pickaxe in BOTH hands, arms raised above one shoulder, torso gently twisted, knees flexed, ready to swing.\n4 Mining impact: the SAME pickaxe in both hands swung down toward the ground forward of the feet, torso leaning/bending, knees flexed, physically believable downward stroke. No rock/resource object.\n5 Chopping windup: gripping a compact axe in BOTH hands, blade up above the shoulder, shoulders turned, legs braced.\n6 Chopping impact: same axe swung downward/outward to the front, elbows extended, torso leaning into the stroke and legs firmly braced. No tree or stump.\n7 Building: torso slightly bent, one hand steadying a short board/peg while the other hand holds a small hammer raised ready to strike, builder's stance. No building or wall.\n8 Harvesting: distinct low bent/kneeling work pose, one arm extended forward holding a short sickle, other hand gathering a compact handful of stalks/produce, practical cloth satchel, head turned toward work. No field or terrain.\nFor rows3–8 swap only the carried tool and action pose, retain all original clothing/face/character. In BACK-view columns NE/NW, the body truly rotates away and the tools and arms obey that facing. No extra detached tools. Full body including all feet visible.",
+    "tang": "Use case: historical-scene. Asset: original high-fidelity ACTION sprite atlas for a 2D isometric historical RTS, matching our attached original unit concepts and original unit atlas.\nTrue transparent PNG, exactly4columns and8rows,32 isolated full-body figures, no text/grid/background. Portrait1:2 aspect, large safe transparent gutters, each sprite completely inside its cell, no ground islands. Column1 SE facing screen lower-right, column2 SW lower-left, column3 NE away upper-right (show BACK), column4 NW away upper-left (show BACK). Orthographic30degree elevated game camera, consistent2:1 ground projection. The same adult character appears in all32cells with exactly the same outfit and materials. Restrained soft upper-left daylight, semi-realistic detailed skin/linen/wool/leather/metal/wood, anatomically small heads, approximately7.5heads tall, natural adult legs and hands. No cartoon, paper dolls, oversized heads, plastic toy look, modern clothing, no logos, no watermarks. Ground contact pivot centered horizontally at84% of each cell height. Each weapon/tool/head/foot fits fully inside its own cell, no overlap. Faint tight contact shadows only. These are real action poses, not standing figures with tools relabeled. Preserve clear anatomical leg articulation and recognizable silhouettes.\nCharacter:East Asian adult Tang Chinese laborer, muted blue-gray work tunic, dark brown trousers and leather boots, simply tied dark hair. In walking rows carry a small timber bundle on shoulder.\nROWS EXACTLY:\n1 Walking contact keyframeA: LEFT leg stepping FORWARD with heel leading, RIGHT leg pushed BACK with toe trailing, clear long natural stride and slightly bent knees, pelvis centered. Arms naturally counterbalance the stride while carrying the indicated item.\n2 Walking contact keyframeB: RIGHT leg stepping FORWARD with heel leading, LEFT leg pushed BACK with toe trailing. It must be the clearly OPPOSITE leg configuration to row1, not the same pose. Preserve identical outfit, person, perspective, body scale and centered ground pivot.\n3 Mining windup: gripping a realistic pickaxe in BOTH hands, arms raised above one shoulder, torso gently twisted, knees flexed, ready to swing.\n4 Mining impact: the SAME pickaxe in both hands swung down toward the ground forward of the feet, torso leaning/bending, knees flexed, physically believable downward stroke. No rock/resource object.\n5 Chopping windup: gripping a compact axe in BOTH hands, blade up above the shoulder, shoulders turned, legs braced.\n6 Chopping impact: same axe swung downward/outward to the front, elbows extended, torso leaning into the stroke and legs firmly braced. No tree or stump.\n7 Building: torso slightly bent, one hand steadying a short board/peg while the other hand holds a small hammer raised ready to strike, builder's stance. No building or wall.\n8 Harvesting: distinct low bent/kneeling work pose, one arm extended forward holding a short sickle, other hand gathering a compact handful of stalks/produce, practical cloth satchel, head turned toward work. No field or terrain.\nFor rows3–8 swap only the carried tool and action pose, retain all original clothing/face/character. In BACK-view columns NE/NW, the body truly rotates away and the tools and arms obey that facing. No extra detached tools. Full body including all feet visible.",
+    "ottoman": "Use case: historical-scene. Asset: original high-fidelity ACTION sprite atlas for a 2D isometric historical RTS, matching our attached original unit concepts and original unit atlas.\nTrue transparent PNG, exactly4columns and8rows,32 isolated full-body figures, no text/grid/background. Portrait1:2 aspect, large safe transparent gutters, each sprite completely inside its cell, no ground islands. Column1 SE facing screen lower-right, column2 SW lower-left, column3 NE away upper-right (show BACK), column4 NW away upper-left (show BACK). Orthographic30degree elevated game camera, consistent2:1 ground projection. The same adult character appears in all32cells with exactly the same outfit and materials. Restrained soft upper-left daylight, semi-realistic detailed skin/linen/wool/leather/metal/wood, anatomically small heads, approximately7.5heads tall, natural adult legs and hands. No cartoon, paper dolls, oversized heads, plastic toy look, modern clothing, no logos, no watermarks. Ground contact pivot centered horizontally at84% of each cell height. Each weapon/tool/head/foot fits fully inside its own cell, no overlap. Faint tight contact shadows only. These are real action poses, not standing figures with tools relabeled. Preserve clear anatomical leg articulation and recognizable silhouettes.\nCharacter:West Asian adult Ottoman laborer, cream linen tunic and trousers, modest white headwrap with dark red cap, brown leather belt and boots. In walking rows carry a compact mallet at rest.\nROWS EXACTLY:\n1 Walking contact keyframeA: LEFT leg stepping FORWARD with heel leading, RIGHT leg pushed BACK with toe trailing, clear long natural stride and slightly bent knees, pelvis centered. Arms naturally counterbalance the stride while carrying the indicated item.\n2 Walking contact keyframeB: RIGHT leg stepping FORWARD with heel leading, LEFT leg pushed BACK with toe trailing. It must be the clearly OPPOSITE leg configuration to row1, not the same pose. Preserve identical outfit, person, perspective, body scale and centered ground pivot.\n3 Mining windup: gripping a realistic pickaxe in BOTH hands, arms raised above one shoulder, torso gently twisted, knees flexed, ready to swing.\n4 Mining impact: the SAME pickaxe in both hands swung down toward the ground forward of the feet, torso leaning/bending, knees flexed, physically believable downward stroke. No rock/resource object.\n5 Chopping windup: gripping a compact axe in BOTH hands, blade up above the shoulder, shoulders turned, legs braced.\n6 Chopping impact: same axe swung downward/outward to the front, elbows extended, torso leaning into the stroke and legs firmly braced. No tree or stump.\n7 Building: torso slightly bent, one hand steadying a short board/peg while the other hand holds a small hammer raised ready to strike, builder's stance. No building or wall.\n8 Harvesting: distinct low bent/kneeling work pose, one arm extended forward holding a short sickle, other hand gathering a compact handful of stalks/produce, practical cloth satchel, head turned toward work. No field or terrain.\nFor rows3–8 swap only the carried tool and action pose, retain all original clothing/face/character. In BACK-view columns NE/NW, the body truly rotates away and the tools and arms obey that facing. No extra detached tools. Full body including all feet visible.",
+    "infantry": "Use case: historical-scene. Asset: original high-fidelity ACTION sprite atlas for a 2D isometric historical RTS, matching our attached original unit concepts and original unit atlas.\nTrue transparent PNG, exactly4columns and8rows,32 isolated full-body figures, no text/grid/background. Portrait1:2 aspect, large safe transparent gutters, each sprite completely inside its cell, no ground islands. Column1 SE facing screen lower-right, column2 SW lower-left, column3 NE away upper-right (show BACK), column4 NW away upper-left (show BACK). Orthographic30degree elevated game camera, consistent2:1 ground projection. The same adult character appears in all32cells with exactly the same outfit and materials. Restrained soft upper-left daylight, semi-realistic detailed skin/linen/wool/leather/metal/wood, anatomically small heads, approximately7.5heads tall, natural adult legs and hands. No cartoon, paper dolls, oversized heads, plastic toy look, modern clothing, no logos, no watermarks. Ground contact pivot centered horizontally at84% of each cell height. Each weapon/tool/head/foot fits fully inside its own cell, no overlap. Faint tight contact shadows only. These are real action poses, not standing figures with tools relabeled. Preserve clear anatomical leg articulation and recognizable silhouettes.\nThis atlas has FOURdifferent infantry classes, each with TWO genuinely opposite walking contact keyframes, making8rows. Columns are consistently SE,SW,NE,NW.\nRow1 neutral spear infantry walkingcontactA,leftlegforward/rightlegback; Row2 SAME spear infantry contactB,rightlegforward/leftlegback.\nRow3 neutral sword+roundshield infantry contactA,leftlegforward/rightlegback; Row4 SAME sword infantry contactB,rightlegforward/leftlegback.\nRow5 neutral archer contactA,leftlegforward/rightlegback; Row6 SAME archer contactB,rightlegforward/leftlegback.\nRow7 Roman legionary contactA,leftlegforward/rightlegback; Row8 SAME legionary contactB,rightlegforward/leftlegback.\nSpear infantry: mature adult in neutral linen, modest iron helmet/leather vest, practical ROUNDwooden shield and upright compact steel-tipped spear. Sword infantry: modest neutral iron/leather armor, beige linen, brown boots, short steel sword heldlow and round wooden shield. Archer: beige/brown padded garments, modest iron cap, recurvebowheldatrest and quiveronback. Roman legionary: mature Mediterranean soldier, realistic segmented ironarmor, off-white shorttunic,sandals, modestcresthelmet, shortgladiusandlargeREDRECTANGULARcurvedshield with restrained originalgoldmotif. Sharedinfantry have small turquoise waist sash.\nEach contactA/Bpair must visibly have OPPOSITE legpositions with naturallongstride,bentknees and heel/toecontacts; avoid duplicate standingposes. Armor, weapons, scale, identity and views remainconsistent across thepair. In backviews show actualrearhelmet/armor/quiver/shieldback. Keep weapon tips and full feet inside thecell. No action effects, terrain or extra figures.",
+    "tangImpact": "Create a NEW focused production action sprite sheet using the attached original Tang worker atlas as the identity/style reference. Match the exact same adult East Asian man, muted blue-gray linen work tunic, dark brown trousers, worn leather boots, brown belt, black hair tied in a small topknot, natural detailed cloth/wood/skin. Orthographic isometric game camera at 30-degree elevation, soft upper-left light. Adult anatomy, no oversized head, no chunky toy.\nTRUE TRANSPARENT PNG, landscape 2:1 aspect, EXACTLY 4 columns by 2 rows (8 isolated full-body sprites), safe empty transparent gutters, no text/grid/background/ground island. Each complete figure and tool inside central 75% width and 80% height of cell, ground pivot centered at84% cell height. Source identity and body scale stay the same in all 8 cells.\nColumns: SE(front3/4 facing lower-right), SW(front3/4 facing lower-left), NE(back3/4 facing upper-right), NW(back3/4 facing upper-left). Rotate the FULL body and tool consistently; back columns reveal actual back. Make FOUR views of EACH of these poses:\nROW 1 MINING IMPACT: both hands grip the pickaxe handle, torso noticeably bent FORWARD, arms extended FORWARD AND DOWN, pickaxe metal head near ground FORWARD of boots (NOT above shoulder or head), knees bent with feet braced. The pickaxe has just completed a downward strike. Absolutely no windup pose, no rocks, no detached pickaxe.\nROW 2 CHOPPING IMPACT: both hands grip a compact wooden-handled axe, torso bent FORWARD, elbows extending down/outward, axe head near ground FORWARD of boots (NOT above shoulder or head), same braced working stance. The axe has just completed a downward chop. Absolutely no windup pose, no trees/stumps, no detached axe.\nThese are DOWNWARD IMPACT keyframes complementing the attached standing windup poses. Preserve mature natural anatomy and tactile historical material fidelity; no caricature, no writing, no watermark. Tiny tight contact shadows only."
+  },
+  "repairPrompts": {
+    "roman": "Edit this worker action atlas while preserving its original Roman character, realistic linen/leather/skin materials, light, scale, four directions SE/SW/NE/NW, true transparent background,8rowgrid and32cellspacing. FIX ONLY row6 androw7. Row6 must be CHOPPING IMPACT: same person holding a COMPACT AXE in both hands, axe blade down at the front, leaning forward into a downward chopping stroke, feet braced; NO board, NO hammer. Row7 must be BUILDING: same person slightly crouched or kneeling, one hand steadying a short upright wooden peg/board and the other hand holding a SMALL HAMMER above it ready to strike; NO sickle and NO harvest bundle. Preserve row1/2 opposite walkingstrides,row3miningwindup,row4miningimpact,row5choppingwindup,row8lowharvesting. Ensure fourviews in all8rows, especially backviewsNE/NW. No lettering,gridlines,groundisland or extrapeople. Keep genuinealpha.",
+    "tang": "Repair this Tang Chinese worker action atlas into EXACTLY4columns and8rows,32sprites. Preserve the same adult EastAsian character, muted bluegrayworktunic,browntrousers/boots, tieddarkhair, realisticpaintedmaterials,30degreeisometriccamera,truealpha andfourviewsSE/SW/NE/NW. The current image has a missing finalrow and missing impactposes. Recompose eight complete rows in this EXACTorder:1walkcontactA,leftlegforward;2walkcontactB,rightlegforward;3MININGWINDUP,pickaxeaboveoneshoulder;4MININGIMPACT,SAMEpickaxeswungDOWNtowardgroundinfrontofthefeet,armsforward/torsoleaned;5CHOPPINGWINDUP,AXEaboveoneshoulder;6CHOPPINGIMPACT,SAMEaxeswungDOWNtothefront,bothhandsonhandle;7BUILDING,onehandsteadyingwoodenpeg/board,theotherholdingHAMMERreadytostrike;8HARVESTING,lowbent/kneelingposewithSICKLEandstalks. Do not repeat row3 inrow4. Do not omit row6 orrow8. Useuniform8rowspacingwithfullbodiesandtoolsinsidetheircellsandwidealpha gutters. All4directionalviews for everyrow;backviewsactuallyshowback. Groundfootpivotcenteredat84%cellheight. No labels/grid/text/background/trees/rocks/buildings. Keep the source faithful and detailed."
+  },
+  "measurement": {
+    "method": "Read-only alpha connected-component measurements (alpha >= 200, two-pixel safe bounds). Runtime draws each measured source rectangle and anchors the weighted lower opaque foot region. No processed PNGs were written.",
+    "frameFields": [
+      "x",
+      "y",
+      "width",
+      "height",
+      "localGroundPivotX",
+      "localGroundPivotY"
+    ]
+  },
+  "authoredViews": 196,
+  "atlases": [
+    {
+      "file": "units-action-v1-roman.png",
+      "source": "public/art/units-action-v1-roman.png",
+      "width": 887,
+      "height": 1774,
+      "actualRows": 8,
+      "columns": 4,
+      "alpha": true,
+      "sha256": "15281fb8a53ece931ca985634fe9bea129fd4572bb3e71bebd033380f7888f32",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SE",
+          "x": 48,
+          "y": 29,
+          "width": 150,
+          "height": 191,
+          "localGroundPivotX": 78.33,
+          "localGroundPivotY": 184.32
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SW",
+          "x": 267,
+          "y": 29,
+          "width": 138,
+          "height": 190,
+          "localGroundPivotX": 56.97,
+          "localGroundPivotY": 183.35
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NE",
+          "x": 499,
+          "y": 23,
+          "width": 137,
+          "height": 192,
+          "localGroundPivotX": 54.51,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NW",
+          "x": 708,
+          "y": 22,
+          "width": 142,
+          "height": 190,
+          "localGroundPivotX": 83.33,
+          "localGroundPivotY": 183.35
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SE",
+          "x": 56,
+          "y": 230,
+          "width": 152,
+          "height": 192,
+          "localGroundPivotX": 75.43,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SW",
+          "x": 267,
+          "y": 225,
+          "width": 138,
+          "height": 196,
+          "localGroundPivotX": 56.51,
+          "localGroundPivotY": 189.2
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NE",
+          "x": 505,
+          "y": 224,
+          "width": 131,
+          "height": 198,
+          "localGroundPivotX": 46.13,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NW",
+          "x": 708,
+          "y": 223,
+          "width": 140,
+          "height": 198,
+          "localGroundPivotX": 87.12,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SE",
+          "x": 54,
+          "y": 428,
+          "width": 126,
+          "height": 230,
+          "localGroundPivotX": 74.86,
+          "localGroundPivotY": 222.35
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SW",
+          "x": 286,
+          "y": 427,
+          "width": 119,
+          "height": 219,
+          "localGroundPivotX": 58.5,
+          "localGroundPivotY": 211.62
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NE",
+          "x": 506,
+          "y": 434,
+          "width": 119,
+          "height": 220,
+          "localGroundPivotX": 55.26,
+          "localGroundPivotY": 212.6
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NW",
+          "x": 748,
+          "y": 418,
+          "width": 120,
+          "height": 240,
+          "localGroundPivotX": 65.12,
+          "localGroundPivotY": 232.1
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SE",
+          "x": 34,
+          "y": 675,
+          "width": 152,
+          "height": 175,
+          "localGroundPivotX": 105.24,
+          "localGroundPivotY": 168.72
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SW",
+          "x": 272,
+          "y": 674,
+          "width": 136,
+          "height": 178,
+          "localGroundPivotX": 36.22,
+          "localGroundPivotY": 171.65
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NE",
+          "x": 496,
+          "y": 665,
+          "width": 148,
+          "height": 182,
+          "localGroundPivotX": 60.62,
+          "localGroundPivotY": 175.55
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NW",
+          "x": 714,
+          "y": 665,
+          "width": 158,
+          "height": 184,
+          "localGroundPivotX": 102.84,
+          "localGroundPivotY": 177.5
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SE",
+          "x": 51,
+          "y": 846,
+          "width": 129,
+          "height": 232,
+          "localGroundPivotX": 72.89,
+          "localGroundPivotY": 224.3
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SW",
+          "x": 280,
+          "y": 844,
+          "width": 124,
+          "height": 226,
+          "localGroundPivotX": 54.04,
+          "localGroundPivotY": 218.45
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NE",
+          "x": 499,
+          "y": 844,
+          "width": 125,
+          "height": 240,
+          "localGroundPivotX": 55.73,
+          "localGroundPivotY": 232.1
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NW",
+          "x": 734,
+          "y": 843,
+          "width": 131,
+          "height": 238,
+          "localGroundPivotX": 69.19,
+          "localGroundPivotY": 230.15
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SE",
+          "x": 33,
+          "y": 1097,
+          "width": 153,
+          "height": 186,
+          "localGroundPivotX": 91.98,
+          "localGroundPivotY": 179.45
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SW",
+          "x": 279,
+          "y": 1108,
+          "width": 144,
+          "height": 176,
+          "localGroundPivotX": 56.22,
+          "localGroundPivotY": 169.7
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NE",
+          "x": 490,
+          "y": 1110,
+          "width": 149,
+          "height": 190,
+          "localGroundPivotX": 57.89,
+          "localGroundPivotY": 183.35
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NW",
+          "x": 721,
+          "y": 1110,
+          "width": 156,
+          "height": 197,
+          "localGroundPivotX": 91.29,
+          "localGroundPivotY": 190.18
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SE",
+          "x": 37,
+          "y": 1322,
+          "width": 144,
+          "height": 164,
+          "localGroundPivotX": 62.65,
+          "localGroundPivotY": 158
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SW",
+          "x": 280,
+          "y": 1320,
+          "width": 148,
+          "height": 165,
+          "localGroundPivotX": 85.79,
+          "localGroundPivotY": 158.97
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NE",
+          "x": 489,
+          "y": 1324,
+          "width": 158,
+          "height": 170,
+          "localGroundPivotX": 56.39,
+          "localGroundPivotY": 163.85
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NW",
+          "x": 730,
+          "y": 1324,
+          "width": 141,
+          "height": 181,
+          "localGroundPivotX": 98.53,
+          "localGroundPivotY": 174.57
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SE",
+          "x": 26,
+          "y": 1558,
+          "width": 178,
+          "height": 144,
+          "localGroundPivotX": 70.95,
+          "localGroundPivotY": 138.5
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SW",
+          "x": 263,
+          "y": 1563,
+          "width": 169,
+          "height": 143,
+          "localGroundPivotX": 99.93,
+          "localGroundPivotY": 137.53
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NE",
+          "x": 489,
+          "y": 1555,
+          "width": 146,
+          "height": 158,
+          "localGroundPivotX": 49.31,
+          "localGroundPivotY": 152.15
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NW",
+          "x": 720,
+          "y": 1554,
+          "width": 146,
+          "height": 163,
+          "localGroundPivotX": 96.94,
+          "localGroundPivotY": 157.03
+        }
+      ],
+      "id": "roman",
+      "rows": [
+        "walkContactA",
+        "walkContactB",
+        "miningWindup",
+        "miningImpact",
+        "choppingWindup",
+        "choppingImpact",
+        "buildingHammer",
+        "harvestingSickle"
+      ]
+    },
+    {
+      "file": "units-action-v1-mongol.png",
+      "source": "public/art/units-action-v1-mongol.png",
+      "width": 887,
+      "height": 1774,
+      "actualRows": 8,
+      "columns": 4,
+      "alpha": true,
+      "sha256": "18c19ae7cec04a94c471689f6ee2c69f0ff107fc3babeb6045c38a5cb5e0bcd6",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SE",
+          "x": 46,
+          "y": 5,
+          "width": 134,
+          "height": 217,
+          "localGroundPivotX": 65.45,
+          "localGroundPivotY": 209.68
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SW",
+          "x": 263,
+          "y": 10,
+          "width": 123,
+          "height": 212,
+          "localGroundPivotX": 57.31,
+          "localGroundPivotY": 204.8
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NE",
+          "x": 498,
+          "y": 7,
+          "width": 133,
+          "height": 201,
+          "localGroundPivotX": 48.62,
+          "localGroundPivotY": 194.07
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NW",
+          "x": 712,
+          "y": 5,
+          "width": 129,
+          "height": 209,
+          "localGroundPivotX": 83.71,
+          "localGroundPivotY": 201.88
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SE",
+          "x": 42,
+          "y": 223,
+          "width": 145,
+          "height": 212,
+          "localGroundPivotX": 71.49,
+          "localGroundPivotY": 204.8
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SW",
+          "x": 254,
+          "y": 224,
+          "width": 135,
+          "height": 208,
+          "localGroundPivotX": 66.52,
+          "localGroundPivotY": 200.9
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NE",
+          "x": 509,
+          "y": 223,
+          "width": 128,
+          "height": 210,
+          "localGroundPivotX": 39.98,
+          "localGroundPivotY": 202.85
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NW",
+          "x": 710,
+          "y": 220,
+          "width": 135,
+          "height": 213,
+          "localGroundPivotX": 76.33,
+          "localGroundPivotY": 205.78
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SE",
+          "x": 43,
+          "y": 418,
+          "width": 136,
+          "height": 245,
+          "localGroundPivotX": 82.83,
+          "localGroundPivotY": 236.97
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SW",
+          "x": 271,
+          "y": 419,
+          "width": 114,
+          "height": 240,
+          "localGroundPivotX": 44.27,
+          "localGroundPivotY": 232.1
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NE",
+          "x": 505,
+          "y": 427,
+          "width": 110,
+          "height": 237,
+          "localGroundPivotX": 46.09,
+          "localGroundPivotY": 229.18
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NW",
+          "x": 730,
+          "y": 428,
+          "width": 114,
+          "height": 236,
+          "localGroundPivotX": 66.25,
+          "localGroundPivotY": 228.2
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SE",
+          "x": 30,
+          "y": 679,
+          "width": 147,
+          "height": 188,
+          "localGroundPivotX": 107.87,
+          "localGroundPivotY": 181.4
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SW",
+          "x": 255,
+          "y": 679,
+          "width": 154,
+          "height": 187,
+          "localGroundPivotX": 55.37,
+          "localGroundPivotY": 180.43
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NE",
+          "x": 483,
+          "y": 669,
+          "width": 160,
+          "height": 189,
+          "localGroundPivotX": 50.64,
+          "localGroundPivotY": 182.38
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NW",
+          "x": 708,
+          "y": 677,
+          "width": 159,
+          "height": 182,
+          "localGroundPivotX": 107.86,
+          "localGroundPivotY": 175.55
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SE",
+          "x": 28,
+          "y": 871,
+          "width": 130,
+          "height": 228,
+          "localGroundPivotX": 77.59,
+          "localGroundPivotY": 220.4
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SW",
+          "x": 272,
+          "y": 881,
+          "width": 114,
+          "height": 214,
+          "localGroundPivotX": 45.74,
+          "localGroundPivotY": 206.75
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NE",
+          "x": 499,
+          "y": 879,
+          "width": 118,
+          "height": 219,
+          "localGroundPivotX": 52.44,
+          "localGroundPivotY": 211.62
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NW",
+          "x": 735,
+          "y": 864,
+          "width": 113,
+          "height": 235,
+          "localGroundPivotX": 65.89,
+          "localGroundPivotY": 227.22
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SE",
+          "x": 31,
+          "y": 1116,
+          "width": 150,
+          "height": 176,
+          "localGroundPivotX": 80.26,
+          "localGroundPivotY": 169.7
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SW",
+          "x": 253,
+          "y": 1129,
+          "width": 145,
+          "height": 164,
+          "localGroundPivotX": 70.78,
+          "localGroundPivotY": 158
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NE",
+          "x": 496,
+          "y": 1113,
+          "width": 140,
+          "height": 202,
+          "localGroundPivotX": 45.62,
+          "localGroundPivotY": 195.05
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NW",
+          "x": 709,
+          "y": 1111,
+          "width": 140,
+          "height": 207,
+          "localGroundPivotX": 94.77,
+          "localGroundPivotY": 199.93
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SE",
+          "x": 29,
+          "y": 1320,
+          "width": 136,
+          "height": 203,
+          "localGroundPivotX": 97.35,
+          "localGroundPivotY": 196.03
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SW",
+          "x": 267,
+          "y": 1320,
+          "width": 136,
+          "height": 194,
+          "localGroundPivotX": 40.97,
+          "localGroundPivotY": 187.25
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NE",
+          "x": 480,
+          "y": 1328,
+          "width": 132,
+          "height": 188,
+          "localGroundPivotX": 61.68,
+          "localGroundPivotY": 181.4
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NW",
+          "x": 724,
+          "y": 1321,
+          "width": 136,
+          "height": 203,
+          "localGroundPivotX": 75.87,
+          "localGroundPivotY": 196.03
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SE",
+          "x": 25,
+          "y": 1546,
+          "width": 150,
+          "height": 170,
+          "localGroundPivotX": 89.85,
+          "localGroundPivotY": 163.85
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SW",
+          "x": 236,
+          "y": 1552,
+          "width": 171,
+          "height": 172,
+          "localGroundPivotX": 82.84,
+          "localGroundPivotY": 165.8
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NE",
+          "x": 474,
+          "y": 1551,
+          "width": 169,
+          "height": 174,
+          "localGroundPivotX": 57.34,
+          "localGroundPivotY": 167.75
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NW",
+          "x": 711,
+          "y": 1552,
+          "width": 153,
+          "height": 183,
+          "localGroundPivotX": 105.49,
+          "localGroundPivotY": 176.53
+        }
+      ],
+      "id": "mongol",
+      "rows": [
+        "walkContactA",
+        "walkContactB",
+        "miningWindup",
+        "miningImpact",
+        "choppingWindup",
+        "choppingImpact",
+        "buildingHammer",
+        "harvestingSickle"
+      ]
+    },
+    {
+      "file": "units-action-v1-persian.png",
+      "source": "public/art/units-action-v1-persian.png",
+      "width": 887,
+      "height": 1774,
+      "actualRows": 8,
+      "columns": 4,
+      "alpha": true,
+      "sha256": "941b4e96160a62e7a1309993a543a8648724927ed10cdd79b90d6b8ee36ac342",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SE",
+          "x": 53,
+          "y": 31,
+          "width": 121,
+          "height": 186,
+          "localGroundPivotX": 72.23,
+          "localGroundPivotY": 179.45
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SW",
+          "x": 271,
+          "y": 30,
+          "width": 119,
+          "height": 186,
+          "localGroundPivotX": 48.96,
+          "localGroundPivotY": 179.45
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NE",
+          "x": 499,
+          "y": 30,
+          "width": 120,
+          "height": 186,
+          "localGroundPivotX": 49.88,
+          "localGroundPivotY": 179.45
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NW",
+          "x": 716,
+          "y": 30,
+          "width": 115,
+          "height": 187,
+          "localGroundPivotX": 66.93,
+          "localGroundPivotY": 180.43
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SE",
+          "x": 60,
+          "y": 242,
+          "width": 111,
+          "height": 195,
+          "localGroundPivotX": 63.51,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SW",
+          "x": 273,
+          "y": 242,
+          "width": 111,
+          "height": 195,
+          "localGroundPivotX": 46.03,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NE",
+          "x": 502,
+          "y": 243,
+          "width": 113,
+          "height": 196,
+          "localGroundPivotX": 29.69,
+          "localGroundPivotY": 189.2
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NW",
+          "x": 714,
+          "y": 242,
+          "width": 112,
+          "height": 197,
+          "localGroundPivotX": 83.76,
+          "localGroundPivotY": 190.18
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SE",
+          "x": 49,
+          "y": 444,
+          "width": 126,
+          "height": 210,
+          "localGroundPivotX": 71.74,
+          "localGroundPivotY": 202.85
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SW",
+          "x": 270,
+          "y": 452,
+          "width": 119,
+          "height": 203,
+          "localGroundPivotX": 44.54,
+          "localGroundPivotY": 196.03
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NE",
+          "x": 494,
+          "y": 454,
+          "width": 114,
+          "height": 204,
+          "localGroundPivotX": 57.82,
+          "localGroundPivotY": 197
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NW",
+          "x": 725,
+          "y": 451,
+          "width": 115,
+          "height": 207,
+          "localGroundPivotX": 55.81,
+          "localGroundPivotY": 199.93
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SE",
+          "x": 45,
+          "y": 690,
+          "width": 154,
+          "height": 180,
+          "localGroundPivotX": 91.57,
+          "localGroundPivotY": 173.6
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SW",
+          "x": 253,
+          "y": 691,
+          "width": 144,
+          "height": 180,
+          "localGroundPivotX": 58.53,
+          "localGroundPivotY": 173.6
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NE",
+          "x": 487,
+          "y": 685,
+          "width": 157,
+          "height": 189,
+          "localGroundPivotX": 50,
+          "localGroundPivotY": 182.38
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NW",
+          "x": 692,
+          "y": 685,
+          "width": 151,
+          "height": 191,
+          "localGroundPivotX": 103.56,
+          "localGroundPivotY": 184.32
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SE",
+          "x": 64,
+          "y": 883,
+          "width": 117,
+          "height": 214,
+          "localGroundPivotX": 64.7,
+          "localGroundPivotY": 206.75
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SW",
+          "x": 278,
+          "y": 886,
+          "width": 111,
+          "height": 215,
+          "localGroundPivotX": 37.03,
+          "localGroundPivotY": 207.72
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NE",
+          "x": 502,
+          "y": 885,
+          "width": 106,
+          "height": 214,
+          "localGroundPivotX": 46.15,
+          "localGroundPivotY": 206.75
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NW",
+          "x": 726,
+          "y": 884,
+          "width": 105,
+          "height": 216,
+          "localGroundPivotX": 60.27,
+          "localGroundPivotY": 208.7
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SE",
+          "x": 48,
+          "y": 1123,
+          "width": 141,
+          "height": 188,
+          "localGroundPivotX": 82.94,
+          "localGroundPivotY": 181.4
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SW",
+          "x": 264,
+          "y": 1128,
+          "width": 137,
+          "height": 187,
+          "localGroundPivotX": 58.02,
+          "localGroundPivotY": 180.43
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NE",
+          "x": 483,
+          "y": 1124,
+          "width": 140,
+          "height": 193,
+          "localGroundPivotX": 47.27,
+          "localGroundPivotY": 186.28
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NW",
+          "x": 694,
+          "y": 1124,
+          "width": 147,
+          "height": 196,
+          "localGroundPivotX": 98.86,
+          "localGroundPivotY": 189.2
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SE",
+          "x": 49,
+          "y": 1338,
+          "width": 132,
+          "height": 163,
+          "localGroundPivotX": 69.88,
+          "localGroundPivotY": 157.03
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SW",
+          "x": 268,
+          "y": 1341,
+          "width": 119,
+          "height": 164,
+          "localGroundPivotX": 45.27,
+          "localGroundPivotY": 158
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NE",
+          "x": 500,
+          "y": 1340,
+          "width": 122,
+          "height": 166,
+          "localGroundPivotX": 40.27,
+          "localGroundPivotY": 159.95
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NW",
+          "x": 716,
+          "y": 1341,
+          "width": 124,
+          "height": 178,
+          "localGroundPivotX": 85.96,
+          "localGroundPivotY": 171.65
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SE",
+          "x": 46,
+          "y": 1547,
+          "width": 134,
+          "height": 142,
+          "localGroundPivotX": 54.97,
+          "localGroundPivotY": 136.55
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SW",
+          "x": 252,
+          "y": 1545,
+          "width": 151,
+          "height": 154,
+          "localGroundPivotX": 94.04,
+          "localGroundPivotY": 148.25
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NE",
+          "x": 492,
+          "y": 1549,
+          "width": 139,
+          "height": 171,
+          "localGroundPivotX": 43.18,
+          "localGroundPivotY": 164.82
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NW",
+          "x": 698,
+          "y": 1550,
+          "width": 138,
+          "height": 170,
+          "localGroundPivotX": 98.1,
+          "localGroundPivotY": 163.85
+        }
+      ],
+      "id": "persian",
+      "rows": [
+        "walkContactA",
+        "walkContactB",
+        "miningWindup",
+        "miningImpact",
+        "choppingWindup",
+        "choppingImpact",
+        "buildingHammer",
+        "harvestingSickle"
+      ]
+    },
+    {
+      "file": "units-action-v1-tang.png",
+      "source": "public/art/units-action-v1-tang.png",
+      "width": 887,
+      "height": 1774,
+      "actualRows": 7,
+      "columns": 4,
+      "alpha": true,
+      "sha256": "42bd93b32d3406ae8111a40f33ec0f7642a6fc6e349fce3f7255aa95dbc4fcee",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SE",
+          "x": 55,
+          "y": 17,
+          "width": 125,
+          "height": 209,
+          "localGroundPivotX": 83.57,
+          "localGroundPivotY": 201.88
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SW",
+          "x": 276,
+          "y": 14,
+          "width": 134,
+          "height": 213,
+          "localGroundPivotX": 41.85,
+          "localGroundPivotY": 205.78
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NE",
+          "x": 497,
+          "y": 11,
+          "width": 123,
+          "height": 209,
+          "localGroundPivotX": 52.43,
+          "localGroundPivotY": 201.88
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NW",
+          "x": 717,
+          "y": 10,
+          "width": 131,
+          "height": 205,
+          "localGroundPivotX": 77.77,
+          "localGroundPivotY": 197.97
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SE",
+          "x": 40,
+          "y": 223,
+          "width": 133,
+          "height": 217,
+          "localGroundPivotX": 81.6,
+          "localGroundPivotY": 209.68
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SW",
+          "x": 293,
+          "y": 226,
+          "width": 128,
+          "height": 220,
+          "localGroundPivotX": 39.53,
+          "localGroundPivotY": 212.6
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NE",
+          "x": 491,
+          "y": 226,
+          "width": 125,
+          "height": 216,
+          "localGroundPivotX": 58.48,
+          "localGroundPivotY": 208.7
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NW",
+          "x": 725,
+          "y": 223,
+          "width": 130,
+          "height": 220,
+          "localGroundPivotX": 68.58,
+          "localGroundPivotY": 212.6
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SE",
+          "x": 46,
+          "y": 439,
+          "width": 131,
+          "height": 239,
+          "localGroundPivotX": 81.15,
+          "localGroundPivotY": 231.12
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SW",
+          "x": 270,
+          "y": 440,
+          "width": 138,
+          "height": 235,
+          "localGroundPivotX": 58.31,
+          "localGroundPivotY": 227.22
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NE",
+          "x": 494,
+          "y": 438,
+          "width": 136,
+          "height": 236,
+          "localGroundPivotX": 65.48,
+          "localGroundPivotY": 228.2
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NW",
+          "x": 723,
+          "y": 445,
+          "width": 144,
+          "height": 231,
+          "localGroundPivotX": 73.93,
+          "localGroundPivotY": 223.32
+        },
+        {
+          "row": 3,
+          "pose": "choppingWindup",
+          "direction": "SE",
+          "x": 44,
+          "y": 683,
+          "width": 129,
+          "height": 252,
+          "localGroundPivotX": 90.28,
+          "localGroundPivotY": 243.8
+        },
+        {
+          "row": 3,
+          "pose": "choppingWindup",
+          "direction": "SW",
+          "x": 271,
+          "y": 685,
+          "width": 139,
+          "height": 248,
+          "localGroundPivotX": 47.41,
+          "localGroundPivotY": 239.9
+        },
+        {
+          "row": 3,
+          "pose": "choppingWindup",
+          "direction": "NE",
+          "x": 491,
+          "y": 690,
+          "width": 137,
+          "height": 232,
+          "localGroundPivotX": 65.26,
+          "localGroundPivotY": 224.3
+        },
+        {
+          "row": 3,
+          "pose": "choppingWindup",
+          "direction": "NW",
+          "x": 724,
+          "y": 674,
+          "width": 136,
+          "height": 248,
+          "localGroundPivotX": 73.18,
+          "localGroundPivotY": 239.9
+        },
+        {
+          "row": 4,
+          "pose": "choppingPoseMixed",
+          "direction": "SE",
+          "x": 41,
+          "y": 951,
+          "width": 140,
+          "height": 228,
+          "localGroundPivotX": 90.38,
+          "localGroundPivotY": 220.4
+        },
+        {
+          "row": 4,
+          "pose": "choppingPoseMixed",
+          "direction": "SW",
+          "x": 266,
+          "y": 950,
+          "width": 151,
+          "height": 238,
+          "localGroundPivotX": 38.57,
+          "localGroundPivotY": 230.15
+        },
+        {
+          "row": 4,
+          "pose": "choppingPoseMixed",
+          "direction": "NE",
+          "x": 505,
+          "y": 942,
+          "width": 134,
+          "height": 244,
+          "localGroundPivotX": 54.95,
+          "localGroundPivotY": 236
+        },
+        {
+          "row": 4,
+          "pose": "choppingPoseMixed",
+          "direction": "NW",
+          "x": 725,
+          "y": 945,
+          "width": 134,
+          "height": 241,
+          "localGroundPivotX": 75.95,
+          "localGroundPivotY": 233.07
+        },
+        {
+          "row": 5,
+          "pose": "buildingHammer",
+          "direction": "SE",
+          "x": 17,
+          "y": 1203,
+          "width": 166,
+          "height": 209,
+          "localGroundPivotX": 99.64,
+          "localGroundPivotY": 201.88
+        },
+        {
+          "row": 5,
+          "pose": "buildingHammer",
+          "direction": "SW",
+          "x": 270,
+          "y": 1199,
+          "width": 163,
+          "height": 207,
+          "localGroundPivotX": 68.09,
+          "localGroundPivotY": 199.93
+        },
+        {
+          "row": 5,
+          "pose": "buildingHammer",
+          "direction": "NE",
+          "x": 469,
+          "y": 1209,
+          "width": 159,
+          "height": 203,
+          "localGroundPivotX": 68.49,
+          "localGroundPivotY": 196.03
+        },
+        {
+          "row": 5,
+          "pose": "buildingHammer",
+          "direction": "NW",
+          "x": 719,
+          "y": 1210,
+          "width": 158,
+          "height": 213,
+          "localGroundPivotX": 94.9,
+          "localGroundPivotY": 205.78
+        },
+        {
+          "row": 6,
+          "pose": "harvestingSickle",
+          "direction": "SE",
+          "x": 23,
+          "y": 1439,
+          "width": 197,
+          "height": 199,
+          "localGroundPivotX": 90.34,
+          "localGroundPivotY": 192.12
+        },
+        {
+          "row": 6,
+          "pose": "harvestingSickle",
+          "direction": "SW",
+          "x": 243,
+          "y": 1445,
+          "width": 188,
+          "height": 187,
+          "localGroundPivotX": 117.95,
+          "localGroundPivotY": 180.43
+        },
+        {
+          "row": 6,
+          "pose": "harvestingSickle",
+          "direction": "NE",
+          "x": 480,
+          "y": 1456,
+          "width": 181,
+          "height": 199,
+          "localGroundPivotX": 52.16,
+          "localGroundPivotY": 192.12
+        },
+        {
+          "row": 6,
+          "pose": "harvestingSickle",
+          "direction": "NW",
+          "x": 695,
+          "y": 1450,
+          "width": 178,
+          "height": 205,
+          "localGroundPivotX": 131.96,
+          "localGroundPivotY": 197.97
+        }
+      ],
+      "id": "tang",
+      "rows": [
+        "walkContactA",
+        "walkContactB",
+        "miningWindup",
+        "choppingWindup",
+        "choppingPoseMixed",
+        "buildingHammer",
+        "harvestingSickle"
+      ]
+    },
+    {
+      "file": "units-action-v1-ottoman.png",
+      "source": "public/art/units-action-v1-ottoman.png",
+      "width": 887,
+      "height": 1774,
+      "actualRows": 8,
+      "columns": 4,
+      "alpha": true,
+      "sha256": "92ead069a4ed188fb20e8d4e467f0666e501597f278c506a998730d328fcfcf3",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SE",
+          "x": 51,
+          "y": 16,
+          "width": 116,
+          "height": 197,
+          "localGroundPivotX": 75.65,
+          "localGroundPivotY": 190.18
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "SW",
+          "x": 287,
+          "y": 17,
+          "width": 114,
+          "height": 196,
+          "localGroundPivotX": 35.25,
+          "localGroundPivotY": 189.2
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NE",
+          "x": 495,
+          "y": 17,
+          "width": 123,
+          "height": 198,
+          "localGroundPivotX": 39.5,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 0,
+          "pose": "walkContactA",
+          "direction": "NW",
+          "x": 729,
+          "y": 17,
+          "width": 123,
+          "height": 198,
+          "localGroundPivotX": 81.48,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SE",
+          "x": 51,
+          "y": 226,
+          "width": 109,
+          "height": 195,
+          "localGroundPivotX": 72.88,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "SW",
+          "x": 296,
+          "y": 227,
+          "width": 112,
+          "height": 194,
+          "localGroundPivotX": 24.84,
+          "localGroundPivotY": 187.25
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NE",
+          "x": 495,
+          "y": 230,
+          "width": 125,
+          "height": 198,
+          "localGroundPivotX": 56.36,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 1,
+          "pose": "walkContactB",
+          "direction": "NW",
+          "x": 730,
+          "y": 230,
+          "width": 123,
+          "height": 199,
+          "localGroundPivotX": 65.57,
+          "localGroundPivotY": 192.12
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SE",
+          "x": 42,
+          "y": 418,
+          "width": 137,
+          "height": 229,
+          "localGroundPivotX": 80.98,
+          "localGroundPivotY": 221.38
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "SW",
+          "x": 269,
+          "y": 411,
+          "width": 127,
+          "height": 235,
+          "localGroundPivotX": 46.41,
+          "localGroundPivotY": 227.22
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NE",
+          "x": 494,
+          "y": 431,
+          "width": 124,
+          "height": 223,
+          "localGroundPivotX": 53.14,
+          "localGroundPivotY": 215.53
+        },
+        {
+          "row": 2,
+          "pose": "miningWindup",
+          "direction": "NW",
+          "x": 732,
+          "y": 430,
+          "width": 126,
+          "height": 224,
+          "localGroundPivotX": 66.26,
+          "localGroundPivotY": 216.5
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SE",
+          "x": 43,
+          "y": 665,
+          "width": 163,
+          "height": 189,
+          "localGroundPivotX": 100.82,
+          "localGroundPivotY": 182.38
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "SW",
+          "x": 255,
+          "y": 673,
+          "width": 142,
+          "height": 180,
+          "localGroundPivotX": 39.74,
+          "localGroundPivotY": 173.6
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NE",
+          "x": 482,
+          "y": 661,
+          "width": 165,
+          "height": 182,
+          "localGroundPivotX": 49.12,
+          "localGroundPivotY": 175.55
+        },
+        {
+          "row": 3,
+          "pose": "miningImpact",
+          "direction": "NW",
+          "x": 703,
+          "y": 666,
+          "width": 163,
+          "height": 177,
+          "localGroundPivotX": 116.14,
+          "localGroundPivotY": 170.68
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SE",
+          "x": 55,
+          "y": 838,
+          "width": 122,
+          "height": 220,
+          "localGroundPivotX": 67.85,
+          "localGroundPivotY": 212.6
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "SW",
+          "x": 266,
+          "y": 838,
+          "width": 122,
+          "height": 218,
+          "localGroundPivotX": 49.11,
+          "localGroundPivotY": 210.65
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NE",
+          "x": 502,
+          "y": 838,
+          "width": 119,
+          "height": 224,
+          "localGroundPivotX": 50.97,
+          "localGroundPivotY": 216.5
+        },
+        {
+          "row": 4,
+          "pose": "choppingWindup",
+          "direction": "NW",
+          "x": 733,
+          "y": 835,
+          "width": 116,
+          "height": 227,
+          "localGroundPivotX": 66.11,
+          "localGroundPivotY": 219.43
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SE",
+          "x": 46,
+          "y": 1079,
+          "width": 145,
+          "height": 176,
+          "localGroundPivotX": 88.71,
+          "localGroundPivotY": 169.7
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "SW",
+          "x": 265,
+          "y": 1082,
+          "width": 139,
+          "height": 179,
+          "localGroundPivotX": 46.9,
+          "localGroundPivotY": 172.62
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NE",
+          "x": 486,
+          "y": 1079,
+          "width": 155,
+          "height": 192,
+          "localGroundPivotX": 41.44,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 5,
+          "pose": "choppingImpact",
+          "direction": "NW",
+          "x": 714,
+          "y": 1081,
+          "width": 144,
+          "height": 192,
+          "localGroundPivotX": 101.33,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SE",
+          "x": 43,
+          "y": 1271,
+          "width": 120,
+          "height": 195,
+          "localGroundPivotX": 77.22,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "SW",
+          "x": 269,
+          "y": 1305,
+          "width": 129,
+          "height": 173,
+          "localGroundPivotX": 61.09,
+          "localGroundPivotY": 166.78
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NE",
+          "x": 497,
+          "y": 1286,
+          "width": 135,
+          "height": 198,
+          "localGroundPivotX": 44.81,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 6,
+          "pose": "buildingHammer",
+          "direction": "NW",
+          "x": 714,
+          "y": 1286,
+          "width": 138,
+          "height": 199,
+          "localGroundPivotX": 110.87,
+          "localGroundPivotY": 192.12
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SE",
+          "x": 37,
+          "y": 1513,
+          "width": 152,
+          "height": 145,
+          "localGroundPivotX": 78.43,
+          "localGroundPivotY": 139.47
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "SW",
+          "x": 254,
+          "y": 1516,
+          "width": 151,
+          "height": 147,
+          "localGroundPivotX": 90.35,
+          "localGroundPivotY": 141.43
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NE",
+          "x": 480,
+          "y": 1511,
+          "width": 156,
+          "height": 184,
+          "localGroundPivotX": 25.69,
+          "localGroundPivotY": 177.5
+        },
+        {
+          "row": 7,
+          "pose": "harvestingSickle",
+          "direction": "NW",
+          "x": 711,
+          "y": 1515,
+          "width": 155,
+          "height": 186,
+          "localGroundPivotX": 130.6,
+          "localGroundPivotY": 179.45
+        }
+      ],
+      "id": "ottoman",
+      "rows": [
+        "walkContactA",
+        "walkContactB",
+        "miningWindup",
+        "miningImpact",
+        "choppingWindup",
+        "choppingImpact",
+        "buildingHammer",
+        "harvestingSickle"
+      ]
+    },
+    {
+      "file": "units-action-v1-infantry.png",
+      "source": "public/art/units-action-v1-infantry.png",
+      "width": 887,
+      "height": 1774,
+      "actualRows": 8,
+      "columns": 4,
+      "alpha": true,
+      "sha256": "12f9ce96b5274d68a76f89f1c7b6eb3c759e8283ae6b900ec2311f42a0cbeb80",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "spearContactA",
+          "direction": "SE",
+          "x": 62,
+          "y": 13,
+          "width": 101,
+          "height": 198,
+          "localGroundPivotX": 55.88,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 0,
+          "pose": "spearContactA",
+          "direction": "SW",
+          "x": 277,
+          "y": 14,
+          "width": 106,
+          "height": 197,
+          "localGroundPivotX": 37.74,
+          "localGroundPivotY": 190.18
+        },
+        {
+          "row": 0,
+          "pose": "spearContactA",
+          "direction": "NE",
+          "x": 515,
+          "y": 13,
+          "width": 88,
+          "height": 198,
+          "localGroundPivotX": 45.62,
+          "localGroundPivotY": 191.15
+        },
+        {
+          "row": 0,
+          "pose": "spearContactA",
+          "direction": "NW",
+          "x": 716,
+          "y": 10,
+          "width": 95,
+          "height": 200,
+          "localGroundPivotX": 58.3,
+          "localGroundPivotY": 193.1
+        },
+        {
+          "row": 1,
+          "pose": "spearContactB",
+          "direction": "SE",
+          "x": 63,
+          "y": 218,
+          "width": 95,
+          "height": 208,
+          "localGroundPivotX": 54.27,
+          "localGroundPivotY": 200.9
+        },
+        {
+          "row": 1,
+          "pose": "spearContactB",
+          "direction": "SW",
+          "x": 272,
+          "y": 218,
+          "width": 98,
+          "height": 206,
+          "localGroundPivotX": 46.41,
+          "localGroundPivotY": 198.95
+        },
+        {
+          "row": 1,
+          "pose": "spearContactB",
+          "direction": "NE",
+          "x": 501,
+          "y": 217,
+          "width": 92,
+          "height": 212,
+          "localGroundPivotX": 48.24,
+          "localGroundPivotY": 204.8
+        },
+        {
+          "row": 1,
+          "pose": "spearContactB",
+          "direction": "NW",
+          "x": 728,
+          "y": 217,
+          "width": 92,
+          "height": 211,
+          "localGroundPivotX": 42.75,
+          "localGroundPivotY": 203.82
+        },
+        {
+          "row": 2,
+          "pose": "swordContactA",
+          "direction": "SE",
+          "x": 63,
+          "y": 446,
+          "width": 116,
+          "height": 189,
+          "localGroundPivotX": 54.93,
+          "localGroundPivotY": 182.38
+        },
+        {
+          "row": 2,
+          "pose": "swordContactA",
+          "direction": "SW",
+          "x": 256,
+          "y": 448,
+          "width": 132,
+          "height": 186,
+          "localGroundPivotX": 56.78,
+          "localGroundPivotY": 179.45
+        },
+        {
+          "row": 2,
+          "pose": "swordContactA",
+          "direction": "NE",
+          "x": 496,
+          "y": 450,
+          "width": 128,
+          "height": 184,
+          "localGroundPivotX": 55.51,
+          "localGroundPivotY": 177.5
+        },
+        {
+          "row": 2,
+          "pose": "swordContactA",
+          "direction": "NW",
+          "x": 710,
+          "y": 450,
+          "width": 112,
+          "height": 182,
+          "localGroundPivotX": 70.92,
+          "localGroundPivotY": 175.55
+        },
+        {
+          "row": 3,
+          "pose": "swordContactB",
+          "direction": "SE",
+          "x": 58,
+          "y": 646,
+          "width": 111,
+          "height": 195,
+          "localGroundPivotX": 58.9,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 3,
+          "pose": "swordContactB",
+          "direction": "SW",
+          "x": 254,
+          "y": 649,
+          "width": 134,
+          "height": 192,
+          "localGroundPivotX": 61.03,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 3,
+          "pose": "swordContactB",
+          "direction": "NE",
+          "x": 499,
+          "y": 650,
+          "width": 131,
+          "height": 193,
+          "localGroundPivotX": 51.48,
+          "localGroundPivotY": 186.28
+        },
+        {
+          "row": 3,
+          "pose": "swordContactB",
+          "direction": "NW",
+          "x": 716,
+          "y": 649,
+          "width": 108,
+          "height": 191,
+          "localGroundPivotX": 70.51,
+          "localGroundPivotY": 184.32
+        },
+        {
+          "row": 4,
+          "pose": "archerContactA",
+          "direction": "SE",
+          "x": 61,
+          "y": 851,
+          "width": 110,
+          "height": 195,
+          "localGroundPivotX": 61.09,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 4,
+          "pose": "archerContactA",
+          "direction": "SW",
+          "x": 275,
+          "y": 856,
+          "width": 99,
+          "height": 190,
+          "localGroundPivotX": 38.67,
+          "localGroundPivotY": 183.35
+        },
+        {
+          "row": 4,
+          "pose": "archerContactA",
+          "direction": "NE",
+          "x": 515,
+          "y": 854,
+          "width": 99,
+          "height": 192,
+          "localGroundPivotX": 35.57,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 4,
+          "pose": "archerContactA",
+          "direction": "NW",
+          "x": 717,
+          "y": 857,
+          "width": 104,
+          "height": 190,
+          "localGroundPivotX": 62.63,
+          "localGroundPivotY": 183.35
+        },
+        {
+          "row": 5,
+          "pose": "archerContactB",
+          "direction": "SE",
+          "x": 63,
+          "y": 1064,
+          "width": 106,
+          "height": 192,
+          "localGroundPivotX": 60.85,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 5,
+          "pose": "archerContactB",
+          "direction": "SW",
+          "x": 269,
+          "y": 1065,
+          "width": 102,
+          "height": 191,
+          "localGroundPivotX": 42.52,
+          "localGroundPivotY": 184.32
+        },
+        {
+          "row": 5,
+          "pose": "archerContactB",
+          "direction": "NE",
+          "x": 519,
+          "y": 1061,
+          "width": 98,
+          "height": 195,
+          "localGroundPivotX": 32.73,
+          "localGroundPivotY": 188.22
+        },
+        {
+          "row": 5,
+          "pose": "archerContactB",
+          "direction": "NW",
+          "x": 716,
+          "y": 1063,
+          "width": 98,
+          "height": 192,
+          "localGroundPivotX": 62.98,
+          "localGroundPivotY": 185.3
+        },
+        {
+          "row": 6,
+          "pose": "legionaryContactA",
+          "direction": "SE",
+          "x": 57,
+          "y": 1263,
+          "width": 127,
+          "height": 204,
+          "localGroundPivotX": 74.92,
+          "localGroundPivotY": 197
+        },
+        {
+          "row": 6,
+          "pose": "legionaryContactA",
+          "direction": "SW",
+          "x": 253,
+          "y": 1263,
+          "width": 138,
+          "height": 206,
+          "localGroundPivotX": 67.85,
+          "localGroundPivotY": 198.95
+        },
+        {
+          "row": 6,
+          "pose": "legionaryContactA",
+          "direction": "NE",
+          "x": 510,
+          "y": 1264,
+          "width": 118,
+          "height": 206,
+          "localGroundPivotX": 42.1,
+          "localGroundPivotY": 198.95
+        },
+        {
+          "row": 6,
+          "pose": "legionaryContactA",
+          "direction": "NW",
+          "x": 713,
+          "y": 1267,
+          "width": 112,
+          "height": 204,
+          "localGroundPivotX": 55.95,
+          "localGroundPivotY": 197
+        },
+        {
+          "row": 7,
+          "pose": "legionaryContactB",
+          "direction": "SE",
+          "x": 57,
+          "y": 1486,
+          "width": 128,
+          "height": 219,
+          "localGroundPivotX": 73.37,
+          "localGroundPivotY": 211.62
+        },
+        {
+          "row": 7,
+          "pose": "legionaryContactB",
+          "direction": "SW",
+          "x": 243,
+          "y": 1487,
+          "width": 145,
+          "height": 219,
+          "localGroundPivotX": 78.42,
+          "localGroundPivotY": 211.62
+        },
+        {
+          "row": 7,
+          "pose": "legionaryContactB",
+          "direction": "NE",
+          "x": 507,
+          "y": 1487,
+          "width": 130,
+          "height": 222,
+          "localGroundPivotX": 48.64,
+          "localGroundPivotY": 214.55
+        },
+        {
+          "row": 7,
+          "pose": "legionaryContactB",
+          "direction": "NW",
+          "x": 711,
+          "y": 1491,
+          "width": 113,
+          "height": 219,
+          "localGroundPivotX": 59.43,
+          "localGroundPivotY": 211.62
+        }
+      ],
+      "id": "infantry",
+      "rows": [
+        "spearContactA",
+        "spearContactB",
+        "swordContactA",
+        "swordContactB",
+        "archerContactA",
+        "archerContactB",
+        "legionaryContactA",
+        "legionaryContactB"
+      ]
+    },
+    {
+      "file": "units-action-v1-tang-impact.png",
+      "source": "public/art/units-action-v1-tang-impact.png",
+      "width": 1774,
+      "height": 887,
+      "actualRows": 2,
+      "columns": 4,
+      "alpha": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "49e26f7ed1b400d0fdd87715c787b99d5fd781e34bac409298ca1a3f3724f2a0",
+      "frames": [
+        {
+          "row": 0,
+          "pose": "miningImpact",
+          "direction": "SE",
+          "x": 84,
+          "y": 89,
+          "width": 286,
+          "height": 343,
+          "localGroundPivotX": 227.58,
+          "localGroundPivotY": 331.43
+        },
+        {
+          "row": 0,
+          "pose": "miningImpact",
+          "direction": "SW",
+          "x": 568,
+          "y": 90,
+          "width": 267,
+          "height": 343,
+          "localGroundPivotX": 40.21,
+          "localGroundPivotY": 331.43
+        },
+        {
+          "row": 0,
+          "pose": "miningImpact",
+          "direction": "NE",
+          "x": 970,
+          "y": 89,
+          "width": 289,
+          "height": 330,
+          "localGroundPivotX": 114.16,
+          "localGroundPivotY": 318.75
+        },
+        {
+          "row": 0,
+          "pose": "miningImpact",
+          "direction": "NW",
+          "x": 1409,
+          "y": 89,
+          "width": 289,
+          "height": 330,
+          "localGroundPivotX": 177.87,
+          "localGroundPivotY": 318.75
+        },
+        {
+          "row": 1,
+          "pose": "choppingImpact",
+          "direction": "SE",
+          "x": 77,
+          "y": 510,
+          "width": 268,
+          "height": 333,
+          "localGroundPivotX": 225.02,
+          "localGroundPivotY": 321.68
+        },
+        {
+          "row": 1,
+          "pose": "choppingImpact",
+          "direction": "SW",
+          "x": 566,
+          "y": 509,
+          "width": 275,
+          "height": 335,
+          "localGroundPivotX": 39.66,
+          "localGroundPivotY": 323.62
+        },
+        {
+          "row": 1,
+          "pose": "choppingImpact",
+          "direction": "NE",
+          "x": 963,
+          "y": 502,
+          "width": 296,
+          "height": 330,
+          "localGroundPivotX": 118.87,
+          "localGroundPivotY": 318.75
+        },
+        {
+          "row": 1,
+          "pose": "choppingImpact",
+          "direction": "NW",
+          "x": 1409,
+          "y": 500,
+          "width": 303,
+          "height": 331,
+          "localGroundPivotX": 185.52,
+          "localGroundPivotY": 319.73
+        }
+      ],
+      "bodyHeight": 360,
+      "id": "tangImpact",
+      "rows": [
+        "miningImpact",
+        "choppingImpact"
+      ]
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

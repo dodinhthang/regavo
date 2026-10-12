@@ -1,0 +1,158 @@
+{
+  "version": 7,
+  "created": "2026-10-09",
+  "scope": "Current unit renderer integration for five faction traders and six faction siege sources",
+  "helper": {
+    "path": "src/render/units.ts",
+    "sha256": "8252cf4f275246e64b8c1433869e4fb1649fbcc596db302d721690c8ca4dc3c2",
+    "pixelRatio": 4,
+    "cacheLimits": {
+      "sprites": 192,
+      "poses": 64,
+      "portraits": 24
+    },
+    "smallGroundPennants": false
+  },
+  "provenanceManifests": {
+    "units-traders-v7.manifest.json": {
+      "sha256": "7ab6c9471849a5854d22b07fee2b29d61976548ccf0c3a6cd14620b07fabd76b",
+      "sheets": 5
+    },
+    "units-siege-v7.manifest.json": {
+      "sha256": "90805acdd51aeb96f7c3c7742ba726e87f5ce8eb3e57d3e2a034c6cb9f9f71da",
+      "sheets": 6
+    }
+  },
+  "coverage": {
+    "newSheetCount": 11,
+    "newAuthoredViewCount": 136,
+    "traders": "five factions × four directions × two intact walking contacts",
+    "siege": "six faction machines × four directions × walkA/walkB/windup/impact",
+    "ottoman": "Existing v6 Ottoman cannon retained; ram/catapult absent from its roster"
+  },
+  "retiredDecodedSources": [
+    "units-v3-a/b/c.png are historical failure fallback only",
+    "units-motion-v6-trader.png not decoded",
+    "units-siege-v6-ram.png and units-siege-v6-catapult.png not decoded"
+  ],
+  "runtime": {
+    "sourceDirections": [
+      "SE",
+      "SW",
+      "NE",
+      "NW"
+    ],
+    "siegeManifestDirections": [
+      "SE",
+      "SW",
+      "NW",
+      "NE"
+    ],
+    "siegeSourceColumnRemap": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "attackPhaseSources": {
+      "0": "windup",
+      "1": "windup",
+      "2": "impact",
+      "3": "contactA recovery"
+    },
+    "machineScale": "48/source crew head-to-sole estimate; constant for all four states",
+    "machineAnchor": "Measured chassis ground contact center; independent of lowest crew foot",
+    "internalSiegeBuffer": {
+      "logicalWidth": 224,
+      "logicalHeight": 224,
+      "anchorX": 112,
+      "anchorY": 196
+    },
+    "sourcePreservation": "PNG masters copied intact; runtime Canvas source sampling/whole-component isolation only; no offline raster editing",
+    "noPartSlicing": true,
+    "worldAndPoseCachesSeparateCiv": true,
+    "sourceLoad": "Selected civ list, in-flight coalescing and serial guards against stale source pruning"
+  },
+  "machines": [
+    {
+      "id": "roman-ram",
+      "civilizations": [
+        "roman"
+      ],
+      "unitType": "ram",
+      "crewSourceHeight": 130,
+      "targetCrewLogicalHeight": 48,
+      "maximumWholeSpriteLogicalHeight": 91.2
+    },
+    {
+      "id": "roman-onager",
+      "civilizations": [
+        "roman"
+      ],
+      "unitType": "catapult",
+      "crewSourceHeight": 157,
+      "targetCrewLogicalHeight": 48,
+      "maximumWholeSpriteLogicalHeight": 88.05
+    },
+    {
+      "id": "persian-ram",
+      "civilizations": [
+        "persian"
+      ],
+      "unitType": "ram",
+      "crewSourceHeight": 108,
+      "targetCrewLogicalHeight": 48,
+      "maximumWholeSpriteLogicalHeight": 97.33
+    },
+    {
+      "id": "persian-stone",
+      "civilizations": [
+        "persian"
+      ],
+      "unitType": "catapult",
+      "crewSourceHeight": 170,
+      "targetCrewLogicalHeight": 48,
+      "maximumWholeSpriteLogicalHeight": 73.69
+    },
+    {
+      "id": "tang-traction",
+      "civilizations": [
+        "tang"
+      ],
+      "unitType": "catapult",
+      "crewSourceHeight": 149,
+      "targetCrewLogicalHeight": 48,
+      "maximumWholeSpriteLogicalHeight": 113.72
+    },
+    {
+      "id": "mongol-trebuchet",
+      "civilizations": [
+        "mongol"
+      ],
+      "unitType": "catapult",
+      "crewSourceHeight": 99,
+      "targetCrewLogicalHeight": 48,
+      "maximumWholeSpriteLogicalHeight": 123.15
+    }
+  ],
+  "qa": {
+    "frameBoundsAndHashesVerified": 136,
+    "visual": [
+      "Five trader PNGs inspected native; front/rear NE world views checked on green matte at zoom2.2",
+      "Six siege walk and attack front views checked at zoom2.2; additional rear NE Tang and Mongol attack views",
+      "Roman/Mongol/Ottoman villager idle retains tools with lazy historical base disabled",
+      "Roman engineer wood-carry and idle checked; only explicit carry selects cargo source",
+      "No visible opaque background, ground flags or detached limbs in checked rendered views",
+      "Chrome console error/warn check returned empty",
+      "Isolated strict TypeScript passed; parent owns final full build/production/battle checks"
+    ],
+    "limitations": [
+      "Two trader contacts, four diagonal source directions, no interpolation",
+      "Native siege crew height approx99–170px limits fine detail at extreme zoom; DPR4 prevents extra downsample/upscale loss",
+      "Some ram rear views occlude second crew behind canopy; not every frame shows two unobstructed people",
+      "Source machine/crew ground anchors and trader handler heights are visual measurements",
+      "Age does not yet choose three distinct per-class uniform animation sets"
+    ]
+  },
+  "rights": "Original AI-generated imagery with no imported third-party art. AI outputs are not warranted exclusive. Historical references and full generation prompts remain in the two provenance manifests."
+}

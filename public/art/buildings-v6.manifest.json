@@ -1,0 +1,5964 @@
+{
+  "version": 6,
+  "created": "2026-10-09",
+  "sourceHandling": "Original RGBA PNG bytes copied unchanged; source rectangles sampled by runtime Canvas only. No offline crop, resize, chromakey or recompression.",
+  "geometry": "2x physical canvas/anchor. Ground center from measured pad side tips, separate X/Y scale preserving vertical walls. TC thin curb contour fit is symmetric canonical 2:1 after scaling; no whole-image shear.",
+  "rights": {
+    "generatedWith": "OpenAI built-in imagegen, from original project prompts and original project concept style, no external stock, no game sprite extraction.",
+    "canvasBanner": "Original Canvas code and historical cultural motifs authored in src/render/buildings.ts; no downloaded fonts, logos or icons.",
+    "note": "Original generated project assets; model-output ownership follows applicable service terms. No claim of exclusive copyright protection in AI output or freedom from every possible third-party claim."
+  },
+  "rejectedSources": [
+    {
+      "original": "generation-record:exec-68ae77e3-b30a-4296-be4c-3a64a7a36db6.png",
+      "prompt": "Create five ORIGINAL spectacular historical 2D RTS TOWN CENTER sprites on one production atlas. Highly realistic miniature 3D-rendered masonry, beautiful tile roofs, timber, fine stone carving, natural upper-left daylight. Clean TRUE ALPHA transparent cutouts; no backdrop, labels, scenery, people, animals or watermarks. The canvas is 1536x1024 landscape, a precise THREE COLUMN by TWO ROW layout of square 512x512 cells. Five separate compounds; sixth bottom-right cell COMPLETELY EMPTY AND TRANSPARENT. Order: top-left ROMAN, top-middle MONGOL, top-right PERSIAN; bottom-left TANG CHINESE, bottom-middle OTTOMAN.\nCritical orthographic camera: equal left and right views, canonical ground edges slope exactly +1/2 and -1/2, vertical columns perfectly upright. Every compound stands on a single thin SQUARE foundation, a symmetrical exact 2:1 diamond; left/right corners equal y, front/back tips vertically aligned at pad center x, no rectangular perspective bases. The pad must be the whole compound boundary, so all enclosing walls, corner towers, wings and architectural props sit fully INSIDE the diamond. One detached compound per cell, safely below 82% width and height; large transparent gutters. No extra flags, because a separately drawn faction banner will be placed beside it. All roofs, walls, steps fully within cell. No tall foundations, no giant staircase hanging beyond front corner.\nCivilization architecture: ROMAN warm ivory limestone and classical columns, red terracotta roofs, disciplined square courtyard. MONGOL ivory felt yurts with dark timber structures and cobalt decoration, dignified capital compound in historically plausible nomad timber-and-stone form; no enormous domed Persian palace. PERSIAN cream sandstone, warm adobe, turquoise blue glazed ornaments, elegant columned halls, carved winged lion gateposts. TANG CHINESE cream plaster and red timber, gray curved tiled roofs with upturned eaves, ordered courtyard architecture. OTTOMAN warm limestone and plaster, orange tile roofs, teal domes, arcaded square courtyard, restrained Ottoman ornament. Photorealistic fine material detail, earthy restrained colors and clean silhouette, sophisticated historical miniature game art; not painterly blur, not vectors.\nAll five sprites are AGE II organized provincial town centers, a visibly WIDER ENCLOSING COMPLEX around the main hall. The square ground pad encloses a low perimeter wall on all four edges, a real roofed entrance on the FRONT-RIGHT edge, main hall at back-center, TWO small side wings or service buildings, an open paved courtyard in middle. Roman colonnaded redtile civic hall, plaster/redtile sidewings, limestone lowwall; Mongol main large ger, secondary small felt gers, timber gate and timber/palisade enclosure; Persian cream stone columned hall with turquoise glazed trim, adobe-and-stone sidewings and carved stone courtyard gate; Tang two roofed wings flanking a Chinese main hall, redwood graytiles, cream perimeterwall and tiledgateway; Ottoman medium teal dome civic hall with orange-tile side wings, arcaded entry, low masonry perimeter. Architecture and materials substantially stronger than early crude frontier hall, but still smaller and less majestic than imperial capital. Do not depict one solitary tall building, depict the whole enclosed courtyard compound. Camera perfect square 2:1 diamond as specified.",
+      "reason": "Compound source front-corner skew; regenerated with explicit per-cell diamond coordinates."
+    },
+    {
+      "original": "generation-record:exec-116c2e08-d073-4f7f-9e87-93f3a7362d91.png",
+      "prompt": "Create five ORIGINAL spectacular historical 2D RTS TOWN CENTER sprites on one production atlas. Highly realistic miniature 3D-rendered masonry, beautiful tile roofs, timber, fine stone carving, natural upper-left daylight. Clean TRUE ALPHA transparent cutouts; no backdrop, labels, scenery, people, animals or watermarks. The canvas is 1536x1024 landscape, a precise THREE COLUMN by TWO ROW layout of square 512x512 cells. Five separate compounds; sixth bottom-right cell COMPLETELY EMPTY AND TRANSPARENT. Order: top-left ROMAN, top-middle MONGOL, top-right PERSIAN; bottom-left TANG CHINESE, bottom-middle OTTOMAN.\nCritical orthographic camera: equal left and right views, canonical ground edges slope exactly +1/2 and -1/2, vertical columns perfectly upright. Every compound stands on a single thin SQUARE foundation, a symmetrical exact 2:1 diamond; left/right corners equal y, front/back tips vertically aligned at pad center x, no rectangular perspective bases. The pad must be the whole compound boundary, so all enclosing walls, corner towers, wings and architectural props sit fully INSIDE the diamond. One detached compound per cell, safely below 82% width and height; large transparent gutters. No extra flags, because a separately drawn faction banner will be placed beside it. All roofs, walls, steps fully within cell. No tall foundations, no giant staircase hanging beyond front corner.\nCivilization architecture: ROMAN warm ivory limestone and classical columns, red terracotta roofs, disciplined square courtyard. MONGOL ivory felt yurts with dark timber structures and cobalt decoration, dignified capital compound in historically plausible nomad timber-and-stone form; no enormous domed Persian palace. PERSIAN cream sandstone, warm adobe, turquoise blue glazed ornaments, elegant columned halls, carved winged lion gateposts. TANG CHINESE cream plaster and red timber, gray curved tiled roofs with upturned eaves, ordered courtyard architecture. OTTOMAN warm limestone and plaster, orange tile roofs, teal domes, arcaded square courtyard, restrained Ottoman ornament. Photorealistic fine material detail, earthy restrained colors and clean silhouette, sophisticated historical miniature game art; not painterly blur, not vectors.\nAll five sprites are AGE III IMPERIAL CAPITAL COMPOUNDS, magnificent, WIDE, rich and impressive, yet compact on a perfect square pad. This is visibly larger and more sophisticated than a provincial towncenter: fortress-quality enclosing stone perimeter, FOUR distinct corner towers, an ornate front-right ceremonial roofed gateway, large main administrative palace at rear, TWO long colonnaded or roofed side wings wrapping around a broad open paved square courtyard, additional small pavilion and culturally appropriate central fountain or ceremonial brazier. The open COURTYARD must occupy about ONE THIRD of pad interior so the result reads as a broad enclosed complex, not one tall solitary monument. Main building height below half the compoundwidth; horizontal expansion is the priority. Mainhall rear and sidewings form a horseshoe around court, tower/wall enclosure entirely inside pad.\nROMAN impressive ivory limestone classical civic palace and long redtile colonnaded wings, ornate stone gate, redtile cornerwatchtowers and courtyardfountain. MONGOL dignified imperial nomadcapital with huge decorated ivoryfelt main ger on a masonry plinth, two smaller felt gers, roofed timber log wings and strongstonepalisadeenclosure with wooden towercrowns, cobalttrimandcentralbrazier. PERSIAN grand cream sandstone and turquoise imperial columned hall, tallbutnotexcessivecarvedwingedliongate, longarcadedpalacesidewings, blueglazedwallbands, fountainandgardenbeds. TANG large triple-roofed redwood administrativehall, sweeping darkgray Chinese tiled sidehalls and gates, four square stonecorner towers with Chinese roofs, ornatebronzecenserinopencourt. OTTOMAN magnificent broad creamstone imperialdomedhall, teal main and smalldomes, orange-tiled arcadedwings, ornatearchedgateway, cornerminitowers andcourtyardfountain. Do not make Ottoman a religiousmosque minaretforest. Fullyoriginalarchitecture, natural detailed historicalrealism.",
+      "reason": "Compound source front-corner skew; regenerated with explicit per-cell diamond coordinates."
+    },
+    {
+      "key": "buildingV6Age3D",
+      "file": "buildings-v6-age3-d.png",
+      "cols": 5,
+      "rows": 1,
+      "count": 5,
+      "types": [
+        "stonewall"
+      ],
+      "age": 3,
+      "original": "generation-record:exec-3dedadd9-f388-4dbd-8663-0601ce0ac6a9.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape canvas with just ONE HORIZONTAL ROW of EXACTLY FIVE detached AGE III STONE WALL SEGMENT sprites, centered vertically with generous completely transparent space above/below. Column civilization order specified. These are compact straight walls running along the down-right isometric axis on their own exact2:1diamondpad, NOgateopenings. Strong dressed-stone defensewall, threeclearmerlons, visiblewalkingledge, smallbutfinelycrafted culturalcapdetails. Roman paleashlarwallredtile copingandredcrestshield; Mongolheavygraystonewalltimbercapandbluecloth; Persiancreamstonewallturquoiseglazedband; TanggraystonewallanddarkgrayChinese tilecoping; Ottomancreamstonewallorange/tealcapandcarvedcrescentdetail. Not a fortress or tower, just a straight shortwallsegment. Genuineadvancedarchitecture differs fromplainageIIstonewall. Occupy70%cellwidth; truealpha aroundall5objects.",
+      "reason": "Negligible alpha edge fringe; built-in imagegen cleanup retained all architectural geometry."
+    }
+  ],
+  "scope": "Secondary structures evolve through every unlocked age.",
+  "civilizations": [
+    "roman",
+    "mongol",
+    "persian",
+    "tang",
+    "ottoman"
+  ],
+  "reusedSources": [
+    "buildings-v3.manifest.json"
+  ],
+  "ageMapping": {
+    "age1": [
+      "house from V3 ageI",
+      "lumbercamp/miningcamp/granary from V6 age1-a",
+      "farm/barracks/stable from V6 age1-b"
+    ],
+    "age2": "V3 ageII source rows; fortress unavailable.",
+    "age3": [
+      "house from V3 ageIII",
+      "13 other types from V6 age3-a/b/c/d"
+    ]
+  },
+  "aliases": {
+    "outpost": "tower",
+    "armory": "workshop",
+    "foundry": "workshop"
+  },
+  "woodDefenses": "Keep authored wood fallback; do not replace wood with stone.",
+  "canonicalEraCount": 170,
+  "atlases": [
+    {
+      "key": "buildingV6Age1A",
+      "file": "buildings-v6-age1-a.png",
+      "cols": 5,
+      "rows": 3,
+      "count": 15,
+      "types": [
+        "lumbercamp",
+        "miningcamp",
+        "granary"
+      ],
+      "age": 1,
+      "original": "public/art/buildings-v6-age1-a.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape atlas, EXACTLY FIVE COLUMNS and THREE ROWS, fifteen separate AGE I buildings, early frontier village construction, crude but beautiful practical timber, thatch, felt, raw adobe. No dressed-stone palaces or elaborate late-age roofs. Row1 LUMBER CAMP: woodworker's open timber shelter, stacks of sawn logs, stump and handtools, low fence on rear pad edge. Row2 MINING CAMP: primitive wood/felt/adobe tool shed, handcart, baskets of stone, small timber hoist, stone blocks; NO mountain or landscape. Row3 GRANARY: primitive raised timber/thatch or adobe grain storage building, wicker grain baskets, sacks, small practical courtyard. Mongol uses low felt storage tent; Persian raw adobe vault store; Tang wooden raised granary with modest tile/thatch roof; Ottoman rough timber/thatch store; Roman rough wooden granary with modest reed roofing. Each pad a neat true 2:1 diamond; buildings show genuine early-age technology.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c4922b721272fa16581a17e19bd866ea8a466f1fa5c19126d5604e57e2d5dbfa",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 993784,
+        "partial": 111658,
+        "solid": 467422
+      },
+      "frames": [
+        {
+          "type": "lumbercamp",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            12,
+            107,
+            300,
+            218
+          ],
+          "foundation": [
+            6,
+            137,
+            293,
+            135,
+            152,
+            211
+          ],
+          "frontSkewSourcePx": 2.5,
+          "leftRightYDifference": -2,
+          "ratio": 1.9133333333333333,
+          "fittedFoundation": [
+            6,
+            137,
+            293,
+            135,
+            152,
+            211
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -1.1149825783972125,
+                -32
+              ],
+              [
+                64,
+                -0.4266666666666667
+              ],
+              [
+                1.1149825783972125,
+                32
+              ],
+              [
+                -64,
+                0.4266666666666667
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            331,
+            109,
+            276,
+            211
+          ],
+          "foundation": [
+            6,
+            134,
+            269,
+            134,
+            141.5,
+            204
+          ],
+          "frontSkewSourcePx": 4,
+          "leftRightYDifference": 0,
+          "ratio": 1.8785714285714286,
+          "fittedFoundation": [
+            6,
+            134,
+            269,
+            134,
+            141.5,
+            204
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -1.946768060836502,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                1.946768060836502,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            624,
+            111,
+            287,
+            210
+          ],
+          "foundation": [
+            6,
+            132,
+            279,
+            133,
+            144,
+            204
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.9090909090909092,
+          "fittedFoundation": [
+            6,
+            132,
+            279,
+            133,
+            144,
+            204
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.7032967032967032,
+                -32
+              ],
+              [
+                64,
+                0.22377622377622378
+              ],
+              [
+                0.7032967032967032,
+                32
+              ],
+              [
+                -64,
+                -0.22377622377622378
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            928,
+            106,
+            281,
+            215
+          ],
+          "foundation": [
+            6,
+            137,
+            274,
+            137,
+            140.5,
+            208
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.8873239436619718,
+          "fittedFoundation": [
+            6,
+            137,
+            274,
+            137,
+            140.5,
+            208
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.23880597014925373,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0.23880597014925373,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            1231,
+            114,
+            290,
+            208
+          ],
+          "foundation": [
+            6,
+            129,
+            283,
+            131,
+            146,
+            201
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": 2,
+          "ratio": 1.9507042253521127,
+          "fittedFoundation": [
+            6,
+            129,
+            283,
+            131,
+            146,
+            201
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.6931407942238268,
+                -32
+              ],
+              [
+                64,
+                0.4507042253521127
+              ],
+              [
+                0.6931407942238268,
+                32
+              ],
+              [
+                -64,
+                -0.4507042253521127
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            13,
+            384,
+            307,
+            259
+          ],
+          "foundation": [
+            6,
+            174,
+            300,
+            173,
+            154.5,
+            252
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": -1,
+          "ratio": 1.872611464968153,
+          "fittedFoundation": [
+            6,
+            174,
+            300,
+            173,
+            154.5,
+            252
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.6530612244897959,
+                -32
+              ],
+              [
+                64,
+                -0.20382165605095542
+              ],
+              [
+                0.6530612244897959,
+                32
+              ],
+              [
+                -64,
+                0.20382165605095542
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            327,
+            406,
+            296,
+            234
+          ],
+          "foundation": [
+            6,
+            151,
+            289,
+            150,
+            148.5,
+            228
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": -1,
+          "ratio": 1.8258064516129033,
+          "fittedFoundation": [
+            6,
+            151,
+            289,
+            150,
+            148.5,
+            228
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.45229681978798586,
+                -32
+              ],
+              [
+                64,
+                -0.2064516129032258
+              ],
+              [
+                0.45229681978798586,
+                32
+              ],
+              [
+                -64,
+                0.2064516129032258
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            628,
+            406,
+            282,
+            232
+          ],
+          "foundation": [
+            6,
+            151,
+            275,
+            154,
+            144.5,
+            225
+          ],
+          "frontSkewSourcePx": 4,
+          "leftRightYDifference": 3,
+          "ratio": 1.8551724137931034,
+          "fittedFoundation": [
+            6,
+            151,
+            275,
+            154,
+            144.5,
+            225
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -1.903345724907063,
+                -32
+              ],
+              [
+                64,
+                0.6620689655172414
+              ],
+              [
+                1.903345724907063,
+                32
+              ],
+              [
+                -64,
+                -0.6620689655172414
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            919,
+            399,
+            300,
+            242
+          ],
+          "foundation": [
+            6,
+            158,
+            293,
+            158,
+            150,
+            235
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.8636363636363635,
+          "fittedFoundation": [
+            6,
+            158,
+            293,
+            158,
+            150,
+            235
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.2229965156794425,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0.2229965156794425,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            1228,
+            404,
+            296,
+            237
+          ],
+          "foundation": [
+            6,
+            153,
+            290,
+            154,
+            148.5,
+            230
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.8562091503267975,
+          "fittedFoundation": [
+            6,
+            153,
+            290,
+            154,
+            148.5,
+            230
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.22535211267605634,
+                -32
+              ],
+              [
+                64,
+                0.20915032679738563
+              ],
+              [
+                0.22535211267605634,
+                32
+              ],
+              [
+                -64,
+                -0.20915032679738563
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            17,
+            703,
+            292,
+            245
+          ],
+          "foundation": [
+            6,
+            164,
+            285,
+            162,
+            144,
+            238
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": -2,
+          "ratio": 1.86,
+          "fittedFoundation": [
+            6,
+            164,
+            285,
+            162,
+            144,
+            238
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0.6881720430107527,
+                -32
+              ],
+              [
+                64,
+                -0.4266666666666667
+              ],
+              [
+                -0.6881720430107527,
+                32
+              ],
+              [
+                -64,
+                0.4266666666666667
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            326,
+            733,
+            289,
+            213
+          ],
+          "foundation": [
+            6,
+            132,
+            283,
+            132,
+            145,
+            206
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.8716216216216217,
+          "fittedFoundation": [
+            6,
+            132,
+            283,
+            132,
+            145,
+            206
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.23104693140794225,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0.23104693140794225,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            624,
+            714,
+            291,
+            231
+          ],
+          "foundation": [
+            6,
+            151,
+            285,
+            149,
+            144.5,
+            225
+          ],
+          "frontSkewSourcePx": -1,
+          "leftRightYDifference": -2,
+          "ratio": 1.86,
+          "fittedFoundation": [
+            6,
+            151,
+            285,
+            149,
+            144.5,
+            225
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0.45878136200716846,
+                -32
+              ],
+              [
+                64,
+                -0.4266666666666667
+              ],
+              [
+                -0.45878136200716846,
+                32
+              ],
+              [
+                -64,
+                0.4266666666666667
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            925,
+            690,
+            285,
+            256
+          ],
+          "foundation": [
+            5,
+            176,
+            278,
+            176,
+            141.5,
+            250
+          ],
+          "frontSkewSourcePx": 0,
+          "leftRightYDifference": 0,
+          "ratio": 1.8445945945945945,
+          "fittedFoundation": [
+            5,
+            176,
+            278,
+            176,
+            141.5,
+            250
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            1228,
+            704,
+            294,
+            243
+          ],
+          "foundation": [
+            6,
+            162,
+            287,
+            160,
+            145,
+            237
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": -2,
+          "ratio": 1.8486842105263157,
+          "fittedFoundation": [
+            6,
+            162,
+            287,
+            160,
+            145,
+            237
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0.6832740213523132,
+                -32
+              ],
+              [
+                64,
+                -0.42105263157894735
+              ],
+              [
+                -0.6832740213523132,
+                32
+              ],
+              [
+                -64,
+                0.42105263157894735
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "buildingV6Age1B",
+      "file": "buildings-v6-age1-b.png",
+      "cols": 5,
+      "rows": 3,
+      "count": 15,
+      "types": [
+        "farm",
+        "barracks",
+        "stable"
+      ],
+      "age": 1,
+      "original": "public/art/buildings-v6-age1-b.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape atlas EXACTLY FIVE COLUMNS and THREE ROWS, fifteen separate AGE I primitive frontier structures. No dressed stone palaces, massive towers, golden imperial decoration or elaborate masonry buildings. Row1 FARM: a small true 2:1 diamond patch of ripe golden wheat, crude wood irrigation trough, a tiny wicker basket and simple low roughwood border, center filled by wheat. Row2 BARRACKS: rough timber/thatch/adobe/felt military communal hall, crude weapon rack and 2 straw practice dummies in its practical courtyard, rough short rear palisade. Roman earlywood barrack withreedroof; Mongolfelt militarytentandtimberrack; Persian adobe barrackwoodportico; Tangrough redwoodhallwithsimplelowgraytiles; Ottomanrustictimberthatchmilitaryhut. Row3 STABLE: simple wood fenced horseyard plus primitive timber/thatch shelter, haystack, wateringtrough, 2 wooden hitchposts, no horses, no animals. Culture-specific modestroof material/felt/adobe variations, same type readily recognized. Each detached miniature on its own perfectdiamond pad withcleantruealpha around.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "64f56eefca43929d7aaffd5346650e7b480271ecdaca74a6cc6ce76c68081870",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 911482,
+        "partial": 166991,
+        "solid": 494391
+      },
+      "frames": [
+        {
+          "type": "farm",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            30,
+            78,
+            297,
+            253
+          ],
+          "foundation": [
+            5,
+            174,
+            291,
+            174,
+            148,
+            247
+          ],
+          "frontSkewSourcePx": 0,
+          "leftRightYDifference": 0,
+          "ratio": 1.9589041095890412,
+          "fittedFoundation": [
+            5,
+            174,
+            291,
+            174,
+            148,
+            247
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            338,
+            104,
+            280,
+            227
+          ],
+          "foundation": [
+            6,
+            149,
+            274,
+            149,
+            139.5,
+            220
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.8873239436619718,
+          "fittedFoundation": [
+            6,
+            149,
+            274,
+            149,
+            139.5,
+            220
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.23880597014925373,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                -0.23880597014925373,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            629,
+            115,
+            287,
+            216
+          ],
+          "foundation": [
+            5,
+            137,
+            281,
+            138,
+            141.5,
+            210
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.903448275862069,
+          "fittedFoundation": [
+            5,
+            137,
+            281,
+            138,
+            141.5,
+            210
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.6956521739130435,
+                -32
+              ],
+              [
+                64,
+                0.2206896551724138
+              ],
+              [
+                -0.6956521739130435,
+                32
+              ],
+              [
+                -64,
+                -0.2206896551724138
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            923,
+            98,
+            278,
+            234
+          ],
+          "foundation": [
+            5,
+            154,
+            272,
+            156,
+            139.5,
+            228
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": 2,
+          "ratio": 1.8287671232876712,
+          "fittedFoundation": [
+            5,
+            154,
+            272,
+            156,
+            139.5,
+            228
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.4794007490636704,
+                -32
+              ],
+              [
+                64,
+                0.4383561643835616
+              ],
+              [
+                0.4794007490636704,
+                32
+              ],
+              [
+                -64,
+                -0.4383561643835616
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            1217,
+            118,
+            286,
+            217
+          ],
+          "foundation": [
+            5,
+            137,
+            280,
+            137,
+            139,
+            210
+          ],
+          "frontSkewSourcePx": -3.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.8835616438356164,
+          "fittedFoundation": [
+            5,
+            137,
+            280,
+            137,
+            139,
+            210
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.6290909090909091,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                -1.6290909090909091,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            21,
+            393,
+            313,
+            252
+          ],
+          "foundation": [
+            5,
+            166,
+            306,
+            165,
+            152.5,
+            245
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": -1,
+          "ratio": 1.8930817610062893,
+          "fittedFoundation": [
+            5,
+            166,
+            306,
+            165,
+            152.5,
+            245
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.9136212624584716,
+                -48
+              ],
+              [
+                96,
+                -0.3018867924528302
+              ],
+              [
+                -1.9136212624584716,
+                48
+              ],
+              [
+                -96,
+                0.3018867924528302
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            330,
+            377,
+            296,
+            268
+          ],
+          "foundation": [
+            6,
+            182,
+            290,
+            182,
+            147.5,
+            261
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.7974683544303798,
+          "fittedFoundation": [
+            6,
+            182,
+            290,
+            182,
+            147.5,
+            261
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.3380281690140845,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                -0.3380281690140845,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            624,
+            382,
+            294,
+            263
+          ],
+          "foundation": [
+            6,
+            177,
+            287,
+            177,
+            149,
+            256
+          ],
+          "frontSkewSourcePx": 2.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.7784810126582278,
+          "fittedFoundation": [
+            6,
+            177,
+            287,
+            177,
+            149,
+            256
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -1.708185053380783,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                1.708185053380783,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            916,
+            378,
+            304,
+            267
+          ],
+          "foundation": [
+            6,
+            181,
+            297,
+            181,
+            147,
+            261
+          ],
+          "frontSkewSourcePx": -4.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.81875,
+          "fittedFoundation": [
+            6,
+            181,
+            297,
+            181,
+            147,
+            261
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.9690721649484537,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                -2.9690721649484537,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            1218,
+            392,
+            301,
+            253
+          ],
+          "foundation": [
+            6,
+            167,
+            294,
+            166,
+            147,
+            247
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": -1,
+          "ratio": 1.7888198757763976,
+          "fittedFoundation": [
+            6,
+            167,
+            294,
+            166,
+            147,
+            247
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2,
+                -48
+              ],
+              [
+                96,
+                -0.2981366459627329
+              ],
+              [
+                -2,
+                48
+              ],
+              [
+                -96,
+                0.2981366459627329
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "roman",
+          "age": 1,
+          "frame": [
+            10,
+            704,
+            312,
+            228
+          ],
+          "foundation": [
+            5,
+            142,
+            305,
+            141,
+            150.5,
+            221
+          ],
+          "frontSkewSourcePx": -4.5,
+          "leftRightYDifference": -1,
+          "ratio": 1.8867924528301887,
+          "fittedFoundation": [
+            5,
+            142,
+            305,
+            141,
+            150.5,
+            221
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.88,
+                -48
+              ],
+              [
+                96,
+                -0.3018867924528302
+              ],
+              [
+                -2.88,
+                48
+              ],
+              [
+                -96,
+                0.3018867924528302
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "mongol",
+          "age": 1,
+          "frame": [
+            318,
+            686,
+            300,
+            245
+          ],
+          "foundation": [
+            5,
+            161,
+            297,
+            158,
+            145,
+            239
+          ],
+          "frontSkewSourcePx": -6,
+          "leftRightYDifference": -3,
+          "ratio": 1.8364779874213837,
+          "fittedFoundation": [
+            5,
+            161,
+            297,
+            158,
+            145,
+            239
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                3.9452054794520546,
+                -48
+              ],
+              [
+                96,
+                -0.9056603773584906
+              ],
+              [
+                -3.9452054794520546,
+                48
+              ],
+              [
+                -96,
+                0.9056603773584906
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "persian",
+          "age": 1,
+          "frame": [
+            619,
+            710,
+            300,
+            222
+          ],
+          "foundation": [
+            1,
+            135,
+            293,
+            135,
+            147,
+            215
+          ],
+          "frontSkewSourcePx": 0,
+          "leftRightYDifference": 0,
+          "ratio": 1.825,
+          "fittedFoundation": [
+            1,
+            135,
+            293,
+            135,
+            147,
+            215
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                0,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "tang",
+          "age": 1,
+          "frame": [
+            916,
+            705,
+            306,
+            227
+          ],
+          "foundation": [
+            6,
+            140,
+            299,
+            141,
+            154.5,
+            221
+          ],
+          "frontSkewSourcePx": 2,
+          "leftRightYDifference": 1,
+          "ratio": 1.8198757763975155,
+          "fittedFoundation": [
+            6,
+            140,
+            299,
+            141,
+            154.5,
+            221
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -1.310580204778157,
+                -48
+              ],
+              [
+                96,
+                0.2981366459627329
+              ],
+              [
+                1.310580204778157,
+                48
+              ],
+              [
+                -96,
+                -0.2981366459627329
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "ottoman",
+          "age": 1,
+          "frame": [
+            1217,
+            709,
+            312,
+            227
+          ],
+          "foundation": [
+            6,
+            138,
+            305,
+            139,
+            154.5,
+            220
+          ],
+          "frontSkewSourcePx": -1,
+          "leftRightYDifference": 1,
+          "ratio": 1.834355828220859,
+          "fittedFoundation": [
+            6,
+            138,
+            305,
+            139,
+            154.5,
+            220
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.6421404682274248,
+                -48
+              ],
+              [
+                96,
+                0.294478527607362
+              ],
+              [
+                -0.6421404682274248,
+                48
+              ],
+              [
+                -96,
+                -0.294478527607362
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "buildingV6Age3A",
+      "file": "buildings-v6-age3-a.png",
+      "cols": 5,
+      "rows": 4,
+      "count": 20,
+      "types": [
+        "lumbercamp",
+        "miningcamp",
+        "granary",
+        "farm"
+      ],
+      "age": 3,
+      "original": "public/art/buildings-v6-age3-a.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape atlas EXACTLY FIVE COLUMNS and FOUR ROWS, twenty separate AGE III mature imperial economy structures. Elaborate and visibly stronger architecture than crude early-age sheds: dressed stone, quality timber, culturally specific ornate roofs, tiled floors, low enclosed yards, sophisticated storage and tools. Row1 LUMBER CAMP: large stone-and-timber woodworker workshop with culturally specific tiled/felt roof, raised log racks, sawn boards, sawhorse, compact orderly workshop yard. Row2 MINING CAMP: strong dressed-stone mining administration/tool workshop, stone block racks, winch, cart, iron tools, compact tidy yard, NO geological mountain. Row3 GRANARY: mature imposing double grain-store with stonebase, stout walls and culture-specific ornate roof, grain sacks and small tiled courtyards. Romanredtilearchedstore; Mongol2decoratedivoryfeltwarehousesonstoneplinth; Persianadobedressedstonevaultstoreturquoiseaccents; Tangdoublelevelraisedredwoodgranarygrayroof; Ottomanmasonryarcadedgrainstoreorange/tealroof. Row4 FARM: mature 2:1 diamond golden wheat field, visible neat stone-lined irrigation channels and cultivated paths crossing fields, low stone boundary, compact harvest shed in rear corner and a few stacked sheaves. Every sprite compact on its own canonicaldiamond pad. Difference from Age I must be real material and building form, not a color tint.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3bb8c9dc57815230b46bb0d6edac81296a8ffdf242e7e8fd3c2d32ee8a562c54",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 761921,
+        "partial": 130531,
+        "solid": 680412
+      },
+      "frames": [
+        {
+          "type": "lumbercamp",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            4,
+            31,
+            301,
+            219
+          ],
+          "foundation": [
+            5,
+            143,
+            294,
+            140,
+            146.5,
+            213
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": -3,
+          "ratio": 2.020979020979021,
+          "fittedFoundation": [
+            5,
+            143,
+            294,
+            140,
+            146.5,
+            213
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                1.328719723183391,
+                -32
+              ],
+              [
+                64,
+                -0.6713286713286714
+              ],
+              [
+                -1.328719723183391,
+                32
+              ],
+              [
+                -64,
+                0.6713286713286714
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            316,
+            32,
+            295,
+            213
+          ],
+          "foundation": [
+            6,
+            138,
+            288,
+            137,
+            145.5,
+            207
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": -1,
+          "ratio": 2.028776978417266,
+          "fittedFoundation": [
+            6,
+            138,
+            288,
+            137,
+            145.5,
+            207
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0.6808510638297872,
+                -32
+              ],
+              [
+                64,
+                -0.2302158273381295
+              ],
+              [
+                -0.6808510638297872,
+                32
+              ],
+              [
+                -64,
+                0.2302158273381295
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            626,
+            22,
+            295,
+            226
+          ],
+          "foundation": [
+            6,
+            149,
+            289,
+            149,
+            146.5,
+            219
+          ],
+          "frontSkewSourcePx": -1,
+          "leftRightYDifference": 0,
+          "ratio": 2.0214285714285714,
+          "fittedFoundation": [
+            6,
+            149,
+            289,
+            149,
+            146.5,
+            219
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0.45229681978798586,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                -0.45229681978798586,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            932,
+            23,
+            298,
+            226
+          ],
+          "foundation": [
+            6,
+            148,
+            292,
+            147,
+            146.5,
+            220
+          ],
+          "frontSkewSourcePx": -2.5,
+          "leftRightYDifference": -1,
+          "ratio": 1.9724137931034482,
+          "fittedFoundation": [
+            6,
+            148,
+            292,
+            147,
+            146.5,
+            220
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                1.118881118881119,
+                -32
+              ],
+              [
+                64,
+                -0.2206896551724138
+              ],
+              [
+                -1.118881118881119,
+                32
+              ],
+              [
+                -64,
+                0.2206896551724138
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "lumbercamp",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1241,
+            13,
+            294,
+            233
+          ],
+          "foundation": [
+            6,
+            158,
+            288,
+            155,
+            144,
+            227
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": -3,
+          "ratio": 2,
+          "fittedFoundation": [
+            6,
+            158,
+            288,
+            155,
+            144,
+            227
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                1.3617021276595744,
+                -32
+              ],
+              [
+                64,
+                -0.6808510638297872
+              ],
+              [
+                -1.3617021276595744,
+                32
+              ],
+              [
+                -64,
+                0.6808510638297872
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            6,
+            266,
+            300,
+            225
+          ],
+          "foundation": [
+            6,
+            146,
+            293,
+            150,
+            154,
+            218
+          ],
+          "frontSkewSourcePx": 4.5,
+          "leftRightYDifference": 4,
+          "ratio": 2.05,
+          "fittedFoundation": [
+            6,
+            146,
+            293,
+            150,
+            154,
+            218
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -2.0069686411149825,
+                -32
+              ],
+              [
+                64,
+                0.9142857142857143
+              ],
+              [
+                2.0069686411149825,
+                32
+              ],
+              [
+                -64,
+                -0.9142857142857143
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            317,
+            257,
+            298,
+            237
+          ],
+          "foundation": [
+            5,
+            158,
+            291,
+            161,
+            149.5,
+            231
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": 3,
+          "ratio": 2,
+          "fittedFoundation": [
+            5,
+            158,
+            291,
+            161,
+            149.5,
+            231
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.6713286713286714,
+                -32
+              ],
+              [
+                64,
+                0.6713286713286714
+              ],
+              [
+                0.6713286713286714,
+                32
+              ],
+              [
+                -64,
+                -0.6713286713286714
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            628,
+            257,
+            291,
+            236
+          ],
+          "foundation": [
+            5,
+            161,
+            284,
+            160,
+            145,
+            230
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": -1,
+          "ratio": 2.0071942446043165,
+          "fittedFoundation": [
+            5,
+            161,
+            284,
+            160,
+            145,
+            230
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.22939068100358423,
+                -32
+              ],
+              [
+                64,
+                -0.2302158273381295
+              ],
+              [
+                0.22939068100358423,
+                32
+              ],
+              [
+                -64,
+                0.2302158273381295
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            929,
+            255,
+            300,
+            235
+          ],
+          "foundation": [
+            6,
+            155,
+            294,
+            155,
+            151,
+            228
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": 0,
+          "ratio": 1.9726027397260273,
+          "fittedFoundation": [
+            6,
+            155,
+            294,
+            155,
+            151,
+            228
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.4444444444444444,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0.4444444444444444,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "miningcamp",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1239,
+            258,
+            295,
+            230
+          ],
+          "foundation": [
+            5,
+            150,
+            288,
+            151,
+            141.5,
+            224
+          ],
+          "frontSkewSourcePx": -5,
+          "leftRightYDifference": 1,
+          "ratio": 1.9251700680272108,
+          "fittedFoundation": [
+            5,
+            150,
+            288,
+            151,
+            141.5,
+            224
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                2.2614840989399294,
+                -32
+              ],
+              [
+                64,
+                0.21768707482993196
+              ],
+              [
+                -2.2614840989399294,
+                32
+              ],
+              [
+                -64,
+                -0.21768707482993196
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            8,
+            504,
+            296,
+            238
+          ],
+          "foundation": [
+            5,
+            162,
+            289,
+            155,
+            142.5,
+            231
+          ],
+          "frontSkewSourcePx": -4.5,
+          "leftRightYDifference": -7,
+          "ratio": 1.9586206896551723,
+          "fittedFoundation": [
+            5,
+            162,
+            289,
+            155,
+            142.5,
+            231
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                2.028169014084507,
+                -32
+              ],
+              [
+                64,
+                -1.5448275862068965
+              ],
+              [
+                -2.028169014084507,
+                32
+              ],
+              [
+                -64,
+                1.5448275862068965
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            315,
+            511,
+            300,
+            226
+          ],
+          "foundation": [
+            6,
+            148,
+            294,
+            144,
+            146,
+            220
+          ],
+          "frontSkewSourcePx": -4,
+          "leftRightYDifference": -4,
+          "ratio": 1.945945945945946,
+          "fittedFoundation": [
+            6,
+            148,
+            294,
+            144,
+            146,
+            220
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                1.7777777777777777,
+                -32
+              ],
+              [
+                64,
+                -0.8648648648648649
+              ],
+              [
+                -1.7777777777777777,
+                32
+              ],
+              [
+                -64,
+                0.8648648648648649
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            628,
+            496,
+            292,
+            245
+          ],
+          "foundation": [
+            6,
+            167,
+            285,
+            167,
+            143,
+            239
+          ],
+          "frontSkewSourcePx": -2.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.9375,
+          "fittedFoundation": [
+            6,
+            167,
+            285,
+            167,
+            143,
+            239
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                1.146953405017921,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                -1.146953405017921,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            930,
+            490,
+            299,
+            255
+          ],
+          "foundation": [
+            6,
+            174,
+            293,
+            174,
+            145,
+            249
+          ],
+          "frontSkewSourcePx": -4.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.9133333333333333,
+          "fittedFoundation": [
+            6,
+            174,
+            293,
+            174,
+            145,
+            249
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                2.0069686411149825,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                -2.0069686411149825,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "granary",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1239,
+            497,
+            295,
+            244
+          ],
+          "foundation": [
+            6,
+            166,
+            288,
+            167,
+            141.5,
+            237
+          ],
+          "frontSkewSourcePx": -5.5,
+          "leftRightYDifference": 1,
+          "ratio": 2,
+          "fittedFoundation": [
+            6,
+            166,
+            288,
+            167,
+            141.5,
+            237
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                2.49645390070922,
+                -32
+              ],
+              [
+                64,
+                0.22695035460992907
+              ],
+              [
+                -2.49645390070922,
+                32
+              ],
+              [
+                -64,
+                -0.22695035460992907
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            9,
+            751,
+            292,
+            208
+          ],
+          "foundation": [
+            5,
+            122,
+            286,
+            121,
+            143,
+            201
+          ],
+          "frontSkewSourcePx": -2.5,
+          "leftRightYDifference": -1,
+          "ratio": 1.7672955974842768,
+          "fittedFoundation": [
+            5,
+            122,
+            286,
+            121,
+            143,
+            201
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.1387900355871885,
+                -32
+              ],
+              [
+                64,
+                -0.20125786163522014
+              ],
+              [
+                -1.1387900355871885,
+                32
+              ],
+              [
+                -64,
+                0.20125786163522014
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            315,
+            755,
+            294,
+            206
+          ],
+          "foundation": [
+            5,
+            118,
+            288,
+            116,
+            143.5,
+            199
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": -2,
+          "ratio": 1.725609756097561,
+          "fittedFoundation": [
+            5,
+            118,
+            288,
+            116,
+            143.5,
+            199
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.3568904593639575,
+                -32
+              ],
+              [
+                64,
+                -0.3902439024390244
+              ],
+              [
+                -1.3568904593639575,
+                32
+              ],
+              [
+                -64,
+                0.3902439024390244
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            624,
+            745,
+            294,
+            214
+          ],
+          "foundation": [
+            5,
+            126,
+            288,
+            125,
+            141.5,
+            207
+          ],
+          "frontSkewSourcePx": -5,
+          "leftRightYDifference": -1,
+          "ratio": 1.7361963190184049,
+          "fittedFoundation": [
+            5,
+            126,
+            288,
+            125,
+            141.5,
+            207
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.2614840989399294,
+                -32
+              ],
+              [
+                64,
+                -0.19631901840490798
+              ],
+              [
+                -2.2614840989399294,
+                32
+              ],
+              [
+                -64,
+                0.19631901840490798
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            931,
+            752,
+            296,
+            207
+          ],
+          "foundation": [
+            5,
+            118,
+            289,
+            119,
+            143,
+            201
+          ],
+          "frontSkewSourcePx": -4,
+          "leftRightYDifference": 1,
+          "ratio": 1.7212121212121212,
+          "fittedFoundation": [
+            5,
+            118,
+            289,
+            119,
+            143,
+            201
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.8028169014084507,
+                -32
+              ],
+              [
+                64,
+                0.19393939393939394
+              ],
+              [
+                -1.8028169014084507,
+                32
+              ],
+              [
+                -64,
+                -0.19393939393939394
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "farm",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1239,
+            746,
+            294,
+            214
+          ],
+          "foundation": [
+            6,
+            126,
+            288,
+            125,
+            139.5,
+            207
+          ],
+          "frontSkewSourcePx": -7.5,
+          "leftRightYDifference": -1,
+          "ratio": 1.7300613496932515,
+          "fittedFoundation": [
+            6,
+            126,
+            288,
+            125,
+            139.5,
+            207
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                3.404255319148936,
+                -32
+              ],
+              [
+                64,
+                -0.19631901840490798
+              ],
+              [
+                -3.404255319148936,
+                32
+              ],
+              [
+                -64,
+                0.19631901840490798
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "buildingV6Age3B",
+      "file": "buildings-v6-age3-b.png",
+      "cols": 5,
+      "rows": 4,
+      "count": 20,
+      "types": [
+        "barracks",
+        "stable",
+        "range",
+        "market"
+      ],
+      "age": 3,
+      "original": "public/art/buildings-v6-age3-b.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape atlas EXACTLY FIVE COLUMNS and FOUR ROWS, twenty separate AGE III mature imperial military/civic compounds. Real stone masonry, tiled/culturally distinctive roofs, fortified low walls, ornate entrances and orderly little courtyards, visibly advanced materials and forms. Row1 BARRACKS: strong imposing militaryhall with sideannex, militaryequipmentrack, spearstands, stonecourtyard andlowstoneenclosure, nopeople. Row2 STABLE: walled noble cavalryhorseyard with impressive roofedstalls alongrear edge, hayracks, wateringtrough, hitchposts, elegantgateway, nohorses oranimals. Row3 ARCHERY RANGE: elegantimperialroofedarcheryhall, three clear circular strawarcherytargets in open court, weaponsrack, lowwall andsmall sidewatchplatform. Row4 MARKET: rich stoneandtimbertradingcourt, colorfulfabricmerchantstalls, sacks,baskets,jars, coveredarcades andsmallstoreroom, nopeople. Romanclassicalredtiles; Mongoldecoratedfelthallswithqualitytimberstoneenclosureandbluecloth; Persiancreamstoneadobearcadeswithturquoiseglazing; Tangredwoodcurvedgrayroofs; Ottomancreamstoneorange/tealroofsarcades. Noisolatedplainhut, everytype hasstructuredlate-agecourtwhilepad footprintstayscompact. No banners with text.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "268e7d9079e21ad1156c48b48c1b21ec4334a03bac85619740996d45c41f8074",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 689101,
+        "partial": 151150,
+        "solid": 732613
+      },
+      "frames": [
+        {
+          "type": "barracks",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            7,
+            19,
+            299,
+            225
+          ],
+          "foundation": [
+            6,
+            144,
+            292,
+            142,
+            144,
+            218
+          ],
+          "frontSkewSourcePx": -5,
+          "leftRightYDifference": -2,
+          "ratio": 1.9066666666666667,
+          "fittedFoundation": [
+            6,
+            144,
+            292,
+            142,
+            144,
+            218
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                3.3566433566433567,
+                -48
+              ],
+              [
+                96,
+                -0.64
+              ],
+              [
+                -3.3566433566433567,
+                48
+              ],
+              [
+                -96,
+                0.64
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            315,
+            29,
+            289,
+            213
+          ],
+          "foundation": [
+            6,
+            131,
+            282,
+            133,
+            142.5,
+            206
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": 2,
+          "ratio": 1.864864864864865,
+          "fittedFoundation": [
+            6,
+            131,
+            282,
+            133,
+            142.5,
+            206
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.0434782608695652,
+                -48
+              ],
+              [
+                96,
+                0.6486486486486487
+              ],
+              [
+                -1.0434782608695652,
+                48
+              ],
+              [
+                -96,
+                -0.6486486486486487
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            611,
+            18,
+            299,
+            226
+          ],
+          "foundation": [
+            5,
+            142,
+            293,
+            143,
+            149.5,
+            220
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.8580645161290323,
+          "fittedFoundation": [
+            5,
+            142,
+            293,
+            143,
+            149.5,
+            220
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.3333333333333333,
+                -48
+              ],
+              [
+                96,
+                0.3096774193548387
+              ],
+              [
+                0.3333333333333333,
+                48
+              ],
+              [
+                -96,
+                -0.3096774193548387
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            921,
+            16,
+            302,
+            227
+          ],
+          "foundation": [
+            6,
+            144,
+            295,
+            145,
+            149,
+            221
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.8888888888888888,
+          "fittedFoundation": [
+            6,
+            144,
+            295,
+            145,
+            149,
+            221
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.9965397923875432,
+                -48
+              ],
+              [
+                96,
+                0.3137254901960784
+              ],
+              [
+                -0.9965397923875432,
+                48
+              ],
+              [
+                -96,
+                -0.3137254901960784
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "barracks",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1233,
+            32,
+            294,
+            212
+          ],
+          "foundation": [
+            6,
+            127,
+            288,
+            129,
+            146.5,
+            206
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 2,
+          "ratio": 1.8076923076923077,
+          "fittedFoundation": [
+            6,
+            127,
+            288,
+            129,
+            146.5,
+            206
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.3404255319148936,
+                -48
+              ],
+              [
+                96,
+                0.6153846153846154
+              ],
+              [
+                -0.3404255319148936,
+                48
+              ],
+              [
+                -96,
+                -0.6153846153846154
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            9,
+            268,
+            299,
+            222
+          ],
+          "foundation": [
+            6,
+            138,
+            292,
+            143,
+            146,
+            216
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": 5,
+          "ratio": 1.8940397350993377,
+          "fittedFoundation": [
+            6,
+            138,
+            292,
+            143,
+            146,
+            216
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.013986013986014,
+                -48
+              ],
+              [
+                96,
+                1.589403973509934
+              ],
+              [
+                -2.013986013986014,
+                48
+              ],
+              [
+                -96,
+                -1.589403973509934
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            314,
+            260,
+            295,
+            228
+          ],
+          "foundation": [
+            6,
+            144,
+            289,
+            150,
+            144,
+            222
+          ],
+          "frontSkewSourcePx": -3.5,
+          "leftRightYDifference": 6,
+          "ratio": 1.8866666666666667,
+          "fittedFoundation": [
+            6,
+            144,
+            289,
+            150,
+            144,
+            222
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.374558303886926,
+                -48
+              ],
+              [
+                96,
+                1.92
+              ],
+              [
+                -2.374558303886926,
+                48
+              ],
+              [
+                -96,
+                -1.92
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            612,
+            259,
+            304,
+            230
+          ],
+          "foundation": [
+            6,
+            146,
+            297,
+            149,
+            147,
+            224
+          ],
+          "frontSkewSourcePx": -4.5,
+          "leftRightYDifference": 3,
+          "ratio": 1.9019607843137254,
+          "fittedFoundation": [
+            6,
+            146,
+            297,
+            149,
+            147,
+            224
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.9690721649484537,
+                -48
+              ],
+              [
+                96,
+                0.9411764705882353
+              ],
+              [
+                -2.9690721649484537,
+                48
+              ],
+              [
+                -96,
+                -0.9411764705882353
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            923,
+            265,
+            304,
+            228
+          ],
+          "foundation": [
+            5,
+            143,
+            297,
+            146,
+            147.5,
+            222
+          ],
+          "frontSkewSourcePx": -3.5,
+          "leftRightYDifference": 3,
+          "ratio": 1.8838709677419354,
+          "fittedFoundation": [
+            5,
+            143,
+            297,
+            146,
+            147.5,
+            222
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.3013698630136985,
+                -48
+              ],
+              [
+                96,
+                0.9290322580645162
+              ],
+              [
+                -2.3013698630136985,
+                48
+              ],
+              [
+                -96,
+                -0.9290322580645162
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stable",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1233,
+            268,
+            301,
+            223
+          ],
+          "foundation": [
+            6,
+            138,
+            294,
+            143,
+            144.5,
+            216
+          ],
+          "frontSkewSourcePx": -5.5,
+          "leftRightYDifference": 5,
+          "ratio": 1.9072847682119205,
+          "fittedFoundation": [
+            6,
+            138,
+            294,
+            143,
+            144.5,
+            216
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                3.6666666666666665,
+                -48
+              ],
+              [
+                96,
+                1.589403973509934
+              ],
+              [
+                -3.6666666666666665,
+                48
+              ],
+              [
+                -96,
+                -1.589403973509934
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "range",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            11,
+            508,
+            297,
+            223
+          ],
+          "foundation": [
+            6,
+            142,
+            291,
+            142,
+            142,
+            216
+          ],
+          "frontSkewSourcePx": -6.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.9256756756756757,
+          "fittedFoundation": [
+            6,
+            142,
+            291,
+            142,
+            142,
+            216
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                4.378947368421053,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                -4.378947368421053,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "range",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            318,
+            513,
+            294,
+            217
+          ],
+          "foundation": [
+            6,
+            135,
+            288,
+            138,
+            144,
+            211
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": 3,
+          "ratio": 1.8926174496644295,
+          "fittedFoundation": [
+            6,
+            135,
+            288,
+            138,
+            144,
+            211
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.0425531914893615,
+                -48
+              ],
+              [
+                96,
+                0.9664429530201342
+              ],
+              [
+                -2.0425531914893615,
+                48
+              ],
+              [
+                -96,
+                -0.9664429530201342
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "range",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            617,
+            502,
+            297,
+            230
+          ],
+          "foundation": [
+            5,
+            147,
+            290,
+            150,
+            143,
+            224
+          ],
+          "frontSkewSourcePx": -4.5,
+          "leftRightYDifference": 3,
+          "ratio": 1.8874172185430464,
+          "fittedFoundation": [
+            5,
+            147,
+            290,
+            150,
+            143,
+            224
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                3.031578947368421,
+                -48
+              ],
+              [
+                96,
+                0.9536423841059603
+              ],
+              [
+                -3.031578947368421,
+                48
+              ],
+              [
+                -96,
+                -0.9536423841059603
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "range",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            922,
+            500,
+            305,
+            232
+          ],
+          "foundation": [
+            5,
+            147,
+            298,
+            151,
+            148.5,
+            226
+          ],
+          "frontSkewSourcePx": -3,
+          "leftRightYDifference": 4,
+          "ratio": 1.9025974025974026,
+          "fittedFoundation": [
+            5,
+            147,
+            298,
+            151,
+            148.5,
+            226
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.9658703071672354,
+                -48
+              ],
+              [
+                96,
+                1.2467532467532467
+              ],
+              [
+                -1.9658703071672354,
+                48
+              ],
+              [
+                -96,
+                -1.2467532467532467
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "range",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1233,
+            510,
+            295,
+            221
+          ],
+          "foundation": [
+            6,
+            138,
+            288,
+            141,
+            143.5,
+            214
+          ],
+          "frontSkewSourcePx": -3.5,
+          "leftRightYDifference": 3,
+          "ratio": 1.8926174496644295,
+          "fittedFoundation": [
+            6,
+            138,
+            288,
+            141,
+            143.5,
+            214
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                2.382978723404255,
+                -48
+              ],
+              [
+                96,
+                0.9664429530201342
+              ],
+              [
+                -2.382978723404255,
+                48
+              ],
+              [
+                -96,
+                -0.9664429530201342
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "market",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            8,
+            742,
+            305,
+            234
+          ],
+          "foundation": [
+            6,
+            146,
+            299,
+            152,
+            152,
+            228
+          ],
+          "frontSkewSourcePx": -0.5,
+          "leftRightYDifference": 6,
+          "ratio": 1.8544303797468353,
+          "fittedFoundation": [
+            6,
+            146,
+            299,
+            152,
+            152,
+            228
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                0.32764505119453924,
+                -48
+              ],
+              [
+                96,
+                1.8227848101265822
+              ],
+              [
+                -0.32764505119453924,
+                48
+              ],
+              [
+                -96,
+                -1.8227848101265822
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "market",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            318,
+            749,
+            294,
+            225
+          ],
+          "foundation": [
+            5,
+            138,
+            288,
+            145,
+            145,
+            219
+          ],
+          "frontSkewSourcePx": -1.5,
+          "leftRightYDifference": 7,
+          "ratio": 1.8258064516129033,
+          "fittedFoundation": [
+            5,
+            138,
+            288,
+            145,
+            145,
+            219
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                1.0176678445229683,
+                -48
+              ],
+              [
+                96,
+                2.167741935483871
+              ],
+              [
+                -1.0176678445229683,
+                48
+              ],
+              [
+                -96,
+                -2.167741935483871
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "market",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            615,
+            742,
+            301,
+            234
+          ],
+          "foundation": [
+            6,
+            146,
+            294,
+            153,
+            150.5,
+            228
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 7,
+          "ratio": 1.8343949044585988,
+          "fittedFoundation": [
+            6,
+            146,
+            294,
+            153,
+            150.5,
+            228
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.3333333333333333,
+                -48
+              ],
+              [
+                96,
+                2.140127388535032
+              ],
+              [
+                0.3333333333333333,
+                48
+              ],
+              [
+                -96,
+                -2.140127388535032
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "market",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            923,
+            740,
+            301,
+            237
+          ],
+          "foundation": [
+            6,
+            148,
+            294,
+            154,
+            151,
+            230
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": 6,
+          "ratio": 1.8227848101265822,
+          "fittedFoundation": [
+            6,
+            148,
+            294,
+            154,
+            151,
+            230
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.6666666666666666,
+                -48
+              ],
+              [
+                96,
+                1.8227848101265822
+              ],
+              [
+                0.6666666666666666,
+                48
+              ],
+              [
+                -96,
+                -1.8227848101265822
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "market",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1231,
+            744,
+            301,
+            233
+          ],
+          "foundation": [
+            5,
+            143,
+            295,
+            151,
+            152,
+            226
+          ],
+          "frontSkewSourcePx": 2,
+          "leftRightYDifference": 8,
+          "ratio": 1.8354430379746836,
+          "fittedFoundation": [
+            5,
+            143,
+            295,
+            151,
+            152,
+            226
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -1.3241379310344827,
+                -48
+              ],
+              [
+                96,
+                2.430379746835443
+              ],
+              [
+                1.3241379310344827,
+                48
+              ],
+              [
+                -96,
+                -2.430379746835443
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "buildingV6Age3C",
+      "file": "buildings-v6-age3-c.png",
+      "cols": 5,
+      "rows": 4,
+      "count": 20,
+      "types": [
+        "workshop",
+        "tower",
+        "fortress",
+        "stonegate"
+      ],
+      "age": 3,
+      "original": "public/art/buildings-v6-age3-c.png",
+      "prompt": "Create ORIGINAL photorealistic miniature historical 2D RTS building sprites, as high quality pre-rendered 3D isometric art comparable in finish to a finely detailed historical strategy game. This is a production sprite atlas, never a concept board. Orthographic TRUE canonical isometric camera: ground-plane x axis exactly down-right 26.565 degrees, z axis exactly down-left 26.565 degrees; equal visible ground side lengths; all vertical pillars and walls perfectly vertical. EVERY individual building stands on one thin square ground pad that projects into a perfect symmetric 2:1 diamond: left and right pad tips share precisely the same y, near/front pad tip x is exactly halfway between left and right tips. Ground-pad geometry is mandatory. Never rectangular-oblique trapezoidal pads, never tilted camera, never perspective. Upper-left gentle warm daylight. Real masonry grain, timber beams, detailed rooftiles, restrained weathering, naturally shaded opaque architecture, subtle shadow solely on its pad. Cut out every object against TRUE alpha transparency, outside pads absolutely transparent; no brown backdrop, no grid, no labels, no prose, no watermarks, no people or animals, no distant scenery. Individual detached sprites, large gutters; no clipping or neighboring objects touching. Materials richly detailed and realistic, muted earthy colors, no flat vector shapes or cartoon outlines.\nCivilizations columns left to right: Roman (cream limestone/plaster, red terracotta tiles, classical wooden lintels), Mongol (ivory felt, dark timber, blue cloth, nomad practicality), Persian (warm adobe, cream stone, turquoise accents, Persian timber arches), Tang Chinese (dark gray curved tiles, red timber, cream walls, Chinese roof proportions), Ottoman (warm plaster, orange tile, dark timber, restrained teal accents). Read row specification literally. Rows and columns must contain exactly the requested detached buildings. No sheet-wide common floor, no text, no painted checkerboard. Each asset centered inside its cell and entirely contained within 80% cell width and height.\n1536x1024 landscape atlas EXACTLY FIVE COLUMNS and FOUR ROWS, twenty separate AGE III advanced engineering/defense structures. Real heavy stone masonry, qualitytimber, ornate culturally specificroofs, advancedforms, sharpdetailedhistoricalminiature. Row1 WORKSHOP: lateimperialengineeringworkshopplusstructuredpavedyard, winch, timbers, wheels, disassembledcatapultarm, smallmetalforge; wholeobjectcompactnotdiorama. Row2 GUARD TOWER: strong tall fortifiedsquarestonewatchtower, clearcultureroof, integratedsmallstonepad, ornatebutpractical, nopeople; Mongolstonetowerwithwoodencrown, Persianstonecrenellatedtowerwithturquoisetrim, Tangstoneplinthredwoodgrayroofwatchtower, Ottomansquarestonewatchtowerwithtealcupola. Row3 FORTRESS: compactcompleteAGEIIIfortifiedkeepwithFOURcornertowersandheavywallsinsideonesquarepad, impressivecentralculturalspecifickeep, roofedgateway, tinyopeninnercourt. Romanredtileclassicalstonefort, Mongolstonefortwithtimbercrownandbluefeltmainhall, Persiancreamstoneturquoisefort, Tanggraytileredwoodimperialfort, Ottomancreamstonefortwithorange/tealroofs. Row4 STONE GATE: oneoriginaldeepheavywallgatewaywithtwoshortflankingwatchtowersandvisibleOPENdarkarchwaythrough, compactcanonicaldiamondgroundpad; Romanredtilecap, Mongoltimbergatetop, Persianornatepointedarchturquoiseband, Tangcurvedgrayroofedgate, Ottomanstonepointedarchtealaccent. Neithernaturalscenery norcommonatlasfloor.",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "44e767a55d746a72a8ed48a128e444ada34424decbbe5d4201e3f7698ff1efbe",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 761971,
+        "partial": 115331,
+        "solid": 695562
+      },
+      "frames": [
+        {
+          "type": "workshop",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            7,
+            11,
+            302,
+            236
+          ],
+          "foundation": [
+            6,
+            160,
+            295,
+            160,
+            151,
+            229
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 0,
+          "ratio": 2.0942028985507246,
+          "fittedFoundation": [
+            6,
+            160,
+            295,
+            160,
+            151,
+            229
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.33217993079584773,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                0.33217993079584773,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "workshop",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            328,
+            18,
+            284,
+            225
+          ],
+          "foundation": [
+            6,
+            152,
+            277,
+            154,
+            142.5,
+            219
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": 2,
+          "ratio": 2.053030303030303,
+          "fittedFoundation": [
+            6,
+            152,
+            277,
+            154,
+            142.5,
+            219
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.7084870848708487,
+                -48
+              ],
+              [
+                96,
+                0.7272727272727273
+              ],
+              [
+                0.7084870848708487,
+                48
+              ],
+              [
+                -96,
+                -0.7272727272727273
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "workshop",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            618,
+            10,
+            304,
+            239
+          ],
+          "foundation": [
+            6,
+            162,
+            297,
+            162,
+            152,
+            233
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 0,
+          "ratio": 2.0492957746478875,
+          "fittedFoundation": [
+            6,
+            162,
+            297,
+            162,
+            152,
+            233
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.32989690721649484,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                0.32989690721649484,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "workshop",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            932,
+            8,
+            292,
+            240
+          ],
+          "foundation": [
+            5,
+            167,
+            285,
+            165,
+            146,
+            233
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": -2,
+          "ratio": 2.08955223880597,
+          "fittedFoundation": [
+            5,
+            167,
+            285,
+            165,
+            146,
+            233
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.6857142857142857,
+                -48
+              ],
+              [
+                96,
+                -0.7164179104477612
+              ],
+              [
+                0.6857142857142857,
+                48
+              ],
+              [
+                -96,
+                0.7164179104477612
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "workshop",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1235,
+            13,
+            301,
+            235
+          ],
+          "foundation": [
+            5,
+            159,
+            294,
+            159,
+            151,
+            228
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": 0,
+          "ratio": 2.0942028985507246,
+          "fittedFoundation": [
+            5,
+            159,
+            294,
+            159,
+            151,
+            228
+          ],
+          "runtime": {
+            "visibleSize": 3,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -0.9965397923875432,
+                -48
+              ],
+              [
+                96,
+                0
+              ],
+              [
+                0.9965397923875432,
+                48
+              ],
+              [
+                -96,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "tower",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            56,
+            247,
+            195,
+            230
+          ],
+          "foundation": [
+            5,
+            178,
+            189,
+            178,
+            97.5,
+            224
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 0,
+          "ratio": 2,
+          "fittedFoundation": [
+            5,
+            178,
+            189,
+            178,
+            97.5,
+            224
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.34782608695652173,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0.34782608695652173,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "tower",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            367,
+            244,
+            201,
+            239
+          ],
+          "foundation": [
+            5,
+            186,
+            194,
+            187,
+            100.5,
+            233
+          ],
+          "frontSkewSourcePx": 1,
+          "leftRightYDifference": 1,
+          "ratio": 2.032258064516129,
+          "fittedFoundation": [
+            5,
+            186,
+            194,
+            187,
+            100.5,
+            233
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -0.6772486772486772,
+                -32
+              ],
+              [
+                64,
+                0.34408602150537637
+              ],
+              [
+                0.6772486772486772,
+                32
+              ],
+              [
+                -64,
+                -0.34408602150537637
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "tower",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            673,
+            249,
+            193,
+            232
+          ],
+          "foundation": [
+            5,
+            181,
+            186,
+            181,
+            95.5,
+            225
+          ],
+          "frontSkewSourcePx": 0,
+          "leftRightYDifference": 0,
+          "ratio": 2.0568181818181817,
+          "fittedFoundation": [
+            5,
+            181,
+            186,
+            181,
+            95.5,
+            225
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                0,
+                -32
+              ],
+              [
+                64,
+                0
+              ],
+              [
+                0,
+                32
+              ],
+              [
+                -64,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "tower",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            977,
+            246,
+            192,
+            230
+          ],
+          "foundation": [
+            5,
+            179,
+            185,
+            180,
+            96.5,
+            224
+          ],
+          "frontSkewSourcePx": 1.5,
+          "leftRightYDifference": 1,
+          "ratio": 2.0224719101123596,
+          "fittedFoundation": [
+            5,
+            179,
+            185,
+            180,
+            96.5,
+            224
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              420
+            ],
+            "anchorPixels": [
+              180,
+              298
+            ],
+            "footprintCSS": [
+              [
+                -1.0666666666666667,
+                -32
+              ],
+              [
+                64,
+                0.3595505617977528
+              ],
+              [
+                1.0666666666666667,
+                32
+              ],
+              [
+                -64,
+                -0.3595505617977528
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "tower",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1299,
+            249,
+            179,
+            230
+          ],
+          "foundation": [
+            6,
+            182,
+            172,
+            183,
+            89.5,
+            223
+          ],
+          "frontSkewSourcePx": 0.5,
+          "leftRightYDifference": 1,
+          "ratio": 2.049382716049383,
+          "fittedFoundation": [
+            6,
+            182,
+            172,
+            183,
+            89.5,
+            223
+          ],
+          "runtime": {
+            "visibleSize": 2,
+            "canvasPixels": [
+              360,
+              436
+            ],
+            "anchorPixels": [
+              180,
+              314
+            ],
+            "footprintCSS": [
+              [
+                -0.3855421686746988,
+                -32
+              ],
+              [
+                64,
+                0.3950617283950617
+              ],
+              [
+                0.3855421686746988,
+                32
+              ],
+              [
+                -64,
+                -0.3950617283950617
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "fortress",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            0,
+            483,
+            316,
+            257
+          ],
+          "foundation": [
+            4,
+            170,
+            309,
+            171,
+            151,
+            251
+          ],
+          "frontSkewSourcePx": -5.5,
+          "leftRightYDifference": 1,
+          "ratio": 1.8944099378881987,
+          "fittedFoundation": [
+            4,
+            170,
+            309,
+            171,
+            151,
+            251
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              608,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                4.616393442622951,
+                -63.99999999999999
+              ],
+              [
+                128,
+                0.39751552795031053
+              ],
+              [
+                -4.616393442622951,
+                63.99999999999999
+              ],
+              [
+                -128,
+                -0.39751552795031053
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "fortress",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            315,
+            484,
+            309,
+            257
+          ],
+          "foundation": [
+            5,
+            171,
+            302,
+            171,
+            147,
+            251
+          ],
+          "frontSkewSourcePx": -6.5,
+          "leftRightYDifference": 0,
+          "ratio": 1.85625,
+          "fittedFoundation": [
+            5,
+            171,
+            302,
+            171,
+            147,
+            251
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              608,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                5.602693602693602,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                -5.602693602693602,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "fortress",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            622,
+            481,
+            295,
+            263
+          ],
+          "foundation": [
+            5,
+            175,
+            288,
+            176,
+            140.5,
+            256
+          ],
+          "frontSkewSourcePx": -6,
+          "leftRightYDifference": 1,
+          "ratio": 1.7577639751552796,
+          "fittedFoundation": [
+            5,
+            175,
+            288,
+            176,
+            140.5,
+            256
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              608,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                5.42756183745583,
+                -63.99999999999999
+              ],
+              [
+                128,
+                0.39751552795031053
+              ],
+              [
+                -5.42756183745583,
+                63.99999999999999
+              ],
+              [
+                -128,
+                -0.39751552795031053
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "fortress",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            917,
+            478,
+            312,
+            269
+          ],
+          "foundation": [
+            5,
+            179,
+            306,
+            179,
+            149.5,
+            262
+          ],
+          "frontSkewSourcePx": -6,
+          "leftRightYDifference": 0,
+          "ratio": 1.8132530120481927,
+          "fittedFoundation": [
+            5,
+            179,
+            306,
+            179,
+            149.5,
+            262
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              608,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                5.102990033222591,
+                -64
+              ],
+              [
+                128,
+                0
+              ],
+              [
+                -5.102990033222591,
+                64
+              ],
+              [
+                -128,
+                0
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "fortress",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1231,
+            479,
+            305,
+            267
+          ],
+          "foundation": [
+            6,
+            183,
+            301,
+            181,
+            143.5,
+            261
+          ],
+          "frontSkewSourcePx": -10,
+          "leftRightYDifference": -2,
+          "ratio": 1.8670886075949367,
+          "fittedFoundation": [
+            6,
+            183,
+            301,
+            181,
+            143.5,
+            261
+          ],
+          "runtime": {
+            "visibleSize": 4,
+            "canvasPixels": [
+              608,
+              536
+            ],
+            "anchorPixels": [
+              304,
+              370
+            ],
+            "footprintCSS": [
+              [
+                8.677966101694915,
+                -64
+              ],
+              [
+                128,
+                -0.810126582278481
+              ],
+              [
+                -8.677966101694915,
+                64
+              ],
+              [
+                -128,
+                0.810126582278481
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonegate",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            16,
+            751,
+            280,
+            243
+          ],
+          "foundation": [
+            6,
+            178,
+            274,
+            161,
+            112.5,
+            236
+          ],
+          "frontSkewSourcePx": -27.5,
+          "leftRightYDifference": -17,
+          "ratio": 2.0150375939849625,
+          "fittedFoundation": [
+            6,
+            178,
+            274,
+            161,
+            112.5,
+            236
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                6.567164179104478,
+                -16
+              ],
+              [
+                32,
+                -2.045112781954887
+              ],
+              [
+                -6.567164179104478,
+                16
+              ],
+              [
+                -32,
+                2.045112781954887
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonegate",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            319,
+            742,
+            294,
+            251
+          ],
+          "foundation": [
+            5,
+            184,
+            287,
+            159,
+            112.5,
+            244
+          ],
+          "frontSkewSourcePx": -33.5,
+          "leftRightYDifference": -25,
+          "ratio": 1.9448275862068964,
+          "fittedFoundation": [
+            5,
+            184,
+            287,
+            159,
+            112.5,
+            244
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                7.6028368794326235,
+                -16
+              ],
+              [
+                32,
+                -2.7586206896551726
+              ],
+              [
+                -7.6028368794326235,
+                16
+              ],
+              [
+                -32,
+                2.7586206896551726
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonegate",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            629,
+            743,
+            276,
+            251
+          ],
+          "foundation": [
+            6,
+            187,
+            269,
+            168,
+            108.5,
+            244
+          ],
+          "frontSkewSourcePx": -29,
+          "leftRightYDifference": -19,
+          "ratio": 1.9774436090225564,
+          "fittedFoundation": [
+            6,
+            187,
+            269,
+            168,
+            108.5,
+            244
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                7.057034220532319,
+                -16
+              ],
+              [
+                32,
+                -2.2857142857142856
+              ],
+              [
+                -7.057034220532319,
+                16
+              ],
+              [
+                -32,
+                2.2857142857142856
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonegate",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            927,
+            752,
+            291,
+            244
+          ],
+          "foundation": [
+            6,
+            178,
+            285,
+            159,
+            111.5,
+            238
+          ],
+          "frontSkewSourcePx": -34,
+          "leftRightYDifference": -19,
+          "ratio": 2.0071942446043165,
+          "fittedFoundation": [
+            6,
+            178,
+            285,
+            159,
+            111.5,
+            238
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                7.799283154121864,
+                -16
+              ],
+              [
+                32,
+                -2.1870503597122304
+              ],
+              [
+                -7.799283154121864,
+                16
+              ],
+              [
+                -32,
+                2.1870503597122304
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonegate",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1249,
+            743,
+            273,
+            254
+          ],
+          "foundation": [
+            6,
+            190,
+            267,
+            172,
+            106.5,
+            248
+          ],
+          "frontSkewSourcePx": -30,
+          "leftRightYDifference": -18,
+          "ratio": 1.9477611940298507,
+          "fittedFoundation": [
+            6,
+            190,
+            267,
+            172,
+            106.5,
+            248
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                7.35632183908046,
+                -16
+              ],
+              [
+                32,
+                -2.1492537313432836
+              ],
+              [
+                -7.35632183908046,
+                16
+              ],
+              [
+                -32,
+                2.1492537313432836
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        }
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "key": "buildingV6Age3D",
+      "file": "buildings-v6-age3-d.png",
+      "cols": 5,
+      "rows": 1,
+      "count": 5,
+      "types": [
+        "stonewall"
+      ],
+      "age": 3,
+      "original": "public/art/buildings-v6-age3-d.png",
+      "prompt": "Edit this sprite atlas for final game use. Preserve exactly these five wall segments, their architecture, colors, positions, cultural details, silhouettes, perspective and sizes. Remove every chromatic red/green/yellow fringe along the transparent boundary and all stray edge pixels. Fix edge antialiasing with clean natural stone/tile edge colors and true soft alpha, preserving transparent pixels outside subjects. Restore smooth photorealistic historical masonry and tiled cap detail matching the original five assets, with crisp fine texture and natural upper-left lighting. No blur, no sharpening halos, no palette posterization, no backdrop or checkerboard; alpha background remains entirely transparent. Original source geometry and atlas arrangement unchanged.",
+      "reference": "generation-record:exec-3dedadd9-f388-4dbd-8663-0601ce0ac6a9.png",
+      "width": 2172,
+      "height": 724,
+      "sha256": "49310e29d2e8cb105d6d061bc7baaa466ade67609a5bea32d36f91be6401ee59",
+      "alpha": {
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "zero": 1112363,
+        "partial": 30363,
+        "solid": 429802
+      },
+      "frames": [
+        {
+          "type": "stonewall",
+          "civ": "roman",
+          "age": 3,
+          "frame": [
+            36,
+            169,
+            409,
+            401
+          ],
+          "foundation": [
+            6,
+            242,
+            402,
+            331,
+            288.5,
+            395
+          ],
+          "frontSkewSourcePx": 84.5,
+          "leftRightYDifference": 89,
+          "ratio": 1.8248847926267282,
+          "fittedFoundation": [
+            6,
+            242,
+            402,
+            331,
+            288.5,
+            395
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -13.656565656565657,
+                -16
+              ],
+              [
+                32,
+                6.56221198156682
+              ],
+              [
+                13.656565656565657,
+                16
+              ],
+              [
+                -32,
+                -6.56221198156682
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonewall",
+          "civ": "mongol",
+          "age": 3,
+          "frame": [
+            458,
+            158,
+            419,
+            411
+          ],
+          "foundation": [
+            6,
+            253,
+            413,
+            336,
+            291.5,
+            405
+          ],
+          "frontSkewSourcePx": 82,
+          "leftRightYDifference": 83,
+          "ratio": 1.841628959276018,
+          "fittedFoundation": [
+            6,
+            253,
+            413,
+            336,
+            291.5,
+            405
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -12.894348894348894,
+                -16
+              ],
+              [
+                32,
+                6.009049773755657
+              ],
+              [
+                12.894348894348894,
+                16
+              ],
+              [
+                -32,
+                -6.009049773755657
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonewall",
+          "civ": "persian",
+          "age": 3,
+          "frame": [
+            880,
+            174,
+            426,
+            399
+          ],
+          "foundation": [
+            5,
+            237,
+            419,
+            329,
+            303,
+            393
+          ],
+          "frontSkewSourcePx": 91,
+          "leftRightYDifference": 92,
+          "ratio": 1.8818181818181818,
+          "fittedFoundation": [
+            5,
+            237,
+            419,
+            329,
+            303,
+            393
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -14.067632850241544,
+                -16
+              ],
+              [
+                32,
+                6.6909090909090905
+              ],
+              [
+                14.067632850241544,
+                16
+              ],
+              [
+                -32,
+                -6.6909090909090905
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonewall",
+          "civ": "tang",
+          "age": 3,
+          "frame": [
+            1309,
+            169,
+            416,
+            401
+          ],
+          "foundation": [
+            6,
+            242,
+            409,
+            330,
+            290.5,
+            394
+          ],
+          "frontSkewSourcePx": 83,
+          "leftRightYDifference": 88,
+          "ratio": 1.8657407407407407,
+          "fittedFoundation": [
+            6,
+            242,
+            409,
+            330,
+            290.5,
+            394
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -13.181141439205955,
+                -16
+              ],
+              [
+                32,
+                6.518518518518518
+              ],
+              [
+                13.181141439205955,
+                16
+              ],
+              [
+                -32,
+                -6.518518518518518
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        },
+        {
+          "type": "stonewall",
+          "civ": "ottoman",
+          "age": 3,
+          "frame": [
+            1730,
+            146,
+            424,
+            430
+          ],
+          "foundation": [
+            6,
+            265,
+            418,
+            360,
+            305.5,
+            424
+          ],
+          "frontSkewSourcePx": 93.5,
+          "leftRightYDifference": 95,
+          "ratio": 1.8475336322869955,
+          "fittedFoundation": [
+            6,
+            265,
+            418,
+            360,
+            305.5,
+            424
+          ],
+          "runtime": {
+            "visibleSize": 1,
+            "canvasPixels": [
+              496,
+              468
+            ],
+            "anchorPixels": [
+              248,
+              336
+            ],
+            "footprintCSS": [
+              [
+                -14.524271844660193,
+                -16
+              ],
+              [
+                31.999999999999996,
+                6.816143497757848
+              ],
+              [
+                14.524271844660193,
+                16
+              ],
+              [
+                -31.999999999999996,
+                -6.816143497757848
+              ]
+            ],
+            "pixelRatio": 2
+          }
+        }
+      ],
+      "sourcePreserved": true
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

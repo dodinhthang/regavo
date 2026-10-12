@@ -1,0 +1,25 @@
+{
+  "id": "dragon-emblem",
+  "version": 4,
+  "prompt": "Use case: precise-object-edit. Asset type: Dai Viet civilization emblem, a single golden Ly–Tran dragon relief matching the provided reference sculpture very closely. Image1 is the exact visual reference and edit target. Preserve its distinctive silhouette and orientation: slender dragon neck rising at the upper LEFT, small pointed profile head at the top facing left, sinuous S-curved neck looping down into the body, the several round scroll curls on the lower LEFT and center, broad carved scaled belly at center-bottom, and the very tall swept upright flowing tail-fin on the RIGHT with many parallel carved rib lines, curving around into the bottom circular coil. This must look like THAT Vietnamese dragon sculpture, not a Western dragon, bird, phoenix, seahorse, letter C, crescent or abstract spiral. Keep the detailed gold bas-relief ridges and small brown recess shadows between gold raised carved lines, distinct open mouth/eye, claw-like curls, textured scales and the flowing parallel rib grooves in the upright right tail. Reproduce the composition and proportions of the actual reference with restrained warm gold, aged bronze recesses, soft even illumination and sufficient contrast to read at64px. REMOVE ONLY the beige background, the photographic ground/shadow, and the rectangular pedestal/base under the dragon. Keep only the complete actual dragon ornament, all its neck/head/coils and upright tail, smoothly isolated with intact tips. Center it on a square transparent canvas; use most of canvas, margin around6% outside ornament. Do not add a medallion, shield, circle border, frame, text, letters, watermark, people or new decorative motif. Genuine transparent PNG alpha0 everywhere outside the dragon. Output a carefully cleaned finely detailed golden dragon emblem closely matching this exact sculpture.",
+  "generator": "OpenAI built-in image_gen",
+  "created": "2026-10-10",
+  "source": "public/art/daiviet-v4-dragon-emblem.png",
+  "file": "/art/daiviet-v4-dragon-emblem.png",
+  "sourceBytesUnchanged": true,
+  "sha256": "82bdf057ffb8e9bbfeeb796ab57280e858de66212f77f73232ef15d3bbb7752a",
+  "bytes": 1807697,
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "frame": [
+    195,
+    33,
+    915,
+    1162
+  ],
+  "use": "Shared Dai Viet menu, header, workshop, HUD emblem and town-center banner ornament. Replaces the simplified SVG dragon silhouette.",
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

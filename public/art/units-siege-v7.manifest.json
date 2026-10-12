@@ -1,0 +1,2699 @@
+{
+  "version": 7,
+  "assetKind": "original faction siege raster masters",
+  "created": "2026-10-09",
+  "generator": "Built-in image_gen; no CLI/API fallback",
+  "scope": "Six siege machine sheets only; Ottoman distinct cannon remains existing v6.",
+  "frameContract": "[sourceX,sourceY,width,height,groundAnchorXRelative,groundAnchorYRelative]. Read measured rectangles; generated rows do not line up with exact image quarter boundaries.",
+  "scaleContract": "Use stable bodyHeight/rowBodyHeights across all states. Arm/sling extensions increase crop extent, not actor scale. Machine nominal target heights and visible crew calibration are both supplied for integration choice.",
+  "groundAnchorMethod": "Approximate chassis contact center: horizontal midpoint of authored group and measured source ground-plane inset above lowest foot/wheel pixel. Sprite owner can refine anchors visually without editing source.",
+  "historicalBoundaries": {
+    "roman": "Late Roman engineering; torsion single arm with flexible sling, no counterweight. Covered ram protection is artistic interpretation.",
+    "persian": "Sasanian inspiration (224–651 CE); covered oxhide ram supported by Ammianus20.7; stone engine mechanism is an artistic inference, not a claimed exact reconstruction. No Achaemenid counterweight.",
+    "tang": "Human traction beam and rope pulls, no counterweight/gunpowder. Taibai Yinjing bookIV chapter35.",
+    "mongol": "13th-century adoption of western specialist counterweight engineering, associated with Xiangyang1272–73; not a native Mongol invention."
+  },
+  "sources": [
+    {
+      "topic": "Roman onager/ram",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/23%2A.html",
+      "locator": "23.4.4–9"
+    },
+    {
+      "topic": "Sasanian oxhide ram",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Ammian/20%2A.html",
+      "locator": "20.7.12–14"
+    },
+    {
+      "topic": "Sasanian siege engineering",
+      "url": "https://www.iranicaonline.org/articles/army-i/",
+      "locator": "Sasanian army"
+    },
+    {
+      "topic": "Tang traction primary treatise",
+      "url": "https://ctext.org/library.pl?if=gb&remap=gb&res=111594",
+      "locator": "Li Quan, Taibai Yinjing, bookIV, 攻城具篇35"
+    },
+    {
+      "topic": "Mongol counterweight chronology",
+      "url": "https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/151266/Vogel-Theobald_%20Marco-Polo_OA.pdf?isAllowed=y&sequence=1",
+      "locator": "Ulrich Theobald (2024), pp.419–423, Yuanshi203"
+    }
+  ],
+  "checks": {
+    "sheetCount": 6,
+    "frameCount": 96,
+    "allRgba": true,
+    "allCornerAlphaZero": true,
+    "noSourceCanvasClipping": true,
+    "originalBytesUntouched": true,
+    "allFrameRectanglesDetached": true
+  },
+  "sheets": [
+    {
+      "id": "roman-ram",
+      "file": "units-siege-v7-roman-ram.png",
+      "civilizations": [
+        "roman"
+      ],
+      "unitType": "ram",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "directions": [
+        "SE",
+        "SW",
+        "NW",
+        "NE"
+      ],
+      "states": [
+        "walk-contact-a",
+        "walk-contact-b",
+        "wind-up",
+        "impact-release"
+      ],
+      "frames": [
+        [
+          25,
+          35,
+          273,
+          247,
+          136.5,
+          213
+        ],
+        [
+          330,
+          36,
+          270,
+          247,
+          135.0,
+          213
+        ],
+        [
+          655,
+          37,
+          260,
+          235,
+          130.0,
+          201
+        ],
+        [
+          963,
+          36,
+          263,
+          235,
+          131.5,
+          201
+        ],
+        [
+          28,
+          346,
+          268,
+          247,
+          134.0,
+          213
+        ],
+        [
+          330,
+          348,
+          273,
+          247,
+          136.5,
+          213
+        ],
+        [
+          654,
+          349,
+          266,
+          243,
+          133.0,
+          209
+        ],
+        [
+          963,
+          345,
+          264,
+          237,
+          132.0,
+          203
+        ],
+        [
+          27,
+          654,
+          264,
+          241,
+          132.0,
+          207
+        ],
+        [
+          335,
+          655,
+          260,
+          240,
+          130.0,
+          206
+        ],
+        [
+          659,
+          655,
+          258,
+          238,
+          129.0,
+          204
+        ],
+        [
+          961,
+          656,
+          262,
+          238,
+          131.0,
+          204
+        ],
+        [
+          25,
+          960,
+          280,
+          240,
+          140.0,
+          206
+        ],
+        [
+          323,
+          956,
+          280,
+          247,
+          140.0,
+          213
+        ],
+        [
+          643,
+          961,
+          284,
+          241,
+          142.0,
+          207
+        ],
+        [
+          965,
+          956,
+          269,
+          238,
+          134.5,
+          204
+        ]
+      ],
+      "rowBodyHeights": [
+        208.25,
+        208.25,
+        208.25,
+        208.25
+      ],
+      "bodyHeight": 208.25,
+      "nominalTargetHeight": 60,
+      "crewHeadToSoleSourceEstimate": 130,
+      "crewMeasurementCaveat": "Manual visible pushing/crouching head-to-sole estimate, not anatomical standing height.",
+      "targetHeightFor48PixelVisibleCrew": 76.89,
+      "majorComponents": 16,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "e16fa5c00701f312ba9b29a10e554865a3f7fb1249fcbabd9c78dbba30e23c7f",
+      "sourceOriginalPath": "public/art/units-siege-v7-roman-ram.png",
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL high-detail painterly-realistic 2D RTS isometric animation sprite atlas, native square 1536x1536 PNG, actual RGBA transparency. Style: finely painted natural wood grain, rope fibers, iron rivets, woven clothing, believable anatomy and sober historical materials, sharp readable silhouette like an illustrated historical strategy game. Camera: orthographic 2:1 isometric at 30-degree elevation, vertical posts perfectly upright, daylight from upper left, consistent camera and scale across every frame. Layout EXACTLY four equal columns and four equal rows, sixteen separate complete isolated machine-and-crew poses; no painted backdrop, no ground tiles, no borders, no labels, no UI, no arrows, no numbers. Every sprite fits fully inside its 384x384 cell with at least 12% transparent gutter; nothing touching or overlapping another cell. Each machine has exactly TWO visibly complete crewmen, both with hands operating machine and feet reaching same ground plane as wheels/base. Human crew head-to-sole height approx 160 source pixels; compact machine has comparable height, about 190–220 pixels. Keep precise same design, materials, number of crew and proportions in all sixteen cells. Four view columns left to right: SE machine points down-right (front and right side visible), SW down-left (front and left side visible), NW up-left (back and left side visible), NE up-right (back and right side visible). Ground contact center near cell x192,y292, same machine position each row. Four action rows top to bottom: WALK CONTACT A crew left-leg forward right-leg back pushing entire intact machine, WALK CONTACT B opposite leg-stride and changing hand grip pushing intact machine, WIND-UP crew brace and pull mechanism into ready position, IMPACT/RELEASE crew push/release with clearly changed beam position. Not floating heads. No detached projectiles or detached extra objects. Real transparent alpha around all objects including empty corners and gutters, no brown/beige/checkerboard/black opaque backdrop.\nSubject: late-Roman covered battering ram, the Roman testudo-style shelter. A LONG LOW rectangular timber wheeled chassis, four modest spoked wheels, sturdy cross-braced posts, pitched protective hide roof with dull red leather/hide strips over planks, a long horizontal suspended battering beam on chains below the roof with an iron ram-head at the leading end. Architectural scale compact: two Roman siege crew outside beside chassis in dark RED knee-length tunics, simple iron helmets, brown sandals, no shields or swords. This is a Roman covered ram, NOT a catapult, no throwing arm, no counterweight. Shape elongated and low, horizontal log prominent, roof squared consistent. Rows1–2 ram beam in neutral pushing position; row3 horizontal log visibly drawn BACK into shelter by crew; row4 same log swung/pushed FORWARD with ram-head projecting beyond roof. Whole log remains attached/suspended in every frame. Full-length wheels plus both complete crew remain visible and inside transparent cell.",
+      "sourceGeometry": [
+        {
+          "row": 0,
+          "direction": "SE",
+          "sourceBounds": [
+            25,
+            35,
+            298,
+            282
+          ],
+          "sourceGroundAnchor": [
+            161.5,
+            248
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "SW",
+          "sourceBounds": [
+            330,
+            36,
+            600,
+            283
+          ],
+          "sourceGroundAnchor": [
+            465.0,
+            249
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NW",
+          "sourceBounds": [
+            655,
+            37,
+            915,
+            272
+          ],
+          "sourceGroundAnchor": [
+            785.0,
+            238
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NE",
+          "sourceBounds": [
+            963,
+            36,
+            1226,
+            271
+          ],
+          "sourceGroundAnchor": [
+            1094.5,
+            237
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SE",
+          "sourceBounds": [
+            28,
+            346,
+            296,
+            593
+          ],
+          "sourceGroundAnchor": [
+            162.0,
+            559
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SW",
+          "sourceBounds": [
+            330,
+            348,
+            603,
+            595
+          ],
+          "sourceGroundAnchor": [
+            466.5,
+            561
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NW",
+          "sourceBounds": [
+            654,
+            349,
+            920,
+            592
+          ],
+          "sourceGroundAnchor": [
+            787.0,
+            558
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NE",
+          "sourceBounds": [
+            963,
+            345,
+            1227,
+            582
+          ],
+          "sourceGroundAnchor": [
+            1095.0,
+            548
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SE",
+          "sourceBounds": [
+            27,
+            654,
+            291,
+            895
+          ],
+          "sourceGroundAnchor": [
+            159.0,
+            861
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SW",
+          "sourceBounds": [
+            335,
+            655,
+            595,
+            895
+          ],
+          "sourceGroundAnchor": [
+            465.0,
+            861
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NW",
+          "sourceBounds": [
+            659,
+            655,
+            917,
+            893
+          ],
+          "sourceGroundAnchor": [
+            788.0,
+            859
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NE",
+          "sourceBounds": [
+            961,
+            656,
+            1223,
+            894
+          ],
+          "sourceGroundAnchor": [
+            1092.0,
+            860
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SE",
+          "sourceBounds": [
+            25,
+            960,
+            305,
+            1200
+          ],
+          "sourceGroundAnchor": [
+            165.0,
+            1166
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SW",
+          "sourceBounds": [
+            323,
+            956,
+            603,
+            1203
+          ],
+          "sourceGroundAnchor": [
+            463.0,
+            1169
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NW",
+          "sourceBounds": [
+            643,
+            961,
+            927,
+            1202
+          ],
+          "sourceGroundAnchor": [
+            785.0,
+            1168
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NE",
+          "sourceBounds": [
+            965,
+            956,
+            1234,
+            1194
+          ],
+          "sourceGroundAnchor": [
+            1099.5,
+            1160
+          ],
+          "groundInsetFromLowestPixel": 34,
+          "touchesSourceCanvas": false
+        }
+      ],
+      "noCanvasClipping": true,
+      "group": "faction-siege-walk-combat",
+      "sourcePixelProcessing": "None. Original generated PNG copied byte-for-byte; alpha analysis and runtime frame rectangles only."
+    },
+    {
+      "id": "roman-onager",
+      "file": "units-siege-v7-roman-onager.png",
+      "civilizations": [
+        "roman"
+      ],
+      "unitType": "catapult",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "directions": [
+        "SE",
+        "SW",
+        "NW",
+        "NE"
+      ],
+      "states": [
+        "walk-contact-a",
+        "walk-contact-b",
+        "wind-up",
+        "impact-release"
+      ],
+      "frames": [
+        [
+          18,
+          79,
+          294,
+          190,
+          147.0,
+          162
+        ],
+        [
+          333,
+          79,
+          289,
+          192,
+          144.5,
+          164
+        ],
+        [
+          638,
+          81,
+          279,
+          189,
+          139.5,
+          161
+        ],
+        [
+          967,
+          77,
+          273,
+          193,
+          136.5,
+          165
+        ],
+        [
+          12,
+          369,
+          300,
+          191,
+          150.0,
+          163
+        ],
+        [
+          332,
+          368,
+          295,
+          195,
+          147.5,
+          167
+        ],
+        [
+          637,
+          369,
+          281,
+          194,
+          140.5,
+          166
+        ],
+        [
+          964,
+          363,
+          279,
+          200,
+          139.5,
+          172
+        ],
+        [
+          12,
+          672,
+          294,
+          210,
+          147.0,
+          182
+        ],
+        [
+          331,
+          672,
+          292,
+          209,
+          146.0,
+          181
+        ],
+        [
+          637,
+          672,
+          272,
+          204,
+          136.0,
+          176
+        ],
+        [
+          980,
+          672,
+          263,
+          216,
+          131.5,
+          188
+        ],
+        [
+          25,
+          918,
+          277,
+          288,
+          138.5,
+          260
+        ],
+        [
+          348,
+          918,
+          273,
+          286,
+          136.5,
+          258
+        ],
+        [
+          635,
+          921,
+          280,
+          283,
+          140.0,
+          255
+        ],
+        [
+          963,
+          919,
+          276,
+          286,
+          138.0,
+          258
+        ]
+      ],
+      "rowBodyHeights": [
+        165,
+        165,
+        165,
+        165
+      ],
+      "bodyHeight": 165,
+      "nominalTargetHeight": 72,
+      "crewHeadToSoleSourceEstimate": 157,
+      "crewMeasurementCaveat": "Manual visible pushing/crouching head-to-sole estimate, not anatomical standing height.",
+      "targetHeightFor48PixelVisibleCrew": 50.45,
+      "majorComponents": 16,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "830cfde0383563a6cdc49ca8cfb82f9ab8ec7d275d0ef8332bd0b45021b7c4fc",
+      "sourceOriginalPath": "public/art/units-siege-v7-roman-onager.png",
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL high-detail painterly-realistic 2D RTS isometric animation sprite atlas, native square 1536x1536 PNG, actual RGBA transparency. Style: finely painted natural wood grain, rope fibers, iron rivets, woven clothing, believable anatomy and sober historical materials, sharp readable silhouette like an illustrated historical strategy game. Camera: orthographic 2:1 isometric at 30-degree elevation, vertical posts perfectly upright, daylight from upper left, consistent camera and scale across every frame. Layout EXACTLY four equal columns and four equal rows, sixteen separate complete isolated machine-and-crew poses; no painted backdrop, no ground tiles, no borders, no labels, no UI, no arrows, no numbers. Every sprite fits fully inside its 384x384 cell with at least 12% transparent gutter; nothing touching or overlapping another cell. Each machine has exactly TWO visibly complete crewmen, both with hands operating machine and feet reaching same ground plane as wheels/base. Human crew head-to-sole height approx 160 source pixels; compact machine has comparable height, about 190–220 pixels. Keep precise same design, materials, number of crew and proportions in all sixteen cells. Four view columns left to right: SE machine points down-right (front and right side visible), SW down-left (front and left side visible), NW up-left (back and left side visible), NE up-right (back and right side visible). Ground contact center near cell x192,y292, same machine position each row. Four action rows top to bottom: WALK CONTACT A crew left-leg forward right-leg back pushing entire intact machine, WALK CONTACT B opposite leg-stride and changing hand grip pushing intact machine, WIND-UP crew brace and pull mechanism into ready position, IMPACT/RELEASE crew push/release with clearly changed beam position. Not floating heads. No detached projectiles or detached extra objects. Real transparent alpha around all objects including empty corners and gutters, no brown/beige/checkerboard/black opaque backdrop.\nSubject: late-Roman ONAGER rope-torsion single-arm stone-thrower. SHORT broad LOW rectangular oak wheeled chassis, thick single skein of tightly twisted rope running horizontally across chassis, a SINGLE upright throwing arm rooted in the torsion rope, padded cross-beam buffer, rear winch/crank; at end of arm a flexible leather SLING with two short rope straps, NEVER a spoon/cup/bowl. No roof, no hanging counterweight, no tall A-frame, no cannon. Exactly two Roman crew, dark RED knee-length tunics, simple iron helmets, brown sandals, no weapons. Rows1–2 transport with throwing arm held safely low/diagonal, alternating full-leg crew stride; row3 winch has drawn throwing arm DOWN/BACK against torsion with the attached sling holding a stone close to rear chassis, crew brace at winch; row4 arm swung UP/FORWARD toward padded buffer, sling whipping upward, crew released crank. Attached sling remains entirely within cell; no airborne stone/projectile. Lower-slung solid rope skein and padded buffer distinguish it from all medieval trebuchets.",
+      "sourceGeometry": [
+        {
+          "row": 0,
+          "direction": "SE",
+          "sourceBounds": [
+            18,
+            79,
+            312,
+            269
+          ],
+          "sourceGroundAnchor": [
+            165.0,
+            241
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "SW",
+          "sourceBounds": [
+            333,
+            79,
+            622,
+            271
+          ],
+          "sourceGroundAnchor": [
+            477.5,
+            243
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NW",
+          "sourceBounds": [
+            638,
+            81,
+            917,
+            270
+          ],
+          "sourceGroundAnchor": [
+            777.5,
+            242
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NE",
+          "sourceBounds": [
+            967,
+            77,
+            1240,
+            270
+          ],
+          "sourceGroundAnchor": [
+            1103.5,
+            242
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SE",
+          "sourceBounds": [
+            12,
+            369,
+            312,
+            560
+          ],
+          "sourceGroundAnchor": [
+            162.0,
+            532
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SW",
+          "sourceBounds": [
+            332,
+            368,
+            627,
+            563
+          ],
+          "sourceGroundAnchor": [
+            479.5,
+            535
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NW",
+          "sourceBounds": [
+            637,
+            369,
+            918,
+            563
+          ],
+          "sourceGroundAnchor": [
+            777.5,
+            535
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NE",
+          "sourceBounds": [
+            964,
+            363,
+            1243,
+            563
+          ],
+          "sourceGroundAnchor": [
+            1103.5,
+            535
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SE",
+          "sourceBounds": [
+            12,
+            672,
+            306,
+            882
+          ],
+          "sourceGroundAnchor": [
+            159.0,
+            854
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SW",
+          "sourceBounds": [
+            331,
+            672,
+            623,
+            881
+          ],
+          "sourceGroundAnchor": [
+            477.0,
+            853
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NW",
+          "sourceBounds": [
+            637,
+            672,
+            909,
+            876
+          ],
+          "sourceGroundAnchor": [
+            773.0,
+            848
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NE",
+          "sourceBounds": [
+            980,
+            672,
+            1243,
+            888
+          ],
+          "sourceGroundAnchor": [
+            1111.5,
+            860
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SE",
+          "sourceBounds": [
+            25,
+            918,
+            302,
+            1206
+          ],
+          "sourceGroundAnchor": [
+            163.5,
+            1178
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SW",
+          "sourceBounds": [
+            348,
+            918,
+            621,
+            1204
+          ],
+          "sourceGroundAnchor": [
+            484.5,
+            1176
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NW",
+          "sourceBounds": [
+            635,
+            921,
+            915,
+            1204
+          ],
+          "sourceGroundAnchor": [
+            775.0,
+            1176
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NE",
+          "sourceBounds": [
+            963,
+            919,
+            1239,
+            1205
+          ],
+          "sourceGroundAnchor": [
+            1101.0,
+            1177
+          ],
+          "groundInsetFromLowestPixel": 28,
+          "touchesSourceCanvas": false
+        }
+      ],
+      "noCanvasClipping": true,
+      "group": "faction-siege-walk-combat",
+      "sourcePixelProcessing": "None. Original generated PNG copied byte-for-byte; alpha analysis and runtime frame rectangles only."
+    },
+    {
+      "id": "persian-ram",
+      "file": "units-siege-v7-persian-ram.png",
+      "civilizations": [
+        "persian"
+      ],
+      "unitType": "ram",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "directions": [
+        "SE",
+        "SW",
+        "NW",
+        "NE"
+      ],
+      "states": [
+        "walk-contact-a",
+        "walk-contact-b",
+        "wind-up",
+        "impact-release"
+      ],
+      "frames": [
+        [
+          50,
+          69,
+          257,
+          203,
+          128.5,
+          173
+        ],
+        [
+          353,
+          70,
+          225,
+          207,
+          112.5,
+          177
+        ],
+        [
+          679,
+          68,
+          237,
+          211,
+          118.5,
+          181
+        ],
+        [
+          961,
+          68,
+          242,
+          215,
+          121.0,
+          185
+        ],
+        [
+          51,
+          382,
+          257,
+          209,
+          128.5,
+          179
+        ],
+        [
+          352,
+          383,
+          226,
+          208,
+          113.0,
+          178
+        ],
+        [
+          678,
+          383,
+          240,
+          212,
+          120.0,
+          182
+        ],
+        [
+          962,
+          382,
+          241,
+          215,
+          120.5,
+          185
+        ],
+        [
+          51,
+          685,
+          247,
+          212,
+          123.5,
+          182
+        ],
+        [
+          353,
+          684,
+          223,
+          219,
+          111.5,
+          189
+        ],
+        [
+          678,
+          685,
+          245,
+          216,
+          122.5,
+          186
+        ],
+        [
+          960,
+          685,
+          243,
+          215,
+          121.5,
+          185
+        ],
+        [
+          51,
+          974,
+          260,
+          204,
+          130.0,
+          174
+        ],
+        [
+          336,
+          975,
+          241,
+          207,
+          120.5,
+          177
+        ],
+        [
+          668,
+          975,
+          254,
+          217,
+          127.0,
+          187
+        ],
+        [
+          960,
+          973,
+          251,
+          219,
+          125.5,
+          189
+        ]
+      ],
+      "rowBodyHeights": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "bodyHeight": 180,
+      "nominalTargetHeight": 60,
+      "crewHeadToSoleSourceEstimate": 108,
+      "crewMeasurementCaveat": "Manual visible pushing/crouching head-to-sole estimate, not anatomical standing height.",
+      "targetHeightFor48PixelVisibleCrew": 80.0,
+      "majorComponents": 16,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "56becb6c46073378a5bec4bd649e4848759e2cad8f238f3ddda374e00ad7f207",
+      "sourceOriginalPath": "public/art/units-siege-v7-persian-ram.png",
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL high-detail painterly-realistic 2D RTS isometric animation sprite atlas. Produce a SQUARE 1536x1536 PNG with actual RGBA transparency. Style: finely painted natural wood grain, rope fibers, iron rivets, woven clothing, believable anatomy and sober historical materials, sharp readable silhouette in a historical strategy game. Camera: orthographic 2:1 isometric at 30-degree elevation, vertical posts upright, daylight upper left, same design and camera across frames. Layout EXACTLY FOUR columns by FOUR rows, sixteen complete isolated machine-and-crew poses. No backdrop, no ground tiles, no borders, labels, UI, arrows or numbers. Each complete sprite strictly confined within its equal square cell with at least 10% empty transparent gutter to every boundary. Two visibly complete crewmen with operating hands and full legs on the same ground plane as machine. Keep the same identity, machine details, size and crew number in all16. Ground center is horizontally centered in cell and near78% cell height. Four view columns left to right: SE points down-right(front+right side); SW down-left(front+left side); NW up-left(back+left side); NE up-right(back+right side). Four action rows top to bottom: walk-contactA left-leg forward while pushing intact machine; walk-contactB opposite legs pushing same machine; wind-up braced pulling mechanism ready; release clearly changed beam action. No detached projectile/extra objects. Real transparent alpha in corners and gutters, absolutely no opaque brown/beige/black/checkerboard background.\nSubject: Sasanian Persian covered battering ram, a visual historical interpretation of oxhide-protected siege engineering. Shape distinctly DIFFERENT from Roman tiled/hide pitched-roof ram: a long low enclosed slightly CURVED CANOPY of stretched gray-brown WET OXHIDE draped over arched wooden hoops, overlapping leather seams and lashings, dark oak beams, wider four spoked wooden wheels. Thick iron-banded suspended horizontal ram beam with blunt heavy conical ram nose projects from its open front; leather roof rounded/barrel shape, no roof tiles, no red strips. Exactly two Persian siege crew in TURQUOISE and INDIGO knee-length tunics, trousers and brown boots, simple soft round caps, no turbans or crowns, no weapons. Crew head-to-sole approx150pixels, complete canopy machine overall approx200pixels; do not make crew toy sized. Rows1–2 opposing legstride pushing; row3 log retracted back inside canopy with crew pulling handle; row4 log thrust noticeably forward beyond canopy, attached in every frame. No catapult arm, no counterweight, no cannon.",
+      "sourceGeometry": [
+        {
+          "row": 0,
+          "direction": "SE",
+          "sourceBounds": [
+            50,
+            69,
+            307,
+            272
+          ],
+          "sourceGroundAnchor": [
+            178.5,
+            242
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "SW",
+          "sourceBounds": [
+            353,
+            70,
+            578,
+            277
+          ],
+          "sourceGroundAnchor": [
+            465.5,
+            247
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NW",
+          "sourceBounds": [
+            679,
+            68,
+            916,
+            279
+          ],
+          "sourceGroundAnchor": [
+            797.5,
+            249
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NE",
+          "sourceBounds": [
+            961,
+            68,
+            1203,
+            283
+          ],
+          "sourceGroundAnchor": [
+            1082.0,
+            253
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SE",
+          "sourceBounds": [
+            51,
+            382,
+            308,
+            591
+          ],
+          "sourceGroundAnchor": [
+            179.5,
+            561
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SW",
+          "sourceBounds": [
+            352,
+            383,
+            578,
+            591
+          ],
+          "sourceGroundAnchor": [
+            465.0,
+            561
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NW",
+          "sourceBounds": [
+            678,
+            383,
+            918,
+            595
+          ],
+          "sourceGroundAnchor": [
+            798.0,
+            565
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NE",
+          "sourceBounds": [
+            962,
+            382,
+            1203,
+            597
+          ],
+          "sourceGroundAnchor": [
+            1082.5,
+            567
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SE",
+          "sourceBounds": [
+            51,
+            685,
+            298,
+            897
+          ],
+          "sourceGroundAnchor": [
+            174.5,
+            867
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SW",
+          "sourceBounds": [
+            353,
+            684,
+            576,
+            903
+          ],
+          "sourceGroundAnchor": [
+            464.5,
+            873
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NW",
+          "sourceBounds": [
+            678,
+            685,
+            923,
+            901
+          ],
+          "sourceGroundAnchor": [
+            800.5,
+            871
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NE",
+          "sourceBounds": [
+            960,
+            685,
+            1203,
+            900
+          ],
+          "sourceGroundAnchor": [
+            1081.5,
+            870
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SE",
+          "sourceBounds": [
+            51,
+            974,
+            311,
+            1178
+          ],
+          "sourceGroundAnchor": [
+            181.0,
+            1148
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SW",
+          "sourceBounds": [
+            336,
+            975,
+            577,
+            1182
+          ],
+          "sourceGroundAnchor": [
+            456.5,
+            1152
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NW",
+          "sourceBounds": [
+            668,
+            975,
+            922,
+            1192
+          ],
+          "sourceGroundAnchor": [
+            795.0,
+            1162
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NE",
+          "sourceBounds": [
+            960,
+            973,
+            1211,
+            1192
+          ],
+          "sourceGroundAnchor": [
+            1085.5,
+            1162
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        }
+      ],
+      "noCanvasClipping": true,
+      "group": "faction-siege-walk-combat",
+      "sourcePixelProcessing": "None. Original generated PNG copied byte-for-byte; alpha analysis and runtime frame rectangles only.",
+      "editPrompt": "Use case: precise-object-edit. Edit this4×4SasaniancoveredoxhideRAManimationatlas. Preserve ALL sixteen poses, graybrownCURVEDbarrel-shaped wetoxhidecanopy, rectangularwoodchassis, fourwheels, ironsuspendedramlog, turquoise/indigocrewcostume, finelypaintedrealistictimber/rope/leatherdetails, isometric30degreecamera, movementandattackrowstates. Correct ONLY spacing and crew visibility: uniformly scale DOWN EVERY complete machine+crew group by20% around its groundcenter, and recenter inside its equal squarecell, so no log orfoot extends across a cellboundary. Minimum10%emptyTRANSPARENTgutter on all4sides of EACH cell. Some left/rightgroups currently touch orcross; make them clearlydisconnected. ExactlyTWO full visible crewmen in EVERY frame including columns3/4 rearviews: place one on EACH visible near-side corner of chassis so neither disappears behind the hidecanopy; keep fullheads,hands,legsandfeetbelievable, same humans/machine scale ratio. Fourcolumns SEdownright, SWdownleft, NWupleft, NEupright. Fourrows walkingA, oppositewalkingB, ramlogpulledBACKwindup, ramlogprojectingFORWARDimpact. Logmustremainsuspendedintact andvisiblechangedbetweenrow3/4. TrueRGPAalpha0 background/corners/gutters; no opaque backdrop, no checkerboarddrawing, no labels/UI, no separateprojectiles. Complete square1536×1536atlas.",
+      "generationParentPath": "generation-record:exec-f17462cc-d01b-4b4a-b4c0-64349f748dc9.png"
+    },
+    {
+      "id": "persian-stone",
+      "file": "units-siege-v7-persian-stone.png",
+      "civilizations": [
+        "persian"
+      ],
+      "unitType": "catapult",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "directions": [
+        "SE",
+        "SW",
+        "NW",
+        "NE"
+      ],
+      "states": [
+        "walk-contact-a",
+        "walk-contact-b",
+        "wind-up",
+        "impact-release"
+      ],
+      "frames": [
+        [
+          23,
+          58,
+          272,
+          218,
+          136.0,
+          188
+        ],
+        [
+          342,
+          58,
+          266,
+          226,
+          133.0,
+          196
+        ],
+        [
+          660,
+          64,
+          259,
+          235,
+          129.5,
+          205
+        ],
+        [
+          963,
+          77,
+          275,
+          218,
+          137.5,
+          188
+        ],
+        [
+          23,
+          358,
+          274,
+          211,
+          137.0,
+          181
+        ],
+        [
+          338,
+          354,
+          279,
+          233,
+          139.5,
+          203
+        ],
+        [
+          649,
+          357,
+          271,
+          234,
+          135.5,
+          204
+        ],
+        [
+          961,
+          364,
+          279,
+          226,
+          139.5,
+          196
+        ],
+        [
+          30,
+          662,
+          268,
+          221,
+          134.0,
+          191
+        ],
+        [
+          326,
+          657,
+          282,
+          237,
+          141.0,
+          207
+        ],
+        [
+          650,
+          666,
+          271,
+          230,
+          135.5,
+          200
+        ],
+        [
+          951,
+          678,
+          274,
+          219,
+          137.0,
+          189
+        ],
+        [
+          33,
+          941,
+          278,
+          249,
+          139.0,
+          219
+        ],
+        [
+          354,
+          951,
+          250,
+          261,
+          125.0,
+          231
+        ],
+        [
+          639,
+          953,
+          292,
+          259,
+          146.0,
+          229
+        ],
+        [
+          956,
+          950,
+          273,
+          255,
+          136.5,
+          225
+        ]
+      ],
+      "rowBodyHeights": [
+        195.12,
+        195.12,
+        195.12,
+        195.12
+      ],
+      "bodyHeight": 195.12,
+      "nominalTargetHeight": 72,
+      "crewHeadToSoleSourceEstimate": 170,
+      "crewMeasurementCaveat": "Manual visible pushing/crouching head-to-sole estimate, not anatomical standing height.",
+      "targetHeightFor48PixelVisibleCrew": 55.09,
+      "majorComponents": 16,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "12ac1c97d029c5930ffe0f6857edef6d5c6c5fc1282e4f7575068654f60b0306",
+      "sourceOriginalPath": "public/art/units-siege-v7-persian-stone.png",
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL high-detail painterly-realistic 2D RTS isometric animation sprite atlas. Produce a SQUARE 1536x1536 PNG with actual RGBA transparency. Style: finely painted natural wood grain, rope fibers, iron rivets, woven clothing, believable anatomy and sober historical materials, sharp readable silhouette in a historical strategy game. Camera: orthographic 2:1 isometric at 30-degree elevation, vertical posts upright, daylight upper left, same design and camera across frames. Layout EXACTLY FOUR columns by FOUR rows, sixteen complete isolated machine-and-crew poses. No backdrop, no ground tiles, no borders, labels, UI, arrows or numbers. Each complete sprite strictly confined within its equal square cell with at least 10% empty transparent gutter to every boundary. Two visibly complete crewmen with operating hands and full legs on the same ground plane as machine. Keep the same identity, machine details, size and crew number in all16. Ground center is horizontally centered in cell and near78% cell height. Four view columns left to right: SE points down-right(front+right side); SW down-left(front+left side); NW up-left(back+left side); NE up-right(back+right side). Four action rows top to bottom: walk-contactA left-leg forward while pushing intact machine; walk-contactB opposite legs pushing same machine; wind-up braced pulling mechanism ready; release clearly changed beam action. No detached projectile/extra objects. Real transparent alpha in corners and gutters, absolutely no opaque brown/beige/black/checkerboard background.\nSubject: compact Sasanian-inspired Persian STONE ENGINE, acknowledged artistic interpretation of ancient stone artillery, NOT a later medieval counterweight trebuchet. A low rectangular cedar wheeled cart with four small iron-bound spoked wheels, a PAIR of sloping stout triangular cheek braces, visibly coiled rope-torsion skein crossing LOW at arm's pivot, compact winch toward rear, one medium-length throw arm ending in a two-strand flexible leather sling. Complex diamond-patterned rope lashings on dark timbers; indigo textile side wrap low on rear chassis, never hanging weight. Silhouette distinct from Roman onager: narrower long chassis, taller paired triangular side braces and rope diagonal bracing, Persian crew clothing. Exactly two full Persian crew in TURQUOISE/INDIGO tunics over trousers, leather boots and simple soft caps. Crew approx150pixels tall; core machine approx190–220pixels including low diagonal ready arm. Rows1–2 low transport arm and opposite stride; row3 arm drawn low BACK, sling cradles a stone close to rear and crew crank taut rope; row4 arm swung UP/FORWARD and flexible sling open trailing, full sling confined within cell. No hanging counterweight, no massive tall A-frame, no cannon, no spoon/bowl catapult, no detached airborne projectile.",
+      "sourceGeometry": [
+        {
+          "row": 0,
+          "direction": "SE",
+          "sourceBounds": [
+            23,
+            58,
+            295,
+            276
+          ],
+          "sourceGroundAnchor": [
+            159.0,
+            246
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "SW",
+          "sourceBounds": [
+            342,
+            58,
+            608,
+            284
+          ],
+          "sourceGroundAnchor": [
+            475.0,
+            254
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NW",
+          "sourceBounds": [
+            660,
+            64,
+            919,
+            299
+          ],
+          "sourceGroundAnchor": [
+            789.5,
+            269
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NE",
+          "sourceBounds": [
+            963,
+            77,
+            1238,
+            295
+          ],
+          "sourceGroundAnchor": [
+            1100.5,
+            265
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SE",
+          "sourceBounds": [
+            23,
+            358,
+            297,
+            569
+          ],
+          "sourceGroundAnchor": [
+            160.0,
+            539
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SW",
+          "sourceBounds": [
+            338,
+            354,
+            617,
+            587
+          ],
+          "sourceGroundAnchor": [
+            477.5,
+            557
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NW",
+          "sourceBounds": [
+            649,
+            357,
+            920,
+            591
+          ],
+          "sourceGroundAnchor": [
+            784.5,
+            561
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NE",
+          "sourceBounds": [
+            961,
+            364,
+            1240,
+            590
+          ],
+          "sourceGroundAnchor": [
+            1100.5,
+            560
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SE",
+          "sourceBounds": [
+            30,
+            662,
+            298,
+            883
+          ],
+          "sourceGroundAnchor": [
+            164.0,
+            853
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SW",
+          "sourceBounds": [
+            326,
+            657,
+            608,
+            894
+          ],
+          "sourceGroundAnchor": [
+            467.0,
+            864
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NW",
+          "sourceBounds": [
+            650,
+            666,
+            921,
+            896
+          ],
+          "sourceGroundAnchor": [
+            785.5,
+            866
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NE",
+          "sourceBounds": [
+            951,
+            678,
+            1225,
+            897
+          ],
+          "sourceGroundAnchor": [
+            1088.0,
+            867
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SE",
+          "sourceBounds": [
+            33,
+            941,
+            311,
+            1190
+          ],
+          "sourceGroundAnchor": [
+            172.0,
+            1160
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SW",
+          "sourceBounds": [
+            354,
+            951,
+            604,
+            1212
+          ],
+          "sourceGroundAnchor": [
+            479.0,
+            1182
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NW",
+          "sourceBounds": [
+            639,
+            953,
+            931,
+            1212
+          ],
+          "sourceGroundAnchor": [
+            785.0,
+            1182
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NE",
+          "sourceBounds": [
+            956,
+            950,
+            1229,
+            1205
+          ],
+          "sourceGroundAnchor": [
+            1092.5,
+            1175
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        }
+      ],
+      "noCanvasClipping": true,
+      "group": "faction-siege-walk-combat",
+      "sourcePixelProcessing": "None. Original generated PNG copied byte-for-byte; alpha analysis and runtime frame rectangles only."
+    },
+    {
+      "id": "tang-traction",
+      "file": "units-siege-v7-tang-traction.png",
+      "civilizations": [
+        "tang"
+      ],
+      "unitType": "catapult",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "directions": [
+        "SE",
+        "SW",
+        "NW",
+        "NE"
+      ],
+      "states": [
+        "walk-contact-a",
+        "walk-contact-b",
+        "wind-up",
+        "impact-release"
+      ],
+      "frames": [
+        [
+          19,
+          34,
+          298,
+          234,
+          149.0,
+          204
+        ],
+        [
+          341,
+          36,
+          271,
+          239,
+          135.5,
+          209
+        ],
+        [
+          673,
+          38,
+          248,
+          256,
+          124.0,
+          226
+        ],
+        [
+          960,
+          45,
+          252,
+          245,
+          126.0,
+          215
+        ],
+        [
+          26,
+          327,
+          291,
+          233,
+          145.5,
+          203
+        ],
+        [
+          341,
+          326,
+          270,
+          242,
+          135.0,
+          212
+        ],
+        [
+          673,
+          330,
+          254,
+          264,
+          127.0,
+          234
+        ],
+        [
+          960,
+          337,
+          252,
+          252,
+          126.0,
+          222
+        ],
+        [
+          22,
+          593,
+          286,
+          261,
+          143.0,
+          231
+        ],
+        [
+          339,
+          599,
+          274,
+          262,
+          137.0,
+          232
+        ],
+        [
+          657,
+          617,
+          262,
+          245,
+          131.0,
+          215
+        ],
+        [
+          958,
+          607,
+          277,
+          262,
+          138.5,
+          232
+        ],
+        [
+          30,
+          870,
+          259,
+          353,
+          129.5,
+          323
+        ],
+        [
+          348,
+          870,
+          258,
+          343,
+          129.0,
+          313
+        ],
+        [
+          670,
+          899,
+          230,
+          321,
+          115.0,
+          291
+        ],
+        [
+          977,
+          881,
+          253,
+          344,
+          126.5,
+          314
+        ]
+      ],
+      "rowBodyHeights": [
+        215.62,
+        215.62,
+        215.62,
+        215.62
+      ],
+      "bodyHeight": 215.62,
+      "nominalTargetHeight": 72,
+      "crewHeadToSoleSourceEstimate": 149,
+      "crewMeasurementCaveat": "Manual visible pushing/crouching head-to-sole estimate, not anatomical standing height.",
+      "targetHeightFor48PixelVisibleCrew": 69.46,
+      "majorComponents": 16,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "b097162a1233894f0965215ff6502dd52860efa3ac00efc268db0a5637f50824",
+      "sourceOriginalPath": "public/art/units-siege-v7-tang-traction.png",
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL high-detail painterly-realistic 2D RTS isometric animation sprite atlas, SQUARE1536x1536 native PNG, actual RGBA transparency. Natural detailed aged woodgrain, braided ropes, ironfasteners, textile fibers, believable human anatomy, sober historical strategy game palette; clean fine painted edges, readable realistic construction. Orthographic2:1isometric camera at30-degree elevation, upright vertical timbers, daylightupperleft, identical scale/camera/design in every frame. Layout EXACTLY FOUR equal columns by FOUR equal rows, SIXTEEN complete isolated machine+crew sprites. Eachsprite fully confined within its cell with10–15%emptytransparentgutter to all edges; no overlap, no cropped sling/beam/feet. True transparent alpha emptycanvas, no coloredbackground, no checkerboard drawn, no groundtile, no shadowclouds, nolabels/arrows/UI. Exactly TWO full visible crewmen in everyframe, hands and feet on functional operatingpositions. Fourviewcolumns lefttoright: SE pointsdownright(front+right), SW pointsdownleft(front+left), NW pointsupleft(back+left), NE pointsupright(back+right). Fourrows topbottom: walkingcontactA withcrewleftlegforward, walkingcontactB oppositelegs, windup withcrewpulling/chargingmechanism, impact/release withthrowingbeamposedclearlydifferently. The actual machine base remains the same size and same position across rows, groundcontactcenter cellx192,y302. Beam and sling never leavecell. No airborneprojectile.\nSubject:TANG dynasty Chinese HUMAN-TRACTION STONE THROWER, long slender woodenthrowingbeam pivoted atop a SMALL FOUR-LEGGED TRESTLE, multiple long ropepulls attached to the SHORT end of the beam, loose flexible leather sling attached to LONG end. Trestleplaced on low rectangular four-smallwheel timbertransportbase, generous diagonal lashings. All power is human crews pulling ROPEBUNDLES; ZERO counterweight, no hanging weightbox, ZERO torsionskein, no giantAframemedievaltrebuchet, no cup/spoon, no gunpowder/cannon. Distinct elegant thin beam, lowfourlegframe, bundleof3–4 ropesfanning towardcrew. ExactlytwoTangsiegecrew:CINNABARredlongtunic, smallblacksoftcap, sparselamellarvest, darktrousers, leatherboots, no sword/spear. Crewheadtofoot approx150sourcepixels; trestlecore approx160–180pixels, longbeamrestorwindupposeddiagonally acrosscell butnotclipping. Walkrows1–2 securedbeam lowdiagonal, fullcrewoppositefootstridespushingbase. Row3 longbeamdrawnDOWN/BACK, slingwithstoneheldnearrear, bothcrewarmsreachhighgrippingropesattachedshortend. Row4 bothcrewbracedleaningbackpullingropebundlesstronglyDOWN, longbeam swungUP/FORWARD, attachedslingunfurledandempty. Ropepullactionvisiblyexplainsmechanism.",
+      "sourceGeometry": [
+        {
+          "row": 0,
+          "direction": "SE",
+          "sourceBounds": [
+            19,
+            34,
+            317,
+            268
+          ],
+          "sourceGroundAnchor": [
+            168.0,
+            238
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "SW",
+          "sourceBounds": [
+            341,
+            36,
+            612,
+            275
+          ],
+          "sourceGroundAnchor": [
+            476.5,
+            245
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NW",
+          "sourceBounds": [
+            673,
+            38,
+            921,
+            294
+          ],
+          "sourceGroundAnchor": [
+            797.0,
+            264
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NE",
+          "sourceBounds": [
+            960,
+            45,
+            1212,
+            290
+          ],
+          "sourceGroundAnchor": [
+            1086.0,
+            260
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SE",
+          "sourceBounds": [
+            26,
+            327,
+            317,
+            560
+          ],
+          "sourceGroundAnchor": [
+            171.5,
+            530
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SW",
+          "sourceBounds": [
+            341,
+            326,
+            611,
+            568
+          ],
+          "sourceGroundAnchor": [
+            476.0,
+            538
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NW",
+          "sourceBounds": [
+            673,
+            330,
+            927,
+            594
+          ],
+          "sourceGroundAnchor": [
+            800.0,
+            564
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NE",
+          "sourceBounds": [
+            960,
+            337,
+            1212,
+            589
+          ],
+          "sourceGroundAnchor": [
+            1086.0,
+            559
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SE",
+          "sourceBounds": [
+            22,
+            593,
+            308,
+            854
+          ],
+          "sourceGroundAnchor": [
+            165.0,
+            824
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SW",
+          "sourceBounds": [
+            339,
+            599,
+            613,
+            861
+          ],
+          "sourceGroundAnchor": [
+            476.0,
+            831
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NW",
+          "sourceBounds": [
+            657,
+            617,
+            919,
+            862
+          ],
+          "sourceGroundAnchor": [
+            788.0,
+            832
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NE",
+          "sourceBounds": [
+            958,
+            607,
+            1235,
+            869
+          ],
+          "sourceGroundAnchor": [
+            1096.5,
+            839
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SE",
+          "sourceBounds": [
+            30,
+            870,
+            289,
+            1223
+          ],
+          "sourceGroundAnchor": [
+            159.5,
+            1193
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SW",
+          "sourceBounds": [
+            348,
+            870,
+            606,
+            1213
+          ],
+          "sourceGroundAnchor": [
+            477.0,
+            1183
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NW",
+          "sourceBounds": [
+            670,
+            899,
+            900,
+            1220
+          ],
+          "sourceGroundAnchor": [
+            785.0,
+            1190
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NE",
+          "sourceBounds": [
+            977,
+            881,
+            1230,
+            1225
+          ],
+          "sourceGroundAnchor": [
+            1103.5,
+            1195
+          ],
+          "groundInsetFromLowestPixel": 30,
+          "touchesSourceCanvas": false
+        }
+      ],
+      "noCanvasClipping": true,
+      "group": "faction-siege-walk-combat",
+      "sourcePixelProcessing": "None. Original generated PNG copied byte-for-byte; alpha analysis and runtime frame rectangles only."
+    },
+    {
+      "id": "mongol-trebuchet",
+      "file": "units-siege-v7-mongol-trebuchet.png",
+      "civilizations": [
+        "mongol"
+      ],
+      "unitType": "catapult",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "directions": [
+        "SE",
+        "SW",
+        "NW",
+        "NE"
+      ],
+      "states": [
+        "walk-contact-a",
+        "walk-contact-b",
+        "wind-up",
+        "impact-release"
+      ],
+      "frames": [
+        [
+          66,
+          55,
+          226,
+          231,
+          113.0,
+          205
+        ],
+        [
+          350,
+          56,
+          223,
+          228,
+          111.5,
+          202
+        ],
+        [
+          687,
+          57,
+          217,
+          227,
+          108.5,
+          201
+        ],
+        [
+          972,
+          55,
+          221,
+          230,
+          110.5,
+          204
+        ],
+        [
+          66,
+          347,
+          223,
+          235,
+          111.5,
+          209
+        ],
+        [
+          351,
+          347,
+          227,
+          235,
+          113.5,
+          209
+        ],
+        [
+          682,
+          348,
+          228,
+          229,
+          114.0,
+          203
+        ],
+        [
+          972,
+          347,
+          229,
+          230,
+          114.5,
+          204
+        ],
+        [
+          41,
+          649,
+          254,
+          250,
+          127.0,
+          224
+        ],
+        [
+          342,
+          649,
+          239,
+          247,
+          119.5,
+          221
+        ],
+        [
+          678,
+          649,
+          235,
+          254,
+          117.5,
+          228
+        ],
+        [
+          970,
+          649,
+          244,
+          252,
+          122.0,
+          226
+        ],
+        [
+          49,
+          945,
+          231,
+          244,
+          115.5,
+          218
+        ],
+        [
+          365,
+          944,
+          235,
+          244,
+          117.5,
+          218
+        ],
+        [
+          666,
+          944,
+          227,
+          252,
+          113.5,
+          226
+        ],
+        [
+          976,
+          946,
+          230,
+          243,
+          115.0,
+          217
+        ]
+      ],
+      "rowBodyHeights": [
+        204.62,
+        204.62,
+        204.62,
+        204.62
+      ],
+      "bodyHeight": 204.62,
+      "nominalTargetHeight": 105,
+      "crewHeadToSoleSourceEstimate": 99,
+      "crewMeasurementCaveat": "Manual visible pushing/crouching head-to-sole estimate, not anatomical standing height.",
+      "targetHeightFor48PixelVisibleCrew": 99.21,
+      "majorComponents": 16,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "1e6c767d55de3d5ef2994296cca226a416bba87ceb64e59b44ce18f9f2980a2e",
+      "sourceOriginalPath": "public/art/units-siege-v7-mongol-trebuchet.png",
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL high-detail painterly-realistic 2D RTS isometric animation sprite atlas, SQUARE1536x1536 native PNG, actual RGBA transparency. Natural detailed aged woodgrain, braided ropes, ironfasteners, textile fibers, believable human anatomy, sober historical strategy game palette; clean fine painted edges, readable realistic construction. Orthographic2:1isometric camera at30-degree elevation, upright vertical timbers, daylightupperleft, identical scale/camera/design in every frame. Layout EXACTLY FOUR equal columns by FOUR equal rows, SIXTEEN complete isolated machine+crew sprites. Eachsprite fully confined within its cell with10–15%emptytransparentgutter to all edges; no overlap, no cropped sling/beam/feet. True transparent alpha emptycanvas, no coloredbackground, no checkerboard drawn, no groundtile, no shadowclouds, nolabels/arrows/UI. Exactly TWO full visible crewmen in everyframe, hands and feet on functional operatingpositions. Fourviewcolumns lefttoright: SE pointsdownright(front+right), SW pointsdownleft(front+left), NW pointsupleft(back+left), NE pointsupright(back+right). Fourrows topbottom: walkingcontactA withcrewleftlegforward, walkingcontactB oppositelegs, windup withcrewpulling/chargingmechanism, impact/release withthrowingbeamposedclearlydifferently. The actual machine base remains the same size and same position across rows, groundcontactcenter cellx192,y302. Beam and sling never leavecell. No airborneprojectile.\nSubject:13th-century Mongol/Yuan COUNTERWEIGHT TREBUCHET, inspired by western specialist technology adopted at Xiangyang1272–73. TALL stronglycrossbraced A-FRAME of darktimbers; one longslender pivotthrowingbeam, SHORTbeamend carries a clearlyvisible HINGED HANGING RECTANGULAR COUNTERWEIGHT BOX, LONGbeamend carries attachedflexibleSLING. Low rectangularbase onfourmodestspokedwheelsfor transport; nohingeorweightconfusedwithgun. ClearlydistincthighAframeandweightbox, NOT Romanrope-torsiononager, no torsionskein, no spoon/cup, no roof, no cannon. ExactlytwofullMongolcrew, BLUE clothlongcoats under lightlamellarvests, brownfur-edgedsoftcaps, darktrousersandboots. MAINtrestleandframe approx250–270sourcepixels tall, humancrew approx120–135pixelsheadtosole(halfheightofmachine). Keepmechanismtall butnotgianttoycrew; neverwholebeamtopcropped. Rows1–2 transportbeam securedmoderatelydiagonal, counterweightboxstillhingedcloseframe, crew oppositefulllegstridespushingbase. Row3 cockedwindup: LONGbeamenddrawnDOWN/BACKtowardground behindbase, SHORTendanditsheavyhingedcounterweightLIFTED, crewcrankwinchropenearbase. Row4 release:counterweightboxDROPPEDDOWNbesideframe, longarmupFORWARD, flexibleemptyattachedslingcurvesthroughairbutfullyinsidecell, crewbracedlettingwinchgo. Base/crewsizeidenticalacross4rows, fixedgroundcontact. Counterweightmustbeintactandattachedtoshortendineveryframe.",
+      "sourceGeometry": [
+        {
+          "row": 0,
+          "direction": "SE",
+          "sourceBounds": [
+            66,
+            55,
+            292,
+            286
+          ],
+          "sourceGroundAnchor": [
+            179.0,
+            260
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "SW",
+          "sourceBounds": [
+            350,
+            56,
+            573,
+            284
+          ],
+          "sourceGroundAnchor": [
+            461.5,
+            258
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NW",
+          "sourceBounds": [
+            687,
+            57,
+            904,
+            284
+          ],
+          "sourceGroundAnchor": [
+            795.5,
+            258
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 0,
+          "direction": "NE",
+          "sourceBounds": [
+            972,
+            55,
+            1193,
+            285
+          ],
+          "sourceGroundAnchor": [
+            1082.5,
+            259
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SE",
+          "sourceBounds": [
+            66,
+            347,
+            289,
+            582
+          ],
+          "sourceGroundAnchor": [
+            177.5,
+            556
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "SW",
+          "sourceBounds": [
+            351,
+            347,
+            578,
+            582
+          ],
+          "sourceGroundAnchor": [
+            464.5,
+            556
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NW",
+          "sourceBounds": [
+            682,
+            348,
+            910,
+            577
+          ],
+          "sourceGroundAnchor": [
+            796.0,
+            551
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 1,
+          "direction": "NE",
+          "sourceBounds": [
+            972,
+            347,
+            1201,
+            577
+          ],
+          "sourceGroundAnchor": [
+            1086.5,
+            551
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SE",
+          "sourceBounds": [
+            41,
+            649,
+            295,
+            899
+          ],
+          "sourceGroundAnchor": [
+            168.0,
+            873
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "SW",
+          "sourceBounds": [
+            342,
+            649,
+            581,
+            896
+          ],
+          "sourceGroundAnchor": [
+            461.5,
+            870
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NW",
+          "sourceBounds": [
+            678,
+            649,
+            913,
+            903
+          ],
+          "sourceGroundAnchor": [
+            795.5,
+            877
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 2,
+          "direction": "NE",
+          "sourceBounds": [
+            970,
+            649,
+            1214,
+            901
+          ],
+          "sourceGroundAnchor": [
+            1092.0,
+            875
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SE",
+          "sourceBounds": [
+            49,
+            945,
+            280,
+            1189
+          ],
+          "sourceGroundAnchor": [
+            164.5,
+            1163
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "SW",
+          "sourceBounds": [
+            365,
+            944,
+            600,
+            1188
+          ],
+          "sourceGroundAnchor": [
+            482.5,
+            1162
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NW",
+          "sourceBounds": [
+            666,
+            944,
+            893,
+            1196
+          ],
+          "sourceGroundAnchor": [
+            779.5,
+            1170
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        },
+        {
+          "row": 3,
+          "direction": "NE",
+          "sourceBounds": [
+            976,
+            946,
+            1206,
+            1189
+          ],
+          "sourceGroundAnchor": [
+            1091.0,
+            1163
+          ],
+          "groundInsetFromLowestPixel": 26,
+          "touchesSourceCanvas": false
+        }
+      ],
+      "noCanvasClipping": true,
+      "group": "faction-siege-walk-combat",
+      "sourcePixelProcessing": "None. Original generated PNG copied byte-for-byte; alpha analysis and runtime frame rectangles only.",
+      "editPrompt": "Use case: precise-object-edit. Edit target: this original Mongol counterweight trebuchet 4x4 animation atlas. Change ONLY layout scale/spacing so EVERY complete machine plus both crew fits safely into its OWN cell. Preserve exact 4 columns ×4 rows, all16 independent poses, same natural painterly realism, blue-clad Mongol crews, visible hanging rectangular counterweight, tall A-frame, flexible sling, row3 cocked arm/raisedweight and row4 release arm/droppedweight. CRITICAL correction: the top-row four beam tips currently touch/cut into the image edge; reconstruct the complete timber beam tip and any cut sling then SHRINK EACH WHOLE MACHINE+CREW GROUP by20% around its ground center. Center each intact group within its original equal squarecell. Leave a minimum12% totally empty TRANSPARENT gutter on all four sides of eachcell; no part anywhere near outercanvas edge or anotherrow/column. Preserve aspect ratio and human/machine proportions; do not shorten beams, do not enlarge crews relative to the machine. Fourviewcolumns: SE/downright, SW/downleft, NW/upleft, NE/upright. Rows: walkcontactA, oppositewalkcontactB, windup, release. One intact machine, two full crews per cell. Keep real transparent RGBA with alpha0 in allcorners/gutters; no paintedopaque backdrop, no checkerboard, no extraobjects, no labels orUI. Deliver complete square1536x1536atlas PNG.",
+      "generationParentPath": "generation-record:exec-b6286af8-4278-43ab-9905-6c0466259375.png"
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

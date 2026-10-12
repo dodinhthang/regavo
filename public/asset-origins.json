@@ -1,0 +1,957 @@
+{
+  "project": "Regavo",
+  "updated": "2026-10-12",
+  "runtimeArt": {
+    "sources": [
+      "src/render/art.ts",
+      "src/render/atlas.ts",
+      "src/render/nature.ts",
+      "src/render/units.ts",
+      "src/render/wildlife.ts",
+      "src/render/buildings.ts",
+      "src/render/scenery.ts",
+      "src/render/ground.ts",
+      "src/render/combat-effects.ts",
+      "src/render/elephant-frames.ts",
+      "src/ui/EmpirePreview.tsx",
+      "src/ui/empire-preview-layout.ts",
+      "src/render/daiviet-frames.json",
+      "src/render/isolated-frame.ts",
+      "src/render/unit-gait.ts",
+      "src/render/daiviet-emblem.ts",
+      "src/render/unit-calibration.ts",
+      "src/render/daiviet-walk-calibration.json",
+      "scripts/calibrate-daiviet-walk.py",
+      "src/ui/preview-scene-fit.ts",
+      "src/render/barrier-geometry.ts",
+      "src/render/barrier-raster.ts",
+      "src/render/foundation-geometry.ts",
+      "scripts/measure-daiviet-walk-v12.py",
+      "src/render/daiviet-worker-calibration.json",
+      "scripts/data/daiviet-worker-landmarks.json",
+      "scripts/calibrate-daiviet-workers.py",
+      "src/render/cargo.ts",
+      "src/render/daiviet-cargo-frames.json",
+      "scripts/measure-daiviet-cargo-v13.py",
+      "scripts/data/daiviet-cargo-v13-inputs.json",
+      "scripts/data/daiviet-walk-v12-inputs.json",
+      "src/render/civilization-art-data.ts",
+      "src/render/civilization-art-definition.ts",
+      "src/render/civilization-art.ts",
+      "src/render/civilizations/daiviet.ts",
+      "src/render/sheet-art.ts"
+    ],
+    "method": "Original project-generated PNG atlases with preserved bytes, versioned prompts, frame/anchor metadata and SHA-256. Four diagonal source headings; nearest-heading presentation for other directions. Units/wildlife use whole poses in 4x Canvas and buildings measured geometry in 2x Canvas. The Persian elephant uses v9. Dai Viet uses architecture v9/v10, foundation geometry v11, whole walking poses v12, anatomy calibration and resource cargo v13; sliced-limb rigs are retired. Its current loader registers 30 active sprite sheets /431 frames plus one emblem PNG, including replaced frames within retained sheets. Lobby previews compose runtime models with documented preview-only scale factors. Historical atlas records remain in generatedAssets and their versioned manifests.",
+    "thirdPartySprites": false,
+    "publicLicenseAssigned": false,
+    "generatedAssets": [
+      {
+        "file": "/art/building-centers-v2.png",
+        "manifest": "/art/manifest.json",
+        "sha256": "fc299ed2f437ce7826d17658862ead65a67fb958c656f46b6c7b8900d442a972",
+        "bytes": 2174527,
+        "use": "Retained historical source; current centers use v6 age I and tall open v7 ages II/III."
+      },
+      {
+        "file": "/art/nature-v2.png",
+        "manifest": "/art/nature-v2.manifest.json",
+        "sha256": "27c1aac244fab8e5b911e10107bc99e8d41c8d895297b63b273a49e6e4929d70",
+        "bytes": 1051632
+      },
+      {
+        "file": "/art/units-v3-a.png",
+        "manifest": "/art/units-v3.manifest.json",
+        "sha256": "d7bb9d6c30a9356baa4ccd9950ad3784ab4be6db73beb96b0dacb44d42eaf9a8",
+        "bytes": 1549656
+      },
+      {
+        "file": "/art/units-v3-b.png",
+        "manifest": "/art/units-v3.manifest.json",
+        "sha256": "bbf6beeee0275f4b22a3f1d59992fdc99652b309183d9d64260a20d3dd222d74",
+        "bytes": 1711778
+      },
+      {
+        "file": "/art/units-v3-c.png",
+        "manifest": "/art/units-v3.manifest.json",
+        "sha256": "934110fe2f15dbd2554a60333e000f6bcd48f6c863761e5075aed6995774b246",
+        "bytes": 1976189
+      },
+      {
+        "file": "/art/wildlife-v3.png",
+        "manifest": "/art/wildlife-v3.manifest.json",
+        "sha256": "1a6267ec6f0040f3aea460d19900ceea831f9d4c92c3fb09e7ce69728c7b4000",
+        "bytes": 1384358
+      },
+      {
+        "file": "/art/terrain-v3.png",
+        "manifest": "/art/terrain-v3.manifest.json",
+        "sha256": "585e147a6acc17e0c9bb7b377945247280f7c926d07f93517513394205018237",
+        "bytes": 4611004
+      },
+      {
+        "file": "/art/scenery-v3.png",
+        "manifest": "/art/scenery-v3.manifest.json",
+        "sha256": "73f14076c65903423c448da448b82ee66bb1b95d9cefb0130654688becac7779",
+        "bytes": 1660347
+      },
+      {
+        "file": "/art/buildings-v3-a.png",
+        "manifest": "/art/buildings-v3.manifest.json",
+        "sha256": "aee03febfd1be988de56ead205975f946560c57ad4adf71992cb739d94d3ff16",
+        "bytes": 2915097
+      },
+      {
+        "file": "/art/buildings-v3-b.png",
+        "manifest": "/art/buildings-v3.manifest.json",
+        "sha256": "07a71c74adca015e720c2cf1ba2e737161aee07089915ff5cb43a1bb4a14a89c",
+        "bytes": 2751835
+      },
+      {
+        "file": "/art/buildings-v3-c.png",
+        "manifest": "/art/buildings-v3.manifest.json",
+        "sha256": "237d66f62d5497362ddfe90cfba5833c47d2e9452acff547a117bc0125715e81",
+        "bytes": 2940610
+      },
+      {
+        "file": "/art/buildings-v3-d.png",
+        "manifest": "/art/buildings-v3.manifest.json",
+        "sha256": "bbe7c7d8f62b0392e0f242a9429d3271a87dec1f5479679a746f2c39b3acf60e",
+        "bytes": 2682722
+      },
+      {
+        "file": "/art/units-action-v1-infantry.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "12f9ce96b5274d68a76f89f1c7b6eb3c759e8283ae6b900ec2311f42a0cbeb80",
+        "bytes": 1590670
+      },
+      {
+        "file": "/art/units-action-v1-mongol.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "18c19ae7cec04a94c471689f6ee2c69f0ff107fc3babeb6045c38a5cb5e0bcd6",
+        "bytes": 1567956
+      },
+      {
+        "file": "/art/units-action-v1-ottoman.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "92ead069a4ed188fb20e8d4e467f0666e501597f278c506a998730d328fcfcf3",
+        "bytes": 1508139
+      },
+      {
+        "file": "/art/units-action-v1-persian.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "941b4e96160a62e7a1309993a543a8648724927ed10cdd79b90d6b8ee36ac342",
+        "bytes": 1333698
+      },
+      {
+        "file": "/art/units-action-v1-roman.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "15281fb8a53ece931ca985634fe9bea129fd4572bb3e71bebd033380f7888f32",
+        "bytes": 1538554
+      },
+      {
+        "file": "/art/units-action-v1-tang-impact.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "49e26f7ed1b400d0fdd87715c787b99d5fd781e34bac409298ca1a3f3724f2a0",
+        "bytes": 939364
+      },
+      {
+        "file": "/art/units-action-v1-tang.png",
+        "manifest": "/art/units-action-v1.manifest.json",
+        "sha256": "42bd93b32d3406ae8111a40f33ec0f7642a6fc6e349fce3f7255aa95dbc4fcee",
+        "bytes": 1613845
+      },
+      {
+        "file": "/art/building-centers-v5.png",
+        "manifest": "/art/building-centers-v5.manifest.json",
+        "sha256": "8a5438ec36115b51ec9e9d713b18cafa8dcca68152c743ed7dc8f05f3068edcc",
+        "bytes": 2431726,
+        "use": "Retained historical source; current centers use v6 age I and tall open v7 ages II/III."
+      },
+      {
+        "file": "/art/units-state-v2-tools.png",
+        "manifest": "/art/units-state-v2.manifest.json",
+        "sha256": "4bbaff2dbab9e5c141fdf420599a05ab7ae3460c318a2ac7a73d8af1c6488bbb",
+        "bytes": 2131791
+      },
+      {
+        "file": "/art/units-state-v2-carry.png",
+        "manifest": "/art/units-state-v2.manifest.json",
+        "sha256": "747924a1af41ee36b580d02a598bedf70bcce3000c1fc32fb42c3a7432cbb508",
+        "bytes": 1358358
+      },
+      {
+        "file": "/art/units-state-v2-wood.png",
+        "manifest": "/art/units-state-v2.manifest.json",
+        "sha256": "b258cd42eb4024db1ecc5924d51fb4f81d40ff38f369450f77795ab813b7e05b",
+        "bytes": 1471600
+      },
+      {
+        "file": "/art/wildlife-walk-b.png",
+        "manifest": "/art/wildlife-walk-b.manifest.json",
+        "sha256": "b8a431610dea8ff9ec48dc2dbeb4b30ff4f0cef142bd03cfc584a410f0f503d8",
+        "bytes": 1488632
+      },
+      {
+        "file": "/art/buildings-v6-age1-a.png",
+        "manifest": "/art/buildings-v6.manifest.json",
+        "sha256": "c4922b721272fa16581a17e19bd866ea8a466f1fa5c19126d5604e57e2d5dbfa",
+        "bytes": 2392212
+      },
+      {
+        "file": "/art/buildings-v6-age1-b.png",
+        "manifest": "/art/buildings-v6.manifest.json",
+        "sha256": "64f56eefca43929d7aaffd5346650e7b480271ecdaca74a6cc6ce76c68081870",
+        "bytes": 2450666
+      },
+      {
+        "file": "/art/buildings-v6-age3-a.png",
+        "manifest": "/art/buildings-v6.manifest.json",
+        "sha256": "3bb8c9dc57815230b46bb0d6edac81296a8ffdf242e7e8fd3c2d32ee8a562c54",
+        "bytes": 2883127
+      },
+      {
+        "file": "/art/buildings-v6-age3-b.png",
+        "manifest": "/art/buildings-v6.manifest.json",
+        "sha256": "268e7d9079e21ad1156c48b48c1b21ec4334a03bac85619740996d45c41f8074",
+        "bytes": 2990510
+      },
+      {
+        "file": "/art/buildings-v6-age3-c.png",
+        "manifest": "/art/buildings-v6.manifest.json",
+        "sha256": "44e767a55d746a72a8ed48a128e444ada34424decbbe5d4201e3f7698ff1efbe",
+        "bytes": 2935631
+      },
+      {
+        "file": "/art/buildings-v6-age3-d.png",
+        "manifest": "/art/buildings-v6.manifest.json",
+        "sha256": "49310e29d2e8cb105d6d061bc7baaa466ade67609a5bea32d36f91be6401ee59",
+        "bytes": 1389314
+      },
+      {
+        "file": "/art/building-centers-v6-age1.png",
+        "manifest": "/art/building-centers-v7.manifest.json",
+        "sha256": "c19705d0df8dac3a2d2248ad4a2979f1c83cc8cd26cf5eea8f04bc35b435f3b8",
+        "bytes": 2337508
+      },
+      {
+        "file": "/art/building-centers-v6-age2.png",
+        "manifest": "/art/building-centers-v6.manifest.json",
+        "sha256": "870c00e258626237c378d1cd6e6cc0a5fa44c300b9581c2e91f6668fef334ef8",
+        "bytes": 2347463,
+        "use": "Retained historical source; current centers use v6 age I and tall open v7 ages II/III."
+      },
+      {
+        "file": "/art/building-centers-v6-age3.png",
+        "manifest": "/art/building-centers-v6.manifest.json",
+        "sha256": "8118c52b94353c4b4232a7af0dc4590a377afc247abb35de3744b6d131a643bb",
+        "bytes": 2388562,
+        "use": "Retained historical source; current centers use v6 age I and tall open v7 ages II/III."
+      },
+      {
+        "file": "/art/units-army-v6-roman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "b48b8772c2641fb858353c08fa23fe8e708b5d39b47b76b414f737767f23b63e",
+        "bytes": 2282651
+      },
+      {
+        "file": "/art/units-army-v6-mongol.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "9002d7cf6b8b69a6b84d57449cc0026506bb80d55242d87c422e36e650aa27a7",
+        "bytes": 2220460
+      },
+      {
+        "file": "/art/units-army-v6-persian.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "9b0153b50eb361e61f63940c162e7db2e11b7107f54ccfa2fbf4cde1c7837851",
+        "bytes": 2229641
+      },
+      {
+        "file": "/art/units-army-v6-tang.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "7710e29c045138761843610e31c1050d53509fc9ae2e4654a2220c554297c337",
+        "bytes": 2197397
+      },
+      {
+        "file": "/art/units-army-v6-ottoman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "08f55d3bcd298401333c24bd46474fcff1a340133d31bc3109adc3b1273497fe",
+        "bytes": 2070620
+      },
+      {
+        "file": "/art/units-mounted-v6-roman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "b523c5482443dd06e9719439202f3e8d9d0a57ecf732bda777b3f0f2b0a64c5c",
+        "bytes": 1624961
+      },
+      {
+        "file": "/art/units-mounted-v6-mongol.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "a90dbf48b7e87940e967c7079a768ab3666f59ad46f9d15d39082e9c870fd7d5",
+        "bytes": 2248650
+      },
+      {
+        "file": "/art/units-mounted-v6-persian.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "6fc735f8524930977378a4161d8a41e06478623206647fa13049237cb8886cd3",
+        "bytes": 2044527
+      },
+      {
+        "file": "/art/units-mounted-v6-tang.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "e23086c9a70ec7026fca8afc413c8ff8360154b1aae892201e4a4bc011a06e06",
+        "bytes": 1961863
+      },
+      {
+        "file": "/art/units-mounted-v6-ottoman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "b03c30ac089bb0fd3dcfa0525c3fc3e25ae5ee9cd5541d13800bfef9ebd75205",
+        "bytes": 1871138
+      },
+      {
+        "file": "/art/units-motion-v6-mongol.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "e54c0d54330bbc26deecbd59af11ae019b158dd1865f9fd0f8bb2dab2d6895e8",
+        "bytes": 2243416
+      },
+      {
+        "file": "/art/units-motion-v6-tang.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "77a191bd8cabe11139278ddbb6d5fa6bfdb4c6204a2ddccf469711585bb51b27",
+        "bytes": 2586656
+      },
+      {
+        "file": "/art/units-motion-v6-elephant-a.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "524644cdd72d65aafd9269f7bed1d6139324a3a1fa2ac8901409925a9982fd35",
+        "bytes": 2027974,
+        "use": "Retained historical elephant wardrobe source; current Persian crew uses v9 in game, workshop and lobby."
+      },
+      {
+        "file": "/art/units-motion-v6-elephant-b.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "00b3648c1fe63b0d832b8ec0326d21f0afaf245ff81fa335b0d23d41793d0a92",
+        "bytes": 1915340,
+        "use": "Retained historical elephant wardrobe source; current Persian crew uses v9 in game, workshop and lobby."
+      },
+      {
+        "file": "/art/units-motion-v6-elephant-c.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "531919f3979d85ed5bb8bed6f095d04a7d1bb7490430cb0915074b98bcaa901d",
+        "bytes": 2342767,
+        "use": "Retained historical elephant wardrobe source; current Persian crew uses v9 in game, workshop and lobby."
+      },
+      {
+        "file": "/art/units-motion-v6-infantry-a.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "65bc8a988f8e6801faf5990c6ddb41c46c92488d4ad47d4855f11ea8fe38a73d",
+        "bytes": 2433289
+      },
+      {
+        "file": "/art/units-motion-v6-infantry-b.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "fa15eb4bb087870fa01efbfc3a50cdea0525acc078b96354010f60ba78fcc45f",
+        "bytes": 2090407
+      },
+      {
+        "file": "/art/units-motion-v6-trader.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "c8dfe127fd586492e1727d28a961413dc014f8dd9192d4ff1b2e3dada7d2e3f3",
+        "bytes": 2299409,
+        "use": "Retained prototype source; current trade models are civilization-specific v7."
+      },
+      {
+        "file": "/art/units-attack-v6-foot-roman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "885d984809f04c845b6dad7ccbf61dd59de66fab8ea2d10e31231c928c712e69",
+        "bytes": 2389111
+      },
+      {
+        "file": "/art/units-attack-v6-mounted-roman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "735b6eeff655e31bc649d8c226447907bd0e67f539972588fce3b939f06f25e1",
+        "bytes": 1716974
+      },
+      {
+        "file": "/art/units-attack-v6-foot-mongol.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "6402d8d60259a49e30ad732cd6421101a763bed6413b712e9cdf734d53f1cc63",
+        "bytes": 2402062
+      },
+      {
+        "file": "/art/units-attack-v6-mounted-mongol.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "709f91e799e4cc03a1ade4de141553a4d6cf1d67158848e1275a5d71bbd5f85d",
+        "bytes": 1837327
+      },
+      {
+        "file": "/art/units-attack-v6-foot-persian.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "af6880a76ff912c0f1be2d1adbaa1311ab81cfd56f53203402025733fda99302",
+        "bytes": 2423869
+      },
+      {
+        "file": "/art/units-attack-v6-mounted-persian.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "4d8bfddd29b283aa214fdb8b3f5bd20ac05698d3423ca8318bc61ed00f0c1f26",
+        "bytes": 2026106
+      },
+      {
+        "file": "/art/units-attack-v6-foot-tang.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "fac8d7a679a2517e9e8393ef1bf04c15c2a3c32683f2442a6f68510fea374aec",
+        "bytes": 2369377
+      },
+      {
+        "file": "/art/units-attack-v6-mounted-tang.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "20cd01f615d152ed3d88a91fc686619847d6e117cb81721592b6d16899e53258",
+        "bytes": 1991789
+      },
+      {
+        "file": "/art/units-attack-v6-foot-ottoman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "381c78333d61edc538bb5796066a02b5ec49530407aa6c98b8fa6e4f793b936c",
+        "bytes": 2343215
+      },
+      {
+        "file": "/art/units-attack-v6-mounted-ottoman.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "fbf59c025c417ceb9e6eacd9d0148ee3f5ffff976c336794b951b2d6169da8e7",
+        "bytes": 1872355
+      },
+      {
+        "file": "/art/units-attack-v6-special-foot-a.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "0861aa5b2fe5b2324c9b30c368eca3528733b699d27346c38a621d3e1729a8b9",
+        "bytes": 2434242
+      },
+      {
+        "file": "/art/units-attack-v6-special-foot-b.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "1cd203490e6380a7d262cd3630c59facccb08901e7091dff4228cad257da7b60",
+        "bytes": 2452523
+      },
+      {
+        "file": "/art/units-siege-v6-ram.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "166af2be8ddf313c7e3e9bf081d2234c5620574b85a9cf4eabbbf186972470d9",
+        "bytes": 2801113,
+        "use": "Retained prototype source for legacy/fallback; normal faction siege roster uses v7."
+      },
+      {
+        "file": "/art/units-siege-v6-catapult.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "434c99e9033f3f5f76f7a056bed115e1d686589261e224907d85aa2b1a9775ff",
+        "bytes": 2131306,
+        "use": "Retained prototype source for legacy/fallback; normal faction siege roster uses v7."
+      },
+      {
+        "file": "/art/units-siege-v6-cannon.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "543827e6fdc00373491032a9d433becf1ed7c7a6f6734783a0e814c18bc1e414",
+        "bytes": 2164740
+      },
+      {
+        "file": "/art/units-attack-v6-horsearcher.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "d81bcc04223013685202c07f722a9f0953f83d33779e7137eeac1ccc16ee05a0",
+        "bytes": 1847164
+      },
+      {
+        "file": "/art/units-attack-v6-lancer.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "5e6493a47c41c14b49e612aba86f16fd7ba41d52c826c1ff8f3d77c0aac5bb63",
+        "bytes": 1629600
+      },
+      {
+        "file": "/art/units-attack-v6-heavycavalry.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "537190c6a085a937f11e6668850d69977a7c8d9bdf369a788aa04e341c5ca6a6",
+        "bytes": 1598660
+      },
+      {
+        "file": "/art/units-attack-v6-elephant-windup.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "8f5ef6608220cc55023ddec3737642f8f94a2597482b0321d6897410413f51ff",
+        "bytes": 1769119,
+        "use": "Retained historical elephant wardrobe source; current Persian crew uses v9 in game, workshop and lobby."
+      },
+      {
+        "file": "/art/units-attack-v6-elephant-impact.png",
+        "manifest": "/art/units-motion-v6.manifest.json",
+        "sha256": "463d5381625eb2f7b2d1a95685eab89d4cc5b3299e47b9eb1e050449d573d274",
+        "bytes": 1806098,
+        "use": "Retained historical elephant wardrobe source; current Persian crew uses v9 in game, workshop and lobby."
+      },
+      {
+        "file": "/art/building-centers-v7-age2.png",
+        "manifest": "/art/building-centers-v7.manifest.json",
+        "sha256": "59111a09479148a5c3aa85b57c33d34254ac19ec707c8c580a30dd33d62eb61d",
+        "bytes": 2176092
+      },
+      {
+        "file": "/art/building-centers-v7-age3.png",
+        "manifest": "/art/building-centers-v7.manifest.json",
+        "sha256": "a913489ef33f466b13ae9bdbd43279f1ebf1a801492eed13b5c3c12ae1bae6b4",
+        "bytes": 2335350
+      },
+      {
+        "file": "/art/units-trader-v7-roman.png",
+        "manifest": "/art/units-traders-v7.manifest.json",
+        "sha256": "0635ddf75197988d944db640ddd474c7512db5937c6904d158841c8b956adf69",
+        "bytes": 1876940
+      },
+      {
+        "file": "/art/units-trader-v7-mongol.png",
+        "manifest": "/art/units-traders-v7.manifest.json",
+        "sha256": "887ef46afa693b97e9fe6944f3a1fe8fc79021f1406c5a06a0b0f63d59ddc2ec",
+        "bytes": 1729318
+      },
+      {
+        "file": "/art/units-trader-v7-persian.png",
+        "manifest": "/art/units-traders-v7.manifest.json",
+        "sha256": "928acd263df270cbb8eb4a792a1e4cd0af72d6f5910a8a5e0e90b249ab12266b",
+        "bytes": 2097984
+      },
+      {
+        "file": "/art/units-trader-v7-tang.png",
+        "manifest": "/art/units-traders-v7.manifest.json",
+        "sha256": "66250cde11c840fa8fc6ae3734f97bfae490dd6ee1c0c12fab3d09dbb1a6db0a",
+        "bytes": 1922735
+      },
+      {
+        "file": "/art/units-trader-v7-ottoman.png",
+        "manifest": "/art/units-traders-v7.manifest.json",
+        "sha256": "8f676aaf52f9ecc8766a32055c4d5f4ac8339839d748903c95b7e23b226023a8",
+        "bytes": 1858550
+      },
+      {
+        "file": "/art/units-siege-v7-roman-ram.png",
+        "manifest": "/art/units-siege-v7.manifest.json",
+        "sha256": "e16fa5c00701f312ba9b29a10e554865a3f7fb1249fcbabd9c78dbba30e23c7f",
+        "bytes": 1992455
+      },
+      {
+        "file": "/art/units-siege-v7-roman-onager.png",
+        "manifest": "/art/units-siege-v7.manifest.json",
+        "sha256": "830cfde0383563a6cdc49ca8cfb82f9ab8ec7d275d0ef8332bd0b45021b7c4fc",
+        "bytes": 1748460
+      },
+      {
+        "file": "/art/units-siege-v7-persian-ram.png",
+        "manifest": "/art/units-siege-v7.manifest.json",
+        "sha256": "56becb6c46073378a5bec4bd649e4848759e2cad8f238f3ddda374e00ad7f207",
+        "bytes": 1480801
+      },
+      {
+        "file": "/art/units-siege-v7-persian-stone.png",
+        "manifest": "/art/units-siege-v7.manifest.json",
+        "sha256": "12ac1c97d029c5930ffe0f6857edef6d5c6c5fc1282e4f7575068654f60b0306",
+        "bytes": 1864125
+      },
+      {
+        "file": "/art/units-siege-v7-tang-traction.png",
+        "manifest": "/art/units-siege-v7.manifest.json",
+        "sha256": "b097162a1233894f0965215ff6502dd52860efa3ac00efc268db0a5637f50824",
+        "bytes": 1910093
+      },
+      {
+        "file": "/art/units-siege-v7-mongol-trebuchet.png",
+        "manifest": "/art/units-siege-v7.manifest.json",
+        "sha256": "1e6c767d55de3d5ef2994296cca226a416bba87ceb64e59b44ce18f9f2980a2e",
+        "bytes": 1472548
+      },
+      {
+        "file": "/art/units-elephant-v9-walk-a.png",
+        "manifest": "/art/units-elephant-v9.manifest.json",
+        "sha256": "cff541806d8aed9ae372ed8802d2a9c0cc3c93eca444c99f8fb1d940729ce6a6",
+        "bytes": 1696422
+      },
+      {
+        "file": "/art/units-elephant-v9-walk-b.png",
+        "manifest": "/art/units-elephant-v9.manifest.json",
+        "sha256": "aa81f6f1e6a370c3aa71a362c4ff9913245673049ba2ada7fecdea4d01b5d690",
+        "bytes": 1682164
+      },
+      {
+        "file": "/art/units-elephant-v9-walk-c.png",
+        "manifest": "/art/units-elephant-v9.manifest.json",
+        "sha256": "5f1f493d2ad2d871ab758728db7f7039e2f679535d97e34f7de0f89a9d4c8cc4",
+        "bytes": 2363842
+      },
+      {
+        "file": "/art/units-elephant-v9-windup.png",
+        "manifest": "/art/units-elephant-v9.manifest.json",
+        "sha256": "73a5420e5314e0f3a6fda72bfc3207021f025581e1214e56c36623f1403c6f93",
+        "bytes": 1688209
+      },
+      {
+        "file": "/art/units-elephant-v9-impact.png",
+        "manifest": "/art/units-elephant-v9.manifest.json",
+        "sha256": "4c2162088ac4034754de9fb18f2fc9bd67f8cf0b712e721c2b4f9443a576e1bc",
+        "bytes": 1712299
+      },
+      {
+        "file": "/art/daiviet-v1-buildings-age1.png",
+        "sha256": "740f2ef2ef883073981b2f25f530fb9f37fccb74bb7fdb2316fd863496f5cb4d",
+        "bytes": 2733719,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-buildings-age2.png",
+        "sha256": "dcc2d50f668273252c7a4d967a91eb33ed98bc984e85e684cfd7c830def09019",
+        "bytes": 2886524,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-buildings-age3.png",
+        "sha256": "edeaef88fabd7524116ad281a49af61ee95dbf6164c782e0de3e78260620dfe2",
+        "bytes": 2881963,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-infantry-walk-a.png",
+        "sha256": "dee8a7a56224ef1d12002670566d44fdaa3a7f843d640dabf7760eba67a097af",
+        "bytes": 1783171,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-people-walk-a.png",
+        "sha256": "985e796f9e0194aa0d5dfb56095353f8e236ba8bc1670627c1f7b6f9101c7d90",
+        "bytes": 1805646,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-mounted-walk-a.png",
+        "sha256": "0f12fd999ea0672bb571daae910373090b1a8a25a9ff9d0de83733541a4a8a40",
+        "bytes": 2192374,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-cannon-walk-a.png",
+        "sha256": "6a70aa0ecd9aee9d9967411bb24f724c9660e8f217ee465fa22bb496bafac893",
+        "bytes": 1818063,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-infantry-walk-b.png",
+        "sha256": "98ff62e9d4b39a2d565546f6a42bf2c7db3d3daf535ada522a4abd6d267ffe14",
+        "bytes": 1815807,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-infantry-windup.png",
+        "sha256": "189b3c30768d34f157d677de1412d7c867eb3f85f99e3b89141e697a48c3f1cb",
+        "bytes": 1928696,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-infantry-impact.png",
+        "sha256": "f845a669ceec8e74c06f59c1cb505b2cad1998338cb2d21337ebc0c8556322e0",
+        "bytes": 1945505,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-people-walk-b.png",
+        "sha256": "9e1fa419e98615bf3f2b1e70e42f46f48dd4d36f3fb2b29c97d0fa0e69891e8f",
+        "bytes": 1808699,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-people-windup.png",
+        "sha256": "ae7416ca361ff047d432cf7fa12511066782d315d17581ee7c9a222f5e6df7eb",
+        "bytes": 1853378,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v2-units-people-impact.png",
+        "sha256": "d999a71eae2b4bdef75ebd5444b01ca8feee7319310f3d3bad2f5f4be88136b8",
+        "bytes": 1902949,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-mounted-walk-b.png",
+        "sha256": "dabd117e6600fee2c6315245e86a8c4d59b192cbdf4b88ef309236f55cf89975",
+        "bytes": 2265261,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v2-units-mounted-windup.png",
+        "sha256": "c83dd7a64f021eb8614be46c1b56a16d3c167e55a74e691391aa45f2492da7ae",
+        "bytes": 2284832,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v2-units-mounted-impact.png",
+        "sha256": "66db76b20e5934eed4eed720226009a90f05903018cf9191cb812f165b43e6f2",
+        "bytes": 2426114,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v1-units-worker-tools.png",
+        "sha256": "a15352b37ee3389ee87bbde1a03da111adba0967da14a6255bdd4587337dbdeb",
+        "bytes": 1999030,
+        "manifest": "/art/daiviet-v1.manifest.json",
+        "use": "Dai Viet independent faction atlas"
+      },
+      {
+        "file": "/art/daiviet-v3-units-cannon-crew.png",
+        "sha256": "626b2a71ee05dffb65a1db7dacf716c1331b61564c05a2a53615d6c25fa9b9c4",
+        "bytes": 2392977,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-buildings-major-age3.png",
+        "sha256": "356ba0e77f3b12e49e8d88664543f628881632911987283e7612a552189940b9",
+        "bytes": 2387067,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-people-walk-b.png",
+        "sha256": "f4a856edda0fa76ef5acacb88c1651cba2445b615679b74e6c74477c3f72e3bc",
+        "bytes": 1949829,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-people-walk-c.png",
+        "sha256": "ecb1c93f4065d4fcb54acf95bcef1a004e150850be084b6701b983d23881491b",
+        "bytes": 1918958,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-people-walk-d.png",
+        "sha256": "4c9c169ff9acf380957a89ab352bc8ecf06c2e305ec87bab3b1af06830d70270",
+        "bytes": 1916316,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-mounted-walk-b.png",
+        "sha256": "fd289d633bb4cb00d85a2bf240b9d8a85e4c84ad7f2f3edc5a7b6c14793d2620",
+        "bytes": 2326904,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-mounted-walk-c.png",
+        "sha256": "ff3eaf5b57fcf5840078e461321d26946d199e93a80fa5668260ea870d205da2",
+        "bytes": 2287222,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-mounted-walk-d.png",
+        "sha256": "2dcec8933e7dbb2d3adb90547bab2ca19eac56c8362a1a5ec52afca96ed3c2a4",
+        "bytes": 2298199,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-infantry-walk-b.png",
+        "sha256": "037e1f6a5e9a7fb2c15f774afe7203654292a39c4ca910a705e5ff430ee7a731",
+        "bytes": 1866909,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-infantry-walk-c.png",
+        "sha256": "a7385c45fe73b5b21851284e0f0af4e3388165844a7a479cf728c48f21997593",
+        "bytes": 1794047,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-units-infantry-walk-d.png",
+        "sha256": "1342c39ad67f86c160038255c015962a34ea0ba0c01710ada6b65f685b300fe0",
+        "bytes": 1817590,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-buildings-farms.png",
+        "sha256": "6b996c114fa7edd3692dbab63335c15ab733158349a7d44ccc4bd8c1bc274a7b",
+        "bytes": 1475729,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-buildings-secondary-age3.png",
+        "sha256": "0a2be32a3ff7d6fd2baf4b4c67ec9bf49e093d5cf4cc2ca421e9bda2861a2d28",
+        "bytes": 3055285,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v3-buildings-towncenter-age3.png",
+        "sha256": "4f61448b190f17a86cae8340581f1001cc2c00bf573870954c103baceb0bad40",
+        "bytes": 2555461,
+        "manifest": "/art/daiviet-v3.manifest.json",
+        "use": "Dai Viet refinement: intact walk phases, cannon crew, wet rice and age III architecture."
+      },
+      {
+        "file": "/art/daiviet-v4-dragon-emblem.png",
+        "sha256": "82bdf057ffb8e9bbfeeb796ab57280e858de66212f77f73232ef15d3bbb7752a",
+        "bytes": 1807697,
+        "manifest": "/art/daiviet-v4-emblem.manifest.json",
+        "use": "Shared Dai Viet menu, header, workshop, HUD emblem and town-center banner ornament. Replaces the simplified SVG dragon silhouette."
+      },
+      {
+        "file": "/art/daiviet-v5-buildings-towncenter-age3.png",
+        "sha256": "19c44c6caa3b0154deecd37897abf37a23f13e56454d01705b6a21137c409300",
+        "bytes": 2766729,
+        "manifest": "/art/daiviet-v5.manifest.json",
+        "source": "OpenAI built-in image_gen edit of the original town hall, with user-provided stair reference."
+      },
+      {
+        "file": "/art/daiviet-v6-buildings-towncenter-age3.png",
+        "sha256": "2e6a7536bb6e73c147dfc2d5b0dec646b5d5f8301edb542dde99edc2ade679ce",
+        "bytes": 2754540,
+        "manifest": "/art/daiviet-v6.manifest.json",
+        "source": "OpenAI built-in image_gen edit of v5: smaller three-lane staircase and taller/larger original hall."
+      },
+      {
+        "file": "/art/daiviet-v7-buildings-towncenter-age3.png",
+        "sha256": "683c84fe62f68cc46c047b19bdac7e845edb4d73bbe480c5d90a83e244648d92",
+        "bytes": 2014749,
+        "manifest": "/art/daiviet-v7.manifest.json",
+        "source": "OpenAI built-in image_gen"
+      },
+      {
+        "file": "/art/daiviet-v7-buildings-citadel-gate-age3.png",
+        "sha256": "6289e7ad5333aac5f13025c7665f1c378b3f6586ec72f3ba7c7e8c9dc9dd828a",
+        "bytes": 2684359,
+        "manifest": "/art/daiviet-v7.manifest.json",
+        "source": "OpenAI built-in image_gen"
+      },
+      {
+        "file": "/art/daiviet-v7-buildings-flag-tower-age3.png",
+        "sha256": "61d83db60805bc448e1237c518a53953f5c38ab7202a83e1d7a1372844cde12f",
+        "bytes": 1483489,
+        "manifest": "/art/daiviet-v7.manifest.json",
+        "source": "OpenAI built-in image_gen"
+      },
+      {
+        "file": "/art/daiviet-v8-buildings-age3.png",
+        "manifest": "/art/daiviet-v8.manifest.json",
+        "sha256": "d8f926ba700397e15840e1d927d8b2628d2268ba47603baa245ee0a08f13d00b",
+        "bytes": 2536269,
+        "source": "OpenAI built-in image_gen"
+      },
+      {
+        "file": "/art/daiviet-v9-buildings-age3.png",
+        "manifest": "/art/daiviet-v9.manifest.json",
+        "sha256": "09292f4e2da5f6a32faaee2f99df2e178c7260245a504854272748435d2abb1b",
+        "bytes": 2181365,
+        "source": "OpenAI built-in image_gen"
+      },
+      {
+        "file": "/art/daiviet-v10-townhall-house-age3.png",
+        "manifest": "/art/daiviet-v10.manifest.json",
+        "sha256": "8df5a12b3f6132fa94e3b30dc87916392f2a7556de0655cae965f2362f43b3f3",
+        "bytes": 1554908,
+        "source": "OpenAI built-in image_gen"
+      },
+      {
+        "file": "/art/daiviet-v12-units-people-walk-d.png",
+        "manifest": "/art/daiviet-walk-v12.manifest.json",
+        "sha256": "c5e4135b93eb195196c5ed2f3436f1ef214374f65392549849aac45bfae85edb",
+        "bytes": 1784177,
+        "use": "Complete human walking passing pose; replaces the v3 D sprite sheet."
+      },
+      {
+        "file": "/art/daiviet-v12-units-infantry-walk-d.png",
+        "manifest": "/art/daiviet-walk-v12.manifest.json",
+        "sha256": "99e32cdc9697e3c61b14e9227513e0a65d57aa03d2e21303544f7696ea474e0b",
+        "bytes": 1735508,
+        "use": "Complete human walking passing pose; replaces the v3 D sprite sheet."
+      },
+      {
+        "file": "/art/daiviet-v13-carry-wood.png",
+        "manifest": "/art/daiviet-cargo-v13.manifest.json",
+        "sha256": "3328f35bef279f0148fca083558918d59c8aebf83dabcd08e011d4ab4382da79",
+        "bytes": 1838325,
+        "use": "Dai Viet villager resource-specific whole walking poses: wood"
+      },
+      {
+        "file": "/art/daiviet-v13-carry-gold.png",
+        "manifest": "/art/daiviet-cargo-v13.manifest.json",
+        "sha256": "29bff56c20a2ab12aecac202ef0a500b769075c23ae0239afef86a0e8bf90245",
+        "bytes": 1801309,
+        "use": "Dai Viet villager resource-specific whole walking poses: gold"
+      },
+      {
+        "file": "/art/daiviet-v13-carry-stone.png",
+        "manifest": "/art/daiviet-cargo-v13.manifest.json",
+        "sha256": "301ce5531c06df906131dd393d4e579ada9e001869fb3211a1585f34e7aa2381",
+        "bytes": 1822283,
+        "use": "Dai Viet villager resource-specific whole walking poses: stone"
+      },
+      {
+        "file": "/art/daiviet-v13-carry-meat.png",
+        "manifest": "/art/daiviet-cargo-v13.manifest.json",
+        "sha256": "8d42711b0023b8a349d0465f2b54dc824b0d38d0fd06e9ff28af835c8b6af7c8",
+        "bytes": 1831692,
+        "use": "Dai Viet villager resource-specific whole walking poses: meat"
+      }
+    ],
+    "generator": "OpenAI integrated image_gen (built-in tool)",
+    "rights": "Output rights subject to applicable OpenAI terms and law; no guarantee of exclusive copyright or absence of third-party claims",
+    "animation": "Whole authored gait contacts and wind-up/impact poses with simulation-synchronized original combat effects; source files intact, no separated limbs or cross-fade. Faction-specific trade/siege v7 supersedes shared prototypes.",
+    "runtimeGeometryManifest": "/art/rendering-v7.manifest.json",
+    "geometryManifest": "/art/rendering-v7.manifest.json",
+    "animationNotes": [
+      "Original five civilizations use two whole authored walking contacts (three for the Persian elephant). Dai Viet infantry/villagers use four contacts A/D/B/C, mounted units A/C/B/D and cannon two whole crew contacts. Four diagonal sources cover other headings by nearest-direction selection.",
+      "Armed units and Roman engineers use authored windup/impact images; village work/hunt poses remain available. Traders have no weapon. Historical class counts in earlier manifests describe their own version.",
+      "Combat release/damage and arrows/bullets/muzzle/slash effects follow simulation attackPhase; workshop previews the same poses/effects.",
+      "Partial cargo while working keeps tools. Actual return journeys alone use sacks/material tags or wood bundles; cargo walking retains restrained whole-pose motion.",
+      "Three building eras are distinct source architecture; current late centers are tall open halls without a prebuilt perimeter wall.",
+      "Outfits identify civilization; separate outfit upgrades for every military age are not implemented."
+    ],
+    "daivietGeometryManifest": "/art/daiviet-grid-v11.manifest.json",
+    "inputSources": "Project-created images and user-provided Dai Viet sculpture/architecture references were used during design. Original user-reference photographs and unused concept boards have been removed; research URL images are not imported."
+  },
+  "fonts": "System Georgia, Times New Roman and Arial; no font files distributed",
+  "icons": "Original project-authored SVG illustrations in src/ui/Icons.tsx, favicon SVG and procedural grain texture; no external icon pack",
+  "sound": {
+    "source": "src/audio/sound.ts",
+    "method": "Original synthesised Web Audio oscillators and generated noise. Original ambient note sequence and gameplay effects. No external recordings, sound fonts, samples or audio libraries.",
+    "thirdPartyAudio": false,
+    "publicLicenseAssigned": false
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "uiArt": {
+    "generator": "OpenAI integrated image_gen",
+    "rights": "Output rights subject to applicable OpenAI terms and law; no guarantee of exclusive copyright or absence of third-party claims",
+    "pathBase": "project-root",
+    "files": [
+      {
+        "file": "src/assets/battlefield.png",
+        "sha256": "ac60212023870a450671619d7d999a76ebe4fa14d67e48f97b10407225625a08",
+        "bytes": 4129300,
+        "source": "Original AI-generated Regavo background used by the UI.",
+        "use": "Lobby and menu background"
+      }
+    ],
+    "delivery": "Vite imports src/assets/battlefield.png through UI CSS into a hashed build asset. Source PNG bytes are unchanged."
+  }
+}

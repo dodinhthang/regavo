@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+test-results/
+.git/
+.openai/
+pnpm-lock.yaml
+THIRD-PARTY-NOTICES.md
+licenses/
+public/art/*.json
+public/asset-origins.json
+public/third-party-licenses.txt
+scripts/data/*.json

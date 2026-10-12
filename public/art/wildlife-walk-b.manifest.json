@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "name": "Regavo wildlife walking contact B",
+  "createdOn": "2026-10-09",
+  "generator": "Built-in image_gen",
+  "file": "wildlife-walk-b.png",
+  "source": {
+    "path": "public/art/wildlife-walk-b.png",
+    "sha256": "b8a431610dea8ff9ec48dc2dbeb4b30ff4f0cef142bd03cfc584a410f0f503d8"
+  },
+  "references": [
+    {
+      "file": "wildlife-v3.png",
+      "role": "Original project animal identities, natural fur/anatomy, headings, camera, upper-left daylight and grid used as edit target",
+      "sha256": "1a6267ec6f0040f3aea460d19900ceea831f9d4c92c3fb09e7ce69728c7b4000"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit\nAsset type: Regavo historical RTS wildlife CONTACT-B walking animation atlas.\nInput image 1 is the EDIT TARGET: the project's original wildlife-v3 PNG. Preserve the same 5-column × 7-row equal-cell portrait atlas, same natural anatomy, species, exact coat colors/patterns, antlers/horns, torso volume, head silhouette, four ground headings, orthographic isometric camera, light from upper left, and original translucent cutout style. Do not redesign animals or draw new scenery.\nChange ONLY the leg poses in the first FOUR columns of every row to a visibly different opposite-foot CONTACT-B walking stance, preserving one complete anatomically connected animal silhouette per cell. The head, ears, antlers/horns, neck, shoulders, back, rump, belly, and tail should match the reference pose as closely as possible. In the new stance the NEAR foreleg reaches forward along the animal's facing direction with a straight planted hoof, the FAR foreleg sweeps backward with a bent knee; the NEAR hind leg sweeps backward with its hoof near the ground, and the FAR hind leg advances under the belly. Use a natural restrained quadruped walk, not a jump, trot, kneel, kick, or running gallop. Leg joints clearly bend and all hooves are attached to their legs. Spread forefeet and hind feet enough to read at 38 logical pixels, about15% of the original animal body length, while keeping realistic proportions. Torso, head, and shoulder position remain level, so contact A from the reference and new contact B can alternate without a body-size jump. Maintain exact same ground anchor center and scale in each cell. NEVER cut the head or legs off the body; neck and all limbs must have continuous fur/anatomical joins.\nRows must stay exactly: row1 red-deer stag with branching antlers; row2 bristled boar; row3 tan gazelle with ribbed horns and flank stripe; row4 argali ram with curled horns; row5 wild bezoar goat with backward-curving horns and beard; row6 spotted fallow stag with palmate antlers; row7 spotted sika with narrow branching antlers.\nColumns must stay exactly: column1 SE front three-quarter facing lower-right, column2 SW front three-quarter facing lower-left, column3 NE rear three-quarter facing away upper-right, column4 NW rear three-quarter facing away upper-left. Directions are animal ground headings, not a rotation/flip in the screen plane. Column5 contains the original same non-graphic lying carcass from the reference, unchanged, closed eyes, no blood/wounds.\nLayout: exactly5columns ×7rows. Aim1060×1484 with212×212equal square cells. Preserve the reference animals' small scale and placement with broadly empty transparent gutters; each complete animal including antlers and hooves stays inside central78%cell. Do not enlarge to fill the sheet. Anchor under feet stays near50%cellwidth and82%cellheight. Nothing crosses any row/column boundary.\nTrue transparent RGBA background everywhere outside the animals and tiny neutral tight hoof-contact shadow. No red/yellow halos, checkerboard drawn into pixels, ground islands, grass, labels, borders/gridlines, text, logo, watermark. Original realistic detailed painted fur, natural eyes and muted earthy materials.",
+  "pixelDimensions": {
+    "width": 1060,
+    "height": 1484
+  },
+  "alpha": {
+    "zero": 1000764,
+    "partial": 571770,
+    "total": 1573040
+  },
+  "grid": {
+    "columns": 5,
+    "rows": 7,
+    "cellWidth": 212,
+    "cellHeight": 212,
+    "measuredRowWindows": [
+      0,
+      250,
+      435,
+      640,
+      850,
+      1055,
+      1260,
+      1484
+    ],
+    "notes": "Generated PNG is preserved byte-for-byte. First deer row extends slightly past the nominal cell boundary; measured transparent row gaps separate all live sprites, so runtime uses per-frame source rectangles rather than fixed grid slicing. Column5 lying poses are unused; carcasses remain from original wildlife-v3.png."
+  },
+  "animation": {
+    "kind": "Two complete contact poses from original/reference A and generated B, held across four timing phases",
+    "sequence": [
+      "A",
+      "A",
+      "B",
+      "B"
+    ],
+    "walkSampling": "Direct high-quality drawImage from native atlas to 4× output, one source sample; no separate head/limb layers or walking warp.",
+    "graze": "Gentle continuous whole-silhouette deformation of original A; no masks or detached pieces.",
+    "limitations": "Two authored source poses with four diagonal headings, not a full anatomical multi-frame gait or eight authored headings. Generated B varies slightly in fur/antler detail from A; species scale and ground pivots are normalized at runtime."
+  },
+  "rendering": {
+    "canvasWidth": 480,
+    "canvasHeight": 424,
+    "anchorX": 240,
+    "anchorY": 336,
+    "pixelRatio": 4,
+    "nominalLogicalHeights": {
+      "deer": 38,
+      "boar": 28,
+      "gazelle": 30,
+      "argali": 32,
+      "goat": 31,
+      "fallow": 36,
+      "sika": 33
+    },
+    "directionSystem": "Screen-facing directions: 0 E, 1 SE, 2 S, 3 SW, 4 W, 5 NW, 6 N, 7 NE.",
+    "sourceColumnForScreenDirection": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      3,
+      3,
+      2
+    ],
+    "textureCropping": "Runtime RGBA alpha bounds plus 2 logical pixels of padding, copied 1:1 at integer coordinates. Returned anchor equals the full 480×424 ground anchor minus crop origin; the world ground point stays unchanged."
+  },
+  "frames": [
+    {
+      "type": "deer",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        49,
+        33,
+        145,
+        181
+      ],
+      "sourceGroundAnchor": [
+        121,
+        209
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "deer",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        272,
+        34,
+        139,
+        181
+      ],
+      "sourceGroundAnchor": [
+        341,
+        210
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "deer",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        491,
+        35,
+        114,
+        182
+      ],
+      "sourceGroundAnchor": [
+        547.5,
+        212
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "deer",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        676,
+        43,
+        107,
+        173
+      ],
+      "sourceGroundAnchor": [
+        729,
+        211
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "boar",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        56,
+        280,
+        136,
+        128
+      ],
+      "sourceGroundAnchor": [
+        123.5,
+        403
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "boar",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        270,
+        280,
+        127,
+        129
+      ],
+      "sourceGroundAnchor": [
+        333,
+        404
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "boar",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        488,
+        278,
+        111,
+        131
+      ],
+      "sourceGroundAnchor": [
+        543,
+        404
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "boar",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        677,
+        280,
+        111,
+        127
+      ],
+      "sourceGroundAnchor": [
+        732,
+        402
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "gazelle",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        55,
+        459,
+        125,
+        159
+      ],
+      "sourceGroundAnchor": [
+        117,
+        613
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "gazelle",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        282,
+        461,
+        124,
+        159
+      ],
+      "sourceGroundAnchor": [
+        343.5,
+        615
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "gazelle",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        494,
+        449,
+        103,
+        177
+      ],
+      "sourceGroundAnchor": [
+        545,
+        621
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "gazelle",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        677,
+        450,
+        105,
+        177
+      ],
+      "sourceGroundAnchor": [
+        729,
+        622
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "argali",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        47,
+        678,
+        138,
+        151
+      ],
+      "sourceGroundAnchor": [
+        115.5,
+        824
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "argali",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        277,
+        678,
+        134,
+        155
+      ],
+      "sourceGroundAnchor": [
+        343.5,
+        828
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "argali",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        489,
+        669,
+        109,
+        167
+      ],
+      "sourceGroundAnchor": [
+        543,
+        831
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "argali",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        678,
+        670,
+        110,
+        167
+      ],
+      "sourceGroundAnchor": [
+        732.5,
+        832
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "goat",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        52,
+        864,
+        142,
+        178
+      ],
+      "sourceGroundAnchor": [
+        122.5,
+        1037
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "goat",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        272,
+        867,
+        136,
+        173
+      ],
+      "sourceGroundAnchor": [
+        339.5,
+        1035
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "goat",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        486,
+        871,
+        115,
+        178
+      ],
+      "sourceGroundAnchor": [
+        543,
+        1044
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "goat",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        677,
+        870,
+        114,
+        179
+      ],
+      "sourceGroundAnchor": [
+        733.5,
+        1044
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "fallow",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        49,
+        1062,
+        143,
+        182
+      ],
+      "sourceGroundAnchor": [
+        120,
+        1239
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "fallow",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        276,
+        1062,
+        134,
+        186
+      ],
+      "sourceGroundAnchor": [
+        342.5,
+        1243
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "fallow",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        484,
+        1066,
+        117,
+        179
+      ],
+      "sourceGroundAnchor": [
+        542,
+        1240
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "fallow",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        676,
+        1065,
+        106,
+        188
+      ],
+      "sourceGroundAnchor": [
+        728.5,
+        1248
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "sika",
+      "column": 0,
+      "alive": true,
+      "sourceRect": [
+        52,
+        1275,
+        130,
+        179
+      ],
+      "sourceGroundAnchor": [
+        116.5,
+        1449
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "sika",
+      "column": 1,
+      "alive": true,
+      "sourceRect": [
+        282,
+        1277,
+        130,
+        179
+      ],
+      "sourceGroundAnchor": [
+        346.5,
+        1451
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "sika",
+      "column": 2,
+      "alive": true,
+      "sourceRect": [
+        487,
+        1278,
+        107,
+        179
+      ],
+      "sourceGroundAnchor": [
+        540,
+        1452
+      ],
+      "displayScale": 1
+    },
+    {
+      "type": "sika",
+      "column": 3,
+      "alive": true,
+      "sourceRect": [
+        679,
+        1280,
+        110,
+        177
+      ],
+      "sourceGroundAnchor": [
+        733.5,
+        1452
+      ],
+      "displayScale": 1
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-09",
+  "asset": "building-centers-v2.png",
+  "kind": "town-center-sprite-atlas",
+  "generator": "OpenAI built-in image_gen",
+  "sourceImage": "public/art/building-centers-v2.png",
+  "image": {
+    "width": 971,
+    "height": 1619,
+    "format": "PNG",
+    "alpha": true,
+    "alphaInspection": "PNG alpha inspected read-only. 830250 pixels have alpha 0. Subject pixels are predominantly alpha 251–254. Original alpha preserved."
+  },
+  "grid": {
+    "columns": 3,
+    "rows": 5,
+    "rowOrder": [
+      "roman",
+      "mongol",
+      "persian",
+      "tang",
+      "ottoman"
+    ],
+    "columnOrder": [
+      1,
+      2,
+      3
+    ],
+    "nominalCellWidth": 323.6666666666667,
+    "nominalCellHeight": 323.8,
+    "uniformOutputCells": true,
+    "sourceAlignment": "Imagegen produced a regular visual 3x5 layout with small pixel alignment drift; runtime samples measured individual subject frames instead of assuming exact cell cuts."
+  },
+  "runtime": {
+    "module": "src/render/atlas.ts",
+    "load": "loadBuildingAtlas(): Promise<boolean>",
+    "render": "renderCenter(civ: string, age: number, team: number): ArtSprite | undefined",
+    "outputWidth": 304,
+    "outputHeight": 268,
+    "anchorX": 152,
+    "anchorY": 185,
+    "foundationWidth": 256,
+    "sourcePadding": 4,
+    "pivotMethod": "Ground center derived from a 2:1 projected foundation: centered in source frame, one quarter of the opaque foundation width above the nearest front corner. Output anchor is exactly (152,185).",
+    "teamMarker": "Small code-painted cloth standard; turquoise for team 0 and red otherwise; cultural building colors preserved."
+  },
+  "rights": {
+    "origin": "Generated from project-owned AI concept references; no third-party stock asset or game artwork downloaded.",
+    "commercialUse": "Subject to applicable OpenAI terms and law, consistent with ../../docs/en/RIGHTS-AND-LICENSES.md.",
+    "exclusiveCopyrightGuaranteed": false,
+    "note": "AI output is not guaranteed exclusive, unique, or copyrightable. This manifest does not assert exclusive ownership or provide a legal warranty.",
+    "termsUrl": "https://openai.com/policies/terms-of-use/#content"
+  },
+  "prompts": {
+    "initial": "Use case: historical-scene.\nAsset type: production transparent PNG sprite atlas for an original 2D isometric browser RTS, replacing crude vector buildings.\nInput images: five visual STYLE REFERENCES only, in this exact order: Roman, Mongol, Persian, Tang Chinese, Ottoman. Match their realistic stone, roof tiles, felt, plaster, timber and ornate period craftsmanship. Do not reproduce the surrounding village dioramas or any lettering.\n\nCreate ONE portrait atlas, preferably 1536 by 2560 pixels, with an EXACT regular grid of 3 columns and 5 rows, 15 equal square cells. Every cell is 512 by 512 if using that size. No border, no drawn grid. Column 1 = Age I modest settlement, column 2 = Age II developed military-era administration, column 3 = Age III prosperous imperial administration. Rows top to bottom exactly: Roman, Mongol, Persian, Tang, Ottoman.\nEach cell contains exactly ONE isolated town center building on its own tiny integral masonry/foundation apron, no other freestanding buildings, no village. Give all sprites the same 2:1 orthographic isometric camera, 30-degree elevation, viewing the front and right facade, no perspective convergence, consistent orientation and miniature scale. The foundations are aligned: their projected ground-center/foot pivot is at 50% of cell width and 81% of cell height; their nearest front corner is about 94% of cell height. Keep all artwork safely inside its cell with at least 22 px transparent margins. Age III can be taller and richer but never spill into another cell. No clipping and no overlap. All 15 cells must remain uniformly placed and equally spaced, with each building visually centered horizontally.\n\nROW 1 ROMAN: Age I simple cream-plaster red terracotta roof civic hall with four rustic porch posts; Age II stone-and-plaster administrative hall with red tile roof, a classical columned porch and broad entrance steps; Age III grand Roman civic hall with layered terracotta roof, clean classical pediment, marble colonnade, carved stone foundation and discreet crimson fabric accents. A civic hall, not an entire fortified compound.\nROW 2 MONGOL: Age I a sturdy cream felt ger with a wooden doorway and muted blue textile band; Age II larger felt ger with structured timber porch, patterned blue-and-gold cloth and visible rope binding; Age III magnificent large imperial ger with rich felt panels, decorated tall central crown and substantial carved timber entrance porch, still clearly a ger, no marble palace, no stone fortress.\nROW 3 PERSIAN: Age I warm adobe flat-roof hall with timber portico and small turquoise textile accents; Age II cut-sandstone flat-roof hall with a monumental rectangular portal and fine turquoise frieze; Age III dignified Achaemenid-inspired civic hall, flat sandstone roof, four to six tall elegant columns, restrained turquoise glazed frieze, delicate golden bull-shaped capitals, broad steps. No domes, no Islamic arches.\nROW 4 TANG: Age I modest dark timber civic hall with red-brown posts and gray clay-tile roof; Age II larger hall with white plaster between red-brown posts, sophisticated curved gray tile eaves and stone steps; Age III impressive Tang administrative hall with a raised stone platform, a double tier of curved gray-tiled roof, carved timber bracket sets, sober red-and-gold detailing. No fantasy pagoda tower.\nROW 5 OTTOMAN: Age I timber-framed plaster civic house with warm tile roof and a generous entrance; Age II stone/plaster arcaded administrative hall with tile roof and ONE modest aged green-bronze central dome; Age III refined Ottoman civic administrative hall with broad stone entrance stairs, elegant arcaded porch, warm terracotta roof wings and a prominent patinated bronze dome. Do not turn it into a mosque: NO minarets, NO religious symbolism.\n\nRendering: gorgeous hand-painted semi-realistic high-fidelity historical RTS game miniatures, credible detailed material textures and weathering, fine carved masonry, individual tiles, folded fabric and wooden joinery, depth and ambient occlusion, natural muted colors, sharp readable silhouettes, soft upper-left daylight, extremely light contact shadows only. True transparent alpha background everywhere outside each sprite; no off-white sheet, no checkerboard pixels, no scenery, no grass plot, no people, no trees, no loose props, no UI, no labels, no numbers, no writing, no logos, no watermark. Preserve the 5x3 arrangement exactly.",
+    "layoutEdit": "Edit ONLY the atlas arrangement and transparent gutters of this image. Preserve all fifteen beautiful historical buildings exactly, their materials, colors, architectural details, progression, lighting, and 5-row by 3-column order. The image is a game sprite atlas and currently several buildings touch adjacent cell boundaries. Correct this for clean sprite sampling.\n\nRequired output: one TRUE ALPHA PNG portrait canvas with an exact 3-column x 5-row invisible grid of FIFTEEN EQUAL SQUARE CELLS. Prefer canvas 1536x2560 (512x512 cells), but any integer multiple of 3 wide and 5 high with square cells is acceptable. No grid lines or labels.\n\nMake each complete building 15% smaller inside its existing square cell while preserving proportions. Center each building horizontally at exactly 50% of its own cell. Place the nearest front foundation corner at exactly 90% of its own cell height. Align the ground-center/foot pivot at 50% of cell width, 77% of cell height. Preserve at least 8% completely transparent empty margin on ALL FOUR SIDES of every cell. The entire tallest Mongol finial, the Roman roofs, the Tang eaves and every foundation step must be fully contained in their own cell with nothing crossing a cell boundary. Blank horizontal and vertical gutters separate all 15 isolated sprites. No more than one building per cell. Do NOT add plants, trees, props, people or scenery. Only the integral tiny foundation belongs with each building.\nRows are exactly Roman, Mongol, Persian, Tang, Ottoman; columns Age I, II, III. Keep the same 2:1 orthographic isometric angle and soft upper-left light. Do not redesign the art. Do not add a black/white/checkerboard background; preserve genuine PNG alpha and clean antialiased cutout edges. No text, no labels, no watermark.",
+    "finalSpacingEdit": "Use this image as an architectural and material reference, and RECOMPOSE the same 15 building sprites on an accurately spaced production atlas. The current art is beautiful but is NOT safely separated into equal cells. This is a technical sprite sheet, not a poster.\n\nIMPORTANT GEOMETRY:\n- Portrait canvas EXACTLY 1200 pixels wide and 2000 pixels tall if possible. Invisible grid of 3 columns x 5 rows, square cells 400x400.\n- Centers of columns are x=200, x=600, x=1000. Do NOT move the columns closer together.\n- Each building, including foundation and every tiny pixel/finial/eave, must fit inside a NARROW maximum 280-pixel-wide rectangle (70% of cell width). The right-hand Age III buildings must also be at most 280 px wide. Reduce all large buildings, do not let them dominate the gutters.\n- Sprite rectangles: col1 x=60..340, col2 x=460..740, col3 x=860..1140. These rectangles are separated by 120 px of perfectly empty transparent gutters.\n- Row1 y=50..350; Row2 y=450..750; Row3 y=850..1150; Row4 y=1250..1550; Row5 y=1650..1950.\n- EVERY sprite must fit COMPLETELY within its rectangle. Even the tallest finial of the Mongol imperial ger must stay inside y=450..750, never touching the row above.\n- Building foundation nearest corner is at y=350,750,1150,1550,1950 respectively; grounded foot pivot is at cell-local x=200,y=290. Single detached building only.\n- Maintain completely transparent 50 px top and bottom margins per row, 60 px left/right margins per column. No stray pixels, no floating semitransparent debris, no giant shadows.\n\nPreserve the five rows exactly: Roman, Mongol, Persian, Tang, Ottoman, with three ages I, II, III in each row. Preserve the detailed realistic painted materials, architecture, natural warm colors, camera 2:1 isometric orthographic, upper-left lighting. Give Age III its richness through architectural detail but keep its sprite footprint within the SAME safe maximum width as every other sprite.\nNo text, labels, drawn grid, checkerboard, background color, scenery, trees, people or other structures. GENUINE TRANSPARENT ALPHA BACKGROUND with clean cutout edges. Keep no red or yellow fringe. This is the final in-game town-center texture atlas."
+  },
+  "frames": [
+    {
+      "civ": "roman",
+      "age": 1,
+      "x": 28,
+      "y": 117,
+      "width": 261,
+      "height": 214,
+      "localPivotX": 130.5,
+      "localPivotY": 146.75
+    },
+    {
+      "civ": "roman",
+      "age": 2,
+      "x": 328,
+      "y": 90,
+      "width": 287,
+      "height": 244,
+      "localPivotX": 143.5,
+      "localPivotY": 170.25
+    },
+    {
+      "civ": "roman",
+      "age": 3,
+      "x": 629,
+      "y": 61,
+      "width": 325,
+      "height": 285,
+      "localPivotX": 162.5,
+      "localPivotY": 201.75
+    },
+    {
+      "civ": "mongol",
+      "age": 1,
+      "x": 23,
+      "y": 460,
+      "width": 262,
+      "height": 183,
+      "localPivotX": 131,
+      "localPivotY": 115.5
+    },
+    {
+      "civ": "mongol",
+      "age": 2,
+      "x": 316,
+      "y": 422,
+      "width": 302,
+      "height": 225,
+      "localPivotX": 151,
+      "localPivotY": 147.5
+    },
+    {
+      "civ": "mongol",
+      "age": 3,
+      "x": 629,
+      "y": 369,
+      "width": 328,
+      "height": 282,
+      "localPivotX": 164,
+      "localPivotY": 198
+    },
+    {
+      "civ": "persian",
+      "age": 1,
+      "x": 26,
+      "y": 754,
+      "width": 270,
+      "height": 218,
+      "localPivotX": 135,
+      "localPivotY": 148.5
+    },
+    {
+      "civ": "persian",
+      "age": 2,
+      "x": 319,
+      "y": 718,
+      "width": 304,
+      "height": 251,
+      "localPivotX": 152,
+      "localPivotY": 173
+    },
+    {
+      "civ": "persian",
+      "age": 3,
+      "x": 631,
+      "y": 675,
+      "width": 325,
+      "height": 303,
+      "localPivotX": 162.5,
+      "localPivotY": 219.75
+    },
+    {
+      "civ": "tang",
+      "age": 1,
+      "x": 35,
+      "y": 1051,
+      "width": 253,
+      "height": 217,
+      "localPivotX": 126.5,
+      "localPivotY": 151.75
+    },
+    {
+      "civ": "tang",
+      "age": 2,
+      "x": 322,
+      "y": 1030,
+      "width": 297,
+      "height": 250,
+      "localPivotX": 148.5,
+      "localPivotY": 173.75
+    },
+    {
+      "civ": "tang",
+      "age": 3,
+      "x": 627,
+      "y": 997,
+      "width": 331,
+      "height": 291,
+      "localPivotX": 165.5,
+      "localPivotY": 206.25
+    },
+    {
+      "civ": "ottoman",
+      "age": 1,
+      "x": 24,
+      "y": 1366,
+      "width": 264,
+      "height": 208,
+      "localPivotX": 132,
+      "localPivotY": 140
+    },
+    {
+      "civ": "ottoman",
+      "age": 2,
+      "x": 311,
+      "y": 1326,
+      "width": 299,
+      "height": 255,
+      "localPivotX": 149.5,
+      "localPivotY": 178.25
+    },
+    {
+      "civ": "ottoman",
+      "age": 3,
+      "x": 628,
+      "y": 1293,
+      "width": 325,
+      "height": 295,
+      "localPivotX": 162.5,
+      "localPivotY": 211.75
+    }
+  ],
+  "sha256": "fc299ed2f437ce7826d17658862ead65a67fb958c656f46b6c7b8900d442a972",
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}
