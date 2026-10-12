@@ -13,14 +13,14 @@
 | ESLint         | 通过，零警告                                                   |
 | Prettier       | 通过                                                           |
 | TypeScript     | 源码和测试的 strict 检查通过                                   |
-| 依赖许可证     | 通过：177 个可达的已安装包实例，保守运行时依赖闭包包含 16 个   |
+| 依赖许可证     | 通过：176 个可达的已安装包实例，保守运行时依赖闭包包含 16 个   |
 | 回归测试       | 141/141 通过                                                   |
 | 生产构建       | 通过；主 JavaScript 块 853.22 kB，gzip 281.18 kB               |
 | 运行时图片检查 | 通过：112 张 WebP 的解码 RGBA 和尺寸一致，3 份几何清单字节不变 |
 
 Vite 仍会提示代码块超过 500 kB。构建成功并不证明下载时间、内存占用或帧率已达标。
 
-本机的包许可证统计为 MIT 134、Apache-2.0 20、ISC 11、BSD-2-Clause 6、BSD-3-Clause 4、BlueOak-1.0.0 1 和 CC-BY-4.0 1。数量来自包元数据；打包组件的完整声明和署名保留在 [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) 及随网页分发的 `public/third-party-licenses.txt` 中。其他平台未安装的可选包单独记录，不计入已安装数量。
+本机的包许可证统计为 MIT 133、Apache-2.0 20、ISC 11、BSD-2-Clause 6、BSD-3-Clause 4、BlueOak-1.0.0 1 和 CC-BY-4.0 1。数量来自包元数据；打包组件的完整声明和署名保留在 [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) 及随网页分发的 `public/third-party-licenses.txt` 中。其他平台未安装的可选包单独记录，不计入已安装数量。
 
 回归测试按功能组织：[文明目录与存档](../../tests/civilizations.test.ts)、[民兵动员](../../tests/mobilization.test.ts)和[美术资源](../../tests/art-assets.test.ts)。启动与存档恢复测试自动覆盖所有已注册文明，分别作为玩家和 AI，在三种地形布局上运行。招募测试将目录与实际训练命令进行比较，覆盖所有文明与时代。
 

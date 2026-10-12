@@ -13,14 +13,14 @@ Ngày rà soát: **12/10/2026**. Phiên bản dự án: `0.1.0`. Kết quả nà
 | ESLint               | Đạt, không có cảnh báo                                                                     |
 | Prettier             | Đạt                                                                                        |
 | TypeScript           | Đạt với kiểm tra strict cho mã nguồn và bài kiểm                                           |
-| Giấy phép thư viện   | Đạt: 177 package instance đã cài thuộc đồ thị phụ thuộc, 16 trong bao đóng runtime bảo thủ |
+| Giấy phép thư viện   | Đạt: 176 package instance đã cài thuộc đồ thị phụ thuộc, 16 trong bao đóng runtime bảo thủ |
 | Bài kiểm hồi quy     | 141/141 đạt                                                                                |
 | Production build     | Đạt; chunk JavaScript chính 864,51 kB, gzip 284,32 kB                                      |
 | Kiểm tra ảnh runtime | Đạt: 112 WebP giữ nguyên RGBA/kích thước đã giải mã; 3 manifest hình học giữ nguyên byte   |
 
 Vite vẫn cảnh báo chunk vượt 500 kB. Build thành công, nhưng kết quả này không chứng nhận thời gian tải, mức dùng bộ nhớ hay tốc độ khung hình.
 
-Số lượng giấy phép trên máy này: MIT 134, Apache-2.0 20, ISC 11, BSD-2-Clause 6, BSD-3-Clause 4, BlueOak-1.0.0 1 và CC-BY-4.0 1. Đây là số đếm theo metadata package; notice và ghi công nguyên văn của thành phần đóng gói được giữ trong [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) và `public/third-party-licenses.txt` được phân phối cùng bản web. Package tùy chọn cho nền tảng khác chưa cài được ghi riêng, không tính là đã cài.
+Số lượng giấy phép trên máy này: MIT 133, Apache-2.0 20, ISC 11, BSD-2-Clause 6, BSD-3-Clause 4, BlueOak-1.0.0 1 và CC-BY-4.0 1. Đây là số đếm theo metadata package; notice và ghi công nguyên văn của thành phần đóng gói được giữ trong [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) và `public/third-party-licenses.txt` được phân phối cùng bản web. Package tùy chọn cho nền tảng khác chưa cài được ghi riêng, không tính là đã cài.
 
 Bài kiểm hồi quy được nhóm theo chức năng: [danh mục văn minh và bản lưu](../../tests/civilizations.test.ts), [huy động dân binh](../../tests/mobilization.test.ts) và [tài sản mỹ thuật](../../tests/art-assets.test.ts). Kiểm tra khởi tạo và lưu/tải tự động áp dụng cho mọi văn minh đã đăng ký, ở vai trò người chơi và AI trên cả ba dạng bản đồ. Kiểm tra tuyển quân đối chiếu danh mục với lệnh tuyển thực tế cho mọi văn minh và đời.
 

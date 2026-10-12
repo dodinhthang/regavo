@@ -13,14 +13,14 @@ Review date: **12 October 2026**. Project version: `0.1.0`. These results descri
 | ESLint              | Passed, zero warnings                                                                                   |
 | Prettier            | Passed                                                                                                  |
 | TypeScript          | Passed with strict checking of source and tests                                                         |
-| Dependency licenses | Passed: 177 reachable installed package instances, 16 in the conservative runtime closure               |
+| Dependency licenses | Passed: 176 reachable installed package instances, 16 in the conservative runtime closure               |
 | Regression tests    | 141/141 passed                                                                                          |
 | Production build    | Passed; main JavaScript chunk 864.51 kB, gzip 284.32 kB                                                 |
 | Runtime image check | Passed: 112 WebP images have identical decoded RGBA/dimensions; 3 geometry manifests retain exact bytes |
 
 Vite still reports a chunk-size warning above 500 kB. The build succeeds, but this result does not certify download time, memory use or frame rate.
 
-The license counts on this machine are MIT 134, Apache-2.0 20, ISC 11, BSD-2-Clause 6, BSD-3-Clause 4, BlueOak-1.0.0 1 and CC-BY-4.0 1. Counts describe package metadata; exact bundled notices and attribution are retained in [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) and the distributed `public/third-party-licenses.txt`. Missing optional packages for other platforms are recorded separately, not counted as installed.
+The license counts on this machine are MIT 133, Apache-2.0 20, ISC 11, BSD-2-Clause 6, BSD-3-Clause 4, BlueOak-1.0.0 1 and CC-BY-4.0 1. Counts describe package metadata; exact bundled notices and attribution are retained in [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) and the distributed `public/third-party-licenses.txt`. Missing optional packages for other platforms are recorded separately, not counted as installed.
 
 Regression checks are grouped by capability: [civilization catalogs and saves](../../tests/civilizations.test.ts), [mobilization](../../tests/mobilization.test.ts) and [art assets](../../tests/art-assets.test.ts). Startup and save/resume tests automatically cover every registered civilization as player and AI on all three terrain layouts. Recruitment checks compare the catalog with actual training commands for every civilization and age.
 
