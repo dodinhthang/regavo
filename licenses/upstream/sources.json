@@ -1,0 +1,30 @@
+[
+  {
+    "file": "licenses/upstream/pixijs-MIT.txt",
+    "source": "https://raw.githubusercontent.com/pixijs/pixijs/dev/LICENSE",
+    "retrievedAt": "2026-10-09",
+    "purpose": "planned dependency license snapshot, not installed dependency audit",
+    "sha256": "5ce7447bc57f7349ffc48338782fbcabe613696e00712b20d66bc58e780f9473"
+  },
+  {
+    "file": "licenses/upstream/react-MIT.txt",
+    "source": "https://raw.githubusercontent.com/react/react/main/LICENSE",
+    "retrievedAt": "2026-10-09",
+    "purpose": "planned dependency license snapshot, not installed dependency audit",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  {
+    "file": "licenses/upstream/vite-MIT.txt",
+    "source": "https://raw.githubusercontent.com/vitejs/vite/main/LICENSE",
+    "retrievedAt": "2026-10-09",
+    "purpose": "planned dependency license snapshot, not installed dependency audit",
+    "sha256": "692057af3d664cbb79ac38293eb50aa3c4987f8182e2a440136e59e08f1b4a54"
+  },
+  {
+    "file": "licenses/upstream/typescript-Apache-2.0.txt",
+    "source": "https://raw.githubusercontent.com/microsoft/TypeScript/main/LICENSE.txt",
+    "retrievedAt": "2026-10-09",
+    "purpose": "planned dependency license snapshot, not installed dependency audit",
+    "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+  }
+]

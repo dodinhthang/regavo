@@ -1,0 +1,129 @@
+.exit-dialog {
+  width: min(480px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  padding: 34px;
+  border: 1px solid #c8a969;
+  border-radius: 5px;
+  color: #efe6d0;
+  background: radial-gradient(ellipse at 50% 0%, #405442aa, transparent 70%), #17291f;
+  box-shadow:
+    0 24px 100px #000b,
+    inset 0 0 0 5px #15251d,
+    inset 0 0 0 6px #c8a96929;
+  text-align: center;
+}
+.exit-dialog::backdrop {
+  background: #08140dda;
+  backdrop-filter: blur(6px);
+}
+.exit-crest {
+  display: flex;
+  justify-content: center;
+  margin: 2px auto 22px;
+}
+.exit-eyebrow {
+  font:
+    10px Arial,
+    sans-serif;
+  color: #c9ad75;
+  letter-spacing: 2px;
+}
+.exit-dialog h2 {
+  margin: 14px 0;
+  font:
+    35px/1.2 Georgia,
+    serif;
+  font-weight: normal;
+  color: #f1e1b9;
+}
+.exit-dialog p {
+  margin: 0 auto;
+  max-width: 350px;
+  font:
+    13px/1.75 Arial,
+    sans-serif;
+  color: #bec3ae;
+}
+.exit-match {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 23px 0;
+  padding: 13px 0;
+  border-block: 1px solid #c9ad752b;
+  font:
+    12px Arial,
+    sans-serif;
+  color: #dfcfab;
+}
+.exit-match span + span::before {
+  content: '·';
+  margin: 0 14px;
+  color: #9a845a;
+}
+.exit-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.exit-actions button {
+  padding: 15px 14px;
+  border: 1px solid #c9ad7570;
+  border-radius: 2px;
+  font:
+    13px Arial,
+    sans-serif;
+}
+.exit-stay {
+  background: #ffffff08;
+  color: #e5dcc5;
+}
+.exit-stay:hover {
+  background: #ffffff10;
+}
+.exit-save {
+  background: linear-gradient(120deg, #dfc78d, #ba9858);
+  color: #2e291a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold !important;
+}
+.exit-save:hover {
+  filter: brightness(1.08);
+}
+.exit-discard {
+  display: block;
+  margin: 17px auto 20px;
+  background: none;
+  border: 0;
+  color: #a9ac98;
+  font:
+    11px Arial,
+    sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.exit-discard:hover {
+  color: #ead09b;
+}
+.exit-dialog > small {
+  font:
+    10px/1.5 Arial,
+    sans-serif;
+  color: #839681;
+}
+.exit-dialog p.exit-error {
+  padding: 0 0 18px;
+  color: #ffc3aa;
+}
+@media (max-width: 480px) {
+  .exit-dialog {
+    padding: 30px 22px;
+  }
+  .exit-dialog h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+.language-select .select-trigger {
+  min-height: 38px;
+  font-size: 12px;
+}
+.language-compact {
+  width: 116px;
+  flex-shrink: 0;
+}
+.language-compact .select-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.language-compact .select-trigger {
+  padding: 8px 10px;
+}
+.pause-menu .language-select {
+  margin: 8px 0;
+}
+@media (max-width: 600px) {
+  .language-compact {
+    width: 96px;
+  }
+  .language-compact .select-trigger {
+    font-size: 10px;
+    padding: 6px 8px;
+    min-height: 32px;
+  }
+}

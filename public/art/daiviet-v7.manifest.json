@@ -1,0 +1,141 @@
+{
+  "version": 7,
+  "date": "2026-10-10",
+  "assets": [
+    {
+      "name": "towncenter",
+      "source": "public/art/daiviet-v7-buildings-towncenter-age3.png",
+      "prompt": "Use case: precise-object-edit. Asset: complete transparent isometric age III Dai Viet town hall for an RTS.\nInput image 1 is the exact architecture to EDIT. Image 2 is ONLY the color/material/illumination reference from this game's other Dai Viet buildings.\nPreserve the exact two-tier roof geometry, column bays, small three-lane stairs with two stone dragon dividers, grey low stone foundation, red brick terrace and flag. Do not redesign or add tiers/wings.\nChange the overly bright cyan roofs to the same subdued olive jade green tiles of image2; vivid cherry-red walls and pillars to image2's muted aged red-brown timber; shiny yellow ornaments to subdued antique brass gold. Match image2's textured miniature painting, soft daylight, subtle shadows and restrained contrast. No neon color, glossy studio highlights or boosted exposure.\nKeep the same ground platform width. Increase the hall's own width about6 percent and its column/wall height about8 percent, narrowing the spare terrace slightly. Make the hall imposing through the building itself, never by raising the low plinth or enlarging the compact stairs. Keep all architectural details and proportions recognizable.\nSame isometric camera as the reference buildings, vertical columns, complete silhouette. True transparent PNG alpha0 outside, no painted backdrop/glow/terrain/people/text/watermark. Leave transparent margin around roof, flag and platform. Single model.",
+      "editTarget": "/art/daiviet-v6-buildings-towncenter-age3.png",
+      "file": "/art/daiviet-v7-buildings-towncenter-age3.png",
+      "draftSource": "generation-record:exec-d6510588-2c05-4589-a7d5-718d37417fec.png",
+      "id": "buildings-towncenter-age3",
+      "version": 7,
+      "generator": "OpenAI built-in image_gen",
+      "created": "2026-10-10",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "frames": [
+        [
+          15,
+          192,
+          1230,
+          940
+        ]
+      ],
+      "foundations": [
+        [
+          3,
+          703,
+          1227,
+          683,
+          555,
+          935
+        ]
+      ],
+      "sha256": "683c84fe62f68cc46c047b19bdac7e845edb4d73bbe480c5d90a83e244648d92",
+      "bytes": 2014749,
+      "sourceBytesUnchanged": true,
+      "styleReference": "/art/daiviet-v3-buildings-secondary-age3.png",
+      "framingEdits": [
+        {
+          "source": "generation-record:exec-5bc6bd18-1857-420c-98dc-915c13d234c0.png",
+          "prompt": "Use case: precise-object-edit. This is the final Dai Viet town hall sprite. Keep the EXACT architecture, same muted olive roofs/red-brown wood/antique gold, size proportions, small three-lane two-dragon stair, grey stone foundation and brick courtyard. The very bottom foundation touches and clips the source canvas. Add transparent padding around the complete model, restoring only the small cropped bottom stone tip if needed. Entire roof, banner, stair and foundation fully inside canvas with at least4 percent alpha0 margin on every side. No other visual changes, no backdrop/glow/ground. Preserve true transparent alpha."
+        },
+        {
+          "source": "public/art/daiviet-v7-buildings-towncenter-age3.png",
+          "prompt": "Use case: precise-object-edit. Make a SQUARE transparent asset canvas containing this exact palace. SHRINK THE ENTIRE palace uniformly to occupy only85 percent of the square canvas width and height, leaving a thick genuinely transparent alpha0 border of at least7 percent on ALL four sides. This is a framing/padding repair: the bottom point of the stone foundation must be COMPLETE and not touch the image edge. Preserve the current architecture, muted olive green roofs/red-brown columns/antique gold, proportions, low stone platform, small two-dragon three-lane stairs, courtyard and flag. No redesign or color change. Restore the tiny clipped stone foundation tip. Genuine transparent square PNG, no backdrop or terrain or glow."
+        }
+      ]
+    },
+    {
+      "name": "citadel-gate",
+      "source": "public/art/daiviet-v7-buildings-citadel-gate-age3.png",
+      "prompt": "Use case: historical-scene. Asset: single transparent isometric RTS Dai Viet citadel gate, replaces the game's plain stone gate.\nInput image1 is architectural reference supplied by the user. Image2 is style/color/light reference from this game's Dai Viet building sprites.\nRecreate the recognizable central citadel entrance from image1 as a compact complete game miniature: a broad grey aged stone lower curtain wall with five arched passage openings, a central cream ochre upper gatehouse with three arches and a two-tier curved red-brown tile roof, low pale stone terrace balustrades. Central middle passage is visibly open and dark inside. Reduce the long flanking wall sections so the asset remains a practical single square-footprint gate model rather than a sprawling landscape.\nUse image2's detailed restrained RTS painting, warm aged masonry, muted olive/red-brown/antique brass material accents, soft consistent daylight. Camera same isometric elevation as image2, vertical walls. Square ground footprint projected as a 2:1 diamond; building faces show front and left side. Grey stone foundation, subtle brick seams and recessed arch details.\nOnly the gate and its compact wall returns; no garden, sky, ground terrain, visitors, flowers, surrounding buildings, modern national flags, text, watermark. Do not copy photographic background. Whole silhouette with ample alpha0 transparent margin, including roof and wall edges. Genuine transparent PNG.",
+      "file": "/art/daiviet-v7-buildings-citadel-gate-age3.png",
+      "id": "buildings-citadel-gate",
+      "version": 7,
+      "generator": "OpenAI built-in image_gen",
+      "created": "2026-10-10",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "frames": [
+        [
+          14,
+          4,
+          1508,
+          994
+        ]
+      ],
+      "foundations": [
+        [
+          4,
+          806,
+          1504,
+          722,
+          428,
+          989
+        ]
+      ],
+      "sha256": "6289e7ad5333aac5f13025c7665f1c378b3f6586ec72f3ba7c7e8c9dc9dd828a",
+      "bytes": 2684359,
+      "sourceBytesUnchanged": true,
+      "styleReference": "/art/daiviet-v3-buildings-secondary-age3.png"
+    },
+    {
+      "name": "flag-tower",
+      "source": "public/art/daiviet-v7-buildings-flag-tower-age3.png",
+      "prompt": "Use case: precise-object-edit. Asset: complete transparent isometric RTS Dai Viet flag tower, replacing a watchtower.\nInput image1 is the user's architectural model to interpret. Image2 is the game's material, painting and soft daylight reference.\nPreserve the distinctive flag-tower silhouette: three receding square brick-and-stone terraces with pale stone railings and arched entrances, a tall tapered octagonal orange-brown brick shaft with small round ventilation holes, small octagonal observation chamber and slender flagpole above. Adapt to the same detailed isometric RTS miniature camera as image2, square ground base as a 2:1 diamond. Compact steps at the base, vertical shaft, carefully visible railings.\nReplace the MODERN red flag with yellow star from image1 by this game's medieval-inspired Dai Viet flag: deep vermilion rectangular cloth with a slender coiling GOLDEN DRAGON emblem; no star, no modern symbol, no lettering. Flag clearly visible above the observation chamber. This is game iconography based on Dai Viet, not a claim of an exact historical national flag.\nMatch image2's muted aged terracotta brick, warm grey stone and antique gold, soft daylight and realistic texture, restrained color/contrast.\nOne whole building centered, ample transparent margin so flag/pole/top and full base are uncropped. Genuine transparent PNG alpha0 outside. No scene, sky, vegetation, people, modern symbols, text or watermark.",
+      "file": "/art/daiviet-v7-buildings-flag-tower-age3.png",
+      "id": "buildings-flag-tower",
+      "version": 7,
+      "generator": "OpenAI built-in image_gen",
+      "created": "2026-10-10",
+      "dimensions": [
+        1221,
+        1288
+      ],
+      "frames": [
+        [
+          91,
+          6,
+          1042,
+          1262
+        ]
+      ],
+      "foundations": [
+        [
+          4,
+          1072,
+          1037,
+          1090,
+          490,
+          1258
+        ]
+      ],
+      "sha256": "61d83db60805bc448e1237c518a53953f5c38ab7202a83e1d7a1372844cde12f",
+      "bytes": 1483489,
+      "sourceBytesUnchanged": true,
+      "styleReference": "/art/daiviet-v3-buildings-secondary-age3.png"
+    }
+  ],
+  "foundationMethod": "Measured lower platform side corners and front tip relative to each intact crop; source PNG bytes unchanged.",
+  "animationManifest": "/art/daiviet-v5.manifest.json",
+  "emblem": {
+    "source": "/art/daiviet-v4-dragon-emblem.png",
+    "renderer": "src/ui/Icons.tsx",
+    "method": "Existing shared 64px round metal/leather badge; original dragon ornament crop toned to aged brass using an alpha-preserving SVG filter."
+  },
+  "runtime": {
+    "decodedSheets": 19,
+    "authoredFrames": 217,
+    "emblemPNGs": 1,
+    "walkingStages": 12
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

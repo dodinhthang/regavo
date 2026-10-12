@@ -1,0 +1,153 @@
+:root {
+  --site-content-width: 1400px;
+  --site-gutter: 4%;
+  --site-inset: max(var(--site-gutter), calc((100% - var(--site-content-width)) / 2));
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 75px;
+  padding: 0 var(--site-inset);
+  position: relative;
+  z-index: 2;
+  background: #0d1b15d9;
+  border-bottom: 1px solid var(--ui-border);
+  color: var(--ui-text);
+}
+.site-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font:
+    28px Georgia,
+    serif;
+  letter-spacing: 5px;
+  color: #ecdbb2;
+  background: none !important;
+  border: 0;
+  padding: 0;
+  text-align: left;
+}
+.site-wordmark small {
+  display: block;
+  margin-top: 5px;
+  font:
+    7px Arial,
+    sans-serif;
+  letter-spacing: 2.6px;
+  color: #b59e6b;
+}
+.site-edition {
+  margin-left: auto;
+  font:
+    9px Arial,
+    sans-serif;
+  letter-spacing: 1.2px;
+  color: var(--ui-muted);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.site-edition i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ui-gold);
+}
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.site-nav-button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  border: 0;
+  background: none;
+  padding: 12px 0;
+  font:
+    12px Arial,
+    sans-serif;
+  color: #dac69e;
+}
+.site-nav-button svg {
+  width: 21px;
+  height: 21px;
+}
+.site-nav-button:hover {
+  color: var(--ui-gold-light);
+}
+.site-current {
+  color: var(--ui-gold-light);
+  font:
+    11px Arial,
+    sans-serif;
+}
+.site-header .sound-button {
+  padding: 10px;
+  border: 1px solid var(--ui-border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+@media (min-width: 901px) and (max-height: 780px) {
+  .site-header {
+    min-height: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .site-header {
+    gap: 20px;
+  }
+  .site-edition {
+    display: none;
+  }
+  .site-header nav {
+    margin-left: auto;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --site-gutter: 20px;
+  }
+  .site-header {
+    min-height: 73px;
+    gap: 8px;
+  }
+  .site-wordmark {
+    font-size: 20px;
+    letter-spacing: 3px;
+    gap: 9px;
+  }
+  .site-wordmark > .game-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .site-wordmark small {
+    font-size: 5px;
+    letter-spacing: 1.6px;
+  }
+  .site-header nav {
+    gap: 6px;
+  }
+  .site-header .sound-button {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+  }
+  .site-nav-button {
+    font-size: 10px;
+  }
+  .site-nav-button:has(svg) {
+    font-size: 0;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+  }
+  .site-current {
+    display: none;
+  }
+}

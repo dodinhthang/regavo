@@ -1,0 +1,338 @@
+{
+  "version": 9,
+  "date": "2026-10-11",
+  "generator": "OpenAI built-in image_gen",
+  "source": "public/art/daiviet-v9-buildings-age3.png",
+  "file": "/art/daiviet-v9-buildings-age3.png",
+  "prompt": "Use case: precise-object-edit. Image1 is the current full17-model Dai Viet sprite atlas, the edit TARGET. Image2 is the user's exact staircase reference. Image3 is the Kinh Thien architectural reference.\nMake ONE precise local correction ONLY to the staircase of the TOP LEFT town hall in image1. Keep EVERY other pixel/model and the town hall's approved old roofs, columns, low stone base, broad terracotta court, right banner and ornaments as closely as possible. No architectural redesign, no yellow roof conversion, no scale/proportion changes.\nThe existing two dragon rails are too close to the stair outside edges, visually leaving just one stair lane. Widen the staircase a little within the courtyard and render exactly THREE clearly visible side-by-side grey stone stair lanes of EQUAL width, each with its OWN visible grey treads all the way from terrace down to courtyard.\nThere are FOUR dividing boundary rails in this exact left-to-right sequence:\n(1) outside LEFT plain low grey stone railing,\n(2) LEFT walkable stair lane with visible treads,\n(3) INTERNAL carved stone LY DRAGON number1,\n(4) MIDDLE walkable stair lane with visible treads,\n(5) INTERNAL carved stone LY DRAGON number2,\n(6) RIGHT walkable stair lane with visible treads,\n(7) outside RIGHT plain low grey stone railing.\nEXACTLY TWO dragon rails, at one-third and two-thirds of the overall stair WIDTH. NOT at the outside edges. Keep a full equal-width stair lane OUTSIDE EACH dragon. The middle lane is flanked by both dragons. In miniature game view we must see THREE parallel strips of stair treads LEFT / BETWEEN / RIGHT of the two dragons. Use image2's exact arrangement. Carved sinuous grey scaled dragon bodies descending incline, raised heads with mane/claws at foot. Strong readable grey sculpture detail.\nStair stays low and compact in depth; preserve a broad red-brick court to its sides and front. Do not replace that court with a giant platform. Same muted olive roof/red-brown wood/warm grey stone/aged brass historical RTS painting and same soft lighting/camera. All17 in the same complete4x5 transparent atlas, no cropped tips, labels, text, watermark or scenic background. Image3 reinforces that the central ceremonial approach uses three lanes separated by two dragons; do not copy its modern terrain or bright yellow roof color.",
+  "architecturePrompt": "Use case: precise-object-edit. Primary input image1 is the ORIGINAL approved Dai Viet age III town hall in the TOP LEFT of its twelve-model atlas. Image2 is the exact user screenshot of that same approved town hall. Image3 is the ONLY requested architectural change, the dragon stair. Image4 is the current17-model Dai Viet atlas and is ONLY for the other16 models/material consistency, NOT a town hall architecture reference.\n\nOutput ONE complete17-model sprite atlas in4columns x5rows, ALL models common muted historical RTS miniature palette/lighting. Replace the first cell with a very faithful reconstruction of the TOP LEFT hall from image1, matching image2 EXACTLY: broad low horizontally proportioned ceremonial palace, long red-brown colonnade, high broad double roofs, small detailed ridge ornaments in the same positions, projecting middle entrance canopy and corner eaves, low grey stone terrace, BROAD terracotta courtyard extending at the front, right-side slender crimson dragon banner, delicate stone rail posts. Preserve the old hall's proportions, footprint, height, roof architecture, roof ornament scale and door bays. Do NOT use image4's steep/tall/narrow hall or its giant curling gold crest; those were rejected by the user. The source old palace, not the recent atlas's hall, must be recognizable and identical.\nChange ONLY the original palace staircase: broaden the existing compact stair just enough for THREE equal walkable lanes. Place EXACTLY TWO stone LY DRAGONS at the INTERNAL boundaries between those lanes, so there is one left lane OUTSIDE dragon1, a central lane BETWEEN dragon1 and dragon2, and a right lane OUTSIDE dragon2. Reference image3: grey carved serpentine bodies down the step slopes, dragon heads at the foot, raised manes/scales/claws, both complete. Preserve the rest of the hall and courtyard. These are STONE dragons, not gold; no smooth generic ramps.\nAll17 models same natural aged olive tiled roofs, muted weathered reddish brown wood, warm grey block stone, terracotta bricks, antique brass trim, soft upper-left diffuse daylight and precise painterly textured details from original image1. Image4 ordinary models may be reused/reconstructed with their architecture unchanged and this same palette; keep substantial bastioned fortress/flag tower.\n\nExactly ONE complete isolated model per cell, generous transparent gutters and outer margin, maximum sharp resolution, alpha0 outside. NO background, labels, UI, text, watermark, people. Do not clip the smallest ornament tip.\nROW1: approved old PALACE with three-lane TWO-dragon stairs; HOUSE; LUMBER CAMP; MINING CAMP.\nROW2: GRANARY; wet RICE PADDY/waterwheel; BARRACKS; STABLE.\nROW3: ARCHERY RANGE; MARKET; SIEGE WORKSHOP; FLAG TOWER/crimson golden-dragon banner.\nROW4: straight WOOD WALL; straight WOOD GATE; straight STONE WALL; wide five-arch CITADEL GATE.\nROW5: large FORTRESS; three empty transparent cells.\nFour barrier models same diagonal joinable baseline rising from left to right on2:1 isometric tile axis, flat matching wall ends and parapets. All others proper2:1 isometric square foundations, vertical columns.\nONE shared prompt and one sheet for17. The top-left building's architecture must come from ORIGINAL image1 /user image2; modify only the steps as described.",
+  "sourceBytesUnchanged": true,
+  "sha256": "09292f4e2da5f6a32faaee2f99df2e178c7260245a504854272748435d2abb1b",
+  "bytes": 2181365,
+  "dimensions": [
+    1122,
+    1402
+  ],
+  "modelOrder": [
+    "towncenter",
+    "house",
+    "lumbercamp",
+    "miningcamp",
+    "granary",
+    "farm",
+    "barracks",
+    "stable",
+    "range",
+    "market",
+    "workshop",
+    "tower",
+    "woodwall",
+    "woodgate",
+    "stonewall",
+    "stonegate",
+    "fortress"
+  ],
+  "frames": [
+    [
+      6,
+      16,
+      332,
+      296
+    ],
+    [
+      339,
+      62,
+      235,
+      227
+    ],
+    [
+      574,
+      77,
+      275,
+      232
+    ],
+    [
+      847,
+      76,
+      273,
+      239
+    ],
+    [
+      9,
+      316,
+      281,
+      268
+    ],
+    [
+      288,
+      368,
+      277,
+      208
+    ],
+    [
+      561,
+      322,
+      274,
+      245
+    ],
+    [
+      842,
+      334,
+      277,
+      245
+    ],
+    [
+      11,
+      580,
+      275,
+      242
+    ],
+    [
+      283,
+      595,
+      291,
+      231
+    ],
+    [
+      580,
+      601,
+      292,
+      244
+    ],
+    [
+      872,
+      560,
+      233,
+      299
+    ],
+    [
+      2,
+      851,
+      273,
+      223
+    ],
+    [
+      270,
+      835,
+      295,
+      227
+    ],
+    [
+      563,
+      843,
+      235,
+      217
+    ],
+    [
+      788,
+      850,
+      333,
+      242
+    ],
+    [
+      2,
+      1046,
+      437,
+      328
+    ]
+  ],
+  "foundations": [
+    [
+      5,
+      213,
+      326,
+      213,
+      150.0,
+      291
+    ],
+    [
+      4,
+      171,
+      228,
+      162,
+      100.5,
+      222
+    ],
+    [
+      4,
+      159,
+      268,
+      161,
+      131.5,
+      227
+    ],
+    [
+      5,
+      160,
+      267,
+      169,
+      137.0,
+      233
+    ],
+    [
+      4,
+      198,
+      275,
+      190,
+      118.5,
+      262
+    ],
+    [
+      19,
+      136,
+      267,
+      140,
+      134.0,
+      202
+    ],
+    [
+      5,
+      182,
+      268,
+      162,
+      105.0,
+      240
+    ],
+    [
+      4,
+      174,
+      272,
+      169,
+      125.0,
+      240
+    ],
+    [
+      4,
+      165,
+      269,
+      168,
+      119.5,
+      236
+    ],
+    [
+      5,
+      151,
+      285,
+      158,
+      129.0,
+      225
+    ],
+    [
+      4,
+      167,
+      286,
+      172,
+      128.0,
+      238
+    ],
+    [
+      5,
+      230,
+      227,
+      247,
+      117.0,
+      293
+    ],
+    [
+      5,
+      200,
+      214,
+      145,
+      34.0,
+      217
+    ],
+    [
+      4,
+      208,
+      237,
+      148,
+      27.5,
+      221
+    ],
+    [
+      4,
+      192,
+      199,
+      142,
+      36.0,
+      210
+    ],
+    [
+      4,
+      216,
+      242,
+      158,
+      37.5,
+      236
+    ],
+    [
+      5,
+      234,
+      429,
+      239,
+      153.0,
+      322
+    ]
+  ],
+  "barrierSockets": {
+    "woodwall": [
+      33,
+      217,
+      263,
+      127,
+      116
+    ],
+    "woodgate": [
+      28,
+      221,
+      283,
+      130,
+      99
+    ],
+    "stonewall": [
+      33,
+      210,
+      225,
+      131,
+      116
+    ],
+    "stonegate": [
+      36,
+      236,
+      323,
+      123,
+      94
+    ]
+  },
+  "measurementMethod": "Read-only alpha180 largest connected silhouette, bottom35 percent for side corners. No PNG pixels modified. Barrier connection centres and parapet heights measured separately for modular grid projection.",
+  "runtimeProjection": "Ordinary models retain uniform width-derived X/Y scale. Barrier end-face sockets and parapet height project to exact32x16 grid edges; vertical columns stay vertical. Friendly touching modules select either orthogonal grid axis, including placement ghost. Source PNG bytes unchanged. The x axis mirrors the same facade, avoiding an opposite roof shear; parapet datum uses125 source pixels for the stone-wall module.",
+  "references": [
+    {
+      "file": "/art/daiviet-v1-buildings-age3.png",
+      "role": "exact approved old town hall; only staircase changed"
+    },
+    {
+      "file": "/art/daiviet-v8-buildings-age3.png",
+      "role": "common materials and flag tower architecture"
+    }
+  ],
+  "precedingManifest": "/art/daiviet-v8.manifest.json",
+  "runtime": {
+    "age3Sheet": "buildings-unified-age3",
+    "decodedSheets": 15,
+    "authoredFrames": 222,
+    "emblemPNGs": 1,
+    "walkingStages": 12,
+    "footprints": {
+      "towncenter": 6,
+      "fortress": 5,
+      "stonegate": 3,
+      "stonewall": 1
+    },
+    "historicalSheetsRetained": true,
+    "registeredSheets": 30,
+    "registeredFrames": 395
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

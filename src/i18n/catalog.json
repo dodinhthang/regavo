@@ -1,0 +1,2166 @@
+{
+  "Ngôn ngữ": {
+    "en": "Language",
+    "zh-CN": "语言"
+  },
+  "Regavo · Chiến thuật thời gian thực": {
+    "en": "Regavo · Real-time strategy",
+    "zh-CN": "Regavo · 即时战略"
+  },
+  "Về trang chủ": {
+    "en": "Back to home",
+    "zh-CN": "返回首页"
+  },
+  "Regavo · trang chủ": {
+    "en": "Regavo · Home",
+    "zh-CN": "Regavo · 首页"
+  },
+  "CHIẾN THUẬT THỜI GIAN THỰC": {
+    "en": "REAL-TIME STRATEGY",
+    "zh-CN": "即时战略"
+  },
+  "Tiện ích": {
+    "en": "Utilities",
+    "zh-CN": "工具"
+  },
+  "← Trang chủ": {
+    "en": "← Home",
+    "zh-CN": "← 首页"
+  },
+  "Xưởng mô hình": {
+    "en": "Model workshop",
+    "zh-CN": "模型工坊"
+  },
+  "Bật âm thanh": {
+    "en": "Enable sound",
+    "zh-CN": "开启声音"
+  },
+  "Tắt âm thanh": {
+    "en": "Mute sound",
+    "zh-CN": "关闭声音"
+  },
+  "Âm lượng": {
+    "en": "Volume",
+    "zh-CN": "音量"
+  },
+  "NĂM NỀN VĂN MINH · BA ĐỜI · MỘT CHIẾN TRƯỜNG": {
+    "en": "FIVE CIVILIZATIONS · THREE AGES",
+    "zh-CN": "五大文明 · 三个时代"
+  },
+  "Chọn một nền văn minh.": {
+    "en": "Choose a civilization.",
+    "zh-CN": "选择一个文明。"
+  },
+  "Viết nên lịch sử.": {
+    "en": "Make history.",
+    "zh-CN": "书写历史。"
+  },
+  "1 người chơi · Đấu AI · Bản đồ 96 × 96": {
+    "en": "Solo vs AI · 96 × 96 map",
+    "zh-CN": "单人对战 AI · 96 × 96 地图"
+  },
+  "Chọn nền văn minh của bạn": {
+    "en": "Your civilization",
+    "zh-CN": "选择文明"
+  },
+  "Chọn nền văn minh": {
+    "en": "Choose a civilization",
+    "zh-CN": "选择文明"
+  },
+  "NỀN VĂN MINH ĐANG CHỌN": {
+    "en": "SELECTED CIVILIZATION",
+    "zh-CN": "已选文明"
+  },
+  "Đang chọn": {
+    "en": "Selected",
+    "zh-CN": "已选择"
+  },
+  "Xem quân và kiến trúc theo đời": {
+    "en": "Explore units and architecture by age",
+    "zh-CN": "查看各时代的单位与建筑"
+  },
+  "DẤU ẤN CHIẾN TRƯỜNG": {
+    "en": "BATTLEFIELD IDENTITY",
+    "zh-CN": "战场特色"
+  },
+  "Thiết lập trận đấu": {
+    "en": "Match setup",
+    "zh-CN": "对局设置"
+  },
+  "Địa hình": {
+    "en": "Terrain",
+    "zh-CN": "地形"
+  },
+  "Đối thủ": {
+    "en": "Opponent",
+    "zh-CN": "对手"
+  },
+  "Độ khó AI": {
+    "en": "AI difficulty",
+    "zh-CN": "AI 难度"
+  },
+  "Bắt đầu chinh phạt": {
+    "en": "Begin conquest",
+    "zh-CN": "开始征战"
+  },
+  "Mọi trận đấu bắt đầu ở đời I · Định cư": {
+    "en": "Starts in Age I · Settlement",
+    "zh-CN": "从时代 I · 定居开始"
+  },
+  "Tiếp tục bản lưu": {
+    "en": "Continue saved game",
+    "zh-CN": "继续存档"
+  },
+  "{civilization} · {minutes} phút đã chơi": {
+    "en": "{civilization} · {minutes} min played",
+    "zh-CN": "{civilization} · 已游玩 {minutes} 分钟"
+  },
+  "Mở tệp lưu JSON": {
+    "en": "Load a JSON save",
+    "zh-CN": "载入 JSON 存档"
+  },
+  "Lần đầu chơi Regavo?": {
+    "en": "New to Regavo?",
+    "zh-CN": "初次游玩 Regavo？"
+  },
+  "Tuyển dân ở thành chính, chọn dân rồi chuột phải vào tài nguyên.": {
+    "en": "Train villagers at the town center; select them and right-click a resource.",
+    "zh-CN": "在城镇中心训练村民，选中后右键点击资源。"
+  },
+  "Xây doanh trại, tuyển quân và nâng đời để phát triển đế chế.": {
+    "en": "Build barracks, train an army and advance through the ages.",
+    "zh-CN": "建造兵营、训练军队并升级时代。"
+  },
+  "Phá thành chính đối thủ để chiến thắng.": {
+    "en": "Destroy the enemy town center to win.",
+    "zh-CN": "摧毁敌方城镇中心即可获胜。"
+  },
+  "Touchpad: vuốt hai ngón để kéo bản đồ.": {
+    "en": "Touchpad: swipe with two fingers to pan.",
+    "zh-CN": "触控板：双指滑动以移动视角。"
+  },
+  "Xây nền móng. Dẫn quân. Để lại dấu ấn.": {
+    "en": "Build. Command. Leave your mark.",
+    "zh-CN": "建设。统领。留下传奇。"
+  },
+  "Giấy phép thư viện ↗": {
+    "en": "Library licenses ↗",
+    "zh-CN": "第三方库许可 ↗"
+  },
+  "Kỷ luật & công thành": {
+    "en": "Discipline & siege",
+    "zh-CN": "纪律与攻城"
+  },
+  "Cơ động & tập kích": {
+    "en": "Mobility & raids",
+    "zh-CN": "机动与突袭"
+  },
+  "Cận vệ & voi chiến": {
+    "en": "Guards & elephants",
+    "zh-CN": "近卫与战象"
+  },
+  "Kỹ nghệ & giáp nặng": {
+    "en": "Engineering & armor",
+    "zh-CN": "工程与重甲"
+  },
+  "Hỏa khí & pháo đồng": {
+    "en": "Gunpowder & cannons",
+    "zh-CN": "火器与铜炮"
+  },
+  "Dựng tuyến khiên vững chắc, bảo vệ khí giới tiến vào thành địch.": {
+    "en": "Hold a shield line to protect siege engines on their advance.",
+    "zh-CN": "组成坚固盾阵，掩护攻城器械推进。"
+  },
+  "Dùng kỵ cung quấy rối, xung phong vào tuyến sau khi đối phương sơ hở.": {
+    "en": "Harass with horse archers, then charge an exposed rear line.",
+    "zh-CN": "用骑射手骚扰，趁敌方露出破绽冲击后排。"
+  },
+  "Giữ tuyến bằng cận vệ, dùng voi chiến mở đường ở đời III.": {
+    "en": "Hold the line with guards; break through with Age III elephants.",
+    "zh-CN": "用近卫稳住阵线，时代 III 用战象突破。"
+  },
+  "Công thành từ đời II, kết hợp thương binh với kỵ binh giáp nặng.": {
+    "en": "Siege from Age II; combine spearmen with armored cavalry.",
+    "zh-CN": "时代 II 即可攻城，以长枪兵配合重甲骑兵。"
+  },
+  "Che chắn cho bộ binh hỏa khí và triển khai pháo ở vị trí thuận lợi.": {
+    "en": "Screen your gunners and deploy cannons in strong positions.",
+    "zh-CN": "掩护火器步兵，在有利位置部署火炮。"
+  },
+  "Đồng bằng": {
+    "en": "Plains",
+    "zh-CN": "平原"
+  },
+  "Đường mở, dễ xây dựng và điều quân.": {
+    "en": "Open ground for building and maneuvering.",
+    "zh-CN": "开阔地形，适合建设与调兵。"
+  },
+  "Bến cạn": {
+    "en": "River ford",
+    "zh-CN": "浅滩"
+  },
+  "Tranh chấp các lối qua sông.": {
+    "en": "Fight for river crossings.",
+    "zh-CN": "争夺渡河通道。"
+  },
+  "Sơn ải": {
+    "en": "Mountain passes",
+    "zh-CN": "山口"
+  },
+  "Hai lối hẹp, thuận lợi cho phòng thủ.": {
+    "en": "Two narrow passes favor defense.",
+    "zh-CN": "两条狭窄通道，易守难攻。"
+  },
+  "Dễ": {
+    "en": "Easy",
+    "zh-CN": "简单"
+  },
+  "Thường": {
+    "en": "Normal",
+    "zh-CN": "普通"
+  },
+  "Khó": {
+    "en": "Hard",
+    "zh-CN": "困难"
+  },
+  "Đối thủ phát triển chậm. Phù hợp trận đầu.": {
+    "en": "A slower opponent, ideal for your first match.",
+    "zh-CN": "对手发展较慢，适合初次游玩。"
+  },
+  "Nhịp phát triển và giao chiến cân bằng.": {
+    "en": "Balanced development and combat.",
+    "zh-CN": "发展与战斗节奏均衡。"
+  },
+  "Đối thủ tấn công sớm. Cần phòng bị từ đầu.": {
+    "en": "Early enemy attacks. Prepare your defenses.",
+    "zh-CN": "对手较早进攻，需提前布防。"
+  },
+  "Không đọc được bản lưu. Hãy chọn tệp Regavo JSON phiên bản 1.": {
+    "en": "Cannot read this save. Choose a Regavo version 1 JSON file.",
+    "zh-CN": "无法读取存档。请选择 Regavo 版本 1 的 JSON 文件。"
+  },
+  "La Mã": {
+    "en": "Rome",
+    "zh-CN": "罗马"
+  },
+  "Mông Cổ": {
+    "en": "Mongols",
+    "zh-CN": "蒙古"
+  },
+  "Ba Tư": {
+    "en": "Persia",
+    "zh-CN": "波斯"
+  },
+  "Đại Đường": {
+    "en": "Tang",
+    "zh-CN": "大唐"
+  },
+  "Ottoman": {
+    "en": "Ottomans",
+    "zh-CN": "奥斯曼"
+  },
+  "Định cư": {
+    "en": "Settlement",
+    "zh-CN": "定居"
+  },
+  "Quân sự": {
+    "en": "Military",
+    "zh-CN": "军事"
+  },
+  "Đế quốc": {
+    "en": "Empire",
+    "zh-CN": "帝国"
+  },
+  "Kỷ luật tạo nên đế chế": {
+    "en": "Discipline builds an empire",
+    "zh-CN": "以纪律铸就帝国"
+  },
+  "Nhanh như gió thảo nguyên": {
+    "en": "Swift as the steppe wind",
+    "zh-CN": "疾如草原之风"
+  },
+  "Sức mạnh của một vương triều": {
+    "en": "The strength of a dynasty",
+    "zh-CN": "王朝之力"
+  },
+  "Trật tự, kỹ nghệ, uy lực": {
+    "en": "Order, craft and power",
+    "zh-CN": "秩序、工艺与威势"
+  },
+  "Hỏa lực mở đường": {
+    "en": "Firepower leads the way",
+    "zh-CN": "以火力开路"
+  },
+  "Quân đoàn & công binh": {
+    "en": "Legions & engineers",
+    "zh-CN": "军团与工兵"
+  },
+  "Testudo & Onager": {
+    "en": "Testudo & Onager",
+    "zh-CN": "龟甲攻城车与野驴投石机"
+  },
+  "Kỵ cung & xung phong": {
+    "en": "Horse archers & charges",
+    "zh-CN": "骑射与冲锋"
+  },
+  "Trebuchet đời III": {
+    "en": "Age III trebuchet",
+    "zh-CN": "时代 III 配重投石机"
+  },
+  "Voi chiến đời III": {
+    "en": "Age III war elephants",
+    "zh-CN": "时代 III 战象"
+  },
+  "Cận vệ & đoàn buôn": {
+    "en": "Guards & caravans",
+    "zh-CN": "近卫与商队"
+  },
+  "Máy kéo dây đời II": {
+    "en": "Age II traction catapult",
+    "zh-CN": "时代 II 人力投石机"
+  },
+  "Kiếm/thương & kỵ giáp": {
+    "en": "Swords, spears & armor",
+    "zh-CN": "刀枪与重甲骑兵"
+  },
+  "Kiếm & hỏa khí": {
+    "en": "Blades & gunpowder",
+    "zh-CN": "刀剑与火器"
+  },
+  "Pháo đồng triển khai": {
+    "en": "Deployable bronze cannon",
+    "zh-CN": "可部署铜炮"
+  },
+  "Quân đoàn dựng khiên che xe Testudo áp sát. Onager bắn đá diện rộng đời III; công binh nối tuyến đồn.": {
+    "en": "Legions shield advancing Testudo rams. Age III Onagers deal area damage; engineers link outposts.",
+    "zh-CN": "军团盾阵掩护龟甲攻城车推进。时代 III 的野驴投石机造成范围伤害，工兵连接前哨。"
+  },
+  "Kỵ cung cơ động, kỵ thương xung phong và trại di động. Không có xe ram; đời III dùng trebuchet đối trọng bắn xa.": {
+    "en": "Mobile horse archers, charging lancers and movable camps. No rams; Age III unlocks long-range trebuchets.",
+    "zh-CN": "拥有机动骑射手、冲锋枪骑兵和可移动营地。没有冲城车，时代 III 解锁远程配重投石机。"
+  },
+  "Cận vệ giữ tuyến, cung thủ bắn loạt và voi chiến. Đoàn lạc đà buôn tăng vàng; xe phá thành/máy đá yểm trợ.": {
+    "en": "Guards hold the line, archers fire volleys and elephants break through. Camel caravans earn more gold; rams and catapults provide support.",
+    "zh-CN": "近卫稳固阵线，弓手齐射，战象突破。骆驼商队赚取额外黄金，冲城车和投石机提供支援。"
+  },
+  "Kiếm/thương binh và máy kéo dây công thành ngay đời II. Quân xưởng chọn tuyển nhanh hoặc giáp tốt; đời III thêm kỵ giáp nặng.": {
+    "en": "Swords, spears and traction catapults from Age II. The armory offers faster training or better armor; Age III adds heavy cavalry.",
+    "zh-CN": "时代 II 拥有刀枪步兵与人力投石机。军械坊可选择加速训练或强化护甲，时代 III 解锁重骑兵。"
+  },
+  "Kiếm và giáo bảo vệ bộ binh hỏa khí. Đời III dùng pháo đồng thay xe ram/máy đá; triển khai tại chỗ tăng nhịp bắn.": {
+    "en": "Swords and spears protect gunners. Age III bronze cannons replace rams and catapults; deployment increases fire rate.",
+    "zh-CN": "刀枪步兵保护火器部队。时代 III 用铜炮代替冲城车和投石机，部署后射速提升。"
+  },
+  "Gỗ & da": {
+    "en": "Wood & leather",
+    "zh-CN": "木材与皮革"
+  },
+  "Đá & đồng": {
+    "en": "Stone & bronze",
+    "zh-CN": "石材与青铜"
+  },
+  "Cẩm thạch & vàng": {
+    "en": "Marble & gold",
+    "zh-CN": "大理石与黄金"
+  },
+  "Da & gỗ": {
+    "en": "Leather & wood",
+    "zh-CN": "皮革与木材"
+  },
+  "Nỉ & đồng": {
+    "en": "Felt & bronze",
+    "zh-CN": "毛毡与青铜"
+  },
+  "Nỉ thêu & vàng": {
+    "en": "Embroidered felt & gold",
+    "zh-CN": "绣毡与黄金"
+  },
+  "Đất nện & gỗ": {
+    "en": "Earth & wood",
+    "zh-CN": "夯土与木材"
+  },
+  "Đá cát & men lam": {
+    "en": "Sandstone & blue glaze",
+    "zh-CN": "砂岩与蓝釉"
+  },
+  "Đá chạm & vàng": {
+    "en": "Carved stone & gold",
+    "zh-CN": "雕石与黄金"
+  },
+  "Gỗ & ngói": {
+    "en": "Wood & tiles",
+    "zh-CN": "木材与瓦片"
+  },
+  "Sơn mài & đồng": {
+    "en": "Lacquer & bronze",
+    "zh-CN": "漆器与青铜"
+  },
+  "Ngọc & sơn son": {
+    "en": "Jade & vermilion",
+    "zh-CN": "玉石与朱漆"
+  },
+  "Gỗ óc chó & vàng": {
+    "en": "Walnut & gold",
+    "zh-CN": "胡桃木与黄金"
+  },
+  "Toàn cảnh quân và kiến trúc": {
+    "en": "Units and architecture overview",
+    "zh-CN": "部队与建筑全景"
+  },
+  "Toàn cảnh quân và kiến trúc {civilization}, đời {age}: {era}": {
+    "en": "{civilization} units and architecture, Age {age}: {era}",
+    "zh-CN": "{civilization}部队与建筑全景，时代 {age}：{era}"
+  },
+  "Đang chuẩn bị toàn cảnh…": {
+    "en": "Preparing the scene…",
+    "zh-CN": "正在准备全景…"
+  },
+  "Đang chuẩn bị {civilization}…": {
+    "en": "Preparing {civilization}…",
+    "zh-CN": "正在准备{civilization}…"
+  },
+  "Chưa tải được hình ảnh. Hãy thử chọn lại nền văn minh.": {
+    "en": "Could not load the scene. Select the civilization again.",
+    "zh-CN": "全景加载失败。请重新选择文明。"
+  },
+  "Chưa tải được cảnh mới. Hãy thử chọn lại.": {
+    "en": "Could not load the new scene. Try selecting it again.",
+    "zh-CN": "新全景加载失败，请重新选择。"
+  },
+  "QUÂN & KIẾN TRÚC TRONG GAME": {
+    "en": "UNITS & ARCHITECTURE",
+    "zh-CN": "部队与建筑"
+  },
+  "XƯỞNG MÔ HÌNH": {
+    "en": "MODEL WORKSHOP",
+    "zh-CN": "模型工坊"
+  },
+  "Năm bản sắc.": {
+    "en": "Five identities.",
+    "zh-CN": "五种特色。"
+  },
+  "Mỗi đời một diện mạo.": {
+    "en": "A new look in every age.",
+    "zh-CN": "每个时代，焕然一新。"
+  },
+  "Ngắm trang phục, vũ khí và kiến trúc của từng đế chế.": {
+    "en": "Explore each civilization's clothing, weapons and architecture.",
+    "zh-CN": "欣赏各文明的服饰、武器和建筑。"
+  },
+  "Đổi hướng, thử chuyển động và so sánh tỉ lệ ngay trên bàn mô hình.": {
+    "en": "Rotate, preview animations and compare scale on the model table.",
+    "zh-CN": "在模型台上切换朝向、预览动作并比较比例。"
+  },
+  "◐ Kiểm tra thang xám": {
+    "en": "◐ Grayscale preview",
+    "zh-CN": "◐ 灰度预览"
+  },
+  "Nền văn minh trong xưởng": {
+    "en": "Workshop civilizations",
+    "zh-CN": "工坊文明"
+  },
+  "Quân & dân": {
+    "en": "Units & villagers",
+    "zh-CN": "军队与村民"
+  },
+  "Kiến trúc": {
+    "en": "Architecture",
+    "zh-CN": "建筑"
+  },
+  "Thiên nhiên": {
+    "en": "Nature",
+    "zh-CN": "自然"
+  },
+  "ĐỜI": {
+    "en": "AGE",
+    "zh-CN": "时代"
+  },
+  "{count} mô hình": {
+    "en": "{count} models",
+    "zh-CN": "{count} 个模型"
+  },
+  "Hành động": {
+    "en": "Action",
+    "zh-CN": "动作"
+  },
+  "Hướng nhìn": {
+    "en": "Facing",
+    "zh-CN": "朝向"
+  },
+  "Đông nam": {
+    "en": "Southeast",
+    "zh-CN": "东南"
+  },
+  "Tây nam": {
+    "en": "Southwest",
+    "zh-CN": "西南"
+  },
+  "Tây bắc": {
+    "en": "Northwest",
+    "zh-CN": "西北"
+  },
+  "Đông bắc": {
+    "en": "Northeast",
+    "zh-CN": "东北"
+  },
+  "▶ Chạy chuyển động": {
+    "en": "▶ Play animation",
+    "zh-CN": "▶ 播放动画"
+  },
+  "Ⅱ Dừng chuyển động": {
+    "en": "Ⅱ Pause animation",
+    "zh-CN": "Ⅱ 暂停动画"
+  },
+  "Thu phóng": {
+    "en": "Zoom",
+    "zh-CN": "缩放"
+  },
+  "Thu phóng mô hình": {
+    "en": "Model zoom",
+    "zh-CN": "模型缩放"
+  },
+  "Hiện chân đế": {
+    "en": "Show footprint",
+    "zh-CN": "显示底座"
+  },
+  "Động vật có nhịp bước và động tác cúi đầu riêng. Các nguồn tài nguyên dùng chung tỉ lệ với chiến trường.": {
+    "en": "Animals have their own gait and grazing motions. Resource models use the same scale as the battlefield.",
+    "zh-CN": "动物拥有独特的步态与低头动作，资源模型与战场采用相同比例。"
+  },
+  "Sát thương": {
+    "en": "Damage",
+    "zh-CN": "伤害"
+  },
+  "Tầm": {
+    "en": "Range",
+    "zh-CN": "射程"
+  },
+  "Tầm đánh": {
+    "en": "Attack range",
+    "zh-CN": "攻击距离"
+  },
+  "Tốc độ": {
+    "en": "Speed",
+    "zh-CN": "速度"
+  },
+  "ô/s": {
+    "en": "tiles/s",
+    "zh-CN": "格/秒"
+  },
+  "{damage} sát thương": {
+    "en": "{damage} damage",
+    "zh-CN": "{damage} 伤害"
+  },
+  "Tầm {range}": {
+    "en": "Range {range}",
+    "zh-CN": "射程 {range}"
+  },
+  "{speed} ô/s": {
+    "en": "{speed} tiles/s",
+    "zh-CN": "{speed} 格/秒"
+  },
+  "CÙNG MỘT TỈ LỆ · DÂN / NGỰA / VOI / HƯƠU": {
+    "en": "SAME SCALE · VILLAGER / HORSE / ELEPHANT / DEER",
+    "zh-CN": "相同比例 · 村民 / 马 / 象 / 鹿"
+  },
+  "KIẾN TRÚC CÁC ĐẾ CHẾ": {
+    "en": "CIVILIZATION ARCHITECTURE",
+    "zh-CN": "文明建筑"
+  },
+  "Nhận ra một nền văn minh từ mái nhà.": {
+    "en": "Recognize a civilization by its rooftops.",
+    "zh-CN": "从屋顶辨认文明。"
+  },
+  "Thành chính cùng đời, cùng kích thước ô đất.": {
+    "en": "Town centers in the same age, on the same tile scale.",
+    "zh-CN": "相同时代的城镇中心，采用相同地块比例。"
+  },
+  "REGAVO · Mô hình 2D dùng trực tiếp trong trận đấu": {
+    "en": "REGAVO · 2D models used in the game",
+    "zh-CN": "REGAVO · 游戏实际使用的 2D 模型"
+  },
+  "Trở về màn hình chơi ↗": {
+    "en": "Back to home ↗",
+    "zh-CN": "返回首页 ↗"
+  },
+  "Đứng nghỉ": {
+    "en": "Idle",
+    "zh-CN": "待机"
+  },
+  "Di chuyển": {
+    "en": "Move",
+    "zh-CN": "移动"
+  },
+  "Chặt gỗ": {
+    "en": "Chop wood",
+    "zh-CN": "伐木"
+  },
+  "Khai khoáng": {
+    "en": "Mine",
+    "zh-CN": "采矿"
+  },
+  "Thu hoạch": {
+    "en": "Harvest",
+    "zh-CN": "收获"
+  },
+  "Tấn công": {
+    "en": "Attack",
+    "zh-CN": "攻击"
+  },
+  "Mang lương thực": {
+    "en": "Carry food",
+    "zh-CN": "运送食物"
+  },
+  "Mang thịt": {
+    "en": "Carry meat",
+    "zh-CN": "运送肉类"
+  },
+  "Mang gỗ": {
+    "en": "Carry wood",
+    "zh-CN": "运送木材"
+  },
+  "Mang vàng": {
+    "en": "Carry gold",
+    "zh-CN": "运送黄金"
+  },
+  "Mang đá": {
+    "en": "Carry stone",
+    "zh-CN": "运送石料"
+  },
+  "Gặm cỏ": {
+    "en": "Graze",
+    "zh-CN": "吃草"
+  },
+  "Cảnh giác": {
+    "en": "Alert",
+    "zh-CN": "警戒"
+  },
+  "64 px · một ô đất": {
+    "en": "64 px · one tile",
+    "zh-CN": "64 像素 · 一个地块"
+  },
+  "So sánh tỉ lệ dân, kỵ binh, voi và hươu": {
+    "en": "Compare villager, cavalry, elephant and deer scale",
+    "zh-CN": "比较村民、骑兵、象与鹿的比例"
+  },
+  "Mô hình {name}, {action}": {
+    "en": "{name} model, {action}",
+    "zh-CN": "{name}模型，{action}"
+  },
+  "Voi Ba Tư": {
+    "en": "Persian elephant",
+    "zh-CN": "波斯战象"
+  },
+  "Hươu": {
+    "en": "Deer",
+    "zh-CN": "鹿"
+  },
+  "Kỵ binh": {
+    "en": "Cavalry",
+    "zh-CN": "骑兵"
+  },
+  "bộ binh": {
+    "en": "infantry",
+    "zh-CN": "步兵"
+  },
+  "quân bắn xa": {
+    "en": "ranged units",
+    "zh-CN": "远程单位"
+  },
+  "máy công thành": {
+    "en": "siege engines",
+    "zh-CN": "攻城器械"
+  },
+  "công trình": {
+    "en": "buildings",
+    "zh-CN": "建筑"
+  },
+  "voi": {
+    "en": "elephants",
+    "zh-CN": "象"
+  },
+  "×{multiplier} trước {target}": {
+    "en": "×{multiplier} against {target}",
+    "zh-CN": "对{target}造成 ×{multiplier} 伤害"
+  },
+  "CHIẾN TRƯỜNG ĐANG TẠM DỪNG": {
+    "en": "BATTLEFIELD PAUSED",
+    "zh-CN": "战场已暂停"
+  },
+  "Rời chiến trường?": {
+    "en": "Leave the battlefield?",
+    "zh-CN": "离开战场？"
+  },
+  "Đế chế của bạn vẫn đang chờ lệnh. Lưu trận đấu để tiếp tục cuộc chinh phạt vào lần sau.": {
+    "en": "Your civilization awaits your command. Save this match to continue your conquest later.",
+    "zh-CN": "您的文明仍在等待指令。保存对局，以便下次继续征战。"
+  },
+  "Ở lại trận đấu": {
+    "en": "Stay in match",
+    "zh-CN": "留在对局"
+  },
+  "Đang lưu…": {
+    "en": "Saving…",
+    "zh-CN": "正在保存…"
+  },
+  "Lưu & thoát": {
+    "en": "Save & exit",
+    "zh-CN": "保存并退出"
+  },
+  "Thoát không lưu": {
+    "en": "Exit without saving",
+    "zh-CN": "不保存退出"
+  },
+  "Esc để ở lại · Trận đấu tiếp tục từ vị trí hiện tại": {
+    "en": "Esc to stay · Resume from your current position",
+    "zh-CN": "按 Esc 留下 · 从当前位置继续"
+  },
+  "HÀNG CHỜ": {
+    "en": "QUEUE",
+    "zh-CN": "队列"
+  },
+  "TẠM DỪNG": {
+    "en": "PAUSED",
+    "zh-CN": "已暂停"
+  },
+  "Hàng chờ tuyển quân": {
+    "en": "Training queue",
+    "zh-CN": "训练队列"
+  },
+  "Tạm dừng": {
+    "en": "Paused",
+    "zh-CN": "已暂停"
+  },
+  "Đang tuyển": {
+    "en": "Training",
+    "zh-CN": "训练中"
+  },
+  "Đang chờ": {
+    "en": "Waiting",
+    "zh-CN": "等待中"
+  },
+  "Giáp tốt": {
+    "en": "Better armor",
+    "zh-CN": "强化护甲"
+  },
+  "Hủy mục cuối trong hàng chờ": {
+    "en": "Cancel the last queued item",
+    "zh-CN": "取消队列最后一项"
+  },
+  "Hủy mục cuối và hoàn phần chưa thực hiện": {
+    "en": "Cancel the last item and refund unfinished progress",
+    "zh-CN": "取消最后一项并返还未完成部分的资源"
+  },
+  "CHIẾN TRƯỜNG": {
+    "en": "BATTLEFIELD",
+    "zh-CN": "战场"
+  },
+  "Bản đồ nhỏ, bấm để di chuyển góc nhìn": {
+    "en": "Minimap; click to move the camera",
+    "zh-CN": "小地图，点击以移动视角"
+  },
+  "Bán {resource}": {
+    "en": "Sell {resource}",
+    "zh-CN": "出售{resource}"
+  },
+  "Mua {resource}": {
+    "en": "Buy {resource}",
+    "zh-CN": "购买{resource}"
+  },
+  "Bán 100 tài nguyên lấy 70 vàng.": {
+    "en": "Sell 100 resources for 70 gold.",
+    "zh-CN": "出售 100 资源，换取 70 黄金。"
+  },
+  "Mua 100 tài nguyên bằng 130 vàng.": {
+    "en": "Buy 100 resources for 130 gold.",
+    "zh-CN": "花费 130 黄金购买 100 资源。"
+  },
+  "Không thể lưu trận đấu. Hãy thử lại hoặc ở lại chiến trường.": {
+    "en": "Could not save the match. Try again or stay on the battlefield.",
+    "zh-CN": "无法保存对局。请重试或留在战场。"
+  },
+  "Đã xuất tệp lưu.": {
+    "en": "Save file exported.",
+    "zh-CN": "已导出存档文件。"
+  },
+  "Đã lưu trận đấu trên trình duyệt này.": {
+    "en": "Match saved in this browser.",
+    "zh-CN": "已在此浏览器保存对局。"
+  },
+  "Bộ nhớ trình duyệt đã đầy. Bạn vẫn có thể xuất tệp lưu.": {
+    "en": "Browser storage is full. You can still export a save file.",
+    "zh-CN": "浏览器存储空间已满，仍可导出存档文件。"
+  },
+  "Không thể lưu trên trình duyệt này. Hãy ở lại để xuất tệp lưu, hoặc chọn thoát không lưu.": {
+    "en": "Cannot save in this browser. Stay to export a file, or exit without saving.",
+    "zh-CN": "无法在此浏览器保存。请留下导出存档，或不保存退出。"
+  },
+  "Không mở được WebGL: {error}. Thử bật tăng tốc đồ họa trình duyệt.": {
+    "en": "Could not initialize WebGL: {error}. Try enabling browser graphics acceleration.",
+    "zh-CN": "无法初始化 WebGL：{error}。请尝试开启浏览器图形加速。"
+  },
+  "Đang dựng chiến trường…": {
+    "en": "Preparing the battlefield…",
+    "zh-CN": "正在构建战场…"
+  },
+  "Mở menu trận đấu": {
+    "en": "Open match menu",
+    "zh-CN": "打开对局菜单"
+  },
+  "Dân số / sức chứa, tối đa 200": {
+    "en": "Population / capacity, maximum 200",
+    "zh-CN": "人口 / 上限，最多 200"
+  },
+  "Dân số": {
+    "en": "Population",
+    "zh-CN": "人口"
+  },
+  "Tạm dừng (P)": {
+    "en": "Pause (P)",
+    "zh-CN": "暂停（P）"
+  },
+  "Hướng dẫn (?)": {
+    "en": "Help (?)",
+    "zh-CN": "帮助（?）"
+  },
+  "Lên đời {age}": {
+    "en": "Advance to Age {age}",
+    "zh-CN": "升级至时代 {age}"
+  },
+  "Lên đời {age} · {seconds}s": {
+    "en": "Age {age} · {seconds}s",
+    "zh-CN": "升级时代 {age} · {seconds} 秒"
+  },
+  "{count} đơn vị": {
+    "en": "{count} units",
+    "zh-CN": "{count} 个单位"
+  },
+  "QUÂN TA": {
+    "en": "OUR UNITS",
+    "zh-CN": "我方单位"
+  },
+  "ĐỐI THỦ": {
+    "en": "OPPONENT",
+    "zh-CN": "对手"
+  },
+  "TỰ NHIÊN": {
+    "en": "NATURE",
+    "zh-CN": "自然"
+  },
+  "Đang xây {percent}%": {
+    "en": "Building {percent}%",
+    "zh-CN": "建造中 {percent}%"
+  },
+  "Mang {amount} {resource}": {
+    "en": "Carrying {amount} {resource}",
+    "zh-CN": "携带 {amount} {resource}"
+  },
+  "Thịt": {
+    "en": "Meat",
+    "zh-CN": "肉类"
+  },
+  "Dân có thể săn bằng chuột phải": {
+    "en": "Right-click to hunt with villagers",
+    "zh-CN": "选中村民右键狩猎"
+  },
+  "Xác đang hao thịt theo thời gian": {
+    "en": "Carcass meat decays over time",
+    "zh-CN": "尸体的肉量随时间减少"
+  },
+  "Chuột phải để ra lệnh cho nhóm. Shift để xếp lệnh.": {
+    "en": "Right-click to command the group. Shift queues orders.",
+    "zh-CN": "右键指挥编队，按住 Shift 可连续下令。"
+  },
+  "Thịt phải được dân mang về thành chính hoặc kho lương để cộng vào lương thực.": {
+    "en": "Villagers must bring meat to a town center or granary before it counts as food.",
+    "zh-CN": "村民须将肉运至城镇中心或粮仓，才能计入食物。"
+  },
+  "Tài nguyên hữu hạn. Đặt trại gần nguồn để giảm quãng vận chuyển.": {
+    "en": "Resources are finite. Place camps near deposits to shorten trips.",
+    "zh-CN": "资源有限。将营地建在资源附近，缩短运输距离。"
+  },
+  "CÔNG TRÌNH": {
+    "en": "BUILDING",
+    "zh-CN": "建筑"
+  },
+  "DÂN & XÂY DỰNG": {
+    "en": "VILLAGERS & BUILDING",
+    "zh-CN": "村民与建设"
+  },
+  "ĐIỀU QUÂN": {
+    "en": "COMMANDS",
+    "zh-CN": "军队指令"
+  },
+  "Xây dựng": {
+    "en": "Build",
+    "zh-CN": "建造"
+  },
+  "Thao tác": {
+    "en": "Orders",
+    "zh-CN": "指令"
+  },
+  "Shift + bấm: giữ chế độ xây": {
+    "en": "Shift + click: keep building mode",
+    "zh-CN": "Shift + 点击：保持建造模式"
+  },
+  "Hủy lên đời": {
+    "en": "Cancel advancement",
+    "zh-CN": "取消时代升级"
+  },
+  "Hoàn tài nguyên theo phần tiến độ còn lại.": {
+    "en": "Refund resources for the remaining progress.",
+    "zh-CN": "按未完成进度返还资源。"
+  },
+  "Tạm dừng hàng tuyển dân tại thành chính.": {
+    "en": "Pauses villager training at the town center.",
+    "zh-CN": "暂停城镇中心的村民训练。"
+  },
+  "Tuyển nhanh": {
+    "en": "Fast training",
+    "zh-CN": "加速训练"
+  },
+  "Quân đặt hàng mới tuyển nhanh hơn 30%.": {
+    "en": "New units train 30% faster.",
+    "zh-CN": "新加入队列的单位训练速度提高 30%。"
+  },
+  "Quân đặt hàng mới +10% HP, +2 giáp, tuyển chậm hơn 15%.": {
+    "en": "New units gain +10% HP and +2 armor, but train 15% slower.",
+    "zh-CN": "新单位获得 +10% 生命值与 +2 护甲，训练速度降低 15%。"
+  },
+  "Thu trại": {
+    "en": "Pack camp",
+    "zh-CN": "收起营地"
+  },
+  "Thu trại để chuột phải chuyển vị trí rồi dựng lại.": {
+    "en": "Pack the camp, right-click to move, then unpack it.",
+    "zh-CN": "收起营地，右键移动后重新展开。"
+  },
+  "Chuột phải trên chiến trường để đặt điểm tập kết.": {
+    "en": "Right-click the battlefield to set a rally point.",
+    "zh-CN": "右键点击战场以设置集结点。"
+  },
+  "Quân xưởng: {mode}": {
+    "en": "Armory: {mode}",
+    "zh-CN": "军械坊：{mode}"
+  },
+  "· đang đổi ({seconds}s)": {
+    "en": " · changing ({seconds}s)",
+    "zh-CN": " · 切换中（{seconds} 秒）"
+  },
+  "Tấn công (A)": {
+    "en": "Attack (A)",
+    "zh-CN": "攻击（A）"
+  },
+  "Rút lui (D)": {
+    "en": "Retreat (D)",
+    "zh-CN": "撤退（D）"
+  },
+  "D, rồi bấm trái": {
+    "en": "D, then left-click",
+    "zh-CN": "D，然后左键点击"
+  },
+  "Rút lui khỏi giao chiến": {
+    "en": "Disengage and retreat",
+    "zh-CN": "脱离战斗并撤退"
+  },
+  "Chọn điểm rút lui · Esc để hủy": {
+    "en": "Choose a retreat point · Esc to cancel",
+    "zh-CN": "选择撤退位置 · Esc 取消"
+  },
+  "Chọn điểm tấn công · Esc để hủy": {
+    "en": "Choose an attack point · Esc to cancel",
+    "zh-CN": "选择攻击位置 · Esc 取消"
+  },
+  "Dừng (S)": {
+    "en": "Stop (S)",
+    "zh-CN": "停止（S）"
+  },
+  "Giữ chỗ (H)": {
+    "en": "Hold (H)",
+    "zh-CN": "坚守（H）"
+  },
+  "Dựng khiên": {
+    "en": "Shield wall",
+    "zh-CN": "组成盾阵"
+  },
+  "Bật/tắt khiên, giảm đòn từ phía trước và giảm tốc.": {
+    "en": "Toggle shields; reduce frontal damage and movement speed.",
+    "zh-CN": "切换盾阵，减少正面伤害并降低移速。"
+  },
+  "Triển khai": {
+    "en": "Deploy",
+    "zh-CN": "部署"
+  },
+  "Bật/tắt triển khai; đứng yên để bắn nhanh hơn.": {
+    "en": "Toggle deployment; fire faster while stationary.",
+    "zh-CN": "切换部署状态，驻定后射速提升。"
+  },
+  "Dựng trại": {
+    "en": "Unpack camp",
+    "zh-CN": "展开营地"
+  },
+  "Cần vị trí đủ đất trống.": {
+    "en": "Requires enough open ground.",
+    "zh-CN": "需要足够的空地。"
+  },
+  "Dân đang dựng công trình.": {
+    "en": "Villagers are constructing this building.",
+    "zh-CN": "村民正在建造建筑。"
+  },
+  "Chọn thêm dân rồi chuột phải vào nền móng để hỗ trợ.": {
+    "en": "Select more villagers and right-click the foundation to help.",
+    "zh-CN": "选中更多村民，右键点击地基协助建造。"
+  },
+  "Hai ngón: kéo map · Space + kéo · Ctrl/cuộn: zoom · F: về quân · I: dân rảnh": {
+    "en": "Two fingers: pan · Space + drag · Ctrl/wheel: zoom · F: units · I: idle villagers",
+    "zh-CN": "双指：移视角 · 空格 + 拖动 · Ctrl/滚轮：缩放 · F：单位 · I：空闲村民"
+  },
+  "Bật để kéo bản đồ bằng một ngón; bấm lại để chọn quân": {
+    "en": "Enable one-finger panning; click again to select units",
+    "zh-CN": "开启单指拖动地图，再次点击即可选择单位"
+  },
+  "Đang kéo map": {
+    "en": "Panning",
+    "zh-CN": "拖动地图中"
+  },
+  "Kéo bản đồ": {
+    "en": "Pan map",
+    "zh-CN": "拖动地图"
+  },
+  "Tốc độ {speed}×": {
+    "en": "Speed {speed}×",
+    "zh-CN": "速度 {speed}×"
+  },
+  "ĐANG TẠM DỪNG": {
+    "en": "PAUSED",
+    "zh-CN": "已暂停"
+  },
+  "Tiếp tục (P)": {
+    "en": "Resume (P)",
+    "zh-CN": "继续（P）"
+  },
+  "CẨM NANG CHIẾN TRƯỜNG": {
+    "en": "BATTLEFIELD GUIDE",
+    "zh-CN": "战场指南"
+  },
+  "Từ làng nhỏ đến đế chế.": {
+    "en": "From village to empire.",
+    "zh-CN": "从村落走向帝国。"
+  },
+  "Khởi đầu": {
+    "en": "Getting started",
+    "zh-CN": "入门"
+  },
+  "Tuyển dân ở thành chính. Chọn dân rồi chuột phải vào quả, cây, mỏ hoặc động vật.": {
+    "en": "Train villagers at the town center. Select them and right-click berries, trees, mines or animals.",
+    "zh-CN": "在城镇中心训练村民，选中后右键点击浆果、树木、矿产或动物。"
+  },
+  "Mỗi dân mang tối đa 10 tài nguyên. Xây kho gần nguồn để giảm thời gian đi về.": {
+    "en": "Each villager carries up to 10 resources. Build drop-off sites nearby to shorten return trips.",
+    "zh-CN": "每位村民最多携带 10 资源。将仓库建在资源附近以缩短往返时间。"
+  },
+  "Xây nhà tăng dân số; doanh trại để tuyển giáo binh. Thu 400 lương thực + 180 vàng rồi lên đời II.": {
+    "en": "Houses increase population capacity; barracks train spearmen. Collect 400 food + 180 gold to advance to Age II.",
+    "zh-CN": "建造住房提升人口上限，兵营训练矛兵。积累 400 食物和 180 黄金以升级至时代 II。"
+  },
+  "Lên đời III mở quân và kiến trúc cao cấp. Phá thành chính của đối thủ để thắng.": {
+    "en": "Age III unlocks advanced units and architecture. Destroy the enemy town center to win.",
+    "zh-CN": "时代 III 解锁高级单位与建筑，摧毁敌方城镇中心即可获胜。"
+  },
+  "Điều khiển": {
+    "en": "Controls",
+    "zh-CN": "操作"
+  },
+  "Trái / kéo khung": {
+    "en": "Left-click / drag box",
+    "zh-CN": "左键 / 框选"
+  },
+  "Chọn quân; Shift thêm vào nhóm": {
+    "en": "Select units; Shift adds to the group",
+    "zh-CN": "选择单位，Shift 添加到编队"
+  },
+  "Chuột phải": {
+    "en": "Right-click",
+    "zh-CN": "右键"
+  },
+  "Đi, đánh, khai thác, xây, sửa": {
+    "en": "Move, attack, gather, build, repair",
+    "zh-CN": "移动、攻击、采集、建造、修理"
+  },
+  "Shift + chuột phải": {
+    "en": "Shift + right-click",
+    "zh-CN": "Shift + 右键"
+  },
+  "Xếp hàng nhiều lệnh": {
+    "en": "Queue multiple orders",
+    "zh-CN": "连续下达指令"
+  },
+  "A, rồi bấm trái": {
+    "en": "A, then left-click",
+    "zh-CN": "A 后左键点击"
+  },
+  "Di chuyển và tìm địch để đánh": {
+    "en": "Move and engage enemies",
+    "zh-CN": "移动并攻击沿途敌人"
+  },
+  "Dừng / bật giữ vị trí": {
+    "en": "Stop / toggle hold position",
+    "zh-CN": "停止 / 切换坚守位置"
+  },
+  "Vuốt hai ngón": {
+    "en": "Two-finger swipe",
+    "zh-CN": "双指滑动"
+  },
+  "Kéo bản đồ trên touchpad": {
+    "en": "Pan the map on a touchpad",
+    "zh-CN": "用触控板移动视角"
+  },
+  "Space + kéo / Alt + kéo": {
+    "en": "Space + drag / Alt + drag",
+    "zh-CN": "空格 + 拖动 / Alt + 拖动"
+  },
+  "Kéo bản đồ bằng một ngón": {
+    "en": "Pan with one finger",
+    "zh-CN": "单指拖动地图"
+  },
+  "Ctrl + cuộn / chụm ngón": {
+    "en": "Ctrl + scroll / pinch",
+    "zh-CN": "Ctrl + 滚动 / 捏合"
+  },
+  "Thu phóng tại vị trí con trỏ": {
+    "en": "Zoom at the cursor",
+    "zh-CN": "围绕光标缩放"
+  },
+  "Nút Kéo bản đồ": {
+    "en": "Pan map button",
+    "zh-CN": "拖动地图按钮"
+  },
+  "Bật chế độ kéo; bấm lại để chọn quân": {
+    "en": "Enable panning; click again to select units",
+    "zh-CN": "开启拖动模式，再次点击以选择单位"
+  },
+  "Phím mũi tên / mép màn": {
+    "en": "Arrow keys / screen edges",
+    "zh-CN": "方向键 / 屏幕边缘"
+  },
+  "Di chuyển góc nhìn": {
+    "en": "Move the camera",
+    "zh-CN": "移动视角"
+  },
+  "Ctrl + số / số": {
+    "en": "Ctrl + number / number",
+    "zh-CN": "Ctrl + 数字 / 数字"
+  },
+  "Lưu / gọi nhóm quân": {
+    "en": "Save / recall a control group",
+    "zh-CN": "保存 / 调用编队"
+  },
+  "Dân rảnh / về quân chọn / tạm dừng": {
+    "en": "Idle villager / selected units / pause",
+    "zh-CN": "空闲村民 / 已选单位 / 暂停"
+  },
+  "Sương mù chỉ hiển thị vùng đang nhìn thấy. Voi chiến thuộc Ba Tư đời III, tối đa 6 con; giáo binh là khắc chế trực tiếp. Thương nhân đi giữa hai chợ của mình. Trại Mông Cổ có thể di chuyển từ đời II.": {
+    "en": "Fog reveals only visible areas. Persia unlocks up to 6 war elephants in Age III; spearmen counter them. Traders travel between two friendly markets. Mongol camps can move from Age II.",
+    "zh-CN": "迷雾仅显示可见区域。波斯在时代 III 最多拥有 6 头战象，矛兵可直接克制。商人在己方两个市场之间贸易，蒙古营地从时代 II 起可移动。"
+  },
+  "Trở lại chiến trường": {
+    "en": "Return to battlefield",
+    "zh-CN": "返回战场"
+  },
+  "Trận đấu của bạn": {
+    "en": "Your match",
+    "zh-CN": "您的对局"
+  },
+  "Tiếp tục mô phỏng": {
+    "en": "Resume simulation",
+    "zh-CN": "继续对局"
+  },
+  "Tạm dừng mô phỏng": {
+    "en": "Pause simulation",
+    "zh-CN": "暂停对局"
+  },
+  "Lưu trên trình duyệt": {
+    "en": "Save in browser",
+    "zh-CN": "保存到浏览器"
+  },
+  "Xuất tệp lưu JSON": {
+    "en": "Export JSON save",
+    "zh-CN": "导出 JSON 存档"
+  },
+  "Hướng dẫn điều khiển": {
+    "en": "Control guide",
+    "zh-CN": "操作指南"
+  },
+  "Về màn hình đầu": {
+    "en": "Back to home",
+    "zh-CN": "返回首页"
+  },
+  "TRẬN ĐẤU KẾT THÚC": {
+    "en": "MATCH COMPLETE",
+    "zh-CN": "对局结束"
+  },
+  "Bất phân thắng bại": {
+    "en": "Draw",
+    "zh-CN": "平局"
+  },
+  "Đế chế chiến thắng.": {
+    "en": "Victory.",
+    "zh-CN": "胜利。"
+  },
+  "Thành chính đã thất thủ.": {
+    "en": "Your town center has fallen.",
+    "zh-CN": "您的城镇中心已陷落。"
+  },
+  "Hai thành chính bị phá trong cùng một nhịp mô phỏng.": {
+    "en": "Both town centers fell on the same simulation tick.",
+    "zh-CN": "双方城镇中心在同一时刻被摧毁。"
+  },
+  "Bạn đã phá thành chính của đối thủ.": {
+    "en": "You destroyed the enemy town center.",
+    "zh-CN": "您摧毁了敌方城镇中心。"
+  },
+  "Đạo quân đối phương đã phá thành chính của bạn.": {
+    "en": "The enemy army destroyed your town center.",
+    "zh-CN": "敌军摧毁了您的城镇中心。"
+  },
+  "Thời gian": {
+    "en": "Time",
+    "zh-CN": "时间"
+  },
+  "Địch bị hạ": {
+    "en": "Enemies defeated",
+    "zh-CN": "击败敌人"
+  },
+  "Tài nguyên đã nhận": {
+    "en": "Resources gathered",
+    "zh-CN": "采集资源"
+  },
+  "Trở về màn hình đầu": {
+    "en": "Back to home",
+    "zh-CN": "返回首页"
+  },
+  "Không thể xây ở đây. Cần đất trống trong tầm nhìn.": {
+    "en": "Cannot build here. Find open ground within your vision.",
+    "zh-CN": "无法在此建造，需要视野内的空地。"
+  },
+  "Chưa đủ tài nguyên để xây.": {
+    "en": "Not enough resources to build.",
+    "zh-CN": "建造资源不足。"
+  },
+  "Hàng chờ tối đa 8 quân.": {
+    "en": "The queue holds at most 8 units.",
+    "zh-CN": "训练队列最多容纳 8 个单位。"
+  },
+  "Thiếu chỗ dân. Hãy xây thêm nhà.": {
+    "en": "Population capacity reached. Build more houses.",
+    "zh-CN": "人口上限已达，请建造更多住房。"
+  },
+  "Tối đa 6 voi chiến mỗi phe Ba Tư.": {
+    "en": "Each Persian player can have at most 6 war elephants.",
+    "zh-CN": "每个波斯玩家最多拥有 6 头战象。"
+  },
+  "Chưa đủ tài nguyên để tuyển quân.": {
+    "en": "Not enough resources to train units.",
+    "zh-CN": "训练单位资源不足。"
+  },
+  "Chưa đủ lương thực và vàng để lên đời.": {
+    "en": "Not enough food and gold to advance.",
+    "zh-CN": "升级时代所需的食物和黄金不足。"
+  },
+  "Đang tiến lên đời {age}. Thành chính tạm dừng tuyển dân.": {
+    "en": "Advancing to Age {age}. Villager training is paused.",
+    "zh-CN": "正在升级至时代 {age}，村民训练已暂停。"
+  },
+  "Chưa đủ tài nguyên để giao dịch.": {
+    "en": "Not enough resources to trade.",
+    "zh-CN": "贸易资源不足。"
+  },
+  "Vị trí này chưa đủ đất trống để dựng trại.": {
+    "en": "Not enough open ground here to unpack the camp.",
+    "zh-CN": "此处空地不足，无法展开营地。"
+  },
+  "{name} đã hoàn thành.": {
+    "en": "{name} completed.",
+    "zh-CN": "{name}已建成。"
+  },
+  "Đã tới đời {age}: {era}.": {
+    "en": "Reached Age {age}: {era}.",
+    "zh-CN": "已进入时代 {age}：{era}。"
+  },
+  "Đã dời {count} công trình gần thành chính để chừa sân cho ba đời kiến trúc.": {
+    "en": "Moved {count} buildings near the town center to reserve space for all three ages.",
+    "zh-CN": "已移开城镇中心附近的 {count} 座建筑，为三个时代的建筑预留空间。"
+  },
+  "Bản lưu không hợp lệ hoặc không đúng phiên bản.": {
+    "en": "The save is invalid or uses a different version.",
+    "zh-CN": "存档无效或版本不匹配。"
+  },
+  "Trạng thái kinh tế hoặc bản đồ trong bản lưu không hợp lệ.": {
+    "en": "The save contains invalid economy or map data.",
+    "zh-CN": "存档中的经济或地图数据无效。"
+  },
+  "Dữ liệu đơn vị trong bản lưu không hợp lệ.": {
+    "en": "The save contains invalid unit data.",
+    "zh-CN": "存档中的单位数据无效。"
+  },
+  "Không thể xử lý yêu cầu.": {
+    "en": "Could not process this request.",
+    "zh-CN": "无法处理此请求。"
+  },
+  "Không thể xây ở đây: cần đất trống, không có cây, bụi quả, thú hoặc công trình.": {
+    "en": "Cannot build here: find clear ground without trees, berries, animals or buildings.",
+    "zh-CN": "无法在此建造：需要没有树木、浆果、动物或建筑的空地。"
+  },
+  "Đặt {name} · Esc để hủy": {
+    "en": "Place {name} · Esc to cancel",
+    "zh-CN": "放置{name} · Esc 取消"
+  },
+  "Đặt {name} · R để xoay · Shift để xây liên tiếp · Esc để hủy": {
+    "en": "Place {name} · R to rotate · Shift to keep building · Esc to cancel",
+    "zh-CN": "放置{name} · R 旋转 · Shift 连续建造 · Esc 取消"
+  },
+  "Xoay hàng rào / cổng khi xây": {
+    "en": "Rotate walls / gates while building",
+    "zh-CN": "建造时旋转围墙／城门"
+  },
+  "Lương thực": {
+    "en": "Food",
+    "zh-CN": "食物"
+  },
+  "Gỗ": {
+    "en": "Wood",
+    "zh-CN": "木材"
+  },
+  "Vàng": {
+    "en": "Gold",
+    "zh-CN": "黄金"
+  },
+  "Đá": {
+    "en": "Stone",
+    "zh-CN": "石料"
+  },
+  "Dân": {
+    "en": "Villager",
+    "zh-CN": "村民"
+  },
+  "Giáo binh": {
+    "en": "Spearman",
+    "zh-CN": "矛兵"
+  },
+  "Trinh sát": {
+    "en": "Scout",
+    "zh-CN": "斥候"
+  },
+  "Bộ binh kiếm": {
+    "en": "Swordsman",
+    "zh-CN": "剑士"
+  },
+  "Cung thủ": {
+    "en": "Archer",
+    "zh-CN": "弓箭手"
+  },
+  "Kỵ binh nhẹ": {
+    "en": "Light cavalry",
+    "zh-CN": "轻骑兵"
+  },
+  "Thương nhân": {
+    "en": "Trader",
+    "zh-CN": "商人"
+  },
+  "Xe phá thành": {
+    "en": "Battering ram",
+    "zh-CN": "冲城车"
+  },
+  "Máy bắn đá": {
+    "en": "Catapult",
+    "zh-CN": "投石机"
+  },
+  "Quân đoàn": {
+    "en": "Legionary",
+    "zh-CN": "军团步兵"
+  },
+  "Công binh": {
+    "en": "Engineer",
+    "zh-CN": "工兵"
+  },
+  "Kỵ cung": {
+    "en": "Horse archer",
+    "zh-CN": "骑射手"
+  },
+  "Kỵ thương": {
+    "en": "Lancer",
+    "zh-CN": "枪骑兵"
+  },
+  "Cận vệ": {
+    "en": "Royal guard",
+    "zh-CN": "王室近卫"
+  },
+  "Cung thủ hộ vệ": {
+    "en": "Guard archer",
+    "zh-CN": "近卫弓手"
+  },
+  "Voi chiến": {
+    "en": "War elephant",
+    "zh-CN": "战象"
+  },
+  "Thương binh tiền vệ": {
+    "en": "Vanguard pikeman",
+    "zh-CN": "先锋长枪兵"
+  },
+  "Kỵ binh giáp nặng": {
+    "en": "Heavy cavalry",
+    "zh-CN": "重骑兵"
+  },
+  "Bộ binh hỏa khí": {
+    "en": "Gunner",
+    "zh-CN": "火器步兵"
+  },
+  "Pháo đồng": {
+    "en": "Bronze cannon",
+    "zh-CN": "铜炮"
+  },
+  "Thành chính": {
+    "en": "Town center",
+    "zh-CN": "城镇中心"
+  },
+  "Nhà ở": {
+    "en": "House",
+    "zh-CN": "住房"
+  },
+  "Trại gỗ": {
+    "en": "Lumber camp",
+    "zh-CN": "伐木场"
+  },
+  "Trại khai khoáng": {
+    "en": "Mining camp",
+    "zh-CN": "采矿场"
+  },
+  "Kho lương": {
+    "en": "Granary",
+    "zh-CN": "粮仓"
+  },
+  "Ruộng": {
+    "en": "Farm",
+    "zh-CN": "农田"
+  },
+  "Doanh trại": {
+    "en": "Barracks",
+    "zh-CN": "兵营"
+  },
+  "Chuồng ngựa": {
+    "en": "Stable",
+    "zh-CN": "马厩"
+  },
+  "Trường bắn": {
+    "en": "Archery range",
+    "zh-CN": "靶场"
+  },
+  "Chợ": {
+    "en": "Market",
+    "zh-CN": "市场"
+  },
+  "Xưởng công thành": {
+    "en": "Siege workshop",
+    "zh-CN": "攻城工坊"
+  },
+  "Tháp canh": {
+    "en": "Watchtower",
+    "zh-CN": "哨塔"
+  },
+  "Cột cờ": {
+    "en": "Flag tower",
+    "zh-CN": "旗塔"
+  },
+  "Hàng rào gỗ": {
+    "en": "Palisade",
+    "zh-CN": "木栅栏"
+  },
+  "Cổng gỗ": {
+    "en": "Wooden gate",
+    "zh-CN": "木门"
+  },
+  "Tường đá": {
+    "en": "Stone wall",
+    "zh-CN": "石墙"
+  },
+  "Cổng đá": {
+    "en": "Stone gate",
+    "zh-CN": "石门"
+  },
+  "Cổng thành": {
+    "en": "Citadel gate",
+    "zh-CN": "城门"
+  },
+  "Pháo đài": {
+    "en": "Fortress",
+    "zh-CN": "堡垒"
+  },
+  "Đồn tiền tuyến": {
+    "en": "Outpost",
+    "zh-CN": "前哨"
+  },
+  "Quân xưởng": {
+    "en": "Armory",
+    "zh-CN": "军械坊"
+  },
+  "Xưởng pháo": {
+    "en": "Cannon foundry",
+    "zh-CN": "铸炮厂"
+  },
+  "Bụi quả": {
+    "en": "Berry bush",
+    "zh-CN": "浆果丛"
+  },
+  "Cây rừng": {
+    "en": "Tree",
+    "zh-CN": "树木"
+  },
+  "Mỏ vàng": {
+    "en": "Gold deposit",
+    "zh-CN": "金矿"
+  },
+  "Mỏ đá": {
+    "en": "Stone deposit",
+    "zh-CN": "石矿"
+  },
+  "Hươu đỏ": {
+    "en": "Red deer",
+    "zh-CN": "马鹿"
+  },
+  "Lợn rừng": {
+    "en": "Wild boar",
+    "zh-CN": "野猪"
+  },
+  "Linh dương": {
+    "en": "Gazelle",
+    "zh-CN": "瞪羚"
+  },
+  "Cừu hoang argali": {
+    "en": "Argali",
+    "zh-CN": "盘羊"
+  },
+  "Dê hoang bezoar": {
+    "en": "Bezoar goat",
+    "zh-CN": "野山羊"
+  },
+  "Hươu fallow": {
+    "en": "Fallow deer",
+    "zh-CN": "黇鹿"
+  },
+  "Hươu sao": {
+    "en": "Sika deer",
+    "zh-CN": "梅花鹿"
+  },
+  "Khai thác, săn bắn, xây và sửa công trình.": {
+    "en": "Gather, hunt, construct and repair buildings.",
+    "zh-CN": "采集、狩猎、建造并修理建筑。"
+  },
+  "Sát thương lớn lên kỵ binh và voi chiến.": {
+    "en": "Deals heavy damage to cavalry and war elephants.",
+    "zh-CN": "对骑兵与战象造成高额伤害。"
+  },
+  "Nhìn xa, tìm tài nguyên và thăm dò đối thủ.": {
+    "en": "Long vision for finding resources and scouting enemies.",
+    "zh-CN": "视野较远，适合寻找资源与侦察敌人。"
+  },
+  "Giữ tuyến và áp sát cung thủ.": {
+    "en": "Holds the line and closes on archers.",
+    "zh-CN": "稳固阵线并逼近弓箭手。"
+  },
+  "Bắn từ xa; cần bộ binh bảo vệ.": {
+    "en": "Attacks from range; needs infantry protection.",
+    "zh-CN": "远程射击，需要步兵保护。"
+  },
+  "Tập kích dân và lực lượng bắn xa.": {
+    "en": "Raids villagers and ranged units.",
+    "zh-CN": "突袭村民与远程单位。"
+  },
+  "Chuột phải chợ thứ hai của mình để chạy tuyến vàng.": {
+    "en": "Right-click a second friendly market to start a gold route.",
+    "zh-CN": "右键点击己方第二座市场，建立黄金贸易路线。"
+  },
+  "Chống tên, phá công trình; yếu trước quân cận chiến.": {
+    "en": "Resists arrows and destroys buildings; weak to melee units.",
+    "zh-CN": "抵御箭矢、摧毁建筑，但惧怕近战单位。"
+  },
+  "Bắn đạn đá có sát thương vùng nhỏ lên địch.": {
+    "en": "Fires stones with a small enemy damage radius.",
+    "zh-CN": "发射石弹，对小范围敌人造成伤害。"
+  },
+  "Dựng khiên: giảm sát thương phía trước, đi chậm.": {
+    "en": "Shield wall reduces frontal damage and movement speed.",
+    "zh-CN": "盾阵减少正面伤害并降低移速。"
+  },
+  "Xây đồn tiền tuyến và sửa nhanh gấp đôi dân.": {
+    "en": "Builds outposts and repairs twice as fast as villagers.",
+    "zh-CN": "建造前哨，修理速度为村民的两倍。"
+  },
+  "Cơ động cao, giảm tốc trong nhịp khai hỏa.": {
+    "en": "Highly mobile; slows while firing.",
+    "zh-CN": "机动性高，射击时减速。"
+  },
+  "Xung phong sau quãng chạy; bị giáo binh khắc chế.": {
+    "en": "Charges after a run-up; countered by spearmen.",
+    "zh-CN": "移动一段距离后冲锋，受矛兵克制。"
+  },
+  "Bộ binh bền bỉ bảo vệ tuyến quân Ba Tư.": {
+    "en": "Durable infantry protecting the Persian line.",
+    "zh-CN": "坚韧步兵，保护波斯阵线。"
+  },
+  "Bắn ba mũi tên một loạt, cần chuẩn bị lại.": {
+    "en": "Fires three-arrow volleys, then prepares again.",
+    "zh-CN": "每轮齐射三支箭，随后需重新准备。"
+  },
+  "Đơn vị hiếm, nhiều máu, mạnh trước công trình; giáo gây sát thương lớn.": {
+    "en": "Limited unit with high health and strong building damage; vulnerable to spears.",
+    "zh-CN": "数量受限、生命值高、擅长破坏建筑，但惧怕长矛。"
+  },
+  "Giữ vị trí để chống xung phong và voi chiến.": {
+    "en": "Holds position against charges and war elephants.",
+    "zh-CN": "坚守阵地，抵抗冲锋与战象。"
+  },
+  "Giáp dày, đắt và tuyển lâu.": {
+    "en": "Heavy armor, high cost and long training time.",
+    "zh-CN": "护甲厚重，造价高，训练时间长。"
+  },
+  "Đứng ngắm và khai hỏa, thời gian nạp dài.": {
+    "en": "Stands to aim and fire; has a long reload.",
+    "zh-CN": "驻定瞄准射击，装填时间较长。"
+  },
+  "Pháo Ottoman thay máy đá/ram. Triển khai tăng nhịp bắn; di chuyển mất trạng thái chuẩn bị.": {
+    "en": "Ottoman cannons replace catapults and rams. Deployment boosts fire rate; moving resets readiness.",
+    "zh-CN": "奥斯曼火炮替代投石机与冲城车。部署提升射速，移动会重置准备状态。"
+  },
+  "Tuyển dân, lên đời, nhận mọi tài nguyên. Dành sân rộng cho kiến trúc ba đời. Không thể xây lại.": {
+    "en": "Trains villagers, advances ages and accepts all resources. Reserves room for three ages of architecture. Cannot be rebuilt.",
+    "zh-CN": "训练村民、升级时代、接收所有资源。预留三个时代建筑所需空间，无法重建。"
+  },
+  "Thêm 5 chỗ dân; tối đa 200 mỗi bên.": {
+    "en": "Adds 5 population capacity; maximum 200 per player.",
+    "zh-CN": "增加 5 人口上限，每方最多 200。"
+  },
+  "Nhận gỗ ở gần rừng.": {
+    "en": "Accepts wood near forests.",
+    "zh-CN": "在森林附近接收木材。"
+  },
+  "Nhận vàng và đá.": {
+    "en": "Accepts gold and stone.",
+    "zh-CN": "接收黄金与石料。"
+  },
+  "Nhận thịt, quả và lương thực từ ruộng.": {
+    "en": "Accepts meat, berries and farm food.",
+    "zh-CN": "接收肉类、浆果与农田食物。"
+  },
+  "Nguồn lương thực duy trì; dân thu hoạch bằng chuột phải.": {
+    "en": "A sustained food source; right-click to harvest with villagers.",
+    "zh-CN": "持续食物来源，选中村民右键收获。"
+  },
+  "Tuyển giáo binh và bộ binh.": {
+    "en": "Trains spearmen and infantry.",
+    "zh-CN": "训练矛兵与步兵。"
+  },
+  "Tuyển trinh sát, kỵ binh và voi chiến Ba Tư đời III.": {
+    "en": "Trains scouts, cavalry and Age III Persian elephants.",
+    "zh-CN": "训练斥候、骑兵与时代 III 的波斯战象。"
+  },
+  "Tuyển quân bắn xa và kỵ cung Mông Cổ.": {
+    "en": "Trains ranged units and Mongol horse archers.",
+    "zh-CN": "训练远程单位与蒙古骑射手。"
+  },
+  "Tuyển thương nhân, giao dịch tài nguyên, chạy tuyến giữa hai chợ.": {
+    "en": "Trains traders, exchanges resources and supports routes between two markets.",
+    "zh-CN": "训练商人、交换资源，在两个市场间建立贸易路线。"
+  },
+  "Tuyển khí giới riêng của đế chế: Testudo/Onager, xe Ba Tư, máy kéo dây Đại Đường hoặc trebuchet Mông Cổ. Ottoman dùng xưởng pháo.": {
+    "en": "Trains civilization-specific siege engines: Roman Testudo/Onager, Persian engines, Tang traction catapults or Mongol trebuchets. Ottomans use a cannon foundry.",
+    "zh-CN": "训练文明专属攻城器械：罗马龟甲攻城车与野驴投石机、波斯器械、大唐人力投石机或蒙古配重投石机。奥斯曼使用铸炮厂。"
+  },
+  "Tầm nhìn và hỏa lực phòng thủ.": {
+    "en": "Provides vision and defensive firepower.",
+    "zh-CN": "提供视野与防御火力。"
+  },
+  "Vật cản; không tự đổi thành tường đá.": {
+    "en": "An obstacle; does not automatically become a stone wall.",
+    "zh-CN": "阻碍通行，不会自动升级成石墙。"
+  },
+  "Quân mình đi qua, chặn quân đối phương.": {
+    "en": "Allows friendly units through; blocks enemies.",
+    "zh-CN": "允许己方单位通过，阻挡敌军。"
+  },
+  "Phòng thủ kiên cố, không tạo vùng nhìn.": {
+    "en": "Solid defense without additional vision.",
+    "zh-CN": "坚固防御，不提供额外视野。"
+  },
+  "Giữ vị trí và bắn phòng thủ; không tuyển quân.": {
+    "en": "Holds ground and provides defensive fire; does not train units.",
+    "zh-CN": "驻守并提供防御火力，不训练单位。"
+  },
+  "Đồn được nối tới thành chính hỗ trợ sửa và điểm tập kết.": {
+    "en": "Outposts linked to the town center support repairs and rally points.",
+    "zh-CN": "与城镇中心连接的前哨提供修理与集结支持。"
+  },
+  "Chọn tuyển nhanh hoặc trang bị tốt; đổi mất 10 giây.": {
+    "en": "Choose faster training or better equipment; switching takes 10 seconds.",
+    "zh-CN": "选择加速训练或强化装备，切换需 10 秒。"
+  },
+  "Tuyển pháo đồng.": {
+    "en": "Trains bronze cannons.",
+    "zh-CN": "训练铜炮。"
+  },
+  "Hỏa khí xuyên một nửa giáp, mạnh trước kỵ giáp; bắn chậm, cần kiếm/giáo bảo vệ khi bị áp sát.": {
+    "en": "Guns bypass half of armor and threaten armored cavalry. Slow firing; needs swords and spears against melee attacks.",
+    "zh-CN": "火器穿透一半护甲，擅长对抗重甲骑兵。射速较慢，需要刀枪步兵抵御近战。"
+  },
+  "Giáo binh La Mã": {
+    "en": "Roman spearman",
+    "zh-CN": "罗马矛兵"
+  },
+  "Kiếm binh La Mã": {
+    "en": "Roman swordsman",
+    "zh-CN": "罗马剑士"
+  },
+  "Cung thủ La Mã": {
+    "en": "Roman archer",
+    "zh-CN": "罗马弓箭手"
+  },
+  "Kỵ trinh sát La Mã": {
+    "en": "Roman scout",
+    "zh-CN": "罗马骑斥候"
+  },
+  "Kỵ phụ trợ La Mã": {
+    "en": "Roman auxiliary cavalry",
+    "zh-CN": "罗马辅助骑兵"
+  },
+  "Thương nhân đường La Mã": {
+    "en": "Roman road trader",
+    "zh-CN": "罗马道路商人"
+  },
+  "Xe công thành Testudo": {
+    "en": "Testudo ram",
+    "zh-CN": "龟甲攻城车"
+  },
+  "Onager La Mã": {
+    "en": "Roman Onager",
+    "zh-CN": "罗马野驴投石机"
+  },
+  "Giáo phụ trợ giữ sườn; khắc chế ngựa và voi, cần khiên bảo vệ trước cung.": {
+    "en": "Auxiliary spears protect flanks and counter horses and elephants; need shields against arrows.",
+    "zh-CN": "辅助矛兵守护侧翼、克制马匹与战象，需要盾牌抵挡箭矢。"
+  },
+  "Bộ binh giáp tốt áp sát cung thủ; phối hợp quân đoàn dựng khiên.": {
+    "en": "Armored infantry closes on archers and supports the legion shield wall.",
+    "zh-CN": "重甲步兵逼近弓手，配合军团组成盾阵。"
+  },
+  "Hỗ trợ sau tuyến khiên; yếu trước kỵ binh tập kích.": {
+    "en": "Supports the shield line; vulnerable to cavalry raids.",
+    "zh-CN": "在盾阵后提供支援，惧怕骑兵突袭。"
+  },
+  "Đánh sườn quân bắn xa; cần tránh đội giáo.": {
+    "en": "Flanks ranged units; avoid spear formations.",
+    "zh-CN": "侧击远程单位，需避开矛兵阵线。"
+  },
+  "Áo tunic, la thồ và hàng gốm. Chạy tuyến vàng giữa hai chợ của mình; giáp nhẹ, cần được hộ tống.": {
+    "en": "Tunic-clad trader with a mule carrying pottery. Trades gold between friendly markets; lightly armored and needs an escort.",
+    "zh-CN": "身穿短袍，骡驮陶器。在己方市场间赚取黄金，护甲较薄，需要护卫。"
+  },
+  "Xe bọc mái kiểu La Mã, kíp công binh áo đỏ. Chịu tên tốt và phá cổng ở cự ly gần; chậm, cần bộ binh hộ tống.": {
+    "en": "Roofed Roman ram with red-clad engineers. Resists arrows and breaks gates at close range; slow and needs infantry escorts.",
+    "zh-CN": "罗马式顶棚攻城车，由红衣工兵操作。耐箭，近距离破门；行动缓慢，需要步兵护送。"
+  },
+  "Máy bắn đá xoắn dây, kíp La Mã. Đạn đá có vùng sát thương rộng; yếu khi kỵ binh áp sát.": {
+    "en": "Roman torsion catapult. Stones deal wide area damage; vulnerable to nearby cavalry.",
+    "zh-CN": "罗马扭力投石机。石弹造成较大范围伤害，惧怕骑兵近身。"
+  },
+  "Giáo binh thảo nguyên": {
+    "en": "Steppe spearman",
+    "zh-CN": "草原矛兵"
+  },
+  "Kiếm binh Mông Cổ": {
+    "en": "Mongol swordsman",
+    "zh-CN": "蒙古剑士"
+  },
+  "Cung thủ Mông Cổ": {
+    "en": "Mongol archer",
+    "zh-CN": "蒙古弓箭手"
+  },
+  "Kỵ trinh sát Mông Cổ": {
+    "en": "Mongol scout",
+    "zh-CN": "蒙古骑斥候"
+  },
+  "Kỵ đột kích Mông Cổ": {
+    "en": "Mongol raider",
+    "zh-CN": "蒙古突袭骑兵"
+  },
+  "Thương nhân thảo nguyên": {
+    "en": "Steppe trader",
+    "zh-CN": "草原商人"
+  },
+  "Trebuchet Mông Cổ": {
+    "en": "Mongol trebuchet",
+    "zh-CN": "蒙古配重投石机"
+  },
+  "Giáo cơ động chặn ngựa/voi; giáp nhẹ, không hợp giữ tuyến trước cung.": {
+    "en": "Mobile spears stop horses and elephants; light armor struggles against archers.",
+    "zh-CN": "机动矛兵阻挡骑兵与战象，护甲较轻，不宜正面抵挡弓手。"
+  },
+  "Bộ binh nhẹ áp sát quân bắn xa; thua tuyến giáp nặng nếu đánh lâu.": {
+    "en": "Light infantry closes on ranged units; loses prolonged fights against heavy armor.",
+    "zh-CN": "轻步兵逼近远程单位，持久作战时不敌重甲阵线。"
+  },
+  "Nhịp bắn nhanh, hỗ trợ kỵ cung; cần tránh kỵ binh và khiên.": {
+    "en": "Fast shots support horse archers; avoid cavalry and shields.",
+    "zh-CN": "射速快，支援骑射手，需避开骑兵与盾阵。"
+  },
+  "Kỵ nhẹ nhanh nhất, săn dân và cung thủ; giáp mỏng, rất yếu trước giáo.": {
+    "en": "The fastest light cavalry raids villagers and archers; thin armor is very weak against spears.",
+    "zh-CN": "速度最快的轻骑兵，突袭村民与弓手，护甲薄，极惧长矛。"
+  },
+  "Áo deel xanh, mũ lông và ngựa thồ nhỏ chở cuộn nỉ. Tuyến thương mại nhanh, nhưng dễ bị tập kích.": {
+    "en": "Blue deel, fur hat and a small packhorse carrying felt rolls. Fast trade routes, but vulnerable to raids.",
+    "zh-CN": "身穿蓝色蒙古袍，戴皮帽，小驮马运载毛毡。贸易速度快，但易受突袭。"
+  },
+  "Máy đối trọng đời III, gợi giai đoạn tiếp nhận kỹ thuật công thành thế kỷ XIII. Bắn xa và phá nhà mạnh, nạp chậm; không có xe ram ở đời II.": {
+    "en": "Age III counterweight engine inspired by 13th-century siege technology. Long range and strong building damage, slow reload; no Age II ram.",
+    "zh-CN": "时代 III 配重器械，灵感来自十三世纪攻城技术。射程远、拆建筑强，装填慢；时代 II 没有冲城车。"
+  },
+  "Giáo binh Ba Tư": {
+    "en": "Persian spearman",
+    "zh-CN": "波斯矛兵"
+  },
+  "Kiếm binh Ba Tư": {
+    "en": "Persian swordsman",
+    "zh-CN": "波斯剑士"
+  },
+  "Cung thủ Ba Tư": {
+    "en": "Persian archer",
+    "zh-CN": "波斯弓箭手"
+  },
+  "Kỵ trinh sát Ba Tư": {
+    "en": "Persian scout",
+    "zh-CN": "波斯骑斥候"
+  },
+  "Kỵ hoàng triều Ba Tư": {
+    "en": "Persian royal cavalry",
+    "zh-CN": "波斯王朝骑兵"
+  },
+  "Đoàn buôn Ba Tư": {
+    "en": "Persian caravan",
+    "zh-CN": "波斯商队"
+  },
+  "Xe phá thành Ba Tư": {
+    "en": "Persian ram",
+    "zh-CN": "波斯冲城车"
+  },
+  "Máy bắn đá Ba Tư": {
+    "en": "Persian catapult",
+    "zh-CN": "波斯投石机"
+  },
+  "Giáo bền giữ sườn cho cung và voi; khắc chế kỵ binh.": {
+    "en": "Durable spears protect archers and elephant flanks; counter cavalry.",
+    "zh-CN": "坚韧矛兵保护弓手与战象侧翼，克制骑兵。"
+  },
+  "Kiếm giáp tốt bảo vệ cung thủ; áp sát quân bắn xa, ít cơ động.": {
+    "en": "Armored swords protect archers and close on ranged units; limited mobility.",
+    "zh-CN": "重甲剑士保护弓手、逼近远程单位，机动性较低。"
+  },
+  "Cung mạnh sau tuyến cận vệ; kỵ binh có thể phá tuyến nếu thiếu giáo.": {
+    "en": "Strong bows behind guards; cavalry can break the line without spears.",
+    "zh-CN": "强弓在近卫后输出，缺少矛兵时易被骑兵突破。"
+  },
+  "Kỵ bền đánh sườn cung thủ; không dùng để lao vào giáo.": {
+    "en": "Durable cavalry flanks archers; avoid charging into spears.",
+    "zh-CN": "坚韧骑兵侧击弓手，避免冲入矛兵阵线。"
+  },
+  "Áo dài xanh ngọc và lạc đà thồ thảm. Mỗi chặng nhận thêm 30% vàng, cần bảo vệ tuyến để nuôi quân voi.": {
+    "en": "Turquoise robes and a camel carrying carpets. Earns 30% more gold per trip; protect routes to fund elephants.",
+    "zh-CN": "身穿青绿长袍，骆驼驮地毯。每段贸易额外获得 30% 黄金，保护路线以供养战象。"
+  },
+  "Xe bọc da, kíp công thành Ba Tư mặc xanh ngọc. Phá công trình ở cự ly gần; phối hợp cận vệ và voi, yếu trước quân cận chiến.": {
+    "en": "Leather-covered ram with turquoise Persian crews. Destroys buildings up close alongside guards and elephants; weak against melee units.",
+    "zh-CN": "皮革包覆冲城车，由青绿衣波斯人员操作。配合近卫与战象近距离破坏建筑，惧怕近战单位。"
+  },
+  "Máy bắn đá với kíp Ba Tư, lấy cảm hứng công thành thời Sasanian. Hỗ trợ voi/cận vệ phá nhà; cần tránh kỵ binh đánh sườn.": {
+    "en": "Persian-crewed catapult inspired by Sasanian siegecraft. Supports elephants and guards against buildings; avoid cavalry flanks.",
+    "zh-CN": "波斯人员操作的投石机，灵感来自萨珊攻城技术。支援战象与近卫拆建筑，需避开骑兵侧袭。"
+  },
+  "Giáo binh Đại Đường": {
+    "en": "Tang spearman",
+    "zh-CN": "大唐矛兵"
+  },
+  "Kiếm binh Đại Đường": {
+    "en": "Tang swordsman",
+    "zh-CN": "大唐刀兵"
+  },
+  "Cung thủ Đại Đường": {
+    "en": "Tang archer",
+    "zh-CN": "大唐弓箭手"
+  },
+  "Kỵ trinh sát Đại Đường": {
+    "en": "Tang scout",
+    "zh-CN": "大唐骑斥候"
+  },
+  "Kỵ binh Đại Đường": {
+    "en": "Tang cavalry",
+    "zh-CN": "大唐骑兵"
+  },
+  "Thương nhân tơ lụa": {
+    "en": "Silk trader",
+    "zh-CN": "丝绸商人"
+  },
+  "Máy kéo dây Đại Đường": {
+    "en": "Tang traction catapult",
+    "zh-CN": "大唐人力投石机"
+  },
+  "Giáo dài chặn ngựa và voi; cung thủ có thể tiêu hao từ ngoài tầm.": {
+    "en": "Long spears stop horses and elephants; archers can wear them down from outside their range.",
+    "zh-CN": "长矛阻挡骑兵与战象，弓手可在其射程外消耗。"
+  },
+  "Kiếm mạnh giữ tuyến và áp sát cung/hỏa khí; phối hợp thương binh chống kỵ.": {
+    "en": "Strong swords hold the line and close on archers and gunners; combine with pikes against cavalry.",
+    "zh-CN": "强力刀兵稳固阵线，逼近弓手与火器兵，配合长枪兵对抗骑兵。"
+  },
+  "Tầm cung xa yểm trợ tuyến kiếm/thương; cần được che chắn trước kỵ binh.": {
+    "en": "Long-range bows support swords and spears; need protection from cavalry.",
+    "zh-CN": "远射弓支援刀枪阵线，需要保护以抵御骑兵。"
+  },
+  "Kỵ giáp tốt đánh quân bắn xa; giáo/voi vẫn là mối đe dọa.": {
+    "en": "Armored cavalry attacks ranged units; spears and elephants remain threats.",
+    "zh-CN": "重甲骑兵攻击远程单位，长矛与战象仍是威胁。"
+  },
+  "Áo dài đỏ, mũ mềm đen và lạc đà hai bướu chở tơ. Tuyển rẻ hơn, chạy tuyến vàng giữa hai chợ của mình.": {
+    "en": "Red robe, soft black hat and a two-humped camel carrying silk. Cheaper to train; trades gold between friendly markets.",
+    "zh-CN": "身穿红袍、戴黑色软帽，双峰驼运载丝绸。训练较便宜，在己方市场间贸易赚取黄金。"
+  },
+  "Máy bắn đá kéo dây bằng sức người, kíp áo đỏ; mở từ đời II. Rẻ và bắn nhanh hơn máy đối trọng, tầm ngắn và sát thương thấp; không có xe ram.": {
+    "en": "Human-powered traction catapult with red-clad crews, unlocked in Age II. Cheaper and faster than trebuchets, but shorter range and lower damage; no ram.",
+    "zh-CN": "红衣人员操作的人力牵引投石机，时代 II 解锁。比配重式便宜、射速快，但射程与伤害较低；没有冲城车。"
+  },
+  "Giáo binh Ottoman": {
+    "en": "Ottoman spearman",
+    "zh-CN": "奥斯曼矛兵"
+  },
+  "Kiếm binh Ottoman": {
+    "en": "Ottoman swordsman",
+    "zh-CN": "奥斯曼刀兵"
+  },
+  "Cung thủ Ottoman": {
+    "en": "Ottoman archer",
+    "zh-CN": "奥斯曼弓箭手"
+  },
+  "Kỵ trinh sát Ottoman": {
+    "en": "Ottoman scout",
+    "zh-CN": "奥斯曼骑斥候"
+  },
+  "Kỵ binh Ottoman": {
+    "en": "Ottoman cavalry",
+    "zh-CN": "奥斯曼骑兵"
+  },
+  "Đoàn buôn Ottoman": {
+    "en": "Ottoman caravan",
+    "zh-CN": "奥斯曼商队"
+  },
+  "Giáo rẻ che sườn cho hỏa khí/pháo, chặn kỵ và voi; yếu trước cung.": {
+    "en": "Cheap spears guard gunner and cannon flanks, stopping cavalry and elephants; weak against bows.",
+    "zh-CN": "廉价矛兵保护火器与火炮侧翼，阻挡骑兵与战象，惧怕弓手。"
+  },
+  "Kiếm cong đánh mạnh khi áp sát; bảo vệ hỏa khí nhưng giáp nhẹ.": {
+    "en": "Curved blades strike hard up close and protect gunners, but have light armor.",
+    "zh-CN": "弯刀近身伤害高，保护火器部队，但护甲较轻。"
+  },
+  "Cung nhẹ cho giai đoạn đầu; đời II thêm hỏa khí xuyên giáp.": {
+    "en": "Light bows for early combat; Age II adds armor-piercing guns.",
+    "zh-CN": "轻弓用于前期作战，时代 II 增加穿甲火器。"
+  },
+  "Đánh sườn cung và pháo; không thay giáo bảo vệ tuyến hỏa khí.": {
+    "en": "Flanks archers and cannons; does not replace spears as a gunner screen.",
+    "zh-CN": "侧击弓手与火炮，不能代替矛兵保护火器阵线。"
+  },
+  "Áo kaftan xanh, khăn quấn trắng và lạc đà chở vải. Đoàn buôn bền hơn, đi chậm; tuyến vàng cần kiếm/giáo hộ tống.": {
+    "en": "Green kaftan, white turban and a cloth-laden camel. A tougher, slower caravan; gold routes need sword and spear escorts.",
+    "zh-CN": "身穿绿长袍、戴白头巾，骆驼驮布匹。商队更耐打但速度较慢，黄金路线需要刀枪部队护送。"
+  },
+  "Chuyển chế độ: {seconds}s": {
+    "en": "Switching mode: {seconds}s",
+    "zh-CN": "切换模式中：{seconds} 秒"
+  },
+  "Chế độ: {mode}": {
+    "en": "Mode: {mode}",
+    "zh-CN": "模式：{mode}"
+  },
+  "Đại Việt": {
+    "en": "Dai Viet",
+    "zh-CN": "大越"
+  },
+  "Giữ nước bằng thế trận": {
+    "en": "Defend through formation and terrain",
+    "zh-CN": "以阵势守国"
+  },
+  "Bản sắc Lý–Trần–Lê: bộ binh phối hợp cung/nỏ, ngụ binh ư nông để huy động dân rồi giải ngũ. Đời III thêm tượng binh và hỏa khí sơ kỳ; cần bảo vệ kinh tế và chọn thời điểm phản công.": {
+    "en": "Ly–Tran–Le identity: infantry supported by bows and crossbows, with farmers mobilized then demobilized. Age III adds elephants and early firearms; protect the economy and time your counterattack.",
+    "zh-CN": "李、陈、黎王朝特色：步兵配合弓弩，实行寓兵于农，动员农民后可解甲归田。时代III加入象兵和早期火器；保护经济，把握反攻时机。"
+  },
+  "Ngụ binh ư nông": {
+    "en": "Soldier-farmers",
+    "zh-CN": "寓兵于农"
+  },
+  "Cung/nỏ & tượng binh": {
+    "en": "Bows, crossbows & elephants",
+    "zh-CN": "弓弩与象兵"
+  },
+  "Quân địa phương": {
+    "en": "Local militia",
+    "zh-CN": "地方民兵"
+  },
+  "Huy động từ dân tại doanh trại; yếu hơn quân thường trực. Giải ngũ để trở lại sản xuất, giữ tỷ lệ máu.": {
+    "en": "Mobilized from villagers at a barracks; weaker than regular troops. Demobilize to resume work, retaining the current health ratio.",
+    "zh-CN": "在兵营由村民动员而来，比常备军弱。退役后恢复生产，保留当前生命值比例。"
+  },
+  "Nỏ binh Đại Việt": {
+    "en": "Dai Viet crossbowman",
+    "zh-CN": "大越弩兵"
+  },
+  "Nỏ bắn từng tên mạnh sau tuyến bộ binh; nạp chậm, cần được bảo vệ trước kỵ binh.": {
+    "en": "Powerful single bolts from behind the infantry; slow reload, vulnerable to cavalry.",
+    "zh-CN": "在步兵后方射出强力弩箭；装填较慢，需要防范骑兵。"
+  },
+  "Bộ binh hỏa khí Đại Việt": {
+    "en": "Dai Viet hand-cannon infantry",
+    "zh-CN": "大越手铳兵"
+  },
+  "Hỏa khí cầm tay sơ kỳ mở đời III, xuyên 35% giáp. Nạp lâu, cần bộ binh che chắn.": {
+    "en": "Early hand firearms unlock in Age III and bypass 35% of armor. Slow reload; needs infantry protection.",
+    "zh-CN": "时代III解锁早期手持火器，穿透35%护甲。装填慢，需要步兵掩护。"
+  },
+  "Hỏa pháo Đại Việt": {
+    "en": "Dai Viet cannon",
+    "zh-CN": "大越火炮"
+  },
+  "Hỏa pháo sơ kỳ yểm trợ công thành đời III; tầm ngắn hơn pháo Ottoman, không có kỹ năng triển khai.": {
+    "en": "Early cannon supports Age III sieges; shorter range than Ottoman cannon, with no deployment ability.",
+    "zh-CN": "时代III的早期火炮支援攻城；射程短于奥斯曼火炮，没有部署技能。"
+  },
+  "Giáo binh Đại Việt": {
+    "en": "Dai Viet spearman",
+    "zh-CN": "大越矛兵"
+  },
+  "Kỵ trinh sát Đại Việt": {
+    "en": "Dai Viet mounted scout",
+    "zh-CN": "大越骑马斥候"
+  },
+  "Cấm quân Đại Việt": {
+    "en": "Dai Viet royal guard",
+    "zh-CN": "大越禁军"
+  },
+  "Bộ binh thường trực giữ tuyến cho cung/nỏ; bảo vệ quân huy động và áp sát quân bắn xa.": {
+    "en": "Regular infantry protects archers, crossbowmen and militia, and closes on enemy ranged troops.",
+    "zh-CN": "常备步兵为弓弩守住阵线，保护动员部队并逼近敌方远程兵。"
+  },
+  "Cung thủ Đại Việt": {
+    "en": "Dai Viet archer",
+    "zh-CN": "大越弓箭手"
+  },
+  "Kỵ binh nhẹ Đại Việt": {
+    "en": "Dai Viet light cavalry",
+    "zh-CN": "大越轻骑兵"
+  },
+  "Thăm dò và tập kích tuyến buôn; ít lợi thế khi giao chiến trực diện với kỵ binh mạnh.": {
+    "en": "Scouts and raids trade routes; struggles against stronger cavalry in direct combat.",
+    "zh-CN": "侦察并袭击商路；正面对抗强力骑兵时处于劣势。"
+  },
+  "Thương nhân Đại Việt": {
+    "en": "Dai Viet trader",
+    "zh-CN": "大越商人"
+  },
+  "Áo vải, khăn đầu và xe thồ gốm, giỏ hàng. Chạy tuyến vàng giữa hai chợ; cần được hộ tống.": {
+    "en": "Cloth tunic, headwrap and a cart of pottery and baskets. Trades gold between two markets; needs escort.",
+    "zh-CN": "布衣、头巾与载着陶器和货篮的小车。在两座市场之间赚取黄金；需要护送。"
+  },
+  "Tượng binh Đại Việt": {
+    "en": "Dai Viet war elephant",
+    "zh-CN": "大越象兵"
+  },
+  "Voi cùng quản tượng Đại Việt đời III, tối đa 6 con kể cả hàng chờ. Hỗ trợ bộ binh phá tuyến; giáo binh khắc chế mạnh.": {
+    "en": "Age III Dai Viet elephants and mahouts; maximum six including queues. Breaks lines with infantry support; strongly countered by spearmen.",
+    "zh-CN": "时代III大越战象与象夫，上限6头（包括训练队列）。配合步兵突破阵线；受到矛兵强力克制。"
+  },
+  "Gỗ & đất nung": {
+    "en": "Wood & terracotta",
+    "zh-CN": "木材与陶瓦"
+  },
+  "Gạch & men xanh": {
+    "en": "Brick & green glaze",
+    "zh-CN": "砖石与青釉"
+  },
+  "Sơn son & rồng chạm": {
+    "en": "Red lacquer & carved dragons",
+    "zh-CN": "朱漆与龙纹"
+  },
+  "Ngụ binh & phản công": {
+    "en": "Militia & counterattacks",
+    "zh-CN": "民兵与反攻"
+  },
+  "Huy động dân khi cần giữ nhà, giải ngũ để phục hồi kinh tế; che chắn cho cung/nỏ và hỏa khí.": {
+    "en": "Mobilize villagers to defend home, then demobilize to restore the economy; protect bows, crossbows and firearms.",
+    "zh-CN": "动员村民保卫家园，退役恢复经济；保护弓弩与火器。"
+  },
+  "SÁU NỀN VĂN MINH · BA ĐỜI · MỘT CHIẾN TRƯỜNG": {
+    "en": "SIX CIVILIZATIONS · THREE AGES · ONE BATTLEFIELD",
+    "zh-CN": "六大文明 · 三个时代 · 一个战场"
+  },
+  "Huy động dân binh": {
+    "en": "Mobilize militia",
+    "zh-CN": "动员民兵"
+  },
+  "Giải ngũ": {
+    "en": "Demobilize",
+    "zh-CN": "解甲归田"
+  },
+  "Đang huy động dân binh": {
+    "en": "Mobilizing militia",
+    "zh-CN": "正在动员民兵"
+  },
+  "Đang giải ngũ": {
+    "en": "Demobilizing",
+    "zh-CN": "正在解甲归田"
+  },
+  "Huấn luyện": {
+    "en": "Training",
+    "zh-CN": "训练"
+  },
+  "Giao tài nguyên": {
+    "en": "Delivering resources",
+    "zh-CN": "交付资源"
+  },
+  "Đến doanh trại": {
+    "en": "Going to barracks",
+    "zh-CN": "前往兵营"
+  },
+  "Mỗi dân: 20 lương thực, 10 gỗ; giao tài nguyên rồi huấn luyện 8s tại doanh trại. Tối đa 12 dân binh; giảm nhân lực kinh tế.": {
+    "en": "Per villager: 20 food, 10 wood; deliver cargo, then train for 8s at a barracks. Maximum 12 militia; reduces the economic workforce.",
+    "zh-CN": "每名村民：20食物、10木材；交付资源后在兵营训练8秒。民兵上限12人；减少经济劳动力。"
+  },
+  "Trở về doanh trại trong 8s để làm dân, giữ tỷ lệ máu và quay lại công việc cũ; không hoàn trang bị.": {
+    "en": "Return to a barracks for 8s to become a villager, retaining health ratio and resuming previous work; equipment is not refunded.",
+    "zh-CN": "返回兵营并训练8秒以成为村民，保留生命值比例并恢复原有工作；不退还装备费用。"
+  },
+  "Tối đa 12 dân binh đang huy động hoặc phục vụ.": {
+    "en": "Maximum 12 militia serving or being mobilized.",
+    "zh-CN": "服役与动员中的民兵合计上限12人。"
+  },
+  "Cần doanh trại hoàn thành để huy động hoặc giải ngũ.": {
+    "en": "A completed barracks is required to mobilize or demobilize.",
+    "zh-CN": "动员或退役需要一座已建成的兵营。"
+  },
+  "Chưa đủ tài nguyên để huy động dân binh.": {
+    "en": "Not enough resources to mobilize militia.",
+    "zh-CN": "没有足够资源动员民兵。"
+  },
+  "Tối đa 6 voi chiến mỗi phe.": {
+    "en": "Maximum 6 war elephants per side.",
+    "zh-CN": "每方战象上限6头。"
+  },
+  "Sáu bản sắc.": {
+    "en": "Six identities.",
+    "zh-CN": "六种特色。"
+  }
+}

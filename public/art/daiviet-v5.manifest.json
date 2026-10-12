@@ -1,0 +1,40 @@
+{
+  "version": 5,
+  "date": "2026-10-10",
+  "assets": [
+    {
+      "id": "buildings-towncenter-age3",
+      "version": 5,
+      "generator": "OpenAI built-in image_gen",
+      "created": "2026-10-10",
+      "source": "public/art/daiviet-v5-buildings-towncenter-age3.png",
+      "file": "/art/daiviet-v5-buildings-towncenter-age3.png",
+      "editTarget": "/art/daiviet-v3-buildings-towncenter-age3.png",
+      "originalDesign": "/art/daiviet-v1-buildings-age3.png",
+      "prompt": "Use case: precise-object-edit. Asset type: single isometric Dai Viet age III town-center game sprite.\nImage 1 is the exact current building to EDIT. Image 2 is reference ONLY for the three staircase lanes and two Ly dynasty stone dragon balustrades.\nKeep EXACT architecture of image1: green ceramic double tier roofs, same red columns and walls, gold roof ornament positions, open courtyard, red dragon banner, same isometric camera orientation. Do not redesign the palace.\nChange only these requested parts:\n1. Make the perimeter foundation/plinth modestly LOWER, about 20 percent lower than image1. Replace ALL visible red brick facing around the vertical perimeter walls with carefully fitted pale grey natural stone blocks. Keep the horizontal courtyard paving red terracotta brick exactly.\n2. Make the palace hall itself slightly LARGER and TALLER: red columns/wall levels about 12 percent taller, the hall about 6 percent wider in the same courtyard. Preserve the same roof forms, same two roof tiers and identical architecture. Clearly taller palace but lower stone plinth.\n3. Front main stairs have THREE parallel walking lanes (left, middle, right). TWO slender grey stone Ly dynasty dragons form the two dividers enclosing the middle lane, like image2. Dragon heads at bottom of steps facing outward, long sinuous S-curved scaled bodies ascending the stairs, delicate scroll clouds and tapering tails. They must read as stone dragons, not plain handrails. Exactly two dragon dividers, outer stair walls low plain stone. Widen stairs enough for three distinct tread lanes, all connect courtyard to ground. Central ceremonial lane clear between two dragons. Steps grey stone. No dragon drawn on courtyard paving.\nComposition: One COMPLETE centered building only, matching image1 isometric 2:1 ground diamond, no cutoff of roofs/banner/foundation/staircase, about5 percent clear margin. No surrounding ground, grass, people, other buildings, text or watermark. Transparent background, alpha0 outside complete building. Same restrained evenly lit detailed game-art style, NOT photograph. Preserve actual transparency of image1.",
+      "sha256": "19c44c6caa3b0154deecd37897abf37a23f13e56454d01705b6a21137c409300",
+      "bytes": 2766729,
+      "sourceBytesUnchanged": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "frames": [
+        [
+          76,
+          9,
+          1410,
+          1006
+        ]
+      ]
+    }
+  ],
+  "animation": {
+    "source": "one contact A actor per unit/heading",
+    "stages": 12,
+    "renderer": "src/render/walk-rig.ts",
+    "method": "Articulated two-bone biped knees and feet; continuous texture mesh for horses, elephants and cart crews. Source colours fixed. Travel distance advances cycle. Historical B/C/D walking sheets no longer decoded."
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

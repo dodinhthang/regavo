@@ -1,0 +1,517 @@
+{
+  "version": 5,
+  "status": "selected",
+  "type": "original-ai-generated-isometric-towncenter-atlas",
+  "generatedAt": "2026-10-09",
+  "generator": "Built-in image_gen.imagegen; transparent_background:true",
+  "sourcePngPreserved": true,
+  "sourceOriginalPath": "public/art/building-centers-v5.png",
+  "file": "building-centers-v5.png",
+  "width": 971,
+  "height": 1619,
+  "sha256": "8a5438ec36115b51ec9e9d713b18cafa8dcca68152c743ed7dc8f05f3068edcc",
+  "alphaHistogram": {
+    "zero": 791021,
+    "partial": 77830,
+    "solid": 703198
+  },
+  "prompt": "Create an original production RTS game SPRITE ATLAS, transparent PNG, 1536x2560 canvas. EXACTLY fifteen complete town-center building sprites in a 3-column by 5-row grid, each512x512cell. No captions or lines. Semi-realistic painted historical architecture with very detailed roof tiles, weathered plaster and masonry, wood joints and textile folds. Upper-left daylight, all vertical walls perfectly vertical.\nCRITICAL GEOMETRY: Every building has a thin flat SQUARE ground foundation projected as a PERFECT SYMMETRIC 2:1 DIAMOND, width320px, height160px. Within eachcell, floor vertices are top=(256,304), right=(416,384), bottom=(256,464), left=(96,384). Left/right corners MUST share exactlythe sameY, top/bottom exactlythe sameX. The camera is orthographic 45degree azimuth, 30degree elevation, equal projection along bothX/Yworldaxes. Left and right visible walls have ground/roof edges at equal and opposite slopes plus/minus0.5. NOT perspective, NOT 3/4oblique camera, NOT widefrontface with narrow sideface, NOT rotated or skewed rectangle. The square foundation remains visibly perfect with equally long diamond sides under every sprite. Building centeredonplatform, any stair inside thediamond perimeter, nothing protrudes beyond its corners. Literal bottomcorner clearly visible centeredat x256. Shape is square in worldcoordinates, never a longrectangle. No tall platform blocks or thick terrainislands. Keep enoughmarginabove roofs andbetween cells.\nRows top-to-bottom:\n1 ROMAN: ageI modest warmplaster hallwith redterracotta gabledroof and woodenporch; ageII pale-limestone civic hallwith redtileroof, equal-width sidewalls and frontcolumns; ageIII richRoman columnedhall with layeredtileroofs, laurel/redcloth accents. Keepall architecture compactonits squarefoundation.\n2 MONGOL: ageI circular creamfelt yurtwith a blueband and woodenentry; ageII improvedlarge yurtwith richer timberdoorframe and blue cloth; ageIII impressive butcompact yurtwith goldfinial and bluegoldembroidery, all on square stonefloor, no flagpolesaroundit.\n3 PERSIAN: ageI warmadobe flatroofedhall with simple woodporch; ageII carvedlimestone flatroof civic hallwith turquoiseceramic bands; ageIII ornate goldturquoise limestonehall withfrontcolumnsand smallsculptedliondetails insideits squarefloor.\n4 TANG CHINESE: ageI modest redbrowntimberhall with curveddarkgreytile roofand ivorypanels; ageII larger redwoodhall with deeperbrackets and goldtrim; ageIII grandtwo-tier compacthallwith curveddarkroofs, redpillars and stonestairs.\n5 OTTOMAN: ageI plasterandtimber civic housewith orange terracotta roof; ageII compact limestonearcade hallwithtiles and smalltealdome; ageIII majestic limestonehall with centraltealdome and tiledsidewings, allwithin same320x160squarefloor.\nColumns lefttoright: ageI, ageII, ageIII. Every cell contains ONEbuildingand its matchingfootprint. Agedevelopment addsdetail/tallness butall15use sameexactworldsquarefootprint andexactcamera. Architecturaldifferencesmust be clear, realisticand original. Buildingsread asrealistic RTSsprites,notUIicons, notcartoons/flatvectors, notplastic3Drenders. No people, animals, forests, scenes, sceneryoutsidefoundation, labels/text/numbers, watermark, logos, gridlines or opaquebackground. TRUEtransparent alpha everywhereoutside individualbuilding/foundation silhouettes.",
+  "references": "None included in final generation. Architecture was specified in the original prompt; source v2 and three secondary-building atlases were inspected for style and geometry.",
+  "layout": {
+    "columns": [
+      "age1",
+      "age2",
+      "age3"
+    ],
+    "rows": [
+      "roman",
+      "mongol",
+      "persian",
+      "tang",
+      "ottoman"
+    ]
+  },
+  "rights": "Original AI-generated imagery. No third-party sprites imported. AI output copyright and exclusivity are not guaranteed; see ../../docs/en/RIGHTS-AND-LICENSES.md.",
+  "sourceCorrection": {
+    "problem": "V2 had rectangular, oblique ground platforms with front corners up to approximately60 source px away from side-corner center, inconsistent with a square 4x4 game footprint.",
+    "resolution": "New artwork has a square world foundation and symmetric isometric camera. Renderer preserves vertical columns with independent axis scale; there is no whole-image horizontal or vertical shear.",
+    "measurement": "Read-only opaque alpha contour; threshold180; side corner medians sampled over5px; front median over deepest contour±2px. Foundation fitted through side-height midpoint and central front axis; fitting errors<=2sourcepx.",
+    "maxSideHeightDifferenceSourcePx": 2,
+    "maxFrontOffsetSourcePx": 1.5,
+    "pixelRatio": 2,
+    "logicalFoundation": {
+      "width": 256,
+      "height": 128,
+      "pointsRelativeToEntity": [
+        [
+          0,
+          -64
+        ],
+        [
+          128,
+          0
+        ],
+        [
+          0,
+          64
+        ],
+        [
+          -128,
+          0
+        ]
+      ]
+    }
+  },
+  "frames": [
+    {
+      "frame": [
+        14,
+        79,
+        300,
+        238
+      ],
+      "foundation": [
+        5,
+        164,
+        294,
+        164,
+        149,
+        232
+      ],
+      "frontSkewSourcePx": -0.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.125,
+      "civilization": "roman",
+      "age": 1,
+      "canonicalFoundationSource": [
+        5,
+        164,
+        294,
+        164,
+        149.5,
+        232
+      ]
+    },
+    {
+      "frame": [
+        331,
+        51,
+        305,
+        268
+      ],
+      "foundation": [
+        5,
+        192,
+        299,
+        193,
+        153.5,
+        262
+      ],
+      "frontSkewSourcePx": 1.5,
+      "leftRightYDifference": 1,
+      "ratio": 2.115107913669065,
+      "civilization": "roman",
+      "age": 2,
+      "canonicalFoundationSource": [
+        5,
+        192.5,
+        299,
+        192.5,
+        152,
+        262
+      ]
+    },
+    {
+      "frame": [
+        651,
+        13,
+        309,
+        306
+      ],
+      "foundation": [
+        5,
+        231,
+        304,
+        231,
+        154.5,
+        301
+      ],
+      "frontSkewSourcePx": 0,
+      "leftRightYDifference": 0,
+      "ratio": 2.1357142857142857,
+      "civilization": "roman",
+      "age": 3,
+      "canonicalFoundationSource": [
+        5,
+        231,
+        304,
+        231,
+        154.5,
+        301
+      ]
+    },
+    {
+      "frame": [
+        15,
+        389,
+        299,
+        210
+      ],
+      "foundation": [
+        5,
+        136,
+        293,
+        135,
+        148.5,
+        205
+      ],
+      "frontSkewSourcePx": -0.5,
+      "leftRightYDifference": -1,
+      "ratio": 2.0719424460431655,
+      "civilization": "mongol",
+      "age": 1,
+      "canonicalFoundationSource": [
+        5,
+        135.5,
+        293,
+        135.5,
+        149,
+        205
+      ]
+    },
+    {
+      "frame": [
+        329,
+        362,
+        311,
+        238
+      ],
+      "foundation": [
+        5,
+        162,
+        306,
+        161,
+        155,
+        233
+      ],
+      "frontSkewSourcePx": -0.5,
+      "leftRightYDifference": -1,
+      "ratio": 2.104895104895105,
+      "civilization": "mongol",
+      "age": 2,
+      "canonicalFoundationSource": [
+        5,
+        161.5,
+        306,
+        161.5,
+        155.5,
+        233
+      ]
+    },
+    {
+      "frame": [
+        651,
+        323,
+        311,
+        278
+      ],
+      "foundation": [
+        5,
+        201,
+        305,
+        201,
+        155,
+        272
+      ],
+      "frontSkewSourcePx": 0,
+      "leftRightYDifference": 0,
+      "ratio": 2.112676056338028,
+      "civilization": "mongol",
+      "age": 3,
+      "canonicalFoundationSource": [
+        5,
+        201,
+        305,
+        201,
+        155,
+        272
+      ]
+    },
+    {
+      "frame": [
+        13,
+        633,
+        303,
+        248
+      ],
+      "foundation": [
+        5,
+        171,
+        297,
+        169,
+        150,
+        242
+      ],
+      "frontSkewSourcePx": -1,
+      "leftRightYDifference": -2,
+      "ratio": 2.0277777777777777,
+      "civilization": "persian",
+      "age": 1,
+      "canonicalFoundationSource": [
+        5,
+        170,
+        297,
+        170,
+        151,
+        242
+      ]
+    },
+    {
+      "frame": [
+        330,
+        619,
+        313,
+        261
+      ],
+      "foundation": [
+        4,
+        182,
+        308,
+        182,
+        156.5,
+        256
+      ],
+      "frontSkewSourcePx": 0.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.054054054054054,
+      "civilization": "persian",
+      "age": 2,
+      "canonicalFoundationSource": [
+        4,
+        182,
+        308,
+        182,
+        156,
+        256
+      ]
+    },
+    {
+      "frame": [
+        652,
+        602,
+        313,
+        281
+      ],
+      "foundation": [
+        4,
+        201,
+        308,
+        201,
+        156,
+        275
+      ],
+      "frontSkewSourcePx": 0,
+      "leftRightYDifference": 0,
+      "ratio": 2.054054054054054,
+      "civilization": "persian",
+      "age": 3,
+      "canonicalFoundationSource": [
+        4,
+        201,
+        308,
+        201,
+        156,
+        275
+      ]
+    },
+    {
+      "frame": [
+        17,
+        963,
+        299,
+        250
+      ],
+      "foundation": [
+        5,
+        173,
+        293,
+        173,
+        147.5,
+        244
+      ],
+      "frontSkewSourcePx": -1.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.028169014084507,
+      "civilization": "tang",
+      "age": 1,
+      "canonicalFoundationSource": [
+        5,
+        173,
+        293,
+        173,
+        149,
+        244
+      ]
+    },
+    {
+      "frame": [
+        328,
+        941,
+        314,
+        274
+      ],
+      "foundation": [
+        5,
+        195,
+        308,
+        195,
+        157,
+        269
+      ],
+      "frontSkewSourcePx": 0.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.0472972972972974,
+      "civilization": "tang",
+      "age": 2,
+      "canonicalFoundationSource": [
+        5,
+        195,
+        308,
+        195,
+        156.5,
+        269
+      ]
+    },
+    {
+      "frame": [
+        650,
+        880,
+        313,
+        336
+      ],
+      "foundation": [
+        5,
+        255,
+        307,
+        255,
+        155.5,
+        330
+      ],
+      "frontSkewSourcePx": -0.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.013333333333333,
+      "civilization": "tang",
+      "age": 3,
+      "canonicalFoundationSource": [
+        5,
+        255,
+        307,
+        255,
+        156,
+        330
+      ]
+    },
+    {
+      "frame": [
+        12,
+        1294,
+        303,
+        261
+      ],
+      "foundation": [
+        5,
+        183,
+        297,
+        183,
+        149.5,
+        255
+      ],
+      "frontSkewSourcePx": -1.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.0277777777777777,
+      "civilization": "ottoman",
+      "age": 1,
+      "canonicalFoundationSource": [
+        5,
+        183,
+        297,
+        183,
+        151,
+        255
+      ]
+    },
+    {
+      "frame": [
+        324,
+        1265,
+        316,
+        294
+      ],
+      "foundation": [
+        5,
+        213,
+        310,
+        213,
+        157,
+        288
+      ],
+      "frontSkewSourcePx": -0.5,
+      "leftRightYDifference": 0,
+      "ratio": 2.033333333333333,
+      "civilization": "ottoman",
+      "age": 2,
+      "canonicalFoundationSource": [
+        5,
+        213,
+        310,
+        213,
+        157.5,
+        288
+      ]
+    },
+    {
+      "frame": [
+        649,
+        1223,
+        318,
+        338
+      ],
+      "foundation": [
+        5,
+        256,
+        312,
+        255,
+        158,
+        333
+      ],
+      "frontSkewSourcePx": -0.5,
+      "leftRightYDifference": -1,
+      "ratio": 1.9806451612903226,
+      "civilization": "ottoman",
+      "age": 3,
+      "canonicalFoundationSource": [
+        5,
+        255.5,
+        312,
+        255.5,
+        158.5,
+        333
+      ]
+    }
+  ],
+  "rejectedTrials": [
+    {
+      "file": "/tmp/imperia-towncenter-rejected-v3.png",
+      "originalGeneratedPath": "generation-record:exec-c54e3c2e-fd2d-49b6-85cf-d63c48fd6a12.png",
+      "reason": "Preserved oblique rectangular camera from the old reference; not consumed by game.",
+      "prompt": "Use case: historical-scene. Asset type: corrected ORIGINAL isometric RTS town-center atlas with true transparent alpha, intended for a fixed 2:1 isometric game grid.\nReference images: Image 1 is the existing town-center atlas: preserve its FIVE civilization identities and THREE distinct ages, its detailed realistic materials and architecture. Images 2-4 are the game's other buildings: match their camera angle, daylight, fine natural painterly sprite material. Image 5 is STRICT GEOMETRY ONLY: fifteen perfectly symmetric SQUARE ground footprints projected into identical 2:1 diamonds. Its colors/guide lines are NOT final art.\nCreate a NEW high resolution 1536x2560 transparent PNG atlas, 3 columns by 5 rows, exactly 15 fully detached complete town-center buildings. Row order top to bottom Roman, Mongol, Persian, Tang Chinese, Ottoman. Column order age I, age II, age III. Align each sprite with the corresponding diamond of Image 5. Within each 512x512 cell: ground center at (256,384), LEFT ground vertex=(96,384), RIGHT=(416,384), FRONT=(256,464), REAR=(256,304). Draw each building on a thin flat natural stone or compacted-earth square platform following those four vertices EXACTLY. Every foundation is a SQUARE in world X/Y, not a long rectangle. Both visible ground-edge diagonals have equal length and slopes +0.5 and -0.5. Front/back vertices lie on the same vertical axis through the center. Left/right corners are at identical height. This is essential, the previous atlas had skewed rectangular bases and its buildings appeared rotated away from the game's grid.\nCamera: TRUE symmetric 2:1 orthographic isometric looking directly along the diagonal between X and Y. Both visible building faces have equal projected orientation and width where the building footprint is square. All vertical columns/walls MUST remain perfectly vertical. No perspective convergence, asymmetric 3/4 oblique camera, Dutch angle, skewed foundation, sideways shifted front corner, rotated buildings or elongated platform.\nBuildings centered on the same square ground foundation. Roman terracotta tiles pale stone red cloth, Mongol cream-felt yurt with blue cloth and timber, Persian limestone/adobe turquoise bands with age III columns/lion details, Tang curved dark tiles red timber and ivory panels, Ottoman terracotta/wood to stone arcades and teal domes. Age I modest, II more masonry and ornament, III rich monumental but compact. Keep recognizable existing designs. Place steps on one front-side edge inside the square platform, not protruding out of its bounds, and keep the literal FRONT corner of the platform clearly visible and centered. Decorative ornaments must stay inside platform/cell. Upper-left warm daylight, realistic grainy stone joints, roof tiles, felt folds, restrained contact shadow only. Keep small transparent gutters between all sprites. No people, landscape, trees, detached props, text, labels, watermark, guide lines, floating flags, or opaque backdrop. The geometry guide's crosshair/vertical strokes must not appear in final output. Final art must be richly detailed semi-realistic, not flat vector or plastic cartoon. Preserve true alpha background."
+    },
+    {
+      "file": "/tmp/imperia-towncenter-rejected-v4.png",
+      "originalGeneratedPath": "generation-record:exec-52a28af3-e3e5-4741-b924-8575e7da05c9.png",
+      "reason": "Despite guide target, preserved old reference camera; not consumed by game.",
+      "prompt": "Use case: precise-object-edit, production 2D isometric RTS game sprites.\nImage 1 is the EDIT TARGET and its full 1536x2560 canvas, 3 columns by 5 rows layout, fifteen perfectly symmetric 2:1 foundation diamonds are strict invariants. Replace its fifteen faint guide columns/crosshairs with detailed historical town-center buildings. Keep the exact foundation shape, position, four corners, and equal-width/depth square world footprint from Image 1. Convert each guide diamond to a thin flat natural stone foundation, not a floating thick platform. Do not move, rotate or skew any diamond. Remove all guide strokes.\nImage 2 is ONLY a supporting ARCHITECTURE/MATERIAL reference: its existing old layout and oblique rectangle camera are WRONG and MUST NOT be copied. It shows the fifteen required cultural designs/ages: rows top-to-bottom Roman, Mongol, Persian, Tang, Ottoman; columns age I, II, III. Preserve those identities and rich semi-realistic details, but rebuild their CAMERA to match Image 1. Image 3 is only a supporting fine-material reference for compatibility with the game.\nThe result must have exactly15 separate building sprites on Image1's foundations. Work strictly in image1's canvas/composition, not image2's canvas. Entirely transparent alpha background and transparent gutters. True2:1 orthographic isometric camera, viewing the EXACT45degree diagonal between world X and Y, so both floor-side diagonal slopes are equal and opposite. Both visible building faces must match that camera. Vertical walls and columns stay perfectly vertical, no perspective convergence or lean.\nEach512x512cell's floor diamond has rear=(256,304), right=(416,384), front=(256,464), left=(96,384). Literal front/back vertices align on x256. Left/right vertices BOTH y384. This exact diamond is visible around the whole building. The main building sits centered on the foundation; roof can be rectangular or round according to culture but walls/floor follow same orthographic ground orientation. Place a small entry stair along the left FRONT side INSIDE the exact diamond, no notch/protrusion beyond perimeter. Keep literal FRONT diamond corner clearly visible at center x256.\nRoman warm plaster/red tiled roof evolves into ornate columned stone hall. Mongol blue-band cream-felt yurt with timber entrance evolves into gold ornaments, same square floor foundation. Persian adobe/limestone turquoise bands evolves into fine stone columns with lion sculpture details inside the square footprint. Tang dark grey curved tile roofs red timber/ivory panels evolves into multilevel hall. Ottoman timber/tiles evolves into stone arcades and teal dome. Preserve source material appeal at fine sprite detail. Age I modest, age II richer masonry, ageIII splendid and taller. Maintain same thin320pxwide square floor foundation for ALL15, no temples sprawling outside pads.\nWarm upper-left natural daylight, individual roof tiles, weathered stone joints, wood grain, felt and cloth folds, muted realistic materials. Buildings should be compact and fit cells fully with transparent margins. No people, extra trees/terrain, external flags, labels/text/numbers/grid borders/watermarks or visible guide lines. No opaque background, checkerboard, flat vectors or cartoons. Only edit Image1 as target, using Image2/3 as artistic references."
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed."
+}

@@ -1,0 +1,1005 @@
+{
+  "schemaVersion": 1,
+  "name": "Regavo realistic wildlife atlas v3",
+  "createdOn": "2026-10-09",
+  "generator": "Built-in image_gen",
+  "file": "wildlife-v3.png",
+  "references": [
+    {
+      "file": "nature-v2.png",
+      "role": "Original project resource atlas used for coherent rendering and daylight style",
+      "sha256": "27c1aac244fab8e5b911e10107bc99e8d41c8d895297b63b273a49e6e4929d70"
+    }
+  ],
+  "generation": [
+    {
+      "kind": "generate",
+      "prompt": "Use case: historical-scene\nAsset type: ONE production wildlife sprite atlas for Regavo, a portrait PNG RGBA sheet with 5 equal columns and 7 equal rows, 35 isolated animal cutouts. Reference image 1 is the project's original wildlife CONCEPT STYLE REFERENCE for natural anatomy, fur colors, species markers only, not a layout to reproduce. Reference image 2 is current in-game nature style reference for coherent semi-realistic painterly material rendering and upper-left daylight.\nPrimary request: create realistic wild herbivores and a wild boar, drawn as original detailed hand-painted game miniatures, with anatomically correct slender legs, hooves, fur, tiny natural eyes, and recognizable antlers or horns. No plastic/cartoon anatomy, no flat vectors, no logo-like silhouettes, no large cute eyes. Orthographic isometric camera looks down about30degrees, same fixed camera and lighting for every sprite, ground footprint2:1. All species stand without saddles, harnesses or props.\nEXACT GRID: 5columns ×7rows, invisible equal-size cells, ideally 1500×2100px, eachcell300×300px. Each creature entirely within center72% of its cell, with minimum40px transparent gutters on all sides; NO part of horns, antlers, tail or shadow touches a cell boundary. Ground pivot local(x150,y240), same pivot in everycell. Body centers align consistently across each row. Plenty of empty transparent space is intentional: do not enlarge sprites to fill the sheet. Each deer silhouette with antlers about190px tall×195wide; boar about120tall×195wide; keep natural relative body sizes and restrained antlers.\nROWS from top to bottom must be exactly: row1 deer, mature red-deer stag with red-brown thick fur and modest branching antlers; row2 boar, stocky dark-bristled wild boar with low wedge-shaped head and small natural tusks; row3 gazelle, slender tan gazelle with white belly, dark flankstripe and slim lyrate ribbed horns; row4 argali, robust brown wild mountain sheep ram with large curled horns; row5 goat, wild bezoar goat with coarse tan-brown fur, shortbeard, two backward-curving ridged horns; row6 fallow, spotted fallow stag with recognizable compact PALMATE antlers; row7 sika, smaller reddish spotted sika stag with narrow branching antlers. Exactly5creatures perrow, same species and consistent coat/antlers within row.\nCOLUMNS from left to right must be exactly: column1 SOUTH-EAST, FRONTthree-quarter body and head facing lower-right; column2 SOUTH-WEST, FRONTthree-quarter facing lower-left; column3 NORTH-EAST, REARthree-quarter view, back/rump visible nearestcamera and head facing upper-right AWAYfromcamera; column4 NORTH-WEST, REARthree-quarter view, back/rump visible nearestcamera and head facing upper-left AWAYfromcamera; column5 same species lying motionless on its side in a hunting carcass pose, legs folded or naturally relaxed, closed eyes, no blood, no wounds, no gore. Directions change the animal's ground heading only, NEVER tilt or rotate the entire animal image in the screenplane. Four standing orientations, NOT four duplicated front-facing sideposes. Lying fifthcolumn is clearly separate from standing poses.\nMaterials: fine short fur, bristles forboar, horn ridges, muted warm natural earth palette; daylight top-left with soft natural volume, mild contact shadow directly underhooves, readable natural silhouettes at80px scale. Match restrained realism of project references.\nBackground: REAL transparent alpha outside each creature. No opaque backdrop, no grass, no soil platform, no scenery or landscape, no cell border/gridline, no letters, no species labels, no text or watermark. Do not draw checkerboard. No antler clipping or cross-cell overlap. Keep all 35creatures separated by large transparent gutters.",
+      "output": "generation-record:exec-2e6e9786-6df6-49c6-b586-9ec4dce49625.png",
+      "accepted": false,
+      "reason": "Correct35species/views but antlers extend too close to row boundaries."
+    },
+    {
+      "kind": "layout edit",
+      "prompt": "Use case: precise-object-edit\nImage 1 is the EDIT TARGET: wildlife atlas. Preserve ALL 35 existing animal poses, species, coat patterns, natural anatomy, horn shapes, camera, daylight, and ordering. Change ONLY scale/placement/transparency cleanup.\nMake the same transparent 5-column×7-row atlas, same portrait5:7aspectratio, all equal square invisible cells. Each row contains exactly5animals: frontSE,frontSW,rearNE,rearNW,lyingonitside. Roworder reddeer,boar,gazelle,argali,wildbezoargoat,fallow,sika. Do not change creature identity or heading.\nReduce ALL standing creatures to 65% of their current size, and each lying creature to 62% of its current size. Then center each smaller cutout in its own equalcell. The center of hooves/base touches local50%cellwidth and82%cellheight. NOTHING exceeds75%ofcellwidth or75%ofcellheight INCLUDING the antlers. Minimum12%cell transparent empty margin allaround. Keep the complete antlers/horns, but scaled down with the creature. Most importantly leave broad uninterrupted fullytransparent horizontal andvertical gutters between everyrow/column; current antlers nearly touch the next row and this must be fixed. Keep adequate transparent bottom margin. Empty space is essential for the game renderer and must not be filled.\nPreserve realistic detailed fur and bristles, proper hooves and restrained natural eyes, all four orientations and non-graphic lying poses. Remove any colored fringe/haze beyond the animals and retain clean natural cutout edges. Preserve only tiny neutral tight contactshadow beneathfeet, no darkgroundplatform. No red/yellow halos or outlines. Absolutely no blood or wounds. REAL transparent alpha for all background pixels; no checkerboard drawn into pixels, no opaque background, no grass, no baseplatform, no labels,text,gridlines,borders,watermarks. Preserve5:7portraitaspectratio.",
+      "input": "First generated atlas above",
+      "output": "public/art/wildlife-v3.png",
+      "accepted": true
+    }
+  ],
+  "species": [
+    "deer",
+    "boar",
+    "gazelle",
+    "argali",
+    "goat",
+    "fallow",
+    "sika"
+  ],
+  "columns": [
+    "SE",
+    "SW",
+    "NE",
+    "NW",
+    "dead"
+  ],
+  "grid": {
+    "columns": 5,
+    "rows": 7,
+    "requestedPixelDimensions": {
+      "width": 1500,
+      "height": 2100
+    },
+    "notes": "Source PNG is kept unchanged. Runtime samples measured per-creature alpha bounds to avoid antler clipping and compensate for small grid/ground-pivot differences.",
+    "cellWidth": 212,
+    "cellHeight": 212
+  },
+  "rendering": {
+    "canvasWidth": 120,
+    "canvasHeight": 106,
+    "anchorX": 60,
+    "anchorY": 84,
+    "directionSystem": "Screen-facing:0E1SE2S3SW4W5NW6N7NE",
+    "sourceColumnForScreenDirection": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      3,
+      3,
+      2
+    ],
+    "animation": "Four runtime display phases use at most0.5px vertical bob. Atlas provides four standing headings and one lying pose; this is not a full gait animation sheet.",
+    "sourceGeometryMethod": "Read-only4-connected alpha>=24/255 components; one creature per component. Exact bounded source frames sampled at runtime; no saved cropped or raster-edited derivatives."
+  },
+  "verification": {
+    "grassPreview": "Read-only Chrome screenshot over grass-colored CSS background inspected at /tmp/imperia-wildlife-v3-grass.png",
+    "creatureComponents": 35,
+    "completeRows": 7,
+    "headingsPerRow": 5,
+    "allFrameRectsInsideImage": true,
+    "runtimeBrowserQA": {
+      "atlasLoaded": true,
+      "renderedPosePreviews": 35,
+      "screenDirectionsAndDisplayPhases": 224,
+      "visibleAlphaPixelsOnCanvasBorder": 0,
+      "unknownSpeciesReturnsFallback": true,
+      "dimensions": [
+        120,
+        106
+      ],
+      "anchor": [
+        60,
+        84
+      ],
+      "grassPreview": "/tmp/imperia-wildlife-runtime-grass.png",
+      "notes": "Read-only Chrome display inspected on grass-colored background at actual runtime size. PNG original remains unchanged."
+    }
+  },
+  "rights": {
+    "status": "AI-generated raster assets",
+    "exclusivityGuaranteed": false,
+    "publicDomainClaim": false,
+    "notes": "Applicable OpenAI terms and law govern output rights. This provenance record does not certify exclusive copyright or absence of third-party claims.",
+    "projectRightsFile": "../../docs/en/RIGHTS-AND-LICENSES.md",
+    "sources": [
+      "https://openai.com/policies/terms-of-use/#content",
+      "https://openai.com/policies/services-agreement/"
+    ]
+  },
+  "sha256": "1a6267ec6f0040f3aea460d19900ceea831f9d4c92c3fb09e7ce69728c7b4000",
+  "pixelDimensions": {
+    "width": 1060,
+    "height": 1484
+  },
+  "frames": [
+    {
+      "type": "deer",
+      "row": 0,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        61,
+        35,
+        130,
+        170
+      ],
+      "visibleAlphaBounds": [
+        63,
+        37,
+        188,
+        202
+      ],
+      "sourceGroundAnchor": [
+        125.5,
+        199
+      ],
+      "displayScale": 0.439759,
+      "componentPixels": 10078
+    },
+    {
+      "type": "deer",
+      "row": 0,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        269,
+        37,
+        120,
+        168
+      ],
+      "visibleAlphaBounds": [
+        271,
+        39,
+        386,
+        202
+      ],
+      "sourceGroundAnchor": [
+        328.5,
+        199
+      ],
+      "displayScale": 0.439759,
+      "componentPixels": 9212
+    },
+    {
+      "type": "deer",
+      "row": 0,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        489,
+        39,
+        101,
+        163
+      ],
+      "visibleAlphaBounds": [
+        491,
+        41,
+        587,
+        199
+      ],
+      "sourceGroundAnchor": [
+        539,
+        196
+      ],
+      "displayScale": 0.439759,
+      "componentPixels": 7707
+    },
+    {
+      "type": "deer",
+      "row": 0,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        667,
+        44,
+        95,
+        158
+      ],
+      "visibleAlphaBounds": [
+        669,
+        46,
+        759,
+        199
+      ],
+      "sourceGroundAnchor": [
+        714,
+        196
+      ],
+      "displayScale": 0.439759,
+      "componentPixels": 7260
+    },
+    {
+      "type": "deer",
+      "row": 0,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        866,
+        107,
+        160,
+        81
+      ],
+      "visibleAlphaBounds": [
+        868,
+        109,
+        1023,
+        185
+      ],
+      "sourceGroundAnchor": [
+        945.5,
+        182
+      ],
+      "displayScale": 0.439759,
+      "componentPixels": 7289
+    },
+    {
+      "type": "boar",
+      "row": 1,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        59,
+        273,
+        127,
+        118
+      ],
+      "visibleAlphaBounds": [
+        61,
+        275,
+        183,
+        388
+      ],
+      "sourceGroundAnchor": [
+        122,
+        385
+      ],
+      "displayScale": 0.431034,
+      "componentPixels": 9270
+    },
+    {
+      "type": "boar",
+      "row": 1,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        267,
+        273,
+        120,
+        118
+      ],
+      "visibleAlphaBounds": [
+        269,
+        275,
+        384,
+        388
+      ],
+      "sourceGroundAnchor": [
+        326.5,
+        385
+      ],
+      "displayScale": 0.431034,
+      "componentPixels": 8917
+    },
+    {
+      "type": "boar",
+      "row": 1,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        486,
+        271,
+        101,
+        120
+      ],
+      "visibleAlphaBounds": [
+        488,
+        273,
+        584,
+        388
+      ],
+      "sourceGroundAnchor": [
+        536,
+        385
+      ],
+      "displayScale": 0.431034,
+      "componentPixels": 7148
+    },
+    {
+      "type": "boar",
+      "row": 1,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        667,
+        274,
+        102,
+        117
+      ],
+      "visibleAlphaBounds": [
+        669,
+        276,
+        766,
+        388
+      ],
+      "sourceGroundAnchor": [
+        717.5,
+        385
+      ],
+      "displayScale": 0.431034,
+      "componentPixels": 7184
+    },
+    {
+      "type": "boar",
+      "row": 1,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        873,
+        291,
+        141,
+        86
+      ],
+      "visibleAlphaBounds": [
+        875,
+        293,
+        1011,
+        374
+      ],
+      "sourceGroundAnchor": [
+        943,
+        371
+      ],
+      "displayScale": 0.431034,
+      "componentPixels": 7528
+    },
+    {
+      "type": "gazelle",
+      "row": 2,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        56,
+        445,
+        121,
+        157
+      ],
+      "visibleAlphaBounds": [
+        58,
+        447,
+        174,
+        599
+      ],
+      "sourceGroundAnchor": [
+        116,
+        596
+      ],
+      "displayScale": 0.4,
+      "componentPixels": 7884
+    },
+    {
+      "type": "gazelle",
+      "row": 2,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        277,
+        448,
+        116,
+        155
+      ],
+      "visibleAlphaBounds": [
+        279,
+        450,
+        390,
+        600
+      ],
+      "sourceGroundAnchor": [
+        334.5,
+        597
+      ],
+      "displayScale": 0.4,
+      "componentPixels": 7520
+    },
+    {
+      "type": "gazelle",
+      "row": 2,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        485,
+        440,
+        98,
+        166
+      ],
+      "visibleAlphaBounds": [
+        487,
+        442,
+        580,
+        603
+      ],
+      "sourceGroundAnchor": [
+        533.5,
+        600
+      ],
+      "displayScale": 0.4,
+      "componentPixels": 6626
+    },
+    {
+      "type": "gazelle",
+      "row": 2,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        667,
+        437,
+        102,
+        169
+      ],
+      "visibleAlphaBounds": [
+        669,
+        439,
+        766,
+        603
+      ],
+      "sourceGroundAnchor": [
+        717.5,
+        600
+      ],
+      "displayScale": 0.4,
+      "componentPixels": 6903
+    },
+    {
+      "type": "gazelle",
+      "row": 2,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        871,
+        507,
+        152,
+        75
+      ],
+      "visibleAlphaBounds": [
+        873,
+        509,
+        1020,
+        579
+      ],
+      "sourceGroundAnchor": [
+        946.5,
+        576
+      ],
+      "displayScale": 0.4,
+      "componentPixels": 6377
+    },
+    {
+      "type": "argali",
+      "row": 3,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        58,
+        665,
+        124,
+        138
+      ],
+      "visibleAlphaBounds": [
+        60,
+        667,
+        179,
+        800
+      ],
+      "sourceGroundAnchor": [
+        119.5,
+        797
+      ],
+      "displayScale": 0.442953,
+      "componentPixels": 10516
+    },
+    {
+      "type": "argali",
+      "row": 3,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        272,
+        666,
+        122,
+        137
+      ],
+      "visibleAlphaBounds": [
+        274,
+        668,
+        391,
+        800
+      ],
+      "sourceGroundAnchor": [
+        332.5,
+        797
+      ],
+      "displayScale": 0.442953,
+      "componentPixels": 10400
+    },
+    {
+      "type": "argali",
+      "row": 3,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        481,
+        654,
+        103,
+        153
+      ],
+      "visibleAlphaBounds": [
+        483,
+        656,
+        581,
+        804
+      ],
+      "sourceGroundAnchor": [
+        532,
+        801
+      ],
+      "displayScale": 0.442953,
+      "componentPixels": 8686
+    },
+    {
+      "type": "argali",
+      "row": 3,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        667,
+        654,
+        106,
+        153
+      ],
+      "visibleAlphaBounds": [
+        669,
+        656,
+        770,
+        804
+      ],
+      "sourceGroundAnchor": [
+        719.5,
+        801
+      ],
+      "displayScale": 0.442953,
+      "componentPixels": 8968
+    },
+    {
+      "type": "argali",
+      "row": 3,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        866,
+        697,
+        161,
+        92
+      ],
+      "visibleAlphaBounds": [
+        868,
+        699,
+        1024,
+        786
+      ],
+      "sourceGroundAnchor": [
+        946,
+        783
+      ],
+      "displayScale": 0.442953,
+      "componentPixels": 9772
+    },
+    {
+      "type": "goat",
+      "row": 4,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        56,
+        846,
+        134,
+        163
+      ],
+      "visibleAlphaBounds": [
+        58,
+        848,
+        187,
+        1006
+      ],
+      "sourceGroundAnchor": [
+        122.5,
+        1003
+      ],
+      "displayScale": 0.425,
+      "componentPixels": 11372
+    },
+    {
+      "type": "goat",
+      "row": 4,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        268,
+        846,
+        128,
+        164
+      ],
+      "visibleAlphaBounds": [
+        270,
+        848,
+        393,
+        1007
+      ],
+      "sourceGroundAnchor": [
+        331.5,
+        1004
+      ],
+      "displayScale": 0.425,
+      "componentPixels": 10975
+    },
+    {
+      "type": "goat",
+      "row": 4,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        481,
+        849,
+        102,
+        164
+      ],
+      "visibleAlphaBounds": [
+        483,
+        851,
+        580,
+        1010
+      ],
+      "sourceGroundAnchor": [
+        531.5,
+        1007
+      ],
+      "displayScale": 0.425,
+      "componentPixels": 8589
+    },
+    {
+      "type": "goat",
+      "row": 4,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        669,
+        849,
+        105,
+        164
+      ],
+      "visibleAlphaBounds": [
+        671,
+        851,
+        771,
+        1010
+      ],
+      "sourceGroundAnchor": [
+        721,
+        1007
+      ],
+      "displayScale": 0.425,
+      "componentPixels": 8665
+    },
+    {
+      "type": "goat",
+      "row": 4,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        866,
+        900,
+        163,
+        93
+      ],
+      "visibleAlphaBounds": [
+        868,
+        902,
+        1026,
+        990
+      ],
+      "sourceGroundAnchor": [
+        947,
+        987
+      ],
+      "displayScale": 0.425,
+      "componentPixels": 8451
+    },
+    {
+      "type": "fallow",
+      "row": 5,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        58,
+        1040,
+        130,
+        171
+      ],
+      "visibleAlphaBounds": [
+        60,
+        1042,
+        185,
+        1208
+      ],
+      "sourceGroundAnchor": [
+        122.5,
+        1205
+      ],
+      "displayScale": 0.431953,
+      "componentPixels": 10403
+    },
+    {
+      "type": "fallow",
+      "row": 5,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        272,
+        1038,
+        123,
+        173
+      ],
+      "visibleAlphaBounds": [
+        274,
+        1040,
+        392,
+        1208
+      ],
+      "sourceGroundAnchor": [
+        333,
+        1205
+      ],
+      "displayScale": 0.431953,
+      "componentPixels": 10439
+    },
+    {
+      "type": "fallow",
+      "row": 5,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        486,
+        1042,
+        102,
+        168
+      ],
+      "visibleAlphaBounds": [
+        488,
+        1044,
+        585,
+        1207
+      ],
+      "sourceGroundAnchor": [
+        536.5,
+        1204
+      ],
+      "displayScale": 0.431953,
+      "componentPixels": 8011
+    },
+    {
+      "type": "fallow",
+      "row": 5,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        667,
+        1042,
+        101,
+        168
+      ],
+      "visibleAlphaBounds": [
+        669,
+        1044,
+        765,
+        1207
+      ],
+      "sourceGroundAnchor": [
+        717,
+        1204
+      ],
+      "displayScale": 0.431953,
+      "componentPixels": 8218
+    },
+    {
+      "type": "fallow",
+      "row": 5,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        871,
+        1102,
+        159,
+        92
+      ],
+      "visibleAlphaBounds": [
+        873,
+        1104,
+        1027,
+        1191
+      ],
+      "sourceGroundAnchor": [
+        950,
+        1188
+      ],
+      "displayScale": 0.431953,
+      "componentPixels": 8153
+    },
+    {
+      "type": "sika",
+      "row": 6,
+      "column": 0,
+      "heading": "SE",
+      "alive": true,
+      "sourceRect": [
+        59,
+        1246,
+        121,
+        168
+      ],
+      "visibleAlphaBounds": [
+        61,
+        1248,
+        177,
+        1411
+      ],
+      "sourceGroundAnchor": [
+        119,
+        1408
+      ],
+      "displayScale": 0.391566,
+      "componentPixels": 9111
+    },
+    {
+      "type": "sika",
+      "row": 6,
+      "column": 1,
+      "heading": "SW",
+      "alive": true,
+      "sourceRect": [
+        278,
+        1245,
+        118,
+        170
+      ],
+      "visibleAlphaBounds": [
+        280,
+        1247,
+        393,
+        1412
+      ],
+      "sourceGroundAnchor": [
+        336.5,
+        1409
+      ],
+      "displayScale": 0.391566,
+      "componentPixels": 8792
+    },
+    {
+      "type": "sika",
+      "row": 6,
+      "column": 2,
+      "heading": "NE",
+      "alive": true,
+      "sourceRect": [
+        485,
+        1250,
+        97,
+        165
+      ],
+      "visibleAlphaBounds": [
+        487,
+        1252,
+        579,
+        1412
+      ],
+      "sourceGroundAnchor": [
+        533,
+        1409
+      ],
+      "displayScale": 0.391566,
+      "componentPixels": 7126
+    },
+    {
+      "type": "sika",
+      "row": 6,
+      "column": 3,
+      "heading": "NW",
+      "alive": true,
+      "sourceRect": [
+        667,
+        1249,
+        104,
+        166
+      ],
+      "visibleAlphaBounds": [
+        669,
+        1251,
+        768,
+        1412
+      ],
+      "sourceGroundAnchor": [
+        718.5,
+        1409
+      ],
+      "displayScale": 0.391566,
+      "componentPixels": 7333
+    },
+    {
+      "type": "sika",
+      "row": 6,
+      "column": 4,
+      "heading": "dead",
+      "alive": false,
+      "sourceRect": [
+        863,
+        1315,
+        162,
+        87
+      ],
+      "visibleAlphaBounds": [
+        865,
+        1317,
+        1022,
+        1399
+      ],
+      "sourceGroundAnchor": [
+        943.5,
+        1396
+      ],
+      "displayScale": 0.391566,
+      "componentPixels": 7875
+    }
+  ],
+  "alphaVerification": {
+    "hasAlpha": true,
+    "zeroAlphaPixels": 1055625,
+    "partialAlphaPixels": 516932,
+    "fullyOpaquePixels": 483,
+    "sourceGeometryAlphaThreshold": 24,
+    "coloredLowAlphaFringeMax": 6,
+    "redPixelsWithAlphaOver16": 0,
+    "notes": "Generated PNG contains low-alpha colored edge residue retained unchanged. It is not blood; read-only browser display over grass inspected without visible red outline."
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

@@ -1,0 +1,1867 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-10-09",
+  "alphaValidation": {
+    "tools": {
+      "outsideSampleRGBA": [
+        69,
+        43,
+        31,
+        0
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "hotRedYellowPixels": 0
+    },
+    "carry": {
+      "alphaRange": [
+        0,
+        255
+      ],
+      "hotRedYellowPixels": 8512,
+      "maxHotPixelAlpha": 3
+    },
+    "wood": {
+      "alphaRange": [
+        0,
+        255
+      ],
+      "hotRedYellowPixels": 9098,
+      "maxHotPixelAlpha": 3
+    },
+    "interpretation": "RGB below transparent/near-transparent alpha is visible in some source previews; premultiplied browser compositing on a green matte shows no material red/yellow fringe or opaque background."
+  },
+  "assetType": "Original supplemental unladen and resource carry unit sprites",
+  "generator": "OpenAI built-in image_gen",
+  "originalImagesPreserved": true,
+  "offlineRasterEditing": false,
+  "references": [
+    "public/art/units-action-v1-persian.png",
+    "public/art/units-action-v1-tang.png",
+    "public/art/units-state-v2-carry.png"
+  ],
+  "rights": {
+    "provenance": "New AI-generated artwork using original project references. No downloaded third-party game art, logos or textures.",
+    "usage": "Project use and adaptation follow the applicable generator terms. This manifest records provenance and does not promise exclusive copyright or uniqueness of AI output.",
+    "exclusivityGuaranteed": false
+  },
+  "runtime": {
+    "helper": "src/render/units.ts",
+    "pixelRatio": 4,
+    "sourceResolutionsPreserved": true,
+    "sourceIsolation": "Native-resolution runtime Canvas alpha components remove tiny distant fragments from neighboring atlas rows. Small nearby hair/weapon details and all main actor components are retained without limb transforms. Original PNG pixels remain unchanged.",
+    "output": "Canvas alpha-trimmed at runtime with 2 logical pixels of padding; physical anchors adjusted by trim offset.",
+    "canvasDimensions": "Actual cropped pixel dimensions; logicalWidth/Height are canvas.width/height divided by4. Internal human/horse pose canvas128×136,pivot64/112; elephant176×176,pivot88/150 with extra overhead to retain spear tips during motion. Crop adjusts final physical anchors automatically.",
+    "logicalBodyHeight": {
+      "human": 48,
+      "horse": 72,
+      "heavyCavalry": 76,
+      "elephant": 100
+    },
+    "cacheLimits": {
+      "sprites": 192,
+      "poses": 64,
+      "portraits": 24
+    },
+    "sampling": "Source sampled once with high-quality smoothing into DPR4 pose. Complete poses blitted1:1physical pixels without rotation/warping or limb/head masks. Whole-motion fallback snaps translation to physical pixels.",
+    "teamMarker": "Prototype ground pennant removed from current v7 runtime at user request; no per-unit flag.",
+    "carry": "Only explicit carry action uses closed sack or authored bundle. Wood uses separate20-view woodsheet. Food/meat/gold/stone use same closed sack with small runtime material tags.",
+    "portrait": "Direct high-resolution source sampling; idle Persian/Tang use tool poses."
+  },
+  "animationCoverage": {
+    "authoredWalkingContacts": [
+      "villager:roman",
+      "villager:mongol",
+      "villager:persian",
+      "villager:tang",
+      "villager:ottoman",
+      "spear",
+      "sword",
+      "archer",
+      "legionary"
+    ],
+    "authoredWorkContacts": [
+      "villager:mine",
+      "villager:chop",
+      "villager:attack",
+      "villager:hunt"
+    ],
+    "authoredSingleWorkPoses": [
+      "villager:build",
+      "villager:harvest"
+    ],
+    "newCarryHeadings": 20,
+    "newWoodHeadings": 20,
+    "newUnladenHeadings": 24,
+    "sourceHeadings": [
+      "SE",
+      "SW",
+      "NE",
+      "NW"
+    ],
+    "screenDirectionMapping": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      3,
+      2,
+      2
+    ],
+    "limitations": [
+      "Two source stride contacts are not a full authored gait cycle; contact differences vary by heading.",
+      "Other special infantry, mounted units, siege and carry use restrained whole-silhouette translation or attack recoil while keeping the whole actor intact.",
+      "No procedural limb slicing, head separation, joint warping or full-body rotation.",
+      "Age currently uses the same original unit sprite per class; architecture has separate age artwork.",
+      "Resource sack tags are runtime symbols rather than five separate authored resource-load sheets."
+    ]
+  },
+  "assets": [
+    {
+      "file": "units-state-v2-tools.png",
+      "source": "public/art/units-state-v2-tools.png",
+      "width": 1024,
+      "height": 1536,
+      "actualRows": 6,
+      "columns": 4,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "cornerAlpha": 0,
+      "transparentPixels": 1054677,
+      "sha256": "4bbaff2dbab9e5c141fdf420599a05ab7ae3460c318a2ac7a73d8af1c6488bbb",
+      "frames": [
+        [
+          81,
+          21,
+          128,
+          224,
+          64,
+          215.4
+        ],
+        [
+          328,
+          23,
+          128,
+          222,
+          64,
+          213.45
+        ],
+        [
+          584,
+          20,
+          148,
+          228,
+          74,
+          219.3
+        ],
+        [
+          801,
+          22,
+          150,
+          227,
+          75,
+          218.32
+        ],
+        [
+          75,
+          265,
+          133,
+          229,
+          66.5,
+          220.28
+        ],
+        [
+          327,
+          266,
+          138,
+          228,
+          69,
+          219.3
+        ],
+        [
+          589,
+          264,
+          149,
+          233,
+          74.5,
+          224.18
+        ],
+        [
+          810,
+          265,
+          150,
+          233,
+          75,
+          224.18
+        ],
+        [
+          69,
+          510,
+          144,
+          231,
+          72,
+          222.22
+        ],
+        [
+          320,
+          511,
+          145,
+          230,
+          72.5,
+          221.25
+        ],
+        [
+          588,
+          511,
+          152,
+          231,
+          76,
+          222.22
+        ],
+        [
+          816,
+          511,
+          150,
+          236,
+          75,
+          227.1
+        ],
+        [
+          71,
+          758,
+          134,
+          229,
+          67,
+          220.28
+        ],
+        [
+          327,
+          755,
+          130,
+          234,
+          65,
+          225.15
+        ],
+        [
+          581,
+          756,
+          147,
+          229,
+          73.5,
+          220.28
+        ],
+        [
+          813,
+          756,
+          155,
+          232,
+          77.5,
+          223.2
+        ],
+        [
+          67,
+          1011,
+          142,
+          239,
+          71,
+          230.03
+        ],
+        [
+          331,
+          1009,
+          131,
+          243,
+          65.5,
+          233.93
+        ],
+        [
+          588,
+          1010,
+          158,
+          246,
+          79,
+          236.85
+        ],
+        [
+          808,
+          1010,
+          161,
+          246,
+          80.5,
+          236.85
+        ],
+        [
+          72,
+          1269,
+          142,
+          244,
+          71,
+          234.9
+        ],
+        [
+          332,
+          1269,
+          126,
+          243,
+          63,
+          233.93
+        ],
+        [
+          587,
+          1269,
+          154,
+          250,
+          77,
+          240.75
+        ],
+        [
+          814,
+          1267,
+          158,
+          251,
+          79,
+          241.72
+        ]
+      ],
+      "rowBodyHeights": [
+        220.25,
+        225.75,
+        227,
+        226,
+        238.5,
+        242
+      ],
+      "bodyHeight": 229.91666666666666,
+      "majorComponents": 24,
+      "runtimeBodyHeights": [
+        225,
+        225,
+        225,
+        240,
+        240,
+        240
+      ],
+      "prompt": "Asset: original production sprites for a 2D isometric historical RTS. Create a TRUE transparent alpha PNG with EXACTLY 4 columns and 6 rows (24 individual full-body worker sprites). Use attached original Persian and Tang action sheets as precise identity/clothes/material/style references. Same adult natural anatomy, textured linen/leather/steel/wood, mature small heads, soft upper-left lighting, consistent orthographic30-degree isometric camera. No toy/chibi/cartoon/paper dolls, no ground/background/text/grid/labels/watermarks.\nColumns ALWAYS SE front facing lower-right, SW front facing lower-left, NE true back facing upper-right, NW true back facing upper-left. Rotate the entire actor consistently. Each complete actor plus tool stays wholly inside its cell; wide transparent safe gutters; feet centered at84% cell height. Uniform body size in all cells.\nRows EXACT order:\n1 PERSIAN IDLE: same bearded Persian man in rust-brown long tunic with restrained gold hem, flat plain soft cap, dark trousers/leather boots. Feet naturally shoulder-width apart, relaxed standing stance, holding one compact wooden-handled PICKAXE LOW at his right side. Tool resting downward, not above head. EMPTY hands except tool. NO basket, food, sack, bundle, grain.\n2 SAME PERSIAN WALK CONTACT A: left leg clearly forward and right leg back, natural counter-swing, same compact pickaxe held low beside thigh, NOTHING being carried except tool.\n3 SAME PERSIAN WALK CONTACT B: right leg clearly forward and left leg back, exactly opposite stride to row2, identical character/outfit/tool/scale.\n4 TANG IDLE: same East Asian Tang man in muted blue-gray work tunic, dark brown trousers/boots, brown belt and tied black topknot. Feet naturally shoulder-width apart, relaxed standing stance, holding a compact wooden-handled HOE or SPADE LOW at his right side. EMPTY hands except tool. NO timber, basket, food, sack, grain.\n5 SAME TANG WALK CONTACT A: left leg forward/right leg back, natural counter-swing, same hoe/spade low beside thigh, NOTHING being carried except tool.\n6 SAME TANG WALK CONTACT B: right leg forward/left leg back, exactly opposite stride to row5, identical character/outfit/tool/scale.\nDo not omit or merge rows. Idle rows stand normally; walk pairs visibly show the two opposite leg positions with bent knees and heel/toe placement. Do not reuse any food baskets or timber bundles from references. No work strike poses; these are unladen villagers idle or traveling between orders. Render detailed historical materials faithful to reference. Only extremely faint tight contact shadows.",
+      "sourcePixelsUnmodified": true,
+      "frameFormat": [
+        "sourceX",
+        "sourceY",
+        "sourceWidth",
+        "sourceHeight",
+        "localAnchorX",
+        "localAnchorY"
+      ],
+      "rows": [
+        {
+          "civilization": "persian",
+          "pose": "idle"
+        },
+        {
+          "civilization": "persian",
+          "pose": "walk-contact-A"
+        },
+        {
+          "civilization": "persian",
+          "pose": "walk-contact-B"
+        },
+        {
+          "civilization": "tang",
+          "pose": "idle"
+        },
+        {
+          "civilization": "tang",
+          "pose": "walk-contact-A"
+        },
+        {
+          "civilization": "tang",
+          "pose": "walk-contact-B"
+        }
+      ],
+      "actualFrames": [
+        {
+          "row": 0,
+          "civilization": "persian",
+          "pose": "idle",
+          "heading": "SE",
+          "rect": [
+            81,
+            21,
+            128,
+            224
+          ],
+          "localGroundAnchor": [
+            64,
+            215.4
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "persian",
+          "pose": "idle",
+          "heading": "SW",
+          "rect": [
+            328,
+            23,
+            128,
+            222
+          ],
+          "localGroundAnchor": [
+            64,
+            213.45
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "persian",
+          "pose": "idle",
+          "heading": "NE",
+          "rect": [
+            584,
+            20,
+            148,
+            228
+          ],
+          "localGroundAnchor": [
+            74,
+            219.3
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "persian",
+          "pose": "idle",
+          "heading": "NW",
+          "rect": [
+            801,
+            22,
+            150,
+            227
+          ],
+          "localGroundAnchor": [
+            75,
+            218.32
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "persian",
+          "pose": "walk-contact-A",
+          "heading": "SE",
+          "rect": [
+            75,
+            265,
+            133,
+            229
+          ],
+          "localGroundAnchor": [
+            66.5,
+            220.28
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "persian",
+          "pose": "walk-contact-A",
+          "heading": "SW",
+          "rect": [
+            327,
+            266,
+            138,
+            228
+          ],
+          "localGroundAnchor": [
+            69,
+            219.3
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "persian",
+          "pose": "walk-contact-A",
+          "heading": "NE",
+          "rect": [
+            589,
+            264,
+            149,
+            233
+          ],
+          "localGroundAnchor": [
+            74.5,
+            224.18
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "persian",
+          "pose": "walk-contact-A",
+          "heading": "NW",
+          "rect": [
+            810,
+            265,
+            150,
+            233
+          ],
+          "localGroundAnchor": [
+            75,
+            224.18
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "walk-contact-B",
+          "heading": "SE",
+          "rect": [
+            69,
+            510,
+            144,
+            231
+          ],
+          "localGroundAnchor": [
+            72,
+            222.22
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "walk-contact-B",
+          "heading": "SW",
+          "rect": [
+            320,
+            511,
+            145,
+            230
+          ],
+          "localGroundAnchor": [
+            72.5,
+            221.25
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "walk-contact-B",
+          "heading": "NE",
+          "rect": [
+            588,
+            511,
+            152,
+            231
+          ],
+          "localGroundAnchor": [
+            76,
+            222.22
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "walk-contact-B",
+          "heading": "NW",
+          "rect": [
+            816,
+            511,
+            150,
+            236
+          ],
+          "localGroundAnchor": [
+            75,
+            227.1
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "idle",
+          "heading": "SE",
+          "rect": [
+            71,
+            758,
+            134,
+            229
+          ],
+          "localGroundAnchor": [
+            67,
+            220.28
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "idle",
+          "heading": "SW",
+          "rect": [
+            327,
+            755,
+            130,
+            234
+          ],
+          "localGroundAnchor": [
+            65,
+            225.15
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "idle",
+          "heading": "NE",
+          "rect": [
+            581,
+            756,
+            147,
+            229
+          ],
+          "localGroundAnchor": [
+            73.5,
+            220.28
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "idle",
+          "heading": "NW",
+          "rect": [
+            813,
+            756,
+            155,
+            232
+          ],
+          "localGroundAnchor": [
+            77.5,
+            223.2
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "tang",
+          "pose": "walk-contact-A",
+          "heading": "SE",
+          "rect": [
+            67,
+            1011,
+            142,
+            239
+          ],
+          "localGroundAnchor": [
+            71,
+            230.03
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "tang",
+          "pose": "walk-contact-A",
+          "heading": "SW",
+          "rect": [
+            331,
+            1009,
+            131,
+            243
+          ],
+          "localGroundAnchor": [
+            65.5,
+            233.93
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "tang",
+          "pose": "walk-contact-A",
+          "heading": "NE",
+          "rect": [
+            588,
+            1010,
+            158,
+            246
+          ],
+          "localGroundAnchor": [
+            79,
+            236.85
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "tang",
+          "pose": "walk-contact-A",
+          "heading": "NW",
+          "rect": [
+            808,
+            1010,
+            161,
+            246
+          ],
+          "localGroundAnchor": [
+            80.5,
+            236.85
+          ]
+        },
+        {
+          "row": 5,
+          "civilization": "tang",
+          "pose": "walk-contact-B",
+          "heading": "SE",
+          "rect": [
+            72,
+            1269,
+            142,
+            244
+          ],
+          "localGroundAnchor": [
+            71,
+            234.9
+          ]
+        },
+        {
+          "row": 5,
+          "civilization": "tang",
+          "pose": "walk-contact-B",
+          "heading": "SW",
+          "rect": [
+            332,
+            1269,
+            126,
+            243
+          ],
+          "localGroundAnchor": [
+            63,
+            233.93
+          ]
+        },
+        {
+          "row": 5,
+          "civilization": "tang",
+          "pose": "walk-contact-B",
+          "heading": "NE",
+          "rect": [
+            587,
+            1269,
+            154,
+            250
+          ],
+          "localGroundAnchor": [
+            77,
+            240.75
+          ]
+        },
+        {
+          "row": 5,
+          "civilization": "tang",
+          "pose": "walk-contact-B",
+          "heading": "NW",
+          "rect": [
+            814,
+            1267,
+            158,
+            251
+          ],
+          "localGroundAnchor": [
+            79,
+            241.72
+          ]
+        }
+      ]
+    },
+    {
+      "file": "units-state-v2-carry.png",
+      "source": "public/art/units-state-v2-carry.png",
+      "width": 1122,
+      "height": 1402,
+      "actualRows": 5,
+      "columns": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": 0,
+      "sha256": "747924a1af41ee36b580d02a598bedf70bcce3000c1fc32fb42c3a7432cbb508",
+      "frames": [
+        [
+          69,
+          22,
+          138,
+          254,
+          69,
+          244.65
+        ],
+        [
+          351,
+          21,
+          143,
+          252,
+          71.5,
+          242.7
+        ],
+        [
+          625,
+          23,
+          138,
+          248,
+          69,
+          238.8
+        ],
+        [
+          912,
+          23,
+          147,
+          250,
+          73.5,
+          240.75
+        ],
+        [
+          67,
+          279,
+          134,
+          263,
+          67,
+          253.43
+        ],
+        [
+          361,
+          280,
+          125,
+          255,
+          62.5,
+          245.62
+        ],
+        [
+          625,
+          282,
+          140,
+          258,
+          70,
+          248.55
+        ],
+        [
+          919,
+          282,
+          141,
+          260,
+          70.5,
+          250.5
+        ],
+        [
+          74,
+          552,
+          135,
+          261,
+          67.5,
+          251.47
+        ],
+        [
+          352,
+          552,
+          133,
+          260,
+          66.5,
+          250.5
+        ],
+        [
+          630,
+          553,
+          135,
+          257,
+          67.5,
+          247.57
+        ],
+        [
+          920,
+          554,
+          142,
+          261,
+          71,
+          251.47
+        ],
+        [
+          75,
+          820,
+          129,
+          268,
+          64.5,
+          258.3
+        ],
+        [
+          354,
+          821,
+          135,
+          259,
+          67.5,
+          249.53
+        ],
+        [
+          628,
+          822,
+          133,
+          261,
+          66.5,
+          251.47
+        ],
+        [
+          916,
+          818,
+          143,
+          272,
+          71.5,
+          262.2
+        ],
+        [
+          66,
+          1095,
+          150,
+          268,
+          75,
+          258.3
+        ],
+        [
+          342,
+          1095,
+          156,
+          263,
+          78,
+          253.43
+        ],
+        [
+          622,
+          1097,
+          139,
+          268,
+          69.5,
+          258.3
+        ],
+        [
+          919,
+          1095,
+          142,
+          278,
+          71,
+          268.05
+        ]
+      ],
+      "rowBodyHeights": [
+        246,
+        254,
+        254.75,
+        260,
+        264.25
+      ],
+      "bodyHeight": 255.8,
+      "majorComponents": 20,
+      "runtimeBodyHeights": [
+        246,
+        254,
+        254.75,
+        260,
+        264.25
+      ],
+      "prompt": "Asset: original production carry sprites for a 2D isometric historical RTS, matching our attached original unit sheet identities and tactile materials. TRUE transparent alpha PNG, EXACTLY4columns and5rows (20 isolated full-body villagers). No text/labels/grid/background/ground islands/watermarks. Orthographic30degree isometric game camera, soft upper-left light, natural mature adult anatomy and small head proportion, muted detailed linen/wool/leather, not cartoon/toy/paper dolls.\nColumns ALWAYS SE front lower-right, SW front lower-left, NE true back upper-right, NW true back upper-left. Rotate the FULL body. Each full character and load fits safely inside its own cell with wide clear transparent gutters; feet pivot centered at84%cellheight. Same body size in all rows.\nEvery row depicts that civilization's worker WALKING HOME WITH A LOAD: one leg naturally forward, other behind, arms holding a compact CLOSED BROWN LINEN SACK against lower chest/waist. No visible contents, no food shown, no loose grain, no wood, no rocks; the runtime chooses contents/resource marker. A small empty work-tool handle may be stowed at belt, but hands support the sack. Do not make giant sacks that cover whole actor. Sack is functional worn fabric, modest dimensions.\nROWS EXACTORDER:\n1 Roman Mediterranean villager: off-white knee-length linen tunic, short dark hair/beard, brown leather belt and sandals, original identity from first row reference.\n2 Mongol Central Asian villager: beige wool deel, fur-edged small practical cap, brown trousers and leather boots, original identity from second row reference.\n3 Persian West Asian villager: rust-brown long tunic with understated gold trim, plain soft flat cap, dark trousers/leather boots, original identity from third row reference.\n4 Tang East Asian villager: muted blue-gray work tunic, brown trousers/boots/belt, black hair tied in topknot, original identity from fourth row reference.\n5 Ottoman West Asian villager: cream linen tunic/trousers, modest white headwrap with dark red cap, brown belt and leather boots, original identity from fifth row reference.\nThese carry poses are used ONLY while returning resources to a store; the sack must be CLOSED and contain no visible specific resource. Keep all feet, hands and load intact and use clear back views. Faint tight contact shadows only.",
+      "sourcePixelsUnmodified": true,
+      "frameFormat": [
+        "sourceX",
+        "sourceY",
+        "sourceWidth",
+        "sourceHeight",
+        "localAnchorX",
+        "localAnchorY"
+      ],
+      "rows": [
+        {
+          "civilization": "roman",
+          "pose": "carry-closed-sack"
+        },
+        {
+          "civilization": "mongol",
+          "pose": "carry-closed-sack"
+        },
+        {
+          "civilization": "persian",
+          "pose": "carry-closed-sack"
+        },
+        {
+          "civilization": "tang",
+          "pose": "carry-closed-sack"
+        },
+        {
+          "civilization": "ottoman",
+          "pose": "carry-closed-sack"
+        }
+      ],
+      "actualFrames": [
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-closed-sack",
+          "heading": "SE",
+          "rect": [
+            69,
+            22,
+            138,
+            254
+          ],
+          "localGroundAnchor": [
+            69,
+            244.65
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-closed-sack",
+          "heading": "SW",
+          "rect": [
+            351,
+            21,
+            143,
+            252
+          ],
+          "localGroundAnchor": [
+            71.5,
+            242.7
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-closed-sack",
+          "heading": "NE",
+          "rect": [
+            625,
+            23,
+            138,
+            248
+          ],
+          "localGroundAnchor": [
+            69,
+            238.8
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-closed-sack",
+          "heading": "NW",
+          "rect": [
+            912,
+            23,
+            147,
+            250
+          ],
+          "localGroundAnchor": [
+            73.5,
+            240.75
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-closed-sack",
+          "heading": "SE",
+          "rect": [
+            67,
+            279,
+            134,
+            263
+          ],
+          "localGroundAnchor": [
+            67,
+            253.43
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-closed-sack",
+          "heading": "SW",
+          "rect": [
+            361,
+            280,
+            125,
+            255
+          ],
+          "localGroundAnchor": [
+            62.5,
+            245.62
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-closed-sack",
+          "heading": "NE",
+          "rect": [
+            625,
+            282,
+            140,
+            258
+          ],
+          "localGroundAnchor": [
+            70,
+            248.55
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-closed-sack",
+          "heading": "NW",
+          "rect": [
+            919,
+            282,
+            141,
+            260
+          ],
+          "localGroundAnchor": [
+            70.5,
+            250.5
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-closed-sack",
+          "heading": "SE",
+          "rect": [
+            74,
+            552,
+            135,
+            261
+          ],
+          "localGroundAnchor": [
+            67.5,
+            251.47
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-closed-sack",
+          "heading": "SW",
+          "rect": [
+            352,
+            552,
+            133,
+            260
+          ],
+          "localGroundAnchor": [
+            66.5,
+            250.5
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-closed-sack",
+          "heading": "NE",
+          "rect": [
+            630,
+            553,
+            135,
+            257
+          ],
+          "localGroundAnchor": [
+            67.5,
+            247.57
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-closed-sack",
+          "heading": "NW",
+          "rect": [
+            920,
+            554,
+            142,
+            261
+          ],
+          "localGroundAnchor": [
+            71,
+            251.47
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-closed-sack",
+          "heading": "SE",
+          "rect": [
+            75,
+            820,
+            129,
+            268
+          ],
+          "localGroundAnchor": [
+            64.5,
+            258.3
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-closed-sack",
+          "heading": "SW",
+          "rect": [
+            354,
+            821,
+            135,
+            259
+          ],
+          "localGroundAnchor": [
+            67.5,
+            249.53
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-closed-sack",
+          "heading": "NE",
+          "rect": [
+            628,
+            822,
+            133,
+            261
+          ],
+          "localGroundAnchor": [
+            66.5,
+            251.47
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-closed-sack",
+          "heading": "NW",
+          "rect": [
+            916,
+            818,
+            143,
+            272
+          ],
+          "localGroundAnchor": [
+            71.5,
+            262.2
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-closed-sack",
+          "heading": "SE",
+          "rect": [
+            66,
+            1095,
+            150,
+            268
+          ],
+          "localGroundAnchor": [
+            75,
+            258.3
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-closed-sack",
+          "heading": "SW",
+          "rect": [
+            342,
+            1095,
+            156,
+            263
+          ],
+          "localGroundAnchor": [
+            78,
+            253.43
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-closed-sack",
+          "heading": "NE",
+          "rect": [
+            622,
+            1097,
+            139,
+            268
+          ],
+          "localGroundAnchor": [
+            69.5,
+            258.3
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-closed-sack",
+          "heading": "NW",
+          "rect": [
+            919,
+            1095,
+            142,
+            278
+          ],
+          "localGroundAnchor": [
+            71,
+            268.05
+          ]
+        }
+      ]
+    },
+    {
+      "file": "units-state-v2-wood.png",
+      "source": "public/art/units-state-v2-wood.png",
+      "width": 1122,
+      "height": 1402,
+      "actualRows": 5,
+      "columns": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cornerAlpha": 0,
+      "sha256": "b258cd42eb4024db1ecc5924d51fb4f81d40ff38f369450f77795ab813b7e05b",
+      "frames": [
+        [
+          62,
+          17,
+          157,
+          260,
+          78.5,
+          250.5
+        ],
+        [
+          342,
+          16,
+          153,
+          259,
+          76.5,
+          249.53
+        ],
+        [
+          622,
+          18,
+          156,
+          258,
+          78,
+          248.55
+        ],
+        [
+          897,
+          18,
+          165,
+          259,
+          82.5,
+          249.53
+        ],
+        [
+          66,
+          274,
+          152,
+          270,
+          76,
+          260.25
+        ],
+        [
+          341,
+          273,
+          147,
+          267,
+          73.5,
+          257.32
+        ],
+        [
+          622,
+          278,
+          162,
+          264,
+          81,
+          254.4
+        ],
+        [
+          897,
+          278,
+          165,
+          265,
+          82.5,
+          255.38
+        ],
+        [
+          70,
+          546,
+          152,
+          268,
+          76,
+          258.3
+        ],
+        [
+          338,
+          546,
+          149,
+          268,
+          74.5,
+          258.3
+        ],
+        [
+          627,
+          549,
+          155,
+          264,
+          77.5,
+          254.4
+        ],
+        [
+          896,
+          553,
+          164,
+          264,
+          82,
+          254.4
+        ],
+        [
+          68,
+          818,
+          154,
+          271,
+          77,
+          261.23
+        ],
+        [
+          336,
+          820,
+          158,
+          267,
+          79,
+          257.32
+        ],
+        [
+          623,
+          821,
+          155,
+          268,
+          77.5,
+          258.3
+        ],
+        [
+          902,
+          820,
+          162,
+          275,
+          81,
+          265.12
+        ],
+        [
+          61,
+          1093,
+          162,
+          277,
+          81,
+          267.07
+        ],
+        [
+          337,
+          1093,
+          163,
+          271,
+          81.5,
+          261.23
+        ],
+        [
+          620,
+          1097,
+          162,
+          271,
+          81,
+          261.23
+        ],
+        [
+          897,
+          1096,
+          169,
+          282,
+          84.5,
+          271.95
+        ]
+      ],
+      "rowBodyHeights": [
+        254,
+        261.5,
+        261,
+        265.25,
+        270.25
+      ],
+      "runtimeBodyHeights": [
+        254,
+        261.5,
+        261,
+        265.25,
+        270.25
+      ],
+      "bodyHeight": 262.4,
+      "majorComponents": 20,
+      "prompt": "Create a NEW original transparent-alpha carry WOOD sprite sheet for our historical 2D isometric RTS, using the attached original five-civilization sack-carry sheet solely for exact character/clothing/material/camera references.\nTRUE RGBA PNG with EXACTLY4columns by5rows,20isolated complete figures. Orthographic30degree isometric game camera, same mature realistic adult anatomy and detailed linen/wool/leather as reference, soft upper-left lighting. No toy/cartoon/paper doll look. No background, floor islands, grid, text, labels, modern objects or watermark. Wide safe fully transparent gutters, whole boots/hands/load inside each cell.\nColumns ALWAYS SE front facing lower-right, SW front lower-left, NE true back upper-right, NW true back upper-left. Rotate FULL character and wood load.\nEvery actor WALKING HOME CARRYING WOOD: replace the sack with a COMPACT BUNDLE of three or four SHORT roughly cut logs/firewood pieces tied securely with brown rope, held naturally across forearms at waist or resting on one shoulder supported by one hand. Clearly show cut circular log ends, warm wood grain, dark bark, rope ties. Load fits the worker's proportions, is not giant. No sack, food or basket. One leg naturally forward, other behind, all limbs connected normally. Four views of same load/clothing/identity.\nRows EXACT order matching reference:\n1 Roman Mediterranean man, off-white knee-length linen tunic, short dark hair/beard, brown belt and sandals.\n2 Mongol Central Asian man, beige wool deel, small fur-edged cap, brown trousers and boots.\n3 Persian West Asian man, rust-brown long tunic with understated gold hem, plain soft flat cap, trousers and boots.\n4 Tang East Asian man, muted blue-gray tunic, dark brown trousers/boots, brown belt, black tied topknot.\n5 Ottoman West Asian man, cream linen tunic/trousers, modest white headwrap and dark red cap, brown belt/boots.\nPreserve the original physical body/head proportions and tactile materials. No loose resource objects beside people. No detached tools or hands. Fully isolated sprites with alpha0 all outside figures and carried timber; only tiny faint contact shadows.",
+      "sourcePixelsUnmodified": true,
+      "frameFormat": [
+        "sourceX",
+        "sourceY",
+        "sourceWidth",
+        "sourceHeight",
+        "localAnchorX",
+        "localAnchorY"
+      ],
+      "rows": [
+        {
+          "civilization": "roman",
+          "pose": "carry-wood-bundle"
+        },
+        {
+          "civilization": "mongol",
+          "pose": "carry-wood-bundle"
+        },
+        {
+          "civilization": "persian",
+          "pose": "carry-wood-bundle"
+        },
+        {
+          "civilization": "tang",
+          "pose": "carry-wood-bundle"
+        },
+        {
+          "civilization": "ottoman",
+          "pose": "carry-wood-bundle"
+        }
+      ],
+      "actualFrames": [
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-wood-bundle",
+          "heading": "SE",
+          "rect": [
+            62,
+            17,
+            157,
+            260
+          ],
+          "localGroundAnchor": [
+            78.5,
+            250.5
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-wood-bundle",
+          "heading": "SW",
+          "rect": [
+            342,
+            16,
+            153,
+            259
+          ],
+          "localGroundAnchor": [
+            76.5,
+            249.53
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-wood-bundle",
+          "heading": "NE",
+          "rect": [
+            622,
+            18,
+            156,
+            258
+          ],
+          "localGroundAnchor": [
+            78,
+            248.55
+          ]
+        },
+        {
+          "row": 0,
+          "civilization": "roman",
+          "pose": "carry-wood-bundle",
+          "heading": "NW",
+          "rect": [
+            897,
+            18,
+            165,
+            259
+          ],
+          "localGroundAnchor": [
+            82.5,
+            249.53
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-wood-bundle",
+          "heading": "SE",
+          "rect": [
+            66,
+            274,
+            152,
+            270
+          ],
+          "localGroundAnchor": [
+            76,
+            260.25
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-wood-bundle",
+          "heading": "SW",
+          "rect": [
+            341,
+            273,
+            147,
+            267
+          ],
+          "localGroundAnchor": [
+            73.5,
+            257.32
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-wood-bundle",
+          "heading": "NE",
+          "rect": [
+            622,
+            278,
+            162,
+            264
+          ],
+          "localGroundAnchor": [
+            81,
+            254.4
+          ]
+        },
+        {
+          "row": 1,
+          "civilization": "mongol",
+          "pose": "carry-wood-bundle",
+          "heading": "NW",
+          "rect": [
+            897,
+            278,
+            165,
+            265
+          ],
+          "localGroundAnchor": [
+            82.5,
+            255.38
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-wood-bundle",
+          "heading": "SE",
+          "rect": [
+            70,
+            546,
+            152,
+            268
+          ],
+          "localGroundAnchor": [
+            76,
+            258.3
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-wood-bundle",
+          "heading": "SW",
+          "rect": [
+            338,
+            546,
+            149,
+            268
+          ],
+          "localGroundAnchor": [
+            74.5,
+            258.3
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-wood-bundle",
+          "heading": "NE",
+          "rect": [
+            627,
+            549,
+            155,
+            264
+          ],
+          "localGroundAnchor": [
+            77.5,
+            254.4
+          ]
+        },
+        {
+          "row": 2,
+          "civilization": "persian",
+          "pose": "carry-wood-bundle",
+          "heading": "NW",
+          "rect": [
+            896,
+            553,
+            164,
+            264
+          ],
+          "localGroundAnchor": [
+            82,
+            254.4
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-wood-bundle",
+          "heading": "SE",
+          "rect": [
+            68,
+            818,
+            154,
+            271
+          ],
+          "localGroundAnchor": [
+            77,
+            261.23
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-wood-bundle",
+          "heading": "SW",
+          "rect": [
+            336,
+            820,
+            158,
+            267
+          ],
+          "localGroundAnchor": [
+            79,
+            257.32
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-wood-bundle",
+          "heading": "NE",
+          "rect": [
+            623,
+            821,
+            155,
+            268
+          ],
+          "localGroundAnchor": [
+            77.5,
+            258.3
+          ]
+        },
+        {
+          "row": 3,
+          "civilization": "tang",
+          "pose": "carry-wood-bundle",
+          "heading": "NW",
+          "rect": [
+            902,
+            820,
+            162,
+            275
+          ],
+          "localGroundAnchor": [
+            81,
+            265.12
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-wood-bundle",
+          "heading": "SE",
+          "rect": [
+            61,
+            1093,
+            162,
+            277
+          ],
+          "localGroundAnchor": [
+            81,
+            267.07
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-wood-bundle",
+          "heading": "SW",
+          "rect": [
+            337,
+            1093,
+            163,
+            271
+          ],
+          "localGroundAnchor": [
+            81.5,
+            261.23
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-wood-bundle",
+          "heading": "NE",
+          "rect": [
+            620,
+            1097,
+            162,
+            271
+          ],
+          "localGroundAnchor": [
+            81,
+            261.23
+          ]
+        },
+        {
+          "row": 4,
+          "civilization": "ottoman",
+          "pose": "carry-wood-bundle",
+          "heading": "NW",
+          "rect": [
+            897,
+            1096,
+            169,
+            282
+          ],
+          "localGroundAnchor": [
+            84.5,
+            271.95
+          ]
+        }
+      ]
+    }
+  ],
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

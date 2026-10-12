@@ -1,0 +1,1330 @@
+{
+  "version": 3,
+  "kind": "original-ai-generated-secondary-building-sprite-atlases",
+  "generator": "Built-in image_gen imagegen; transparent_background:true",
+  "sourceImagesPreserved": true,
+  "generatedAt": "2026-10-09",
+  "civilizations": [
+    "roman",
+    "mongol",
+    "persian",
+    "tang",
+    "ottoman"
+  ],
+  "columns": 5,
+  "rows": 4,
+  "referenceRole": "Project-authored civilization concept boards used for style, material and architecture reference only",
+  "rights": "Original generated imagery. No third-party sprites were imported. AI output copyright and exclusivity are not guaranteed; see ../../docs/en/RIGHTS-AND-LICENSES.md. Source PNGs copied unchanged; runtime Canvas drawImage samples measured subject frames.",
+  "frameMeasurement": "Readonly Pillow alpha component measurement at threshold40 and 5px safety gutter; no image editing or exported crops.",
+  "atlases": [
+    {
+      "file": "buildings-v3-a.png",
+      "originalGeneratedPath": "public/art/buildings-v3-a.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "aee03febfd1be988de56ead205975f946560c57ad4adf71992cb739d94d3ff16",
+      "alpha": {
+        "zero": 753302,
+        "partial": 140293,
+        "solid": 679269
+      },
+      "frameAlphaThreshold": 40,
+      "safetyGutter": 5,
+      "frames": [
+        [
+          43,
+          42,
+          248,
+          216
+        ],
+        [
+          355,
+          79,
+          244,
+          186
+        ],
+        [
+          655,
+          57,
+          236,
+          200
+        ],
+        [
+          942,
+          44,
+          244,
+          215
+        ],
+        [
+          1263,
+          60,
+          231,
+          199
+        ],
+        [
+          34,
+          275,
+          268,
+          228
+        ],
+        [
+          348,
+          290,
+          267,
+          212
+        ],
+        [
+          654,
+          281,
+          253,
+          230
+        ],
+        [
+          936,
+          261,
+          269,
+          246
+        ],
+        [
+          1252,
+          266,
+          258,
+          244
+        ],
+        [
+          30,
+          508,
+          283,
+          261
+        ],
+        [
+          335,
+          515,
+          285,
+          263
+        ],
+        [
+          633,
+          512,
+          291,
+          274
+        ],
+        [
+          943,
+          509,
+          267,
+          280
+        ],
+        [
+          1235,
+          510,
+          276,
+          276
+        ],
+        [
+          30,
+          792,
+          273,
+          199
+        ],
+        [
+          344,
+          790,
+          269,
+          203
+        ],
+        [
+          639,
+          793,
+          269,
+          194
+        ],
+        [
+          938,
+          784,
+          274,
+          215
+        ],
+        [
+          1248,
+          796,
+          262,
+          194
+        ]
+      ],
+      "components": [
+        {
+          "area": 51896,
+          "bounds": [
+            638,
+            517,
+            281,
+            264
+          ]
+        },
+        {
+          "area": 47953,
+          "bounds": [
+            948,
+            514,
+            257,
+            270
+          ]
+        },
+        {
+          "area": 46661,
+          "bounds": [
+            35,
+            513,
+            273,
+            251
+          ]
+        },
+        {
+          "area": 46048,
+          "bounds": [
+            1240,
+            515,
+            266,
+            266
+          ]
+        },
+        {
+          "area": 40952,
+          "bounds": [
+            340,
+            520,
+            275,
+            253
+          ]
+        },
+        {
+          "area": 38494,
+          "bounds": [
+            941,
+            266,
+            259,
+            236
+          ]
+        },
+        {
+          "area": 36189,
+          "bounds": [
+            659,
+            286,
+            243,
+            220
+          ]
+        },
+        {
+          "area": 35883,
+          "bounds": [
+            39,
+            280,
+            258,
+            218
+          ]
+        },
+        {
+          "area": 35712,
+          "bounds": [
+            1257,
+            271,
+            248,
+            234
+          ]
+        },
+        {
+          "area": 31453,
+          "bounds": [
+            353,
+            295,
+            257,
+            202
+          ]
+        },
+        {
+          "area": 31191,
+          "bounds": [
+            943,
+            789,
+            264,
+            205
+          ]
+        },
+        {
+          "area": 30574,
+          "bounds": [
+            644,
+            798,
+            259,
+            184
+          ]
+        },
+        {
+          "area": 29892,
+          "bounds": [
+            48,
+            47,
+            238,
+            206
+          ]
+        },
+        {
+          "area": 29804,
+          "bounds": [
+            35,
+            797,
+            263,
+            189
+          ]
+        },
+        {
+          "area": 29317,
+          "bounds": [
+            1253,
+            801,
+            252,
+            184
+          ]
+        },
+        {
+          "area": 28479,
+          "bounds": [
+            349,
+            795,
+            259,
+            193
+          ]
+        },
+        {
+          "area": 28459,
+          "bounds": [
+            947,
+            49,
+            234,
+            205
+          ]
+        },
+        {
+          "area": 27555,
+          "bounds": [
+            660,
+            62,
+            226,
+            190
+          ]
+        },
+        {
+          "area": 27502,
+          "bounds": [
+            1268,
+            65,
+            221,
+            189
+          ]
+        },
+        {
+          "area": 25777,
+          "bounds": [
+            360,
+            84,
+            234,
+            176
+          ]
+        }
+      ],
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL realistic 2D isometric RTS building sprite atlas, transparent PNG. Reference images 1-5 define each civilization's architecture and fine natural materials; render detached subjects with the same detailed material fidelity. Generate NEW ORIGINAL secondary building assets matching these references, not a scene illustration, not UI cards. Exact layout: 5 columns, 4 rows, exactly TWENTY individual complete buildings in a precise even grid on a 1536x1024 transparent canvas. Column order left to right: Roman, Mongol, Persian, Tang Chinese, Ottoman. Each sprite belongs entirely inside its own cell; leave at least 18% cell margin all around and transparent gaps between all subjects. Consistent isometric orthographic 30degree elevation, horizontal footprint diamond 2:1, front south corner at same row baseline; all buildings show their south and east elevations. Same upper-left warm natural daylight, soft restrained tiny contact shadow on alpha. Semi-realistic hand-painted architectural material detail at game sprite scale: individual roof tiles, grainy plaster/stone joints, weathered wood beam joinery, cloth folds. Roman terracotta tiles warm pale plaster and red accents; Mongol cream felt yurts timber frames with blue cloth; Persian warm limestone adobe flat roofs turquoise ceramic bands; Tang curved dark-grey tile roofs red-brown wood and ivory wall panels; Ottoman terracotta roofs stone/wood arcades and small teal dome where appropriate. Thin culturally distinct banners may be used, no lettering, no symbols resembling logos. No humans, no trees, no landscape, no scenery tile, no huge compound, no detached extra objects outside sprite, no grid lines, labels, titles, watermark, baked checkerboard, cartoons, flat vector shapes, plastic 3D render. Full true transparent alpha background. Sprite body fills at most 76% cell width and 76% cell height, must never touch image edges.\nRows top to bottom: (1) modest settlement-age house, small simple one-story roof or yurt; (2) age II house, slightly better masonry or timberwork; (3) age III wealthy residential house, finer stone/plaster carving, court porch or richer yurt; (4) lumber camp: compact roofed open timber work shed with a small joined stack of logs and tools. Houses are individual small dwellings, not temples, palaces or town halls. Three successive houses should keep civilization identity and have an obvious material quality progression.",
+      "rowTypes": [
+        "house-age1",
+        "house-age2",
+        "house-age3",
+        "lumbercamp"
+      ]
+    },
+    {
+      "file": "buildings-v3-b.png",
+      "originalGeneratedPath": "public/art/buildings-v3-b.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "07a71c74adca015e720c2cf1ba2e737161aee07089915ff5cb43a1bb4a14a89c",
+      "alpha": {
+        "zero": 752346,
+        "partial": 233284,
+        "solid": 587234
+      },
+      "frameAlphaThreshold": 40,
+      "safetyGutter": 5,
+      "frames": [
+        [
+          39,
+          100,
+          275,
+          215
+        ],
+        [
+          341,
+          144,
+          266,
+          172
+        ],
+        [
+          639,
+          125,
+          258,
+          187
+        ],
+        [
+          932,
+          114,
+          262,
+          200
+        ],
+        [
+          1226,
+          112,
+          266,
+          204
+        ],
+        [
+          36,
+          325,
+          270,
+          210
+        ],
+        [
+          342,
+          348,
+          252,
+          187
+        ],
+        [
+          638,
+          332,
+          259,
+          204
+        ],
+        [
+          940,
+          321,
+          237,
+          214
+        ],
+        [
+          1226,
+          325,
+          277,
+          214
+        ],
+        [
+          39,
+          542,
+          262,
+          174
+        ],
+        [
+          341,
+          542,
+          259,
+          176
+        ],
+        [
+          635,
+          540,
+          264,
+          178
+        ],
+        [
+          937,
+          539,
+          255,
+          178
+        ],
+        [
+          1229,
+          534,
+          271,
+          184
+        ],
+        [
+          30,
+          727,
+          286,
+          234
+        ],
+        [
+          341,
+          739,
+          263,
+          215
+        ],
+        [
+          637,
+          732,
+          262,
+          227
+        ],
+        [
+          931,
+          726,
+          266,
+          232
+        ],
+        [
+          1227,
+          732,
+          281,
+          229
+        ]
+      ],
+      "components": [
+        {
+          "area": 40031,
+          "bounds": [
+            1232,
+            737,
+            271,
+            219
+          ]
+        },
+        {
+          "area": 39872,
+          "bounds": [
+            35,
+            732,
+            276,
+            224
+          ]
+        },
+        {
+          "area": 36289,
+          "bounds": [
+            642,
+            737,
+            252,
+            217
+          ]
+        },
+        {
+          "area": 36065,
+          "bounds": [
+            1231,
+            330,
+            267,
+            204
+          ]
+        },
+        {
+          "area": 35833,
+          "bounds": [
+            936,
+            731,
+            256,
+            222
+          ]
+        },
+        {
+          "area": 34154,
+          "bounds": [
+            44,
+            105,
+            265,
+            205
+          ]
+        },
+        {
+          "area": 33429,
+          "bounds": [
+            41,
+            330,
+            260,
+            200
+          ]
+        },
+        {
+          "area": 33040,
+          "bounds": [
+            1231,
+            117,
+            256,
+            194
+          ]
+        },
+        {
+          "area": 31572,
+          "bounds": [
+            643,
+            337,
+            249,
+            194
+          ]
+        },
+        {
+          "area": 30862,
+          "bounds": [
+            346,
+            744,
+            253,
+            205
+          ]
+        },
+        {
+          "area": 29910,
+          "bounds": [
+            945,
+            326,
+            227,
+            204
+          ]
+        },
+        {
+          "area": 28777,
+          "bounds": [
+            644,
+            130,
+            248,
+            177
+          ]
+        },
+        {
+          "area": 28187,
+          "bounds": [
+            937,
+            119,
+            252,
+            190
+          ]
+        },
+        {
+          "area": 26053,
+          "bounds": [
+            1234,
+            539,
+            261,
+            174
+          ]
+        },
+        {
+          "area": 25864,
+          "bounds": [
+            347,
+            353,
+            242,
+            177
+          ]
+        },
+        {
+          "area": 25162,
+          "bounds": [
+            942,
+            544,
+            245,
+            168
+          ]
+        },
+        {
+          "area": 25093,
+          "bounds": [
+            346,
+            149,
+            256,
+            162
+          ]
+        },
+        {
+          "area": 25054,
+          "bounds": [
+            640,
+            545,
+            254,
+            168
+          ]
+        },
+        {
+          "area": 24300,
+          "bounds": [
+            346,
+            547,
+            249,
+            166
+          ]
+        },
+        {
+          "area": 23675,
+          "bounds": [
+            44,
+            547,
+            252,
+            164
+          ]
+        }
+      ],
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL realistic 2D isometric RTS building sprite atlas, transparent PNG. Reference images 1-5 define each civilization's architecture and fine natural materials; render detached subjects with the same detailed material fidelity. Generate NEW ORIGINAL secondary building assets matching these references, not a scene illustration, not UI cards. Exact layout: 5 columns, 4 rows, exactly TWENTY individual complete buildings in a precise even grid on a 1536x1024 transparent canvas. Column order left to right: Roman, Mongol, Persian, Tang Chinese, Ottoman. Each sprite belongs entirely inside its own cell; leave at least 18% cell margin all around and transparent gaps between all subjects. Consistent isometric orthographic 30degree elevation, horizontal footprint diamond 2:1, front south corner at same row baseline; all buildings show their south and east elevations. Same upper-left warm natural daylight, soft restrained tiny contact shadow on alpha. Semi-realistic hand-painted architectural material detail at game sprite scale: individual roof tiles, grainy plaster/stone joints, weathered wood beam joinery, cloth folds. Roman terracotta tiles warm pale plaster and red accents; Mongol cream felt yurts timber frames with blue cloth; Persian warm limestone adobe flat roofs turquoise ceramic bands; Tang curved dark-grey tile roofs red-brown wood and ivory wall panels; Ottoman terracotta roofs stone/wood arcades and small teal dome where appropriate. Thin culturally distinct banners may be used, no lettering, no symbols resembling logos. No humans, no trees, no landscape, no scenery tile, no huge compound, no detached extra objects outside sprite, no grid lines, labels, titles, watermark, baked checkerboard, cartoons, flat vector shapes, plastic 3D render. Full true transparent alpha background. Sprite body fills at most 76% cell width and 76% cell height, must never touch image edges.\nRows top to bottom: (1) mining camp: compact stone work shed with joined hand tools and a small ore/stone stack; (2) granary: compact storage building with grain baskets inside its boundary; (3) farm: a small realistic square wheat field in isometric 2:1 diamond shape, rows of dense ripe golden wheat with one tiny corner fence, no building, NO thick soil island or diorama; (4) barracks: compact military training building with a small attached court, weapon rack or round shield targets, no people. All five civilizations use respective material styles; farm natural wheat itself consistent while fence style differs. Use age II architectural quality for work buildings.\nCRITICAL: Maximum subject dimensions 224px wide by 200px tall in each 307x256px cell. Keep all sprite foundations and shadows inside this limit. Keep clearly empty transparent bands at x=307,614,921,1228 and y=256,512,768, at least 20pixels wide. The atlas is a technical game asset; do not scale sprites up to fill gaps.",
+      "rowTypes": [
+        "miningcamp",
+        "granary",
+        "farm",
+        "barracks"
+      ]
+    },
+    {
+      "file": "buildings-v3-c.png",
+      "originalGeneratedPath": "public/art/buildings-v3-c.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "237d66f62d5497362ddfe90cfba5833c47d2e9452acff547a117bc0125715e81",
+      "alpha": {
+        "zero": 630045,
+        "partial": 276724,
+        "solid": 666095
+      },
+      "frameAlphaThreshold": 40,
+      "safetyGutter": 5,
+      "frames": [
+        [
+          9,
+          48,
+          288,
+          212
+        ],
+        [
+          317,
+          67,
+          287,
+          204
+        ],
+        [
+          615,
+          52,
+          290,
+          212
+        ],
+        [
+          932,
+          50,
+          284,
+          217
+        ],
+        [
+          1239,
+          46,
+          284,
+          220
+        ],
+        [
+          11,
+          285,
+          299,
+          233
+        ],
+        [
+          325,
+          301,
+          280,
+          214
+        ],
+        [
+          620,
+          291,
+          293,
+          227
+        ],
+        [
+          931,
+          287,
+          286,
+          231
+        ],
+        [
+          1232,
+          298,
+          291,
+          222
+        ],
+        [
+          11,
+          531,
+          286,
+          213
+        ],
+        [
+          309,
+          547,
+          296,
+          206
+        ],
+        [
+          617,
+          538,
+          291,
+          216
+        ],
+        [
+          927,
+          541,
+          286,
+          218
+        ],
+        [
+          1229,
+          526,
+          296,
+          233
+        ],
+        [
+          14,
+          765,
+          294,
+          215
+        ],
+        [
+          324,
+          772,
+          272,
+          209
+        ],
+        [
+          621,
+          765,
+          290,
+          216
+        ],
+        [
+          938,
+          769,
+          276,
+          212
+        ],
+        [
+          1229,
+          765,
+          290,
+          224
+        ]
+      ],
+      "components": [
+        {
+          "area": 40707,
+          "bounds": [
+            1234,
+            531,
+            286,
+            223
+          ]
+        },
+        {
+          "area": 37820,
+          "bounds": [
+            1237,
+            303,
+            281,
+            212
+          ]
+        },
+        {
+          "area": 37709,
+          "bounds": [
+            1234,
+            770,
+            280,
+            214
+          ]
+        },
+        {
+          "area": 37372,
+          "bounds": [
+            625,
+            296,
+            283,
+            217
+          ]
+        },
+        {
+          "area": 36986,
+          "bounds": [
+            16,
+            290,
+            289,
+            223
+          ]
+        },
+        {
+          "area": 36464,
+          "bounds": [
+            620,
+            57,
+            280,
+            202
+          ]
+        },
+        {
+          "area": 35759,
+          "bounds": [
+            622,
+            543,
+            281,
+            206
+          ]
+        },
+        {
+          "area": 35608,
+          "bounds": [
+            626,
+            770,
+            280,
+            206
+          ]
+        },
+        {
+          "area": 35606,
+          "bounds": [
+            19,
+            770,
+            284,
+            205
+          ]
+        },
+        {
+          "area": 34933,
+          "bounds": [
+            936,
+            292,
+            276,
+            221
+          ]
+        },
+        {
+          "area": 34794,
+          "bounds": [
+            1244,
+            51,
+            274,
+            210
+          ]
+        },
+        {
+          "area": 34370,
+          "bounds": [
+            14,
+            53,
+            278,
+            202
+          ]
+        },
+        {
+          "area": 34163,
+          "bounds": [
+            16,
+            536,
+            276,
+            203
+          ]
+        },
+        {
+          "area": 33347,
+          "bounds": [
+            932,
+            546,
+            276,
+            208
+          ]
+        },
+        {
+          "area": 32395,
+          "bounds": [
+            937,
+            55,
+            274,
+            207
+          ]
+        },
+        {
+          "area": 32049,
+          "bounds": [
+            314,
+            552,
+            286,
+            196
+          ]
+        },
+        {
+          "area": 31935,
+          "bounds": [
+            330,
+            306,
+            270,
+            204
+          ]
+        },
+        {
+          "area": 29853,
+          "bounds": [
+            943,
+            774,
+            266,
+            202
+          ]
+        },
+        {
+          "area": 29596,
+          "bounds": [
+            322,
+            72,
+            277,
+            194
+          ]
+        },
+        {
+          "area": 28485,
+          "bounds": [
+            329,
+            777,
+            262,
+            199
+          ]
+        }
+      ],
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL realistic 2D isometric RTS building sprite atlas, transparent PNG. Reference images 1-5 define each civilization's architecture and fine natural materials; render detached subjects with the same detailed material fidelity. Generate NEW ORIGINAL secondary building assets matching these references, not a scene illustration, not UI cards. Exact layout: 5 columns, 4 rows, exactly TWENTY individual complete buildings in a precise even grid on a 1536x1024 transparent canvas. Column order left to right: Roman, Mongol, Persian, Tang Chinese, Ottoman. Each sprite belongs entirely inside its own cell; leave at least 18% cell margin all around and transparent gaps between all subjects. Consistent isometric orthographic 30degree elevation, horizontal footprint diamond 2:1, front south corner at same row baseline; all buildings show their south and east elevations. Same upper-left warm natural daylight, soft restrained tiny contact shadow on alpha. Semi-realistic hand-painted architectural material detail at game sprite scale: individual roof tiles, grainy plaster/stone joints, weathered wood beam joinery, cloth folds. Roman terracotta tiles warm pale plaster and red accents; Mongol cream felt yurts timber frames with blue cloth; Persian warm limestone adobe flat roofs turquoise ceramic bands; Tang curved dark-grey tile roofs red-brown wood and ivory wall panels; Ottoman terracotta roofs stone/wood arcades and small teal dome where appropriate. Thin culturally distinct banners may be used, no lettering, no symbols resembling logos. No humans, no trees, no landscape, no scenery tile, no huge compound, no detached extra objects outside sprite, no grid lines, labels, titles, watermark, baked checkerboard, cartoons, flat vector shapes, plastic 3D render. Full true transparent alpha background. Sprite body fills at most 76% cell width and 76% cell height, must never touch image edges.\nRows top to bottom: (1) stable: compact roofed horse stable and a small attached fenced yard, no horses or people; (2) archery range: compact roofed archery training hall with two attached practice targets in the court, no people; (3) market: a small connected stallcourt with cloth canopy and goods baskets, no people; (4) engineering workshop: compact roofed timber/stone workshop with attached timber engineering bench, cart wheel and tools. All buildings use age II architectural quality, strong unmistakable cultural roof and wall language. Compact single complex fitting cell, not sprawling village.\nCRITICAL: Maximum subject dimensions 224px wide by 200px tall in each 307x256px cell. Keep all sprite foundations and shadows inside this limit. Keep clearly empty transparent bands at x=307,614,921,1228 and y=256,512,768, at least 20pixels wide. The atlas is a technical game asset; do not scale sprites up to fill gaps.",
+      "rowTypes": [
+        "stable",
+        "range",
+        "market",
+        "workshop"
+      ]
+    },
+    {
+      "file": "buildings-v3-d.png",
+      "originalGeneratedPath": "public/art/buildings-v3-d.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "bbe7c7d8f62b0392e0f242a9429d3271a87dec1f5479679a746f2c39b3acf60e",
+      "alpha": {
+        "zero": 833698,
+        "partial": 165389,
+        "solid": 573777
+      },
+      "frameAlphaThreshold": 40,
+      "safetyGutter": 5,
+      "frames": [
+        [
+          110,
+          51,
+          163,
+          209
+        ],
+        [
+          409,
+          28,
+          168,
+          231
+        ],
+        [
+          693,
+          50,
+          170,
+          210
+        ],
+        [
+          977,
+          38,
+          184,
+          223
+        ],
+        [
+          1289,
+          35,
+          141,
+          225
+        ],
+        [
+          46,
+          269,
+          294,
+          235
+        ],
+        [
+          350,
+          276,
+          277,
+          236
+        ],
+        [
+          636,
+          266,
+          281,
+          247
+        ],
+        [
+          924,
+          269,
+          291,
+          250
+        ],
+        [
+          1222,
+          267,
+          297,
+          253
+        ],
+        [
+          50,
+          541,
+          282,
+          214
+        ],
+        [
+          373,
+          524,
+          237,
+          245
+        ],
+        [
+          659,
+          547,
+          239,
+          215
+        ],
+        [
+          934,
+          533,
+          266,
+          239
+        ],
+        [
+          1238,
+          538,
+          267,
+          229
+        ],
+        [
+          60,
+          767,
+          252,
+          218
+        ],
+        [
+          367,
+          781,
+          230,
+          195
+        ],
+        [
+          652,
+          776,
+          248,
+          209
+        ],
+        [
+          937,
+          764,
+          260,
+          220
+        ],
+        [
+          1247,
+          763,
+          260,
+          226
+        ]
+      ],
+      "components": [
+        {
+          "area": 44553,
+          "bounds": [
+            929,
+            274,
+            281,
+            240
+          ]
+        },
+        {
+          "area": 42686,
+          "bounds": [
+            1227,
+            272,
+            287,
+            243
+          ]
+        },
+        {
+          "area": 42677,
+          "bounds": [
+            641,
+            271,
+            271,
+            237
+          ]
+        },
+        {
+          "area": 40730,
+          "bounds": [
+            51,
+            274,
+            284,
+            225
+          ]
+        },
+        {
+          "area": 35255,
+          "bounds": [
+            55,
+            546,
+            272,
+            204
+          ]
+        },
+        {
+          "area": 34858,
+          "bounds": [
+            355,
+            281,
+            267,
+            226
+          ]
+        },
+        {
+          "area": 33901,
+          "bounds": [
+            939,
+            538,
+            256,
+            229
+          ]
+        },
+        {
+          "area": 33346,
+          "bounds": [
+            1243,
+            543,
+            257,
+            219
+          ]
+        },
+        {
+          "area": 30716,
+          "bounds": [
+            664,
+            552,
+            229,
+            205
+          ]
+        },
+        {
+          "area": 29214,
+          "bounds": [
+            65,
+            772,
+            242,
+            208
+          ]
+        },
+        {
+          "area": 27858,
+          "bounds": [
+            657,
+            781,
+            238,
+            199
+          ]
+        },
+        {
+          "area": 27489,
+          "bounds": [
+            942,
+            769,
+            250,
+            210
+          ]
+        },
+        {
+          "area": 27058,
+          "bounds": [
+            1252,
+            768,
+            250,
+            216
+          ]
+        },
+        {
+          "area": 26345,
+          "bounds": [
+            378,
+            529,
+            227,
+            235
+          ]
+        },
+        {
+          "area": 23677,
+          "bounds": [
+            982,
+            43,
+            174,
+            213
+          ]
+        },
+        {
+          "area": 21847,
+          "bounds": [
+            698,
+            55,
+            160,
+            200
+          ]
+        },
+        {
+          "area": 21783,
+          "bounds": [
+            372,
+            786,
+            220,
+            185
+          ]
+        },
+        {
+          "area": 19666,
+          "bounds": [
+            115,
+            56,
+            153,
+            199
+          ]
+        },
+        {
+          "area": 18133,
+          "bounds": [
+            414,
+            33,
+            158,
+            221
+          ]
+        },
+        {
+          "area": 16914,
+          "bounds": [
+            1294,
+            40,
+            131,
+            215
+          ]
+        }
+      ],
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL realistic 2D isometric RTS building sprite atlas, transparent PNG. Reference images 1-5 define each civilization's architecture and fine natural materials; render detached subjects with the same detailed material fidelity. Generate NEW ORIGINAL secondary building assets matching these references, not a scene illustration, not UI cards. Exact layout: 5 columns, 4 rows, exactly TWENTY individual complete buildings in a precise even grid on a 1536x1024 transparent canvas. Column order left to right: Roman, Mongol, Persian, Tang Chinese, Ottoman. Each sprite belongs entirely inside its own cell; leave at least 18% cell margin all around and transparent gaps between all subjects. Consistent isometric orthographic 30degree elevation, horizontal footprint diamond 2:1, front south corner at same row baseline; all buildings show their south and east elevations. Same upper-left warm natural daylight, soft restrained tiny contact shadow on alpha. Semi-realistic hand-painted architectural material detail at game sprite scale: individual roof tiles, grainy plaster/stone joints, weathered wood beam joinery, cloth folds. Roman terracotta tiles warm pale plaster and red accents; Mongol cream felt yurts timber frames with blue cloth; Persian warm limestone adobe flat roofs turquoise ceramic bands; Tang curved dark-grey tile roofs red-brown wood and ivory wall panels; Ottoman terracotta roofs stone/wood arcades and small teal dome where appropriate. Thin culturally distinct banners may be used, no lettering, no symbols resembling logos. No humans, no trees, no landscape, no scenery tile, no huge compound, no detached extra objects outside sprite, no grid lines, labels, titles, watermark, baked checkerboard, cartoons, flat vector shapes, plastic 3D render. Full true transparent alpha background. Sprite body fills at most 76% cell width and 76% cell height, must never touch image edges.\nRows top to bottom: (1) watchtower: one compact guard tower, traditional roof or crenellations, not too tall to fit; (2) fortress: compact age III stone fort with central keep and two small joined corner towers, no sprawling palace, complete wall silhouette; (3) stone gate: one short robust gateway arch with two attached side piers, cultural decorative roof or arch lintel; (4) stone wall segment: one straight short crenellated segment shown in isometric projection, two-footprint-tile segment, cultural material decoration. Defensive buildings use age III stone quality; keep them fully detached and compact without background terrain.\nCRITICAL: Maximum subject dimensions 224px wide by 200px tall in each 307x256px cell. Keep all sprite foundations and shadows inside this limit. Keep clearly empty transparent bands at x=307,614,921,1228 and y=256,512,768, at least 20pixels wide. The atlas is a technical game asset; do not scale sprites up to fill gaps. Fortress can be a bit visually larger than gate/tower but still inside same cell. Gates must have an OPEN walk-through opening.",
+      "rowTypes": [
+        "tower",
+        "fortress",
+        "stonegate",
+        "stonewall"
+      ]
+    }
+  ],
+  "runtime": {
+    "module": "src/render/buildings.ts",
+    "fallbackOnLoadFailure": true,
+    "houseAgeVariants": true,
+    "otherBuildingsVisualAge": "Their shared ageII/III architecture; existing materials and cultural style are preserved.",
+    "teamIdentification": "Small separately drawn team-cloth standard; source building never recolored."
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

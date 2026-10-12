@@ -1,0 +1,14 @@
+Generation mode: built-in ImageGen
+Generated on: 2026-10-12
+Output: game-logo-crown-citadel-v1.png
+Transparent background requested: true
+
+Use case: logo-brand.
+Asset type: one finished square logo mark for an original historical real-time strategy game, suitable for a game avatar, app icon, and main-menu identity.
+Primary request: create a beautiful, premium, memorable standalone logo. The game is about building a settlement into an empire, managing resources, commanding armies, and competing between historical civilizations including Rome, Mongolia, Persia, Tang China, the Ottomans, and Dai Viet.
+Subject and design: a single original heraldic emblem integrating an imperial crown with the battlements and gateway of a fortified city. These must read as one unified, intelligently designed symbol rather than a collage of objects. A strong crown silhouette above a compact shield-like base, with a clean gateway carved into the negative space. Visually express leadership, civilization-building, and military strategy.
+Style: art-directed premium game branding, crisp geometric contours, restrained heraldic elegance, broad readable shapes, exceptional symmetry and balanced negative space. Rich warm antique gold with selective polished highlights, deep midnight-blue enamel accents within the mark, subtle dimensional bevels. Keep the silhouette readable at 64 pixels.
+Composition: straight-on, centered, one isolated complete emblem, square canvas, generous even transparent margins of about 15 percent. All important elements must fit within a circular avatar crop. Every edge must be sharp and beautifully finished.
+Background: genuinely transparent alpha outside the emblem.
+Text: no words, no letters, no initials, no title; the game name is still being decided.
+Constraints: one logo only; no presentation sheet, no mockup, no scenery, no people, no borrowed franchise insignia, no watermark. Avoid tiny ornament, clutter, photorealistic product photography, and neon effects. The result should feel regal, bold, iconic, and timeless.

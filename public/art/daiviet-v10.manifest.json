@@ -1,0 +1,84 @@
+{
+  "version": 10,
+  "date": "2026-10-11",
+  "generator": "OpenAI built-in image_gen",
+  "source": "public/art/daiviet-v10-townhall-house-age3.png",
+  "file": "/art/daiviet-v10-townhall-house-age3.png",
+  "sourceBytesUnchanged": true,
+  "sha256": "8df5a12b3f6132fa94e3b30dc87916392f2a7556de0655cae965f2362f43b3f3",
+  "bytes": 1554908,
+  "dimensions": [
+    1983,
+    793
+  ],
+  "modelOrder": [
+    "towncenter",
+    "house"
+  ],
+  "frames": [
+    [
+      41,
+      36,
+      918,
+      740
+    ],
+    [
+      1295,
+      211,
+      642,
+      545
+    ]
+  ],
+  "foundations": [
+    [
+      6,
+      521,
+      911,
+      510,
+      404.0,
+      733
+    ],
+    [
+      6,
+      396,
+      635,
+      373,
+      267.0,
+      538
+    ]
+  ],
+  "prompt": "Use case: precise-object-edit.\nAsset type: a high-resolution transparent two-model revision sheet for the existing Dai Viet age III RTS art.\nImage 1 is the CURRENT 17-model game atlas and is the EDIT TARGET/style lock. Extract and carefully revise ONLY its TOP LEFT TOWN HALL and ROW1 COLUMN2 HOUSE into this new two-model sheet. Image 2 is the exact USER'S STAIRCASE reference.\n\nOUTPUT: exactly TWO separate complete building sprites side by side, TOWN HALL LEFT, HOUSE RIGHT, with a large transparent gutter. Show each whole model including foundation and banner, no cropped tips. Use maximum sharp detail and large source resolution; one high-resolution sheet for both revised buildings. True transparent PNG alpha0 outside sprites, no global ground, background, writing, UI, watermark, people.\n\nTOWN HALL: preserve image1's top-left palace architecture, double olive-green tiled roofs, projecting central entrance canopy, red-brown column facade, ridge ornaments, low grey stone base, broad red-brick courtyard, right-hand crimson dragon banner. Keep its proportions, camera, scale and aged materials. Change ONLY its staircase.\nReplace the unclear staircase with ONE continuous broad compact staircase descending directly from the central entrance terrace into the courtyard, precisely following image2. It has THREE equally wide open walkable strips of steps: LEFT, MIDDLE, RIGHT. The whole stair is about60% of the column facade width, with six or seven shallow steps in every strip, leaving visible courtyard on both sides. Only TWO stone dragons, as thin INTERNAL dividers at one-third and two-thirds of stair width. Both must have an identifiable carved dragon head at the foot and a long sinuous carved scaled body following the slope up to the terrace.\nEXACT front cross-section, from outside left to outside right:\nplain low outer stone wall | OPEN LEFT STAIR TREADS | DRAGON ONE | OPEN MIDDLE STAIR TREADS | DRAGON TWO | OPEN RIGHT STAIR TREADS | plain low outer stone wall.\nThe MIDDLE lane is fully visible BETWEEN the two dragons. The LEFT and RIGHT lanes are both fully visible OUTSIDE the two dragons. Do not let dragon bodies cover the lanes. There are exactly TWO identifiable dragon heads and TWO dragon bodies, NOT three dragons. The two OUTER stone walls are completely plain square-cut masonry: NO carved heads, tails, scales or wavy dragon-like caps. All three strips of step treads must be clearly countable at reduced game size. The dragons belong to the two INTERNAL boundaries, not the outer edges. Do not create three disconnected stair towers or two flights with a dragon running through their centre. All three open lanes descend the SAME number of steps from the SAME terrace to the SAME courtyard level. Keep the stairs compact in depth, with no taller platform.\n\nHOUSE: faithfully preserve image1's ROW1 COLUMN2 ordinary house shape, brick base, modest veranda, wood walls, entrance and pots. Change its RED ROOF into the same aged muted OLIVE-GREEN ceramic roof tiles as the other age III buildings in image1; retain the house's roof geometry, bronze edge trims and soft tile texture. No red/orange roof tiles. It remains a modest house, not an extra palace.\n\nCOMMON locked palette/camera for BOTH: exactly the current atlas's historical painterly RTS miniature style, aged olive tiles, muted weathered reddish-brown timber, warm grey cut stone, subdued red terracotta COURTYARD, restrained antique brass. Soft diffuse upper-left light, same exposure and texture density, correct orthographic 2:1 isometric foundations, vertical columns. Both revisions belong to the SAME existing atlas family, no added buildings or redesign. The photo only controls stair layout; do not copy its yellow roof color, modern scene or watermark.",
+  "framingPrompt": "Use case: precise-object-edit.\nImage1 is the final two-model Dai Viet sprite sheet. Its architecture and staircase are CORRECT. Preserve the TWO exact building models, current muted colors, lighting, textures, roof architecture and proportions as closely as possible. Preserve the LEFT TOWN HALL's exactly THREE clearly open stair lanes, exactly TWO INTERNAL stone dragons, and TWO PLAIN outer stone stair walls. Preserve the RIGHT HOUSE's olive-green tiled roof.\n\nOnly fix canvas framing: add generous fully transparent empty space around both complete models. Their highest roof tip and lowest foundation corner must be comfortably INSIDE the canvas, with at least5% empty transparent margin from every outer edge. Image1's bottom town-hall foundation corner touches the canvas edge; restore that complete corner and move the whole two-model composition inward slightly if necessary. Both buildings must have complete foundations/flags/ornaments with no clipping. Large transparent gap between sprites. Output the SAME two-model sheet, hall LEFT and house RIGHT, maximum detail, true alpha0 background. No new objects, writing, watermark, UI, background or architectural redesign. No red roof on the house; no additional or moved stone dragon.",
+  "references": [
+    {
+      "file": "/art/daiviet-v9-buildings-age3.png",
+      "role": "exact current architecture, lighting and material family; towncenter and house edit target"
+    }
+  ],
+  "measurementMethod": "Read-only alpha180 largest connected silhouettes, 6px crop padding, lower35 percent ground corners. Source PNG bytes unchanged.",
+  "precedingManifest": "/art/daiviet-v9.manifest.json",
+  "runtime": {
+    "age3RevisionSheet": "buildings-towncenter-house-age3-v10",
+    "baseAge3Sheet": "buildings-unified-age3",
+    "decodedSheets": 16,
+    "authoredFrames": 224,
+    "selectedSourceViews": 222,
+    "supersededBaseFrames": [
+      0,
+      1
+    ],
+    "emblemPNGs": 1,
+    "registeredSheets": 31,
+    "registeredFrames": 397,
+    "walkingStages": 12,
+    "footprints": {
+      "towncenter": 6,
+      "house": 2,
+      "fortress": 5,
+      "stonegate": 3,
+      "stonewall": 1
+    }
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

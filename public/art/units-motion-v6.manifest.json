@@ -1,0 +1,6341 @@
+{
+  "version": 6,
+  "createdAt": "2026-10-09",
+  "assetCount": 38,
+  "authoredViewCount": 612,
+  "generator": "Built-in image_gen with project-original concept and prior sprite references. No CLI/API fallback and no third-party game assets.",
+  "rights": {
+    "origin": "Original AI-generated raster assets requested for Regavo, using project-original concept images as style/identity references.",
+    "ownership": "Usage follows the applicable OpenAI service terms. AI outputs are not guaranteed unique or exclusively copyrightable; no exclusive copyright warranty is made.",
+    "thirdPartyAssets": "None downloaded, traced or imported for this batch."
+  },
+  "sourcePreservation": "Every generated PNG was copied intact into public/art; original generated output remains under CODEX_HOME/generated_images. No offline image crop, paint, resample or alpha editing.",
+  "measurement": {
+    "method": "Read-only alpha >=180 connected components; nearest 4-column row cell assignment; recorded source rectangles and opaque lower boot/hoof mass x pivot. Source rectangles are sampled only at runtime.",
+    "frameTuple": [
+      "sourceX",
+      "sourceY",
+      "sourceWidth",
+      "sourceHeight",
+      "groundPivotXRelativeToSource",
+      "groundPivotYRelativeToSource"
+    ],
+    "directions": [
+      "SE",
+      "SW",
+      "NE",
+      "NW"
+    ],
+    "screenDirectionToSource": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      3,
+      2,
+      2
+    ],
+    "bodyRefs": "Source body reference heights are per matching type/contact pair to preserve adult/horse/elephant scale. Siege references remain constant across all four states."
+  },
+  "runtime": {
+    "file": "src/render/units.ts",
+    "pixelRatio": 4,
+    "pixelRatioMeaning": "Runtime texture density only; source PNGs preserve native dimensions.",
+    "scales": {
+      "human": 48,
+      "cavalry": 72,
+      "heavycavalry": 76,
+      "elephantBody": 100,
+      "trader": 65,
+      "ram": 63,
+      "catapult": 64,
+      "cannon": 65
+    },
+    "output": "Alpha-trimmed canvas; anchor coordinates are physical canvas pixels, logical dimensions = canvas dimensions /4. Original full-pose buffer accommodates weapons and elephant trunk.",
+    "animation": "Whole authored pose sampling only; no limb/head rectangular slicing, warping, rotating or repeated filter pass. Native source samples receive one high-quality filter, then physical-pixel 1:1 snapped blits. Cached poses and final textures are runtime alpha-trimmed. Source isolation removes distant components smaller than4% of main actor while retaining nearby tips/faint edges. Pose cache stores alpha-trimmed images plus12logical-pixel margins.",
+    "walking": "2 authored whole contacts per class; elephant A/B/C/B. Runtime animation frame0/1 contactA, frame2/3 contactB. No claim of full interpolated skeleton gait.",
+    "combat": "frame0/1 authored windup/draw/aim, frame2 impact/release/fire, frame3 recovery; bow keeps release stance and gun keeps aimed stance. Siege machine and crew source states change together.",
+    "team": "Small code-painted turquoise or red team pennant; faction identity stays in full outfits and tack.",
+    "carry": "Villager carry is explicit action only; default idle/walk holds appropriate tools. Existing v2 sack/wood sources retained; sack resource symbols are code-painted. Carry retains a restrained whole-image motion, not authored cargo leg contacts. Roman engineer uses explicit Roman sack/wood carry before its ordinary tool-pose branch.",
+    "loader": "loadUnitAtlases(civs?: readonly string[]):Promise<boolean>. No argument loads all5. A civ list loads common sources + requested faction/special sheets, evicts other decoded faction sources after completion. Same selection coalesces; superseded request cannot assign/prune latest maps.",
+    "cacheLimits": {
+      "sprites": 192,
+      "poses": 64,
+      "portraits": 24
+    },
+    "portrait": "Native high-resolution source frame directly sampled into512x576 canvas, independent of world sprite scale."
+  },
+  "civilizationProfiles": {
+    "roman": {
+      "name": "ROMAN",
+      "clothes": "Roman scarlet-red wool knee-length tunic, short cream sleeves, practical iron segmented or mail torso armor, imperial iron helmet with cheek plates, bronze trim, leather sandals or short military boots. Broad RED oval or rectangular wooden shield with simple gold edging. Mediterranean adult faces. Roman archer wears scarlet red padded tunic and modest iron helmet; brown leather quiver. No generic brown infantry."
+    },
+    "mongol": {
+      "name": "MONGOL",
+      "clothes": "Mongol cobalt/indigo BLUE wool deel over brown trousers and leather boots, practical dark iron lamellar/leather chest armor, small fur-edged conical helmet or cap. Brown round wicker/wood shield, simple blue cloth trim. Central/East Asian adult faces, moustache. Archer wears BLUE deel, fur-edged cap, compact recurve bow and quiver. No red Roman outfit."
+    },
+    "persian": {
+      "name": "PERSIAN",
+      "clothes": "Persian deep TURQUOISE and peacock-blue long woven tunic, cream loose trousers and leather boots, restrained GOLD hem/arm bands, practical bronze/iron scale vest, soft fluted cap or modest conical helmet. Small round bronze/gold shield with subtle geometric motif. West Asian adult bearded faces. Archer wears TURQUOISE tunic with gold trim, fluted cap, composite bow/quiver. Not a Roman legionary."
+    },
+    "tang": {
+      "name": "TANG CHINESE",
+      "clothes": "Tang Chinese muted crimson RED and ochre GOLD tunic panels, dark blue-gray trousers and tall leather boots, iron lamellar torso and skirt plates, rounded segmented iron helmet with small RED plume. Round dark wooden shield with narrow ochre-gold rim. East Asian adult faces. Archer wears crimson padded coat with gold trim and iron cap, wooden bow/quiver. Strong East Asian armor silhouette distinct from Roman."
+    },
+    "ottoman": {
+      "name": "OTTOMAN",
+      "clothes": "Ottoman deep TEAL/GREEN knee-length cotton/wool coat, cream loose trousers, brown leather boots, understated ochre-gold belt, practical mail vest or leather armor, small white headwrap around modest dark-red cap. Small round dark wooden shield with brass boss. West Asian adult bearded faces. Archer wears TEAL coat, white cloth headwrap, composite bow and quiver. No muskets for these infantry."
+    }
+  },
+  "coverage": {
+    "genericInfantry": [
+      "spear",
+      "sword",
+      "archer"
+    ],
+    "genericMounted": [
+      "scout",
+      "lightcavalry"
+    ],
+    "fiveCivilizationUniforms": [
+      "roman",
+      "mongol",
+      "persian",
+      "tang",
+      "ottoman"
+    ],
+    "specialWalking": [
+      "engineer",
+      "horsearcher",
+      "lancer",
+      "guard",
+      "guardarcher",
+      "vanguard",
+      "heavycavalry",
+      "musketeer",
+      "elephant",
+      "trader"
+    ],
+    "retainedWalking": [
+      "villager: existing worker tool actions",
+      "legionary: existing authored infantry action pair"
+    ],
+    "combat": [
+      "spear",
+      "sword",
+      "archer",
+      "scout",
+      "lightcavalry",
+      "legionary",
+      "engineer",
+      "horsearcher",
+      "lancer",
+      "guard",
+      "guardarcher",
+      "vanguard",
+      "heavycavalry",
+      "musketeer",
+      "elephant",
+      "ram",
+      "catapult",
+      "cannon"
+    ],
+    "siegeStates": [
+      "walkA",
+      "walkB",
+      "windup",
+      "impact"
+    ],
+    "villagerActions": "Existing complete tool/work poses retained; village default/newly spawned/empty walk uses tools, cargo only explicit carry. Roman/Mongol/Ottoman idle and portraits use tool action row0; Persian/Tang use their dedicated unladen tool sheets."
+  },
+  "limitations": [
+    "Four diagonal headings, neighboring diagonal source for cardinal movement.",
+    "Walking has2 authored contacts (elephant3), not continuous skeletal interpolation.",
+    "Matching gear/anatomy stays cohesive but independently authored poses may vary slightly in folds, armor detail and painterly scale.",
+    "Assets represent faction military outfits, without3 distinct military outfit sets per age. Buildings retain their independent3age architecture.",
+    "Carry has original cargo whole stance plus restrained motion; no new cargo leg-contact sheets.",
+    "Visual projectile/slash/muzzle event timing is implemented by the parent scene/workshop, not this source sampler.",
+    "Version6 trader and siege construction/crew palettes are shared references; requested faction trader/siege variants follow in version7."
+  ],
+  "assets": [
+    {
+      "id": "roman",
+      "file": "units-army-v6-roman.png",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "b48b8772c2641fb858353c08fa23fe8e708b5d39b47b76b414f737767f23b63e",
+      "frames": [
+        [
+          80,
+          7,
+          118,
+          262,
+          59,
+          251.45
+        ],
+        [
+          318,
+          7,
+          111,
+          262,
+          55.5,
+          251.45
+        ],
+        [
+          589,
+          9,
+          113,
+          251,
+          56.5,
+          240.72
+        ],
+        [
+          844,
+          7,
+          106,
+          259,
+          53,
+          248.53
+        ],
+        [
+          76,
+          267,
+          121,
+          262,
+          60.5,
+          251.45
+        ],
+        [
+          323,
+          266,
+          119,
+          265,
+          59.5,
+          254.38
+        ],
+        [
+          579,
+          267,
+          118,
+          263,
+          59,
+          252.43
+        ],
+        [
+          844,
+          264,
+          108,
+          265,
+          54,
+          254.38
+        ],
+        [
+          49,
+          549,
+          154,
+          225,
+          77,
+          215.38
+        ],
+        [
+          281,
+          550,
+          168,
+          227,
+          84,
+          217.32
+        ],
+        [
+          581,
+          548,
+          169,
+          229,
+          84.5,
+          219.28
+        ],
+        [
+          834,
+          550,
+          151,
+          227,
+          75.5,
+          217.32
+        ],
+        [
+          45,
+          792,
+          152,
+          224,
+          76,
+          214.4
+        ],
+        [
+          282,
+          791,
+          167,
+          231,
+          83.5,
+          221.22
+        ],
+        [
+          569,
+          787,
+          187,
+          228,
+          93.5,
+          218.3
+        ],
+        [
+          834,
+          787,
+          152,
+          230,
+          76,
+          220.25
+        ],
+        [
+          69,
+          1035,
+          134,
+          230,
+          67,
+          220.25
+        ],
+        [
+          326,
+          1037,
+          122,
+          226,
+          61,
+          216.35
+        ],
+        [
+          575,
+          1035,
+          137,
+          230,
+          68.5,
+          220.25
+        ],
+        [
+          834,
+          1036,
+          123,
+          230,
+          61.5,
+          220.25
+        ],
+        [
+          67,
+          1279,
+          136,
+          230,
+          68,
+          220.25
+        ],
+        [
+          316,
+          1281,
+          127,
+          229,
+          63.5,
+          219.28
+        ],
+        [
+          572,
+          1274,
+          143,
+          235,
+          71.5,
+          225.12
+        ],
+        [
+          837,
+          1279,
+          122,
+          233,
+          61,
+          223.18
+        ]
+      ],
+      "rowBodyHeights": [
+        203.3,
+        203.3,
+        216.21,
+        216.21,
+        214.44,
+        214.44
+      ],
+      "bodyHeight": 211.3166666666667,
+      "majorComponents": 24,
+      "prompt": "Use case: historical-scene. Asset type: production walking sprite atlas for an ORIGINAL 2D historical RTS browser game. The attached original concepts are STYLE/identity/material references only; do not copy any external game's art.\nTRUE transparent-alpha PNG, EXACTLY4columns by6rows =24isolated full-body soldiers. No backdrop, floor, islands, grid, text, labels, watermark or detached particles. Large clear transparent gutters around EACH actor. Original source pixels must be crisp, richly detailed and suitable for Retina zoom.\nCamera: downward orthographic30degree isometric, consistent2:1ground projection, soft upper-left natural light. Four columns ALWAYS SE(front/lower-right), SW(front/lower-left), NE(true BACK/upper-right), NW(true BACK/upper-left). Rotate the entire same character/equipment, not only head. Natural adult anatomy about7.5heads tall with small head, normal limbs, textured cloth/leather/metal/wood. Mature painted realism matching references, not chibi, toy, flat vector, plastic, chunky paper dolls.\nThis sheet MUST show TWO visibly different complete WALKING contacts per unit: contactA left leg clearly FORWARD and planted heel, right leg behind pushing off with bent knee; contactB RIGHT leg clearly forward/planted and LEFT behind. Natural opposing arm movement. Same face, equipment, body proportions, scale and foot-contact location in both contacts. Do not mirror one pose; draw the actual opposite legs. Not static standing repeated. Full connected arms/head/legs; all weapons and boots inside cell. Spear held upright with tip fully inside cell and no high flag. Sword held low and shield carried normally. Archer bow lowered at side, quiver on back, no drawn attack shot.\nRow1 SPEAR infantry contactA.\nRow2 SAME spear infantry contactB.\nRow3 SWORD+SHIELD infantry contactA.\nRow4 SAME sword+shield contactB.\nRow5 ARCHER infantry contactA.\nRow6 SAME archer contactB.\nAll six rows same adult human body size, readable materials and crisp faces/cloth. Foot ground pivot centered horizontally near85%rowcellheight. Absolutely no row overlap. No terrain or big painted shadows; only faint tiny contact shadows.\nCivilization identity/color is REQUIRED, with substantial authentic uniform fabric color on front AND back, not only a tiny generic team sash:\nROMAN soldiers: Roman scarlet-red wool knee-length tunic, short cream sleeves, practical iron segmented or mail torso armor, imperial iron helmet with cheek plates, bronze trim, leather sandals or short military boots. Broad RED oval or rectangular wooden shield with simple gold edging. Mediterranean adult faces. Roman archer wears scarlet red padded tunic and modest iron helmet; brown leather quiver. No generic brown infantry.",
+      "purpose": "faction infantry walking A/B",
+      "civilizations": [
+        "roman"
+      ],
+      "group": "infantry-motion",
+      "sourceOriginalPath": "public/art/units-army-v6-roman.png",
+      "referencePaths": [],
+      "requestedRows": 6
+    },
+    {
+      "id": "mongol",
+      "file": "units-army-v6-mongol.png",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "9002d7cf6b8b69a6b84d57449cc0026506bb80d55242d87c422e36e650aa27a7",
+      "frames": [
+        [
+          79,
+          11,
+          138,
+          273,
+          69,
+          262.18
+        ],
+        [
+          332,
+          12,
+          139,
+          275,
+          69.5,
+          264.12
+        ],
+        [
+          572,
+          8,
+          130,
+          280,
+          65,
+          269
+        ],
+        [
+          817,
+          7,
+          133,
+          284,
+          66.5,
+          272.9
+        ],
+        [
+          77,
+          268,
+          140,
+          271,
+          70,
+          260.23
+        ],
+        [
+          310,
+          271,
+          133,
+          270,
+          66.5,
+          259.25
+        ],
+        [
+          572,
+          265,
+          132,
+          276,
+          66,
+          265.1
+        ],
+        [
+          821,
+          265,
+          132,
+          274,
+          66,
+          263.15
+        ],
+        [
+          61,
+          545,
+          156,
+          231,
+          78,
+          221.22
+        ],
+        [
+          306,
+          548,
+          168,
+          232,
+          84,
+          222.2
+        ],
+        [
+          564,
+          550,
+          151,
+          236,
+          75.5,
+          226.1
+        ],
+        [
+          817,
+          548,
+          154,
+          233,
+          77,
+          223.18
+        ],
+        [
+          69,
+          787,
+          156,
+          230,
+          78,
+          220.25
+        ],
+        [
+          300,
+          789,
+          174,
+          231,
+          87,
+          221.22
+        ],
+        [
+          562,
+          790,
+          165,
+          233,
+          82.5,
+          223.18
+        ],
+        [
+          814,
+          786,
+          170,
+          237,
+          85,
+          227.07
+        ],
+        [
+          77,
+          1025,
+          140,
+          231,
+          70,
+          221.22
+        ],
+        [
+          339,
+          1024,
+          154,
+          233,
+          77,
+          223.18
+        ],
+        [
+          565,
+          1035,
+          142,
+          228,
+          71,
+          218.3
+        ],
+        [
+          809,
+          1034,
+          137,
+          230,
+          68.5,
+          220.25
+        ],
+        [
+          77,
+          1267,
+          144,
+          234,
+          72,
+          224.15
+        ],
+        [
+          328,
+          1267,
+          148,
+          241,
+          74,
+          230.97
+        ],
+        [
+          562,
+          1276,
+          145,
+          234,
+          72.5,
+          224.15
+        ],
+        [
+          803,
+          1270,
+          148,
+          240,
+          74,
+          230
+        ]
+      ],
+      "rowBodyHeights": [
+        214.7,
+        214.7,
+        221.36,
+        221.36,
+        217.8,
+        217.8
+      ],
+      "bodyHeight": 217.95333333333335,
+      "majorComponents": 24,
+      "prompt": "Use case: historical-scene. Asset type: production walking sprite atlas for an ORIGINAL 2D historical RTS browser game. The attached original concepts are STYLE/identity/material references only; do not copy any external game's art.\nTRUE transparent-alpha PNG, EXACTLY4columns by6rows =24isolated full-body soldiers. No backdrop, floor, islands, grid, text, labels, watermark or detached particles. Large clear transparent gutters around EACH actor. Original source pixels must be crisp, richly detailed and suitable for Retina zoom.\nCamera: downward orthographic30degree isometric, consistent2:1ground projection, soft upper-left natural light. Four columns ALWAYS SE(front/lower-right), SW(front/lower-left), NE(true BACK/upper-right), NW(true BACK/upper-left). Rotate the entire same character/equipment, not only head. Natural adult anatomy about7.5heads tall with small head, normal limbs, textured cloth/leather/metal/wood. Mature painted realism matching references, not chibi, toy, flat vector, plastic, chunky paper dolls.\nThis sheet MUST show TWO visibly different complete WALKING contacts per unit: contactA left leg clearly FORWARD and planted heel, right leg behind pushing off with bent knee; contactB RIGHT leg clearly forward/planted and LEFT behind. Natural opposing arm movement. Same face, equipment, body proportions, scale and foot-contact location in both contacts. Do not mirror one pose; draw the actual opposite legs. Not static standing repeated. Full connected arms/head/legs; all weapons and boots inside cell. Spear held upright with tip fully inside cell and no high flag. Sword held low and shield carried normally. Archer bow lowered at side, quiver on back, no drawn attack shot.\nRow1 SPEAR infantry contactA.\nRow2 SAME spear infantry contactB.\nRow3 SWORD+SHIELD infantry contactA.\nRow4 SAME sword+shield contactB.\nRow5 ARCHER infantry contactA.\nRow6 SAME archer contactB.\nAll six rows same adult human body size, readable materials and crisp faces/cloth. Foot ground pivot centered horizontally near85%rowcellheight. Absolutely no row overlap. No terrain or big painted shadows; only faint tiny contact shadows.\nCivilization identity/color is REQUIRED, with substantial authentic uniform fabric color on front AND back, not only a tiny generic team sash:\nMONGOL soldiers: Mongol cobalt/indigo BLUE wool deel over brown trousers and leather boots, practical dark iron lamellar/leather chest armor, small fur-edged conical helmet or cap. Brown round wicker/wood shield, simple blue cloth trim. Central/East Asian adult faces, moustache. Archer wears BLUE deel, fur-edged cap, compact recurve bow and quiver. No red Roman outfit.",
+      "purpose": "faction infantry walking A/B",
+      "civilizations": [
+        "mongol"
+      ],
+      "group": "infantry-motion",
+      "sourceOriginalPath": "public/art/units-army-v6-mongol.png",
+      "referencePaths": [],
+      "requestedRows": 6
+    },
+    {
+      "id": "persian",
+      "file": "units-army-v6-persian.png",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "9b0153b50eb361e61f63940c162e7db2e11b7107f54ccfa2fbf4cde1c7837851",
+      "frames": [
+        [
+          85,
+          10,
+          130,
+          269,
+          65,
+          258.27
+        ],
+        [
+          319,
+          6,
+          118,
+          271,
+          59,
+          260.23
+        ],
+        [
+          573,
+          5,
+          118,
+          271,
+          59,
+          260.23
+        ],
+        [
+          819,
+          7,
+          127,
+          268,
+          63.5,
+          257.3
+        ],
+        [
+          93,
+          280,
+          123,
+          271,
+          61.5,
+          260.23
+        ],
+        [
+          313,
+          278,
+          117,
+          270,
+          58.5,
+          259.25
+        ],
+        [
+          576,
+          274,
+          122,
+          272,
+          61,
+          261.2
+        ],
+        [
+          818,
+          279,
+          132,
+          270,
+          66,
+          259.25
+        ],
+        [
+          71,
+          570,
+          144,
+          231,
+          72,
+          221.22
+        ],
+        [
+          277,
+          569,
+          168,
+          231,
+          84,
+          221.22
+        ],
+        [
+          571,
+          571,
+          173,
+          231,
+          86.5,
+          221.22
+        ],
+        [
+          822,
+          571,
+          145,
+          230,
+          72.5,
+          220.25
+        ],
+        [
+          67,
+          807,
+          144,
+          225,
+          72,
+          215.38
+        ],
+        [
+          314,
+          807,
+          136,
+          226,
+          68,
+          216.35
+        ],
+        [
+          572,
+          816,
+          171,
+          222,
+          85.5,
+          212.45
+        ],
+        [
+          824,
+          811,
+          143,
+          228,
+          71.5,
+          218.3
+        ],
+        [
+          72,
+          1043,
+          155,
+          218,
+          77.5,
+          208.55
+        ],
+        [
+          317,
+          1044,
+          140,
+          217,
+          70,
+          207.57
+        ],
+        [
+          565,
+          1052,
+          139,
+          212,
+          69.5,
+          202.7
+        ],
+        [
+          813,
+          1052,
+          134,
+          214,
+          67,
+          204.65
+        ],
+        [
+          77,
+          1269,
+          148,
+          223,
+          74,
+          213.43
+        ],
+        [
+          309,
+          1269,
+          141,
+          219,
+          70.5,
+          209.53
+        ],
+        [
+          568,
+          1273,
+          143,
+          220,
+          71.5,
+          210.5
+        ],
+        [
+          817,
+          1277,
+          136,
+          218,
+          68,
+          208.55
+        ]
+      ],
+      "rowBodyHeights": [
+        210.6,
+        210.6,
+        216.58,
+        216.58,
+        202.2,
+        202.2
+      ],
+      "bodyHeight": 209.79333333333332,
+      "majorComponents": 24,
+      "prompt": "Use case: historical-scene. Asset type: production walking sprite atlas for an ORIGINAL 2D historical RTS browser game. The attached original concepts are STYLE/identity/material references only; do not copy any external game's art.\nTRUE transparent-alpha PNG, EXACTLY4columns by6rows =24isolated full-body soldiers. No backdrop, floor, islands, grid, text, labels, watermark or detached particles. Large clear transparent gutters around EACH actor. Original source pixels must be crisp, richly detailed and suitable for Retina zoom.\nCamera: downward orthographic30degree isometric, consistent2:1ground projection, soft upper-left natural light. Four columns ALWAYS SE(front/lower-right), SW(front/lower-left), NE(true BACK/upper-right), NW(true BACK/upper-left). Rotate the entire same character/equipment, not only head. Natural adult anatomy about7.5heads tall with small head, normal limbs, textured cloth/leather/metal/wood. Mature painted realism matching references, not chibi, toy, flat vector, plastic, chunky paper dolls.\nThis sheet MUST show TWO visibly different complete WALKING contacts per unit: contactA left leg clearly FORWARD and planted heel, right leg behind pushing off with bent knee; contactB RIGHT leg clearly forward/planted and LEFT behind. Natural opposing arm movement. Same face, equipment, body proportions, scale and foot-contact location in both contacts. Do not mirror one pose; draw the actual opposite legs. Not static standing repeated. Full connected arms/head/legs; all weapons and boots inside cell. Spear held upright with tip fully inside cell and no high flag. Sword held low and shield carried normally. Archer bow lowered at side, quiver on back, no drawn attack shot.\nRow1 SPEAR infantry contactA.\nRow2 SAME spear infantry contactB.\nRow3 SWORD+SHIELD infantry contactA.\nRow4 SAME sword+shield contactB.\nRow5 ARCHER infantry contactA.\nRow6 SAME archer contactB.\nAll six rows same adult human body size, readable materials and crisp faces/cloth. Foot ground pivot centered horizontally near85%rowcellheight. Absolutely no row overlap. No terrain or big painted shadows; only faint tiny contact shadows.\nCivilization identity/color is REQUIRED, with substantial authentic uniform fabric color on front AND back, not only a tiny generic team sash:\nPERSIAN soldiers: Persian deep TURQUOISE and peacock-blue long woven tunic, cream loose trousers and leather boots, restrained GOLD hem/arm bands, practical bronze/iron scale vest, soft fluted cap or modest conical helmet. Small round bronze/gold shield with subtle geometric motif. West Asian adult bearded faces. Archer wears TURQUOISE tunic with gold trim, fluted cap, composite bow/quiver. Not a Roman legionary.",
+      "purpose": "faction infantry walking A/B",
+      "civilizations": [
+        "persian"
+      ],
+      "group": "infantry-motion",
+      "sourceOriginalPath": "public/art/units-army-v6-persian.png",
+      "referencePaths": [],
+      "requestedRows": 6
+    },
+    {
+      "id": "tang",
+      "file": "units-army-v6-tang.png",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "7710e29c045138761843610e31c1050d53509fc9ae2e4654a2220c554297c337",
+      "frames": [
+        [
+          94,
+          14,
+          110,
+          241,
+          55,
+          230.97
+        ],
+        [
+          308,
+          13,
+          115,
+          245,
+          57.5,
+          234.88
+        ],
+        [
+          583,
+          10,
+          103,
+          248,
+          51.5,
+          237.8
+        ],
+        [
+          839,
+          9,
+          109,
+          250,
+          54.5,
+          239.75
+        ],
+        [
+          94,
+          256,
+          109,
+          248,
+          54.5,
+          237.8
+        ],
+        [
+          315,
+          257,
+          103,
+          251,
+          51.5,
+          240.72
+        ],
+        [
+          574,
+          257,
+          110,
+          249,
+          55,
+          238.78
+        ],
+        [
+          839,
+          256,
+          107,
+          253,
+          53.5,
+          242.68
+        ],
+        [
+          68,
+          517,
+          147,
+          228,
+          73.5,
+          218.3
+        ],
+        [
+          264,
+          519,
+          173,
+          228,
+          86.5,
+          218.3
+        ],
+        [
+          578,
+          518,
+          160,
+          230,
+          80,
+          220.25
+        ],
+        [
+          829,
+          517,
+          169,
+          234,
+          84.5,
+          224.15
+        ],
+        [
+          63,
+          761,
+          154,
+          232,
+          77,
+          222.2
+        ],
+        [
+          267,
+          762,
+          176,
+          233,
+          88,
+          223.18
+        ],
+        [
+          572,
+          758,
+          167,
+          236,
+          83.5,
+          226.1
+        ],
+        [
+          828,
+          761,
+          169,
+          233,
+          84.5,
+          223.18
+        ],
+        [
+          82,
+          1011,
+          127,
+          229,
+          63.5,
+          219.28
+        ],
+        [
+          316,
+          1011,
+          138,
+          232,
+          69,
+          222.2
+        ],
+        [
+          590,
+          1011,
+          124,
+          231,
+          62,
+          221.22
+        ],
+        [
+          841,
+          1011,
+          125,
+          232,
+          62.5,
+          222.2
+        ],
+        [
+          82,
+          1258,
+          131,
+          236,
+          65.5,
+          226.1
+        ],
+        [
+          310,
+          1258,
+          139,
+          240,
+          69.5,
+          230
+        ],
+        [
+          581,
+          1258,
+          131,
+          238,
+          65.5,
+          228.05
+        ],
+        [
+          838,
+          1258,
+          137,
+          238,
+          68.5,
+          228.05
+        ]
+      ],
+      "rowBodyHeights": [
+        192.9,
+        192.9,
+        220.25,
+        220.25,
+        218.4,
+        218.4
+      ],
+      "bodyHeight": 210.51666666666665,
+      "majorComponents": 24,
+      "prompt": "Use case: historical-scene. Asset type: production walking sprite atlas for an ORIGINAL 2D historical RTS browser game. The attached original concepts are STYLE/identity/material references only; do not copy any external game's art.\nTRUE transparent-alpha PNG, EXACTLY4columns by6rows =24isolated full-body soldiers. No backdrop, floor, islands, grid, text, labels, watermark or detached particles. Large clear transparent gutters around EACH actor. Original source pixels must be crisp, richly detailed and suitable for Retina zoom.\nCamera: downward orthographic30degree isometric, consistent2:1ground projection, soft upper-left natural light. Four columns ALWAYS SE(front/lower-right), SW(front/lower-left), NE(true BACK/upper-right), NW(true BACK/upper-left). Rotate the entire same character/equipment, not only head. Natural adult anatomy about7.5heads tall with small head, normal limbs, textured cloth/leather/metal/wood. Mature painted realism matching references, not chibi, toy, flat vector, plastic, chunky paper dolls.\nThis sheet MUST show TWO visibly different complete WALKING contacts per unit: contactA left leg clearly FORWARD and planted heel, right leg behind pushing off with bent knee; contactB RIGHT leg clearly forward/planted and LEFT behind. Natural opposing arm movement. Same face, equipment, body proportions, scale and foot-contact location in both contacts. Do not mirror one pose; draw the actual opposite legs. Not static standing repeated. Full connected arms/head/legs; all weapons and boots inside cell. Spear held upright with tip fully inside cell and no high flag. Sword held low and shield carried normally. Archer bow lowered at side, quiver on back, no drawn attack shot.\nRow1 SPEAR infantry contactA.\nRow2 SAME spear infantry contactB.\nRow3 SWORD+SHIELD infantry contactA.\nRow4 SAME sword+shield contactB.\nRow5 ARCHER infantry contactA.\nRow6 SAME archer contactB.\nAll six rows same adult human body size, readable materials and crisp faces/cloth. Foot ground pivot centered horizontally near85%rowcellheight. Absolutely no row overlap. No terrain or big painted shadows; only faint tiny contact shadows.\nCivilization identity/color is REQUIRED, with substantial authentic uniform fabric color on front AND back, not only a tiny generic team sash:\nTANG CHINESE soldiers: Tang Chinese muted crimson RED and ochre GOLD tunic panels, dark blue-gray trousers and tall leather boots, iron lamellar torso and skirt plates, rounded segmented iron helmet with small RED plume. Round dark wooden shield with narrow ochre-gold rim. East Asian adult faces. Archer wears crimson padded coat with gold trim and iron cap, wooden bow/quiver. Strong East Asian armor silhouette distinct from Roman.",
+      "purpose": "faction infantry walking A/B",
+      "civilizations": [
+        "tang"
+      ],
+      "group": "infantry-motion",
+      "sourceOriginalPath": "public/art/units-army-v6-tang.png",
+      "referencePaths": [],
+      "requestedRows": 6
+    },
+    {
+      "id": "ottoman",
+      "file": "units-army-v6-ottoman.png",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "08f55d3bcd298401333c24bd46474fcff1a340133d31bc3109adc3b1273497fe",
+      "frames": [
+        [
+          98,
+          21,
+          99,
+          233,
+          49.5,
+          223.18
+        ],
+        [
+          348,
+          17,
+          106,
+          241,
+          53,
+          230.97
+        ],
+        [
+          609,
+          10,
+          103,
+          249,
+          51.5,
+          238.78
+        ],
+        [
+          870,
+          21,
+          106,
+          239,
+          53,
+          229.03
+        ],
+        [
+          93,
+          262,
+          101,
+          236,
+          50.5,
+          226.1
+        ],
+        [
+          348,
+          273,
+          120,
+          228,
+          60,
+          218.3
+        ],
+        [
+          606,
+          263,
+          100,
+          247,
+          50,
+          236.82
+        ],
+        [
+          884,
+          265,
+          105,
+          234,
+          52.5,
+          224.15
+        ],
+        [
+          81,
+          529,
+          134,
+          216,
+          67,
+          206.6
+        ],
+        [
+          306,
+          542,
+          160,
+          205,
+          80,
+          195.88
+        ],
+        [
+          594,
+          536,
+          158,
+          218,
+          79,
+          208.55
+        ],
+        [
+          856,
+          539,
+          129,
+          206,
+          64.5,
+          196.85
+        ],
+        [
+          86,
+          771,
+          126,
+          216,
+          63,
+          206.6
+        ],
+        [
+          299,
+          777,
+          166,
+          213,
+          83,
+          203.68
+        ],
+        [
+          594,
+          775,
+          158,
+          221,
+          79,
+          211.47
+        ],
+        [
+          851,
+          771,
+          138,
+          216,
+          69,
+          206.6
+        ],
+        [
+          94,
+          1012,
+          121,
+          209,
+          60.5,
+          199.78
+        ],
+        [
+          335,
+          1012,
+          114,
+          213,
+          57,
+          203.68
+        ],
+        [
+          605,
+          1015,
+          112,
+          216,
+          56,
+          206.6
+        ],
+        [
+          868,
+          1013,
+          116,
+          210,
+          58,
+          200.75
+        ],
+        [
+          100,
+          1259,
+          125,
+          210,
+          62.5,
+          200.75
+        ],
+        [
+          336,
+          1264,
+          118,
+          210,
+          59,
+          200.75
+        ],
+        [
+          611,
+          1253,
+          115,
+          222,
+          57.5,
+          212.45
+        ],
+        [
+          864,
+          1258,
+          117,
+          217,
+          58.5,
+          207.57
+        ]
+      ],
+      "rowBodyHeights": [
+        185.1,
+        185.1,
+        202.74,
+        202.74,
+        198.12,
+        198.12
+      ],
+      "bodyHeight": 195.32000000000002,
+      "majorComponents": 24,
+      "prompt": "Use case: historical-scene. Asset type: production walking sprite atlas for an ORIGINAL 2D historical RTS browser game. The attached original concepts are STYLE/identity/material references only; do not copy any external game's art.\nTRUE transparent-alpha PNG, EXACTLY4columns by6rows =24isolated full-body soldiers. No backdrop, floor, islands, grid, text, labels, watermark or detached particles. Large clear transparent gutters around EACH actor. Original source pixels must be crisp, richly detailed and suitable for Retina zoom.\nCamera: downward orthographic30degree isometric, consistent2:1ground projection, soft upper-left natural light. Four columns ALWAYS SE(front/lower-right), SW(front/lower-left), NE(true BACK/upper-right), NW(true BACK/upper-left). Rotate the entire same character/equipment, not only head. Natural adult anatomy about7.5heads tall with small head, normal limbs, textured cloth/leather/metal/wood. Mature painted realism matching references, not chibi, toy, flat vector, plastic, chunky paper dolls.\nThis sheet MUST show TWO visibly different complete WALKING contacts per unit: contactA left leg clearly FORWARD and planted heel, right leg behind pushing off with bent knee; contactB RIGHT leg clearly forward/planted and LEFT behind. Natural opposing arm movement. Same face, equipment, body proportions, scale and foot-contact location in both contacts. Do not mirror one pose; draw the actual opposite legs. Not static standing repeated. Full connected arms/head/legs; all weapons and boots inside cell. Spear held upright with tip fully inside cell and no high flag. Sword held low and shield carried normally. Archer bow lowered at side, quiver on back, no drawn attack shot.\nRow1 SPEAR infantry contactA.\nRow2 SAME spear infantry contactB.\nRow3 SWORD+SHIELD infantry contactA.\nRow4 SAME sword+shield contactB.\nRow5 ARCHER infantry contactA.\nRow6 SAME archer contactB.\nAll six rows same adult human body size, readable materials and crisp faces/cloth. Foot ground pivot centered horizontally near85%rowcellheight. Absolutely no row overlap. No terrain or big painted shadows; only faint tiny contact shadows.\nCivilization identity/color is REQUIRED, with substantial authentic uniform fabric color on front AND back, not only a tiny generic team sash:\nOTTOMAN soldiers: Ottoman deep TEAL/GREEN knee-length cotton/wool coat, cream loose trousers, brown leather boots, understated ochre-gold belt, practical mail vest or leather armor, small white headwrap around modest dark-red cap. Small round dark wooden shield with brass boss. West Asian adult bearded faces. Archer wears TEAL coat, white cloth headwrap, composite bow and quiver. No muskets for these infantry.",
+      "purpose": "faction infantry walking A/B",
+      "civilizations": [
+        "ottoman"
+      ],
+      "group": "infantry-motion",
+      "sourceOriginalPath": "public/art/units-army-v6-ottoman.png",
+      "referencePaths": [],
+      "requestedRows": 6
+    },
+    {
+      "id": "roman",
+      "file": "units-mounted-v6-roman.png",
+      "width": 1312,
+      "height": 1199,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "b523c5482443dd06e9719439202f3e8d9d0a57ecf732bda777b3f0f2b0a64c5c",
+      "frames": [
+        [
+          70,
+          12,
+          232,
+          270,
+          116,
+          259.25
+        ],
+        [
+          384,
+          14,
+          210,
+          271,
+          105,
+          260.23
+        ],
+        [
+          736,
+          13,
+          201,
+          266,
+          100.5,
+          255.35
+        ],
+        [
+          1053,
+          18,
+          199,
+          263,
+          99.5,
+          252.43
+        ],
+        [
+          74,
+          305,
+          230,
+          263,
+          115,
+          252.43
+        ],
+        [
+          400,
+          305,
+          197,
+          265,
+          98.5,
+          254.38
+        ],
+        [
+          738,
+          301,
+          194,
+          265,
+          97,
+          254.38
+        ],
+        [
+          1060,
+          305,
+          199,
+          265,
+          99.5,
+          254.38
+        ],
+        [
+          54,
+          585,
+          250,
+          285,
+          125,
+          273.88
+        ],
+        [
+          383,
+          588,
+          230,
+          282,
+          115,
+          270.95
+        ],
+        [
+          717,
+          585,
+          225,
+          270,
+          112.5,
+          259.25
+        ],
+        [
+          1050,
+          591,
+          219,
+          271,
+          109.5,
+          260.23
+        ],
+        [
+          66,
+          884,
+          239,
+          265,
+          119.5,
+          254.38
+        ],
+        [
+          391,
+          888,
+          220,
+          265,
+          110,
+          254.38
+        ],
+        [
+          729,
+          882,
+          206,
+          270,
+          103,
+          259.25
+        ],
+        [
+          1056,
+          883,
+          211,
+          271,
+          105.5,
+          260.23
+        ]
+      ],
+      "rowBodyHeights": [
+        253.82,
+        253.82,
+        260.07,
+        260.07
+      ],
+      "bodyHeight": 256.945,
+      "majorComponents": 16,
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL production mounted WALKING contact sprite atlas for our2D historical RTS. References: original concepts show cloth/metal/leather style, adult identity and horse anatomy. Crisp detailed realistic adult/rider plus natural horse, no toys/cartoon/paper dolls.\nTRUE RGBA with fully transparent exterior, EXACTLY4columns x4rows =16complete horse+rider sprites. No background, terrain, checkerboard, labels/grid/text/watermark or strayobjects. Uniform large cells and safe gutters. Downward orthographic30degree isometric camera,2:1ground projection, upper-left natural light.\nColumns SE(front lower-right),SW(front lower-left),NE(true BACK upper-right),NW(true BACK upper-left). Rotate ENTIRE horse and rider consistently. Same bay/chestnut horse, saddle, clothes, identity and adult head size in all views, not mirrors. Horse natural long-legged anatomy:4legs,4hooves, natural neck/head/rump/tail. Complete rider with connectedarms andfeetinstirrups, neverstandingbesidehorse.\nRow1SCOUT WALK A: lightly equipped mounted scout, empty rein hand/compact knife at belt, leather saddle with prominently civilization-colored saddle blanket. LONG WALK STRIDE: near-side front leg extended forward nearly straight with heel landing, far-side front leg back, near-side hind leg angled BACK pushing off, other hind leg forward. The four legs visibly separated and reaching.\nRow2SAME SCOUT WALK B: COMPRESSION/PASSING CONTACT, clearly different from row1: near-side FRONT leg lifted/bent sharply at knee under neck, the far-side front hoof grounded forward; near-side HIND leg folded forward under belly, oppositehindleg back; torso remains same size/level. Obvious bent hocks and lifted hoof. Do not repeat straight legs. Rider slight natural opposing shoulder/hip lean, hands keep reins, legs stay in stirrups. Same equipment.\nRow3LIGHTCAVALRY WALK A: moderately armored cavalryman with a short curved/straight sword heldlow, smallshieldonback, corresponding mail/lamellarvest; same LONG STRIDE leg positions as row1.\nRow4SAME LIGHTCAVALRY WALK B: same outfit/equipment/body, obvious COMPRESSION/PASSING bent leg positions fromrow2, not a static repeat.\nAll cells show a horse WALKING on a flat plane, not rearing, jumping or galloping. No six-legged horses or hidden disconnected legs. Entire hooves, tails, reins, shields and weapons safely inside each cell, all matched scales. Ground hoof contact pivot centered horizontally near85%cellheight. Barelyvisible contactshadow only.\nCivilization authentic rider uniforms and saddleblankets REQUIRED front and back, substantial fabriccolor:\nROMAN: Roman scarlet-red wool knee-length tunic, short cream sleeves, practical iron segmented or mail torso armor, imperial iron helmet with cheek plates, bronze trim, leather sandals or short military boots. Broad RED oval or rectangular wooden shield with simple gold edging. Mediterranean adult faces.  Scout has lighter armor, light cavalry has practical iron armor. Both have substantial scarlet red saddle blanket and matching cloth.",
+      "purpose": "faction scout/light cavalry walking A/B",
+      "civilizations": [
+        "roman"
+      ],
+      "group": "cavalry-motion",
+      "sourceOriginalPath": "public/art/units-mounted-v6-roman.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "mongol",
+      "file": "units-mounted-v6-mongol.png",
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "a90dbf48b7e87940e967c7079a768ab3666f59ad46f9d15d39082e9c870fd7d5",
+      "frames": [
+        [
+          86,
+          7,
+          247,
+          256,
+          123.5,
+          245.6
+        ],
+        [
+          453,
+          9,
+          245,
+          253,
+          122.5,
+          242.68
+        ],
+        [
+          849,
+          10,
+          211,
+          243,
+          105.5,
+          232.93
+        ],
+        [
+          1239,
+          6,
+          223,
+          252,
+          111.5,
+          241.7
+        ],
+        [
+          85,
+          257,
+          244,
+          251,
+          122,
+          240.72
+        ],
+        [
+          449,
+          258,
+          244,
+          249,
+          122,
+          238.78
+        ],
+        [
+          845,
+          264,
+          221,
+          241,
+          110.5,
+          230.97
+        ],
+        [
+          1238,
+          259,
+          218,
+          246,
+          109,
+          235.85
+        ],
+        [
+          71,
+          504,
+          262,
+          260,
+          131,
+          249.5
+        ],
+        [
+          438,
+          515,
+          256,
+          255,
+          128,
+          244.62
+        ],
+        [
+          852,
+          512,
+          232,
+          255,
+          116,
+          244.62
+        ],
+        [
+          1224,
+          511,
+          239,
+          251,
+          119.5,
+          240.72
+        ],
+        [
+          86,
+          757,
+          244,
+          246,
+          122,
+          235.85
+        ],
+        [
+          451,
+          758,
+          236,
+          247,
+          118,
+          236.82
+        ],
+        [
+          850,
+          764,
+          218,
+          247,
+          109,
+          236.82
+        ],
+        [
+          1243,
+          754,
+          219,
+          251,
+          109.5,
+          240.72
+        ]
+      ],
+      "rowBodyHeights": [
+        237.04,
+        237.04,
+        239.61,
+        239.61
+      ],
+      "bodyHeight": 238.325,
+      "majorComponents": 16,
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL production mounted WALKING contact sprite atlas for our2D historical RTS. References: original concepts show cloth/metal/leather style, adult identity and horse anatomy. Crisp detailed realistic adult/rider plus natural horse, no toys/cartoon/paper dolls.\nTRUE RGBA with fully transparent exterior, EXACTLY4columns x4rows =16complete horse+rider sprites. No background, terrain, checkerboard, labels/grid/text/watermark or strayobjects. Uniform large cells and safe gutters. Downward orthographic30degree isometric camera,2:1ground projection, upper-left natural light.\nColumns SE(front lower-right),SW(front lower-left),NE(true BACK upper-right),NW(true BACK upper-left). Rotate ENTIRE horse and rider consistently. Same bay/chestnut horse, saddle, clothes, identity and adult head size in all views, not mirrors. Horse natural long-legged anatomy:4legs,4hooves, natural neck/head/rump/tail. Complete rider with connectedarms andfeetinstirrups, neverstandingbesidehorse.\nRow1SCOUT WALK A: lightly equipped mounted scout, empty rein hand/compact knife at belt, leather saddle with prominently civilization-colored saddle blanket. LONG WALK STRIDE: near-side front leg extended forward nearly straight with heel landing, far-side front leg back, near-side hind leg angled BACK pushing off, other hind leg forward. The four legs visibly separated and reaching.\nRow2SAME SCOUT WALK B: COMPRESSION/PASSING CONTACT, clearly different from row1: near-side FRONT leg lifted/bent sharply at knee under neck, the far-side front hoof grounded forward; near-side HIND leg folded forward under belly, oppositehindleg back; torso remains same size/level. Obvious bent hocks and lifted hoof. Do not repeat straight legs. Rider slight natural opposing shoulder/hip lean, hands keep reins, legs stay in stirrups. Same equipment.\nRow3LIGHTCAVALRY WALK A: moderately armored cavalryman with a short curved/straight sword heldlow, smallshieldonback, corresponding mail/lamellarvest; same LONG STRIDE leg positions as row1.\nRow4SAME LIGHTCAVALRY WALK B: same outfit/equipment/body, obvious COMPRESSION/PASSING bent leg positions fromrow2, not a static repeat.\nAll cells show a horse WALKING on a flat plane, not rearing, jumping or galloping. No six-legged horses or hidden disconnected legs. Entire hooves, tails, reins, shields and weapons safely inside each cell, all matched scales. Ground hoof contact pivot centered horizontally near85%cellheight. Barelyvisible contactshadow only.\nCivilization authentic rider uniforms and saddleblankets REQUIRED front and back, substantial fabriccolor:\nMONGOL: Mongol cobalt/indigo BLUE wool deel over brown trousers and leather boots, practical dark iron lamellar/leather chest armor, small fur-edged conical helmet or cap. Brown round wicker/wood shield, simple blue cloth trim. Central/East Asian adult faces, moustache.  Scout has lighter armor, light cavalry has practical iron armor. Both have substantial indigo blue saddle blanket and matching cloth.",
+      "purpose": "faction scout/light cavalry walking A/B",
+      "civilizations": [
+        "mongol"
+      ],
+      "group": "cavalry-motion",
+      "sourceOriginalPath": "public/art/units-mounted-v6-mongol.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "persian",
+      "file": "units-mounted-v6-persian.png",
+      "width": 1374,
+      "height": 1145,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "6fc735f8524930977378a4161d8a41e06478623206647fa13049237cb8886cd3",
+      "frames": [
+        [
+          28,
+          7,
+          269,
+          283,
+          134.5,
+          271.93
+        ],
+        [
+          385,
+          7,
+          275,
+          285,
+          137.5,
+          273.88
+        ],
+        [
+          739,
+          3,
+          258,
+          287,
+          129,
+          275.82
+        ],
+        [
+          1097,
+          5,
+          251,
+          282,
+          125.5,
+          270.95
+        ],
+        [
+          40,
+          291,
+          255,
+          269,
+          127.5,
+          258.27
+        ],
+        [
+          380,
+          295,
+          284,
+          266,
+          142,
+          255.35
+        ],
+        [
+          736,
+          284,
+          267,
+          289,
+          133.5,
+          277.77
+        ],
+        [
+          1092,
+          290,
+          256,
+          287,
+          128,
+          275.82
+        ],
+        [
+          29,
+          581,
+          271,
+          282,
+          135.5,
+          270.95
+        ],
+        [
+          378,
+          578,
+          284,
+          287,
+          142,
+          275.82
+        ],
+        [
+          740,
+          578,
+          260,
+          290,
+          130,
+          278.75
+        ],
+        [
+          1092,
+          578,
+          255,
+          285,
+          127.5,
+          273.88
+        ],
+        [
+          32,
+          866,
+          261,
+          258,
+          130.5,
+          247.55
+        ],
+        [
+          386,
+          862,
+          278,
+          270,
+          139,
+          259.25
+        ],
+        [
+          741,
+          863,
+          256,
+          276,
+          128,
+          265.1
+        ],
+        [
+          1092,
+          865,
+          250,
+          276,
+          125,
+          265.1
+        ]
+      ],
+      "rowBodyHeights": [
+        268.52,
+        268.52,
+        265.58,
+        265.58
+      ],
+      "bodyHeight": 267.04999999999995,
+      "majorComponents": 16,
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL production mounted WALKING contact sprite atlas for our2D historical RTS. References: original concepts show cloth/metal/leather style, adult identity and horse anatomy. Crisp detailed realistic adult/rider plus natural horse, no toys/cartoon/paper dolls.\nTRUE RGBA with fully transparent exterior, EXACTLY4columns x4rows =16complete horse+rider sprites. No background, terrain, checkerboard, labels/grid/text/watermark or strayobjects. Uniform large cells and safe gutters. Downward orthographic30degree isometric camera,2:1ground projection, upper-left natural light.\nColumns SE(front lower-right),SW(front lower-left),NE(true BACK upper-right),NW(true BACK upper-left). Rotate ENTIRE horse and rider consistently. Same bay/chestnut horse, saddle, clothes, identity and adult head size in all views, not mirrors. Horse natural long-legged anatomy:4legs,4hooves, natural neck/head/rump/tail. Complete rider with connectedarms andfeetinstirrups, neverstandingbesidehorse.\nRow1SCOUT WALK A: lightly equipped mounted scout, empty rein hand/compact knife at belt, leather saddle with prominently civilization-colored saddle blanket. LONG WALK STRIDE: near-side front leg extended forward nearly straight with heel landing, far-side front leg back, near-side hind leg angled BACK pushing off, other hind leg forward. The four legs visibly separated and reaching.\nRow2SAME SCOUT WALK B: COMPRESSION/PASSING CONTACT, clearly different from row1: near-side FRONT leg lifted/bent sharply at knee under neck, the far-side front hoof grounded forward; near-side HIND leg folded forward under belly, oppositehindleg back; torso remains same size/level. Obvious bent hocks and lifted hoof. Do not repeat straight legs. Rider slight natural opposing shoulder/hip lean, hands keep reins, legs stay in stirrups. Same equipment.\nRow3LIGHTCAVALRY WALK A: moderately armored cavalryman with a short curved/straight sword heldlow, smallshieldonback, corresponding mail/lamellarvest; same LONG STRIDE leg positions as row1.\nRow4SAME LIGHTCAVALRY WALK B: same outfit/equipment/body, obvious COMPRESSION/PASSING bent leg positions fromrow2, not a static repeat.\nAll cells show a horse WALKING on a flat plane, not rearing, jumping or galloping. No six-legged horses or hidden disconnected legs. Entire hooves, tails, reins, shields and weapons safely inside each cell, all matched scales. Ground hoof contact pivot centered horizontally near85%cellheight. Barelyvisible contactshadow only.\nCivilization authentic rider uniforms and saddleblankets REQUIRED front and back, substantial fabriccolor:\nPERSIAN: Persian deep TURQUOISE and peacock-blue long woven tunic, cream loose trousers and leather boots, restrained GOLD hem/arm bands, practical bronze/iron scale vest, soft fluted cap or modest conical helmet. Small round bronze/gold shield with subtle geometric motif. West Asian adult bearded faces.  Scout has lighter armor, light cavalry has practical iron armor. Both have substantial turquoise saddle blanket and matching cloth.",
+      "purpose": "faction scout/light cavalry walking A/B",
+      "civilizations": [
+        "persian"
+      ],
+      "group": "cavalry-motion",
+      "sourceOriginalPath": "public/art/units-mounted-v6-persian.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "tang",
+      "file": "units-mounted-v6-tang.png",
+      "width": 1230,
+      "height": 1278,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "e23086c9a70ec7026fca8afc413c8ff8360154b1aae892201e4a4bc011a06e06",
+      "frames": [
+        [
+          20,
+          8,
+          260,
+          296,
+          130,
+          284.6
+        ],
+        [
+          333,
+          10,
+          254,
+          300,
+          127,
+          288.5
+        ],
+        [
+          636,
+          9,
+          245,
+          304,
+          122.5,
+          292.4
+        ],
+        [
+          952,
+          10,
+          253,
+          310,
+          126.5,
+          298.25
+        ],
+        [
+          22,
+          321,
+          251,
+          300,
+          125.5,
+          288.5
+        ],
+        [
+          338,
+          323,
+          242,
+          295,
+          121,
+          283.62
+        ],
+        [
+          642,
+          326,
+          234,
+          299,
+          117,
+          287.52
+        ],
+        [
+          958,
+          326,
+          243,
+          301,
+          121.5,
+          289.48
+        ],
+        [
+          19,
+          630,
+          268,
+          311,
+          134,
+          299.23
+        ],
+        [
+          333,
+          630,
+          258,
+          314,
+          129,
+          302.15
+        ],
+        [
+          637,
+          632,
+          250,
+          317,
+          125,
+          305.07
+        ],
+        [
+          958,
+          631,
+          243,
+          324,
+          121.5,
+          311.9
+        ],
+        [
+          24,
+          945,
+          250,
+          308,
+          125,
+          296.3
+        ],
+        [
+          340,
+          948,
+          244,
+          303,
+          122,
+          291.43
+        ],
+        [
+          645,
+          955,
+          232,
+          302,
+          116,
+          290.45
+        ],
+        [
+          962,
+          954,
+          244,
+          304,
+          122,
+          292.4
+        ]
+      ],
+      "rowBodyHeights": [
+        287.75,
+        287.75,
+        297.31,
+        297.31
+      ],
+      "bodyHeight": 292.53,
+      "majorComponents": 16,
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL production mounted WALKING contact sprite atlas for our2D historical RTS. References: original concepts show cloth/metal/leather style, adult identity and horse anatomy. Crisp detailed realistic adult/rider plus natural horse, no toys/cartoon/paper dolls.\nTRUE RGBA with fully transparent exterior, EXACTLY4columns x4rows =16complete horse+rider sprites. No background, terrain, checkerboard, labels/grid/text/watermark or strayobjects. Uniform large cells and safe gutters. Downward orthographic30degree isometric camera,2:1ground projection, upper-left natural light.\nColumns SE(front lower-right),SW(front lower-left),NE(true BACK upper-right),NW(true BACK upper-left). Rotate ENTIRE horse and rider consistently. Same bay/chestnut horse, saddle, clothes, identity and adult head size in all views, not mirrors. Horse natural long-legged anatomy:4legs,4hooves, natural neck/head/rump/tail. Complete rider with connectedarms andfeetinstirrups, neverstandingbesidehorse.\nRow1SCOUT WALK A: lightly equipped mounted scout, empty rein hand/compact knife at belt, leather saddle with prominently civilization-colored saddle blanket. LONG WALK STRIDE: near-side front leg extended forward nearly straight with heel landing, far-side front leg back, near-side hind leg angled BACK pushing off, other hind leg forward. The four legs visibly separated and reaching.\nRow2SAME SCOUT WALK B: COMPRESSION/PASSING CONTACT, clearly different from row1: near-side FRONT leg lifted/bent sharply at knee under neck, the far-side front hoof grounded forward; near-side HIND leg folded forward under belly, oppositehindleg back; torso remains same size/level. Obvious bent hocks and lifted hoof. Do not repeat straight legs. Rider slight natural opposing shoulder/hip lean, hands keep reins, legs stay in stirrups. Same equipment.\nRow3LIGHTCAVALRY WALK A: moderately armored cavalryman with a short curved/straight sword heldlow, smallshieldonback, corresponding mail/lamellarvest; same LONG STRIDE leg positions as row1.\nRow4SAME LIGHTCAVALRY WALK B: same outfit/equipment/body, obvious COMPRESSION/PASSING bent leg positions fromrow2, not a static repeat.\nAll cells show a horse WALKING on a flat plane, not rearing, jumping or galloping. No six-legged horses or hidden disconnected legs. Entire hooves, tails, reins, shields and weapons safely inside each cell, all matched scales. Ground hoof contact pivot centered horizontally near85%cellheight. Barelyvisible contactshadow only.\nCivilization authentic rider uniforms and saddleblankets REQUIRED front and back, substantial fabriccolor:\nTANG CHINESE: Tang Chinese muted crimson RED and ochre GOLD tunic panels, dark blue-gray trousers and tall leather boots, iron lamellar torso and skirt plates, rounded segmented iron helmet with small RED plume. Round dark wooden shield with narrow ochre-gold rim. East Asian adult faces.  Scout has lighter armor, light cavalry has practical iron armor. Both have substantial crimson red/gold saddle blanket and matching cloth.",
+      "purpose": "faction scout/light cavalry walking A/B",
+      "civilizations": [
+        "tang"
+      ],
+      "group": "cavalry-motion",
+      "sourceOriginalPath": "public/art/units-mounted-v6-tang.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "ottoman",
+      "file": "units-mounted-v6-ottoman.png",
+      "width": 1263,
+      "height": 1245,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "b03c30ac089bb0fd3dcfa0525c3fc3e25ae5ee9cd5541d13800bfef9ebd75205",
+      "frames": [
+        [
+          18,
+          9,
+          261,
+          285,
+          130.5,
+          273.88
+        ],
+        [
+          354,
+          7,
+          269,
+          288,
+          134.5,
+          276.8
+        ],
+        [
+          684,
+          10,
+          262,
+          286,
+          131,
+          274.85
+        ],
+        [
+          1026,
+          9,
+          224,
+          293,
+          112,
+          281.68
+        ],
+        [
+          21,
+          311,
+          260,
+          289,
+          130,
+          277.77
+        ],
+        [
+          355,
+          311,
+          267,
+          275,
+          133.5,
+          264.12
+        ],
+        [
+          690,
+          311,
+          248,
+          283,
+          124,
+          271.93
+        ],
+        [
+          1025,
+          311,
+          225,
+          279,
+          112.5,
+          268.02
+        ],
+        [
+          16,
+          617,
+          268,
+          289,
+          134,
+          277.77
+        ],
+        [
+          351,
+          617,
+          275,
+          295,
+          137.5,
+          283.62
+        ],
+        [
+          685,
+          618,
+          266,
+          290,
+          133,
+          278.75
+        ],
+        [
+          1024,
+          616,
+          227,
+          301,
+          113.5,
+          289.48
+        ],
+        [
+          21,
+          918,
+          266,
+          290,
+          133,
+          278.75
+        ],
+        [
+          353,
+          919,
+          269,
+          275,
+          134.5,
+          264.12
+        ],
+        [
+          690,
+          918,
+          259,
+          289,
+          129.5,
+          277.77
+        ],
+        [
+          1019,
+          918,
+          233,
+          285,
+          116.5,
+          273.88
+        ]
+      ],
+      "rowBodyHeights": [
+        272.19,
+        272.19,
+        276.61,
+        276.61
+      ],
+      "bodyHeight": 274.4,
+      "majorComponents": 16,
+      "prompt": "Use case: historical-scene. Asset type: ORIGINAL production mounted WALKING contact sprite atlas for our2D historical RTS. References: original concepts show cloth/metal/leather style, adult identity and horse anatomy. Crisp detailed realistic adult/rider plus natural horse, no toys/cartoon/paper dolls.\nTRUE RGBA with fully transparent exterior, EXACTLY4columns x4rows =16complete horse+rider sprites. No background, terrain, checkerboard, labels/grid/text/watermark or strayobjects. Uniform large cells and safe gutters. Downward orthographic30degree isometric camera,2:1ground projection, upper-left natural light.\nColumns SE(front lower-right),SW(front lower-left),NE(true BACK upper-right),NW(true BACK upper-left). Rotate ENTIRE horse and rider consistently. Same bay/chestnut horse, saddle, clothes, identity and adult head size in all views, not mirrors. Horse natural long-legged anatomy:4legs,4hooves, natural neck/head/rump/tail. Complete rider with connectedarms andfeetinstirrups, neverstandingbesidehorse.\nRow1SCOUT WALK A: lightly equipped mounted scout, empty rein hand/compact knife at belt, leather saddle with prominently civilization-colored saddle blanket. LONG WALK STRIDE: near-side front leg extended forward nearly straight with heel landing, far-side front leg back, near-side hind leg angled BACK pushing off, other hind leg forward. The four legs visibly separated and reaching.\nRow2SAME SCOUT WALK B: COMPRESSION/PASSING CONTACT, clearly different from row1: near-side FRONT leg lifted/bent sharply at knee under neck, the far-side front hoof grounded forward; near-side HIND leg folded forward under belly, oppositehindleg back; torso remains same size/level. Obvious bent hocks and lifted hoof. Do not repeat straight legs. Rider slight natural opposing shoulder/hip lean, hands keep reins, legs stay in stirrups. Same equipment.\nRow3LIGHTCAVALRY WALK A: moderately armored cavalryman with a short curved/straight sword heldlow, smallshieldonback, corresponding mail/lamellarvest; same LONG STRIDE leg positions as row1.\nRow4SAME LIGHTCAVALRY WALK B: same outfit/equipment/body, obvious COMPRESSION/PASSING bent leg positions fromrow2, not a static repeat.\nAll cells show a horse WALKING on a flat plane, not rearing, jumping or galloping. No six-legged horses or hidden disconnected legs. Entire hooves, tails, reins, shields and weapons safely inside each cell, all matched scales. Ground hoof contact pivot centered horizontally near85%cellheight. Barelyvisible contactshadow only.\nCivilization authentic rider uniforms and saddleblankets REQUIRED front and back, substantial fabriccolor:\nOTTOMAN: Ottoman deep TEAL/GREEN knee-length cotton/wool coat, cream loose trousers, brown leather boots, understated ochre-gold belt, practical mail vest or leather armor, small white headwrap around modest dark-red cap. Small round dark wooden shield with brass boss. West Asian adult bearded faces.  Scout has lighter armor, light cavalry has practical iron armor. Both have substantial teal green saddle blanket and matching cloth.",
+      "purpose": "faction scout/light cavalry walking A/B",
+      "civilizations": [
+        "ottoman"
+      ],
+      "group": "cavalry-motion",
+      "sourceOriginalPath": "public/art/units-mounted-v6-ottoman.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "mongol",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×4rows,16complete mountedsprites. Match original Mongol blue-deel iron-lamellar fur-conical-helmet rider identity, brown/bay horse and blue/gold saddleblanket.\nRows1/2 MongolHORSEARCHER contactA/B: BLUE deel, lamellarvest/furhelmet, quiveronback, compositebowheldLOWwhilewalking (notdrawnarrow), handsretainreins.\nRows3/4 MongolLANCER contactA/B: BLUE deel/ironlamellar, fur-edged conicalhelmet, straightlonglancecarriedupright/diagonallylow safelyinsidecell with smallbluepennon, ironroundshieldonback, brown horse.\nContactA LONG STRIDE: near frontleg clearly extendedforward/grounded and nearhindleg reachingback, oppositelegsforward/back. ContactB COMPRESSION/PASSING: nearfrontleg obviously lifted and bent at knee/hock underneathneck, farfrontleggroundedforward; nearhindleg bentforwardunderbelly, farhindlegback. All4legs present and attached, obvious lift/bending changes. Horse walking flatground, never rearing/jumping. Rider changes natural shoulder/hiplean a little, stays seated with bootsinstirrups, reins/equipment consistent. No body stretching.\n4directions of samecharacter per row. Large safe transparentgutters and verysofttinycontactshadows.",
+      "file": "units-motion-v6-mongol.png",
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "e54c0d54330bbc26deecbd59af11ae019b158dd1865f9fd0f8bb2dab2d6895e8",
+      "frames": [
+        [
+          139,
+          7,
+          240,
+          261,
+          185.16,
+          250.47
+        ],
+        [
+          477,
+          8,
+          231,
+          259,
+          45.91,
+          248.53
+        ],
+        [
+          832,
+          11,
+          232,
+          255,
+          33.2,
+          244.62
+        ],
+        [
+          1204,
+          9,
+          224,
+          257,
+          178.44,
+          246.57
+        ],
+        [
+          140,
+          259,
+          213,
+          253,
+          145.18,
+          242.68
+        ],
+        [
+          485,
+          259,
+          219,
+          246,
+          83.31,
+          235.85
+        ],
+        [
+          830,
+          261,
+          236,
+          241,
+          68.45,
+          230.97
+        ],
+        [
+          1200,
+          258,
+          231,
+          247,
+          133.24,
+          236.82
+        ],
+        [
+          104,
+          513,
+          256,
+          262,
+          195.03,
+          251.45
+        ],
+        [
+          484,
+          514,
+          253,
+          242,
+          113.97,
+          231.95
+        ],
+        [
+          828,
+          509,
+          237,
+          270,
+          50.22,
+          259.25
+        ],
+        [
+          1186,
+          512,
+          256,
+          267,
+          178.71,
+          256.32
+        ],
+        [
+          122,
+          770,
+          233,
+          246,
+          166.74,
+          235.85
+        ],
+        [
+          492,
+          769,
+          232,
+          246,
+          57.88,
+          235.85
+        ],
+        [
+          830,
+          767,
+          218,
+          246,
+          69.42,
+          235.85
+        ],
+        [
+          1202,
+          765,
+          227,
+          250,
+          154.88,
+          239.75
+        ]
+      ],
+      "rowBodyHeights": [
+        240.47,
+        240.47,
+        214.56,
+        214.56
+      ],
+      "bodyHeight": 227.515,
+      "majorComponents": 16,
+      "civilizations": [
+        "mongol"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-mongol.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "tang",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×2rows,8complete sprites of the SAME Tangheavy armoredhorse/rider. Original Tangcrimson/gold ironlamellar armor, redplumed segmentedhelmet, armoredskirt, LONG polearmsafelyinsidecell, gray/bayhorsecoveredin ironlamellarbardingandcrimson/goldcloth. Thisisourunique heavycavalry. Row1contactA,Row2contactB.\nContactA LONG STRIDE: near frontleg clearly extendedforward/grounded and nearhindleg reachingback, oppositelegsforward/back. ContactB COMPRESSION/PASSING: nearfrontleg obviously lifted and bent at knee/hock underneathneck, farfrontleggroundedforward; nearhindleg bentforwardunderbelly, farhindlegback. All4legs present and attached, obvious lift/bending changes. Horse walking flatground, never rearing/jumping. Rider changes natural shoulder/hiplean a little, stays seated with bootsinstirrups, reins/equipment consistent. No body stretching.\nWide landscape format so everycompletehorse is large and high resolution. No darkgroundpatches; extremelysofttightcontactshadowonly.",
+      "file": "units-motion-v6-tang.png",
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "77a191bd8cabe11139278ddbb6d5fa6bfdb4c6204a2ddccf469711585bb51b27",
+      "frames": [
+        [
+          20,
+          30,
+          375,
+          451,
+          276.68,
+          435.73
+        ],
+        [
+          413,
+          29,
+          358,
+          453,
+          52.23,
+          437.68
+        ],
+        [
+          789,
+          27,
+          366,
+          459,
+          38.08,
+          443.52
+        ],
+        [
+          1169,
+          50,
+          350,
+          454,
+          323.1,
+          438.65
+        ],
+        [
+          28,
+          521,
+          359,
+          448,
+          244.84,
+          432.8
+        ],
+        [
+          406,
+          525,
+          356,
+          450,
+          113.88,
+          434.75
+        ],
+        [
+          805,
+          506,
+          340,
+          450,
+          96.48,
+          434.75
+        ],
+        [
+          1180,
+          510,
+          329,
+          474,
+          281.27,
+          458.15
+        ]
+      ],
+      "rowBodyHeights": [
+        412.05,
+        412.05
+      ],
+      "bodyHeight": 412.05,
+      "majorComponents": 8,
+      "civilizations": [
+        "tang"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-tang.png",
+      "referencePaths": [],
+      "requestedRows": 2
+    },
+    {
+      "id": "elephant_a",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×1row,4large isolated complete PERSIANWAR ELEPHANT+howdah+rider sprites. WIDE landscape source so eachcompleteelephant has high nativepixelresolution. Match our original Persian elephant: naturallarge Asian elephant graywrinkledskin, two whiteivorytusks, turquoisecobalt/gold patternedtextilearmoredcaparison, modestwoodenhowdahwithoneblue/goldarmoredspearsoldierandonecream-clothedmahout. Same2humans/equipment/identity everyview. Naturalheavy4pillarlegs withreal knees and toes, trueelephantbodymuchbiggerthanhorse, trunk/tail attached. No baby/toy/chibielephant. No groundisland, fullalphaoutside, onlysofttightcontactshadow. Foot groundpivotnearhorizontalcenter at85%cellheight. \nWALK CONTACT A, long stance: near-side FRONT pillarleg stepped clearlyFORWARD and grounded, farfrontlegBACK; nearhindlegBACK, farhindlegFORWARD. Trunk swings slightlyforward, tail toside. Natural heavywalking, no rearing.",
+      "file": "units-motion-v6-elephant-a.png",
+      "width": 2172,
+      "height": 724,
+      "columns": 4,
+      "actualRows": 1,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "524644cdd72d65aafd9269f7bed1d6139324a3a1fa2ac8901409925a9982fd35",
+      "frames": [
+        [
+          34,
+          5,
+          506,
+          656,
+          299.83,
+          635.6
+        ],
+        [
+          594,
+          12,
+          503,
+          664,
+          201.14,
+          643.4
+        ],
+        [
+          1157,
+          19,
+          463,
+          656,
+          115.15,
+          635.6
+        ],
+        [
+          1685,
+          7,
+          462,
+          665,
+          376.72,
+          644.38
+        ]
+      ],
+      "rowBodyHeights": [
+        450.74
+      ],
+      "bodyHeight": 450.74,
+      "majorComponents": 4,
+      "civilizations": [
+        "persian"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-elephant-a.png",
+      "referencePaths": [],
+      "requestedRows": 1
+    },
+    {
+      "id": "elephant_b",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×1row,4large isolated complete PERSIANWAR ELEPHANT+howdah+rider sprites. WIDE landscape source so eachcompleteelephant has high nativepixelresolution. Match our original Persian elephant: naturallarge Asian elephant graywrinkledskin, two whiteivorytusks, turquoisecobalt/gold patternedtextilearmoredcaparison, modestwoodenhowdahwithoneblue/goldarmoredspearsoldierandonecream-clothedmahout. Same2humans/equipment/identity everyview. Naturalheavy4pillarlegs withreal knees and toes, trueelephantbodymuchbiggerthanhorse, trunk/tail attached. No baby/toy/chibielephant. No groundisland, fullalphaoutside, onlysofttightcontactshadow. Foot groundpivotnearhorizontalcenter at85%cellheight. \nWALK CONTACT B, passing: near-side FRONT leg visiblyLIFTED and BENT at knee, hoof/toes offground; far-sidefrontleggroundedFORWARD, nearhindlegbentFORWARDunderbody and otherhindlegpushingback. Trunkcurledinwardslightlyandtailswingsopposite. Obvious limbpositiondifference fromlongstride.",
+      "file": "units-motion-v6-elephant-b.png",
+      "width": 2172,
+      "height": 724,
+      "columns": 4,
+      "actualRows": 1,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "00b3648c1fe63b0d832b8ec0326d21f0afaf245ff81fa335b0d23d41793d0a92",
+      "frames": [
+        [
+          27,
+          18,
+          502,
+          656,
+          301.2,
+          635.6
+        ],
+        [
+          597,
+          29,
+          466,
+          648,
+          162.97,
+          627.8
+        ],
+        [
+          1138,
+          47,
+          488,
+          626,
+          109.93,
+          606.35
+        ],
+        [
+          1683,
+          39,
+          460,
+          631,
+          390.94,
+          611.23
+        ]
+      ],
+      "rowBodyHeights": [
+        436.94
+      ],
+      "bodyHeight": 436.94,
+      "majorComponents": 4,
+      "civilizations": [
+        "persian"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-elephant-b.png",
+      "referencePaths": [],
+      "requestedRows": 1
+    },
+    {
+      "id": "elephant_c",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×1row,4large isolated complete PERSIANWAR ELEPHANT+howdah+rider sprites. WIDE landscape source so eachcompleteelephant has high nativepixelresolution. Match our original Persian elephant: naturallarge Asian elephant graywrinkledskin, two whiteivorytusks, turquoisecobalt/gold patternedtextilearmoredcaparison, modestwoodenhowdahwithoneblue/goldarmoredspearsoldierandonecream-clothedmahout. Same2humans/equipment/identity everyview. Naturalheavy4pillarlegs withreal knees and toes, trueelephantbodymuchbiggerthanhorse, trunk/tail attached. No baby/toy/chibielephant. No groundisland, fullalphaoutside, onlysofttightcontactshadow. Foot groundpivotnearhorizontalcenter at85%cellheight. \nWALK CONTACT C, opposite long stance: near-side FRONT leg clearlyBACK and farfrontlegFORWARD, nearhindlegFORWARD and farhindlegBACK. ThisisoppositeofcontactA. Trunkrelaxedslightlybackward, tailswingsotherway. Samebodyheight/scale asA.",
+      "file": "units-motion-v6-elephant-c.png",
+      "width": 2048,
+      "height": 768,
+      "columns": 4,
+      "actualRows": 1,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "531919f3979d85ed5bb8bed6f095d04a7d1bb7490430cb0915074b98bcaa901d",
+      "frames": [
+        [
+          49,
+          38,
+          499,
+          635,
+          315.28,
+          615.12
+        ],
+        [
+          584,
+          40,
+          502,
+          628,
+          168.26,
+          608.3
+        ],
+        [
+          1102,
+          53,
+          456,
+          610,
+          91.2,
+          590.75
+        ],
+        [
+          1593,
+          43,
+          427,
+          623,
+          349.9,
+          603.42
+        ]
+      ],
+      "rowBodyHeights": [
+        425.73
+      ],
+      "bodyHeight": 425.73,
+      "majorComponents": 4,
+      "civilizations": [
+        "persian"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-elephant-c.png",
+      "referencePaths": [],
+      "requestedRows": 1
+    },
+    {
+      "id": "infantry_a",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×6rows,24footunitviews. Rows1/2 ROMANENGINEER walkingA/B: cream tunic+REDneckscarf, bronzeshallowhelmet, leather toolbelttinyhammer, holdscompactwoodenmeasuringrodlowbesidethigh (notgiantverticalstaff);Mediterraneanbeardedadult.\nRows3/4 PERSIANGUARDwalkingA/B: WestAsianadult, TURQUOISE patternedcoat/longtunic,GOLDtrim/scalevest,flutedsoftturquoisecap,creamtrousers,roundgildedshieldandstraightuprightspear safelyinsidecell, moreornatethangenericPersianspear.\nRows5/6 PERSIANGUARDARCHERwalkingA/B: sameTURQUOISE/GOLDelitepatternedlongcoat/flutedcap,quiveronbackandornatecompositebowheldlowwhilewalking,no drawnshot.\nContactA walkinglongstride, LEFT leg clearlyforward/planted and RIGHTbehind, torso/armnaturallyopposing. ContactB passingstance, leftlegback, RIGHTlegclearlylifted/bent andmovingforward; differentfeet/kneepositionsobvious, connectednaturalarms/head/legs. Sameidentityandbodymeasurements.Highresolutioncompletecharacters, adultheadsnotoversized.",
+      "file": "units-motion-v6-infantry-a.png",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "65bc8a988f8e6801faf5990c6ddb41c46c92488d4ad47d4855f11ea8fe38a73d",
+      "frames": [
+        [
+          68,
+          16,
+          154,
+          244,
+          108.68,
+          233.9
+        ],
+        [
+          328,
+          23,
+          137,
+          238,
+          40.96,
+          228.05
+        ],
+        [
+          593,
+          21,
+          138,
+          243,
+          35.75,
+          232.93
+        ],
+        [
+          823,
+          31,
+          148,
+          229,
+          107.85,
+          219.28
+        ],
+        [
+          77,
+          270,
+          158,
+          237,
+          91.74,
+          227.07
+        ],
+        [
+          329,
+          264,
+          133,
+          236,
+          54.69,
+          226.1
+        ],
+        [
+          597,
+          270,
+          129,
+          236,
+          23.73,
+          226.1
+        ],
+        [
+          828,
+          274,
+          150,
+          230,
+          117.41,
+          220.25
+        ],
+        [
+          77,
+          501,
+          161,
+          269,
+          101.04,
+          258.27
+        ],
+        [
+          337,
+          501,
+          155,
+          276,
+          94.79,
+          265.1
+        ],
+        [
+          571,
+          497,
+          121,
+          280,
+          42.04,
+          269
+        ],
+        [
+          822,
+          506,
+          143,
+          267,
+          58.05,
+          256.32
+        ],
+        [
+          82,
+          766,
+          152,
+          270,
+          117.37,
+          259.25
+        ],
+        [
+          337,
+          774,
+          153,
+          264,
+          96.06,
+          253.4
+        ],
+        [
+          576,
+          777,
+          130,
+          260,
+          43.47,
+          249.5
+        ],
+        [
+          822,
+          766,
+          141,
+          274,
+          119.3,
+          263.15
+        ],
+        [
+          80,
+          1035,
+          165,
+          233,
+          103.35,
+          223.18
+        ],
+        [
+          329,
+          1040,
+          169,
+          229,
+          38.67,
+          219.28
+        ],
+        [
+          566,
+          1039,
+          157,
+          233,
+          62.44,
+          223.18
+        ],
+        [
+          829,
+          1039,
+          142,
+          222,
+          115.35,
+          212.45
+        ],
+        [
+          94,
+          1273,
+          156,
+          234,
+          108.73,
+          224.15
+        ],
+        [
+          328,
+          1270,
+          179,
+          245,
+          35.37,
+          234.88
+        ],
+        [
+          582,
+          1273,
+          158,
+          240,
+          48.29,
+          230
+        ],
+        [
+          828,
+          1271,
+          145,
+          237,
+          124.61,
+          227.07
+        ]
+      ],
+      "rowBodyHeights": [
+        225.03,
+        225.03,
+        218.29,
+        218.29,
+        218.04,
+        218.04
+      ],
+      "bodyHeight": 220.45333333333335,
+      "majorComponents": 24,
+      "civilizations": [
+        "roman",
+        "persian"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-infantry-a.png",
+      "referencePaths": [],
+      "requestedRows": 6
+    },
+    {
+      "id": "infantry_b",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×4rows,16footunitviews. Rows1/2 TANGVANGUARDwalkingA/B: EastAsianadult,CRIMSON/GOLDironlamellarfullskirtarmor,smallREDplumedsegmentedhelmet,darktrousers/leatherboots,longChinese spear/polearmcarrieddiagonallyacrossbodywithsmallREDtassel, tip whollyinsidecell,noordinaryroundshield. Rows3/4 OTTOMANMUSKETEERwalkingA/B: WestAsianbeardedadult,deepTEAL/GREENcoat,goldedges,redwaistsash,browntrousers/leatherboots,talloff-whiteJanissaryclothcapandmatchlockwoodenmusketcarrieddiagonallyLOW,leatherpowderpouches, no firingmuzzleflash.\nContactA walkinglongstride, LEFT leg clearlyforward/planted and RIGHTbehind, torso/armnaturallyopposing. ContactB passingstance, leftlegback, RIGHTlegclearlylifted/bent andmovingforward; differentfeet/kneepositionsobvious, connectednaturalarms/head/legs. Sameidentityandbodymeasurements.",
+      "file": "units-motion-v6-infantry-b.png",
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "fa15eb4bb087870fa01efbfc3a50cdea0525acc078b96354010f60ba78fcc45f",
+      "frames": [
+        [
+          85,
+          13,
+          289,
+          253,
+          170.91,
+          242.68
+        ],
+        [
+          446,
+          9,
+          259,
+          249,
+          72.86,
+          238.78
+        ],
+        [
+          828,
+          8,
+          247,
+          256,
+          204.54,
+          245.6
+        ],
+        [
+          1185,
+          9,
+          268,
+          257,
+          214.6,
+          246.57
+        ],
+        [
+          80,
+          262,
+          293,
+          251,
+          158.45,
+          240.72
+        ],
+        [
+          446,
+          265,
+          258,
+          250,
+          66.11,
+          239.75
+        ],
+        [
+          838,
+          260,
+          246,
+          257,
+          172.56,
+          246.57
+        ],
+        [
+          1181,
+          260,
+          271,
+          255,
+          202.68,
+          244.62
+        ],
+        [
+          120,
+          518,
+          226,
+          243,
+          136.41,
+          232.93
+        ],
+        [
+          497,
+          519,
+          193,
+          238,
+          37.84,
+          228.05
+        ],
+        [
+          893,
+          517,
+          203,
+          250,
+          102.91,
+          239.75
+        ],
+        [
+          1198,
+          515,
+          214,
+          256,
+          190.79,
+          245.6
+        ],
+        [
+          126,
+          765,
+          217,
+          248,
+          114.88,
+          237.8
+        ],
+        [
+          458,
+          768,
+          190,
+          243,
+          87.24,
+          232.93
+        ],
+        [
+          884,
+          765,
+          215,
+          249,
+          78.78,
+          238.78
+        ],
+        [
+          1213,
+          766,
+          213,
+          239,
+          123.84,
+          229.03
+        ]
+      ],
+      "rowBodyHeights": [
+        216.92,
+        216.92,
+        214.88,
+        214.88
+      ],
+      "bodyHeight": 215.89999999999998,
+      "majorComponents": 16,
+      "civilizations": [
+        "tang",
+        "ottoman"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-infantry-b.png",
+      "referencePaths": [],
+      "requestedRows": 4
+    },
+    {
+      "id": "trader",
+      "prompt": "Use case:historical-scene. Original high quality production2D RTS sprites using original attached references for identity/material style. TRUE transparent alpha with clear gutters, no background, islands, ground or UI/text/grid/watermarks. Downward orthographic30degree isometric2:1 ground, upper-left light, natural adult7.5head anatomy and proportional horse/elephant, richly detailed textile/metal/leather/fur, not plastic/toy/cartoon/paper doll.\nColumns ALWAYS SE front lower-right,SW front lower-left,NE trueBACK upper-right,NW trueBACK upper-left. Rotate complete SAMEactor with all gear, not only head. All weapons/feet/tail safely inside cell, matched proportions/size/pivot. Do NOT repeat the same staticlegs across contact rows.\nEXACTLY4columns×2rows,8completeTRADER sprites with the SAME adultlinen/brownclothed merchantwalkingnexttoonebrownpackMULE. No cart. Merchantheadnormaladult,wearscreamlinenanklecoat,browncap,smallturquoisebelt,boots,holds leadrein. Mule haslargegraybrownearsand modestwickerpannierswithclosedlinenbags/bundles, natural4legsanatomy. Row1walkingA,Row2walkingB. MerchantandmulebothSHOWoppositelegcontactchanges, oneleadreinconnects them. Merchantinsidefront/sideofmule,differentbackviewsrotatewholescene.Preserveallloadsandreins.\nContactA LONG STRIDE: near frontleg clearly extendedforward/grounded and nearhindleg reachingback, oppositelegsforward/back. ContactB COMPRESSION/PASSING: nearfrontleg obviously lifted and bent at knee/hock underneathneck, farfrontleggroundedforward; nearhindleg bentforwardunderbelly, farhindlegback. All4legs present and attached, obvious lift/bending changes. Horse walking flatground, never rearing/jumping. Rider changes natural shoulder/hiplean a little, stays seated with bootsinstirrups, reins/equipment consistent. No body stretching.\nContactA walkinglongstride, LEFT leg clearlyforward/planted and RIGHTbehind, torso/armnaturallyopposing. ContactB passingstance, leftlegback, RIGHTlegclearlylifted/bent andmovingforward; differentfeet/kneepositionsobvious, connectednaturalarms/head/legs. Sameidentityandbodymeasurements.Wide sourceformat, safegutters, tinycontactshadowonly.",
+      "file": "units-motion-v6-trader.png",
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "c8dfe127fd586492e1727d28a961413dc014f8dd9192d4ff1b2e3dada7d2e3f3",
+      "frames": [
+        [
+          40,
+          154,
+          325,
+          328,
+          236.77,
+          315.8
+        ],
+        [
+          422,
+          138,
+          289,
+          350,
+          176.95,
+          337.25
+        ],
+        [
+          771,
+          114,
+          351,
+          380,
+          51.34,
+          366.5
+        ],
+        [
+          1161,
+          118,
+          332,
+          375,
+          267.37,
+          361.62
+        ],
+        [
+          37,
+          589,
+          337,
+          303,
+          231.75,
+          291.43
+        ],
+        [
+          438,
+          577,
+          279,
+          343,
+          172.47,
+          330.43
+        ],
+        [
+          765,
+          533,
+          358,
+          378,
+          53.46,
+          364.55
+        ],
+        [
+          1157,
+          538,
+          345,
+          376,
+          263.2,
+          362.6
+        ]
+      ],
+      "rowBodyHeights": [
+        340.18,
+        340.18
+      ],
+      "bodyHeight": 340.18,
+      "majorComponents": 8,
+      "civilizations": [
+        "roman",
+        "mongol",
+        "persian",
+        "tang",
+        "ottoman"
+      ],
+      "group": "special-motion",
+      "sourceOriginalPath": "public/art/units-motion-v6-trader.png",
+      "referencePaths": [],
+      "requestedRows": 2
+    },
+    {
+      "id": "foot_roman",
+      "civ": "roman",
+      "group": "foot-combat",
+      "file": "units-attack-v6-foot-roman.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create ROMAN foot authored attack poses. Roman scarlet-red wool knee-length tunic, short cream sleeves, practical iron segmented or mail torso armor, imperial iron helmet with cheek plates, bronze trim, leather sandals or short military boots. Broad RED oval or rectangular wooden shield with simple gold edging. Mediterranean adult faces. Roman archer wears scarlet red padded tunic and modest iron helmet; brown leather quiver. No generic brown infantry. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 6 rows: row1 spear soldier WINDUP, weapon pulled back with bent rear elbow, spear shaft horizontal/diagonal aimed in heading, weight rear boot; row2 SAME spear soldier IMPACT fully thrust spear forward with extended arms, forward knee bent and rear foot braced. Row3 sword/shield soldier WINDUP holding Roman gladius straight short sword high behind shoulder with elbow bent and shield braced; row4 SAME sword soldier IMPACT forceful forward/downward Roman gladius straight short sword slash, sword arm extended and forward knee lunging, shield retained. Row5 archer DRAW bow fully bent under tension, drawing hand at cheek with visible nocked arrow, torso sideways and feet braced; row6 SAME archer RELEASE, bow arm extended and drawing hand pulled back past cheek, bow relaxed, no arrow suspended in air. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly6 rows (24 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution portrait image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "885d984809f04c845b6dad7ccbf61dd59de66fab8ea2d10e31231c928c712e69",
+      "frames": [
+        [
+          31,
+          50,
+          232,
+          220,
+          125.24,
+          210.5
+        ],
+        [
+          279,
+          38,
+          215,
+          235,
+          79.38,
+          225.12
+        ],
+        [
+          568,
+          45,
+          181,
+          223,
+          30.98,
+          213.43
+        ],
+        [
+          794,
+          49,
+          198,
+          213,
+          147.56,
+          203.68
+        ],
+        [
+          45,
+          305,
+          218,
+          206,
+          111.42,
+          196.85
+        ],
+        [
+          267,
+          307,
+          210,
+          204,
+          85.53,
+          194.9
+        ],
+        [
+          582,
+          306,
+          193,
+          211,
+          15.04,
+          201.72
+        ],
+        [
+          793,
+          306,
+          188,
+          204,
+          171.23,
+          194.9
+        ],
+        [
+          49,
+          516,
+          155,
+          255,
+          124.22,
+          244.62
+        ],
+        [
+          328,
+          521,
+          142,
+          249,
+          39.36,
+          238.78
+        ],
+        [
+          573,
+          525,
+          150,
+          251,
+          18.25,
+          240.72
+        ],
+        [
+          829,
+          518,
+          158,
+          245,
+          135.14,
+          234.88
+        ],
+        [
+          38,
+          804,
+          212,
+          200,
+          128.54,
+          191
+        ],
+        [
+          275,
+          798,
+          218,
+          207,
+          77.6,
+          197.82
+        ],
+        [
+          564,
+          792,
+          230,
+          209,
+          16.92,
+          199.78
+        ],
+        [
+          819,
+          794,
+          170,
+          206,
+          151.85,
+          196.85
+        ],
+        [
+          61,
+          1005,
+          182,
+          239,
+          115.56,
+          229.03
+        ],
+        [
+          295,
+          1010,
+          172,
+          235,
+          58.32,
+          225.12
+        ],
+        [
+          587,
+          1000,
+          151,
+          245,
+          16.74,
+          234.88
+        ],
+        [
+          795,
+          1004,
+          178,
+          239,
+          159.47,
+          229.03
+        ],
+        [
+          52,
+          1249,
+          174,
+          235,
+          125.62,
+          225.12
+        ],
+        [
+          310,
+          1251,
+          160,
+          234,
+          36.54,
+          224.15
+        ],
+        [
+          574,
+          1259,
+          159,
+          224,
+          20.39,
+          214.4
+        ],
+        [
+          812,
+          1254,
+          163,
+          233,
+          146.16,
+          223.18
+        ]
+      ],
+      "rowBodyHeights": [
+        197.12,
+        197.12,
+        192.05,
+        192.05,
+        205.65,
+        205.65
+      ],
+      "bodyHeight": 198.27333333333334,
+      "majorComponents": 24,
+      "civilizations": [
+        "roman"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-foot-roman.png",
+      "referencePaths": [
+        "public/art/units-army-v6-roman.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "mounted_roman",
+      "civ": "roman",
+      "group": "mounted-combat",
+      "file": "units-attack-v6-mounted-roman.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create ROMAN mounted authored attack poses. Roman scarlet-red wool knee-length tunic, short cream sleeves, practical iron segmented or mail torso armor, imperial iron helmet with cheek plates, bronze trim, leather sandals or short military boots. Broad RED oval or rectangular wooden shield with simple gold edging. Mediterranean adult faces. Roman archer wears scarlet red padded tunic and modest iron helmet; brown leather quiver. No generic brown infantry. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 4 rows: row1 lightly clothed scout cavalry WINDUP, rider turns upper torso and pulls compact Roman gladius straight short sword arm back beside shoulder, reins in left hand and horse braced with one foreleg bent; row2 SAME scout cavalry IMPACT rider extends sword arm for forward diagonal short slash, leaning from waist with reins held and horse stepping forward. Row3 armored light cavalry WINDUP raising Roman gladius straight short sword over right shoulder with bent elbow, left hand holding reins and horse braced; row4 SAME armored light cavalry IMPACT low forward/downward sword slash arm extended, rider upper body leaning, horse forelegs in forward step. Keep scout less armored than light cavalry; outfit/saddlecloth and horse colors must match reference corresponding rows. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly4 rows (16 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather and mature horse fur/musculature, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution square-ish image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1312,
+      "height": 1199,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "735b6eeff655e31bc649d8c226447907bd0e67f539972588fce3b939f06f25e1",
+      "frames": [
+        [
+          54,
+          17,
+          260,
+          286,
+          212.14,
+          274.85
+        ],
+        [
+          375,
+          20,
+          219,
+          282,
+          34.31,
+          270.95
+        ],
+        [
+          722,
+          23,
+          222,
+          280,
+          62.56,
+          269
+        ],
+        [
+          1051,
+          25,
+          231,
+          276,
+          182.02,
+          265.1
+        ],
+        [
+          50,
+          323,
+          266,
+          277,
+          200.18,
+          266.07
+        ],
+        [
+          349,
+          325,
+          261,
+          271,
+          86.87,
+          260.23
+        ],
+        [
+          718,
+          312,
+          277,
+          280,
+          61.72,
+          269
+        ],
+        [
+          1040,
+          328,
+          244,
+          274,
+          185.17,
+          263.15
+        ],
+        [
+          50,
+          580,
+          273,
+          316,
+          232.43,
+          304.1
+        ],
+        [
+          378,
+          584,
+          254,
+          317,
+          38.5,
+          305.07
+        ],
+        [
+          711,
+          596,
+          247,
+          307,
+          66.84,
+          295.32
+        ],
+        [
+          1052,
+          594,
+          241,
+          310,
+          171.23,
+          298.25
+        ],
+        [
+          49,
+          914,
+          274,
+          262,
+          242.12,
+          251.45
+        ],
+        [
+          349,
+          916,
+          289,
+          261,
+          80.3,
+          250.47
+        ],
+        [
+          711,
+          914,
+          251,
+          260,
+          68.84,
+          249.5
+        ],
+        [
+          1045,
+          915,
+          248,
+          259,
+          187.06,
+          248.53
+        ]
+      ],
+      "rowBodyHeights": [
+        244.12,
+        244.12,
+        251.55,
+        251.55
+      ],
+      "bodyHeight": 247.835,
+      "majorComponents": 16,
+      "civilizations": [
+        "roman"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-mounted-roman.png",
+      "referencePaths": [
+        "public/art/units-mounted-v6-roman.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "foot_mongol",
+      "civ": "mongol",
+      "group": "foot-combat",
+      "file": "units-attack-v6-foot-mongol.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create MONGOL foot authored attack poses. Mongol cobalt/indigo BLUE wool deel over brown trousers and leather boots, practical dark iron lamellar/leather chest armor, small fur-edged conical helmet or cap. Brown round wicker/wood shield, simple blue cloth trim. Central/East Asian adult faces, moustache. Archer wears BLUE deel, fur-edged cap, compact recurve bow and quiver. No red Roman outfit. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 6 rows: row1 spear soldier WINDUP, weapon pulled back with bent rear elbow, spear shaft horizontal/diagonal aimed in heading, weight rear boot; row2 SAME spear soldier IMPACT fully thrust spear forward with extended arms, forward knee bent and rear foot braced. Row3 sword/shield soldier WINDUP holding compact curved steppe saber high behind shoulder with elbow bent and shield braced; row4 SAME sword soldier IMPACT forceful forward/downward compact curved steppe saber slash, sword arm extended and forward knee lunging, shield retained. Row5 archer DRAW bow fully bent under tension, drawing hand at cheek with visible nocked arrow, torso sideways and feet braced; row6 SAME archer RELEASE, bow arm extended and drawing hand pulled back past cheek, bow relaxed, no arrow suspended in air. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly6 rows (24 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution portrait image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "6402d8d60259a49e30ad732cd6421101a763bed6413b712e9cdf734d53f1cc63",
+      "frames": [
+        [
+          42,
+          44,
+          227,
+          225,
+          140.57,
+          215.38
+        ],
+        [
+          271,
+          45,
+          211,
+          221,
+          41.39,
+          211.47
+        ],
+        [
+          533,
+          48,
+          233,
+          213,
+          74.28,
+          203.68
+        ],
+        [
+          782,
+          45,
+          219,
+          219,
+          98.6,
+          209.53
+        ],
+        [
+          40,
+          280,
+          231,
+          220,
+          129.81,
+          210.5
+        ],
+        [
+          274,
+          280,
+          193,
+          219,
+          56.39,
+          209.53
+        ],
+        [
+          527,
+          281,
+          243,
+          217,
+          16.22,
+          207.57
+        ],
+        [
+          780,
+          280,
+          221,
+          218,
+          169.16,
+          208.55
+        ],
+        [
+          36,
+          502,
+          176,
+          260,
+          129.22,
+          249.5
+        ],
+        [
+          282,
+          506,
+          161,
+          250,
+          47.15,
+          239.75
+        ],
+        [
+          555,
+          502,
+          168,
+          260,
+          19.09,
+          249.5
+        ],
+        [
+          828,
+          508,
+          160,
+          256,
+          141.69,
+          245.6
+        ],
+        [
+          44,
+          774,
+          184,
+          219,
+          126.67,
+          209.53
+        ],
+        [
+          259,
+          777,
+          199,
+          218,
+          75.86,
+          208.55
+        ],
+        [
+          541,
+          770,
+          224,
+          235,
+          32.46,
+          225.12
+        ],
+        [
+          773,
+          777,
+          222,
+          227,
+          188.12,
+          217.32
+        ],
+        [
+          57,
+          994,
+          179,
+          257,
+          129.07,
+          246.57
+        ],
+        [
+          275,
+          996,
+          178,
+          251,
+          37.75,
+          240.72
+        ],
+        [
+          537,
+          984,
+          200,
+          263,
+          19.73,
+          252.43
+        ],
+        [
+          787,
+          984,
+          200,
+          256,
+          179.23,
+          245.6
+        ],
+        [
+          35,
+          1241,
+          185,
+          266,
+          147.08,
+          255.35
+        ],
+        [
+          294,
+          1243,
+          174,
+          265,
+          27.27,
+          254.38
+        ],
+        [
+          547,
+          1241,
+          180,
+          267,
+          20.21,
+          256.32
+        ],
+        [
+          799,
+          1242,
+          187,
+          262,
+          159.19,
+          251.45
+        ]
+      ],
+      "rowBodyHeights": [
+        201.4,
+        201.4,
+        203.25,
+        203.25,
+        228.49,
+        228.49
+      ],
+      "bodyHeight": 211.04666666666665,
+      "majorComponents": 24,
+      "civilizations": [
+        "mongol"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-foot-mongol.png",
+      "referencePaths": [
+        "public/art/units-army-v6-mongol.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "mounted_mongol",
+      "civ": "mongol",
+      "group": "mounted-combat",
+      "file": "units-attack-v6-mounted-mongol.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create MONGOL mounted authored attack poses. Mongol cobalt/indigo BLUE wool deel over brown trousers and leather boots, practical dark iron lamellar/leather chest armor, small fur-edged conical helmet or cap. Brown round wicker/wood shield, simple blue cloth trim. Central/East Asian adult faces, moustache. Archer wears BLUE deel, fur-edged cap, compact recurve bow and quiver. No red Roman outfit. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 4 rows: row1 lightly clothed scout cavalry WINDUP, rider turns upper torso and pulls compact compact curved steppe saber arm back beside shoulder, reins in left hand and horse braced with one foreleg bent; row2 SAME scout cavalry IMPACT rider extends sword arm for forward diagonal short slash, leaning from waist with reins held and horse stepping forward. Row3 armored light cavalry WINDUP raising compact curved steppe saber over right shoulder with bent elbow, left hand holding reins and horse braced; row4 SAME armored light cavalry IMPACT low forward/downward sword slash arm extended, rider upper body leaning, horse forelegs in forward step. Keep scout less armored than light cavalry; outfit/saddlecloth and horse colors must match reference corresponding rows. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly4 rows (16 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather and mature horse fur/musculature, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution square-ish image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "709f91e799e4cc03a1ade4de141553a4d6cf1d67158848e1275a5d71bbd5f85d",
+      "frames": [
+        [
+          23,
+          24,
+          253,
+          285,
+          207.24,
+          273.88
+        ],
+        [
+          340,
+          27,
+          258,
+          281,
+          48.2,
+          269.98
+        ],
+        [
+          683,
+          30,
+          218,
+          272,
+          63.04,
+          261.2
+        ],
+        [
+          1001,
+          30,
+          226,
+          273,
+          164.84,
+          262.18
+        ],
+        [
+          18,
+          345,
+          255,
+          260,
+          211.27,
+          249.5
+        ],
+        [
+          356,
+          344,
+          252,
+          266,
+          50.08,
+          255.35
+        ],
+        [
+          675,
+          333,
+          250,
+          277,
+          73.33,
+          266.07
+        ],
+        [
+          958,
+          342,
+          277,
+          264,
+          192.2,
+          253.4
+        ],
+        [
+          24,
+          626,
+          260,
+          305,
+          216.58,
+          293.38
+        ],
+        [
+          343,
+          627,
+          267,
+          305,
+          35.26,
+          293.38
+        ],
+        [
+          685,
+          634,
+          226,
+          294,
+          50.63,
+          282.65
+        ],
+        [
+          995,
+          636,
+          241,
+          293,
+          189.84,
+          281.68
+        ],
+        [
+          19,
+          962,
+          258,
+          267,
+          229.24,
+          256.32
+        ],
+        [
+          352,
+          965,
+          262,
+          262,
+          39.76,
+          251.45
+        ],
+        [
+          666,
+          961,
+          253,
+          265,
+          58.51,
+          254.38
+        ],
+        [
+          970,
+          963,
+          271,
+          256,
+          161.32,
+          245.6
+        ]
+      ],
+      "rowBodyHeights": [
+        238.72,
+        238.72,
+        246.49,
+        246.49
+      ],
+      "bodyHeight": 242.60500000000002,
+      "majorComponents": 16,
+      "civilizations": [
+        "mongol"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-mounted-mongol.png",
+      "referencePaths": [
+        "public/art/units-mounted-v6-mongol.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "foot_persian",
+      "civ": "persian",
+      "group": "foot-combat",
+      "file": "units-attack-v6-foot-persian.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create PERSIAN foot authored attack poses. Persian deep TURQUOISE and peacock-blue long woven tunic, cream loose trousers and leather boots, restrained GOLD hem/arm bands, practical bronze/iron scale vest, soft fluted cap or modest conical helmet. Small round bronze/gold shield with subtle geometric motif. West Asian adult bearded faces. Archer wears TURQUOISE tunic with gold trim, fluted cap, composite bow/quiver. Not a Roman legionary. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 6 rows: row1 spear soldier WINDUP, weapon pulled back with bent rear elbow, spear shaft horizontal/diagonal aimed in heading, weight rear boot; row2 SAME spear soldier IMPACT fully thrust spear forward with extended arms, forward knee bent and rear foot braced. Row3 sword/shield soldier WINDUP holding Persian short saber high behind shoulder with elbow bent and shield braced; row4 SAME sword soldier IMPACT forceful forward/downward Persian short saber slash, sword arm extended and forward knee lunging, shield retained. Row5 archer DRAW bow fully bent under tension, drawing hand at cheek with visible nocked arrow, torso sideways and feet braced; row6 SAME archer RELEASE, bow arm extended and drawing hand pulled back past cheek, bow relaxed, no arrow suspended in air. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly6 rows (24 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution portrait image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "af6880a76ff912c0f1be2d1adbaa1311ab81cfd56f53203402025733fda99302",
+      "frames": [
+        [
+          15,
+          34,
+          245,
+          241,
+          170.19,
+          230.97
+        ],
+        [
+          271,
+          36,
+          218,
+          236,
+          68.27,
+          226.1
+        ],
+        [
+          512,
+          34,
+          234,
+          250,
+          72.29,
+          239.75
+        ],
+        [
+          779,
+          38,
+          217,
+          226,
+          160.84,
+          216.35
+        ],
+        [
+          34,
+          287,
+          233,
+          199,
+          135.51,
+          190.03
+        ],
+        [
+          277,
+          291,
+          207,
+          206,
+          79.59,
+          196.85
+        ],
+        [
+          549,
+          295,
+          224,
+          207,
+          13.52,
+          197.82
+        ],
+        [
+          785,
+          295,
+          204,
+          206,
+          188.44,
+          196.85
+        ],
+        [
+          46,
+          489,
+          157,
+          265,
+          133.96,
+          254.38
+        ],
+        [
+          313,
+          496,
+          154,
+          258,
+          29.08,
+          247.55
+        ],
+        [
+          557,
+          510,
+          166,
+          256,
+          14.13,
+          245.6
+        ],
+        [
+          847,
+          510,
+          145,
+          256,
+          128.45,
+          245.6
+        ],
+        [
+          30,
+          775,
+          215,
+          214,
+          140.09,
+          204.65
+        ],
+        [
+          284,
+          779,
+          185,
+          216,
+          65.11,
+          206.6
+        ],
+        [
+          552,
+          788,
+          223,
+          220,
+          27.38,
+          210.5
+        ],
+        [
+          784,
+          791,
+          225,
+          218,
+          199.92,
+          208.55
+        ],
+        [
+          43,
+          997,
+          188,
+          244,
+          128.71,
+          233.9
+        ],
+        [
+          283,
+          999,
+          180,
+          242,
+          57.46,
+          231.95
+        ],
+        [
+          548,
+          993,
+          174,
+          258,
+          28.07,
+          247.55
+        ],
+        [
+          806,
+          997,
+          183,
+          254,
+          156.67,
+          243.65
+        ],
+        [
+          31,
+          1239,
+          192,
+          245,
+          143.11,
+          234.88
+        ],
+        [
+          294,
+          1244,
+          182,
+          247,
+          45.43,
+          236.82
+        ],
+        [
+          554,
+          1235,
+          174,
+          268,
+          15.51,
+          257.3
+        ],
+        [
+          816,
+          1236,
+          181,
+          265,
+          165.76,
+          254.38
+        ]
+      ],
+      "rowBodyHeights": [
+        203.66,
+        203.66,
+        200.86,
+        200.86,
+        221.29,
+        221.29
+      ],
+      "bodyHeight": 208.60333333333332,
+      "majorComponents": 24,
+      "civilizations": [
+        "persian"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-foot-persian.png",
+      "referencePaths": [
+        "public/art/units-army-v6-persian.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "mounted_persian",
+      "civ": "persian",
+      "group": "mounted-combat",
+      "file": "units-attack-v6-mounted-persian.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create PERSIAN mounted authored attack poses. Persian deep TURQUOISE and peacock-blue long woven tunic, cream loose trousers and leather boots, restrained GOLD hem/arm bands, practical bronze/iron scale vest, soft fluted cap or modest conical helmet. Small round bronze/gold shield with subtle geometric motif. West Asian adult bearded faces. Archer wears TURQUOISE tunic with gold trim, fluted cap, composite bow/quiver. Not a Roman legionary. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 4 rows: row1 lightly clothed scout cavalry WINDUP, rider turns upper torso and pulls compact Persian short saber arm back beside shoulder, reins in left hand and horse braced with one foreleg bent; row2 SAME scout cavalry IMPACT rider extends sword arm for forward diagonal short slash, leaning from waist with reins held and horse stepping forward. Row3 armored light cavalry WINDUP raising Persian short saber over right shoulder with bent elbow, left hand holding reins and horse braced; row4 SAME armored light cavalry IMPACT low forward/downward sword slash arm extended, rider upper body leaning, horse forelegs in forward step. Keep scout less armored than light cavalry; outfit/saddlecloth and horse colors must match reference corresponding rows. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly4 rows (16 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather and mature horse fur/musculature, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution square-ish image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1374,
+      "height": 1145,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "4d8bfddd29b283aa214fdb8b3f5bd20ac05698d3423ca8318bc61ed00f0c1f26",
+      "frames": [
+        [
+          18,
+          0,
+          277,
+          294,
+          235.84,
+          282.65
+        ],
+        [
+          384,
+          1,
+          294,
+          292,
+          50.67,
+          280.7
+        ],
+        [
+          730,
+          1,
+          274,
+          292,
+          53.89,
+          280.7
+        ],
+        [
+          1095,
+          1,
+          267,
+          287,
+          179.53,
+          275.82
+        ],
+        [
+          12,
+          298,
+          279,
+          277,
+          214.67,
+          266.07
+        ],
+        [
+          385,
+          301,
+          298,
+          264,
+          113.08,
+          253.4
+        ],
+        [
+          727,
+          287,
+          278,
+          287,
+          87.52,
+          275.82
+        ],
+        [
+          1091,
+          293,
+          274,
+          288,
+          171.13,
+          276.8
+        ],
+        [
+          13,
+          555,
+          285,
+          318,
+          237.78,
+          306.05
+        ],
+        [
+          378,
+          556,
+          303,
+          315,
+          54.74,
+          303.12
+        ],
+        [
+          728,
+          568,
+          281,
+          307,
+          68.74,
+          295.32
+        ],
+        [
+          1089,
+          565,
+          274,
+          301,
+          193.19,
+          289.48
+        ],
+        [
+          15,
+          874,
+          295,
+          268,
+          245.79,
+          257.3
+        ],
+        [
+          387,
+          875,
+          296,
+          267,
+          50.63,
+          256.32
+        ],
+        [
+          727,
+          866,
+          280,
+          279,
+          68.35,
+          268.02
+        ],
+        [
+          1086,
+          867,
+          279,
+          278,
+          180.77,
+          267.05
+        ]
+      ],
+      "rowBodyHeights": [
+        250.31,
+        250.31,
+        256.16,
+        256.16
+      ],
+      "bodyHeight": 253.235,
+      "majorComponents": 16,
+      "civilizations": [
+        "persian"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-mounted-persian.png",
+      "referencePaths": [
+        "public/art/units-mounted-v6-persian.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "foot_tang",
+      "civ": "tang",
+      "group": "foot-combat",
+      "file": "units-attack-v6-foot-tang.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create TANG CHINESE foot authored attack poses. Tang Chinese muted crimson RED and ochre GOLD tunic panels, dark blue-gray trousers and tall leather boots, iron lamellar torso and skirt plates, rounded segmented iron helmet with small RED plume. Round dark wooden shield with narrow ochre-gold rim. East Asian adult faces. Archer wears crimson padded coat with gold trim and iron cap, wooden bow/quiver. Strong East Asian armor silhouette distinct from Roman. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 6 rows: row1 spear soldier WINDUP, weapon pulled back with bent rear elbow, spear shaft horizontal/diagonal aimed in heading, weight rear boot; row2 SAME spear soldier IMPACT fully thrust spear forward with extended arms, forward knee bent and rear foot braced. Row3 sword/shield soldier WINDUP holding single-edged Chinese dao saber high behind shoulder with elbow bent and shield braced; row4 SAME sword soldier IMPACT forceful forward/downward single-edged Chinese dao saber slash, sword arm extended and forward knee lunging, shield retained. Row5 archer DRAW bow fully bent under tension, drawing hand at cheek with visible nocked arrow, torso sideways and feet braced; row6 SAME archer RELEASE, bow arm extended and drawing hand pulled back past cheek, bow relaxed, no arrow suspended in air. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly6 rows (24 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution portrait image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "fac8d7a679a2517e9e8393ef1bf04c15c2a3c32683f2442a6f68510fea374aec",
+      "frames": [
+        [
+          51,
+          34,
+          228,
+          224,
+          132.59,
+          214.4
+        ],
+        [
+          267,
+          31,
+          214,
+          217,
+          58.68,
+          207.57
+        ],
+        [
+          558,
+          29,
+          206,
+          231,
+          15.99,
+          221.22
+        ],
+        [
+          817,
+          29,
+          190,
+          234,
+          117.31,
+          224.15
+        ],
+        [
+          31,
+          277,
+          222,
+          215,
+          125.81,
+          205.62
+        ],
+        [
+          254,
+          273,
+          237,
+          198,
+          123.51,
+          189.05
+        ],
+        [
+          541,
+          276,
+          243,
+          222,
+          15.19,
+          212.45
+        ],
+        [
+          796,
+          277,
+          218,
+          224,
+          139.94,
+          214.4
+        ],
+        [
+          38,
+          501,
+          175,
+          253,
+          143.6,
+          242.68
+        ],
+        [
+          290,
+          500,
+          170,
+          244,
+          38.9,
+          233.9
+        ],
+        [
+          557,
+          500,
+          170,
+          254,
+          33,
+          243.65
+        ],
+        [
+          810,
+          516,
+          171,
+          241,
+          145.9,
+          230.97
+        ],
+        [
+          29,
+          770,
+          209,
+          227,
+          135.82,
+          217.32
+        ],
+        [
+          249,
+          767,
+          222,
+          229,
+          82.74,
+          219.28
+        ],
+        [
+          561,
+          766,
+          222,
+          233,
+          15.65,
+          223.18
+        ],
+        [
+          798,
+          767,
+          220,
+          239,
+          150.1,
+          229.03
+        ],
+        [
+          46,
+          1006,
+          199,
+          241,
+          125.82,
+          230.97
+        ],
+        [
+          273,
+          1008,
+          182,
+          233,
+          61.61,
+          223.18
+        ],
+        [
+          563,
+          1015,
+          185,
+          235,
+          16.43,
+          225.12
+        ],
+        [
+          813,
+          1007,
+          176,
+          245,
+          158.39,
+          234.88
+        ],
+        [
+          39,
+          1254,
+          177,
+          245,
+          130.53,
+          234.88
+        ],
+        [
+          306,
+          1247,
+          158,
+          254,
+          30.45,
+          243.65
+        ],
+        [
+          563,
+          1254,
+          164,
+          249,
+          17.15,
+          238.78
+        ],
+        [
+          824,
+          1253,
+          165,
+          245,
+          148.65,
+          234.88
+        ]
+      ],
+      "rowBodyHeights": [
+        202.94,
+        202.94,
+        202.71,
+        202.71,
+        212.74,
+        212.74
+      ],
+      "bodyHeight": 206.13,
+      "majorComponents": 24,
+      "civilizations": [
+        "tang"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-foot-tang.png",
+      "referencePaths": [
+        "public/art/units-army-v6-tang.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "mounted_tang",
+      "civ": "tang",
+      "group": "mounted-combat",
+      "file": "units-attack-v6-mounted-tang.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create TANG CHINESE mounted authored attack poses. Tang Chinese muted crimson RED and ochre GOLD tunic panels, dark blue-gray trousers and tall leather boots, iron lamellar torso and skirt plates, rounded segmented iron helmet with small RED plume. Round dark wooden shield with narrow ochre-gold rim. East Asian adult faces. Archer wears crimson padded coat with gold trim and iron cap, wooden bow/quiver. Strong East Asian armor silhouette distinct from Roman. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 4 rows: row1 lightly clothed scout cavalry WINDUP, rider turns upper torso and pulls compact single-edged Chinese dao saber arm back beside shoulder, reins in left hand and horse braced with one foreleg bent; row2 SAME scout cavalry IMPACT rider extends sword arm for forward diagonal short slash, leaning from waist with reins held and horse stepping forward. Row3 armored light cavalry WINDUP raising single-edged Chinese dao saber over right shoulder with bent elbow, left hand holding reins and horse braced; row4 SAME armored light cavalry IMPACT low forward/downward sword slash arm extended, rider upper body leaning, horse forelegs in forward step. Keep scout less armored than light cavalry; outfit/saddlecloth and horse colors must match reference corresponding rows. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly4 rows (16 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather and mature horse fur/musculature, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution square-ish image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1230,
+      "height": 1278,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "20cd01f615d152ed3d88a91fc686619847d6e117cb81721592b6d16899e53258",
+      "frames": [
+        [
+          19,
+          8,
+          265,
+          319,
+          205.61,
+          307.02
+        ],
+        [
+          327,
+          23,
+          272,
+          303,
+          44.64,
+          291.43
+        ],
+        [
+          641,
+          24,
+          235,
+          307,
+          60.37,
+          295.32
+        ],
+        [
+          939,
+          14,
+          265,
+          317,
+          191.24,
+          305.07
+        ],
+        [
+          17,
+          348,
+          271,
+          289,
+          211.48,
+          277.77
+        ],
+        [
+          310,
+          349,
+          292,
+          289,
+          96.69,
+          277.77
+        ],
+        [
+          628,
+          349,
+          284,
+          286,
+          61.39,
+          274.85
+        ],
+        [
+          939,
+          349,
+          273,
+          287,
+          201.8,
+          275.82
+        ],
+        [
+          16,
+          623,
+          274,
+          334,
+          222.92,
+          321.65
+        ],
+        [
+          328,
+          624,
+          279,
+          328,
+          56.58,
+          315.8
+        ],
+        [
+          628,
+          624,
+          251,
+          333,
+          55.71,
+          320.68
+        ],
+        [
+          943,
+          633,
+          269,
+          323,
+          155.64,
+          310.93
+        ],
+        [
+          16,
+          971,
+          266,
+          289,
+          234.39,
+          277.77
+        ],
+        [
+          332,
+          970,
+          270,
+          284,
+          24.25,
+          272.9
+        ],
+        [
+          627,
+          978,
+          275,
+          287,
+          51.73,
+          275.82
+        ],
+        [
+          939,
+          977,
+          272,
+          285,
+          189.12,
+          273.88
+        ]
+      ],
+      "rowBodyHeights": [
+        263.36,
+        263.36,
+        270.79,
+        270.79
+      ],
+      "bodyHeight": 267.07500000000005,
+      "majorComponents": 16,
+      "civilizations": [
+        "tang"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-mounted-tang.png",
+      "referencePaths": [
+        "public/art/units-mounted-v6-tang.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "foot_ottoman",
+      "civ": "ottoman",
+      "group": "foot-combat",
+      "file": "units-attack-v6-foot-ottoman.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create OTTOMAN foot authored attack poses. Ottoman deep TEAL/GREEN knee-length cotton/wool coat, cream loose trousers, brown leather boots, understated ochre-gold belt, practical mail vest or leather armor, small white headwrap around modest dark-red cap. Small round dark wooden shield with brass boss. West Asian adult bearded faces. Archer wears TEAL coat, white cloth headwrap, composite bow and quiver. No muskets for these infantry. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 6 rows: row1 spear soldier WINDUP, weapon pulled back with bent rear elbow, spear shaft horizontal/diagonal aimed in heading, weight rear boot; row2 SAME spear soldier IMPACT fully thrust spear forward with extended arms, forward knee bent and rear foot braced. Row3 sword/shield soldier WINDUP holding curved Ottoman kilij high behind shoulder with elbow bent and shield braced; row4 SAME sword soldier IMPACT forceful forward/downward curved Ottoman kilij slash, sword arm extended and forward knee lunging, shield retained. Row5 archer DRAW bow fully bent under tension, drawing hand at cheek with visible nocked arrow, torso sideways and feet braced; row6 SAME archer RELEASE, bow arm extended and drawing hand pulled back past cheek, bow relaxed, no arrow suspended in air. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly6 rows (24 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution portrait image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "381c78333d61edc538bb5796066a02b5ec49530407aa6c98b8fa6e4f793b936c",
+      "frames": [
+        [
+          43,
+          43,
+          214,
+          219,
+          145.44,
+          209.53
+        ],
+        [
+          266,
+          41,
+          217,
+          223,
+          68.66,
+          213.43
+        ],
+        [
+          569,
+          29,
+          180,
+          230,
+          23.26,
+          220.25
+        ],
+        [
+          788,
+          30,
+          204,
+          229,
+          172.76,
+          219.28
+        ],
+        [
+          36,
+          271,
+          228,
+          201,
+          127.47,
+          191.97
+        ],
+        [
+          272,
+          278,
+          210,
+          197,
+          87.02,
+          188.07
+        ],
+        [
+          550,
+          263,
+          212,
+          233,
+          14.41,
+          223.18
+        ],
+        [
+          780,
+          262,
+          216,
+          231,
+          197.98,
+          221.22
+        ],
+        [
+          55,
+          493,
+          180,
+          263,
+          143.15,
+          252.43
+        ],
+        [
+          294,
+          493,
+          160,
+          252,
+          34.34,
+          241.7
+        ],
+        [
+          574,
+          496,
+          172,
+          268,
+          30.16,
+          257.3
+        ],
+        [
+          820,
+          499,
+          165,
+          256,
+          137.17,
+          245.6
+        ],
+        [
+          33,
+          769,
+          208,
+          215,
+          128.28,
+          205.62
+        ],
+        [
+          248,
+          775,
+          238,
+          215,
+          114.8,
+          205.62
+        ],
+        [
+          555,
+          776,
+          218,
+          226,
+          31.83,
+          216.35
+        ],
+        [
+          777,
+          776,
+          223,
+          228,
+          197.65,
+          218.3
+        ],
+        [
+          54,
+          994,
+          185,
+          244,
+          132.31,
+          233.9
+        ],
+        [
+          290,
+          997,
+          171,
+          241,
+          48.27,
+          230.97
+        ],
+        [
+          573,
+          988,
+          157,
+          258,
+          21.1,
+          247.55
+        ],
+        [
+          830,
+          989,
+          166,
+          249,
+          148.35,
+          238.78
+        ],
+        [
+          43,
+          1246,
+          183,
+          252,
+          140.57,
+          241.7
+        ],
+        [
+          300,
+          1246,
+          178,
+          249,
+          41.07,
+          238.78
+        ],
+        [
+          561,
+          1232,
+          172,
+          268,
+          17.27,
+          257.3
+        ],
+        [
+          832,
+          1232,
+          177,
+          266,
+          156.4,
+          255.35
+        ]
+      ],
+      "rowBodyHeights": [
+        202.71,
+        202.71,
+        203.04,
+        203.04,
+        221.74,
+        221.74
+      ],
+      "bodyHeight": 209.16333333333333,
+      "majorComponents": 24,
+      "civilizations": [
+        "ottoman"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-foot-ottoman.png",
+      "referencePaths": [
+        "public/art/units-army-v6-ottoman.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "mounted_ottoman",
+      "civ": "ottoman",
+      "group": "mounted-combat",
+      "file": "units-attack-v6-mounted-ottoman.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS transparent action sprite atlas. Image1 is EXACT unit identity/materials reference, not background. Create OTTOMAN mounted authored attack poses. Ottoman deep TEAL/GREEN knee-length cotton/wool coat, cream loose trousers, brown leather boots, understated ochre-gold belt, practical mail vest or leather armor, small white headwrap around modest dark-red cap. Small round dark wooden shield with brass boss. West Asian adult bearded faces. Archer wears TEAL coat, white cloth headwrap, composite bow and quiver. No muskets for these infantry. Outfit, face proportions, weapons, silhouette and horse tack match Image1. 4 rows: row1 lightly clothed scout cavalry WINDUP, rider turns upper torso and pulls compact curved Ottoman kilij arm back beside shoulder, reins in left hand and horse braced with one foreleg bent; row2 SAME scout cavalry IMPACT rider extends sword arm for forward diagonal short slash, leaning from waist with reins held and horse stepping forward. Row3 armored light cavalry WINDUP raising curved Ottoman kilij over right shoulder with bent elbow, left hand holding reins and horse braced; row4 SAME armored light cavalry IMPACT low forward/downward sword slash arm extended, rider upper body leaning, horse forelegs in forward step. Keep scout less armored than light cavalry; outfit/saddlecloth and horse colors must match reference corresponding rows. STRICT layout: exactly4 columns with headings left-to-right SE facing down-right, SW facing down-left, NE viewed behind facing up-right, NW viewed behind facing up-left, repeated on every row. Exactly4 rows (16 complete separate actors). Every cell evenly spaced, generous transparent gutters, same scale/anatomy for matching soldier, uncut weapons fully contained. Each row pair must show genuinely distinct ARM/WEAPON/LEG poses, NOT a clone/recolor/reposition of resting stance. Pose changes entire actor coherently. Fixed downward orthographic30-degree isometric camera, soft upper-left light. Detailed natural adult anatomy small realistic head, believable wovencloth/iron/bronze/leather and mature horse fur/musculature, crisp restrained painterly historical miniature, same tactile realism as reference. True alpha background, no opaque backdrop, no ground island/base, no decorative boxes, no text/grid/labels/watermark. No chibi toy or flat paper-doll. Use native high resolution square-ish image. Original game art, do not reproduce any existing commercial game assets.",
+      "width": 1254,
+      "height": 1254,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "fbf59c025c417ceb9e6eacd9d0148ee3f5ffff976c336794b951b2d6169da8e7",
+      "frames": [
+        [
+          16,
+          21,
+          260,
+          310,
+          205.53,
+          298.25
+        ],
+        [
+          329,
+          34,
+          270,
+          281,
+          130.56,
+          269.98
+        ],
+        [
+          662,
+          33,
+          263,
+          295,
+          58.92,
+          283.62
+        ],
+        [
+          992,
+          32,
+          248,
+          299,
+          174.63,
+          287.52
+        ],
+        [
+          14,
+          356,
+          267,
+          270,
+          212.04,
+          259.25
+        ],
+        [
+          314,
+          352,
+          291,
+          260,
+          131.09,
+          249.5
+        ],
+        [
+          654,
+          358,
+          291,
+          264,
+          81.44,
+          253.4
+        ],
+        [
+          986,
+          349,
+          255,
+          276,
+          181.05,
+          265.1
+        ],
+        [
+          13,
+          617,
+          265,
+          323,
+          208.7,
+          310.93
+        ],
+        [
+          329,
+          633,
+          285,
+          297,
+          108.21,
+          285.57
+        ],
+        [
+          655,
+          630,
+          277,
+          308,
+          81.12,
+          296.3
+        ],
+        [
+          987,
+          631,
+          255,
+          308,
+          180.73,
+          296.3
+        ],
+        [
+          13,
+          957,
+          271,
+          276,
+          227.67,
+          265.1
+        ],
+        [
+          326,
+          956,
+          284,
+          263,
+          159.23,
+          252.43
+        ],
+        [
+          654,
+          956,
+          300,
+          272,
+          66.69,
+          261.2
+        ],
+        [
+          983,
+          956,
+          262,
+          272,
+          191.42,
+          261.2
+        ]
+      ],
+      "rowBodyHeights": [
+        247.39,
+        247.39,
+        254.59,
+        254.59
+      ],
+      "bodyHeight": 250.99,
+      "majorComponents": 16,
+      "civilizations": [
+        "ottoman"
+      ],
+      "purpose": "windup/impact authored combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-mounted-ottoman.png",
+      "referencePaths": [
+        "public/art/units-mounted-v6-ottoman.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "special_foot_a",
+      "file": "units-attack-v6-special-foot-a.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS authored action sprite atlas. References are identity/material style sources ONLY. Produce intact fully painted actors; no separateparts or cutoutlimb strip. STRICT exactly4equal columns headingsSEdown-right,SWdown-left,NEbehindup-right,NWbehindup-left EVERYrow. Layout centeredactorsinequal cells withgenerous alphagutters, samecamera30degree downwardorthographicisometric, samescale acrossmatchingactorstates. Truealpha, noopaque backdrop or brown groundplate/blackbox, noUI/text/grid/label/watermark. Crisp tactile semi-real historical miniature, adultanatomy realistic smallhead, clothmetalwoodfurtextures, upper-leftsoftlight. Strongdistinct limb/weaponpositions between states mustbevisible, notidentical restingimage shifted. Uncutwhole weapons/tips/feet/wheels/shadowwithin eachcell. Do not copy commercialgameassets.\nExactly6rows=24views. Rows1/2 Roman LEGIONARY WINDUP/IMPACT with large curved rectangular red shield, iron segmented cuirass, shortscarlet tunic, bronze helmet and red crest, gladius raised behindshoulder then forceful forward short thrust. Rows3/4 Roman ENGINEER WINDUP/IMPACT EXACT cream tunic, red shoulder scarf, bronze practical helmet, crossed leather harness/toolbelt fromImage2: lift short construction hammer behindhead then swinghammer forward/down with forward knee bent (put measuringrod inbelt). Rows5/6 Persian GUARD WINDUP/IMPACT EXACT turquoise/cobalt gold brocade longcoat, lowflatbluegoldcap,creamtrousers, ornate bronze roundshield and spear fromImage2: draw spear horizontally backward, then long forward extended spear thrust, shieldbraced.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "0861aa5b2fe5b2324c9b30c368eca3528733b699d27346c38a621d3e1729a8b9",
+      "frames": [
+        [
+          50,
+          18,
+          175,
+          243,
+          59.99,
+          232.93
+        ],
+        [
+          310,
+          18,
+          167,
+          239,
+          78.47,
+          229.03
+        ],
+        [
+          557,
+          18,
+          171,
+          246,
+          129.02,
+          235.85
+        ],
+        [
+          821,
+          11,
+          164,
+          262,
+          126.75,
+          251.45
+        ],
+        [
+          35,
+          288,
+          192,
+          202,
+          70.03,
+          192.95
+        ],
+        [
+          277,
+          288,
+          220,
+          205,
+          145.31,
+          195.88
+        ],
+        [
+          545,
+          279,
+          205,
+          229,
+          115.03,
+          219.28
+        ],
+        [
+          786,
+          285,
+          209,
+          227,
+          194.17,
+          217.32
+        ],
+        [
+          59,
+          514,
+          164,
+          257,
+          120.72,
+          246.57
+        ],
+        [
+          291,
+          512,
+          173,
+          260,
+          57.12,
+          249.5
+        ],
+        [
+          550,
+          522,
+          171,
+          248,
+          81.29,
+          237.8
+        ],
+        [
+          823,
+          519,
+          152,
+          251,
+          118.32,
+          240.72
+        ],
+        [
+          39,
+          794,
+          170,
+          197,
+          114.46,
+          188.07
+        ],
+        [
+          281,
+          784,
+          198,
+          211,
+          57.32,
+          201.72
+        ],
+        [
+          542,
+          783,
+          202,
+          211,
+          17.59,
+          201.72
+        ],
+        [
+          787,
+          783,
+          198,
+          213,
+          162.72,
+          203.68
+        ],
+        [
+          5,
+          1011,
+          222,
+          231,
+          183.74,
+          221.22
+        ],
+        [
+          279,
+          1015,
+          229,
+          225,
+          52.36,
+          215.38
+        ],
+        [
+          540,
+          1016,
+          212,
+          229,
+          138.05,
+          219.28
+        ],
+        [
+          800,
+          1014,
+          213,
+          237,
+          154.84,
+          227.07
+        ],
+        [
+          34,
+          1257,
+          220,
+          234,
+          158.53,
+          224.15
+        ],
+        [
+          261,
+          1261,
+          220,
+          231,
+          71.28,
+          221.22
+        ],
+        [
+          529,
+          1256,
+          229,
+          239,
+          162.14,
+          229.03
+        ],
+        [
+          775,
+          1256,
+          228,
+          237,
+          199.37,
+          227.07
+        ]
+      ],
+      "rowBodyHeights": [
+        193.18,
+        193.18,
+        197.12,
+        197.12,
+        221.36,
+        221.36
+      ],
+      "bodyHeight": 203.88666666666668,
+      "majorComponents": 24,
+      "civilizations": [
+        "roman",
+        "persian"
+      ],
+      "group": "special-foot-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-special-foot-a.png",
+      "referencePaths": [
+        "public/art/units-v3-b.png",
+        "public/art/units-motion-v6-infantry-a.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "special_foot_b",
+      "file": "units-attack-v6-special-foot-b.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS authored action sprite atlas. References are identity/material style sources ONLY. Produce intact fully painted actors; no separateparts or cutoutlimb strip. STRICT exactly4equal columns headingsSEdown-right,SWdown-left,NEbehindup-right,NWbehindup-left EVERYrow. Layout centeredactorsinequal cells withgenerous alphagutters, samecamera30degree downwardorthographicisometric, samescale acrossmatchingactorstates. Truealpha, noopaque backdrop or brown groundplate/blackbox, noUI/text/grid/label/watermark. Crisp tactile semi-real historical miniature, adultanatomy realistic smallhead, clothmetalwoodfurtextures, upper-leftsoftlight. Strongdistinct limb/weaponpositions between states mustbevisible, notidentical restingimage shifted. Uncutwhole weapons/tips/feet/wheels/shadowwithin eachcell. Do not copy commercialgameassets.\nExactly6rows=24views. Rows1/2 Persian GUARD ARCHER DRAW/RELEASE EXACT cobalt/turquoise goldbrocadelongcoat,lowflatbluegoldcap, creamtrousers, quiver compositebow fromImage1 bottomrows: first fully bentbow drawhandat cheek/arrow nocked, then release bowarmextended handpastcheek stringrelaxed/noarrow. Rows3/4 Tang VANGUARD WINDUP/IMPACT EXACT crimson-gold iron lamellartor so/skirt,redplumedsegmentedhelmet, darktrousers and long Chinese polearm fromImage2 toprows: pullpolearmback overrearshoulder, then forceful forward diagonalthrust withfrontkneebent. Rows5/6 Ottoman MUSKETEER AIM/FIRE EXACT deepteal goldedged coat, redwaistsash,browntrousersboots,tallwhiteJanissarycap, matchlock fromImage2 bottomrows: first musketbuttshoulder barrel aimedforward, then gunrecoilstockshiftedback/upperbodyrear, visible bentelbows, smallmuzzleglowonly nohugecloud.",
+      "width": 1024,
+      "height": 1536,
+      "columns": 4,
+      "actualRows": 6,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "1cd203490e6380a7d262cd3630c59facccb08901e7091dff4228cad257da7b60",
+      "frames": [
+        [
+          35,
+          8,
+          207,
+          222,
+          102.88,
+          212.45
+        ],
+        [
+          307,
+          6,
+          158,
+          228,
+          77.84,
+          218.3
+        ],
+        [
+          569,
+          4,
+          150,
+          247,
+          110.46,
+          236.82
+        ],
+        [
+          801,
+          4,
+          189,
+          245,
+          153.05,
+          234.88
+        ],
+        [
+          25,
+          243,
+          193,
+          227,
+          118.19,
+          217.32
+        ],
+        [
+          317,
+          243,
+          160,
+          232,
+          58.09,
+          222.2
+        ],
+        [
+          579,
+          237,
+          154,
+          256,
+          116.59,
+          245.6
+        ],
+        [
+          816,
+          242,
+          184,
+          248,
+          143.8,
+          237.8
+        ],
+        [
+          14,
+          469,
+          221,
+          260,
+          170.97,
+          249.5
+        ],
+        [
+          271,
+          483,
+          219,
+          252,
+          52.51,
+          241.7
+        ],
+        [
+          545,
+          477,
+          213,
+          264,
+          164.73,
+          253.4
+        ],
+        [
+          797,
+          480,
+          212,
+          265,
+          180.63,
+          254.38
+        ],
+        [
+          28,
+          738,
+          237,
+          222,
+          140.55,
+          212.45
+        ],
+        [
+          265,
+          747,
+          206,
+          221,
+          70.21,
+          211.47
+        ],
+        [
+          542,
+          747,
+          230,
+          231,
+          39.41,
+          221.22
+        ],
+        [
+          798,
+          749,
+          215,
+          237,
+          183.98,
+          227.07
+        ],
+        [
+          22,
+          977,
+          231,
+          239,
+          134.82,
+          229.03
+        ],
+        [
+          271,
+          979,
+          203,
+          239,
+          62.79,
+          229.03
+        ],
+        [
+          570,
+          979,
+          189,
+          246,
+          44.45,
+          235.85
+        ],
+        [
+          789,
+          977,
+          211,
+          252,
+          195.61,
+          241.7
+        ],
+        [
+          28,
+          1231,
+          208,
+          253,
+          142.05,
+          242.68
+        ],
+        [
+          282,
+          1241,
+          185,
+          244,
+          41.55,
+          233.9
+        ],
+        [
+          567,
+          1243,
+          172,
+          255,
+          24.78,
+          244.62
+        ],
+        [
+          799,
+          1242,
+          202,
+          256,
+          177.41,
+          245.6
+        ]
+      ],
+      "rowBodyHeights": [
+        205.7,
+        205.7,
+        201.45,
+        201.45,
+        216.9,
+        216.9
+      ],
+      "bodyHeight": 208.01666666666665,
+      "majorComponents": 24,
+      "civilizations": [
+        "persian",
+        "tang",
+        "ottoman"
+      ],
+      "group": "special-foot-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-special-foot-b.png",
+      "referencePaths": [
+        "public/art/units-motion-v6-infantry-a.png",
+        "public/art/units-motion-v6-infantry-b.png"
+      ],
+      "requestedRows": 6
+    },
+    {
+      "id": "ram",
+      "file": "units-siege-v6-ram.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS authored action sprite atlas. References are identity/material style sources ONLY. Produce intact fully painted actors; no separateparts or cutoutlimb strip. STRICT exactly4equal columns headingsSEdown-right,SWdown-left,NEbehindup-right,NWbehindup-left EVERYrow. Layout centeredactorsinequal cells withgenerous alphagutters, samecamera30degree downwardorthographicisometric, samescale acrossmatchingactorstates. Truealpha, noopaque backdrop or brown groundplate/blackbox, noUI/text/grid/label/watermark. Crisp tactile semi-real historical miniature, adultanatomy realistic smallhead, clothmetalwoodfurtextures, upper-leftsoftlight. Strongdistinct limb/weaponpositions between states mustbevisible, notidentical restingimage shifted. Uncutwhole weapons/tips/feet/wheels/shadowwithin eachcell. Do not copy commercialgameassets.\nExactly4rows=16views. Exactly4rows ram states: row1 WALK-A sturdy lowoak ramroof on4wheels, brassiron bands, suspended logwithironhead, 2linen/browncrew pushing with nearlegforward; row2 WALK-B SAMEwoodenmachine, wheelsrotatedspokes, crewoppositesteplegs/foldedknee. Row3 WINDUP SAME ram, logpulledbackinside frame,2crew bracedpullingropeswithbentarms. Row4 IMPACT logextendedclearlyforwardfromframe,2crew armsforward/machine braced. Roof/weatheredoakmustmatchallrows.",
+      "width": 1536,
+      "height": 1024,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "sha256": "166af2be8ddf313c7e3e9bf081d2234c5620574b85a9cf4eabbbf186972470d9",
+      "frames": [
+        [
+          38,
+          11,
+          306,
+          241,
+          139.44,
+          230.97
+        ],
+        [
+          425,
+          17,
+          317,
+          233,
+          178.85,
+          223.18
+        ],
+        [
+          816,
+          12,
+          265,
+          237,
+          101.81,
+          227.07
+        ],
+        [
+          1206,
+          10,
+          280,
+          242,
+          180.86,
+          231.95
+        ],
+        [
+          31,
+          261,
+          316,
+          239,
+          134.83,
+          229.03
+        ],
+        [
+          419,
+          264,
+          327,
+          242,
+          196.9,
+          231.95
+        ],
+        [
+          818,
+          262,
+          273,
+          248,
+          56.8,
+          237.8
+        ],
+        [
+          1202,
+          263,
+          278,
+          247,
+          210.39,
+          236.82
+        ],
+        [
+          47,
+          510,
+          282,
+          237,
+          142.96,
+          227.07
+        ],
+        [
+          435,
+          513,
+          302,
+          234,
+          147.88,
+          224.15
+        ],
+        [
+          798,
+          513,
+          296,
+          238,
+          122.9,
+          228.05
+        ],
+        [
+          1204,
+          513,
+          305,
+          247,
+          207.21,
+          236.82
+        ],
+        [
+          26,
+          756,
+          350,
+          239,
+          137.88,
+          229.03
+        ],
+        [
+          398,
+          755,
+          364,
+          240,
+          216.59,
+          230
+        ],
+        [
+          818,
+          755,
+          291,
+          247,
+          77.84,
+          236.82
+        ],
+        [
+          1182,
+          756,
+          312,
+          239,
+          199.09,
+          229.03
+        ]
+      ],
+      "rowBodyHeights": [
+        229.44,
+        229.44,
+        229.44,
+        229.44
+      ],
+      "bodyHeight": 228.95,
+      "majorComponents": 16,
+      "civilizations": [
+        "roman",
+        "mongol",
+        "persian",
+        "tang",
+        "ottoman"
+      ],
+      "group": "siege-walk-combat",
+      "sourceOriginalPath": "public/art/units-siege-v6-ram.png",
+      "referencePaths": [
+        "public/art/units-v3-c.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "catapult",
+      "file": "units-siege-v6-catapult.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS authored action sprite atlas. References are identity/material style sources ONLY. Produce intact fully painted actors; no separateparts or cutoutlimb strip. STRICT exactly4equal columns headingsSEdown-right,SWdown-left,NEbehindup-right,NWbehindup-left EVERYrow. Layout centeredactorsinequal cells withgenerous alphagutters, samecamera30degree downwardorthographicisometric, samescale acrossmatchingactorstates. Truealpha, noopaque backdrop or brown groundplate/blackbox, noUI/text/grid/label/watermark. Crisp tactile semi-real historical miniature, adultanatomy realistic smallhead, clothmetalwoodfurtextures, upper-leftsoftlight. Strongdistinct limb/weaponpositions between states mustbevisible, notidentical restingimage shifted. Uncutwhole weapons/tips/feet/wheels/shadowwithin eachcell. Do not copy commercialgameassets.\nExactly4rows=16views. Exactly4rows catapult states: row1 WALK-A samecompact oak torsioncatapult on4ironbandedwheels with visiblecoiledropewinch,2linen/browncrew pushing nearlegforward; row2 WALK-B SAMEmachine,wheelspokesrotated/crew oppositesteplegs. Row3 WINDUP armcockedbacknearlyhorizontal holdingone graystonecup,crew bentarmscrankingwinch. Row4 IMPACT armraisedforwardnearlyvertical,cupempty, rope taut, crew recoil/bracedarms; nofloatingstone outsidecell. Authenticmechanicalassembly stablebaseandgeometry.",
+      "width": 1242,
+      "height": 1266,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "434c99e9033f3f5f76f7a056bed115e1d686589261e224907d85aa2b1a9775ff",
+      "frames": [
+        [
+          13,
+          31,
+          306,
+          269,
+          184.57,
+          258.27
+        ],
+        [
+          345,
+          40,
+          272,
+          258,
+          127,
+          247.55
+        ],
+        [
+          647,
+          49,
+          252,
+          273,
+          144.99,
+          262.18
+        ],
+        [
+          922,
+          33,
+          300,
+          266,
+          142.84,
+          255.35
+        ],
+        [
+          14,
+          335,
+          306,
+          275,
+          188.42,
+          264.12
+        ],
+        [
+          335,
+          341,
+          296,
+          262,
+          141.58,
+          251.45
+        ],
+        [
+          649,
+          345,
+          250,
+          274,
+          141.92,
+          263.15
+        ],
+        [
+          928,
+          334,
+          298,
+          272,
+          131.08,
+          261.2
+        ],
+        [
+          25,
+          657,
+          299,
+          240,
+          145.48,
+          230
+        ],
+        [
+          334,
+          666,
+          285,
+          233,
+          133.94,
+          223.18
+        ],
+        [
+          641,
+          673,
+          262,
+          224,
+          127.53,
+          214.4
+        ],
+        [
+          922,
+          654,
+          304,
+          244,
+          129.23,
+          233.9
+        ],
+        [
+          28,
+          901,
+          299,
+          344,
+          183,
+          331.4
+        ],
+        [
+          336,
+          910,
+          284,
+          329,
+          142.99,
+          316.77
+        ],
+        [
+          634,
+          903,
+          267,
+          341,
+          169.02,
+          328.48
+        ],
+        [
+          921,
+          903,
+          312,
+          334,
+          132.51,
+          321.65
+        ]
+      ],
+      "rowBodyHeights": [
+        256.39,
+        256.39,
+        256.39,
+        256.39
+      ],
+      "bodyHeight": 264.96500000000003,
+      "majorComponents": 16,
+      "civilizations": [
+        "roman",
+        "mongol",
+        "persian",
+        "tang",
+        "ottoman"
+      ],
+      "group": "siege-walk-combat",
+      "sourceOriginalPath": "public/art/units-siege-v6-catapult.png",
+      "referencePaths": [
+        "public/art/units-v3-c.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "cannon",
+      "file": "units-siege-v6-cannon.png",
+      "prompt": "Use case: historical-scene. Asset type: original production RTS authored action sprite atlas. References are identity/material style sources ONLY. Produce intact fully painted actors; no separateparts or cutoutlimb strip. STRICT exactly4equal columns headingsSEdown-right,SWdown-left,NEbehindup-right,NWbehindup-left EVERYrow. Layout centeredactorsinequal cells withgenerous alphagutters, samecamera30degree downwardorthographicisometric, samescale acrossmatchingactorstates. Truealpha, noopaque backdrop or brown groundplate/blackbox, noUI/text/grid/label/watermark. Crisp tactile semi-real historical miniature, adultanatomy realistic smallhead, clothmetalwoodfurtextures, upper-leftsoftlight. Strongdistinct limb/weaponpositions between states mustbevisible, notidentical restingimage shifted. Uncutwhole weapons/tips/feet/wheels/shadowwithin eachcell. Do not copy commercialgameassets.\nExactly4rows=16views. Exactly4rows cannon states: row1 WALK-A compactbronze earlycannon onweatheredoak2bigwheelcarriage, ironbands,2Ottoman crewtealcoatredwaistsashcreamcap,pushingnearlegforward; row2 WALK-B SAMEbronzetube/woodcarriage, wheelspokesrotated/crew oppositelegcontact. Row3 WINDUP crew1bracesaimedbarrelwithramrodstowed, crew2leanswithlitmatchto touchhole, cannonready. Row4 IMPACT bronze cannoncarriage recoilsback slightlyonwheels, crewleansback/bentelbows, smalltransparentwhitesmokeatbarrelmuzzle containedinsidecell. Brasslightfromupperleft, neveranewmachineidentity.",
+      "width": 1199,
+      "height": 1312,
+      "columns": 4,
+      "actualRows": 4,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "543827e6fdc00373491032a9d433becf1ed7c7a6f6734783a0e814c18bc1e414",
+      "frames": [
+        [
+          20,
+          53,
+          276,
+          284,
+          113.9,
+          272.9
+        ],
+        [
+          340,
+          48,
+          252,
+          286,
+          149.71,
+          274.85
+        ],
+        [
+          617,
+          50,
+          259,
+          288,
+          45.7,
+          276.8
+        ],
+        [
+          931,
+          52,
+          254,
+          286,
+          206.88,
+          274.85
+        ],
+        [
+          20,
+          364,
+          278,
+          265,
+          105.71,
+          254.38
+        ],
+        [
+          333,
+          363,
+          267,
+          278,
+          158.52,
+          267.05
+        ],
+        [
+          624,
+          358,
+          254,
+          296,
+          46.18,
+          284.6
+        ],
+        [
+          921,
+          361,
+          255,
+          291,
+          226.07,
+          279.73
+        ],
+        [
+          21,
+          670,
+          281,
+          274,
+          144.57,
+          263.15
+        ],
+        [
+          347,
+          676,
+          253,
+          269,
+          152.41,
+          258.27
+        ],
+        [
+          613,
+          669,
+          274,
+          270,
+          100.91,
+          259.25
+        ],
+        [
+          927,
+          676,
+          259,
+          247,
+          138.49,
+          236.82
+        ],
+        [
+          31,
+          970,
+          286,
+          272,
+          158.9,
+          261.2
+        ],
+        [
+          320,
+          968,
+          280,
+          291,
+          209.95,
+          279.73
+        ],
+        [
+          619,
+          981,
+          267,
+          238,
+          159.8,
+          228.05
+        ],
+        [
+          928,
+          981,
+          242,
+          284,
+          180.83,
+          272.9
+        ]
+      ],
+      "rowBodyHeights": [
+        271.7,
+        271.7,
+        271.7,
+        271.7
+      ],
+      "bodyHeight": 263.8,
+      "majorComponents": 16,
+      "civilizations": [
+        "ottoman"
+      ],
+      "group": "siege-walk-combat",
+      "sourceOriginalPath": "public/art/units-siege-v6-cannon.png",
+      "referencePaths": [
+        "public/art/units-v3-c.png"
+      ],
+      "requestedRows": 4
+    },
+    {
+      "id": "horsearcher",
+      "file": "units-attack-v6-horsearcher.png",
+      "prompt": "Use case: historical-scene. Production original RTS transparent authored attack sheet. Image1 exactattackposeguide, Image2 exactidentity/materialreference. KEEPonlyrequestedunit. Mongol BLUE horse archer from TOP TWO ROWS ofImage1 and top2rowsofImage2. Row1 DRAW fullybentrecurvebow witharrow nocked, drawhandatcheek, rider twistsupperbody; row2 RELEASE bowarmextendedbowrelaxed,stringreleased, rightdrawhandpastcheekopen/noarrow. Samebayhorsebluegoldtack, blue deelironlamellar, furhelmet. EXACTLY4columnsheadingsleft-rightSEdownright,SWdownleft,NEbehindup-right,NWbehindup-left; exactly2rows, 8completeactors. Eachmatchingactorstate exactlysamegear/anatomy/colors. Wholeintactsilhouette,strongdistinctarms/weaponpositions,tactilenaturalclothmetalhorsefur/elephantskin,realadultsmallhead. Native highresolution landscape2:1composition, actor fills eachcellbut safealphaguttersnooverlap/noanythingcropped. Truealpha/noopaquebrownbackdrop/no baseisland/noUI/labels/text/watermark. Fixed30degreedownwardorthographicisometric,upperleftsoftlight. No toy/chibi/no separatebodyparts,do notcopycommercialgameart.",
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "d81bcc04223013685202c07f722a9f0953f83d33779e7137eeac1ccc16ee05a0",
+      "frames": [
+        [
+          35,
+          21,
+          419,
+          400,
+          313.7,
+          386
+        ],
+        [
+          498,
+          13,
+          400,
+          402,
+          93.99,
+          387.95
+        ],
+        [
+          942,
+          1,
+          385,
+          410,
+          39.1,
+          395.75
+        ],
+        [
+          1410,
+          2,
+          349,
+          430,
+          303.49,
+          415.25
+        ],
+        [
+          35,
+          435,
+          386,
+          402,
+          326.71,
+          387.95
+        ],
+        [
+          528,
+          438,
+          368,
+          398,
+          55.42,
+          384.05
+        ],
+        [
+          932,
+          427,
+          366,
+          424,
+          34.32,
+          409.4
+        ],
+        [
+          1417,
+          420,
+          342,
+          450,
+          305.06,
+          434.75
+        ]
+      ],
+      "rowBodyHeights": [
+        399.35,
+        399.35
+      ],
+      "bodyHeight": 399.35,
+      "majorComponents": 8,
+      "civilizations": [
+        "mongol"
+      ],
+      "group": "special-mounted-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-horsearcher.png",
+      "referencePaths": [
+        "generation-record:exec-6ea581c6-c5d4-43e9-83c5-905f40dc73aa.png",
+        "public/art/units-motion-v6-mongol.png"
+      ],
+      "requestedRows": 2
+    },
+    {
+      "id": "lancer",
+      "file": "units-attack-v6-lancer.png",
+      "prompt": "Use case: historical-scene. Production original RTS transparent authored attack sheet. Image1 exactattackposeguide, Image2 exactidentity/materialreference. KEEPonlyrequestedunit. Mongol BLUE lance cavalry from MIDDLE TWO ROWS ofImage1 and bottom2rowsofImage2. Row1 WINDUP lancepulled back horizontally/diagonally over shoulder withbentelbow,horsebraced; row2 IMPACT riderleansandthrusts LONGwoodlanceforward fullyextendedarm, horsefrontlegstep. Samebayhorsebluegoldtack, blue deelironlamellar, furhelmet, roundshield. EXACTLY4columnsheadingsleft-rightSEdownright,SWdownleft,NEbehindup-right,NWbehindup-left; exactly2rows, 8completeactors. Eachmatchingactorstate exactlysamegear/anatomy/colors. Wholeintactsilhouette,strongdistinctarms/weaponpositions,tactilenaturalclothmetalhorsefur/elephantskin,realadultsmallhead. Native highresolution landscape2:1composition, actor fills eachcellbut safealphaguttersnooverlap/noanythingcropped. Truealpha/noopaquebrownbackdrop/no baseisland/noUI/labels/text/watermark. Fixed30degreedownwardorthographicisometric,upperleftsoftlight. No toy/chibi/no separatebodyparts,do notcopycommercialgameart.",
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "5e6493a47c41c14b49e612aba86f16fd7ba41d52c826c1ff8f3d77c0aac5bb63",
+      "frames": [
+        [
+          32,
+          32,
+          409,
+          393,
+          299.81,
+          379.18
+        ],
+        [
+          448,
+          32,
+          411,
+          395,
+          109.86,
+          381.12
+        ],
+        [
+          911,
+          21,
+          398,
+          409,
+          54.51,
+          394.77
+        ],
+        [
+          1354,
+          27,
+          403,
+          403,
+          345.26,
+          388.93
+        ],
+        [
+          22,
+          467,
+          419,
+          362,
+          299.07,
+          348.95
+        ],
+        [
+          449,
+          471,
+          423,
+          370,
+          115.63,
+          356.75
+        ],
+        [
+          900,
+          458,
+          413,
+          391,
+          48.82,
+          377.23
+        ],
+        [
+          1351,
+          466,
+          404,
+          386,
+          352.15,
+          372.35
+        ]
+      ],
+      "rowBodyHeights": [
+        358.73,
+        358.73
+      ],
+      "bodyHeight": 358.73,
+      "majorComponents": 8,
+      "civilizations": [
+        "mongol"
+      ],
+      "group": "special-mounted-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-lancer.png",
+      "referencePaths": [
+        "generation-record:exec-6ea581c6-c5d4-43e9-83c5-905f40dc73aa.png",
+        "public/art/units-motion-v6-mongol.png"
+      ],
+      "requestedRows": 2
+    },
+    {
+      "id": "heavycavalry",
+      "file": "units-attack-v6-heavycavalry.png",
+      "prompt": "Use case: historical-scene. Production original RTS transparent authored attack sheet. Image1 exactattackposeguide, Image2 exactidentity/materialreference. KEEPonlyrequestedunit. Tang RED/GOLD armoredheavyhorse from BOTTOM TWO ROWSofImage1 andImage2. Row1 WINDUP ironpolearmpulledback over shoulder, bentelbow torso twist; row2 IMPACT polearmthrustforward extendedarmlean withhorsefrontstep. Sameironbardingcrimson-goldborders, darkhorse, crimsonlamellar, ironredplumehelmet. EXACTLY4columnsheadingsleft-rightSEdownright,SWdownleft,NEbehindup-right,NWbehindup-left; exactly2rows, 8completeactors. Eachmatchingactorstate exactlysamegear/anatomy/colors. Wholeintactsilhouette,strongdistinctarms/weaponpositions,tactilenaturalclothmetalhorsefur/elephantskin,realadultsmallhead. Native highresolution landscape2:1composition, actor fills eachcellbut safealphaguttersnooverlap/noanythingcropped. Truealpha/noopaquebrownbackdrop/no baseisland/noUI/labels/text/watermark. Fixed30degreedownwardorthographicisometric,upperleftsoftlight. No toy/chibi/no separatebodyparts,do notcopycommercialgameart.",
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "537190c6a085a937f11e6668850d69977a7c8d9bdf369a788aa04e341c5ca6a6",
+      "frames": [
+        [
+          63,
+          47,
+          306,
+          392,
+          276.6,
+          378.2
+        ],
+        [
+          515,
+          54,
+          326,
+          389,
+          23.86,
+          375.27
+        ],
+        [
+          926,
+          39,
+          372,
+          407,
+          35.1,
+          392.82
+        ],
+        [
+          1364,
+          40,
+          363,
+          409,
+          339.73,
+          394.77
+        ],
+        [
+          34,
+          501,
+          403,
+          325,
+          279.7,
+          312.88
+        ],
+        [
+          454,
+          498,
+          419,
+          339,
+          118.91,
+          326.52
+        ],
+        [
+          924,
+          469,
+          414,
+          387,
+          28.74,
+          373.32
+        ],
+        [
+          1359,
+          468,
+          384,
+          384,
+          351.03,
+          370.4
+        ]
+      ],
+      "rowBodyHeights": [
+        342.24,
+        342.24
+      ],
+      "bodyHeight": 342.24,
+      "majorComponents": 8,
+      "civilizations": [
+        "tang"
+      ],
+      "group": "special-mounted-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-heavycavalry.png",
+      "referencePaths": [
+        "generation-record:exec-6ea581c6-c5d4-43e9-83c5-905f40dc73aa.png",
+        "public/art/units-motion-v6-tang.png"
+      ],
+      "requestedRows": 2
+    },
+    {
+      "id": "elephant_windup",
+      "file": "units-attack-v6-elephant-windup.png",
+      "prompt": "Use case: historical-scene. Production original RTS transparent authored attack sheet. Image1 exactattackposeguide, Image2 exactidentity/materialreference. KEEPonlyrequestedunit. Persian elephant WINDUP from TOP ROW ofImage1, matchingImage2 identity. GrayAsianadult2riders,tusks,cobalt/turquoisegoldfloralcaparison,woodhowdah,creammahout,bluegoldarmoredspearman. Foreknee lifted/bent,elephantheadraised/trunkcoiledUP, riderdrawsspearbackabove shoulder. Exactly4differentheadingsonly,completeentireelephantandweapons. EXACTLY4columnsheadingsleft-rightSEdownright,SWdownleft,NEbehindup-right,NWbehindup-left; exactly1rows, 4completeactors. Eachmatchingactorstate exactlysamegear/anatomy/colors. Wholeintactsilhouette,strongdistinctarms/weaponpositions,tactilenaturalclothmetalhorsefur/elephantskin,realadultsmallhead. Native highresolution verywide4:1composition, actor fills eachcellbut safealphaguttersnooverlap/noanythingcropped. Truealpha/noopaquebrownbackdrop/no baseisland/noUI/labels/text/watermark. Fixed30degreedownwardorthographicisometric,upperleftsoftlight. No toy/chibi/no separatebodyparts,do notcopycommercialgameart.",
+      "width": 2172,
+      "height": 724,
+      "columns": 4,
+      "actualRows": 1,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "8f5ef6608220cc55023ddec3737642f8f94a2597482b0321d6897410413f51ff",
+      "frames": [
+        [
+          19,
+          11,
+          479,
+          664,
+          280.47,
+          643.4
+        ],
+        [
+          569,
+          12,
+          492,
+          663,
+          199.35,
+          642.42
+        ],
+        [
+          1113,
+          16,
+          426,
+          680,
+          88.89,
+          659
+        ],
+        [
+          1693,
+          21,
+          457,
+          676,
+          350.86,
+          655.1
+        ]
+      ],
+      "rowBodyHeights": [
+        464.62
+      ],
+      "bodyHeight": 464.62,
+      "majorComponents": 4,
+      "civilizations": [
+        "persian"
+      ],
+      "group": "special-mounted-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-elephant-windup.png",
+      "referencePaths": [
+        "generation-record:exec-7a4bdc9f-67da-454e-b7ca-b95767d021d0.png",
+        "public/art/units-motion-v6-elephant-a.png"
+      ],
+      "requestedRows": 1
+    },
+    {
+      "id": "elephant_impact",
+      "file": "units-attack-v6-elephant-impact.png",
+      "prompt": "Use case: historical-scene. Production original RTS transparent authored attack sheet. Image1 exactattackposeguide, Image2 exactidentity/materialreference. KEEPonlyrequestedunit. Persian elephant IMPACT from BOTTOM ROW ofImage1,matchingImage2identity. GrayAsianadult2riders,tusks,cobalt/turquoisegoldfloralcaparison,woodhowdah,creammahout,bluegoldarmoredspearman. Foreleg plantedforward,headlowered/trunkextendedFORWARDslightlycurveddown, riderthrustsspearforwardarmstraight. Exactly4differentheadingsonly,completeentireelephantandweapons. EXACTLY4columnsheadingsleft-rightSEdownright,SWdownleft,NEbehindup-right,NWbehindup-left; exactly1rows, 4completeactors. Eachmatchingactorstate exactlysamegear/anatomy/colors. Wholeintactsilhouette,strongdistinctarms/weaponpositions,tactilenaturalclothmetalhorsefur/elephantskin,realadultsmallhead. Native highresolution verywide4:1composition, actor fills eachcellbut safealphaguttersnooverlap/noanythingcropped. Truealpha/noopaquebrownbackdrop/no baseisland/noUI/labels/text/watermark. Fixed30degreedownwardorthographicisometric,upperleftsoftlight. No toy/chibi/no separatebodyparts,do notcopycommercialgameart.",
+      "width": 2172,
+      "height": 724,
+      "columns": 4,
+      "actualRows": 1,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "463d5381625eb2f7b2d1a95685eab89d4cc5b3299e47b9eb1e050449d573d274",
+      "frames": [
+        [
+          12,
+          33,
+          516,
+          634,
+          330.71,
+          614.15
+        ],
+        [
+          547,
+          53,
+          530,
+          629,
+          179.61,
+          609.27
+        ],
+        [
+          1113,
+          32,
+          494,
+          650,
+          78.09,
+          629.75
+        ],
+        [
+          1658,
+          34,
+          497,
+          654,
+          433.47,
+          633.65
+        ]
+      ],
+      "rowBodyHeights": [
+        444.32
+      ],
+      "bodyHeight": 444.32,
+      "majorComponents": 4,
+      "civilizations": [
+        "persian"
+      ],
+      "group": "special-mounted-combat",
+      "sourceOriginalPath": "public/art/units-attack-v6-elephant-impact.png",
+      "referencePaths": [
+        "generation-record:exec-7a4bdc9f-67da-454e-b7ca-b95767d021d0.png",
+        "public/art/units-motion-v6-elephant-a.png"
+      ],
+      "requestedRows": 1
+    }
+  ],
+  "qa": {
+    "sourceVisualInspection": "Every selected output viewed. Native grids matched measured4-column assignment and major actor counts.",
+    "alpha": "Every selected PNG has actual alpha0 background. Runtime isolation retains actor components and soft edge while dropping distant tiny neighboring-cell fragments. Browser green-matte inspections showed no opaque background boxes or significant red/yellow edge fringe.",
+    "browser": "Chrome local workshop zoom2.2: all36 military/cavalry/elephant/cannon model profiles across5civs inspected in attack, including rear Tang/Ottoman headings and Persian guard archer front/rear. Representative elephant and shared-cavalry walking contacts inspected on green matte; Roman/Mongol/Ottoman idle tools and Roman engineer carry checked. Tiny adjacent-row hoof fragment detected in Roman cavalry and removed via whole-component runtime isolation; reinspection clean. No claim of exhaustive actual-battle QA by this asset agent; root owns scene verification.",
+    "typecheck": "Isolated strict TypeScript compilation passed.",
+    "status": "Selected assets copied, source/hash/rectangle verification passed for38PNGs/612views; isolated strict TS passed. Browser development logs checked separately."
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}

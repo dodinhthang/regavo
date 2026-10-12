@@ -1,0 +1,11 @@
+allowBuilds:
+  esbuild: true
+
+# Use the official platform-independent Rollup build. Its WASM loader does not
+# use the optional native LZMA decompressor, whose tarball omits license text.
+minimumReleaseAgeExclude:
+  - '@rollup/wasm-node@4.64.3'
+
+overrides:
+  rollup: npm:@rollup/wasm-node@4.64.3
+  '@rollup/wasm-node@4.64.3>@napi-rs/lzma-linux-x64-gnu': '-'

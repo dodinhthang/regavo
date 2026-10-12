@@ -1,0 +1,607 @@
+{
+  "version": 7,
+  "title": "Civilization trader contact poses",
+  "created": "2026-10-09",
+  "generator": "OpenAI built-in image_gen",
+  "sourcePreservation": "All generated source PNGs are copied intact; no offline raster editing, cropping or recoloring.",
+  "rights": {
+    "art": "Original AI-generated assets, no third-party art downloaded or copied. Generated outputs are not warranted exclusive or free of every possible legal claim.",
+    "historicalInspiration": "Primary historical text/object context; palettes and readable uniforms are artistic choices. Camels and merchant roles are not exclusive to one civilization."
+  },
+  "coverage": {
+    "types": [
+      "trader"
+    ],
+    "civilizations": [
+      "roman",
+      "mongol",
+      "persian",
+      "tang",
+      "ottoman"
+    ],
+    "authoredViews": 40,
+    "sourceHeadings": [
+      "SE",
+      "SW",
+      "NE",
+      "NW"
+    ],
+    "contacts": [
+      "A",
+      "B"
+    ],
+    "idle": "Contact A",
+    "walk": "frames0/1=A,2/3=B",
+    "portrait": "Native contact A source sampled directly",
+    "noGenericTraderFallback": true
+  },
+  "runtime": {
+    "module": "src/render/units.ts",
+    "api": "loadUnitAtlases(civs?:readonly string[]):Promise<boolean>; renderUnitAtlas(type,civ,age,team,frame,dir,action,activity); renderUnitPortrait(type,civ,age)",
+    "pixelRatio": 4,
+    "groundAnchor": "Center of handler/animal group; per-frame physical coordinates adjusted after alpha trim",
+    "logicalHandlerHeight": 48,
+    "scale": "48 / measured source human body reference, constant across A/B for each civ",
+    "flagsUnderUnits": false,
+    "noRuntimeLimbRigging": true,
+    "sourceSampling": "Native source frame sampled once at DPR4. Whole authored silhouette, physical-pixel snapped 1:1 cached blit.",
+    "cacheLimits": {
+      "sprites": 192,
+      "poses": 64,
+      "portraits": 24
+    },
+    "sourceLoading": "Only selected civilizations are retained. Request serial guards obsolete completion/pruning. Historical v3 sources lazy only on failed current load; old generic trader not decoded."
+  },
+  "researchReferences": [
+    {
+      "civ": "roman",
+      "url": "https://www.britishmuseum.org/exhibitions/legion-life-roman-army/large-print-guide",
+      "use": "Parent-provided primary historical reference for Roman tunic, cloak and pack mule; no source artwork imported."
+    },
+    {
+      "civ": "mongol",
+      "url": "https://depts.washington.edu/silkroad/texts/rubruck.html",
+      "use": "Rubruck primary travel account; historical inspiration for pack horse commerce, no image imported."
+    },
+    {
+      "civ": "mongol",
+      "url": "https://www.metmuseum.org/exhibitions/listings/2010/khubilai-khan",
+      "use": "Yuan cultural context; readable blue belted robe is an original game palette, not an exclusive historical uniform."
+    },
+    {
+      "civ": "persian",
+      "url": "https://www.iranicaonline.org/articles/clothing-iv/",
+      "use": "Sasanian clothing context; knee-length turquoise tunic, trousers and soft cap are original artistic adaptation."
+    },
+    {
+      "civ": "persian",
+      "url": "https://www.iranicaonline.org/articles/camel-sotor/",
+      "use": "Camel history includes dromedaries during the Sasanian period; no claim that the species belongs exclusively to Persia."
+    },
+    {
+      "civ": "tang",
+      "url": "https://www.metmuseum.org/art/collection/search/42385",
+      "use": "Tang-period Bactrian camel cargo context; no museum image copied."
+    },
+    {
+      "civ": "tang",
+      "url": "https://depts.washington.edu/silkroad/exhibit/tang/camel_trader.html",
+      "use": "Tang camel and merchant archaeological context; black cap/cinnabar faction palette is an original game styling choice."
+    },
+    {
+      "civ": "ottoman",
+      "url": "https://www.metmuseum.org/fr/essays/silks-from-ottoman-turkey",
+      "use": "Ottoman textiles and kaftan trade context; original teal outfit, ivory turban, cargo design. No fez."
+    }
+  ],
+  "assets": [
+    {
+      "id": "roman",
+      "rows": 2,
+      "file": "units-trader-v7-roman.png",
+      "description": "Roman civilian male adult handler in SHORT cream linen tunic with narrow restrained RED clavi stripes/red belt, leather sandals and simple belt purse, Mediterranean face, no helmet. One brown PACK MULE with long ears, leather harness, wicker panniers with two secured terracotta amphorae and linen sacks; mule small enough that its withers are roughly at handler waist/chest and head below human head.",
+      "refs": [
+        "public/art/units-motion-v6-trader.png"
+      ],
+      "prompt": "Use case: historical-scene. Asset type: original transparent production RTS TRADER walking atlas. Image1 is material/style reference ONLY, Image2 faction historical architectural palette inspiration ONLY. Primary subject: Roman civilian male adult handler in SHORT cream linen tunic with narrow restrained RED clavi stripes/red belt, leather sandals and simple belt purse, Mediterranean face, no helmet. One brown PACK MULE with long ears, leather harness, wicker panniers with two secured terracotta amphorae and linen sacks; mule small enough that its withers are roughly at handler waist/chest and head below human head. Every view includes SAME one handler and SAME one pack animal, connected only by slack halter rein and enough air gap to read human body/legs. Cargo tied securely, no loose floating props. STRICT layout exactly4columns and2rows (8 complete pairs). Column headings left-to-right SE facing down-right, SW facing down-left, NE viewed from behind facing up-right, NW viewed behind facing up-left. Repeatallheadingsonbothrows. Row1 contactA: handler near leg/animal near foreleg fullyforward, farlegsback; row2 contactB: clearly different passing step, near knee bent/lifted, opposite footgrounded, animal forelegbent and visible farlegforward. Matching uniform/face/animal/size/halters/cargo identical acrossviews, limbs change coherently. NOT cloning one resting pose with wholebody shift. Fixed downward30degree orthographic isometric, soft upper-left light, mature natural proportions and realistic small adult heads. Detailed tactile cloth/leather/animalfur/terracotta/weaving, crisp painterly historicalminiature matching originalgameassets, no plastictoy/chibi/paperdoll. Native high resolution LANDSCAPE1774x887 or similar, each completepairfills generouscell but safealpha guttersallaround, uncut feet/ears/camelneck/humps/goods/reins. Truealpha background, NO opaque brown/black backdrop or groundplinth/island, no room/scene/architecture, no text/grid/label/UI/watermark. Civilian economic role, zero armor/shields/swords/spears/bows/muskets. Create original art, do not copy commercialgameassets or museumobject images. Historical clothing/animal/goods are artistic inspiration, not exclusive claims about any civilization.",
+      "source": "public/art/units-trader-v7-roman.png",
+      "factors": [
+        0.92,
+        0.92
+      ],
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "0635ddf75197988d944db640ddd474c7512db5937c6904d158841c8b956adf69",
+      "frames": [
+        [
+          50,
+          90,
+          379,
+          347,
+          189.5,
+          334.32
+        ],
+        [
+          484,
+          76,
+          364,
+          363,
+          182,
+          349.93
+        ],
+        [
+          903,
+          69,
+          400,
+          372,
+          200,
+          358.7
+        ],
+        [
+          1362,
+          71,
+          366,
+          359,
+          183,
+          346.02
+        ],
+        [
+          48,
+          496,
+          384,
+          341,
+          192,
+          328.48
+        ],
+        [
+          484,
+          481,
+          367,
+          358,
+          183.5,
+          345.05
+        ],
+        [
+          901,
+          477,
+          398,
+          367,
+          199,
+          353.82
+        ],
+        [
+          1349,
+          484,
+          382,
+          350,
+          191,
+          337.25
+        ]
+      ],
+      "rowBodyHeights": [
+        322.12,
+        322.12
+      ],
+      "bodyHeight": 322.12,
+      "majorComponents": 8,
+      "bodyHeightMeaning": "Approximate source handler height excluding mounted cargo animal; normalization uses handler target48px",
+      "pivot": "horizontal frame center, vertical ground; runtime alpha trimming preserves anchor"
+    },
+    {
+      "id": "mongol",
+      "rows": 2,
+      "file": "units-trader-v7-mongol.png",
+      "description": "Mongol civilian male adult handler in BLUE wool deel with loop fastenings/plain pale fur edging, leather boots, small simple fur-edged cap, East Asian face. One SMALL stocky brown PACK PONY with shaggy dark mane and felt rolls/linen bundles in practical leather pack saddle; pony head below human head. No armor, no warrior helmet, no bow.",
+      "refs": [
+        "public/art/units-motion-v6-trader.png"
+      ],
+      "prompt": "Use case: historical-scene. Asset type: original transparent production RTS TRADER walking atlas. Image1 is material/style reference ONLY, Image2 faction historical architectural palette inspiration ONLY. Primary subject: Mongol civilian male adult handler in BLUE wool deel with loop fastenings/plain pale fur edging, leather boots, small simple fur-edged cap, East Asian face. One SMALL stocky brown PACK PONY with shaggy dark mane and felt rolls/linen bundles in practical leather pack saddle; pony head below human head. No armor, no warrior helmet, no bow. Every view includes SAME one handler and SAME one pack animal, connected only by slack halter rein and enough air gap to read human body/legs. Cargo tied securely, no loose floating props. STRICT layout exactly4columns and2rows (8 complete pairs). Column headings left-to-right SE facing down-right, SW facing down-left, NE viewed from behind facing up-right, NW viewed behind facing up-left. Repeatallheadingsonbothrows. Row1 contactA: handler near leg/animal near foreleg fullyforward, farlegsback; row2 contactB: clearly different passing step, near knee bent/lifted, opposite footgrounded, animal forelegbent and visible farlegforward. Matching uniform/face/animal/size/halters/cargo identical acrossviews, limbs change coherently. NOT cloning one resting pose with wholebody shift. Fixed downward30degree orthographic isometric, soft upper-left light, mature natural proportions and realistic small adult heads. Detailed tactile cloth/leather/animalfur/terracotta/weaving, crisp painterly historicalminiature matching originalgameassets, no plastictoy/chibi/paperdoll. Native high resolution LANDSCAPE1774x887 or similar, each completepairfills generouscell but safealpha guttersallaround, uncut feet/ears/camelneck/humps/goods/reins. Truealpha background, NO opaque brown/black backdrop or groundplinth/island, no room/scene/architecture, no text/grid/label/UI/watermark. Civilian economic role, zero armor/shields/swords/spears/bows/muskets. Create original art, do not copy commercialgameassets or museumobject images. Historical clothing/animal/goods are artistic inspiration, not exclusive claims about any civilization.",
+      "source": "public/art/units-trader-v7-mongol.png",
+      "factors": [
+        0.96,
+        0.96
+      ],
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "887ef46afa693b97e9fe6944f3a1fe8fc79021f1406c5a06a0b0f63d59ddc2ec",
+      "frames": [
+        [
+          33,
+          94,
+          395,
+          336,
+          197.5,
+          323.6
+        ],
+        [
+          500,
+          93,
+          360,
+          337,
+          180,
+          324.57
+        ],
+        [
+          931,
+          76,
+          357,
+          364,
+          178.5,
+          350.9
+        ],
+        [
+          1352,
+          79,
+          393,
+          352,
+          196.5,
+          339.2
+        ],
+        [
+          36,
+          505,
+          396,
+          317,
+          198,
+          305.07
+        ],
+        [
+          507,
+          505,
+          351,
+          325,
+          175.5,
+          312.88
+        ],
+        [
+          928,
+          486,
+          362,
+          355,
+          181,
+          342.12
+        ],
+        [
+          1353,
+          485,
+          381,
+          351,
+          190.5,
+          338.23
+        ]
+      ],
+      "rowBodyHeights": [
+        321.72,
+        321.72
+      ],
+      "bodyHeight": 321.72,
+      "majorComponents": 10,
+      "bodyHeightMeaning": "Approximate source handler height excluding mounted cargo animal; normalization uses handler target48px",
+      "pivot": "horizontal frame center, vertical ground; runtime alpha trimming preserves anchor"
+    },
+    {
+      "id": "persian",
+      "rows": 2,
+      "file": "units-trader-v7-persian.png",
+      "description": "Persian civilian male adult handler in turquoise/indigo caftan, cream trousers, plain cloth cap and boots, West Asian bearded face. One tan ONE-HUMP dromedary pack camel, clearly visible single central hump, leather halter, patterned woven carpet rolls and panniers. Natural camel long neck and split feet, camel from ground to head about1.3 times human height; not giant.",
+      "refs": [
+        "public/art/units-motion-v6-trader.png"
+      ],
+      "prompt": "Use case: historical-scene. Asset type: original transparent production RTS TRADER walking atlas. Image1 is material/style reference ONLY, Image2 faction historical architectural palette inspiration ONLY. Primary subject: Persian civilian male adult handler in turquoise/indigo caftan, cream trousers, plain cloth cap and boots, West Asian bearded face. One tan ONE-HUMP dromedary pack camel, clearly visible single central hump, leather halter, patterned woven carpet rolls and panniers. Natural camel long neck and split feet, camel from ground to head about1.3 times human height; not giant. Every view includes SAME one handler and SAME one pack animal, connected only by slack halter rein and enough air gap to read human body/legs. Cargo tied securely, no loose floating props. STRICT layout exactly4columns and2rows (8 complete pairs). Column headings left-to-right SE facing down-right, SW facing down-left, NE viewed from behind facing up-right, NW viewed behind facing up-left. Repeatallheadingsonbothrows. Row1 contactA: handler near leg/animal near foreleg fullyforward, farlegsback; row2 contactB: clearly different passing step, near knee bent/lifted, opposite footgrounded, animal forelegbent and visible farlegforward. Matching uniform/face/animal/size/halters/cargo identical acrossviews, limbs change coherently. NOT cloning one resting pose with wholebody shift. Fixed downward30degree orthographic isometric, soft upper-left light, mature natural proportions and realistic small adult heads. Detailed tactile cloth/leather/animalfur/terracotta/weaving, crisp painterly historicalminiature matching originalgameassets, no plastictoy/chibi/paperdoll. Native high resolution LANDSCAPE1774x887 or similar, each completepairfills generouscell but safealpha guttersallaround, uncut feet/ears/camelneck/humps/goods/reins. Truealpha background, NO opaque brown/black backdrop or groundplinth/island, no room/scene/architecture, no text/grid/label/UI/watermark. Civilian economic role, zero armor/shields/swords/spears/bows/muskets. Create original art, do not copy commercialgameassets or museumobject images. Historical clothing/animal/goods are artistic inspiration, not exclusive claims about any civilization.",
+      "source": "public/art/units-trader-v7-persian.png",
+      "factors": [
+        0.72,
+        0.72
+      ],
+      "width": 1773,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "928acd263df270cbb8eb4a792a1e4cd0af72d6f5910a8a5e0e90b249ab12266b",
+      "frames": [
+        [
+          38,
+          32,
+          409,
+          415,
+          204.5,
+          400.62
+        ],
+        [
+          458,
+          29,
+          359,
+          417,
+          179.5,
+          402.57
+        ],
+        [
+          917,
+          35,
+          386,
+          417,
+          193,
+          402.57
+        ],
+        [
+          1355,
+          19,
+          372,
+          427,
+          186,
+          412.32
+        ],
+        [
+          38,
+          470,
+          413,
+          398,
+          206.5,
+          384.05
+        ],
+        [
+          464,
+          463,
+          345,
+          405,
+          172.5,
+          390.88
+        ],
+        [
+          929,
+          461,
+          372,
+          410,
+          186,
+          395.75
+        ],
+        [
+          1352,
+          450,
+          375,
+          417,
+          187.5,
+          402.57
+        ]
+      ],
+      "rowBodyHeights": [
+        292.5,
+        292.5
+      ],
+      "bodyHeight": 292.5,
+      "majorComponents": 8,
+      "bodyHeightMeaning": "Approximate source handler height excluding mounted cargo animal; normalization uses handler target48px",
+      "pivot": "horizontal frame center, vertical ground; runtime alpha trimming preserves anchor"
+    },
+    {
+      "id": "tang",
+      "rows": 2,
+      "file": "units-trader-v7-tang.png",
+      "description": "Tang Chinese civilian male adult handler in LONG cinnabar-red robe, dark trousers and boots, simple BLACK soft cloth cap, East Asian face. One sandy/brown shaggy TWO-HUMP BACTRIAN pack camel with BOTH separate humps clearly visible, leather halter and tied gold/cream silk rolls/panniers. Natural adult camel, from ground to head about1.3 times human height; not giant. No one-hump dromedary.",
+      "refs": [
+        "public/art/units-motion-v6-trader.png"
+      ],
+      "prompt": "Use case: historical-scene. Asset type: original transparent production RTS TRADER walking atlas. Image1 is material/style reference ONLY, Image2 faction historical architectural palette inspiration ONLY. Primary subject: Tang Chinese civilian male adult handler in LONG cinnabar-red robe, dark trousers and boots, simple BLACK soft cloth cap, East Asian face. One sandy/brown shaggy TWO-HUMP BACTRIAN pack camel with BOTH separate humps clearly visible, leather halter and tied gold/cream silk rolls/panniers. Natural adult camel, from ground to head about1.3 times human height; not giant. No one-hump dromedary. Every view includes SAME one handler and SAME one pack animal, connected only by slack halter rein and enough air gap to read human body/legs. Cargo tied securely, no loose floating props. STRICT layout exactly4columns and2rows (8 complete pairs). Column headings left-to-right SE facing down-right, SW facing down-left, NE viewed from behind facing up-right, NW viewed behind facing up-left. Repeatallheadingsonbothrows. Row1 contactA: handler near leg/animal near foreleg fullyforward, farlegsback; row2 contactB: clearly different passing step, near knee bent/lifted, opposite footgrounded, animal forelegbent and visible farlegforward. Matching uniform/face/animal/size/halters/cargo identical acrossviews, limbs change coherently. NOT cloning one resting pose with wholebody shift. Fixed downward30degree orthographic isometric, soft upper-left light, mature natural proportions and realistic small adult heads. Detailed tactile cloth/leather/animalfur/terracotta/weaving, crisp painterly historicalminiature matching originalgameassets, no plastictoy/chibi/paperdoll. Native high resolution LANDSCAPE1774x887 or similar, each completepairfills generouscell but safealpha guttersallaround, uncut feet/ears/camelneck/humps/goods/reins. Truealpha background, NO opaque brown/black backdrop or groundplinth/island, no room/scene/architecture, no text/grid/label/UI/watermark. Civilian economic role, zero armor/shields/swords/spears/bows/muskets. Create original art, do not copy commercialgameassets or museumobject images. Historical clothing/animal/goods are artistic inspiration, not exclusive claims about any civilization.",
+      "source": "public/art/units-trader-v7-tang.png",
+      "factors": [
+        0.72,
+        0.72
+      ],
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "66250cde11c840fa8fc6ae3734f97bfae490dd6ee1c0c12fab3d09dbb1a6db0a",
+      "frames": [
+        [
+          29,
+          57,
+          393,
+          378,
+          196.5,
+          364.55
+        ],
+        [
+          475,
+          48,
+          388,
+          388,
+          194,
+          374.3
+        ],
+        [
+          903,
+          72,
+          402,
+          355,
+          201,
+          342.12
+        ],
+        [
+          1355,
+          62,
+          393,
+          373,
+          196.5,
+          359.68
+        ],
+        [
+          44,
+          470,
+          388,
+          371,
+          194,
+          357.73
+        ],
+        [
+          471,
+          478,
+          396,
+          370,
+          198,
+          356.75
+        ],
+        [
+          904,
+          492,
+          401,
+          357,
+          200.5,
+          344.07
+        ],
+        [
+          1349,
+          487,
+          396,
+          369,
+          198,
+          355.77
+        ]
+      ],
+      "rowBodyHeights": [
+        261.45,
+        261.45
+      ],
+      "bodyHeight": 261.45,
+      "majorComponents": 8,
+      "bodyHeightMeaning": "Approximate source handler height excluding mounted cargo animal; normalization uses handler target48px",
+      "pivot": "horizontal frame center, vertical ground; runtime alpha trimming preserves anchor"
+    },
+    {
+      "id": "ottoman",
+      "rows": 2,
+      "file": "units-trader-v7-ottoman.png",
+      "description": "Ottoman civilian male adult handler in TEAL kaftan, cream trousers, leather boots, simple IVORY cloth TURBAN, West Asian bearded face. One tan ONE-HUMP dromedary pack camel with one clear central hump, leather halter, restrained patterned carpet rolls and silk/cloth bundles. Natural split feet and long neck, camel from ground to head about1.3 times human height; not giant.",
+      "refs": [
+        "public/art/units-motion-v6-trader.png"
+      ],
+      "prompt": "Use case: historical-scene. Asset type: original transparent production RTS TRADER walking atlas. Image1 is material/style reference ONLY, Image2 faction historical architectural palette inspiration ONLY. Primary subject: Ottoman civilian male adult handler in TEAL kaftan, cream trousers, leather boots, simple IVORY cloth TURBAN, West Asian bearded face. One tan ONE-HUMP dromedary pack camel with one clear central hump, leather halter, restrained patterned carpet rolls and silk/cloth bundles. Natural split feet and long neck, camel from ground to head about1.3 times human height; not giant. Every view includes SAME one handler and SAME one pack animal, connected only by slack halter rein and enough air gap to read human body/legs. Cargo tied securely, no loose floating props. STRICT layout exactly4columns and2rows (8 complete pairs). Column headings left-to-right SE facing down-right, SW facing down-left, NE viewed from behind facing up-right, NW viewed behind facing up-left. Repeatallheadingsonbothrows. Row1 contactA: handler near leg/animal near foreleg fullyforward, farlegsback; row2 contactB: clearly different passing step, near knee bent/lifted, opposite footgrounded, animal forelegbent and visible farlegforward. Matching uniform/face/animal/size/halters/cargo identical acrossviews, limbs change coherently. NOT cloning one resting pose with wholebody shift. Fixed downward30degree orthographic isometric, soft upper-left light, mature natural proportions and realistic small adult heads. Detailed tactile cloth/leather/animalfur/terracotta/weaving, crisp painterly historicalminiature matching originalgameassets, no plastictoy/chibi/paperdoll. Native high resolution LANDSCAPE1774x887 or similar, each completepairfills generouscell but safealpha guttersallaround, uncut feet/ears/camelneck/humps/goods/reins. Truealpha background, NO opaque brown/black backdrop or groundplinth/island, no room/scene/architecture, no text/grid/label/UI/watermark. Civilian economic role, zero armor/shields/swords/spears/bows/muskets. Create original art, do not copy commercialgameassets or museumobject images. Historical clothing/animal/goods are artistic inspiration, not exclusive claims about any civilization.",
+      "source": "public/art/units-trader-v7-ottoman.png",
+      "factors": [
+        0.76,
+        0.76
+      ],
+      "width": 1774,
+      "height": 887,
+      "columns": 4,
+      "actualRows": 2,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "8f676aaf52f9ecc8766a32055c4d5f4ac8339839d748903c95b7e23b226023a8",
+      "frames": [
+        [
+          49,
+          48,
+          377,
+          388,
+          188.5,
+          374.3
+        ],
+        [
+          506,
+          48,
+          302,
+          389,
+          151,
+          375.27
+        ],
+        [
+          902,
+          60,
+          377,
+          376,
+          188.5,
+          362.6
+        ],
+        [
+          1346,
+          56,
+          401,
+          380,
+          200.5,
+          366.5
+        ],
+        [
+          51,
+          471,
+          388,
+          374,
+          194,
+          360.65
+        ],
+        [
+          504,
+          469,
+          307,
+          378,
+          153.5,
+          364.55
+        ],
+        [
+          898,
+          481,
+          383,
+          367,
+          191.5,
+          353.82
+        ],
+        [
+          1348,
+          478,
+          411,
+          367,
+          205.5,
+          353.82
+        ]
+      ],
+      "rowBodyHeights": [
+        281.49,
+        281.49
+      ],
+      "bodyHeight": 281.49,
+      "majorComponents": 8,
+      "bodyHeightMeaning": "Approximate source handler height excluding mounted cargo animal; normalization uses handler target48px",
+      "pivot": "horizontal frame center, vertical ground; runtime alpha trimming preserves anchor"
+    }
+  ],
+  "qa": {
+    "checked": [
+      "All five intact native PNG sheets visually inspected",
+      "Read-only native alpha/frame bounds and SHA256 verified",
+      "Five civilizations front and rear NE walking on green workshop matte at zoom2.2",
+      "No opaque box, visible fringe, detached head/limb, ground pennant on checked views",
+      "Four diagonal authored headings and two contacts; no skeletal interpolation",
+      "Strict isolated TypeScript check"
+    ],
+    "limitations": [
+      "No new attack poses: traders are unarmed economic units",
+      "Two complete walking contacts, not a continuous skeleton gait",
+      "Handler body references are visual source measurements; animal scale follows handler",
+      "Actual gameplay multiselection/routes and combat QA remain parent integration scope"
+    ]
+  },
+  "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
+  "removedDesignInputs": "Reference images and draft inputs were used during creation. Unused original inputs have been removed and are not distributed."
+}
