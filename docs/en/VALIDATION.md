@@ -49,11 +49,11 @@ The shared civilization-art registry has been checked against all six playable c
 
 The deployment footprint decreased from **274.7 to 153.2 MiB** by omitting 24 historical PNGs and producing lossless runtime WebP copies. A local headless Chrome lobby sample requested approximately **124.0 MiB before and 26.5 MiB after** (response Content-Length totals; dynamically compressed text is not included). All 18 civilization/age previews and a Dai Viet/Rome match were checked without missing image responses or JavaScript errors. These measurements are local transfer/build observations, not an Internet speed or gameplay performance certification.
 
-## Local release-pipeline verification
+## Release-pipeline verification
 
 The CI and release YAML passed actionlint. `pnpm validate` passed **141 tests**, all source checks, the production build and exact RGBA checks for 112 images. All **3 Playwright Chromium smoke tests** passed, covering 18 previews, a running/exit-able match and the workshop. Wrangler **4.149.0** accepted the static-assets configuration with `deploy --dry-run`; its local server passed artifact/MIME/cache checks and returned 404 for a missing image.
 
-A clean Linux container installation passed lint, formatting, types, platform-generated license checks and all **141 tests**. Docker then failed with a container-storage I/O error before the build/browser checks; the complete Linux pipeline remains unverified. The host system volume was nearly full. Local-only work has not pushed a branch or tag, run GitHub Actions, configured GitHub environments/secrets, or deployed to Cloudflare.
+The [clean Ubuntu 24.04 GitHub Actions run](https://github.com/dodinhthang/regavo/actions/runs/38252821704) passed the complete pipeline: locked installation, platform-generated license checks, **141 tests**, production build, **112 exact RGBA image checks**, **3 Chromium smoke tests**, and Wrangler dry-run. Bundling uses the official Rollup WASM build. Production credentials are stored in the GitHub `production` environment, and the deployment token has Editor access only to Worker `regavo`. Each release records its deployment verification result in the workflow summary.
 
 ## Evidence limits
 

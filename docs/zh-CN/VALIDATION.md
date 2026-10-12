@@ -49,11 +49,11 @@ pnpm dev
 
 部署体积通过排除 24 张历史 PNG 并生成无损运行时 WebP，从 **274.7 降至 153.2 MiB**。本地无头 Chrome 的首页样本约请求 **优化前 124.0 MiB、优化后 26.5 MiB**（响应 Content-Length 总和，不含动态压缩文本）。已检查全部 18 个文明/时代预览和大越/Rome 对局，没有缺失图片响应或 JavaScript 错误。这些是本地构建和传输观测，并非互联网速度或游戏性能认证。
 
-## 本地发布流水线验证
+## 发布流水线验证
 
 CI/release YAML 通过 actionlint。`pnpm validate` 的 **141 项测试**、源码检查、生产构建及 112 张图片 RGBA 检查通过。全部 **3 项 Playwright Chromium 冒烟测试**通过，覆盖 18 个预览、可运行/退出对局和工坊。Wrangler **4.149.0** 的 `deploy --dry-run` 接受静态资源配置；本地服务通过产物/MIME/缓存检查，缺失图片返回 404。
 
-干净 Linux 容器安装通过 lint、格式、类型、按平台生成的许可证检查和全部 **141 项测试**。Docker 随后在构建/浏览器检查前发生容器存储 I/O 错误，完整 Linux 流水线仍未验证；host 系统卷接近满容量。仅本地工作未 push 分支或标签、运行 GitHub Actions、配置 GitHub environment/secrets 或部署 Cloudflare。
+[干净 Ubuntu 24.04 GitHub Actions 运行](https://github.com/dodinhthang/regavo/actions/runs/38252821704)通过完整流水线：锁定安装、按平台生成的许可证检查、**141 项测试**、生产构建、**112 张图片精确 RGBA 检查**、**3 项 Chromium 冒烟测试**及 Wrangler dry-run。构建使用官方 Rollup WASM。生产凭据存于 GitHub 的 `production` environment，部署令牌仅拥有 Worker `regavo` 的 Editor 权限。每次发布的部署验证结果记录在工作流摘要中。
 
 ## 证据范围
 

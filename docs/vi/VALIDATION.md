@@ -49,11 +49,11 @@ Cần sinh lại giấy phép khi dependencies hoặc OS/CPU cài đặt khác s
 
 Dung lượng deploy giảm từ **274,7 xuống 153,2 MiB** bằng cách bỏ 24 PNG lịch sử và tạo WebP runtime lossless. Mẫu màn hình đầu bằng Chrome headless trên máy tải khoảng **124,0 MiB trước và 26,5 MiB sau** (tổng Content-Length của response; không tính văn bản nén động). Đã kiểm tra đủ 18 tiểu cảnh văn minh/đời và trận Đại Việt/Rome, không có response ảnh thiếu hay lỗi JavaScript. Đây là số đo build/lượt tải cục bộ, không phải chứng nhận tốc độ Internet hoặc hiệu năng gameplay.
 
-## Kiểm tra pipeline phát hành ở local
+## Kiểm tra pipeline phát hành
 
 YAML CI/release đã qua actionlint. `pnpm validate` đạt **141 tests**, kiểm tra nguồn, build production và đối chiếu RGBA của 112 ảnh. Đủ **3 bài Playwright Chromium smoke** đạt, gồm 18 tiểu cảnh, trận chạy/thoát được và xưởng mô hình. Wrangler **4.149.0** chấp nhận cấu hình static assets bằng `deploy --dry-run`; server local đạt kiểm tra artifact/MIME/cache và trả 404 khi thiếu ảnh.
 
-Cài đặt sạch trong container Linux đạt lint, format, type, giấy phép sinh theo nền tảng và đủ **141 tests**. Sau đó Docker báo lỗi I/O ở kho container trước bước build/browser; chưa xác nhận trọn pipeline Linux. Ổ hệ thống host gần đầy. Công việc chỉ ở local chưa push nhánh/tag, chạy GitHub Actions, cấu hình environment/secrets GitHub hoặc deploy Cloudflare.
+[Lượt GitHub Actions trên Ubuntu 24.04 sạch](https://github.com/dodinhthang/regavo/actions/runs/38252821704) đã đạt toàn bộ pipeline: cài đặt từ lockfile, giấy phép theo nền tảng, **141 tests**, build production, **112 ảnh RGBA trùng pixel**, **3 bài Chromium smoke** và Wrangler dry-run. Bundler dùng bản Rollup WASM chính thức. Credentials production nằm trong environment `production` của GitHub; token deploy chỉ có quyền Editor trên Worker `regavo`. Mỗi release ghi kết quả kiểm chứng deploy vào workflow summary.
 
 ## Giới hạn bằng chứng
 
