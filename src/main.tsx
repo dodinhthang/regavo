@@ -25,6 +25,7 @@ import { loadWildlifeAtlas } from './render/wildlife.ts';
 import { renderUnitPortrait } from './render/units.ts';
 import { loadSecondaryBuildings } from './render/buildings.ts';
 import { Emblem, ResourceIcon, CommandIcon } from './ui/Icons.tsx';
+import { GameLogo } from './ui/GameLogo.tsx';
 import { themeStyle, MATERIALS } from './ui/theme.ts';
 import { Workshop } from './ui/Workshop.tsx';
 import { SoundButton, VolumeControl } from './ui/SoundButton.tsx';
@@ -669,7 +670,12 @@ function GameView({
       style={themeStyle(s?.player.civ ?? config.civ, s?.player.age ?? 1) as React.CSSProperties}
     >
       <div className="battle-canvas" ref={host} />
-      {(!s || !sceneState) && <div className="loading">{t('Đang dựng chiến trường…')}</div>}
+      {(!s || !sceneState) && (
+        <div className="loading" role="status">
+          <GameLogo size={88} />
+          {t('Đang dựng chiến trường…')}
+        </div>
+      )}
       {s && (
         <>
           <header className="game-bar">
@@ -678,7 +684,7 @@ function GameView({
               aria-label={t('Mở menu trận đấu')}
               onClick={() => setMenu(true)}
             >
-              <Emblem civ={s.player.civ} age={s.player.age} size={49} />
+              <GameLogo size={49} />
               <span className="brand-title">
                 REGAVO<small>{t(CIVS[s.player.civ].name)}</small>
               </span>

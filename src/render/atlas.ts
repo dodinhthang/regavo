@@ -1,8 +1,13 @@
 import type { ArtSprite } from './art';
+import { assetUrl } from './asset-url.ts';
 import { loadCivilizationBuildings } from './civilization-art.ts';
 import { sharedAtlasColumn } from './civilization-art-data.ts';
-import { buildingFootprintSize } from '../game/data';
-import { renderRasterFoundation, type BuildingFoundation, type BuildingFrame } from './buildings';
+import { buildingFootprintSize } from '../game/data.ts';
+import {
+  renderRasterFoundation,
+  type BuildingFoundation,
+  type BuildingFrame,
+} from './buildings.ts';
 
 /** The whole generated PNG is immutable; each era has distinct original architecture. */
 const URLS = [
@@ -58,40 +63,44 @@ const FOUNDATIONS: readonly (readonly BuildingFoundation[])[] = [
   ],
 ];
 const images: (HTMLImageElement | undefined)[] = [];
-let pending: Promise<boolean> | undefined;
+const pending = new Map<number, Promise<boolean>>();
 const sprites = new Map<string, ArtSprite>();
 
 /** Load independent era palaces; a failed source resolves false for fallback. */
-export function loadBuildingAtlas(): Promise<boolean> {
-  if (images.filter(Boolean).length === URLS.length) return loadCivilizationBuildings();
-  if (pending) return pending;
-  pending = Promise.all([
-    loadCivilizationBuildings(),
-    ...URLS.map(
-      (url, index) =>
-        new Promise<boolean>((resolve) => {
-          if (images[index]) {
-            resolve(true);
+export async function loadBuildingAtlas(
+  civs?: readonly string[],
+  ages?: readonly number[],
+): Promise<boolean> {
+  const shared = !civs || civs.some((civ) => sharedAtlasColumn(civ) >= 0);
+  const indices = shared ? (ages ?? [1, 2, 3]).map((age) => age - 1) : [];
+  const results = await Promise.all([
+    loadCivilizationBuildings(civs, ages),
+    ...indices.map((index) => {
+      if (images[index]) return Promise.resolve(true);
+      const existing = pending.get(index);
+      if (existing) return existing;
+      const promise = new Promise<boolean>((resolve) => {
+        if (images[index]) {
+          resolve(true);
+          return;
+        }
+        const candidate = new Image();
+        candidate.onload = () => {
+          if (candidate.naturalWidth !== 1536 || candidate.naturalHeight !== 1024) {
+            resolve(false);
             return;
           }
-          const candidate = new Image();
-          candidate.onload = () => {
-            if (candidate.naturalWidth !== 1536 || candidate.naturalHeight !== 1024) {
-              resolve(false);
-              return;
-            }
-            images[index] = candidate;
-            resolve(true);
-          };
-          candidate.onerror = () => resolve(false);
-          candidate.src = url;
-        }),
-    ),
-  ]).then((results) => {
-    pending = undefined;
-    return results.every(Boolean);
-  });
-  return pending;
+          images[index] = candidate;
+          resolve(true);
+        };
+        candidate.onerror = () => resolve(false);
+        candidate.src = assetUrl(URLS[index]);
+      }).finally(() => pending.delete(index));
+      pending.set(index, promise);
+      return promise;
+    }),
+  ]);
+  return results.every(Boolean);
 }
 
 /** Visible 4/5/6-tile palaces sit within the engine's 8-tile reservation. */

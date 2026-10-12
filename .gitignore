@@ -3,6 +3,8 @@ dist/
 .DS_Store
 .openai
 test-results/
+playwright-report/
+.wrangler/
 *.tsbuildinfo
 coverage/
 .eslintcache

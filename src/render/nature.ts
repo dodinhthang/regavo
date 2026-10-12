@@ -1,4 +1,5 @@
 import type { ArtSprite } from './art.ts';
+import { assetUrl } from './asset-url.ts';
 
 /** Runtime samples of the original generated atlas; source PNG is unmodified. */
 type NatureType = 'tree' | 'berry' | 'gold' | 'stone';
@@ -37,7 +38,7 @@ export function loadNatureAtlas(): Promise<boolean> {
     };
     image.onerror = () => resolve(false);
     const base = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/';
-    image.src = `${base}art/nature-v2.png`;
+    image.src = assetUrl(`${base}art/nature-v2.png`);
   });
   return pending;
 }

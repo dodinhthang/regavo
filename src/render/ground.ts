@@ -1,3 +1,5 @@
+import { assetUrl } from './asset-url.ts';
+
 /** New ground materials generated for Regavo, sampled from the preserved atlas. */
 let atlas: HTMLImageElement | undefined;
 let pending: Promise<boolean> | undefined;
@@ -11,7 +13,7 @@ export function loadGroundAtlas(): Promise<boolean> {
       resolve(true);
     };
     image.onerror = () => resolve(false);
-    image.src = '/art/terrain-v3.png';
+    image.src = assetUrl('/art/terrain-v3.png');
   });
   return pending;
 }

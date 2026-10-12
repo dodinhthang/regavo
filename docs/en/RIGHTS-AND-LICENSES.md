@@ -2,13 +2,13 @@
 
 **English** | [Tiếng Việt](../vi/RIGHTS-AND-LICENSES.md) | [简体中文](../zh-CN/RIGHTS-AND-LICENSES.md)
 
-Updated **11 October 2026**. This is a bounded source and license record for the current prototype, not an exclusivity certificate. Exact third-party notices are preserved separately. The repository does not grant a public reuse license for original game code, art or audio.
+Updated **12 October 2026**. This is a bounded source and license record for the current prototype, not an exclusivity certificate. Exact third-party notices are preserved separately. Original project code, artwork, logos and audio are licensed under [MIT](../../LICENSE).
 
 ## Original content
 
 Original TypeScript/Canvas/SVG/CSS code provides the simulation, renderer, UI, emblems and effects. Music and sound effects are synthesized using original Web Audio code. The UI uses system fonts; it distributes no third-party font files, stock icon pack or external audio recordings. No Age of Empires sprite, logo, screenshot, UI, audio or source code was imported. AoE is a gameplay/economy reference, not Regavo branding.
 
-Public visibility of this repository does not grant the licenses of its dependencies to original content. Third-party copyright remains with the respective authors. “Regavo” is a working name; this record includes no completed trademark clearance or exclusive-name determination.
+The project’s MIT license applies to its original content; dependencies retain their respective licenses. Third-party copyright remains with the respective authors. “Regavo” is a working name; this record includes no completed trademark clearance or exclusive-name determination.
 
 ## Dependency evidence
 
@@ -37,7 +37,7 @@ Runtime prompts, retained source PNGs, SHA-256 and frame/anchor data remain in [
 
 ## Public and private files
 
-- `public/art/` contains runtime PNGs, source metadata and documentation, all copied into the website build. Public provenance uses repository-relative paths or opaque generation identifiers, without personal filesystem paths.
+- `public/art/` contains runtime PNGs, source metadata and documentation, retained in the repository; production builds include only selected lossless WebP copies and required geometry. Public provenance uses repository-relative paths or opaque generation identifiers, without personal filesystem paths.
 - `src/assets/battlefield.png` is the background imported by UI CSS. Vite emits it as a hashed build asset; civilization previews compose runtime sprites.
 - `scripts/data/` holds the three JSON inputs used by art measurement/calibration tools and tests. Their image sources are retained runtime PNGs in `public/art/`.
 - User-provided reference photographs and unused concept/draft images have been deleted. Public records retain a description of their design role without publishing the original input images.

@@ -2,7 +2,7 @@
 
 **English** | [Tiếng Việt](../vi/RUNTIME-ART.md) | [简体中文](../zh-CN/RUNTIME-ART.md)
 
-Current rendering specification, updated **11 October 2026**. The PNG source bytes are preserved; crop, geometry, color calibration and effects are applied by the renderer. This page describes active selection. Older manifests remain provenance snapshots, not current loader specifications.
+Current rendering specification, updated **12 October 2026**. The PNG source bytes are preserved; crop, geometry, color calibration and effects are applied by the renderer. This page describes active selection. Older manifests remain provenance snapshots, not current loader specifications.
 
 ## Current source selection
 
@@ -34,7 +34,9 @@ Walking uses intact authored poses. Đại Việt infantry/villagers use **A/D/B
 
 The home preview composes the same runtime models but has documented **preview-only scales** for Đại Việt: town center 95%, barracks/stable/range 82%, granary 88%, farm 94%, cannon 90%. Other models retain their preview scale. These factors do not change match/workshop model sizes or logical foundations. See [preview layout](../../src/ui/empire-preview-layout.ts).
 
-Caches are bounded; loaders coalesce pending work and reject stale results when switching civilization. Normal selection prefers current sources; prototype sheets remain evidence or fallback material. [asset-origins.json](../../public/asset-origins.json) inventories distributed sources, including historical assets; being listed there does not mean a sheet is currently decoded.
+Caches are bounded; loaders coalesce pending work and reject stale results when switching civilization. Normal selection prefers current sources; prototype sheets remain evidence or fallback material. [asset-origins.json](../../public/asset-origins.json) inventories retained source PNGs, including historical assets; being listed there does not mean a sheet is currently decoded.
+
+Production builds derive lossless WebP copies only for sources referenced by renderers or the active civilization registry, including intentional fallback atlases. Original PNGs and historical manifests stay in the repository. Hashed image/geometry URLs support immutable caching; `dist/asset-manifest.json` connects deployed copies to source hashes. `pnpm check:assets` verifies identical decoded RGBA and dimensions for every image. The home preview loads the selected civilization/age and idle poses on demand, without warming all other civilizations; matches and the workshop retain full animation loading.
 
 ## Shared civilization registration
 

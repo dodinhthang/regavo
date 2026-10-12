@@ -1,0 +1,3 @@
+# Preserve exact third-party notice bytes, including original CRLF sections.
+public/third-party-licenses.txt -text whitespace=cr-at-eol
+licenses/upstream/** -text

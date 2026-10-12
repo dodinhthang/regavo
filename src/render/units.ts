@@ -1,4 +1,5 @@
 import { isolatedFrame } from './isolated-frame.ts';
+import { assetUrl } from './asset-url.ts';
 import { carryResource, type CarryResource } from './cargo.ts';
 import type { ArtSprite } from './art';
 import { ELEPHANT_SHEETS } from './elephant-frames.ts';
@@ -44,6 +45,11 @@ export interface UnitAnimationStatus {
   cacheLimits: { sprites: number; poses: number; portraits: number };
 }
 type AtlasKey = 'a' | 'b' | 'c';
+const FALLBACK_ATLASES: Record<AtlasKey, string> = {
+  a: 'units-v3-a.png',
+  b: 'units-v3-b.png',
+  c: 'units-v3-c.png',
+};
 type SheetKey = 'roman' | 'mongol' | 'persian' | 'tang' | 'ottoman' | 'infantry';
 type Frame = readonly [number, number, number, number, number, number];
 interface Row {
@@ -1855,7 +1861,7 @@ function loadImage(
     image.onload = () =>
       resolve(image.naturalWidth === width && image.naturalHeight === height ? image : undefined);
     image.onerror = () => resolve(undefined);
-    image.src = url;
+    image.src = assetUrl(url);
   });
 }
 
@@ -1876,15 +1882,18 @@ function cachedImage(sheet: Sheet): Promise<HTMLImageElement | undefined> {
 }
 
 /** Optional civ list keeps only those decoded faction sheets; no argument loads all six. */
-export function loadUnitAtlases(civs?: readonly string[]): Promise<boolean> {
+export function loadUnitAtlases(
+  civs?: readonly string[],
+  mode: 'match' | 'preview' = 'match',
+): Promise<boolean> {
   const selection = [...new Set(civs?.length ? civs : CIV_IDS)]
     .filter((civ) => CIV_IDS.includes(civ as (typeof CIV_IDS)[number]))
     .sort();
   if (!selection.length) selection.push('roman');
-  const key = selection.join(',');
+  const key = mode + ':' + selection.join(',');
   if (pendingLoad?.key === key) return pendingLoad.promise;
   if (!pendingLoad && loadedCivKey === key) return Promise.resolve(true);
-  const promise = performUnitLoad(selection, key);
+  const promise = performUnitLoad(selection, key, mode === 'preview');
   pendingLoad = { key, promise };
   void promise.finally(() => {
     if (pendingLoad?.promise === promise) pendingLoad = undefined;
@@ -1892,7 +1901,11 @@ export function loadUnitAtlases(civs?: readonly string[]): Promise<boolean> {
   return promise;
 }
 
-async function performUnitLoad(civs: readonly string[], civKey: string): Promise<boolean> {
+async function performUnitLoad(
+  civs: readonly string[],
+  civKey: string,
+  preview: boolean,
+): Promise<boolean> {
   const requested = new Set<string>(
     (civs?.length ? civs : CIV_IDS).filter((civ) =>
       CIV_IDS.includes(civ as (typeof CIV_IDS)[number]),
@@ -1901,8 +1914,8 @@ async function performUnitLoad(civs: readonly string[], civKey: string): Promise
   if (!requested.size) requested.add('roman');
   latestCivs = requested;
   const serial = ++requestSerial;
-  const jobs: Promise<boolean>[] = [loadCivilizationUnits(requested)];
-  for (const key of SHEET_KEYS) {
+  const jobs: Promise<boolean>[] = [loadCivilizationUnits(requested, preview)];
+  for (const key of preview ? [] : SHEET_KEYS) {
     if (key !== 'infantry' && !requested.has(key)) continue;
     jobs.push(
       (async () => {
@@ -1943,17 +1956,18 @@ async function performUnitLoad(civs: readonly string[], civKey: string): Promise
   for (const row of Object.values(MOTION_ROWS))
     if (!row.civ || requested.has(row.civ)) neededMotion.add(row.sheet);
   if (requested.has('persian'))
-    for (const key of ['elephant_a', 'elephant_b', 'elephant_c']) neededMotion.add(key);
+    for (const key of preview ? ['elephant_a'] : ['elephant_a', 'elephant_b', 'elephant_c'])
+      neededMotion.add(key);
   loadMap(MOTION_SHEETS, motionImages, [...neededMotion]);
   const neededAttack = new Set<string>();
   if (requested.has('ottoman')) neededAttack.add('cannon');
-  for (const civ of requested) {
+  for (const civ of preview ? [] : requested) {
     neededAttack.add('foot_' + civ);
     neededAttack.add('mounted_' + civ);
   }
-  for (const row of Object.values(ATTACK_ROWS))
+  for (const row of preview ? [] : Object.values(ATTACK_ROWS))
     if (!row.civ || requested.has(row.civ)) neededAttack.add(row.sheet);
-  if (requested.has('persian')) {
+  if (!preview && requested.has('persian')) {
     neededAttack.add('elephant_windup');
     neededAttack.add('elephant_impact');
   }
@@ -1963,7 +1977,7 @@ async function performUnitLoad(civs: readonly string[], civKey: string): Promise
     [...neededAttack].filter((id) => !!ATTACK_SHEETS[id]),
   );
 
-  if (requested.has('tang'))
+  if (!preview && requested.has('tang'))
     jobs.push(
       (async () => {
         if (tangImpactImage) return true;
@@ -1998,17 +2012,18 @@ async function performUnitLoad(civs: readonly string[], civKey: string): Promise
       },
     ],
   ] as const)
-    jobs.push(
-      (async () => {
-        if (loaded()) return true;
-        const image = await cachedImage(sheet);
-        if (serial === requestSerial) {
-          assign(image);
-          if (image) loadRevision++;
-        }
-        return !!image;
-      })(),
-    );
+    if (!preview || sheet === TOOL_SHEET)
+      jobs.push(
+        (async () => {
+          if (loaded()) return true;
+          const image = await cachedImage(sheet);
+          if (serial === requestSerial) {
+            assign(image);
+            if (image) loadRevision++;
+          }
+          return !!image;
+        })(),
+      );
   const values = await Promise.all(jobs);
   // Historical atlases are only decoded when a current source failed. New traders never use them.
   if (!values.every(Boolean) && serial === requestSerial)
@@ -2016,7 +2031,7 @@ async function performUnitLoad(civs: readonly string[], civKey: string): Promise
       KEYS.map(async (key) => {
         if (images.has(key)) return;
         const image = await cachedImage({
-          file: 'units-v3-' + key + '.png',
+          file: FALLBACK_ATLASES[key],
           width: 887,
           height: 1774,
           bodyHeight: 1,

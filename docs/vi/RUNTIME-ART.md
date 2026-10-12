@@ -2,7 +2,7 @@
 
 [English](../en/RUNTIME-ART.md) | **Tiếng Việt** | [简体中文](../zh-CN/RUNTIME-ART.md)
 
-Quy cách dựng hình hiện tại, cập nhật **11/10/2026**. PNG nguồn giữ nguyên byte; renderer xử lý khung cắt, hình học, cân màu và hiệu ứng. Trang này ghi các nguồn đang được chọn. Manifest cũ là snapshot nguồn, không phải quy cách của bộ tải hiện tại.
+Quy cách dựng hình hiện tại, cập nhật **12/10/2026**. PNG nguồn giữ nguyên byte; renderer xử lý khung cắt, hình học, cân màu và hiệu ứng. Trang này ghi các nguồn đang được chọn. Manifest cũ là snapshot nguồn, không phải quy cách của bộ tải hiện tại.
 
 ## Nguồn đang dùng
 
@@ -34,7 +34,9 @@ Căn bước Đại Việt giữ chiều cao silhouette, bề ngang/neo thân tr
 
 Trang chủ ghép cùng mô hình runtime nhưng có **tỉ lệ riêng của preview** cho Đại Việt: nhà chính 95%, doanh trại/chuồng/trường bắn 82%, kho lương 88%, ruộng 94%, pháo 90%. Mô hình khác giữ mức preview. Không đổi cỡ trận/xưởng hoặc nền logic. Xem [bố trí preview](../../src/ui/empire-preview-layout.ts).
 
-Bộ nhớ đệm có giới hạn; bộ tải dùng chung lượt tải đang chờ và bỏ kết quả cũ khi đổi phe. Luồng bình thường ưu tiên nguồn hiện tại; sheet thử nghiệm được giữ làm hồ sơ hoặc dự phòng. [asset-origins.json](../../public/asset-origins.json) kiểm kê nguồn phân phối, gồm lịch sử; có trong kiểm kê không có nghĩa được giải mã lúc này.
+Bộ nhớ đệm có giới hạn; bộ tải dùng chung lượt tải đang chờ và bỏ kết quả cũ khi đổi phe. Luồng bình thường ưu tiên nguồn hiện tại; sheet thử nghiệm được giữ làm hồ sơ hoặc dự phòng. [asset-origins.json](../../public/asset-origins.json) kiểm kê PNG nguồn giữ lại, gồm lịch sử; có trong kiểm kê không có nghĩa được giải mã lúc này.
+
+Build production tạo bản WebP lossless cho nguồn được renderer hoặc cấu hình văn minh đang dùng tham chiếu, gồm atlas dự phòng có chủ đích. PNG gốc và manifest lịch sử ở lại repo. URL ảnh/hình học có hash hỗ trợ cache immutable; `dist/asset-manifest.json` nối bản deploy với hash nguồn. `pnpm check:assets` đối chiếu RGBA đã giải mã và kích thước của từng ảnh. Tiểu cảnh trang chủ tải văn minh/đời đang chọn cùng tư thế đứng khi cần, không tự tải trước mọi văn minh khác; trận đấu và xưởng vẫn tải đầy đủ hoạt ảnh.
 
 ## Đăng ký mỹ thuật dùng chung
 

@@ -1,0 +1,62 @@
+{
+  "source": "assets/branding/game-logo-crown-citadel-v1.png",
+  "sourceSha256": "2153f5715ba60b3f23341e621822ff93a36310ca5f0473f868cf43f9259e489d",
+  "generator": "scripts/generate-brand-assets.mjs",
+  "method": "Premultiplied-alpha area resampling of the approved original ImageGen logo.",
+  "files": [
+    {
+      "path": "public/favicon-32.png",
+      "width": 32,
+      "height": 32,
+      "bytes": 2752,
+      "sha256": "348b6c19e3d5cb49dcbe3e6bda2783fb6aabcfb06d130094025f59caf3d80d4f"
+    },
+    {
+      "path": "public/favicon-64.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 8356,
+      "sha256": "6f91afa6967df5aea3560fb28ab979eb67e4244e08ccbacbd336f21239fb7aef"
+    },
+    {
+      "path": "public/favicon.ico",
+      "bytes": 17443,
+      "sha256": "74f9a25952b36e2514932da8c4205d98c1e074d244658a07425fbfc667d82697"
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "bytes": 37462,
+      "sha256": "2180adac54b998e7565b891fef284d127130111bfc98eb9f149c0bbcf7a597d1"
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "width": 192,
+      "height": 192,
+      "bytes": 42025,
+      "sha256": "29f6bae9a9a1d4348d1ca70c1f3a4c707f166b9e36cfee10ffc22bf44d0974ba"
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 239830,
+      "sha256": "a37940255cbc20c070d69d60d94662e427d5ab4e0e7a003f639f36a1f0da394b"
+    },
+    {
+      "path": "public/icons/icon-maskable-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 162112,
+      "sha256": "f101e213b183bbff111662869a1c37e2c2801d5e71caabd7b671db44bc71b141"
+    },
+    {
+      "path": "src/assets/regavo-logo.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 58492,
+      "sha256": "0409cdefc774dd59aa06665052113831c7a125c44cbea71dbf529be23cd73318"
+    }
+  ]
+}

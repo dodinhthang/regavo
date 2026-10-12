@@ -1,0 +1,25 @@
+name: Set up Regavo build
+description: Install the locked toolchain and restore verified image caches.
+runs:
+  using: composite
+  steps:
+    - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+      with:
+        version: 12.8.1
+    - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+      with:
+        node-version: 22.23.3
+        cache: pnpm
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile
+    - name: Restore lossless image cache
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: node_modules/.cache/regavo-assets
+        key: regavo-images-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml', 'scripts/encode-image.mjs', 'scripts/runtime-assets.mjs') }}-${{ hashFiles('public/art/*.png', 'src/assets/battlefield.png') }}
+        restore-keys: |
+          regavo-images-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml', 'scripts/encode-image.mjs', 'scripts/runtime-assets.mjs') }}-
+    - name: Install Chromium
+      shell: bash
+      run: pnpm exec playwright install --with-deps chromium

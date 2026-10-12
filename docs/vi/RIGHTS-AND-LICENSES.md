@@ -2,13 +2,13 @@
 
 [English](../en/RIGHTS-AND-LICENSES.md) | **Tiếng Việt** | [简体中文](../zh-CN/RIGHTS-AND-LICENSES.md)
 
-Cập nhật **11/10/2026**. Đây là hồ sơ nguồn và giấy phép trong phạm vi bản chơi thử, không phải chứng nhận độc quyền. Thông báo giấy phép bên thứ ba được giữ nguyên văn trong các file riêng. Repo không cấp giấy phép tái sử dụng công cộng cho mã game, mỹ thuật hoặc âm thanh gốc.
+Cập nhật **12/10/2026**. Đây là hồ sơ nguồn và giấy phép trong phạm vi bản chơi thử, không phải chứng nhận độc quyền. Thông báo giấy phép bên thứ ba được giữ nguyên văn trong các file riêng. Mã nguồn, mỹ thuật, logo và âm thanh gốc của dự án được cấp phép [MIT](../../LICENSE).
 
 ## Nội dung riêng
 
 Mã TypeScript/Canvas/SVG/CSS của dự án cung cấp mô phỏng, dựng hình, giao diện, huy hiệu và hiệu ứng. Nhạc và âm thanh được tổng hợp bằng mã Web Audio của dự án. Giao diện dùng font hệ thống, không phân phối font bên thứ ba, bộ icon stock hoặc bản ghi âm ngoài. Dự án không nhập sprite, logo, ảnh chụp màn hình, giao diện, âm thanh hoặc mã Age of Empires. AoE là nguồn tham khảo gameplay/kinh tế, không phải nhận diện thương hiệu Regavo.
 
-Việc công khai repo không khiến giấy phép thư viện áp dụng cho nội dung gốc của dự án. Tác quyền bên thứ ba vẫn thuộc tác giả tương ứng. “Regavo” là tên tạm dùng; hồ sơ chưa ghi nhận việc tra cứu nhãn hiệu hoàn tất hoặc xác định độc quyền tên.
+MIT áp dụng cho nội dung gốc của dự án; thư viện phụ thuộc giữ giấy phép tương ứng. Tác quyền bên thứ ba vẫn thuộc tác giả tương ứng. “Regavo” là tên tạm dùng; hồ sơ chưa ghi nhận việc tra cứu nhãn hiệu hoàn tất hoặc xác định độc quyền tên.
 
 ## Hồ sơ thư viện phụ thuộc
 
@@ -37,7 +37,7 @@ Prompt runtime, PNG nguồn giữ lại, SHA-256 và dữ liệu frame/neo nằm
 
 ## File công khai và riêng
 
-- `public/art/` chứa PNG runtime, metadata nguồn và tài liệu, được sao chép vào build website. Hồ sơ công khai dùng đường dẫn tương đối repo hoặc ID sinh ảnh, không chứa đường dẫn máy cá nhân.
+- `public/art/` chứa PNG runtime, metadata nguồn và tài liệu, được giữ trong repo; build production chỉ chứa WebP lossless đang dùng và metadata hình học cần thiết. Hồ sơ công khai dùng đường dẫn tương đối repo hoặc ID sinh ảnh, không chứa đường dẫn máy cá nhân.
 - `src/assets/battlefield.png` là ảnh nền do UI CSS nhập vào. Vite xuất ảnh thành tài sản có hash trong tên file; cảnh văn minh ghép sprite runtime.
 - `scripts/data/` giữ ba file JSON đầu vào được công cụ đo/hiệu chỉnh mỹ thuật và test sử dụng. Ảnh nguồn của chúng là PNG runtime giữ lại trong `public/art/`.
 - Ảnh tham khảo người dùng và các bản concept/nháp dư đã được xóa. Hồ sơ công khai giữ mô tả vai trò của chúng trong thiết kế, không phát hành ảnh đầu vào gốc.

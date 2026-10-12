@@ -15,6 +15,7 @@ Cơ chế hiện tại, thiết kế mục tiêu và kết quả kiểm tra đư
 | [Kiểm tra](VALIDATION.md)                    | Kiểm tra mới nhất và giới hạn bằng chứng               |
 | [Quyền và giấy phép](RIGHTS-AND-LICENSES.md) | Nội dung riêng, đầu vào AI và giấy phép bên thứ ba     |
 | [Mỹ thuật runtime](RUNTIME-ART.md)           | Chọn atlas runtime và quy cách dựng hình               |
+| [Deploy và phát hành](DEPLOYMENT.md)         | Kiểm tra GitHub, tag phát hành Cloudflare và phục hồi  |
 
 ## Bằng chứng và giấy phép
 

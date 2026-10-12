@@ -11,15 +11,24 @@ export function civilizationRenderer(civ: string) {
   return renderers.get(civ);
 }
 
-export async function loadCivilizationBuildings() {
+export async function loadCivilizationBuildings(
+  civs?: readonly string[],
+  ages?: readonly number[],
+) {
   return (
-    await Promise.all([...renderers.values()].map((renderer) => renderer.loadBuildings()))
+    await Promise.all(
+      [...renderers]
+        .filter(([civ]) => !civs || civs.includes(civ))
+        .map(([, renderer]) => renderer.loadBuildings(ages)),
+    )
   ).every(Boolean);
 }
 
-export async function loadCivilizationUnits(civs: ReadonlySet<string>) {
+export async function loadCivilizationUnits(civs: ReadonlySet<string>, preview = false) {
   return (
-    await Promise.all([...renderers].map(([civ, renderer]) => renderer.loadUnits(civs.has(civ))))
+    await Promise.all(
+      [...renderers].map(([civ, renderer]) => renderer.loadUnits(civs.has(civ), preview)),
+    )
   ).every(Boolean);
 }
 

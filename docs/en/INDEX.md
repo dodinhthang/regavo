@@ -15,6 +15,7 @@ Current rules, design targets and verification results are maintained separately
 | [Validation](VALIDATION.md)                   | Latest verification and its evidence limits            |
 | [Rights and licenses](RIGHTS-AND-LICENSES.md) | Original content, AI inputs and third-party licenses   |
 | [Runtime art](RUNTIME-ART.md)                 | Runtime atlas selection and rendering conventions      |
+| [Deployment and releases](DEPLOYMENT.md)      | GitHub checks, Cloudflare release tags and recovery    |
 
 ## Evidence and notices
 

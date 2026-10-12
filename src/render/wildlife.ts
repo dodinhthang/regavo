@@ -1,4 +1,5 @@
 import type { ArtSprite } from './art.ts';
+import { assetUrl } from './asset-url.ts';
 
 /** Original image_gen cutouts; source PNG is sampled without offline edits. */
 type WildlifeFrame = {
@@ -59,7 +60,7 @@ function loadImage(source: string): Promise<HTMLImageElement> {
     const image = new Image();
     image.onload = () => resolve(image);
     image.onerror = () => reject(new Error('Unable to load Regavo wildlife atlas.'));
-    image.src = source;
+    image.src = assetUrl(source);
   });
 }
 
@@ -101,13 +102,13 @@ export function loadWildlifeAtlas(): Promise<boolean> {
   if (typeof Image === 'undefined' || typeof fetch === 'undefined') return Promise.resolve(false);
   const base = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/';
   pending = Promise.all([
-    fetch(`${base}art/wildlife-v3.manifest.json`).then(async (response) => {
+    fetch(assetUrl(`${base}art/wildlife-v3.manifest.json`)).then(async (response) => {
       if (!response.ok) throw new Error('Unable to load wildlife source geometry.');
       return (await response.json()) as WildlifeManifest;
     }),
     loadImage(`${base}art/wildlife-v3.png`),
     Promise.all([
-      fetch(`${base}art/wildlife-walk-b.manifest.json`).then(async (response) => {
+      fetch(assetUrl(`${base}art/wildlife-walk-b.manifest.json`)).then(async (response) => {
         if (!response.ok) throw new Error('Walking contact B is unavailable.');
         return (await response.json()) as WildlifeManifest;
       }),

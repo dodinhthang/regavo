@@ -8,24 +8,25 @@
 
 `pnpm validate` 按顺序运行以下检查：
 
-| 检查       | 结果                                                         |
-| ---------- | ------------------------------------------------------------ |
-| ESLint     | 通过，零警告                                                 |
-| Prettier   | 通过                                                         |
-| TypeScript | 源码和测试的 strict 检查通过                                 |
-| 依赖许可证 | 通过：171 个可达的已安装包实例，保守运行时依赖闭包包含 16 个 |
-| 回归测试   | 133/133 通过                                                 |
-| 生产构建   | 通过；主 JavaScript 块 853.22 kB，gzip 281.18 kB             |
+| 检查           | 结果                                                           |
+| -------------- | -------------------------------------------------------------- |
+| ESLint         | 通过，零警告                                                   |
+| Prettier       | 通过                                                           |
+| TypeScript     | 源码和测试的 strict 检查通过                                   |
+| 依赖许可证     | 通过：177 个可达的已安装包实例，保守运行时依赖闭包包含 16 个   |
+| 回归测试       | 141/141 通过                                                   |
+| 生产构建       | 通过；主 JavaScript 块 853.22 kB，gzip 281.18 kB               |
+| 运行时图片检查 | 通过：112 张 WebP 的解码 RGBA 和尺寸一致，3 份几何清单字节不变 |
 
 Vite 仍会提示代码块超过 500 kB。构建成功并不证明下载时间、内存占用或帧率已达标。
 
-本机的包许可证统计为 MIT 134、Apache-2.0 14、ISC 11、BSD-2-Clause 6、BSD-3-Clause 4、BlueOak-1.0.0 1 和 CC-BY-4.0 1。数量来自包元数据；打包组件的完整声明和署名保留在 [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) 及随网页分发的 `public/third-party-licenses.txt` 中。其他平台未安装的可选包单独记录，不计入已安装数量。
+本机的包许可证统计为 MIT 134、Apache-2.0 20、ISC 11、BSD-2-Clause 6、BSD-3-Clause 4、BlueOak-1.0.0 1 和 CC-BY-4.0 1。数量来自包元数据；打包组件的完整声明和署名保留在 [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) 及随网页分发的 `public/third-party-licenses.txt` 中。其他平台未安装的可选包单独记录，不计入已安装数量。
 
 回归测试按功能组织：[文明目录与存档](../../tests/civilizations.test.ts)、[民兵动员](../../tests/mobilization.test.ts)和[美术资源](../../tests/art-assets.test.ts)。启动与存档恢复测试自动覆盖所有已注册文明，分别作为玩家和 AI，在三种地形布局上运行。招募测试将目录与实际训练命令进行比较，覆盖所有文明与时代。
 
 ## 全新安装与文档
 
-在相同 OS/CPU 上全新执行 `pnpm install --frozen-lockfile`，随后运行 `pnpm check:licenses`，结果与生成的声明文件一致。审计现在遵循从 `package.json` 可达的依赖图，排除 pnpm store 中未被引用的旧条目。这修复了一个未使用的 Vite 实例导致的 172 与 171 数量差异。
+在相同 OS/CPU 上全新执行 `pnpm install --frozen-lockfile`，随后运行 `pnpm check:licenses`，结果与生成的声明文件一致。审计现在遵循从 `package.json` 可达的依赖图，排除 pnpm store 中未被引用的旧条目。这修复了一个未使用的 Vite 实例导致的早期清单数量差异。
 
 文档共有 9 组维护页面（27 页），每组提供英文、越南文和简体中文版本。主题页面在 `docs/en/`、`docs/vi/` 和 `docs/zh-CN/` 下使用相同文件名；英文项目 README 保留在仓库根目录。已检查本地文件链接、对应语言切换、单位与时代表格以及共同数值。原始提示词、清单标识符和第三方许可证正文保持来源语言。
 
@@ -45,6 +46,14 @@ pnpm dev
 依赖或安装 OS/CPU 与记录的快照不同时，必须重新生成许可证记录。维护快照时应一并提交更新后的声明。自动验证不会打开游戏进行浏览器交互；视觉和玩法审查属于独立步骤。
 
 共用文明美术注册表已与六个可玩文明核对。无头 Chrome 比较确认大越重构前后 **446 个单位、货物、肖像和建筑样本像素一致**，锚点也保持不变。六个文明单位集均可加载，新文明仅通过配置即可渲染，快速切换选择可清除未选文明的单位图片。此检查验证渲染重构，不替代完整玩法或性能验收矩阵。
+
+部署体积通过排除 24 张历史 PNG 并生成无损运行时 WebP，从 **274.7 降至 153.2 MiB**。本地无头 Chrome 的首页样本约请求 **优化前 124.0 MiB、优化后 26.5 MiB**（响应 Content-Length 总和，不含动态压缩文本）。已检查全部 18 个文明/时代预览和大越/Rome 对局，没有缺失图片响应或 JavaScript 错误。这些是本地构建和传输观测，并非互联网速度或游戏性能认证。
+
+## 本地发布流水线验证
+
+CI/release YAML 通过 actionlint。`pnpm validate` 的 **141 项测试**、源码检查、生产构建及 112 张图片 RGBA 检查通过。全部 **3 项 Playwright Chromium 冒烟测试**通过，覆盖 18 个预览、可运行/退出对局和工坊。Wrangler **4.149.0** 的 `deploy --dry-run` 接受静态资源配置；本地服务通过产物/MIME/缓存检查，缺失图片返回 404。
+
+干净 Linux 容器安装通过 lint、格式、类型、按平台生成的许可证检查和全部 **141 项测试**。Docker 随后在构建/浏览器检查前发生容器存储 I/O 错误，完整 Linux 流水线仍未验证；host 系统卷接近满容量。仅本地工作未 push 分支或标签、运行 GitHub Actions、配置 GitHub environment/secrets 或部署 Cloudflare。
 
 ## 证据范围
 

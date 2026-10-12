@@ -37,6 +37,10 @@ pnpm exec vite preview --host 127.0.0.1
 
 Triển khai `dist/` tại gốc website. Game không cần khóa API hoặc backend ứng dụng; mô phỏng và AI chạy trong Web Worker.
 
+Bản production chỉ chứa ảnh runtime và atlas dự phòng cần thiết, nén WebP lossless giữ nguyên từng điểm ảnh, kích thước và alpha. PNG lịch sử cùng hồ sơ nguồn được giữ trong repo. `dist/asset-manifest.json` ghi hash nguồn/đầu ra; `pnpm check:assets` kiểm tra toàn bộ RGBA đã giải mã sau khi build. Build đầu mã hóa ảnh; các build sau dùng cache theo nội dung tại `node_modules/.cache/regavo-assets/`. Quy tắc cache Cloudflare trong `public/_headers` áp dụng cho ảnh và bundle có hash trong tên.
+
+[Deploy và phát hành](DEPLOYMENT.md)
+
 ## Nội dung có thể chơi
 
 - Bốn tài nguyên: lương thực, gỗ, vàng, đá. Dân khai thác, săn và giao hàng về kho hợp lệ; hàng mất khi người mang chết.
@@ -102,4 +106,4 @@ Chưa có chơi online, chiến dịch, thủy chiến, trú quân trong công t
 
 Ảnh dùng bốn hướng chéo nguồn và chọn hướng gần nhất. Đại Việt có tư thế đi nguyên hình và atlas hàng gỗ/vàng/đá/thịt riêng; các phe còn lại có cách thể hiện hàng riêng. Chưa có đầy đủ hoạt họa chết, nhà hư hại hoặc trang phục từng đời cho mọi quân. Chưa chứng nhận hiệu năng ở 400 đơn vị tổng.
 
-Repo không cấp giấy phép tái sử dụng công cộng cho mã game và mỹ thuật riêng. Điều khoản bên thứ ba áp dụng cho thành phần tương ứng; notice nguyên văn ở [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) và [file giấy phép phân phối](../../public/third-party-licenses.txt). Ảnh tham chiếu người dùng cung cấp chỉ dùng trong quá trình thiết kế, đã được xóa và không phân phối cùng dự án. Xem hồ sơ quyền cho giới hạn đầu ra AI và nguồn tham chiếu.
+Mã nguồn, mỹ thuật, logo và âm thanh gốc của dự án được cấp phép [MIT](../../LICENSE). Điều khoản bên thứ ba áp dụng cho thành phần tương ứng; notice nguyên văn ở [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) và [file giấy phép phân phối](../../public/third-party-licenses.txt). Ảnh tham chiếu người dùng cung cấp chỉ dùng trong quá trình thiết kế, đã được xóa và không phân phối cùng dự án. Xem hồ sơ quyền cho giới hạn đầu ra AI và nguồn tham chiếu.

@@ -8,24 +8,25 @@ Review date: **12 October 2026**. Project version: `0.1.0`. These results descri
 
 `pnpm validate` runs the following checks in order:
 
-| Check               | Result                                                                                    |
-| ------------------- | ----------------------------------------------------------------------------------------- |
-| ESLint              | Passed, zero warnings                                                                     |
-| Prettier            | Passed                                                                                    |
-| TypeScript          | Passed with strict checking of source and tests                                           |
-| Dependency licenses | Passed: 171 reachable installed package instances, 16 in the conservative runtime closure |
-| Regression tests    | 133/133 passed                                                                            |
-| Production build    | Passed; main JavaScript chunk 853.22 kB, gzip 281.18 kB                                   |
+| Check               | Result                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| ESLint              | Passed, zero warnings                                                                                   |
+| Prettier            | Passed                                                                                                  |
+| TypeScript          | Passed with strict checking of source and tests                                                         |
+| Dependency licenses | Passed: 177 reachable installed package instances, 16 in the conservative runtime closure               |
+| Regression tests    | 141/141 passed                                                                                          |
+| Production build    | Passed; main JavaScript chunk 864.51 kB, gzip 284.32 kB                                                 |
+| Runtime image check | Passed: 112 WebP images have identical decoded RGBA/dimensions; 3 geometry manifests retain exact bytes |
 
 Vite still reports a chunk-size warning above 500 kB. The build succeeds, but this result does not certify download time, memory use or frame rate.
 
-The license counts on this machine are MIT 134, Apache-2.0 14, ISC 11, BSD-2-Clause 6, BSD-3-Clause 4, BlueOak-1.0.0 1 and CC-BY-4.0 1. Counts describe package metadata; exact bundled notices and attribution are retained in [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) and the distributed `public/third-party-licenses.txt`. Missing optional packages for other platforms are recorded separately, not counted as installed.
+The license counts on this machine are MIT 134, Apache-2.0 20, ISC 11, BSD-2-Clause 6, BSD-3-Clause 4, BlueOak-1.0.0 1 and CC-BY-4.0 1. Counts describe package metadata; exact bundled notices and attribution are retained in [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) and the distributed `public/third-party-licenses.txt`. Missing optional packages for other platforms are recorded separately, not counted as installed.
 
 Regression checks are grouped by capability: [civilization catalogs and saves](../../tests/civilizations.test.ts), [mobilization](../../tests/mobilization.test.ts) and [art assets](../../tests/art-assets.test.ts). Startup and save/resume tests automatically cover every registered civilization as player and AI on all three terrain layouts. Recruitment checks compare the catalog with actual training commands for every civilization and age.
 
 ## Clean installation and documentation
 
-A fresh `pnpm install --frozen-lockfile` followed by `pnpm check:licenses` on the same OS/CPU matches the generated notice files. The audit now follows the graph reachable from `package.json`, excluding stale, unreferenced pnpm store entries. This corrects the former 172-versus-171 discrepancy caused by an unused Vite instance.
+A fresh `pnpm install --frozen-lockfile` followed by `pnpm check:licenses` on the same OS/CPU matches the generated notice files. The audit now follows the graph reachable from `package.json`, excluding stale, unreferenced pnpm store entries. This corrects an earlier inventory discrepancy caused by an unused Vite instance.
 
 The documentation has 9 maintained page families (27 pages), each with English, Vietnamese and Simplified Chinese versions. Topic pages use matching filenames under `docs/en/`, `docs/vi/` and `docs/zh-CN/`; the English project README stays at the repository root. Local file links, matching language switches, roster/age tables and shared numeric evidence have been checked. Raw prompts, manifest identifiers and exact third-party license texts retain their source language.
 
@@ -45,6 +46,14 @@ pnpm dev
 License generation is necessary when dependencies or the installation OS/CPU differ from the recorded snapshot. Commit the updated generated notices when maintaining that snapshot. Automated validation does not launch the game for browser interaction; visual and gameplay review is a separate step.
 
 The shared civilization-art registry has been checked against all six playable civilizations. A headless Chrome comparison found **446 pixel-identical unit, cargo, portrait and building samples** for Đại Việt before and after the refactor, including unchanged anchors. All six civilization unit sets loaded, a new civilization rendered from configuration alone, and rapid selection changes evicted stale unit images. This checks the rendering refactor, not the complete gameplay or performance acceptance matrix.
+
+The deployment footprint decreased from **274.7 to 153.2 MiB** by omitting 24 historical PNGs and producing lossless runtime WebP copies. A local headless Chrome lobby sample requested approximately **124.0 MiB before and 26.5 MiB after** (response Content-Length totals; dynamically compressed text is not included). All 18 civilization/age previews and a Dai Viet/Rome match were checked without missing image responses or JavaScript errors. These measurements are local transfer/build observations, not an Internet speed or gameplay performance certification.
+
+## Local release-pipeline verification
+
+The CI and release YAML passed actionlint. `pnpm validate` passed **141 tests**, all source checks, the production build and exact RGBA checks for 112 images. All **3 Playwright Chromium smoke tests** passed, covering 18 previews, a running/exit-able match and the workshop. Wrangler **4.149.0** accepted the static-assets configuration with `deploy --dry-run`; its local server passed artifact/MIME/cache checks and returned 404 for a missing image.
+
+A clean Linux container installation passed lint, formatting, types, platform-generated license checks and all **141 tests**. Docker then failed with a container-storage I/O error before the build/browser checks; the complete Linux pipeline remains unverified. The host system volume was nearly full. Local-only work has not pushed a branch or tag, run GitHub Actions, configured GitHub environments/secrets, or deployed to Cloudflare.
 
 ## Evidence limits
 

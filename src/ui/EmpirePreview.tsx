@@ -11,20 +11,26 @@ import { loadGroundAtlas, paintGround } from '../render/ground.ts';
 import { empirePreviewLayout } from './empire-preview-layout.ts';
 import { PreviewSceneCache } from './preview-scene-cache.ts';
 import { previewSceneFit } from './preview-scene-fit.ts';
+import { sharedAtlasColumn } from '../render/civilization-art-data.ts';
 
 const scenes = new PreviewSceneCache<HTMLCanvasElement>(48 * 1024 * 1024);
-const civIds = Object.keys(CIVS) as CivId[];
 
 function prepareScene(civ: CivId, age: number, width: number, signal: AbortSignal) {
   const height = Math.round(width * 0.54);
   return scenes.load(`${civ}:${age}:${width}`, width * height * 4, signal, async () => {
+    const layout = empirePreviewLayout(civ, age);
     const loaded = await Promise.all([
-      loadBuildingAtlas(),
-      loadSecondaryBuildings(),
+      loadBuildingAtlas([civ], [age]),
+      loadSecondaryBuildings(
+        sharedAtlasColumn(civ) >= 0
+          ? layout.filter((model) => model.kind === 'building').map((model) => model.type)
+          : [],
+        age,
+      ),
       loadNatureAtlas(),
       loadSceneryAtlas(),
       loadGroundAtlas(),
-      loadUnitAtlases([civ]),
+      loadUnitAtlases([civ], 'preview'),
     ]);
     signal.throwIfAborted();
     if (!loaded.every(Boolean)) throw new Error('Preview assets unavailable');
@@ -38,7 +44,7 @@ function prepareScene(civ: CivId, age: number, width: number, signal: AbortSigna
     ctx.imageSmoothingQuality = 'high';
     ctx.fillStyle = '#182b20';
     ctx.fillRect(0, 0, 1000, 540);
-    const models = empirePreviewLayout(civ, age).map((model) => {
+    const models = layout.map((model) => {
       const art = renderArt(model.kind, model.type, civ, age, 0, 0, model.dir ?? 1);
       const dpr = art.pixelRatio ?? 1;
       const modelScale = model.scale ?? 1;
@@ -90,7 +96,6 @@ export function EmpirePreview({ civ, age }: { civ: CivId; age: number }) {
     const canvas = canvasRef.current!;
     const previous = previousRef.current!;
     let controller: AbortController | undefined;
-    let warmup: ReturnType<typeof setTimeout> | undefined;
     let physicalWidth = 0;
     let fading: Animation | undefined;
 
@@ -102,7 +107,6 @@ export function EmpirePreview({ civ, age }: { civ: CivId; age: number }) {
       if (!width || width === physicalWidth) return;
       physicalWidth = width;
       controller?.abort();
-      clearTimeout(warmup);
       controller = new AbortController();
       const signal = controller.signal;
       void Promise.resolve().then(() => {
@@ -128,15 +132,6 @@ export function EmpirePreview({ civ, age }: { civ: CivId; age: number }) {
           }
           setShown({ civ, age });
           setStatus('ready');
-          // Warm one civilization at a time after painting. A new selection cancels queued work.
-          warmup = setTimeout(() => {
-            void (async () => {
-              for (const id of civIds) {
-                if (signal.aborted) return;
-                if (id !== civ) await prepareScene(id, age, width, signal);
-              }
-            })().catch(() => {});
-          }, 350);
         },
         () => {
           if (!signal.aborted) setStatus('error');
@@ -148,7 +143,6 @@ export function EmpirePreview({ civ, age }: { civ: CivId; age: number }) {
     observer.observe(frame);
     return () => {
       controller?.abort();
-      clearTimeout(warmup);
       observer.disconnect();
       fading?.cancel();
     };

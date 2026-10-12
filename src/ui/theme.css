@@ -1361,7 +1361,7 @@
     height: 54px;
     gap: 6px;
   }
-  .game-brand > .regavo-emblem {
+  .game-brand > .game-logo {
     width: 40px;
     height: 40px;
   }
@@ -1651,7 +1651,7 @@
   .game-brand .command-icon {
     display: none;
   }
-  .game-brand > .regavo-emblem {
+  .game-brand > .game-logo {
     width: 32px;
     height: 32px;
   }
@@ -1828,7 +1828,7 @@
     width: 96px;
     gap: 4px;
   }
-  .game-brand > .regavo-emblem {
+  .game-brand > .game-logo {
     width: 28px;
     height: 28px;
   }

@@ -1,4 +1,5 @@
 import type { ArtSprite } from './art';
+import { assetUrl } from './asset-url.ts';
 import { BUILDINGS } from '../game/data.ts';
 import { drawDaiVietDragon } from './daiviet-emblem.ts';
 import { foundationProjection } from './foundation-geometry.ts';
@@ -418,39 +419,49 @@ const FOUNDATIONS: readonly (readonly BuildingFoundation[])[] = [
   ],
 ];
 const images: (HTMLImageElement | undefined)[] = [];
-let pending: Promise<boolean> | undefined;
+const pending = new Map<number, Promise<boolean>>();
 const sprites = new Map<string, ArtSprite>();
 
 /** Failed individual loads remain nonfatal and retain the authored fallback. */
-export function loadSecondaryBuildings(): Promise<boolean> {
-  if (images.filter(Boolean).length === ATLASES.length) return Promise.resolve(true);
-  if (pending) return pending;
-  pending = Promise.all(
-    ATLASES.map(
-      (file, index) =>
-        new Promise<boolean>((resolve) => {
-          if (images[index]) {
-            resolve(true);
+export async function loadSecondaryBuildings(types?: readonly string[], age = 3): Promise<boolean> {
+  const indices = types
+    ? [
+        ...new Set(
+          types.flatMap((type) => {
+            const selected = source(type, age);
+            return selected ? [selected[0]] : [];
+          }),
+        ),
+      ]
+    : ATLASES.map((_, index) => index);
+  const results = await Promise.all(
+    indices.map((index) => {
+      if (images[index]) return Promise.resolve(true);
+      const existing = pending.get(index);
+      if (existing) return existing;
+      const file = ATLASES[index];
+      const promise = new Promise<boolean>((resolve) => {
+        if (images[index]) {
+          resolve(true);
+          return;
+        }
+        const image = new Image();
+        image.onload = () => {
+          if (image.naturalWidth !== file.width || image.naturalHeight !== file.height) {
+            resolve(false);
             return;
           }
-          const image = new Image();
-          image.onload = () => {
-            if (image.naturalWidth !== file.width || image.naturalHeight !== file.height) {
-              resolve(false);
-              return;
-            }
-            images[index] = image;
-            resolve(true);
-          };
-          image.onerror = () => resolve(false);
-          image.src = file.url;
-        }),
-    ),
-  ).then((results) => {
-    pending = undefined;
-    return results.every(Boolean);
-  });
-  return pending;
+          images[index] = image;
+          resolve(true);
+        };
+        image.onerror = () => resolve(false);
+        image.src = assetUrl(file.url);
+      }).finally(() => pending.delete(index));
+      pending.set(index, promise);
+      return promise;
+    }),
+  );
+  return results.every(Boolean);
 }
 
 function source(type: string, age: number): readonly [number, number] | undefined {

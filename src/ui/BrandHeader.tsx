@@ -1,19 +1,14 @@
 import { useI18n } from '../i18n/I18n.tsx';
-import type { CivId } from '../game/data.ts';
-import { Emblem } from './Icons.tsx';
+import { GameLogo } from './GameLogo.tsx';
 import { SoundButton } from './SoundButton.tsx';
 import { LanguageSelect } from './LanguageSelect.tsx';
 import './brand.css';
 
 export function BrandHeader({
-  civ,
-  age,
   page,
   onHome,
   onWorkshop,
 }: {
-  civ: CivId;
-  age: number;
   page: 'home' | 'workshop';
   onHome?: () => void;
   onWorkshop?: () => void;
@@ -21,7 +16,7 @@ export function BrandHeader({
   const { t } = useI18n();
   const identity = (
     <>
-      <Emblem civ={civ} age={age} size={50} />
+      <GameLogo size={54} />
       <span>
         REGAVO<small>CHRONICLES OF EMPIRES</small>
       </span>

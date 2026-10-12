@@ -37,6 +37,10 @@ pnpm exec vite preview --host 127.0.0.1
 
 Deploy `dist/` at the web root. The game needs no API key or application backend; simulation and AI run in a Web Worker.
 
+Production builds include only runtime images and required fallback atlases, encoded as pixel-identical lossless WebP with unchanged dimensions and alpha. Historical PNGs and provenance stay in the repository. `dist/asset-manifest.json` records source/output hashes; `pnpm check:assets` verifies every decoded RGBA pixel after a build. The first build encodes images; subsequent builds reuse the content-addressed cache in `node_modules/.cache/regavo-assets/`. Cloudflare cache rules in `public/_headers` apply to hashed artwork and bundles.
+
+[Deployment and releases](docs/en/DEPLOYMENT.md)
+
 ## What you can play
 
 - Four resources: food, wood, gold and stone. Villagers gather, hunt and deliver cargo to valid drop-off buildings; cargo is lost when its carrier dies.
@@ -102,4 +106,4 @@ There is no online multiplayer, campaign, naval combat, garrisoning, military te
 
 Art uses four diagonal source directions with nearest-direction presentation. Đại Việt has complete walking poses and separate wood/gold/stone/meat cargo atlases; other cargo presentation varies by civilization. Full death animation, damaged-building art and age-specific uniforms for every unit are still absent. Target performance at 400 total units has not been certified.
 
-Original game code and artwork have no public reuse license granted by this repository. Third-party terms apply to their respective components; exact notices are in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and [the distributed license file](public/third-party-licenses.txt). User-provided reference photographs were used only during design and have been removed; they are not distributed. See the rights document for AI-output and reference-source limitations.
+Original project code, artwork, logos and audio are licensed under [MIT](LICENSE). Third-party terms apply to their respective components; exact notices are in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and [the distributed license file](public/third-party-licenses.txt). User-provided reference photographs were used only during design and have been removed; they are not distributed. See the rights document for AI-output and reference-source limitations.

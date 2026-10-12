@@ -37,6 +37,10 @@ pnpm exec vite preview --host 127.0.0.1
 
 将 `dist/` 部署在网站根路径。游戏无需 API 密钥或应用后端，模拟与 AI 在 Web Worker 中运行。
 
+生产构建只包含运行时图片及必要的回退图集，使用无损 WebP，保留每个像素、尺寸和透明度。历史 PNG 与来源记录留在仓库中。`dist/asset-manifest.json` 记录源文件和输出的哈希；构建后运行 `pnpm check:assets` 会核对所有解码 RGBA 像素。首次构建编码图片，后续构建复用 `node_modules/.cache/regavo-assets/` 的内容寻址缓存。`public/_headers` 中的 Cloudflare 缓存规则适用于带哈希的图片和代码包。
+
+[部署与发布](DEPLOYMENT.md)
+
 ## 可玩内容
 
 - 食物、木材、黄金、石料四种资源。村民采集、狩猎并将货物送至有效仓库；携带者死亡时货物丢失。
@@ -102,4 +106,4 @@ pnpm exec vite preview --host 127.0.0.1
 
 美术源图提供四个对角朝向，其余方向使用最近朝向。大越有完整行走姿势及独立木材/黄金/石料/肉类货物图集；其他文明的货物表现各有差异。尚缺完整死亡动画、建筑损坏图及所有单位的分时代制服。未认证总计 400 个单位时的目标性能。
 
-本仓库未向原创游戏代码和美术授予公开再使用许可证。第三方条款仅适用于相应组件；原文见 [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) 和[随网站分发的许可证文件](../../public/third-party-licenses.txt)。用户提供的参考照片仅在设计过程中使用，现已删除，不随项目分发。AI 输出与参考素材的限制见权利文档。
+项目原创代码、美术、标志和音频均采用 [MIT 许可证](../../LICENSE)。第三方条款仅适用于相应组件；原文见 [THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md) 和[随网站分发的许可证文件](../../public/third-party-licenses.txt)。用户提供的参考照片仅在设计过程中使用，现已删除，不随项目分发。AI 输出与参考素材的限制见权利文档。

@@ -121,7 +121,7 @@
     letter-spacing: 3px;
     gap: 9px;
   }
-  .site-wordmark > svg {
+  .site-wordmark > .game-logo {
     width: 40px;
     height: 40px;
   }

@@ -1,5 +1,6 @@
 import { useId, type ReactNode } from 'react';
 import type { CivId, Resource } from '../game/data.ts';
+import { assetUrl } from '../render/asset-url.ts';
 import {
   DAI_VIET_DRAGON_FILE,
   DAI_VIET_DRAGON_SIZE,
@@ -234,7 +235,7 @@ function DaiVietMark({ id }: { id: string }) {
   return (
     <svg x="17" y="12" width="30" height="40" viewBox={DAI_VIET_DRAGON_FRAME.join(' ')}>
       <image
-        href={DAI_VIET_DRAGON_FILE}
+        href={assetUrl(DAI_VIET_DRAGON_FILE)}
         width={DAI_VIET_DRAGON_SIZE}
         height={DAI_VIET_DRAGON_SIZE}
         filter={`url(#${id}-dragon-metal)`}

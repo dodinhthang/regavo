@@ -1,4 +1,5 @@
 import type { ArtSprite } from './art.ts';
+import { assetUrl } from './asset-url.ts';
 import { renderBarrier } from './barrier-raster.ts';
 import { WOOD_BARRIER_SOCKETS } from './barrier-sources.ts';
 import { isolatedFrame } from './isolated-frame.ts';
@@ -38,7 +39,7 @@ function loadImage(source: string): Promise<HTMLImageElement> {
     const image = new Image();
     image.onload = () => resolve(image);
     image.onerror = () => reject(new Error('Unable to load Regavo scenery atlas.'));
-    image.src = source;
+    image.src = assetUrl(source);
   });
 }
 
@@ -84,7 +85,7 @@ export function loadSceneryAtlas(): Promise<boolean> {
   if (typeof Image === 'undefined' || typeof fetch === 'undefined') return Promise.resolve(false);
   const base = (import.meta as ImportMeta & { env?: { BASE_URL?: string } }).env?.BASE_URL ?? '/';
   pending = Promise.all([
-    fetch(`${base}art/scenery-v3.manifest.json`).then(async (response) => {
+    fetch(assetUrl(`${base}art/scenery-v3.manifest.json`)).then(async (response) => {
       if (!response.ok) throw new Error('Unable to load scenery source geometry.');
       return (await response.json()) as SceneryManifest;
     }),

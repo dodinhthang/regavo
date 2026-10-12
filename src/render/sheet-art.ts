@@ -1,4 +1,5 @@
 import { isolatedFrame } from './isolated-frame.ts';
+import { assetUrl } from './asset-url.ts';
 import {
   selectBuildingArt,
   selectUnitArt,
@@ -59,33 +60,49 @@ export function createSheetArt(definition: SheetArtDefinition) {
         resolve(valid);
       };
       image.onerror = () => resolve(false);
-      image.src = '/art/' + sheets[key].file;
+      image.src = assetUrl('/art/' + sheets[key].file);
     }).finally(() => loading.delete(key));
     loading.set(key, promise);
     return promise;
   }
 
-  async function loadBuildings() {
+  async function loadBuildings(ages?: readonly number[]) {
+    const selected = ages
+      ? new Set(
+          Object.values(definition.buildings)
+            .flatMap((poses) => ages.map((age) => poses[age - 1]?.sheet))
+            .filter(Boolean),
+        )
+      : activeBuildingSheets;
     return (
       await Promise.all([
         ...Object.keys(sheets)
-          .filter((key) => activeBuildingSheets.has(key))
+          .filter((key) => selected.has(key))
           .map(loadSheet),
         definition.loadDecoration?.() ?? Promise.resolve(true),
       ])
     ).every(Boolean);
   }
 
-  async function loadUnits(active: boolean) {
+  async function loadUnits(active: boolean, preview = false) {
     const serial = ++unitSerial;
     unitsActive = active;
-    const keys = unitSheetKeys;
+    const keys = preview
+      ? [
+          ...new Set(
+            Object.values(definition.units).flatMap((unit) => [
+              unit.reference.sheet,
+              ...(unit.actions.idle ?? []).map((pose) => pose.sheet),
+            ]),
+          ),
+        ]
+      : unitSheetKeys;
     if (active) {
       const results = await Promise.all(keys.map(loadSheet));
       if (serial === unitSerial) return results.every(Boolean);
     }
     if (!unitsActive) {
-      for (const key of keys) if (!activeBuildingSheets.has(key)) images.delete(key);
+      for (const key of unitSheetKeys) if (!activeBuildingSheets.has(key)) images.delete(key);
       cache.clear();
       unitRevision++;
     }

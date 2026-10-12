@@ -128,7 +128,7 @@ export function Menu({
         { ...themeStyle(civ, previewAge), '--civ-color': CIVS[civ].color } as React.CSSProperties
       }
     >
-      <BrandHeader civ={civ} age={previewAge} page="home" onWorkshop={onWorkshop} />
+      <BrandHeader page="home" onWorkshop={onWorkshop} />
       <div className="lobby-shell">
         <header className="lobby-intro">
           <div>

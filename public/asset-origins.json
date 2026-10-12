@@ -43,7 +43,7 @@
     ],
     "method": "Original project-generated PNG atlases with preserved bytes, versioned prompts, frame/anchor metadata and SHA-256. Four diagonal source headings; nearest-heading presentation for other directions. Units/wildlife use whole poses in 4x Canvas and buildings measured geometry in 2x Canvas. The Persian elephant uses v9. Dai Viet uses architecture v9/v10, foundation geometry v11, whole walking poses v12, anatomy calibration and resource cargo v13; sliced-limb rigs are retired. Its current loader registers 30 active sprite sheets /431 frames plus one emblem PNG, including replaced frames within retained sheets. Lobby previews compose runtime models with documented preview-only scale factors. Historical atlas records remain in generatedAssets and their versioned manifests.",
     "thirdPartySprites": false,
-    "publicLicenseAssigned": false,
+    "publicLicenseAssigned": true,
     "generatedAssets": [
       {
         "file": "/art/building-centers-v2.png",
@@ -928,15 +928,17 @@
       "Outfits identify civilization; separate outfit upgrades for every military age are not implemented."
     ],
     "daivietGeometryManifest": "/art/daiviet-grid-v11.manifest.json",
-    "inputSources": "Project-created images and user-provided Dai Viet sculpture/architecture references were used during design. Original user-reference photographs and unused concept boards have been removed; research URL images are not imported."
+    "inputSources": "Project-created images and user-provided Dai Viet sculpture/architecture references were used during design. Original user-reference photographs and unused concept boards have been removed; research URL images are not imported.",
+    "license": "MIT"
   },
   "fonts": "System Georgia, Times New Roman and Arial; no font files distributed",
-  "icons": "Original project-authored SVG illustrations in src/ui/Icons.tsx, favicon SVG and procedural grain texture; no external icon pack",
+  "icons": "Original project-authored SVG illustrations, Regavo logo/favicon derivatives and procedural grain texture; no external icon pack",
   "sound": {
     "source": "src/audio/sound.ts",
     "method": "Original synthesised Web Audio oscillators and generated noise. Original ambient note sequence and gameplay effects. No external recordings, sound fonts, samples or audio libraries.",
     "thirdPartyAudio": false,
-    "publicLicenseAssigned": false
+    "publicLicenseAssigned": true,
+    "license": "MIT"
   },
   "provenancePathPolicy": "Repository-relative paths identify retained source files. generation-record: identifies an unbundled tool output. Original tool paths are kept only in ignored local records. Unused concept boards and user-reference photographs have been removed.",
   "uiArt": {
@@ -952,6 +954,8 @@
         "use": "Lobby and menu background"
       }
     ],
-    "delivery": "Vite imports src/assets/battlefield.png through UI CSS into a hashed build asset. Source PNG bytes are unchanged."
-  }
+    "delivery": "Vite imports src/assets/battlefield.png through UI CSS into a hashed build asset. Source PNG bytes are unchanged.",
+    "license": "MIT"
+  },
+  "projectLicense": "MIT"
 }

@@ -448,7 +448,7 @@ export function Workshop({ onBack }: { onBack: () => void }) {
       data-age={age}
       style={themeStyle(civ, age) as React.CSSProperties}
     >
-      <BrandHeader civ={civ} age={age} page="workshop" onHome={onBack} />
+      <BrandHeader page="workshop" onHome={onBack} />
       <section className="workshop-intro">
         <div>
           <span className="eyebrow">{t('XƯỞNG MÔ HÌNH')}</span>

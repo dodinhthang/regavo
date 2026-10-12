@@ -1,3 +1,5 @@
+import { assetUrl } from './asset-url.ts';
+
 /** Shared golden dragon ornament, generated from the user's sculpture reference. */
 export const DAI_VIET_DRAGON_FILE = '/art/daiviet-v4-dragon-emblem.png';
 export const DAI_VIET_DRAGON_SIZE = 1254;
@@ -18,7 +20,7 @@ export function loadDaiVietDragon() {
       resolve(valid);
     };
     image.onerror = () => resolve(false);
-    image.src = DAI_VIET_DRAGON_FILE;
+    image.src = assetUrl(DAI_VIET_DRAGON_FILE);
   }).finally(() => {
     pending = undefined;
   });
